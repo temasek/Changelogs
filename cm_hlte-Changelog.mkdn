@@ -1,13 +1,96 @@
 ====================
+     04-11-2015
+====================
+
+
+   * android/
+c46f0f1 Track own frameworks/opt/net/wifi
+33ebfc1 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+84e191c Track own wpa_supplicant_8
+
+   * build/
+34282dc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+d014494 Add support for mediatek platforms
+
+   * external/wpa_supplicant_8/
+68e3f66 Enable -Os back to wpa_supplicant
+
+   * frameworks/av/
+80fd2c8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+20e0438 NuPlayerDriver: Maintain the timeStamp after seek
+990a0d8 stagefright: handle zero size field in ID3v2 header
+692887d nuplayer: Synchronize video and audio decoders configuration
+d23dcf8 libstagefright:avoid regression casued due to gerrit 1221948
+4c864c5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+907439d QS: Cleanup
+6695dd9 tethering: User defined wifi/usb tether network. [1/3]
+995a554 Fix GL_INVALID_OPERATION in font renderer when font cache is limited.
+c730ba0 Fixing memory leak in RenderBufferCache
+b4af8aa PhoneWindowManager: Update comment
+4df3814 [1/2] Base: Configurable overflow menu button
+43c07e4 QS: hide Ambient display tile if not supported
+effcf11 QS: add Ambient display tile
+f9e67dc Implement ambient display as Active Display
+39d30bf QS: add silent mode to notifications tile
+ab1c7e4 base: bring back silent mode
+38bd3a0 Add USB Tether Tile (2/2)
+a221a01 New NavBar icons by Manuel Labrador Vianth
+cc539d4 SystemUI: start redrawing some navbar icons, add lastapp icon
+bfa9794 SyncTile: Updates
+4922dc3 Powermenu screenshot delay [1/2]
+dde8977 New DocumentsUI icon
+0defb44 StopSwitchDelay - Remove 5s Delay To Open Apps After Pressing Home Button
+8451d0d fb: less notifications sound (1/2)
+ce574fb Option to use volume keys to control media volume anytime [1/2]
+b31d513 Framework: safe headset volume option (1 of 2)
+34cb1c1 Fix up torch tile handling.
+f931b53 Prevent NPE in CmHardwareService.getDisplayColorCalibration()
+
+   * frameworks/opt/net/wifi/
+dfc0a83 tethering: User defined wifi/usb tether network. [2/4]
+
+   * packages/apps/Settings/
+0ac53c4 Build V9.6
+04063be tethering: User defined wifi/usb tether network. [3/3]
+b1d5aeb MSIM : Show a proper text if no number is set
+e9c4037  [2/2] Settings: Configurable overflow menu button
+0fbb4ba Settings: use switch preference for Ambient Display
+95cb2da Settings: Ambient Display configurations
+03da511 Add USB Tether Tile (1/2)
+12c3d18 Powermenu screenshot delay [2/2]
+4ad33a1 USB Settings: Use SwitchPreference
+9493e92 Option to use volume keys to control media volume anytime [2/2]
+57f1558 Settings: add safe headset volume and less annoying sound notification
+
+   * system/core/
+97440d3 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+cb9e448 liblog: Forward xlog to regular android buffers on demand
+
+====================
      04-10-2015
 ====================
 
 
    * android/
+7ccc2f5 Add atv device repo to cm-12.1 default manifest
 57d3763 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 384b3f5 Track our own external/libvpx
 
+   * external/libvpx/
+3bead62 Use the prebuilts version of yasm to avoid host install
+
    * frameworks/av/
+1dc8b09 libstagefright: Implement fallback mechanism to SW decoder
+71a992c Rename ec3 to eac3 for consistency with framework
+2325621 libstagefright: Fix crash for video clip having initial frames                 corrupted
+3ceb59b libstagefright: Handle EOS for audio in A/V clips
+8657d7c NuPlayer : Ignore the INVALID_OPERATION error during resume.
+bcf03b2 NuPlayer: Fix for audio mute after call termination
+1aff848 nuplayer: Modify seek and resume latency calculation
+bdcda69 audio: Support for compress offload recovery
+f65107b NuPlayer: Disable widevine flag for L3 content
 3f7d3fd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 e1072ff stagefright: Don't ever try to use extended sniffers on DRM
 ebeab42 MediaExtractor: Add more skip conditions for the second-pass extractors
@@ -36,6 +119,9 @@ ee41017 ProgressBar: Fix error of process bar cannot update on some condition.
    * hardware/ril/
 e732d9a ril: Add missing unsol response strings
 
+   * packages/apps/Calculator/
+159eb36 Calculator: fix error handling ripple
+
    * packages/apps/Mms/
 e5627c4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 153b227 Mms: use string resource for Select Recipients progress dialog
@@ -48,6 +134,9 @@ e07bb74 Fix Settings FC - There is currently no category!
 0c1b547 (2/2) Settings: allow to toggle smart cover wake
 9745202 Sound settings: fix unlinking volume sliders (1/2)
 4e5f475 Sim: fix null pointer exception if no sim is inserted
+
+   * packages/apps/SoundRecorder/
+d5d1811 SoundRecorder: Rewrite logic to funnel all recorder interaction.
 
 ====================
      04-09-2015
@@ -355,118 +444,4 @@ f94f958 Merge "CallsManager: fix starting call from Contacts app with MSim" into
 
    * vendor/cm/
 779bc74 Update APNs for Smartfren
-
-====================
-     04-06-2015
-====================
-
-
-   * android/
-779cefe Track own bluedroid
-b88b94b Track own external/libpng
-460fe1b Remove SetupWizard & CMAccount
-f1e516d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-6390c93 Track own Mms
-b6ab04b Track own frameworks/webview
-
-   * build/
-3ac1c35 Fix build
-5083f29 Merge pull request #6 from Team-UB/tema
-3f63137 Disable building recovery by deafult
-981b0ab ota_from_target_files: Remove recovery patch condition for block ota
-40d3cf0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-
-   * device/samsung/hlte-common/
-297315b Revert "hlte: Enable apps2sd"
-
-   * external/bluetooth/bluedroid/
-b255986 Enable -Os back to bluedroid
-
-   * external/libnfc-nci/
-25190cb nfc-nci: Unbreak NFC for the planet
-
-   * external/libpng/
-4708328 Kill more spam
-3f519b2 Remove the most annoying error ever
-
-   * frameworks/av/
-9d7e9cc Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-c0dc0d8 Carrier Label: Fix util name
-c7f4755 HotspotTile: Update secondaryclick intent
-2c29343 NavigationBarView: Restore missing import
-768f7e3 BaseStatusBar: Heads up fixes
-a72c67a HeadsUpNotificationView: Remove mExpandHelper
-93477c9 ProfilesTile: Remove duplicate longclick
-2a7e9e9 DatabaseHelper: Remove unused definition
-3891b29 Update cute arter97 drawable
-2ef125f Revert "Framework: Add Fade in and Fade out effect to Recents FAB"
-683d37c Revert "SystemUI: we need to use fadein/fadeout anim on FAB"
-ab76e63 Lockscreen weather: Remove duplicates & update import
-f6645e2 SystemUI: remove redundant ic_qs_signal_hp.PNG
-af4245f Revert "SystemUI: fix nav button ripple getting stuck"
-8a14a92 bootanimation: Set CPU boost hint
-be3094d Remove duplicate definitions
-82dd94b Status bar layout: Fix bad parsing xml
-fb36cc5 SystemUI: option to ignore the last app when clearing recents (1/2)
-
-   * frameworks/native/
-dd08138 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * frameworks/webview/
-316ab42 frameworks/webview: Use prebuilt java library for building if using prebuilt Chromium
-
-   * hardware/qcom/display-caf/msm8974/
-802135e Merge AU_LINUX_ANDROID_LA.BF.1.1.1_RB1.05.01.00.042.029 on remote branch
-
-   * kernel/samsung/hlte/
-a665714 Build v1.00
-e1baa5e fs: rework f2fs
-
-   * packages/apps/ContactsCommon/
-38c39f9 ContactsCommon: fix NPE on importing contact with multiple accounts
-
-   * packages/apps/Dialer/
-9c45e51 Revert "Dialer: truncate hint text for search box"
-
-   * packages/apps/Mms/
-ae29161 Mms: switch to green
-de717d8 Mms: Add native heads up support
-
-   * packages/apps/Settings/
-048a996 Rename navigation bar category
-953bd95 Merge pull request #315 from Team-UB/tema
-22bb547 Fix ups.
-0582430 Fix color picker
-321cc60 Return: Smart Pulldown [2/2] Change-Id: Iba759e421b8cbb02fadaa6540aae7b7a74764293
-1b8a9ce Settings: its not an icon anymore...its an option
-7e09cdc [Lockscreen shortcuts] centralize all option in our custom settings
-71d0bdc Settings: add user configurable lockscreen shortcuts (2/2)
-0d8a1d4 Add SystemSettingListPreference
-5bf4bb5 Battery saver: Add 10% and expand options up to 30%
-5f7dd9b Show wifi tab by default in Data Usage
-1879700 Remove all bug report options Credits to SlimROM: https://gerrit.slimroms.net/#/c/18971/
-601fd01 Add option to Restart SystemUI to DevSettings
-1252893 Settings: Screen Recorder [2/2]
-fadbf9d Return: Listanimation Views and Interpolator [2/2]
-4e10a58 XuiMod: Toast Animations [2/2]
-f3251ee [LCD density] be nice and show a dialog for user confirmation
-b4c60ee Add custom option for DPI selection
-494d919 Add LCD density setting
-3ed9e9c [SQUASHED]: recents panel clear all button tweaks
-37c51a4 Temasek Spare Parts
-
-   * packages/apps/UnifiedEmail/
-ef570af unified-email: check notification support prior to create notification objects
-
-   * packages/inputmethods/LatinIME/
-04c9f51 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
-
-   * packages/services/Telecomm/
-b8fcaec Revert "Subscription selection when dialing USSD"
-e611ca7 CallsManager: fix starting call from Contacts app with MSim
-
-   * vendor/cm/
-23aa5d6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
