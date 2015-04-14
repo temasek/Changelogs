@@ -1,20 +1,127 @@
 ====================
+     04-14-2015
+====================
+
+
+   * android/
+16ad9b7 Track own libcore
+
+   * external/bluetooth/bluedroid/
+5a2c962 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+
+   * frameworks/av/
+191b1b2 camera2: fix various BpCameraDeviceUser methods to return correct result.
+645501d Use define for drm property keys instead of defining as char pointers
+5c5bd2f Correctly handle unsupported OMX color format
+7921e8d MPEG4Writer: fix mMoovBoxBuffer memory leak
+1f2c201 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+d7d5573 libstagefright: add missing TI color format case
+
+   * frameworks/base/
+fb9ffdf aapt: silence density flag warnings
+77953fe Bluetooth: Change disconnected icon to be 40% transparent
+0b482a6 SystemUI: update notification volume slider state when toggling modes
+670a920 Volume: fix: Avoid making bad forceVolumeControlStream call.
+2cef425 SystemUI: fix keyguard charging text not showing
+4e07db4 SystemUI: fix updating keyguard insecure lock icon
+9e613cb ic_sysbar: drawables updated
+dd65fce Revert "third part apps can unlock the phone without password even if the phone has setted the password"
+5e2799e Clean-up state if we have an exception when acquiring provider
+1767d70 Revert "Revert "[ActivityManager] Improve multi-thread access the same provider""
+6a948da Statusbar header: Add vibration to settings button
+687533b SystemUI: Update doze pulse-in option
+99b1911 SystemUI: allow recent tasks to draw behind the status bar
+9a66e8c SystemUI: make online cpu color green for cpu overlay
+4b6db36 systemui: animate clear recents button on exit animation
+f4231b3 Framework: Always show ZenPanel when showing expanded volume panel
+a25f398 Revert "QS: fix tiles not being refreshed on overscrolling"
+4a8bfae Revert "Systemui: Recents - do not add search widget on recents if widget is lost."
+d8fbfcc Revert "systemui: fix glitches with recents view and search widget"
+d793949 MediaProjectionPermissionActivity: Fix NPE.
+db45acc Revert "Fix FC after starting screen recording"
+c8fc142 Revert "New NavBar icons by Manuel Labrador Vianth"
+a45495b fix checkapi
+
+   * hardware/samsung/
+3063dc1 libril: Avoid strncat which doesn't check if we overflow
+47b2d96 libril: Make data a const pointer in RIL_onUnsolicitedResponse()
+
+   * kernel/samsung/hlte/
+a6db5b1 Build v1.02
+649399d soc: qcom: bam_dmux: Sync SSR with disconnect/reconnect
+c2a1143 driver: soc: bam_dmux: Fix spinlock lock-up
+e824706 msm: bam_dmux: Reduce debug logs to avoid watchdog bite
+5cca9a4 soc: qcom: bam_dmux: Reset SSR flags in bam_init
+c984dd0 soc: qcom: rq_stats: Always show idle time left
+789f336 msm: mdss: Kill log spam
+6ac788e ASoC: msm: qdp6v2: handle proxy read failure
+ec62037 ASoC: msm: Correct RTAC mutex lock
+8477719 ASoC: msm: qdsp6v2: Fix timestamp query during gapless transition
+41db8ea ASoC: wcd9306: Wait for enough time for Line PAs to get settled
+32ff2e5 ASoC: Compress: fix memory corruption issue in memcpy
+f48c1b3 ASoC: wcd9320: avoid wrong free of resource while enabling ANC
+c3a2be6 ASoC: wcd9xxx: Do not recalibrate DCE_Z in the middle of mic voltage measurements
+78485d0 ASoC: msm: qdsp6v2: Fix invalid num_codecs
+cbbc5aa ASoC: msm: qdsp6v2: add support for any number of ASM buffers
+8915e1b ASoC: msm: qdsp6v2: fix callback handling of removing silence cmds
+73d3780 ASoC: msm: qdsp6v2: Fix asm bitwidth for next track in gapless mode
+f740b0a ASoC: msm: fix bounds checking for ADM get params
+9ca43a7 ASoC: wcd9320: set gain after IIR clock is enabled
+0bfb57a CHROMIUM: cpufreq: interactive: free above_hispeed_delay on exit
+b29c58a CHROMIUM: cpufreq: interactive: validate above_hispeed_delay
+e1e7954 hlte: cleanup duplicates
+
+   * libcore/
+9c87946 Stop sleeping in waitUntilAllThreadsStopped spin instead.
+1bf71e5 GZIPInputStream: Correctly handle extras in gzip headers.
+7f097b1 GZIPInputStream: Fix handling of header CRCs.
+8a0969a More FileDescriptor.isSocket cleanup.
+7a5f424 Extend ArrayList fastpath to Collections.sort(List<T>, Comparator<T>).
+2d519c4 Fix CharsetEncoder.canEncode for empty CharSequences
+0f5ece7 Fix CharsetEncoder.canEncode for ignorable code points.
+3728f63 Add a zero-copy path for Collections.sort() on ArrayList.
+d2f27bc MimeUtils: add ODF presentation (template)
+1a773d4 When connecting to a SOCKS proxy, use the resolved IP
+31ee10f Fix InetSocketAddress.getHostString(): return the name if available
+ccd256e Use EMPTY_ITERATOR for EmptyList
+ab4cd99 [1/4] JDK8: Do explicit cast of EnumMapIterator.next() return value Change-Id: I396af53e41009e0590ffabeaa61472bce07f7f71
+
+   * packages/apps/CMFileManager/
+948e0d1 Implement ability to cancel file copy.
+
+   * packages/apps/Mms/
+b726c50 Properly populate subscription ID column when sending MMS.
+e018e28 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+4b33fba Use unicode character for ellipsis
+
+   * packages/apps/Settings/
+857fb6f [WIP] Build V9.8
+9068504 Settings: use volume adjust sound setting also to volume seekbar
+a194668 Allow disabling of FC dialogs [2/2]
+
+   * packages/services/Telecomm/
+d5cd6ed Create new empty Bundles when creating new Call
+
+   * vendor/cm/
+e6593b4 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+4ffdd67 APNs: Remove leading whitespace for a couple mmsc
+
+   * vendor/samsung/
+fbfe850 Merge pull request #606 from sam3000/cm-12.1
+
+====================
      04-13-2015
 ====================
 
 
    * android/
 a123ceb Track own DeskClock
-722b0b0 Remove vendor/temasek. This is now a dummy repo for instructions
 
-   * device/samsung/hlte/
-c11fbca hlte: Enable OTA update
-
-   * device/samsung/hltespr/
-d450e09 hltespr: Enable OTA update
-
-   * device/samsung/hltevzw/
-643bb7d hltevzw: Enable OTA update
+   * device/samsung/hlte-common/
+012df34 Merge pull request #7 from arter97/cm-12.1
+1461356 hlte-common: Remove density from PRODUCT_AAPT_CONFIG
+e1057c6 hlte-common: tweak sdcard container parts
+706330f hlte-common: tone down several audio configs
 
    * frameworks/av/
 ebec674 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
@@ -41,34 +148,28 @@ b48d85d Fix default compute thread priority
 3e049af Fix crash caused by toHex returning exception
 05fc84b fix cursor leaks in F_B
 58f0b9a Destroyed not app killed :D
-03b0ae8 proximity wake: return early if we do not check proximity
-2d144fc Fix racing condition of mTouchExcludeRegion
-4ea0f63 Prevent AudioService dead lock issue.
-1b41377 Handle NULL keys and NULL values in MediaDrm JNI HashMap
-d082bd6 Move arrow_pointer hotspot to better match actual tip
-164c5ee Wifi: Check configKey for ScanResult while visibility is set
-6ade2c4 Wifi: Maintain configKey generation logic same in all APIs
-e184ef2 Telephony: Fix signal annunciators missing issue.
-ac2b199 Revert "Update the ADB status bar icon"
+
+   * hardware/qcom/audio-caf/msm8994/
+8fe8c83 audio: Use direct    * pathmap
+
+   * hardware/qcom/media-caf/msm8994/
+6955a45 correct use of    *-path
 
    * hardware/samsung/
-d0b8416 libril: rewrite preferred network type
+8a0d740 libril: Fix signal strength
+
+   * packages/apps/InCallUI/
+e01b345 Fix memory leak: remove a listener
 
    * packages/apps/OTAUpdates/
 ba4590e Merge pull request #10 from arter97/aosp
 c74e830 Fix a tiny typo
 e4eeb77 Force disable ads on Android 5.1+
-f2a488e Enable building libbypass from source
-a529f0c Merge pull request #9 from arter97/aosp
-f7135d4 Prevent build errors on AOSP source tree
 
    * packages/apps/Settings/
 e4207ff Build V9.7
 558e470 Fix NPE on overflow due to removal of HW Keys category
 f9b072f [3/3] Settings: alarms and no interrupt zen mode
-
-   * vendor/cm/
-a6e4227 Add OTAUpdates
 
 ====================
      04-12-2015
@@ -76,6 +177,7 @@ a6e4227 Add OTAUpdates
 
 
    * android/
+722b0b0 Remove vendor/temasek. This is now a dummy repo for instructions
 d830399 Merge pull request #6 from arter97/cm-12.1
 f9cb6cd Add Kryten2k35's OTAUpdates app
 2b48ade Merge pull request #5 from arter97/cm-12.1
@@ -88,6 +190,15 @@ f44f3ee Merge pull request #2 from arter97/cm-12.1
 4e17dae libc: arm: a15: add optimized memcpy implementation
 e589772 Merge remote-tracking branch 'linaro/linaro_android_5.1.0' into cm-12.1
 
+   * device/samsung/hlte/
+c11fbca hlte: Enable OTA update
+
+   * device/samsung/hltespr/
+d450e09 hltespr: Enable OTA update
+
+   * device/samsung/hltevzw/
+643bb7d hltevzw: Enable OTA update
+
    * external/sqlite/
 ac08821 Fix compilation
 2395d06 Revert "Remove hardcoded ICU include paths."
@@ -99,12 +210,22 @@ a9faa80 Do not pass QC_PERF into host build of sqlite3.
 04015dd Merge remote-tracking branch 'google/master' into cm-12.1
 
    * frameworks/base/
+03b0ae8 proximity wake: return early if we do not check proximity
+2d144fc Fix racing condition of mTouchExcludeRegion
+4ea0f63 Prevent AudioService dead lock issue.
+1b41377 Handle NULL keys and NULL values in MediaDrm JNI HashMap
+d082bd6 Move arrow_pointer hotspot to better match actual tip
+164c5ee Wifi: Check configKey for ScanResult while visibility is set
+6ade2c4 Wifi: Maintain configKey generation logic same in all APIs
+e184ef2 Telephony: Fix signal annunciators missing issue.
+ac2b199 Revert "Update the ADB status bar icon"
 c00ebc2 base: persist default unmute ringer volume
 23c5aa3 base: fix race condition with occluded keyguard on non-navbar devices
 408dbb5 SystemUI: fix doze pickup for shamu
 1cd9201 Revert "SystemUI: rework battery saver bar color feature"
 
    * hardware/samsung/
+d0b8416 libril: rewrite preferred network type
 bd82ef1 libril: move samsung specific into seperate table, update to v11
 
    * kernel/samsung/hlte/
@@ -116,7 +237,11 @@ c8a83e3 Revert "lowmemorykiller: Account for highmem during kswapd reclaim"
 
    * packages/apps/Mms/
 35b3cbf Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-6ebaad0 Use rounded avatars in messaging notifications.
+
+   * packages/apps/OTAUpdates/
+f2a488e Enable building libbypass from source
+a529f0c Merge pull request #9 from arter97/aosp
+f7135d4 Prevent build errors on AOSP source tree
 
    * packages/apps/Settings/
 cd09580 Move overflow option to HW keys
@@ -125,6 +250,12 @@ cd09580 Move overflow option to HW keys
 ff6cca6 Settings: : add ability to change the color in battery saver mode (1/2)
 9655725 Revert "Settings: Cleanup battery saver settings"
 5e06edc Revert "Settings: Rework 'add ability to change the color in battery saver mode'"
+
+   * vendor/cm/
+a6e4227 Add OTAUpdates
+
+   * vendor/samsung/
+8140ba9 manta: updates blobs to LMY47D
 
 ====================
      04-11-2015
@@ -187,6 +318,7 @@ dfc0a83 tethering: User defined wifi/usb tether network. [2/4]
 7c6aba4 audio: Only allow non-legacy HAL
 
    * hardware/qcom/display-caf/msm8994/
+95ceb15 Don't build lights module if vendor supplies it
 aee3a7c display: Use    * pathmap
 
    * hardware/qcom/media-caf/msm8994/
@@ -200,6 +332,9 @@ e2246f8 media: Use    * pathmap
    * packages/apps/Exchange/
 d08d855 exchange: serialize the account parcelable before using with AlarmManager
 
+   * packages/apps/Mms/
+6ebaad0 Use rounded avatars in messaging notifications.
+
    * packages/apps/Settings/
 3217ab6 Build V9.6
 04063be tethering: User defined wifi/usb tether network. [3/3]
@@ -210,8 +345,6 @@ e9c4037  [2/2] Settings: Configurable overflow menu button
 03da511 Add USB Tether Tile (1/2)
 12c3d18 Powermenu screenshot delay [2/2]
 4ad33a1 USB Settings: Use SwitchPreference
-9493e92 Option to use volume keys to control media volume anytime [2/2]
-57f1558 Settings: add safe headset volume and less annoying sound notification
 
    * system/core/
 97440d3 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
@@ -225,9 +358,6 @@ cb9e448 liblog: Forward xlog to regular android buffers on demand
    * android/
 7ccc2f5 Add atv device repo to cm-12.1 default manifest
 57d3763 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-
-   * external/libvpx/
-3bead62 Use the prebuilts version of yasm to avoid host install
 
    * frameworks/av/
 1dc8b09 libstagefright: Implement fallback mechanism to SW decoder
@@ -280,6 +410,8 @@ f347764 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_package
 95abfab Mms: do not populate RecipientsEditor while mAddNumbersTask is running
 
    * packages/apps/Settings/
+9493e92 Option to use volume keys to control media volume anytime [2/2]
+57f1558 Settings: add safe headset volume and less annoying sound notification
 e07bb74 Fix Settings FC - There is currently no category!
 0c1b547 (2/2) Settings: allow to toggle smart cover wake
 9745202 Sound settings: fix unlinking volume sliders (1/2)
@@ -287,65 +419,4 @@ e07bb74 Fix Settings FC - There is currently no category!
 
    * packages/apps/SoundRecorder/
 d5d1811 SoundRecorder: Rewrite logic to funnel all recorder interaction.
-
-====================
-     04-09-2015
-====================
-
-
-   * android/
-384b3f5 Track our own external/libvpx
-d0da68e Remove Screen Recorder by 0xD34D
-
-   * external/ffmpeg/
-97ebddc x86: Use yasm from prebuilts and don't depend on host install
-
-   * external/sqlite/
-d3b7837 Merge "sqlite: upgrade to SQLite 3.8.9"
-3fcd43a sqlite: upgrade to SQLite 3.8.9
-
-   * frameworks/base/
-e8a9e88 Trigger GC Delay for subsequent launches.
-1006750 binder: adjust GC interval for binder ops
-a6da3b3 systemui: Boost when expanding the notification shade
-2366f22 [ActivityManager] Fix index out of bounds when updating next pss time.
-995e4c1 Add ProcessInfoService to activity manager.
-6a04df3 [ActivityManager] Improve task order of getRunningTasks.
-669ee14 [ActivityManager] Do not add service to reschedule after removing users.
-3840e35 [ActivityManager] Fix ServiceRecord leakage
-c5e2a33 [ActivityManager] Examine bad process before clean up application record
-8125432 Prevent infinite layout and wallpaper flashing
-4d8c955 [ActivityManager] Avoid improper resume top activity.
-
-   * hardware/ril/
-e732d9a ril: Add missing unsol response strings
-
-   * hardware/samsung/
-eef440e libril: Readd support for MODEM_TYPE_XMM7260
-f68609b libril: Fix #elif for MODEM_TYPE_XMM6260
-8cb8de6 libril: Use consistent names for modem defines
-8e5fa43 libril: The data variable should be const
-68f80d8 libril: Fix processRadioState prototype
-
-   * packages/apps/LockClock/
-97a3670 New Material icon
-
-   * packages/apps/Settings/
-0af678b Build V9.5
-7124953 Settings: improve empty Profile trigger icons
-32e5451 Move strings from cm to own
-ee0e833 QS: add Screenrecord tile (2/2)
-21ad9c7 Add Screen Record to the Power Menu [2/2]
-8593e86 Revert "Settings: Screen Recorder [2/2]"
-
-   * packages/providers/ContactsProvider/
-210a1ab Fix upgrade path for phone_lookup table
-
-   * vendor/cm/
-0837d76 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-1db6cf1 apns: Added APNs for Movistar Peru
-2950f3c Remove Screen Recorder by 0xD34D
-
-   * vendor/samsung/
-14e6f6c t0ltecdma/i925: use KK ril blobs from t0ltevzw
 
