@@ -1,4 +1,77 @@
 ====================
+     04-20-2015
+====================
+
+
+   * android/
+302ca44 Track own frameworks/opt/telephony
+
+   * device/samsung/hlte/
+450fd21 Fake recovery size to accomodate boot img size
+
+   * device/samsung/hltespr/
+0a1b375 Fake recovery size to accomodate boot img size
+
+   * device/samsung/hltevzw/
+e5cb478 Fake recovery size to accomodate boot img size
+
+   * frameworks/base/
+3b64666 Framework: StatusBar Ticker (1/2)
+0b7cf21 fix Notification volume slider linking
+8f906fe Revert "Base: fix unlinking volume sliders (2/2)"
+a64c323 Revert "Base: update volume link option for 5.1"
+dc6ce83 Remove opaque check in preparing dirty region
+947d7fe [3/3] frameworks/base: National Data Roaming
+3269ae5 frameworks/base: Zen mode add 10 and 12 hours downtime
+
+   * frameworks/opt/telephony/
+bac13b7 Return: National Data Roaming [1/3]
+
+   * kernel/samsung/hlte/
+510fa96 Build v1.06
+21fed37 Enable gzip compression
+cc5bb91 Revert "f2fs: add nodiscard option"
+37a5835 f2fs: add nodiscard option
+be55c7c f2fs: ditch SEGMENT_SIZE for f2fs_trim_fs
+
+   * packages/apps/Browser/
+3b63309 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
+
+   * packages/apps/ContactsCommon/
+5dd21a4 [3/3] ContactsCommon: Smart Dialer
+
+   * packages/apps/Dialer/
+a2b96b6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Dialer into cm-12.1
+1cd8b6b [2/3] Dialer: Smart Dialer
+
+   * packages/apps/Mms/
+24ffd16 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+08aa08e Expose hard coded background colors from layouts for search activity.
+cca4f65 [1/3] Mms: Smart Dialer
+
+   * packages/apps/OTAUpdates/
+1158bf3 Merge branch 'master' into aosp
+908ff83 Addons: Add ordering addons by name for RomHut provided addons
+
+   * packages/apps/Settings/
+1c1fb5f [WIP] Build V10.2
+7e6d888 Fix typo
+51708a4 Fix screen timeout exception in Display Settings
+1df8ab5 Add a 45 second timeout option for Screen, Dream and Lock timeouts.
+1f5cae7 Settings: StatusBar Ticker (2/2)
+d768f0d Revert "Sound settings: fix unlinking volume sliders (1/2)"
+
+   * packages/providers/MediaProvider/
+2c3aa38 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_providers_MediaProvider into cm-12.1
+
+   * packages/services/Telephony/
+36fe48e Fix National Roaming
+3ab59f0 National Data Roaming [2/3]
+
+   * vendor/cm/
+bb747a3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+====================
      04-19-2015
 ====================
 
@@ -16,17 +89,12 @@ a02a9ed Revert "nuplayer: Add cached lookup of track duration"
 3f2532f Revert "Audio streaming error when playing a stream that contains "end of file"."
 627d3b4 Revert "audio: Fix issues during device switch"
 9e0b0f9 Revert "NuPlayer: Disable widevine flag for L3 content"
-26587f8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 
    * frameworks/base/
 86ddd89 Revert "SystemUI: remind user flashlight is still on"
 9c34723 Screenshots info is not updated when device is plugged in MTP mode
 318b89b media:Modify the display of system default ringtone when it is none.
 771d223 SystemUI: Show operator name UI after getting valid operator name
-274afe4 base: nat464X: Only update ipv4 pseudo-interface when it's connected
-
-   * frameworks/native/
-c767740 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
 
    * kernel/samsung/hlte/
 75b3102 Build v1.05
@@ -35,31 +103,22 @@ e4cccac fs: rework f2fs
 d25d55d f2fs: add support for LOOKUP_CASE_INSENSITIVE
 81511f6 f2fs: AIO optimization compatibility fix-ups
 bc3cbb7 fs: rework f2fs
-65cc7c1 Build v1.04
-fcd8712 scripts/dtc/libfdt: add integer overflow checks
-e7c387c Linux 3.4.107
-639845e PCI: Handle read-only BARs on AMD CS553x devices
-2dc87a7 lib/checksum.c: fix build for generic csum_tcpudp_nofold
-136d02a mm: fix anon_vma->degree underflow in anon_vma endless growing prevention
-608f158 net: compat: Update get_compat_msghdr() to match copy_msghdr_from_user() behaviour
-0ce92b4 nilfs2: fix deadlock of segment constructor during recovery
-dfceb65 spi: dw: revisit FIFO size detection again
-2d4d808 ntp: Fixup adjtimex freq validation on 32-bit systems
-bb3a8fc s390/3215: fix tty output containing tabs
-8513d86 x86, cpu, amd: Add workaround for family 16h, erratum 793
-12610d6 fsnotify: next_i is freed during fsnotify_unmount_inodes.
-c97bdf2 net:socket: set msg_namelen to 0 if msg_name is passed as NULL in msghdr struct from userland.
-11e3f8a sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target
-af22755 Bluetooth: ath3k: workaround the compatibility issue with xHCI controller
-4ff93f2 staging: comedi: cb_pcidas64: fix incorrect AI range code handling
-dd5c26c ipvs: rerouting to local clients is not needed anymore
-905a150 jfs: fix readdir regression
+
+   * packages/apps/Browser/
+1af979b Enable immersive full-screen video playback
 
    * packages/apps/Mms/
 ec5de5f Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
+   * packages/apps/OTAUpdates/
+2909543 Merge pull request #11 from arter97/aosp
+f8766f3 libbypass: fix compilation for arm64
+
    * packages/apps/Settings/
 8b0ec55 Build V10.1
+
+   * vendor/cm/
+206c46e We are at CM12.1 now
 
 ====================
      04-18-2015
@@ -81,12 +140,14 @@ a6ea0d0 recovery: Add lz4 libs
 8163695 Automatic translation import
 
    * frameworks/av/
+26587f8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 e5c48fa stagefright: Be more tolerant of missing metadata for FFMPEG codecs
 036564f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 13f41ef camera: Add support for mediatek cameras
 fbcdaa1 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 
    * frameworks/base/
+274afe4 base: nat464X: Only update ipv4 pseudo-interface when it's connected
 8ffc00b frameworks : Extends mimetype list hence apps can view the media files.
 1e95710 Optimize IncallUI delay for voice calls
 01b4e85 Fix an apk icon animation corruption issue
@@ -99,10 +160,32 @@ ca4adb3 PhoneWindowManager: Fix screen pinning averting soft reboot
 7ba9b7a Remove legacy ThemesTest
 c271943 Mobile data tile: open network settings
 
+   * frameworks/native/
+c767740 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
    * hardware/qcom/media-caf/msm8974/
 fac0a22 Merge branch 'LA.BF.1.1.1_rb1.19' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
 
    * kernel/samsung/hlte/
+65cc7c1 Build v1.04
+fcd8712 scripts/dtc/libfdt: add integer overflow checks
+e7c387c Linux 3.4.107
+639845e PCI: Handle read-only BARs on AMD CS553x devices
+2dc87a7 lib/checksum.c: fix build for generic csum_tcpudp_nofold
+136d02a mm: fix anon_vma->degree underflow in anon_vma endless growing prevention
+608f158 net: compat: Update get_compat_msghdr() to match copy_msghdr_from_user() behaviour
+0ce92b4 nilfs2: fix deadlock of segment constructor during recovery
+dfceb65 spi: dw: revisit FIFO size detection again
+2d4d808 ntp: Fixup adjtimex freq validation on 32-bit systems
+bb3a8fc s390/3215: fix tty output containing tabs
+8513d86 x86, cpu, amd: Add workaround for family 16h, erratum 793
+12610d6 fsnotify: next_i is freed during fsnotify_unmount_inodes.
+c97bdf2 net:socket: set msg_namelen to 0 if msg_name is passed as NULL in msghdr struct from userland.
+11e3f8a sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target
+af22755 Bluetooth: ath3k: workaround the compatibility issue with xHCI controller
+4ff93f2 staging: comedi: cb_pcidas64: fix incorrect AI range code handling
+dd5c26c ipvs: rerouting to local clients is not needed anymore
+905a150 jfs: fix readdir regression
 bd2f347 pagemap: do not leak physical addresses to non-privileged userspace
 2eed618 Bluetooth: Add USB device 04ca:3010 as Atheros AR3012
 d4e27c3 Bluetooth: ath3k: Add support of MCI 13d3:3408 bt device
@@ -289,8 +372,6 @@ d153ec9 Automatic translation import
 9fe55d2 Enable ok button, filename is still valid.
 bc51212 Make the new filename max length error message show.
 59d3233 Automatic translation import
-5199787 CMFileManager: Fix CMFileManager display "sdcard1" and the content is null after adding a new user/guest
-a09cb8f CMFileManager: Printing preview content is not show complete.
 
    * packages/apps/CMWallpapers/
 b2000ea Automatic translation import
@@ -473,6 +554,8 @@ b0592cb Automatic translation import
 ea4cd21 Automatic translation import
 
    * packages/apps/CMFileManager/
+5199787 CMFileManager: Fix CMFileManager display "sdcard1" and the content is null after adding a new user/guest
+a09cb8f CMFileManager: Printing preview content is not show complete.
 21d641c Implement a dialog that warns the user that we must expose the content of the file by copying it out to an unsecure location in order to allow the external applications to read the files.
 3274036 Automatic translation import
 52a26ab Support RTL layouts everywhere.
@@ -738,8 +821,8 @@ cedee4d Settings: forward port lock pattern grid size (2/2)
 9b3b879 Settings: Add music tile (2/2)
 328146e Build V9.9 - Android 5.1 r5
 
-   * packages/apps/Trebuchet/
-c4326d4 Trebuchet: Fix Settings shortcut widget title displays wrong when changing system language
+   * packages/providers/MediaProvider/
+ecd7d55 MediaProvider: don't delete entries of secondary storage on shutdown
 
    * system/core/
 52c51f9 init: Add a new keywork "log" that logs a message
@@ -747,104 +830,4 @@ c4326d4 Trebuchet: Fix Settings shortcut widget title displays wrong when changi
    * vendor/cm/
 8e9b0ac Remove SPN configurations for Japan
 fd6bfe7 Remove userinit from user builds
-
-====================
-     04-15-2015
-====================
-
-
-   * android/
-bcb796a Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-02ce06c 5.1.0_r3 -> 5.1.0_r5
-
-   * build/
-87805e7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-1e6e335 Merge tag 'android-5.1.0_r5' into HEAD
-
-   * frameworks/av/
-4b1ddb2 AudioTrack: initialize mUseSmallBuf in AudioTrack constructor
-1bdd258 audio: Fix for Sound from handset leaks to speaker
-c5079e3 stagefright: http: Skip invalid bandwidth measurements
-ac84c27 nuplayer: Stop resume profiling after frame render
-72068fe NuPlayer: Process time discontinuity separately for audio & video
-66d0234 nuplayer: Add cached lookup of track duration
-9d18eef nuplayer: Fix statistics profiling with buffering events
-191b1b2 camera2: fix various BpCameraDeviceUser methods to return correct result.
-645501d Use define for drm property keys instead of defining as char pointers
-5c5bd2f Correctly handle unsupported OMX color format
-7921e8d MPEG4Writer: fix mMoovBoxBuffer memory leak
-
-   * frameworks/base/
-69814a1 Revert "SystemUI: start redrawing some navbar icons, add lastapp icon"
-585e025 Update QS navbar tile
-d4917d0 NavBar tile [1/3]
-3c68b2b Add android.net.IpPrefix#contains()
-c66ba82 frameworks: read VOLUME_LINK_NOTIFICATION from proper table
-7d965ca The DUT can't screen shot in guest mode
-f7e5d81 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
-31ddbaf Merge tag 'android-5.1.0_r5' into HEAD
-fb9ffdf aapt: silence density flag warnings
-77953fe Bluetooth: Change disconnected icon to be 40% transparent
-0b482a6 SystemUI: update notification volume slider state when toggling modes
-670a920 Volume: fix: Avoid making bad forceVolumeControlStream call.
-2cef425 SystemUI: fix keyguard charging text not showing
-4e07db4 SystemUI: fix updating keyguard insecure lock icon
-9e613cb ic_sysbar: drawables updated
-dd65fce Revert "third part apps can unlock the phone without password even if the phone has setted the password"
-5e2799e Clean-up state if we have an exception when acquiring provider
-1767d70 Revert "Revert "[ActivityManager] Improve multi-thread access the same provider""
-6a948da Statusbar header: Add vibration to settings button
-687533b SystemUI: Update doze pulse-in option
-99b1911 SystemUI: allow recent tasks to draw behind the status bar
-9a66e8c SystemUI: make online cpu color green for cpu overlay
-4b6db36 systemui: animate clear recents button on exit animation
-
-   * frameworks/support/
-f3fe6a1 CMSupport: Sync MAX_ITEMS constant
-949a989 CmSupport : Live folder empty content
-f54dfdd CmSupport : LiveFolder
-7af46d6 Support : Add cm support library
-
-   * hardware/qcom/display-caf/msm8974/
-5c1f3ab hwcomposer: Kill some logspam
-f486583 hwc: Integerize in the outward direction of rectangle
-ca83f33 hwc: Try MDP composition eventhough skip layer is present
-
-   * hardware/samsung/
-ec04254 libril: Add missing semicolon
-
-   * kernel/samsung/hlte/
-482867e Revert "CHROMIUM: cpufreq: interactive: validate above_hispeed_delay"
-e4d4f4f Revert "CHROMIUM: cpufreq: interactive: free above_hispeed_delay on exit"
-a6db5b1 Build v1.02
-649399d soc: qcom: bam_dmux: Sync SSR with disconnect/reconnect
-
-   * packages/apps/Calendar/
-329d8a6 Calendar: add RTL support
-
-   * packages/apps/Eleven/
-65716f0 Expose colors from array in Eleven player
-
-   * packages/apps/Exchange/
-98f7ac8 exchange: fix typo in switch case flow
-94dcbef Display model name on exchange server and exclude illegal characters
-
-   * packages/apps/Settings/
-2922c09 NavBar tile [3/3]
-9c294e9 Build V9.8
-
-   * packages/apps/Trebuchet/
-62b90e1 Trebuchet: Fix NPE when adding widgets
-
-   * packages/services/Mms/
-020210e Merge tag 'android-5.1.0_r5' into HEAD
-
-   * packages/services/Telecomm/
-2f70b20 Merge tag 'android-5.1.0_r5' into HEAD
-
-   * vendor/cm/
-8bb2cc5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/samsung/
-0401727 Merge pull request #607 from jrior001/cm-12.1
 
