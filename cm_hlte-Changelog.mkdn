@@ -1,4 +1,188 @@
 ====================
+     05-02-2015
+====================
+
+
+   * android/
+4301fe0 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+3770f5a Update CREDITS and add chromium pre-built info
+a73b6f8 Add cm platform sdk repo to manifest.
+
+   * device/samsung/hlte-common/
+a326195 Revert "hlte-common: Enable Anbient Display"
+77264e3 hlte-common: Enable Anbient Display
+ca3dad0 hlte-common: patch mixer_paths.xml for Low Latency to get properly disabled
+5ad4877 hlte-common: tweak some Bluetooth settings
+
+   * external/tinycompress/
+dcc9b99 tinycompress: Fix build on msm899x
+
+   * external/whispersystems/WhisperPush/
+519b113 Automatic translation import
+
+   * frameworks/base/
+5f7dbd2 Remove TRDS drawables - not in use for now
+6737088 (1/2) Base: instant reboot action trigger
+51e499f Look at map extensions before /dev/ + ashmem.
+177abf9 SystemUI: small optimization for notification icon numbers
+855e1b1 Updating TRDS Colors to go Dark Material. - We have permission from @nicolaschum to use these values
+5da475a Dark Material themed Advanced Power Menu
+4d9e9e9 Revert "MMS (change 1 of 2): Add DATA_PROFILE_MMS constant = 5 to RILConstants."
+d867d14 Overhaul of the RenderScript reference documentation.
+b2ce28b iBotPeaches aapt changes for lollipop
+0d9cd4b Add missing line to update NavBar upon theme change.
+3b3744a Add back TRDS Tile now 1/2
+c7c5ba2 Add missing/needed lines for TRDS
+
+   * frameworks/native/
+3f8c213 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * frameworks/opt/telephony/
+6515f82 ril: Fix Tombstone on Rild
+
+   * kernel/asus/grouper/
+307aebf Set SELinux to permissive "permanently"
+
+   * kernel/samsung/hlte/
+7c5a7b4 Build v1.07
+5bb12a9 Set SELinux to permissive "permanently"
+3cb9962 net: llc: use correct size for sysctl timeout entries
+e69d196 nf: IDLETIMER: Adds the uid field in the msg
+6a1e3c2 bluesleep: adjust TX_TIMER_INTERVAL to 3
+
+   * packages/apps/AudioFX/
+b2e8ba3 Automatic translation import
+
+   * packages/apps/Bluetooth/
+482f16f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+55b636c Automatic translation import
+
+   * packages/apps/BluetoothExt/
+499ae4e Automatic translation import
+
+   * packages/apps/CMBugReport/
+212a272 Automatic translation import
+
+   * packages/apps/CMFileManager/
+4a6769c Automatic translation import
+
+   * packages/apps/CMWallpapers/
+40367a7 Automatic translation import
+
+   * packages/apps/Calculator/
+df90b7b Automatic translation import
+
+   * packages/apps/Calendar/
+113041a Automatic translation import
+
+   * packages/apps/Camera2/
+6403559 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+0bcdeed Automatic translation import
+
+   * packages/apps/Contacts/
+f1268bb Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+9032693 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+a942c97 Automatic translation import
+
+   * packages/apps/DeskClock/
+be06b1a Automatic translation import
+
+   * packages/apps/Dialer/
+f284146 Automatic translation import
+
+   * packages/apps/Eleven/
+a02bc80 Automatic translation import
+
+   * packages/apps/Email/
+8ca2f36 Automatic translation import
+0f4610b email: fix Account table creation
+
+   * packages/apps/Gallery2/
+e8e6a11 Automatic translation import
+
+   * packages/apps/InCallUI/
+302c3d4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+c3362b5 Automatic translation import
+
+   * packages/apps/LockClock/
+fafa209 Automatic translation import
+
+   * packages/apps/Mms/
+30c5544 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+183af12 Automatic translation import
+7177662 MMS: Add support for TRDS, Color from nicholaschum Dark Material
+
+   * packages/apps/PhoneCommon/
+c703c7c Automatic translation import
+
+   * packages/apps/Settings/
+b0c41fc [WIP] Build V11
+aa09077 Fix QS on secure lock screen
+a33bea7 (2/2) Settings: instant reboot action trigger
+dcec2b4 Settings: disable mobile network switch when SIM isn't ready
+ef2b9fa Add back TRDS Tile 2/2
+fd28e07 Build V10.9 - Now using GCC 5.1
+
+   * packages/apps/SoundRecorder/
+6157560 Automatic translation import
+
+   * packages/apps/Stk/
+656cd27 Automatic translation import
+
+   * packages/apps/Terminal/
+aa252f1 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+6951d60 Automatic translation import
+
+   * packages/apps/Trebuchet/
+bf48aeb Automatic translation import
+
+   * packages/apps/TvSettings/
+43008a4 Developer Settings: Only show ADB Over network when debugging is enabled
+
+   * packages/apps/UnifiedEmail/
+3cdd22d Automatic translation import
+
+   * packages/providers/DownloadProvider/
+858a005 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+5c81d89 Automatic translation import
+
+   * packages/services/Mms/
+c02c415 Automatic translation import
+
+   * packages/services/Telecomm/
+7b79c37 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+ccf6031 Automatic translation import
+
+   * packages/services/Telephony/
+bd5a49e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+a6e104d Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+2da4de9 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+10e4dbe Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+6caa429 Automatic translation import
+
+   * vendor/cm/
+d1b9f79 Rename backup script
+a83226b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+8688a95 vendor: cm: yet more updates to contributors
+
+   * vendor/cmsdk/
+9a3035b CMSDK: Add a sample showing custom tile toggle.
+
+====================
      05-01-2015
 ====================
 
@@ -58,9 +242,7 @@ b0e9db7 WindowManager: Disable rotation for BootAnimation screen
    * frameworks/native/
 51672b6 Avoid closing invalid FD in Surface and GraphicBufferMapper
 9f792ab Switch dumpstate to "ip link list".
-
-   * frameworks/opt/telephony/
-146d208 ril: Fix Tombstone on Rild
+85b4043 binder: Add readuInt64() symbol for LG RIL compatibility
 
    * packages/apps/Bluetooth/
 0b6ef87 Enable -Os back to Bluetooth jni
@@ -69,7 +251,6 @@ b0e9db7 WindowManager: Disable rotation for BootAnimation screen
 4bca6fa Pop-up "couldn't save contact changes" while switch ap during change the contact photo.
 
    * packages/apps/Settings/
-fd28e07 Build V10.9 - Now using GCC 5.1
 6851b78 Fix NPE in slim shortcut if no icon was found
 95a4d3a CryptKeeper: pattern unlock displays incorrect pw when correct
 b03c5f0 Open app when clicking on icon in App Info screen
@@ -80,6 +261,9 @@ a169da9 Lets use Dark Material colors - TRDS will switch to use these colors. - 
 
    * packages/apps/Trebuchet/
 9887c0b AppDrawer: Calculate numColumns by using available screen space
+
+   * packages/apps/TvSettings/
+bd65ad8 Developer Settings: Enable Local Terminal (2/2)
 
    * prebuilts/gcc/linux-x86/arm/arm-eabi-5.1/
 b38d924 Merge android-toolchain-eabi-5.1.0-x86.tar #3
@@ -94,6 +278,13 @@ eab7fa2 Add symlink for GCC 5.1
 fde032f logd: enable -Os and GNU C89 back
 9062362 libcutils: fix compilation errors
 87d7d67 Add a pre-C++11 constexpr compatibility macro.
+
+   * vendor/cmsdk/
+1832e1f CMSDK: Update permission for tests.
+e54a96d CMSDK: Update implementation for permission declarations.
+fa69d26 CMSDK: Update README
+35a6d6c CMSDK: Update javadocs for onClick vs onClickUri.
+a7d6fc5 CMSDK: Refactor compile, prepare for integration tests.
 
    * vendor/samsung/
 e6ce638 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
@@ -134,7 +325,6 @@ ebd25b8 [1/2] Battery light: 100% charged level
 a612e84 [1/2] Base: Hide power menu on lockscreen
 
    * frameworks/opt/telephony/
-68af8d3 MMS (change 2 of 2): Update apnProfileID for MMS only apn.
 85a86eb telephony: kill IccSmsInterfaceManager log spam
 b493639 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 
@@ -167,6 +357,7 @@ c35ad89 Allow restricted profiles on phones
 20efecd [2/2] Battery light: 100% charged level
 3d56649 Settings: Do not allow to access quick settings on secure lockscreen [2/2]
 cd0a7f2 Settings: Hide power menu on lockscreen [2/2]
+b792288 Fix breathing sms/misscall/voicemail + add mobile check
 
    * packages/apps/TvSettings/
 cd739aa TvSettings: Create HomeActivity
@@ -187,6 +378,11 @@ c3c5585 msim: Fix FC on opening "calling accounts" in Dialer settings
    * vendor/cm/
 fbcfba3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 b2c60c1 Bump CyanogenMod version in CONTRIBUTORS.mkdn
+
+   * vendor/cmsdk/
+104a15a CMSDK: Introduce preliminary automatable tests.
+346b758 CMSDK: Allow for a settings intent to be set by 3rd party.
+aa558ad CMSDK: Create means of removing tiles via listener interface.
 
    * vendor/samsung/
 9302518 Merge pull request #612 from nardholio/cm-12.1
@@ -233,7 +429,6 @@ b8c7b49 Date.toString must always use Locale.US.
 b8672b7 Add back no wallpaper option
 
    * packages/apps/Settings/
-b792288 Fix breathing sms/misscall/voicemail + add mobile check
 e1d2090 [Temporary] Update misc icons for TRDS
 89bf41d Remove duplicate lockscreen shortcuts option
 7bc092b SlimPIE: Configurable sensitivity [2/2]
@@ -343,101 +538,4 @@ bd71355 Update Smartfren APN protocol to IPV4V6
 7e8ee16 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 70d7e18 Kill spn-conf overrides
 9aedb13 Update temasek bootanimation for 800
-
-====================
-     04-27-2015
-====================
-
-
-   * android/
-66417eb Track own Telecomm
-
-   * device/asus/grouper/
-ff9b726 Enable temasek unofficial build tag
-
-   * device/asus/tilapia/
-488030b Enable temasek unofficial build tag
-
-   * device/samsung/qcom-common/
-e8b4b93 qcom-common: Remove obsolete system properties
-
-   * frameworks/av/
-4b10c09 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-22d88f5 Document hprof-conv -z
-7f348cf Fixing conference merge where only one party is added to conference.
-ebf3a91 Bluetooth: Fix for crash in multi advertiser
-03a2143 Apply @hide / @SystemApi to android.telecom.*
-adced6a IMS-VT: Add additional error codes for upgrade downgrade
-972bebc ConnectivityService: Updating init_rwnd based on RAT class
-dd2090c Update Signal Strength on sim state change.
-b656689 [1/4] Base: Breathing missedcall/sms/voicemail
-3d433b1 NetworkPolicyManagerService: Handling IllegalArgumentException
-a796684 IMS: Allow add participant with normal IMS call.
-9d17974 IMS Connection Capabilities Update
-c93b8eb IMSVT: Fix data usage value.
-16b57fd Fix system server crash
-993ada7 Bootanimation crashes if Audio is not ready
-3b8d844 Fix heads up tile
-9a114ff Add Headsup tile [1/2]
-b0c17c9 Revert "QS: Add heads up tile (1/2)"
-e585ad3 SystemUI: Reset status bar clock color before hiding
-8fc474a Add lastapp/killapp/screenshots to actions
-
-   * frameworks/opt/net/wifi/
-138f479 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
-
-   * frameworks/opt/telephony/
-4a614e3 Add Null Pointer check for PhoneBook query results.
-dbb4f0d Fix DDS switch issue from GSM to CDMA.
-d840482 Fix ACTION_DEFAULT_SUBSCRIPTION_CHANGED is not sent after power on
-66c747a Add support for Local Phonebook.
-1826dae IMS: Propagating MMI error string to UI
-2c99a86 Fix Dds switch issue
-fb2c7a9 Fix for wifi issue on multisim
-
-   * kernel/asus/grouper/
-5d52401 arm: fix Makefile for armv7 compatibility
-cd3e6c4 ARM: 7670/1: fix the memset fix Commit 455bd4c430b0 ("ARM: 7668/1: fix memset-related crashes caused by recent GCC (4.7.2) optimizations") attempted to fix a compliance issue with the memset return value. However the memset itself became broken by that patch for misaligned pointers.
-c5e6b0b Additional memset fix for gcc 4.8
-a4c5e7b Add -fno-pic flag
-f0ca2d8 kernel: use the gnu89 standard explicitly Sasha Levin reports:  "gcc5 changes the default standard to c11, which makes kernel build   unhappy
-695f1b2 kernel: add support for gcc 5
-af31629 Update flags
-0363fa2 Fix Linaro toolchain warnings
-
-   * packages/apps/Mms/
-5746837 [2/4] Mms: Breathing missedcall/sms/voicemail
-
-   * packages/apps/Profiles/
-8fa5062 StartUpReceiver: handle case when there were no trust agents
-
-   * packages/apps/Settings/
-fd84506 Settings: Update sync widget state
-8d13dc1 [3/4] OmniGears: Breathing missedcall/sms/voicemail
-56fe7a5 Build V10.6
-cc5b26e Revert "Settings: use correct default value for backlight brightness"
-1cb05c5 Add Headsup tile [2/2]
-8c09ac8 Revert "QS: Add heads up tile (2/2)"
-faaa05e Settings: enable reset option to status bar clock color
-034d8f9 Settings: Slim Actions to Shortcuts
-
-   * packages/apps/TvSettings/
-eaffa73 About: Change the intent to call CMUpdater with Leanback theme (2/2)
-57b15c9 Ues more descriptive strings for add accessory page
-bb15ca7 Add preference for enabling root access
-
-   * packages/services/Telecomm/
-942922f getPhoneAccount: don't log if param is null
-34b3ed8 [4/4] Telecomm: Breathing missedcall/sms/voicemail
-
-   * packages/services/Telephony/
-cb9f7f9 [4/4] Telephony: Breathing missedcall/sms/voicemail
-
-   * system/extras/
-972c9f1 ext4_utils: Fix bad merge of EMMC wipe suppression
-
-   * vendor/samsung/
-34ad4da Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
