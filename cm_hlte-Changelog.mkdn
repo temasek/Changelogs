@@ -1,4 +1,200 @@
 ====================
+     05-05-2015
+====================
+
+
+   * android/
+6c87c24 Track own Nfc
+
+   * device/samsung/hlte-common/
+a1f5ac1 hlte-common: limit boot speed to 2.27ghz
+
+   * device/samsung/qcom-common/
+8eae4ce qcom-common: use download mode in recovery
+
+   * external/f2fs-tools/
+ddc11c8 f2fs-tools: release 1.4.1
+e8cd72e f2fstat: fix option parsing
+c89616b fsck.f2fs: remove corrupted data indices in direct node blocks
+e8d7d00 mkfs.f2fs: avoid memory leak in mkfs
+07749a0 fsck.f2fs: support large sector size
+eb059e3 mkfs.f2fs: support large sector size
+f4a9278 f2fs: fix build for android
+d4b6768 fsck.f2fs: readahead node blocks to speed up
+91932c2 dump.f2fs: show checkpoint flag
+f32207b fsck.f2fs: fix sit types seamlessly
+160334f fibmap.f2fs: fix the wrong stat info
+d32c7d3 configure: add check for bswap_64
+fac41f5 configure: also check for byteswap.h
+34a4b7d parse.f2fs: add a tool to parse IO traces made by runtime f2fs
+acd2acd dump.f2fs: dump owner of data given block address
+489c37a fsck.f2fs: no need to fix SIT type for COLD_DATA
+cd5e99e mkfs.f2fs: introduce some macros to simplify coding style
+71c054f fsck.f2fs: remove unused value
+c9e11a4 mkfs.f2fs: fix missing endian conversion
+5dd4341 mkfs: use compact mode for data summaries
+5f3ed28 fsck.f2fs: add a missing 'fixed' during chk_dentries()
+28b9021 fsck.f2fs: avoid false alarm on SIT type fix
+3e6cab0 fsck.f2fs: remove unneeded return
+3d9fb31 fsck.f2fs: show orphan inodes when fixing partition
+b0f718d mkfs.f2fs: reclaim free space in case of regular file
+0ba63f1 mkfs.f2fs: give a kernel version for initial format
+832a96e fsck.f2fs: trigger fsck.f2fs when new change was made
+24b9f15 fsck.f2fs: fix SIT entry types
+
+   * frameworks/base/
+71f289f NFC Polling Mode (3/3)
+b4cf7a7 Add missing boolean for gesture
+
+   * packages/apps/CMFileManager/
+018e6c6 CMFM : Group m4v under video/mp4
+
+   * packages/apps/Gallery2/
+073d949 Gallery2: Fix RTL album picking
+
+   * packages/apps/Nfc/
+cd10212 NFC polling mode (1/3)
+
+   * packages/apps/Settings/
+9f61d6d Build V11.1
+24f4360 NFC Polling Mode (2/3)
+
+   * packages/inputmethods/LatinIME/
+4a1aabb Revert "LatinIME: correctly handle jni fallbacks"
+
+   * vendor/cm/
+6824c3c chromium_prebuilt for 64bit
+e816006 Revert "Add latinime lib needed for Keyboard swyping"
+
+   * vendor/cmsdk/
+8206b13 CMSDK: Don't cancel pendingintent, update instead.
+
+====================
+     05-04-2015
+====================
+
+
+   * frameworks/av/
+cab6166 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+dd2e326 stagefright: httplive: Bring in line with upstream
+
+   * frameworks/base/
+d89f57b Frameworks: Gesture Lockscreen (1/2)
+50a11dd Revert "Statusbar header: Add vibration to settings button"
+d0c3db5 libandroidfw: Fatal exception of dlfree often causes the system crashed
+bafb61e MediaSessionService: Error checks for UserRecord object
+b05d5e1 AudioManager: update references to application context
+6095390 Sometimes the application context is null
+d46605b Revert "Sometimes the application context is null"
+98deea1 Revert "AudioManager: update references to application context"
+d535b7d framework:Thread synchronization for UI update
+8996a48 Revert "Fix fetching application context for ThemedUiContext."
+056e067 Fix NPE in JobServiceContext when closing job.
+a0d28e0 Fix showing heads up if IME is showing
+c02a035 ambient display: Fix volume key music control
+a6c7dea Properly describe exception
+f4e74c8 Revert "SystemUI: small optimization for notification icon numbers"
+d73c299 Automatic translation import
+febdb30 SystemUI: Disable QS by default on secure lock screen (1/2)
+337eed1 Partial revert "Dark Material themed Advanced Power Menu"
+
+   * frameworks/native/
+00ed02e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+e2aeea5 sensorservice: Don't replace HAL orientation sensor
+
+   * kernel/asus/grouper/
+e215e71 ipv4: Missing sk_nulls_node_init() in ping_unhash().
+
+   * kernel/samsung/hlte/
+0a18b4e ipv4: Missing sk_nulls_node_init() in ping_unhash().
+
+   * packages/apps/Settings/
+8fea9e7 Settings: Gesture Lockscreen (2/2) Lets give this a go again.
+18f7b1a Settings: fix bad MTP uncheck behavior
+
+   * packages/apps/TvSettings/
+4e2e4cf TvSettings: About: Fix advanced reboot selection
+102a41d TvSettings: Create Display category and add overscan option
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.1/
+f990446 Use bfd linker for arm-eabi
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1/
+f990446 Use bfd linker for arm-eabi
+
+   * system/core/
+27cd801 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+985287b Rename libext2_uuid -> libext2_uuid_static lib
+a7984d9 findParam: don't check empty param name
+
+   * vendor/asus/
+c31b486 deb: Use libacdbdata.so from L preview
+
+====================
+     05-03-2015
+====================
+
+
+   * device/samsung/hlte-common/
+a326195 Revert "hlte-common: Enable Anbient Display"
+
+   * frameworks/av/
+2dd1153 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+e48b311 Revert "nuplayer: do not use cached source for wvm content -- DO NOT MERGE"
+
+   * frameworks/base/
+1c8f836 Remove TRDS drawables - not in use for now
+3f39e37 (1/2) Base: instant reboot action trigger
+
+   * frameworks/opt/telephony/
+499c35d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+44e3b07 RIL: Make some methods protected
+
+   * hardware/samsung/
+8ede9fa libril: Fix signal strength for xmm6260 too
+
+   * packages/apps/Bluetooth/
+482f16f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Contacts/
+f1268bb Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/Dialer/
+f284146 Automatic translation import
+
+   * packages/apps/InCallUI/
+302c3d4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+30c5544 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+dcc78fb Settings: Disable QS by default on secure lock screen (2/2)
+9a06adb Automatic translation import
+3e9a1b4 Settings: fix non lock pattern CryptKeeper crash
+e938288 Build V11
+aa09077 Fix QS on secure lock screen
+a33bea7 (2/2) Settings: instant reboot action trigger
+
+   * packages/apps/Stk/
+656cd27 Automatic translation import
+
+   * packages/apps/TvSettings/
+2914b48 About: Add advanced reboot options (2/2)
+8e8c883 Developer Settings: Add Advanced reboot (1/2)
+
+   * packages/services/Telecomm/
+7b79c37 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+bd5a49e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/samsung/
+ac6fe4d Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+88fffde Merge pull request #613 from slayher/cm-12.1
+cffa4d4 trlte: update camera HAL
+
+====================
      05-02-2015
 ====================
 
@@ -8,8 +204,10 @@
 3770f5a Update CREDITS and add chromium pre-built info
 a73b6f8 Add cm platform sdk repo to manifest.
 
+   * build/
+b9b9c03 Generate extra userdata partition if needed
+
    * device/samsung/hlte-common/
-a326195 Revert "hlte-common: Enable Anbient Display"
 77264e3 hlte-common: Enable Anbient Display
 ca3dad0 hlte-common: patch mixer_paths.xml for Low Latency to get properly disabled
 5ad4877 hlte-common: tweak some Bluetooth settings
@@ -20,10 +218,10 @@ dcc9b99 tinycompress: Fix build on msm899x
    * external/whispersystems/WhisperPush/
 519b113 Automatic translation import
 
+   * frameworks/av/
+173f546 Don't use the bitrate of the xing header
+
    * frameworks/base/
-5f7dbd2 Remove TRDS drawables - not in use for now
-6737088 (1/2) Base: instant reboot action trigger
-51e499f Look at map extensions before /dev/ + ashmem.
 177abf9 SystemUI: small optimization for notification icon numbers
 855e1b1 Updating TRDS Colors to go Dark Material. - We have permission from @nicolaschum to use these values
 5da475a Dark Material themed Advanced Power Menu
@@ -33,9 +231,12 @@ b2ce28b iBotPeaches aapt changes for lollipop
 0d9cd4b Add missing line to update NavBar upon theme change.
 3b3744a Add back TRDS Tile now 1/2
 c7c5ba2 Add missing/needed lines for TRDS
+aa82846 Adjust display inversion matrix to account for luminance
 
    * frameworks/native/
 3f8c213 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+51672b6 Avoid closing invalid FD in Surface and GraphicBufferMapper
+9f792ab Switch dumpstate to "ip link list".
 
    * frameworks/opt/telephony/
 6515f82 ril: Fix Tombstone on Rild
@@ -54,7 +255,6 @@ e69d196 nf: IDLETIMER: Adds the uid field in the msg
 b2e8ba3 Automatic translation import
 
    * packages/apps/Bluetooth/
-482f16f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
 55b636c Automatic translation import
 
    * packages/apps/BluetoothExt/
@@ -82,17 +282,14 @@ df90b7b Automatic translation import
 0bcdeed Automatic translation import
 
    * packages/apps/Contacts/
-f1268bb Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
 9032693 Automatic translation import
+4bca6fa Pop-up "couldn't save contact changes" while switch ap during change the contact photo.
 
    * packages/apps/ContactsCommon/
 a942c97 Automatic translation import
 
    * packages/apps/DeskClock/
 be06b1a Automatic translation import
-
-   * packages/apps/Dialer/
-f284146 Automatic translation import
 
    * packages/apps/Eleven/
 a02bc80 Automatic translation import
@@ -105,14 +302,12 @@ a02bc80 Automatic translation import
 e8e6a11 Automatic translation import
 
    * packages/apps/InCallUI/
-302c3d4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
 c3362b5 Automatic translation import
 
    * packages/apps/LockClock/
 fafa209 Automatic translation import
 
    * packages/apps/Mms/
-30c5544 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 183af12 Automatic translation import
 7177662 MMS: Add support for TRDS, Color from nicholaschum Dark Material
 
@@ -120,18 +315,12 @@ fafa209 Automatic translation import
 c703c7c Automatic translation import
 
    * packages/apps/Settings/
-b0c41fc [WIP] Build V11
-aa09077 Fix QS on secure lock screen
-a33bea7 (2/2) Settings: instant reboot action trigger
 dcec2b4 Settings: disable mobile network switch when SIM isn't ready
 ef2b9fa Add back TRDS Tile 2/2
 fd28e07 Build V10.9 - Now using GCC 5.1
 
    * packages/apps/SoundRecorder/
 6157560 Automatic translation import
-
-   * packages/apps/Stk/
-656cd27 Automatic translation import
 
    * packages/apps/Terminal/
 aa252f1 Automatic translation import
@@ -158,11 +347,9 @@ bf48aeb Automatic translation import
 c02c415 Automatic translation import
 
    * packages/services/Telecomm/
-7b79c37 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
 ccf6031 Automatic translation import
 
    * packages/services/Telephony/
-bd5a49e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 a6e104d Automatic translation import
 
    * packages/wallpapers/Galaxy4/
@@ -181,6 +368,7 @@ a83226b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
 
    * vendor/cmsdk/
 9a3035b CMSDK: Add a sample showing custom tile toggle.
+1832e1f CMSDK: Update permission for tests.
 
 ====================
      05-01-2015
@@ -200,7 +388,6 @@ b8cb0eb Remove "Kernel build" instructions
 46f6097 updater: workaround segfault with GCC 5.1
 
    * build/
-b9b9c03 Generate extra userdata partition if needed
 108bc0b Fix "arter97 optimizations"
 568d152 Use GCC 5.1
 
@@ -211,7 +398,6 @@ b9b9c03 Generate extra userdata partition if needed
 3f9eb63 Fix build with gcc 5.1
 
    * frameworks/av/
-173f546 Don't use the bitrate of the xing header
 16d6486 Fix potential double close in IMediaMetadataRetriever::setDataSource
 dfc74e9 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 bb45953 C++11 compatibility.
@@ -224,7 +410,6 @@ fbe18e6 audiopolicy: fix crash in camcorder during voice call
 f519217 audio policy: validate stream type received from binder calls.
 
    * frameworks/base/
-aa82846 Adjust display inversion matrix to account for luminance
 18cf93e Fix no vibration during shutdown.
 db08088 Fix GPS for old GPS HALs
 490e6ac  WindowManager: remove freezing window to fix UI freezing issue
@@ -238,23 +423,20 @@ b0e9db7 WindowManager: Disable rotation for BootAnimation screen
 0b4285c audio: Playback over USB DAC connected before boot
 9b29795 SystemUI: bluetooth tile: fix disconnect action
 2b6fa98 optimize wallpaper load,avoid show black wallpaper.
+94cdce8 Themes: include new icon features in shouldComposeIcon()
 
    * frameworks/native/
-51672b6 Avoid closing invalid FD in Surface and GraphicBufferMapper
-9f792ab Switch dumpstate to "ip link list".
 85b4043 binder: Add readuInt64() symbol for LG RIL compatibility
 
    * packages/apps/Bluetooth/
 0b6ef87 Enable -Os back to Bluetooth jni
-
-   * packages/apps/Contacts/
-4bca6fa Pop-up "couldn't save contact changes" while switch ap during change the contact photo.
 
    * packages/apps/Settings/
 6851b78 Fix NPE in slim shortcut if no icon was found
 95a4d3a CryptKeeper: pattern unlock displays incorrect pw when correct
 b03c5f0 Open app when clicking on icon in App Info screen
 a169da9 Lets use Dark Material colors - TRDS will switch to use these colors. - We have permission from @nicholaschum to use these colors for our TRDS. - Add more white icons and remove the ones that we do not use.
+6e1a2aa Build V10.8
 
    * packages/apps/SoundRecorder/
 51ccfff SoundRecord: when responding to GET_CONTENT, assume exit after record
@@ -280,7 +462,6 @@ fde032f logd: enable -Os and GNU C89 back
 87d7d67 Add a pre-C++11 constexpr compatibility macro.
 
    * vendor/cmsdk/
-1832e1f CMSDK: Update permission for tests.
 e54a96d CMSDK: Update implementation for permission declarations.
 fa69d26 CMSDK: Update README
 35a6d6c CMSDK: Update javadocs for onClick vs onClickUri.
@@ -288,254 +469,4 @@ a7d6fc5 CMSDK: Refactor compile, prepare for integration tests.
 
    * vendor/samsung/
 e6ce638 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     04-30-2015
-====================
-
-
-   * bionic/
-1bd09a9 Update to tzdata 2015d
-93ee71a Update to tzdata 2015c
-
-   * device/samsung/hlte-common/
-48c017a Hlte: Set call recording source to voice line
-
-   * frameworks/av/
-e578700 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-bd4881c stagefright: Configure codecs correctly in the mediatek platform
-
-   * frameworks/base/
-94cdce8 Themes: include new icon features in shouldComposeIcon()
-3638f3a slimseekbarpreference: set monitorbox text as string
-b1dd8d8 Clean up keyguard carrier text handling.
-802e745 MMS (change 1 of 2): Add DATA_PROFILE_MMS constant = 5 to RILConstants.
-972d450 Fix ro.telephony.default_network setting parsing
-e4a30ee Context leaks in EditText causes out of memory
-cd99145 Base: Add a controller for in-call proximity sensor (1/3)
-b5e55fb Base: revert some custom doze options (1/2)
-5b4caeb Doze: make brightness level and auto brightness configurable (1/2)
-5174c8d Base: enable/disable doze through Profiles (1/2)
-a185091 Revert "doze: Do not bother checking proximity for the DOZE_ACTION intent"
-910c4c6 Frameworks: Add ability to control default value of DOZE_ENABLED
-f4b16a5 SystemUI: Fix PIE control not sticking on reboot
-d8d394a Fix fetching application context for ThemedUiContext.
-ebd25b8 [1/2] Battery light: 100% charged level
-5cf7fc3 Base: Do not allow to access quick settings on secure lockscreen [1/2]
-a612e84 [1/2] Base: Hide power menu on lockscreen
-
-   * frameworks/opt/telephony/
-85a86eb telephony: kill IccSmsInterfaceManager log spam
-b493639 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * hardware/qcom/media-caf/msm8994/
-9ab0526 vidc: add dependency on kernel headers
-
-   * packages/apps/CMFileManager/
-bd68f57 [CMFileManager]Fix click two times when check the 'Skip media scan' in Secure storage
-
-   * packages/apps/Calculator/
-d3c9ae2 Calculator: allow for negative numbers after operation characters
-
-   * packages/apps/Email/
-a348e9a email: custom notification lights
-
-   * packages/apps/InCallUI/
-2733209 Don't hide end call button until call is disconnected
-7b24b0a InCallUI: Add a controller for in-call proximity sensor (2/3)
-
-   * packages/apps/Settings/
-6e1a2aa Build V10.8
-61926f0 Settings: revert some custom doze options (2/2)
-e41f36e Doze: make brightness level and auto brightness configurable (2/2)
-22a5843 Settings: enable/disable doze through Profiles (2/2)
-96f740e Display settings: remove ambient display screen when advanced mode is disabled
-e0050fc Display settings: show enabled/disabled summary for ambient display Change-Id: I97aee7aafd69f3e60d2c518aa514a7cd1dff9ecf
-dcbbf0b Update PIE Control
-344ceac Re-enable CPU governor & min/max freq settings
-c35ad89 Allow restricted profiles on phones
-20efecd [2/2] Battery light: 100% charged level
-3d56649 Settings: Do not allow to access quick settings on secure lockscreen [2/2]
-cd0a7f2 Settings: Hide power menu on lockscreen [2/2]
-b792288 Fix breathing sms/misscall/voicemail + add mobile check
-
-   * packages/apps/TvSettings/
-cd739aa TvSettings: Create HomeActivity
-b428879 Developer Settings: ADB over network
-
-   * packages/apps/UnifiedEmail/
-97762e5 unified-email: custom notification lights
-
-   * packages/inputmethods/LatinIME/
-75f306c Added smiles without noise to AOSP keyboard
-
-   * packages/services/Telephony/
-340882a TeleService: pass phone ID to APN setting
-53f91d3 TeleService: Add a controller for in-call proximity sensor (3/3)
-260b6b0 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-c3c5585 msim: Fix FC on opening "calling accounts" in Dialer settings
-
-   * vendor/cm/
-fbcfba3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-b2c60c1 Bump CyanogenMod version in CONTRIBUTORS.mkdn
-
-   * vendor/cmsdk/
-104a15a CMSDK: Introduce preliminary automatable tests.
-346b758 CMSDK: Allow for a settings intent to be set by 3rd party.
-aa558ad CMSDK: Create means of removing tiles via listener interface.
-
-   * vendor/samsung/
-9302518 Merge pull request #612 from nardholio/cm-12.1
-0be23a8 Revert "d2gsm: Use rilblobs from AT&T NJ1 release"
-3cb0662 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     04-29-2015
-====================
-
-
-   * device/samsung/hlte-common/
-e658f74 hlte-common: Kill notify_on_migrate
-cfbae38 Use generic wpa_supplicant.conf
-f75366e Fix SEC permission
-
-   * frameworks/av/
-952d2e2 Ensure there is no two same storages showing on the computer.
-9c0b2b7 The preview frame data is broken when sending via Binder
-fb629ad Ensure there is no two same storages showing on the computer.
-
-   * frameworks/base/
-0799cb2 Fix for infinite loop in RemoteViewsAdapter
-0e0c766 Fix NPE in Bundle#hasFileDescriptor on null-valued SparseArray
-955bf2e Fix NullPointerException in Bundle#hasFileDescriptors
-b2d5557 Torch: remind user flashlight is still on
-6b8923a Unset frame listener before tearing down GLThreadManager.
-449e70a Apply sounds on theme update
-8ff59d7 SlimPIE: Configurable sensitivity [1/2]
-e81ec83 Frameworks: SlimPie give user ability to reduce trigger heights if IME keyboard shows (1/2)
-42e1845 Update trds colors
-54cfd62 fb: TRDS 5.0 (1/4)
-
-   * kernel/samsung/hlte/
-a7fcd31 bluesleep: Reduce bluesleep wakelock timeout
-5fc3c16 bluesleep: add parenthesis to TX_TIMER_INTERVAL * HZ
-
-   * libcore/
-712b56d Remove unnecessary code from InputStreamReader/OutputStreamWriter.init.
-97e640f java/io/RandomAccessFile: do not nullify FileChannel when closing the RAF
-b8c7b49 Date.toString must always use Locale.US.
-
-   * packages/apps/CMWallpapers/
-b8672b7 Add back no wallpaper option
-
-   * packages/apps/Settings/
-e1d2090 [Temporary] Update misc icons for TRDS
-89bf41d Remove duplicate lockscreen shortcuts option
-7bc092b SlimPIE: Configurable sensitivity [2/2]
-e366287 Settings: SlimPie give user ability to reduce trigger heights if IME keyboard shows (2/2)
-0d6b937 Settings: TRDS 5.0 (4/4)
-
-   * packages/apps/Trebuchet/
-f6eb35b Trebuchet: limit folder size to numRowsBase and numColumnsBase
-
-   * packages/apps/TvSettings/
-fa2e190 Developer Settings: Add warning to request root access
-ab29d3f Developer Settings: Add setting for updating recovery
-bc22a11 Accessories: Change max lines to 3 for bluetooth description
-
-   * packages/services/Telephony/
-d59b892 TeleService: Remove HomeAsUp arrow for nested pref screens
-
-   * vendor/samsung/
-d33393e Merge pull request #611 from nardholio/cm-12.1
-446757d d2-common: update camera firmware
-ea5f4ee d2gsm: Use rilblobs from AT&T NJ1 release
-
-====================
-     04-28-2015
-====================
-
-
-   * android/
-a3540a7 Track own development
-9022318 Track own Contacts
-
-   * development/
-5ae8f00 development: TRDS 5.0 (3/4)
-
-   * device/asus/grouper/
-053f79c grouper: Enable OTA update
-aaf30e1 grouper: Remove duplicate and clean up
-
-   * device/asus/tilapia/
-fe8de67 tilapia: Enable OTA update
-
-   * frameworks/av/
-25bf2ef Signal EOS at end of mpeg video to flush out final sample
-4ef1c0b Fix new[] vs delete mismatch.
-
-   * frameworks/base/
-07c8211 Trim task thumbnail within MAX_RECENT_BITMAPS.
-2a667f6 Reduce sscanf times for optimization
-3a2d6c3 Widi disconnection should be done when powering off
-5883af3 wifi: grab MulticastLock when starting mDNS daemon
-3b1c1db fix race condition.
-776e5b6 Themes: Translate before rotating composed icons
-19c49e9 TorchService: improve state management
-2c94196 Re-add dump() method to TorchService.
-d55993c frameworks: add ongoing notification while collecting bug report
-4905002 GlobalActions: add zen mode buttons
-4b7e04d Themes: Add randomization to composed icon rotation
-76a12aa Themes: Pass ComposedIconInfo into createIconBitmap
-9faf63c SysUI: Add lockscreen visualizer for MSIM devices
-fab2bf1 Disable the plus sign conversion in non-NANP system
-79abd91 IMS: Initialize audio quality with NONE instead of AMR_WB.
-
-   * frameworks/native/
-17ca68f native: TRDS 5.0 (2/4)
-
-   * frameworks/opt/telephony/
-b9bf02b Telephony: add CDMA SPN display rule
-25de1ea Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-d61a188 CdmaLteServiceStateTracker: allow forcing reading eri from xml
-
-   * hardware/samsung/
-dd9ce7d libfimg3x: Remove android_pmem.h include
-
-   * packages/apps/Contacts/
-60aa9b5 Contacts: Allow to export vcards to the secondary storage
-
-   * packages/apps/LockClock/
-3ba3c00 Revert "cLock: Add to launcher"
-
-   * packages/apps/Mms/
-52e187f Add Feature: Custom User Agent.
-141c35e Merge pull request #1 from rogersb11/cm-12.1
-6da1aab Update breathing drawables to lollipop
-
-   * packages/apps/Settings/
-ab21380 Build V10.7
-1bfbcf2 Add lastapp/killapp/screenshot for PIE action selections
-429f7bc Settings: use ActivityManager method for requesting bug report
-
-   * packages/apps/Trebuchet/
-f533ad9 Clean up scrolling 	- Eliminate creation of garbage 	- Square up interface 	- Post animation signals to handler so they can be cancelled and redispatched 		with new data for the updated signal.
-3d6a266 Fix CustomContent display issue.
-30f86c2 Trebuchet: always set initial wallpaper offsets
-
-   * packages/apps/TvSettings/
-ce581cf Merge "About: Change the intent to call CMUpdater with Leanback theme (2/2)" into cm-12.1
-
-   * system/core/
-177d2bb Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-35493c4 Disable backlight when blanking panel.
-
-   * vendor/cm/
-f1b1ba2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-d175740 SIM card setting: fixed Smartfren SPN override name
-bd71355 Update Smartfren APN protocol to IPV4V6
-1a2f288 Update APNs for Smartfren
-7e8ee16 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-70d7e18 Kill spn-conf overrides
-9aedb13 Update temasek bootanimation for 800
 
