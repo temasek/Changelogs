@@ -1,12 +1,183 @@
 ====================
-     05-08-2015
+     05-12-2015
 ====================
 
 
-   * bionic/
-9ee4c00 Revert "libc: arm: add optimized memchr implementation"
+   * frameworks/base/
+3b9b108 Fix PackageManager crashes w/ queryIntent using callerUID of 0
+a1081ba TorchService: close all opened cameras
+9b3b342 Remove resources.apk from ZipSet when removing overlay
+7fc79e6 textclock: Update the time when performing a doze pulse
+ed2f776 dozeui: Broadcast an intent when beginning a doze pulse
+5d4f9eb SystemUI: Use smaller battery padding
+0f941b9 Notification drawer: Custom clear all icon color, (1/2):
+61f21da framework/base: Make the base framework default to google.android.webview.
+
+   * frameworks/opt/telephony/
+c4655c7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * packages/apps/Settings/
+afa569b Build V11.3
+5aa146b Notification drawer: Custom clear all icon color, (2/2):
+922e9ed Revert "Remove vestigial "Choose date format" option."
+
+   * packages/services/Telephony/
+5534c62 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/cm/
+81b54bd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+94645ab vendor/cm: add CMBugReport
+
+====================
+     05-11-2015
+====================
+
+
+   * build/
+fbf2a62 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+212bf4c build: Move msm899x FLAC metadata flag to qcom_utils.mk
 
    * frameworks/base/
+7c8f6fd QS: fix filtering additional tiles
+
+   * kernel/asus/grouper/
+b8e2f91 Build v1.01
+5aa9f15 video: tegra: dc: remove bandwidth efficiency
+af4e38a ARM: tegra: clock: Account for memory BW efficiency
+a15217a Proportional Rate Reduction for TCP.
+ea27b2c ARM: tegra: clock: Export clock minimum
+8ec39b7 ARM: tegra: clock: Add locked version of round rate
+c13749d Build v1.00 (Stable)
+5a80477 Revert "mach-tegra: Low Power core overdrive"
+16b78e6 Revert "Update defconfig"
+f623ba2 Revert "arm: tegra: Set Core to 0.95V in LP1"
+8891ecd Revert "arm: tegra: Board files settings for LP1 0.95V CoreV"
+eb594495 Revert "sound/soc/tegra/tegra_pcm: add min CPU perf lock for audio playback"
+9b2ec28 Build v1.00 Beta 5
+da21234 Update defconfig
+8f377e7 vfs: protect i_nlink
+29f6bf6 logfs: remove unnecessary nlink setting
+67a78b9 jfs: remove unnecessary nlink setting
+516fd54 vfs: ignore error on forced remount
+85856b4 ehci-tegra.c: fix OTG disconnect reboot issue!
+cd1a393 old bug in htree_dirblock_to_tree()
+98806f2 CPU hotplug, writeback: Don't call writeback_set_ratelimit() too often during hotplug
+
+   * packages/apps/Settings/
+0f9f765 Merge pull request #318 from Pixelase/cm-12.1
+279c50d Fix values for duplicates strings
+
+   * system/core/
+1b7fa35 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+5cccf81 fastboot: Add MMX fastboot USB ID
+
+====================
+     05-10-2015
+====================
+
+
+   * android/
+2308317 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+
+   * build/
+6d89843 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+
+   * external/ffmpeg/
+566fb12 ffmpeg: Update Android build configuration
+
+   * frameworks/av/
+89141dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+fc81044 SystemUI: Speed up and clean tests (squash)
+272a9d0 Switch to vector drawables for Play Tile Thanks to dully79 in XDA
+b18a697 Weather: Handle no weather information available, (1/2):
+5c06186 framework/base: add dock sd card string
+2f20dd8 Telephony: Convert subscription ID to int from long
+788d871 Improve Recents-View
+049398b Adding additional Nova theme identifier to legacy icon support.
+a7511a5 Keyguard: reinflate security views after user change
+e60dde2 Merge pull request #76 from Pixelase/cm-12.1
+ad08d92 SystemUI: RU Translations
+51d90d6 Keyguard: RU Translations
+d78cb20 Core: RU Translations
+
+   * frameworks/opt/telephony/
+42def5f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+395eea5 Change SubId from long to int type.
+
+   * kernel/asus/grouper/
+bf851e8 mutex: restrict mutex spinning to only one task per mutex
+ee6e7d0 mutex: Make more scalable by doing less atomic operations
+ae64def block: avoid using uninitialized value in from queue_var_store
+76c986e sched: remove one division operation in find_buiest_queue()
+0dfc235 staging: android: Avoid using camelcase in binder.h
+c87e80d staging: android: Fix two checkpatch issues in binder.c
+d960c99 Staging: android: binder: Allow using highmem for binder buffers
+b24b644 Staging: android: binder: Fix memory leak on thread/process exit
+c111659 rwsem: do not block readers at head of queue if other readers are active
+548d558 rwsem: implement support for write lock stealing on the fastpath
+c0b499c rwsem: simplify __rwsem_do_wake
+2041883 rwsem: skip initial trylock in rwsem_down_write_failed
+77bd3fa rwsem: avoid taking wait_lock in rwsem_down_write_failed
+d62901a rwsem: use cmpxchg for trying to steal write lock
+1d7bf52 rwsem: more agressive lock stealing in rwsem_down_write_failed
+fcb8090 rwsem: simplify rwsem_down_write_failed
+b0689d5 rwsem: simplify rwsem_down_read_failed
+57f85eb rwsem: move rwsem_down_failed_common code into rwsem_down_{read,write}_failed
+bb87631 rwsem: shorter spinlocked section in rwsem_down_failed_common()
+82bbe3d rwsem: make the waiter type an enumeration rather than a bitmask
+2494819 rwsem: Implement writer lock-stealing for better scalability
+ff06a16 rwsem-spinlock: Implement writer lock-stealing for better scalability
+590a3d7 locking, rwsem: Annotate inner lock as raw
+095a664 tmpfs: fix use-after-free of mempolicy object
+cf14989 arm: tegra: Board files settings for LP1 0.95V CoreV
+fc344b2 arm: tegra: Set Core to 0.95V in LP1
+0732988 Update defconfig
+c0efe74 sound/soc/tegra/tegra_pcm: add min CPU perf lock for audio playback
+35378af mach-tegra: Low Power core overdrive
+868b15b Optimized ARM RWSEM algorithm
+cb05cc0 Build v1.00 Beta 4
+163ec90 Revert "fat: Remove FAT Directory Bread message"
+590cadd Revert "ARM: tegra: clock: Adjust Tegra3 cpu to emc ratio"
+c9d09af Revert "video: tegra: dc: support disp mode override via boot args"
+
+   * packages/apps/Settings/
+2f621bb Fix fatal crash in Settings(Phone Status) for secondary user
+ab0e321 Settings: add killswitch logic to factory reset screen
+8d31487 Revert "Remove non-functional hardware keyboard options."
+1bf790b Settings: don't assume GMS is installed
+042d1ff Merge pull request #316 from Pixelase/cm-12.1
+d5a162f Settings: RU translations
+
+   * packages/services/Telecomm/
+7eacb5d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+8de0502 Telephony: Improve NetworkSelection
+
+   * vendor/cm/
+f78c629 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+====================
+     05-09-2015
+====================
+
+
+   * android/
+e3ccd59 CyanogenMod: Add libaxolotl, curve25519 and libtextsecure from external.
+
+   * build/
+2c16cd2 build: Unset JAVA_TOOL_OPTIONS to read java version
+
+   * external/whispersystems/curve25519/
+c9d0f64 Merge "curve25519: Need to return in non-void functions." into cm-12.1
+0878da7 Merge "curve25519: Rewrite android make to do proper wildcards." into cm-12.1
+
+   * frameworks/base/
+83ddcee Revert "Frameworks/base: Fix visibility flag in Editor"
+fa4dcb6 Revert "Context leaks in EditText causes out of memory"
+4c4681d Revert "MMS: Fix the edit options menu disappear after click edit button"
 4053607 SystemUI: fix quick settings on secure lockscreen feature again
 1993341 SystemUI: fix quick settings on secure lockscreen feature
 704dc0a Remove all_modules's dependency on keymaps validation.
@@ -28,8 +199,8 @@ f8c0fdc Remove gamma correction from color correction shader
 393a55f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
 
    * frameworks/opt/telephony/
+5f3f5f4 MMS: Update apnProfileID for MMS only apn.
 bcbfeef Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-a65109f Revert "Telephony: add CDMA SPN display rule"
 
    * kernel/asus/grouper/
 fc6ab6c Build v1.00 Beta 3
@@ -39,8 +210,11 @@ fc6ab6c Build v1.00 Beta 3
    * packages/apps/Browser/
 08fc988 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
 
-   * packages/apps/CellBroadcastReceiver/
-fac61c4 Expose hardcoded styles from manifest for theming
+   * packages/apps/Camera2/
+96dbd91 Camera2: Only autofocus before a snap if we are actually in "auto" mode.
+
+   * packages/apps/DeskClock/
+03a5537 Expose background colors for theming.
 
    * packages/apps/InCallUI/
 d324eff Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
@@ -49,20 +223,40 @@ d324eff Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_package
 41e1215 Build V11.2
 9a21ddb Avoid SElinux denial accessing IMEI information
 
-   * packages/apps/ThemeChooser/
-ddf9eb8 Use android.graphics.FontListParser
-93bd896 Revert "Use android.graphics.FontListParser"
+   * packages/apps/Trebuchet/
+f5c4042 Trebuchet: don't crash when protecting all apps
 
-   * packages/providers/ThemesProvider/
-350f6f9 Re-apply launcher icon packs on update
+   * packages/services/Telecomm/
+43f7bf2 Change subid from long to int type
+
+   * vendor/cm/
+3866f70 init: Add common bugreport service
+788bd09 Fix typo and build
+f7e33f1 Fixed typo in APN config for Nicaraguan networks.
+a979d10 Added Eagle Mobile MMS apn configuration.
 
 ====================
-     05-07-2015
+     05-08-2015
 ====================
 
 
    * device/samsung/hlte-common/
 316fead [TEST] Swap f2fs/ext4 in fstab
+
+   * external/ffmpeg/
+8827553 Merge branch 'release/2.5' of https://github.com/FFmpeg/FFmpeg into cm-12.1
+
+   * external/whispersystems/curve25519/
+7e227c4 curve25519: Create curve25519-java module in cmake.
+
+   * external/whispersystems/libaxolotl/
+2b4f103 libaxolotl: Set up libaxolotl module cmake build.
+
+   * external/whispersystems/libtextsecure/
+6bf6580 libtextsecure: Generate textsecure-android module in cmake.
+
+   * frameworks/opt/telephony/
+a65109f Revert "Telephony: add CDMA SPN display rule"
 
    * kernel/asus/grouper/
 58cd8ae Add TCP congestion modes
@@ -110,491 +304,16 @@ c08e71a Revert "tegra3_dvfs: fix OC for cpu_process type 1"
    * packages/apps/Browser/
 bba7890 Revert "Fix the smart search pattern."
 
-   * packages/apps/HTMLViewer/
-bdb540d HTMLViewer: Added custom viewer for legalese
-
-   * packages/apps/InCallUI/
-ef64fd0 Allow hiding volume boost feature with overlay.
-
-   * packages/apps/Terminal/
-3b94e1f Merge "Allow terminal app to show in LeanBack (1/2)" into cm-12.1
-
-   * packages/apps/Trebuchet/
-eaec663 Trebuchet: Adjusted margin and vertical alignment of row title
-
-====================
-     05-06-2015
-====================
-
-
-   * frameworks/av/
-f042242 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-6cf51d2 PowerManagerService: Honor config_dreamsActivatedOnSleepByDefault
-5160aa0 GA: Materialize close button and improve layout (squashed)
-d152984 Revert "aapt: i hate if (true) statements"
-cdd92e5 Revert "Adjust display inversion matrix to account for luminance"
-a0d6d05 Revert " WindowManager: remove freezing window to fix UI freezing issue"
-92f8949 Revert "Do not play the default ringtone if it cannot be retrieved."
-e73d6ab Revert "Widget: Catch null point exception in AbsListViewAutoScroller"
-7c9b3d4 Revert "WindowManager: Disable rotation for BootAnimation screen"
-58c92cd policy: respect FLAG_TURN_SCREEN_ON flag with device flip covers
-9711a00 policy: fix device sleeping with lid with incoming call
-9682341 Improve SeekBarVolumizer behavior with unlinked streams
-7921670 base: Fix notification sounds for wifi only devices
-aa8384e allow overlaying default quick settings tiles
-e7427c0 Fix IllegalStateException in Printspooler
-
-   * frameworks/opt/net/wifi/
-1f85805 Revert "aggressively blacklist WifiConfiguration for the purpose of switching network"
-
-   * kernel/asus/grouper/
-f5321f4 Build v1.00 Beta 1
-1c7f9ec Remove excess
-a8ef72b block: Remove unnecessary requests sort.
-1524cc4 block/blk-core: add support for Linux 3.0.x for urgent request handling
-4894b86 block: Add API for urgent request handling
-76cfa29 block: add support for Linux 3.0.x for reinsert a dispatched req
-ee08d86 block: Add support for reinsert a dispatched req
-e455c63 Revert "block: drop @tsk from attempt_plug_merge() and explain sync rules"
-dfcc25d Revert "elevator: use ELV_NAME_MAX instead of magic number 16 for chosen_elevator"
-5c22c03 Revert "block: reorganize queue draining"
-7e907ff Revert "block: fix request_queue lifetime handling by making blk_queue_cleanup() properly shutdown"
-e69dcbb Revert "block: revert the previous backport of mainline Linux"
-89b0588 Revert "block: reorganize queue draining"
-74649cc Revert "block: reorder elevator switch sequence"
-0233be5 Revert "block: remove elevator_queue->ops"
-b38c2d1 Revert "block, cfq: move cfqd->icq_list to request_queue and add request->elv.icq"
-83a6722 Revert "block: Add support for reinsert a dispatched req"
-1df8348 Revert "block: Add API for urgent request handling"
-595e00b Revert "Revert "block, cfq: move cfqd->icq_list to request_queue and add request->elv.icq""
-d90ef40 block: row: Aggregate row_queue parameters to one structure
-c128ebc block: row: fix sysfs functions - idle_time conversion
-de4af7a block: row: Insert dispatch_quantum into struct row_queue
-172f8f2 block: row: Add some debug information on ROW queues
-f033701 row: Add support for urgent request handling
-cd5e28f block:row: fix idling mechanism in ROW
-bd625ee row: Adding support for reinsert already dispatched req
-8880bb5 block/row-iosched.c: add support for Linux 3.0.x
-3519e68 block: ROW: Fix forced dispatch
-baafec3 block: ROW: Correct minimum values of ROW tunable parameters
-adfa20b block: Adding ROW scheduling algorithm
-98739c8 Revert "block: add ROW scheduler v4"
-a6139eb Enable dynamic fsync
-e21a952 dynamic fsync: don't disable fdatasync()
-7740034 overall_stats: make dual/quad core stats configurable via meunconfig
-66a4469 overall_stats: add overall stats for all available cores
-5e2aa44 dynamic fsync: favor true case since most will be using this feature
-7f2a8d2 mutex: dynamically disable mutex spinning at high load Date
-e7ebdec dynamic fsync: add kernel panic notifier to force flush outstanding data
-1e70fa9 dynamic fsync: add reboot notifier to force flush outstanding data
-8859b68 dynamic filesync: add some cache optimizations
-f31af1d fs/dyn_fsync: check dyn fsync control's active prior to performing fsync ops
-6627c97 tmpfs: fix mempolicy object leaks
-96a8f846 tegra-otg: HACK to allow OTG peripheral and charging at the same time
-9353a04 OTG HOST moe: disable charging of slave + enable vbus in
-70b5977 fs/dyn_sync_cntrl: dynamic sync control
-c8e54a8 ARM: tegra: decouple mode from flags
-dbc93bd ARM: smp: Fix cpu_up() racing with sys_reboot
-6f91226 Update defconfig
-465c528 ARM: use generic strnlen_user and strncpy_from_user functions
-441bbc9 kernel: Move REPEAT_BYTE definition into linux/kernel.h
-aca890d word-at-a-time: make the interfaces truly generic
-756dfbb lib: add generic strnlen_user() function
-7ebeb58 lib: Sparc's strncpy_from_user is generic enough, move under lib/
-05301ba lib/memcopy: use glibc version
-83aeeb6 ARM: fix rcu stalls on SMP platforms
-0da5774 sched: disable GENTLTE_FAIR_SLEEPERS for better performance on Android
-642dbcc Build v1.00b (First release - Test build)
-4c1f11d Update mkcompile - Add temasek info
-7273b25 mmc: core: Expose use_spi_crc module parameter in sysfs
-1a49983 writeback: Fix periodic writeback after fs mount
-971e192 mm, vmalloc: remove useless variable in vmap_block
-2153835 mm, vmalloc: use well-defined find_last_bit() func
-c7780a9 readahead: make context readahead more conservative
-8ac5895 writeback: fix race that cause writeback hung
-44ca5a5 writeback: fix occasional slow sync(1)
-c192d36 writeback: remove unused bdi_pending_list
-31d0caf bdi: allow block devices to say that they require stable page writes
-3e68dd7 writeback: put unused inodes to LRU after writeback completion
-485c2ff drivers/staging: reduce buffer size to save kernel memory size
-82422a1 arm: smp: remove cpu boot/shutdown dmesg spam
-6ab3086 Revert "Add the debugging message to monitor the CPU auto hotplug process."
-6f70cca cpuset: fix cpuset_print_task_mems_allowed() vs rename() race
-517584e cpuset: mm: reduce large amounts of memory barrier related damage v3
-6263383 block: prepare I/O context code for BFQ-v5r1 for 3.0
-781aec5 block:bfq: remove fs_excl
-dd17ef35 block: remove aliased requests from BFQ
-8a3b4fe block:bfq: think time check variables were moved in 383cd72
-4ba2606 block: introduce the BFQ-v5r1 I/O sched for 3.0
-384adb3 Revert "Block: Add the BFQ-v5 I/O scheduler to 3.1"
-67b69ac Revert "block, cfq: move cfqd->icq_list to request_queue and add request->elv.icq"
-c1a8c16 Revert "kernel: Map most files to use export.h instead of module.h"
-593631b cpusets: stall when updating mems_allowed for mempolicy or disjoint nodemask
-7f5cadf cpusets: avoid looping when storing to mems_allowed if one node remains set
-4b3a361 kernel: Map most files to use export.h instead of module.h
-5276b6a slub: fix a memory leak in get_partial_node()
-0be6ff4 slub: Do not hold slub_lock when calling sysfs_slab_add()
-c031447 slub: avoid potential NULL dereference or corruption
-893444e slub: use irqsafe_cpu_cmpxchg for put_cpu_partial
-7c6e070 slub: move discard_slab out of node lock
-5204c5b slub: use correct parameter to add a page to partial list tail
-44efefa lib/string.c: introduce memchr_inv()
-e14fa51 slub: Discard slab page when node partial > minimum partial number
-38af598 slub: correct comments error for per cpu partial
-1959f95 mm: restrict access to slab files under procfs and sysfs
-e5d7908 slub: Code optimization in get_partial_node()
-db5a9c6 slub: explicitly document position of inserting slab to partial list
-060c06a slub: per cpu cache for partial pages
-beb9642 slub: return object pointer from get_partial() / new_slab().
-eb06b08 slub: pass kmem_cache_cpu pointer to get_partial()
-6f0f2a0 slub: Prepare inuse field in new_slab()
-4da7150 slub: Remove useless statements in __slab_alloc
-acc45d9 slub: free slabs without holding locks
-5c1db61 slub: use print_hex_dump
-528c14c Update defconfig
-fb87fe4 mm compaction: fix of improper cache flush in migration code
-5d0998e oom: fix race while temporarily setting current's oom_score_adj
-8dd3a74 mm/migrate.c: pair unlock_page() and lock_page() when migrating huge pages
-f9ed391 mm: migration: clean up unmap_and_move()
-19b4ef0 mm: bugfix: set current->reclaim_state to NULL while returning from kswapd()
-262352e mm: avoid swapping out with swappiness==0
-7d4d0b4 mm: vmscan: convert global reclaim to per-memcg LRU lists
-71e9f3c mm: test PageSwapBacked in lumpy reclaim
-9e5a161 deadline: Allow 0ms deadline latency, increase the read speed
-44e255e Fix memory leak in cpufreq stats.
-ee37cb8 ext4: fix memory leak in ext4_xattr_set_acl()'s error path
-a84a58e cgroup: fix exit() vs rmdir() race
-65fe384 cpufreq: ondemand: update sampling rate only on right CPUs
-20e46f5 cpufreq / ondemand: update frequency when limits are relaxed
-ef1031d [CPUFREQ] CPUfreq ondemand: update sampling rate without waiting for next sampling
-dee0574 [CPUFREQ] Remove wall variable from cpufreq_gov_dbs_init()
-7c6c21a Fix documentation and comment typo 'no_hz'
-8da876b android: lowmemkiller: backported from android-3.4
-021a386 Revert "netfilter: xt_qtaguid: remove AID_* dependency for access control"
-bc9954b tegra3_dvfs: fix OC for cpu_process type 1
-f496b73 tegra3_clocks: this regulator check should be safely bypassed
-15b8abd ext4: Free resources in some error path in ext4_fill_super
-8e158e4 rcu: Fix batch-limit size problem
-a1a9edd staging: logger: hold mutex while removing reader
-896b011 block: row: Aggregate row_queue parameters to one structure
-4cd6bc7 block: row: fix sysfs functions - idle_time conversion
-275c845 block: row: Insert dispatch_quantum into struct row_queue
-542a88c block: row: Add some debug information on ROW queues
-93bd22f Input: Send events one packet at a time
-cf96dde row: Add support for urgent request handling
-a2d9d25 row: Adding support for reinsert already dispatched req
-c2f891f block: Add API for urgent request handling
-3de943c block: Add support for reinsert a dispatched req
-d21ba2b block: add ROW scheduler v4
-5a7ed39 block, cfq: move cfqd->icq_list to request_queue and add request->elv.icq
-0fcbe68 block: remove elevator_queue->ops
-7cce429 block: reorder elevator switch sequence
-48ee8c2 block: reorganize queue draining
-d911362 mm.h: read_ahead_kb defaults to 256mb
-1531475 tegra3_dvfs: first attempt to OC cpu_process 4
-9709d57 block: revert the previous backport of mainline Linux
-c262404 block: Remove the control of complete cpu from bio.
-00edaa4 block: fix a typo in the blk-cgroup.h file
-f42391c block: fix request_queue lifetime handling by making blk_queue_cleanup() properly shutdown
-38d9f8a block: drop @tsk from attempt_plug_merge() and explain sync rules
-d192602 block: make get_request[_wait]() fail if queue is dead
-006aa04 block: reorganize throtl_get_tg() and blk_throtl_bio()
-1f7b3af block: reorganize queue draining
-8822470 block: drop unnecessary blk_get/put_queue() in scsi_cmd_ioctl() and blk_get_tg()
-f1a4189 block: pass around REQ_* flags instead of broken down booleans during request alloc/free
-073454e block: move blk_throtl prototypes to block/blk.h
-32b1008 block: fix genhd refcounting in blkio_policy_parse_and_set()
-6069058 block/blk-sysfs.c: fix kerneldoc references
-f93d19d block: document blk-plug
-a47290b block: refactor generic_make_request
-b80f07b block: remove support for bio remapping from ->make_request
-4677ad7 block: rename __make_request() to blk_queue_bio()
-ba6d84a2 block: export __make_request
-a543de2 elevator: use ELV_NAME_MAX instead of magic number 16 for chosen_elevator
-ad2dddc [SCSI] genhd: add a new attribute "alias" in gendisk
-b09b7de block: add GENHD_FL_NO_PART_SCAN
-00d8d83 Sensors: Revise compass compensation mechanism to fix non-linear issue.
-67d268e sched: Fix select_idle_sibling() regression in selecting an idle SMT sibling
-5948735 sched: Fix buglet in return_cfs_rq_runtime()
-803434c sched: Avoid SMT siblings in select_idle_sibling() if possible
-ef83cdf sched_fair: Fix a typo in the comment describing update_sd_lb_stats
-4743a2a sched: Add a comment to effective_load() since it's a pain
-95ea417 sched: Remove redundant test in check_preempt_tick()
-668a252 sched: Allow SD_NODES_PER_DOMAIN to be overridden
-de9c7de sched: Remove noop in lowest_flag_domain()
-f168a34 sched: Kill WAKEUP_PREEMPT
-8b7002d sched: Return unused runtime on group dequeue
-68f7e4d sched: Add exports tracking cfs bandwidth control statistics
-dca700e sched: Migrate throttled tasks on HOTPLUG
-95e9ff8 sched: Prevent interactions with throttled entities
-d2cf753 sched: Allow for positional tg_tree walks
-a091379 sched: Add support for unthrottling group entities
-98e7b7b sched: Add support for throttling group entities
-4677889 sched: Expire invalid runtime
-bf81b28 sched: Add a timer to handle CFS bandwidth refresh
-c37d091 sched: Accumulate per-cfs_rq cpu usage and charge against bandwidth
-e7c9a79 sched: Validate CFS quota hierarchies
-fa584a7 sched: Introduce primitives to account for CFS bandwidth tracking
-fe7923c sched: Implement hierarchical task accounting for SCHED_OTHER
-3976df8 sched: fix broken SCHED_RESET_ON_FORK handling
-37fac75 sched: Remove rq->avg_load_per_task
-f73f77e sched: fix divide by zero at {thread_group,task}_times
-9aea661 sched: Fix race in task_group()
-efacc63 sched: Fix the relax_domain_level boot parameter
-13abff4 sched: Fix OOPS when build_sched_domains() percpu allocation fails
-3418102 sched: Set the command name of the idle tasks in SMP kernels
-e5c7f5c sched: Document wait_for_completion_*() return values
-b198f83 sched: Don't use tasklist_lock for debug prints
-7b91bbf sched: Unify the ->cpus_allowed mask copy
-2a2a095 sched: Wrap scheduler p->cpus_allowed access
-5a5a8f3 rcu: Restore checks for blocking in RCU read-side critical sections
-85f4e92 treewide: Correct spelling of successfully in comments
-7030aea8 nohz: Fix idle ticks in cpu summary line of /proc/stat
-4303540 sched/nohz: Fix rq->cpu_load calculations some more
-3cfaf3d sched/nohz: Fix rq->cpu_load[] calculations
-9150c42 sched/nohz: Rewrite and fix load-avg computation -- again
-f7b523f sched: Fix nohz load accounting -- again!
-2397aee nohz: Fix stale jiffies update in tick_nohz_restart()
-35c08a5 procfs: do not overflow get_{idle,iowait}_time for nohz
-f561ca9 proc: Consider NO_HZ when printing idle and iowait times
-71dd5ef Remove unused file.
-b173826 OnDemand: Move get_cpu_idle to cpufreq.c
-0da55c4 sched: Request for idle balance during nohz idle load balance
-7a6d206 sched: Use resched IPI to kick off the nohz idle balance
-e00f6fe cpufreq: Introduce new relation for freq selection
-d00c4b2 cpufreq: Break out early if freq equals to target_freq
-778e378 Revert "nohz: Fix update_ts_time_stat idle accounting"
-71fbd1ff Unsed variable F.O. (For now)
-e6a38d1 cpufreq: add util to the struct and the util get function prototype.
-d3f7563 cpufreq: Initial CPU utilization should be 0
-1af31ae cpufreq: create a helper function to get CPU utilization. Picked from @stratosk
-3dc7656 Add GPU clock control. Allows users to overclock this GPU as much as their device handles (higher than 800MHz is unheard off since stock is 416MHz). It scales all the approriate busses and clocks accordingly so that we get a real overclock improvement and not fake omfgover9000 performance. It increases VDE voltages in 3 steps depending on how high the GPU max clocks are set by the users.
-812ae25 cpufreq: break earlier if the target_freq is equal to the current freq.
-357559f cpufreq: Retain only online cpus in managed_policy->cpus
-8788cf1 cpufreq: Manage only online cpus
-1d1ae74 cpufreq: add generic get idle functions.
-5e12653 nohz: Remove nohz_cpu_mask
-ac639ab nohz: Remove "Switched to NOHz mode" debugging messages
-0178252 nohz: Make idle/iowait counter update conditional
-5672e0d nohz: Fix update_ts_time_stat idle accounting
-3677874 sched: Fix idle_cpu()
-fca6a67 sched: Convert to struct llist
-45f8c0e rcu: Eliminate in_irq() checks in rcu_enter_nohz()
-2947f58 workqueue: skip nr_running sanity check in worker_enter_idle() if trustee is active
-69375ec Block: use a freezable workqueue for disk-event polling
-08a4bac workqueue: fix possible stall on try_to_grab_pending() of a delayed work item
-a041ded workqueue: UNBOUND -> REBIND morphing in rebind_workers() should be atomic
-c8c96c0 Revert "workqueue: CPU hotplug keep idle workers"
-cb13e7c workqueue: add missing smp_wmb() in process_one_work()
-43701b2 workqueue: reimplement work_on_cpu() using system_wq
-357726e workqueue: perform cpu down operations from low priority cpu_notifier()
-b8ff7d8 cpufreq: limit max speed to 1.3ghz during transitions
-2209591 dvfs: Overclock speedo7 and process0-3 to 1.5Ghz. Fix a warning.
-ff589e2 CPU hotplug, cpusets, suspend: Don't modify cpusets during suspend/resume
-c2cf2de Update defconfig
-5a405f0 net: wireless: bcmdhd: Return wl_construct_reginfo() call
-4183d18 net: wireless: bcmdhd: Skip inaccurate wl_construct_reginfo() call
-f3fdd11 mm/vmscan.c: consider swap space when deciding whether to continue reclaim
-3c23674 tcp: fix tcp_grow_window() for large incoming frames
-331752f readahead: fix pipeline break caused by block plug
-0a7223e ext4: read-only support for bigalloc file systems
-ace2f68 fix shrink_dcache_parent() livelock
-d5457d5 dcache: use a dispose list in select_parent
-d95e53e VFS: Log the fact that we've given ELOOP rather than creating a loop
-56fbcfe vfs: d_invalidate() should leave mountpoints alone
-f1aef17 vfs: add d_prune dentry operation
-0c3a225 SHM_UNLOCK: fix Unevictable pages stranded after swap
-afa1ed3 SHM_UNLOCK: fix long unpreemptible section
-5cba7c5 vmscan: use atomic-long for shrinker batching
-3178baf vmscan: fix initial shrinker size handling
-68ac074 memcg: skip scanning active lists based on individual size
-c75a722 vmscan: abort reclaim/compaction if compaction can proceed
-7549699 vmscan: limit direct reclaim for higher order allocations
-72f8ac7 vmscan: add barrier to prevent evictable page in unevictable list
-d6778d5 mm: disable user interface to manually rescue unevictable pages
-5cebba5 vmscan.c: fix invalid strict_strtoul() check in write_scan_unevictable_node()
-e9e3661 kswapd: avoid unnecessary rebalance after an unsuccessful balancing
-9fb63b8 kswapd: assign new_order and new_classzone_idx after wakeup in sleeping
-ed05fe1 vmscan: count pages into balanced for zone with good watermark
-4901f8c mm: vmscan: immediately reclaim end-of-LRU dirty pages when writeback completes
-b88dd72 mm: vmscan: throttle reclaim if encountering too many dirty pages under writeback
-6b919d7 mm: vmscan: do not writeback filesystem pages in kswapd except in high priority
-016f42d mm: vmscan: remove dead code related to lumpy reclaim waiting on pages under writeback
-2589979 mm: vmscan: do not writeback filesystem pages in direct reclaim
-f6ab74a mm: vmscan: drop nr_force_scan[] from get_scan_count
-b43d8ce vmscan: add block plug for page reclaim
-44adf65 mm: zone_reclaim: make isolate_lru_page() filter-aware
-a9f361e mm: compaction: make isolate_lru_page() filter-aware
-2bd44ad mm: change isolate mode from #define to bitwise type
-dc87fa8 af_unix: fix EPOLLET regression for stream sockets
-1ba9fce AF_UNIX: Fix poll blocking problem when reading from a stream socket
-047a5ce af_unix: dont send SCM_CREDENTIALS by default
-897786d jbd: Issue cache flush after checkpointing
-25c5a69 mm: fix NULL ptr dereference in __count_immobile_pages
-4fcfeb4 SIO scheduler
-6b451ae Update build flags
-ef0a228 net: rps: fix cpu unplug
-366f0e2 ASoC: dapm: Use DAPM mutex for DAPM ops instead of codec mutex
-8156c5b workqueue: CPU hotplug keep idle workers
-d730166 block: deadline: tune the behavior for faster read throughput
-b95029a cpufreq: conservative: notify the policy of the current load
-7c6de81 cpufreq: conservative: add micro idle accounting and touch boost support
-809c14d cpufreq: interactive: squash the latest code from FK for Hammerhead Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-6f38c96 cpufreq: interactive: maybe 1GHz input_boost_freq wouldn't hurt.
-00b8b28 cpufreq: interactive: we can now be gentle with these tunables.
-8f63206 cpufreq: interactive: this governor is fundamentally different from Ondemand and by norm its a bit more sensitive to load changes in terms of which freqs are chosen, but even though sometimes it can be a little stupid and non react to load changes that linearly as one could hope for (even though it's better than Ondemand) so for that reason let's try to use this new formula by @stratosk found in this commit: https://github.com/stratosk/kernel_msm/commit/9df03b662b9c213c75ac082138f5ab8afadb9d94 make sure you read his commit message for better understanding of this.
-c416cff cpufreq: interactive: tune Grouper for best user experience.
-a323fd9 cpufreq: interactive: squash interactive code.
-0eec6a4 cpufreq: interactive: merge governor code from Mako/Hammerhead. Also merge boostpulse write to the touch driver.
-51967d2 cpufreq: interactive: grouper is derped as it is since 4.2, so tunning interactive down is not really a nice idea. I'd rather see this device running smoothly as 4.3 didn't help much on that front.
-a5dea2a cpufreq: interactive: merge latest interactive commits from FK on mako.
-0be8a47 cpufreq: interactive: merge interactive code from 4.2.2 nightlies branch.
-7ecc096 Revert "cpufreq: sysfs knobs for disabling hotplug during UI interaction"
-cb99b46 input: touchboost: conservative samples every 10ms, no point in limiting input_time to update its value in 50ms intervals
-7574a8d touchboost: squash the latest code from FK for Hammerhead Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-6339e00 Add the generic input time driver.
-1f50383 mako_hotplug: squash the latest changes
-fa3d48c mako_hotplug: nvidia already sets a capped max freq on screen off, no need to do it here
-9fe3443 mako_hotplug: squash the driver code from FK for Hammerhead Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
-1119a56 mako_hotplug: merge latest changes.
-a86daa9 mako_hotplug: code revision
-d31c558 mako_hotplug: we should care about very high load spikes so when the load is 100% the core that is next in line is onlined, no questions asked. It won't go through the 1s minimum time for a core to be online before hotplug though.
-9d1759f mako_hotplug: fix slow-ass screening on delay.
-54be5e2 mako_hotplug: further fix slow screen on.
-0b04c8a mako_hotplug: clean up a little bit.
-9b0b8b8 mako_hotplug: for grouper we have to online all cores on screen on, or the screen on will take longer than it should.
-34d1429 mako_hotplug: merge recent improvements.
-6424728 mako_hotplug: merge driver enhancements from Mako/Hammerhead/Flo.
-
-   * packages/apps/CMFileManager/
-b03fc28 [CMFileManager]Fix the search result does not display the file path when the result is zero
-
-   * packages/apps/Gallery2/
-ef79453 Gallery2: Use a slimmed down manifest on .inc builds
-
-   * packages/apps/Mms/
-e42ea7e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-3d7ba45 Mms: In action mode, click sim spinner will meet crash.
+   * packages/apps/CellBroadcastReceiver/
+fac61c4 Expose hardcoded styles from manifest for theming
 
    * packages/apps/ThemeChooser/
-bdc0572 Use android.graphics.FontListParser
+ddf9eb8 Use android.graphics.FontListParser
+93bd896 Revert "Use android.graphics.FontListParser"
+
+   * packages/providers/ThemesProvider/
+350f6f9 Re-apply launcher icon packs on update
 
    * vendor/cm/
-c26d285 chromium_prebuilt for 64bit
-
-====================
-     05-05-2015
-====================
-
-
-   * external/f2fs-tools/
-ddc11c8 f2fs-tools: release 1.4.1
-e8cd72e f2fstat: fix option parsing
-c89616b fsck.f2fs: remove corrupted data indices in direct node blocks
-e8d7d00 mkfs.f2fs: avoid memory leak in mkfs
-07749a0 fsck.f2fs: support large sector size
-eb059e3 mkfs.f2fs: support large sector size
-f4a9278 f2fs: fix build for android
-d4b6768 fsck.f2fs: readahead node blocks to speed up
-91932c2 dump.f2fs: show checkpoint flag
-f32207b fsck.f2fs: fix sit types seamlessly
-160334f fibmap.f2fs: fix the wrong stat info
-d32c7d3 configure: add check for bswap_64
-fac41f5 configure: also check for byteswap.h
-34a4b7d parse.f2fs: add a tool to parse IO traces made by runtime f2fs
-acd2acd dump.f2fs: dump owner of data given block address
-489c37a fsck.f2fs: no need to fix SIT type for COLD_DATA
-cd5e99e mkfs.f2fs: introduce some macros to simplify coding style
-71c054f fsck.f2fs: remove unused value
-c9e11a4 mkfs.f2fs: fix missing endian conversion
-5dd4341 mkfs: use compact mode for data summaries
-5f3ed28 fsck.f2fs: add a missing 'fixed' during chk_dentries()
-28b9021 fsck.f2fs: avoid false alarm on SIT type fix
-3e6cab0 fsck.f2fs: remove unneeded return
-3d9fb31 fsck.f2fs: show orphan inodes when fixing partition
-b0f718d mkfs.f2fs: reclaim free space in case of regular file
-0ba63f1 mkfs.f2fs: give a kernel version for initial format
-832a96e fsck.f2fs: trigger fsck.f2fs when new change was made
-24b9f15 fsck.f2fs: fix SIT entry types
-
-   * frameworks/av/
-e92f94b Revert "audio: Update timestamp for offload playback after EOS."
-
-   * hardware/qcom/display-caf/msm8974/
-4d0417d hwc: Avoid redoing GPU comp under certain conditions
-8db4dfe hwc: vds: isActive need to be set for wfd using vds solution
-
-   * hardware/qcom/media-caf/msm8974/
-f1cb445 mm-video-v4l2: vidc: vdec: handle flush while codec config ETB for hevc decoder
-
-   * kernel/samsung/hlte/
-bc46e50 Set boot max freq @ 2.27ghz
-
-   * packages/apps/Browser/
-8c0ece9 Forbid javascript- and file-scheme intents
-
-   * packages/apps/CMFileManager/
-018e6c6 CMFM : Group m4v under video/mp4
-
-   * packages/apps/ContactsCommon/
-44759f5 ContactsCommon : Remove pending request for get contact bitmaps
-
-   * packages/apps/Gallery2/
-073d949 Gallery2: Fix RTL album picking
-
-   * packages/apps/Settings/
-9f61d6d Build V11.1
-
-   * packages/providers/TelephonyProvider/
-d8f349b TelephonyProvider: Handle upgrade from 11 -> 12.1.
-
-   * vendor/cmsdk/
-8206b13 CMSDK: Don't cancel pendingintent, update instead.
-
-====================
-     05-04-2015
-====================
-
-
-   * android/
-6c87c24 Track own Nfc
-
-   * device/samsung/qcom-common/
-8eae4ce qcom-common: use download mode in recovery
-
-   * frameworks/base/
-71f289f NFC Polling Mode (3/3)
-b4cf7a7 Add missing boolean for gesture
-d89f57b Frameworks: Gesture Lockscreen (1/2)
-50a11dd Revert "Statusbar header: Add vibration to settings button"
-d0c3db5 libandroidfw: Fatal exception of dlfree often causes the system crashed
-bafb61e MediaSessionService: Error checks for UserRecord object
-b05d5e1 AudioManager: update references to application context
-6095390 Sometimes the application context is null
-d46605b Revert "Sometimes the application context is null"
-98deea1 Revert "AudioManager: update references to application context"
-d535b7d framework:Thread synchronization for UI update
-
-   * frameworks/native/
-00ed02e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-e2aeea5 sensorservice: Don't replace HAL orientation sensor
-
-   * packages/apps/Nfc/
-cd10212 NFC polling mode (1/3)
-
-   * packages/apps/Settings/
-24f4360 NFC Polling Mode (2/3)
-8fea9e7 Settings: Gesture Lockscreen (2/2) Lets give this a go again.
-
-   * packages/apps/TvSettings/
-4e2e4cf TvSettings: About: Fix advanced reboot selection
-
-   * system/core/
-27cd801 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-985287b Rename libext2_uuid -> libext2_uuid_static lib
-
-   * vendor/asus/
-c31b486 deb: Use libacdbdata.so from L preview
+76c4174 apns-conf.xml: (DK) merge BiBob and Telenor APNs. remove mvno values.
 
