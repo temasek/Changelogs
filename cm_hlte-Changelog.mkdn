@@ -1,30 +1,222 @@
 ====================
+     05-14-2015
+====================
+
+
+   * android/
+e143ed2 Revert "Use Google's prebuilt WebView"
+f04b569 Revert "Update readme - We are no longer using pre-built chromium feature"
+
+   * build/
+dbd66ba Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+c392ec5 Revert "build: Unset JAVA_TOOL_OPTIONS to read java version"
+5de47ce build: Unset JAVA_TOOL_OPTIONS to read java version
+
+   * frameworks/base/
+1eedb0f SystemUI: Remove unnecessary camel case
+
+   * packages/apps/Mms/
+1cc458c Merge pull request #2 from Pixelase/cm-12.1
+0bbf27e Mms-caf: RU translations
+
+   * packages/apps/Settings/
+79cd0bf Build V11.4
+729c936 Revert "Settings: update About screen device model fields"
+89d36af Used fixed size for app icon width in default sms dialog
+47d2e99 Hide soft keyboard when opening LockPatternActivity.
+b4d999d Fix battery settings crash on Asturian/Luxembourgish
+
+   * packages/apps/Trebuchet/
+faff75b Trebuchet: fix behavior when ShowSearchBar feature is toggled off
+
+   * packages/providers/MediaProvider/
+b9a3bfb Merge pull request #1 from Pixelase/cm-12.1
+edabd26 MediaProvider:  RU Translations
+
+   * packages/services/Telephony/
+e5b7db5 Merge pull request #13 from Pixelase/cm-12.1
+54dfd4f Telephony: RU translations
+
+   * vendor/cm/
+f33f459 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/cmsdk/
+7d8eb9f Merge "Rename resource files" into cm-12.1
+5a08354 Rename resource files
+
+====================
+     05-13-2015
+====================
+
+
+   * android/
+4d13db6 Update readme - We are no longer using pre-built chromium feature
+45d3536 Use Google's prebuilt WebView
+
+   * bionic/
+f08cac3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_bionic into cm-12.1
+6bb134b libc: denver should compile bcopy
+
+   * build/
+cc943aa build: Ignore filters on platform library.
+787f6fd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+4e34e76 build: Add IGNORE_SUBDIR to clear vars.
+1ade406 build/core: Create means of ignoring subdir layer for packages.
+d445a0f build/target: Include CM platform jar in system server.
+7891efa kernel: Fix kernelconfig build
+
+   * device/samsung/hlte-common/
+623f76a hlte-common: Swap f2fs/ext4 in fstab
+
+   * external/sqlite/
+608f6a0 sqlite: upgrade to SQLite 3.8.10
+89eb3e8 Regenerate Android.patch
+
+   * frameworks/av/
+4529a4e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+dc19fdb SystemUI: Point to correct permission for BIND_CUSTOM_TILE_LISTENER.
+cf8f4b2 Wakelock Blocker [1/2]
+797524d Don't apply animation clip to dialog activities
+6dcf95f Context leaks in EditText causes out of memory
+d944f04 connectivity: Remove net id broadcast change event
+73aae5c base: Nat464: unregister network observer when we stop!
+df2151e SystemUI: Squash custom tile commits
+bfdbbe4 SystemServer: Allow starting of overlaid external services.
+8333828 Fix PackageManager crashes w/ queryIntent using callerUID of 0
+
+   * hardware/qcom/display-caf/msm8974/
+a25137d hwc: Add check for dirtyRect clear call.
+
+   * hardware/samsung/
+f7a63e5 libril: Fix network operator search
+
+   * kernel/asus/grouper/
+71dd086 Build v1.03
+33282f1 Revert "time: RCU permitted to stop idle entry via softirq"
+21a21f6 Revert "scheduler: compute time-average nr_running per run-queue"
+6740509 Revert "proc: enhance time-average nr_running stats"
+8ad2dad Revert "scheduler: Re-compute time-average nr_running on read"
+1ff3d07 Revert "sched: unthrottle rt runqueues in __disable_runtime()"
+559b765 Revert "cpufreq: update lpj only if frequency has changed"
+bee341d Revert "cpufreq: Don't clip PM QoS requests to old policy limits"
+50263b1 Revert "cpufreq: Protected access of policy attribute"
+31789e0 Revert "SCHEDULER: Autogroup patch group by current user android UID instead of task ID"
+
+   * packages/apps/Contacts/
+d45d80b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+6e26e34 Summarize local phone storage in MemoryStatusActivity.
+
+   * packages/apps/ContactsCommon/
+fc1a70a Store all local contacts in only one account.
+f5bf44d contactscommon: ensure preferences are loaded before reload data
+
+   * packages/apps/InCallUI/
+a529230 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+04b7efe InCallUI: Update another blacklist string
+
+   * packages/apps/Mms/
+08bd1b6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/OTAUpdates/
+b8ea67a Merge pull request #12 from Pixelase/aosp
+
+   * packages/apps/Settings/
+0289fa7 Wakelock Blocker [2/2]
+b0dc7e6 Settings: add Bluetooth tethering option to BT overflow menu
+cc9515e Settings: give better hint when checking BT "Internet access" fails
+a62e3ac Expose text color in MSIM edit dialog.
+cc2829f Settings: Update sync widget state
+6acfd71 Revert "Settings: Update sync widget state"
+ba7f4e2 Cleanup.
+
+   * packages/apps/Trebuchet/
+8df1f02 Do not reload settings for changing state to All Apps.
+18980a7 Trebuchet : Only reset overscrolled child
+7f0a620 Trebuchet: new folder UI v1
+
+   * packages/apps/TvSettings/
+d21dd3a TvSettings: Improve strings
+
+   * packages/providers/TelephonyProvider/
+4fa5ded TelephonyProvider: change default IDD for Indonesia
+
+   * packages/services/Telecomm/
+a787f1b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+4ffc383 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/cm/
+a6b8d30 cm: Ignore filters for platform library.
+e7079d2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+aaac132 Build Platform resource package.
+b53c503 Build CM Platform Library
+4f810fe Overlay external services start.
+
+   * vendor/cmsdk/
+37c4b96 CMSDK: Don't share a namespace with the library.
+7267e32 Fix package name.
+3f13414 CMSDK: Make sure we're binding the correct permission for enforcement.
+4f0c2c3 CMSDK: Update tests for new permissions.
+2383b60 CMSDK: Update sample for new declared permission.
+6bcee3f CMSDK: Ignore subdir layer for resource package.
+37fc76f CMSDK: Create cyanogenmod platform resource package.
+
+====================
      05-12-2015
 ====================
 
 
+   * frameworks/av/
+8b5540c libstagefright: Fix for handling of stream with corrupt frames
+779252b libmedia: avoid processing stale callback events when track recycled
+
    * frameworks/base/
-3b9b108 Fix PackageManager crashes w/ queryIntent using callerUID of 0
-a1081ba TorchService: close all opened cameras
-9b3b342 Remove resources.apk from ZipSet when removing overlay
-7fc79e6 textclock: Update the time when performing a doze pulse
-ed2f776 dozeui: Broadcast an intent when beginning a doze pulse
-5d4f9eb SystemUI: Use smaller battery padding
-0f941b9 Notification drawer: Custom clear all icon color, (1/2):
-61f21da framework/base: Make the base framework default to google.android.webview.
+f153a3e TorchService: close all opened cameras
+a0298ac Remove resources.apk from ZipSet when removing overlay
+10f5bdd textclock: Update the time when performing a doze pulse
+5daac81 dozeui: Broadcast an intent when beginning a doze pulse
+c09a158 SystemUI: Use smaller battery padding
+9153daf Notification drawer: Custom clear all icon color, (1/2):
+9f90ae3 framework/base: Make the base framework default to google.android.webview.
 
    * frameworks/opt/telephony/
 c4655c7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 
+   * packages/apps/CMFileManager/
+439c98b [CMFileManager]Fix the software don't hide when the drawerlayout open.
+
+   * packages/apps/InCallUI/
+4184f9d InCallUI: Update blacklist strings
+
+   * packages/apps/Mms/
+0a8f504 Mms: Update blacklist strings
+
+   * packages/apps/OTAUpdates/
+378940b Update & reorganize RU translations
+
    * packages/apps/Settings/
+cd4a498 Settings: update About screen device model fields
+003a8be Settings : Update blacklist strings
+9ddf7b6 Notification drawer clear all icon - Remove dependency
+5f35845 Notification drawer icon default color - Comment out unnecessary
 afa569b Build V11.3
 5aa146b Notification drawer: Custom clear all icon color, (2/2):
-922e9ed Revert "Remove vestigial "Choose date format" option."
+
+   * packages/apps/Trebuchet/
+e301067 Add missing dimen to res/values/dimens.xml.
+
+   * packages/services/Telecomm/
+0e97d44 Telecomm: Update blacklist strings
 
    * packages/services/Telephony/
+f8ec9e0 Telecom : Rename blacklist
 5534c62 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 
    * vendor/cm/
+7520a20 Revert "vendor/cm: add CMBugReport"
 81b54bd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 94645ab vendor/cm: add CMBugReport
 
@@ -40,32 +232,9 @@ fbf2a62 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-1
    * frameworks/base/
 7c8f6fd QS: fix filtering additional tiles
 
-   * kernel/asus/grouper/
-b8e2f91 Build v1.01
-5aa9f15 video: tegra: dc: remove bandwidth efficiency
-af4e38a ARM: tegra: clock: Account for memory BW efficiency
-a15217a Proportional Rate Reduction for TCP.
-ea27b2c ARM: tegra: clock: Export clock minimum
-8ec39b7 ARM: tegra: clock: Add locked version of round rate
-c13749d Build v1.00 (Stable)
-5a80477 Revert "mach-tegra: Low Power core overdrive"
-16b78e6 Revert "Update defconfig"
-f623ba2 Revert "arm: tegra: Set Core to 0.95V in LP1"
-8891ecd Revert "arm: tegra: Board files settings for LP1 0.95V CoreV"
-eb594495 Revert "sound/soc/tegra/tegra_pcm: add min CPU perf lock for audio playback"
-9b2ec28 Build v1.00 Beta 5
-da21234 Update defconfig
-8f377e7 vfs: protect i_nlink
-29f6bf6 logfs: remove unnecessary nlink setting
-67a78b9 jfs: remove unnecessary nlink setting
-516fd54 vfs: ignore error on forced remount
-85856b4 ehci-tegra.c: fix OTG disconnect reboot issue!
-cd1a393 old bug in htree_dirblock_to_tree()
-98806f2 CPU hotplug, writeback: Don't call writeback_set_ratelimit() too often during hotplug
-
    * packages/apps/Settings/
+922e9ed Revert "Remove vestigial "Choose date format" option."
 0f9f765 Merge pull request #318 from Pixelase/cm-12.1
-279c50d Fix values for duplicates strings
 
    * system/core/
 1b7fa35 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
@@ -82,8 +251,8 @@ cd1a393 old bug in htree_dirblock_to_tree()
    * build/
 6d89843 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
 
-   * external/ffmpeg/
-566fb12 ffmpeg: Update Android build configuration
+   * device/samsung/qcom-common/
+58c4ee7 qcom-common: skip secure discard in recovery
 
    * frameworks/av/
 89141dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
@@ -107,42 +276,13 @@ d78cb20 Core: RU Translations
 395eea5 Change SubId from long to int type.
 
    * kernel/asus/grouper/
-bf851e8 mutex: restrict mutex spinning to only one task per mutex
-ee6e7d0 mutex: Make more scalable by doing less atomic operations
-ae64def block: avoid using uninitialized value in from queue_var_store
-76c986e sched: remove one division operation in find_buiest_queue()
-0dfc235 staging: android: Avoid using camelcase in binder.h
-c87e80d staging: android: Fix two checkpatch issues in binder.c
-d960c99 Staging: android: binder: Allow using highmem for binder buffers
-b24b644 Staging: android: binder: Fix memory leak on thread/process exit
-c111659 rwsem: do not block readers at head of queue if other readers are active
-548d558 rwsem: implement support for write lock stealing on the fastpath
-c0b499c rwsem: simplify __rwsem_do_wake
-2041883 rwsem: skip initial trylock in rwsem_down_write_failed
-77bd3fa rwsem: avoid taking wait_lock in rwsem_down_write_failed
-d62901a rwsem: use cmpxchg for trying to steal write lock
-1d7bf52 rwsem: more agressive lock stealing in rwsem_down_write_failed
-fcb8090 rwsem: simplify rwsem_down_write_failed
-b0689d5 rwsem: simplify rwsem_down_read_failed
-57f85eb rwsem: move rwsem_down_failed_common code into rwsem_down_{read,write}_failed
-bb87631 rwsem: shorter spinlocked section in rwsem_down_failed_common()
-82bbe3d rwsem: make the waiter type an enumeration rather than a bitmask
-2494819 rwsem: Implement writer lock-stealing for better scalability
-ff06a16 rwsem-spinlock: Implement writer lock-stealing for better scalability
-590a3d7 locking, rwsem: Annotate inner lock as raw
-095a664 tmpfs: fix use-after-free of mempolicy object
-cf14989 arm: tegra: Board files settings for LP1 0.95V CoreV
-fc344b2 arm: tegra: Set Core to 0.95V in LP1
-0732988 Update defconfig
-c0efe74 sound/soc/tegra/tegra_pcm: add min CPU perf lock for audio playback
-35378af mach-tegra: Low Power core overdrive
-868b15b Optimized ARM RWSEM algorithm
 cb05cc0 Build v1.00 Beta 4
 163ec90 Revert "fat: Remove FAT Directory Bread message"
 590cadd Revert "ARM: tegra: clock: Adjust Tegra3 cpu to emc ratio"
 c9d09af Revert "video: tegra: dc: support disp mode override via boot args"
 
    * packages/apps/Settings/
+279c50d Fix values for duplicates strings
 2f621bb Fix fatal crash in Settings(Phone Status) for secondary user
 ab0e321 Settings: add killswitch logic to factory reset screen
 8d31487 Revert "Remove non-functional hardware keyboard options."
@@ -158,162 +298,4 @@ d5a162f Settings: RU translations
 
    * vendor/cm/
 f78c629 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-====================
-     05-09-2015
-====================
-
-
-   * android/
-e3ccd59 CyanogenMod: Add libaxolotl, curve25519 and libtextsecure from external.
-
-   * build/
-2c16cd2 build: Unset JAVA_TOOL_OPTIONS to read java version
-
-   * external/whispersystems/curve25519/
-c9d0f64 Merge "curve25519: Need to return in non-void functions." into cm-12.1
-0878da7 Merge "curve25519: Rewrite android make to do proper wildcards." into cm-12.1
-
-   * frameworks/base/
-83ddcee Revert "Frameworks/base: Fix visibility flag in Editor"
-fa4dcb6 Revert "Context leaks in EditText causes out of memory"
-4c4681d Revert "MMS: Fix the edit options menu disappear after click edit button"
-4053607 SystemUI: fix quick settings on secure lockscreen feature again
-1993341 SystemUI: fix quick settings on secure lockscreen feature
-704dc0a Remove all_modules's dependency on keymaps validation.
-ecc032e Frameworks/base: Fix null-pointer access
-8cf024b Fix setting hotspot bounds in a drawable container
-d416e70 RecentTasksLoader: remove unneccessary Thread.sleep()
-c604c5d Screenshot: prevent handler leak
-0a5f3e2 SystemUI: more potential NPE fixes
-cf24ff2 frameworks: fix setting up linked notification stream on boot
-161b477 Themes: Make parse() method in FontListParser public
-
-   * frameworks/native/
-74760dc SurfaceFlinger: Fix integer overflow in Mesh ctor
-d2a2fc8 libgui: Clear frame number while freeing slot
-c1c2e0e Close Fence FDs in error cases of Surface and GraphicBufferMapper
-f8c0fdc Remove gamma correction from color correction shader
-
-   * frameworks/opt/net/wifi/
-393a55f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
-
-   * frameworks/opt/telephony/
-5f3f5f4 MMS: Update apnProfileID for MMS only apn.
-bcbfeef Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/asus/grouper/
-fc6ab6c Build v1.00 Beta 3
-4369be5 bq27541: Add current_now property
-07f3998 bq27541: Add current_now property
-
-   * packages/apps/Browser/
-08fc988 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
-
-   * packages/apps/Camera2/
-96dbd91 Camera2: Only autofocus before a snap if we are actually in "auto" mode.
-
-   * packages/apps/DeskClock/
-03a5537 Expose background colors for theming.
-
-   * packages/apps/InCallUI/
-d324eff Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Settings/
-41e1215 Build V11.2
-9a21ddb Avoid SElinux denial accessing IMEI information
-
-   * packages/apps/Trebuchet/
-f5c4042 Trebuchet: don't crash when protecting all apps
-
-   * packages/services/Telecomm/
-43f7bf2 Change subid from long to int type
-
-   * vendor/cm/
-3866f70 init: Add common bugreport service
-788bd09 Fix typo and build
-f7e33f1 Fixed typo in APN config for Nicaraguan networks.
-a979d10 Added Eagle Mobile MMS apn configuration.
-
-====================
-     05-08-2015
-====================
-
-
-   * device/samsung/hlte-common/
-316fead [TEST] Swap f2fs/ext4 in fstab
-
-   * external/ffmpeg/
-8827553 Merge branch 'release/2.5' of https://github.com/FFmpeg/FFmpeg into cm-12.1
-
-   * external/whispersystems/curve25519/
-7e227c4 curve25519: Create curve25519-java module in cmake.
-
-   * external/whispersystems/libaxolotl/
-2b4f103 libaxolotl: Set up libaxolotl module cmake build.
-
-   * external/whispersystems/libtextsecure/
-6bf6580 libtextsecure: Generate textsecure-android module in cmake.
-
-   * frameworks/opt/telephony/
-a65109f Revert "Telephony: add CDMA SPN display rule"
-
-   * kernel/asus/grouper/
-58cd8ae Add TCP congestion modes
-9b93efc Build v1.00 Beta 2
-a3a331f Update defconfig
-ac04ec9 tegra3_variant: add debugfs entry to display real tegra3 SOC variant info
-61c62f1 bq27541: Correct scaling of voltage_now
-283e93a bq27541: Add current_now property
-ba0ea79 video: tegra: dc: support disp mode override via boot args
-a9ef922 board/tegra3_speedo: fix minor warnings
-e3a88f0 SCHEDULER: Autogroup patch group by current user android UID instead of task ID
-dcd722f board/cpu-tegra3: make runnable thread as a compilation option
-57fac87 cpufreq: Protected access of policy attribute
-ab0461c cpufreq: Don't clip PM QoS requests to old policy limits
-fa1ed4a cpufreq: interface for setting governor for a cpu
-e3f4a61 cpufreq: update lpj only if frequency has changed
-5695c00 ARM: tegra: clock: Adjust Tegra3 cpu to emc ratio
-e04f613 sched: unthrottle rt runqueues in __disable_runtime()
-909f10b arm: tegra: modify hotplug balance threshold
-4ee0f2b arm: tegra: hotplug: modify down_delay
-fb475f5 arm: tegra: hotplug: tune runnable thread params.
-823b667 ARM: tegra: power: Use runnable threads average for hotplug
-afae8e0 scheduler: Re-compute time-average nr_running on read
-e9bf9e1 proc: enhance time-average nr_running stats
-7ce1112 scheduler: compute time-average nr_running per run-queue
-553d633 fat: Remove FAT Directory Bread message
-68a2a8b arm: tegra: Fix cpu governor change issue
-a5cce35 arm: tegra: governor: change governor using cpufreq interface
-36f6c28 time: RCU permitted to stop idle entry via softirq
-0bb485e ARM: tegra: dvfs: Update Tegra3 dsi dvfs tables
-7f06943 ARM: tegra: dvfs: Fix error checking of voltage
-e3f2b14 ARM: tegra: dvfs: Separate Tegra3 single core dvfs table
-be2f932 ARM: tegra: dvfs: Alter CPU dvfs on EDP events
-48bc928 ARM: tegra: dvfs: Re-factor CPU alternative dvfs
-9db41ed overclock: boost ultimate from 1.55 quad to 1.6 quad
-2bde5d2 Overclock: add ultimate edition to allow quadcore up to 1.55 GHz
-ca274e3 Overclocking: GPU overclocking from 416MHz to 520Mhz
-3a65a5a Overclocking: enable CPU overclocking
-4fb83eb tegra: custom user voltage control
-6887398 Revert "dvfs: Overclock speedo7 and process0-3 to 1.5Ghz. Fix a warning."
-fe8b2e3 Revert "Add GPU clock control. Allows users to overclock this GPU as much as their device handles (higher than 800MHz is unheard off since stock is 416MHz). It scales all the approriate busses and clocks accordingly so that we get a real overclock improvement and not fake omfgover9000 performance. It increases VDE voltages in 3 steps depending on how high the GPU max clocks are set by the users."
-caafa13 Revert "tegra3_dvfs: first attempt to OC cpu_process 4"
-c08e71a Revert "tegra3_dvfs: fix OC for cpu_process type 1"
-
-   * packages/apps/Browser/
-bba7890 Revert "Fix the smart search pattern."
-
-   * packages/apps/CellBroadcastReceiver/
-fac61c4 Expose hardcoded styles from manifest for theming
-
-   * packages/apps/ThemeChooser/
-ddf9eb8 Use android.graphics.FontListParser
-93bd896 Revert "Use android.graphics.FontListParser"
-
-   * packages/providers/ThemesProvider/
-350f6f9 Re-apply launcher icon packs on update
-
-   * vendor/cm/
-76c4174 apns-conf.xml: (DK) merge BiBob and Telenor APNs. remove mvno values.
 
