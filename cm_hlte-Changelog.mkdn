@@ -1,5 +1,5 @@
 ====================
-     05-14-2015
+     05-15-2015
 ====================
 
 
@@ -10,16 +10,43 @@ f04b569 Revert "Update readme - We are no longer using pre-built chromium featur
    * build/
 dbd66ba Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
 c392ec5 Revert "build: Unset JAVA_TOOL_OPTIONS to read java version"
-5de47ce build: Unset JAVA_TOOL_OPTIONS to read java version
+
+   * frameworks/av/
+f117d46 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+a1fa45c audio: Fixed streamType for non-media streams
 
    * frameworks/base/
+fbf60d6 Revert "Wakelock Blocker [1/2]"
+420af8b fixup volume stream linking
 1eedb0f SystemUI: Remove unnecessary camel case
 
+   * hardware/qcom/audio-caf/msm8916/
+a708ad9 post_proc: add support for virtualizer capability query
+
+   * hardware/ril-caf/
+6ffe26f ril-caf: Allow using RIL version 10
+60308b2 Rild: Use division instead of mod to determine array size
+e7c6279 Added support for acquiring CAP_BLOCK_SUSPEND capability
+94ab42d Enabling RIL_QCOM_VERSION
+
+   * packages/apps/CMFileManager/
+c5c6852 CM Easy Mode File Manager Navigation fixes
+da3e50d Prevent possible OOBE when ran under monkey test
+
+   * packages/apps/Calendar/
+44d9d0c Calendar:"ADD ACCOUNT" has no function when long tapping date to creat new event in month view.
+
    * packages/apps/Mms/
+209cb75 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+a64160e Mms: Fix copying "null" for Mms without text
 1cc458c Merge pull request #2 from Pixelase/cm-12.1
-0bbf27e Mms-caf: RU translations
 
    * packages/apps/Settings/
+ab747c9 Build V11.5 - HLTE Only
+ee552cc Settings: fix BT switch enabling discoverable mode
+d135175 Revert "Wakelock Blocker [2/2]"
+1e80a34 Change Usb not connected string to capital letters.
+5f995ef Show Toast if usb not connected in Storage Settings
 79cd0bf Build V11.4
 729c936 Revert "Settings: update About screen device model fields"
 89d36af Used fixed size for app icon width in default sms dialog
@@ -27,25 +54,22 @@ c392ec5 Revert "build: Unset JAVA_TOOL_OPTIONS to read java version"
 b4d999d Fix battery settings crash on Asturian/Luxembourgish
 
    * packages/apps/Trebuchet/
-faff75b Trebuchet: fix behavior when ShowSearchBar feature is toggled off
+98cd4a5 Trebuchet: close folder without full animation for overview mode
 
    * packages/providers/MediaProvider/
 b9a3bfb Merge pull request #1 from Pixelase/cm-12.1
-edabd26 MediaProvider:  RU Translations
 
    * packages/services/Telephony/
 e5b7db5 Merge pull request #13 from Pixelase/cm-12.1
-54dfd4f Telephony: RU translations
+
+   * vendor/asus/
+f230c07 fugu: Move bcmdhd.cal to device to enable btcoex
 
    * vendor/cm/
 f33f459 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
-   * vendor/cmsdk/
-7d8eb9f Merge "Rename resource files" into cm-12.1
-5a08354 Rename resource files
-
 ====================
-     05-13-2015
+     05-14-2015
 ====================
 
 
@@ -55,22 +79,18 @@ f33f459 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
 
    * bionic/
 f08cac3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_bionic into cm-12.1
-6bb134b libc: denver should compile bcopy
 
    * build/
+5de47ce build: Unset JAVA_TOOL_OPTIONS to read java version
 cc943aa build: Ignore filters on platform library.
 787f6fd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
 4e34e76 build: Add IGNORE_SUBDIR to clear vars.
-1ade406 build/core: Create means of ignoring subdir layer for packages.
-d445a0f build/target: Include CM platform jar in system server.
-7891efa kernel: Fix kernelconfig build
 
    * device/samsung/hlte-common/
 623f76a hlte-common: Swap f2fs/ext4 in fstab
 
-   * external/sqlite/
-608f6a0 sqlite: upgrade to SQLite 3.8.10
-89eb3e8 Regenerate Android.patch
+   * external/stagefright-plugins/
+949ae01 stagefright-plugins: Add -Wno-psabi for ARM64 builds as well
 
    * frameworks/av/
 4529a4e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
@@ -86,12 +106,6 @@ df2151e SystemUI: Squash custom tile commits
 bfdbbe4 SystemServer: Allow starting of overlaid external services.
 8333828 Fix PackageManager crashes w/ queryIntent using callerUID of 0
 
-   * hardware/qcom/display-caf/msm8974/
-a25137d hwc: Add check for dirtyRect clear call.
-
-   * hardware/samsung/
-f7a63e5 libril: Fix network operator search
-
    * kernel/asus/grouper/
 71dd086 Build v1.03
 33282f1 Revert "time: RCU permitted to stop idle entry via softirq"
@@ -106,17 +120,12 @@ bee341d Revert "cpufreq: Don't clip PM QoS requests to old policy limits"
 
    * packages/apps/Contacts/
 d45d80b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-6e26e34 Summarize local phone storage in MemoryStatusActivity.
-
-   * packages/apps/ContactsCommon/
-fc1a70a Store all local contacts in only one account.
-f5bf44d contactscommon: ensure preferences are loaded before reload data
 
    * packages/apps/InCallUI/
 a529230 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-04b7efe InCallUI: Update another blacklist string
 
    * packages/apps/Mms/
+0bbf27e Mms-caf: RU translations
 08bd1b6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/OTAUpdates/
@@ -132,6 +141,83 @@ cc2829f Settings: Update sync widget state
 ba7f4e2 Cleanup.
 
    * packages/apps/Trebuchet/
+faff75b Trebuchet: fix behavior when ShowSearchBar feature is toggled off
+
+   * packages/providers/MediaProvider/
+edabd26 MediaProvider:  RU Translations
+
+   * packages/services/Telecomm/
+a787f1b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+54dfd4f Telephony: RU translations
+4ffc383 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/cm/
+a6b8d30 cm: Ignore filters for platform library.
+e7079d2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/cmsdk/
+7d8eb9f Merge "Rename resource files" into cm-12.1
+5a08354 Rename resource files
+37c4b96 CMSDK: Don't share a namespace with the library.
+7267e32 Fix package name.
+3f13414 CMSDK: Make sure we're binding the correct permission for enforcement.
+
+====================
+     05-13-2015
+====================
+
+
+   * bionic/
+6bb134b libc: denver should compile bcopy
+
+   * build/
+1ade406 build/core: Create means of ignoring subdir layer for packages.
+d445a0f build/target: Include CM platform jar in system server.
+7891efa kernel: Fix kernelconfig build
+
+   * external/sqlite/
+608f6a0 sqlite: upgrade to SQLite 3.8.10
+89eb3e8 Regenerate Android.patch
+
+   * frameworks/base/
+f153a3e TorchService: close all opened cameras
+a0298ac Remove resources.apk from ZipSet when removing overlay
+10f5bdd textclock: Update the time when performing a doze pulse
+5daac81 dozeui: Broadcast an intent when beginning a doze pulse
+c09a158 SystemUI: Use smaller battery padding
+9153daf Notification drawer: Custom clear all icon color, (1/2):
+9f90ae3 framework/base: Make the base framework default to google.android.webview.
+
+   * hardware/qcom/display-caf/msm8974/
+a25137d hwc: Add check for dirtyRect clear call.
+
+   * hardware/samsung/
+f7a63e5 libril: Fix network operator search
+
+   * packages/apps/CMFileManager/
+439c98b [CMFileManager]Fix the software don't hide when the drawerlayout open.
+
+   * packages/apps/Contacts/
+6e26e34 Summarize local phone storage in MemoryStatusActivity.
+
+   * packages/apps/ContactsCommon/
+fc1a70a Store all local contacts in only one account.
+f5bf44d contactscommon: ensure preferences are loaded before reload data
+
+   * packages/apps/InCallUI/
+04b7efe InCallUI: Update another blacklist string
+4184f9d InCallUI: Update blacklist strings
+
+   * packages/apps/Mms/
+0a8f504 Mms: Update blacklist strings
+
+   * packages/apps/Settings/
+cd4a498 Settings: update About screen device model fields
+003a8be Settings : Update blacklist strings
+
+   * packages/apps/Trebuchet/
 8df1f02 Do not reload settings for changing state to All Apps.
 18980a7 Trebuchet : Only reset overscrolled child
 7f0a620 Trebuchet: new folder UI v1
@@ -143,22 +229,14 @@ d21dd3a TvSettings: Improve strings
 4fa5ded TelephonyProvider: change default IDD for Indonesia
 
    * packages/services/Telecomm/
-a787f1b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-4ffc383 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+0e97d44 Telecomm: Update blacklist strings
 
    * vendor/cm/
-a6b8d30 cm: Ignore filters for platform library.
-e7079d2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 aaac132 Build Platform resource package.
 b53c503 Build CM Platform Library
 4f810fe Overlay external services start.
 
    * vendor/cmsdk/
-37c4b96 CMSDK: Don't share a namespace with the library.
-7267e32 Fix package name.
-3f13414 CMSDK: Make sure we're binding the correct permission for enforcement.
 4f0c2c3 CMSDK: Update tests for new permissions.
 2383b60 CMSDK: Update sample for new declared permission.
 6bcee3f CMSDK: Ignore subdir layer for resource package.
@@ -173,33 +251,13 @@ b53c503 Build CM Platform Library
 8b5540c libstagefright: Fix for handling of stream with corrupt frames
 779252b libmedia: avoid processing stale callback events when track recycled
 
-   * frameworks/base/
-f153a3e TorchService: close all opened cameras
-a0298ac Remove resources.apk from ZipSet when removing overlay
-10f5bdd textclock: Update the time when performing a doze pulse
-5daac81 dozeui: Broadcast an intent when beginning a doze pulse
-c09a158 SystemUI: Use smaller battery padding
-9153daf Notification drawer: Custom clear all icon color, (1/2):
-9f90ae3 framework/base: Make the base framework default to google.android.webview.
-
    * frameworks/opt/telephony/
 c4655c7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * packages/apps/CMFileManager/
-439c98b [CMFileManager]Fix the software don't hide when the drawerlayout open.
-
-   * packages/apps/InCallUI/
-4184f9d InCallUI: Update blacklist strings
-
-   * packages/apps/Mms/
-0a8f504 Mms: Update blacklist strings
 
    * packages/apps/OTAUpdates/
 378940b Update & reorganize RU translations
 
    * packages/apps/Settings/
-cd4a498 Settings: update About screen device model fields
-003a8be Settings : Update blacklist strings
 9ddf7b6 Notification drawer clear all icon - Remove dependency
 5f35845 Notification drawer icon default color - Comment out unnecessary
 afa569b Build V11.3
@@ -207,9 +265,6 @@ afa569b Build V11.3
 
    * packages/apps/Trebuchet/
 e301067 Add missing dimen to res/values/dimens.xml.
-
-   * packages/services/Telecomm/
-0e97d44 Telecomm: Update blacklist strings
 
    * packages/services/Telephony/
 f8ec9e0 Telecom : Rename blacklist
@@ -235,67 +290,9 @@ fbf2a62 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-1
    * packages/apps/Settings/
 922e9ed Revert "Remove vestigial "Choose date format" option."
 0f9f765 Merge pull request #318 from Pixelase/cm-12.1
+279c50d Fix values for duplicates strings
 
    * system/core/
 1b7fa35 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 5cccf81 fastboot: Add MMX fastboot USB ID
-
-====================
-     05-10-2015
-====================
-
-
-   * android/
-2308317 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-
-   * build/
-6d89843 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-
-   * device/samsung/qcom-common/
-58c4ee7 qcom-common: skip secure discard in recovery
-
-   * frameworks/av/
-89141dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-fc81044 SystemUI: Speed up and clean tests (squash)
-272a9d0 Switch to vector drawables for Play Tile Thanks to dully79 in XDA
-b18a697 Weather: Handle no weather information available, (1/2):
-5c06186 framework/base: add dock sd card string
-2f20dd8 Telephony: Convert subscription ID to int from long
-788d871 Improve Recents-View
-049398b Adding additional Nova theme identifier to legacy icon support.
-a7511a5 Keyguard: reinflate security views after user change
-e60dde2 Merge pull request #76 from Pixelase/cm-12.1
-ad08d92 SystemUI: RU Translations
-51d90d6 Keyguard: RU Translations
-d78cb20 Core: RU Translations
-
-   * frameworks/opt/telephony/
-42def5f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-395eea5 Change SubId from long to int type.
-
-   * kernel/asus/grouper/
-cb05cc0 Build v1.00 Beta 4
-163ec90 Revert "fat: Remove FAT Directory Bread message"
-590cadd Revert "ARM: tegra: clock: Adjust Tegra3 cpu to emc ratio"
-c9d09af Revert "video: tegra: dc: support disp mode override via boot args"
-
-   * packages/apps/Settings/
-279c50d Fix values for duplicates strings
-2f621bb Fix fatal crash in Settings(Phone Status) for secondary user
-ab0e321 Settings: add killswitch logic to factory reset screen
-8d31487 Revert "Remove non-functional hardware keyboard options."
-1bf790b Settings: don't assume GMS is installed
-042d1ff Merge pull request #316 from Pixelase/cm-12.1
-d5a162f Settings: RU translations
-
-   * packages/services/Telecomm/
-7eacb5d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-8de0502 Telephony: Improve NetworkSelection
-
-   * vendor/cm/
-f78c629 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
