@@ -1,298 +1,395 @@
 ====================
-     05-15-2015
+     05-20-2015
 ====================
 
 
    * android/
-e143ed2 Revert "Use Google's prebuilt WebView"
-f04b569 Revert "Update readme - We are no longer using pre-built chromium feature"
+eb92703 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 
-   * build/
-dbd66ba Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-c392ec5 Revert "build: Unset JAVA_TOOL_OPTIONS to read java version"
+   * art/
+3901b47 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art into cm-12.1
+be62737 Revert "AArch64: Fix incorrect use of preceding LIR."
 
-   * frameworks/av/
-f117d46 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-a1fa45c audio: Fixed streamType for non-media streams
+   * external/bluetooth/bluedroid/
+9437766 Revert "bluedroid: Support dynamic A2DP stream parameters"
 
    * frameworks/base/
-fbf60d6 Revert "Wakelock Blocker [1/2]"
-420af8b fixup volume stream linking
-1eedb0f SystemUI: Remove unnecessary camel case
+cf60e59 Themes: Fix Reboot Background
+61d5113 Theme reboot menu
+a979d9b Revert "Remove unnecessary sleep in ActivityThread."
+f4e26eb Fix bugs regarding delay the dispatching of non-wakeup alarms
+0fa7ac5 Fix bug of unnecessary wakeups after completed syncs.
+66b1dc4 Remove the window whose client process has died or become zombie
+794b6f6 Don't relayout based on a window that isn't visible
+adb1360 Not include fullscreen opaque window on screenshot
+532fb88 Only one task within the stack should moveToBack
+b9450cf Fix racing condition of mTouchExcludeRegion
+90f1efb Measure absolute value of pointer motion distance
+e29a434 Revert "Fix racing condition of mTouchExcludeRegion"
+dfb0b3e Add Feature: Heads Up custom text/background color/transparency
+7ccb3d7 Fix tiles with custom colors toggle issues
+abdfed3 NavigationRing: Added two new target actions * Last app: Open last app * Expanded desktop: Switch expanded desktop on/off
+a8c2aa0 Revert "SystemUI: Speed up and clean tests (squash)"
+0ebaf0d Make ACCESS_THEME_MANAGER permission system|signature
+d205de2 Return original value if icon info is null
+09aae50 Make default overlay for "spell checker"
+0bf39d1 BaseStatusBar: Inform StatusBarService if a notification is flagged spam
+5d4cc98 AudioService: persist volume of ring stream when ringer mode changed
+e175267 [1/3] Implement better legacy support for themes
+c00ee0c PackageManager: don't attempt to get theme on core boot
+82e049a Merge pull request #77 from wopema71/cm-12.1
 
-   * hardware/qcom/audio-caf/msm8916/
-a708ad9 post_proc: add support for virtualizer capability query
+   * frameworks/native/
+932fb7f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
 
-   * hardware/ril-caf/
-6ffe26f ril-caf: Allow using RIL version 10
-60308b2 Rild: Use division instead of mod to determine array size
-e7c6279 Added support for acquiring CAP_BLOCK_SUSPEND capability
-94ab42d Enabling RIL_QCOM_VERSION
-
-   * packages/apps/CMFileManager/
-c5c6852 CM Easy Mode File Manager Navigation fixes
-da3e50d Prevent possible OOBE when ran under monkey test
-
-   * packages/apps/Calendar/
-44d9d0c Calendar:"ADD ACCOUNT" has no function when long tapping date to creat new event in month view.
-
-   * packages/apps/Mms/
-209cb75 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-a64160e Mms: Fix copying "null" for Mms without text
-1cc458c Merge pull request #2 from Pixelase/cm-12.1
-
-   * packages/apps/Settings/
-ab747c9 Build V11.5 - HLTE Only
-ee552cc Settings: fix BT switch enabling discoverable mode
-d135175 Revert "Wakelock Blocker [2/2]"
-1e80a34 Change Usb not connected string to capital letters.
-5f995ef Show Toast if usb not connected in Storage Settings
-79cd0bf Build V11.4
-729c936 Revert "Settings: update About screen device model fields"
-89d36af Used fixed size for app icon width in default sms dialog
-47d2e99 Hide soft keyboard when opening LockPatternActivity.
-b4d999d Fix battery settings crash on Asturian/Luxembourgish
-
-   * packages/apps/Trebuchet/
-98cd4a5 Trebuchet: close folder without full animation for overview mode
-
-   * packages/providers/MediaProvider/
-b9a3bfb Merge pull request #1 from Pixelase/cm-12.1
-
-   * packages/services/Telephony/
-e5b7db5 Merge pull request #13 from Pixelase/cm-12.1
-
-   * vendor/asus/
-f230c07 fugu: Move bcmdhd.cal to device to enable btcoex
-
-   * vendor/cm/
-f33f459 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-====================
-     05-14-2015
-====================
-
-
-   * android/
-4d13db6 Update readme - We are no longer using pre-built chromium feature
-45d3536 Use Google's prebuilt WebView
-
-   * bionic/
-f08cac3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_bionic into cm-12.1
-
-   * build/
-5de47ce build: Unset JAVA_TOOL_OPTIONS to read java version
-cc943aa build: Ignore filters on platform library.
-787f6fd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-4e34e76 build: Add IGNORE_SUBDIR to clear vars.
-
-   * device/samsung/hlte-common/
-623f76a hlte-common: Swap f2fs/ext4 in fstab
-
-   * external/stagefright-plugins/
-949ae01 stagefright-plugins: Add -Wno-psabi for ARM64 builds as well
-
-   * frameworks/av/
-4529a4e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-dc19fdb SystemUI: Point to correct permission for BIND_CUSTOM_TILE_LISTENER.
-cf8f4b2 Wakelock Blocker [1/2]
-797524d Don't apply animation clip to dialog activities
-6dcf95f Context leaks in EditText causes out of memory
-d944f04 connectivity: Remove net id broadcast change event
-73aae5c base: Nat464: unregister network observer when we stop!
-df2151e SystemUI: Squash custom tile commits
-bfdbbe4 SystemServer: Allow starting of overlaid external services.
-8333828 Fix PackageManager crashes w/ queryIntent using callerUID of 0
-
-   * kernel/asus/grouper/
-71dd086 Build v1.03
-33282f1 Revert "time: RCU permitted to stop idle entry via softirq"
-21a21f6 Revert "scheduler: compute time-average nr_running per run-queue"
-6740509 Revert "proc: enhance time-average nr_running stats"
-8ad2dad Revert "scheduler: Re-compute time-average nr_running on read"
-1ff3d07 Revert "sched: unthrottle rt runqueues in __disable_runtime()"
-559b765 Revert "cpufreq: update lpj only if frequency has changed"
-bee341d Revert "cpufreq: Don't clip PM QoS requests to old policy limits"
-50263b1 Revert "cpufreq: Protected access of policy attribute"
-31789e0 Revert "SCHEDULER: Autogroup patch group by current user android UID instead of task ID"
-
-   * packages/apps/Contacts/
-d45d80b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/InCallUI/
-a529230 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Mms/
-0bbf27e Mms-caf: RU translations
-08bd1b6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/OTAUpdates/
-b8ea67a Merge pull request #12 from Pixelase/aosp
-
-   * packages/apps/Settings/
-0289fa7 Wakelock Blocker [2/2]
-b0dc7e6 Settings: add Bluetooth tethering option to BT overflow menu
-cc9515e Settings: give better hint when checking BT "Internet access" fails
-a62e3ac Expose text color in MSIM edit dialog.
-cc2829f Settings: Update sync widget state
-6acfd71 Revert "Settings: Update sync widget state"
-ba7f4e2 Cleanup.
-
-   * packages/apps/Trebuchet/
-faff75b Trebuchet: fix behavior when ShowSearchBar feature is toggled off
-
-   * packages/providers/MediaProvider/
-edabd26 MediaProvider:  RU Translations
-
-   * packages/services/Telecomm/
-a787f1b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-54dfd4f Telephony: RU translations
-4ffc383 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-
-   * vendor/cm/
-a6b8d30 cm: Ignore filters for platform library.
-e7079d2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-7d8eb9f Merge "Rename resource files" into cm-12.1
-5a08354 Rename resource files
-37c4b96 CMSDK: Don't share a namespace with the library.
-7267e32 Fix package name.
-3f13414 CMSDK: Make sure we're binding the correct permission for enforcement.
-
-====================
-     05-13-2015
-====================
-
-
-   * bionic/
-6bb134b libc: denver should compile bcopy
-
-   * build/
-1ade406 build/core: Create means of ignoring subdir layer for packages.
-d445a0f build/target: Include CM platform jar in system server.
-7891efa kernel: Fix kernelconfig build
-
-   * external/sqlite/
-608f6a0 sqlite: upgrade to SQLite 3.8.10
-89eb3e8 Regenerate Android.patch
-
-   * frameworks/base/
-f153a3e TorchService: close all opened cameras
-a0298ac Remove resources.apk from ZipSet when removing overlay
-10f5bdd textclock: Update the time when performing a doze pulse
-5daac81 dozeui: Broadcast an intent when beginning a doze pulse
-c09a158 SystemUI: Use smaller battery padding
-9153daf Notification drawer: Custom clear all icon color, (1/2):
-9f90ae3 framework/base: Make the base framework default to google.android.webview.
-
-   * hardware/qcom/display-caf/msm8974/
-a25137d hwc: Add check for dirtyRect clear call.
-
-   * hardware/samsung/
-f7a63e5 libril: Fix network operator search
-
-   * packages/apps/CMFileManager/
-439c98b [CMFileManager]Fix the software don't hide when the drawerlayout open.
-
-   * packages/apps/Contacts/
-6e26e34 Summarize local phone storage in MemoryStatusActivity.
-
-   * packages/apps/ContactsCommon/
-fc1a70a Store all local contacts in only one account.
-f5bf44d contactscommon: ensure preferences are loaded before reload data
-
-   * packages/apps/InCallUI/
-04b7efe InCallUI: Update another blacklist string
-4184f9d InCallUI: Update blacklist strings
-
-   * packages/apps/Mms/
-0a8f504 Mms: Update blacklist strings
-
-   * packages/apps/Settings/
-cd4a498 Settings: update About screen device model fields
-003a8be Settings : Update blacklist strings
-
-   * packages/apps/Trebuchet/
-8df1f02 Do not reload settings for changing state to All Apps.
-18980a7 Trebuchet : Only reset overscrolled child
-7f0a620 Trebuchet: new folder UI v1
-
-   * packages/apps/TvSettings/
-d21dd3a TvSettings: Improve strings
-
-   * packages/providers/TelephonyProvider/
-4fa5ded TelephonyProvider: change default IDD for Indonesia
-
-   * packages/services/Telecomm/
-0e97d44 Telecomm: Update blacklist strings
-
-   * vendor/cm/
-aaac132 Build Platform resource package.
-b53c503 Build CM Platform Library
-4f810fe Overlay external services start.
-
-   * vendor/cmsdk/
-4f0c2c3 CMSDK: Update tests for new permissions.
-2383b60 CMSDK: Update sample for new declared permission.
-6bcee3f CMSDK: Ignore subdir layer for resource package.
-37fc76f CMSDK: Create cyanogenmod platform resource package.
-
-====================
-     05-12-2015
-====================
-
-
-   * frameworks/av/
-8b5540c libstagefright: Fix for handling of stream with corrupt frames
-779252b libmedia: avoid processing stale callback events when track recycled
+   * frameworks/opt/net/wifi/
+913a927 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
 
    * frameworks/opt/telephony/
-c4655c7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+f07d452 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * packages/apps/CMFileManager/
+835447a Update Editor Activity to handle Content URI
 
    * packages/apps/OTAUpdates/
-378940b Update & reorganize RU translations
+1851b7e Merge branch 'master' into aosp
+868ea89 Merge pull request #14 from udK/master
+927fdab Added italian translation
 
    * packages/apps/Settings/
-9ddf7b6 Notification drawer clear all icon - Remove dependency
-5f35845 Notification drawer icon default color - Comment out unnecessary
-afa569b Build V11.3
-5aa146b Notification drawer: Custom clear all icon color, (2/2):
+cffe85d [WIP] Build V11.6
+49736c8 Add Feature: Heads Up custom text/background color, transparency
+8dc0bc0 Fix lockscreen shortcuts
+53a4c30 Settings: Livedisplay: Respect default values passed from CMHW
+e0f06cb Settings: improve Search
 
-   * packages/apps/Trebuchet/
-e301067 Add missing dimen to res/values/dimens.xml.
+   * packages/inputmethods/LatinIME/
+194a723 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
 
-   * packages/services/Telephony/
-f8ec9e0 Telecom : Rename blacklist
-5534c62 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+   * packages/providers/ThemesProvider/
+4d4c54e Fix exception on themes without lockscreen images
+a8594f9 FIX: Preview table upgrade path
 
    * vendor/cm/
-7520a20 Revert "vendor/cm: add CMBugReport"
-81b54bd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-94645ab vendor/cm: add CMBugReport
+060ce62 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+580ac6f APNs: moar MVNO's
+6a5733a APNs: Separate Simyo ES' entry (default and mms)
+ebda3cd apns: Added APN configuration for Suop MVNO (Spain)
+9635acd Added several APNs, updated a couple carrier names
+c352261 Split Smartfren MMS out
+6fc428b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+88e99ec CM: Update styles for droiddoc.
+7ebb507 CM: Provide droiddoc cmsdk template.
+
+   * vendor/cmsdk/
+0f8bcd7 Merge "CMSDK: Make sure to hide internal package from docs." into cm-12.1
+fb07983 CMSDK: Point to vendor/cm cmsdk templates for web.
+9389190 CMSDK: Make sure to hide internal package from docs.
+8c36c41 CMSDK: Update code comments for permission changes.
 
 ====================
-     05-11-2015
+     05-19-2015
 ====================
 
 
-   * build/
-fbf2a62 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-212bf4c build: Move msm899x FLAC metadata flag to qcom_utils.mk
+   * android/
+b04680e 5.1.1_r1 -> 5.1.1_r2
+
+   * art/
+1e14008 AArch64: Fix incorrect use of preceding LIR.
+47e066e AArch64: Addressing Cortex-A53 erratum 835769.
 
    * frameworks/base/
-7c8f6fd QS: fix filtering additional tiles
+6a084c6 revert Speed things up commit
+
+   * frameworks/opt/net/wifi/
+10c17ae Silence verbose Wifi logging
+
+   * frameworks/opt/telephony/
+2d1f7da Don't needlessly disable data.
+fe85370 Don't clear invalid defaults before SIM info of all SIMs is populated.
+
+   * packages/apps/CMFileManager/
+08a24ff Prevent possible OutOfBoundsException
+
+   * packages/apps/Calendar/
+80a93a5 Check date string size before trimming it
+
+   * packages/apps/LockClock/
+5f8fa15 Fix weird bug in LockClock
+
+   * packages/apps/ThemeChooser/
+01431bd [3/3] Implement better legacy support for themes
+
+   * packages/apps/Trebuchet/
+d24a8a9 Increase SDK Version to support Android for Work
+
+   * packages/inputmethods/LatinIME/
+fd5ea5a make default overlay for "show correction suggestion"
+
+   * packages/providers/ThemesProvider/
+d2d2ffd [2/3] Implement better legacy support for themes
+
+   * vendor/cmsdk/
+2217bb4 CMSDK: Remove dead code.
+
+====================
+     05-18-2015
+====================
+
+
+   * art/
+9078331 Remove dex2oat watchdog warning
+27d8344 Guard against name == null in ShortDump
+ff5abe7 Fix possible null deference in Throwable::Dump
+
+   * frameworks/base/
+21d91b1 Add double tap option to lockscreen shortcuts
+dfe47dc Adjust display inversion matrix to account for luminance
+f2c5768 Use the correct parent size to initialize animations
+ef42d46 Fix lost singleton provider after force-stopping user or package.
+b79a9fd Also restart provider if there is external handle.
+0bdbc5b Check caller status precisely when registering receiver.
+e939823 fix return value scale of notifyANR()
+beaefa0 Frameworks/base: Fix old code in MediaPlayer
+40ef9ed Revert Speed up orientation rotation commit
 
    * packages/apps/Settings/
-922e9ed Revert "Remove vestigial "Choose date format" option."
-0f9f765 Merge pull request #318 from Pixelase/cm-12.1
-279c50d Fix values for duplicates strings
+69b73ed Add double tap option to lockscreen shortcuts Change-Id: I640a8724e41b5549c0b949b2e94b54a0c5834e4b
+
+   * vendor/samsung/
+99da91a Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+9b82411 Merge pull request #616 from ljzyal/cm-12.1
+bd4cc24 klte:add kltechnduo
+
+====================
+     05-17-2015
+====================
+
+
+   * frameworks/base/
+361b2a9 apps2sd: Only allow "move to ___" if the media is mounted [2/2]
+41cff41 Fix LiveDisplay QS icon size.
+
+   * frameworks/opt/telephony/
+308f396 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+ee389bd Revert "ril: Fix Tombstone on Rild"
+2d7101c telephony: Release pending network requests when releasing a request
+
+   * packages/apps/InCallUI/
+850e975 [1/2] InCallUI: SmartMute
+d163897 Revert "[1/2] InCallUI: SmartMute"
+
+   * packages/apps/Settings/
+72c071a Exclude themes from being moved to external storage
+8fd9ea2 apps2sd: Only allow "move to ___" if the media is mounted [1/2]
+a16c901 apps2sd: Enable apps2sd for apps with unspecified install location
+c15863f Merge pull request #319 from Pixelase/cm-12.1
+4b8648c Settings: Update RU translations
+
+====================
+     05-16-2015
+====================
+
+
+   * android/
+e0047b3 Update readme - We are no longer using pre-built chromium feature
+2b33725 Use Google's prebuilt WebView
+
+   * build/
+73cbcce Revert "build: Add chromium prebuilt support to envsetup.sh && The core Makefile"
+3ff0e53 Revert "Fix chromium"
+849845e Add PRODUCT_PACKAGES for Google's prebuilt WebView
+
+   * external/whispersystems/WhisperPush/
+00d880b Automatic translation import
+
+   * frameworks/base/
+0111a5c Remove unused symbols
+72f55c5 Re-add missing ellipsis string
+cac7f64 Don't dismiss keyguard if recreating status bar
+b8f3aa6 [1/3] Improve PreviewsColumns Implementation
+0d7d696 Automatic translation import
+486ce0f Profiles: make Default profile change ring mode back on
+8a2bc07 [ActivityManager] Fix activity always visible.
+2329b57 [ActivityManager] Move UI operation to UI handler
+a3ce237 KeyGuard: Fix the wrong Plmn/SPN display.
+c381eae SystemBars: Allow the StatusBarComponent be externally defined
+c608439 Revert "ConnectivityService: add persist.radio.noril"
+363654f Remove some useless debug spam.
+
+   * frameworks/opt/telephony/
+e4a56f5 RIL : allow RILReceiver to be overridden
+ca3751f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * frameworks/webview/
+d53ba7b Do not resign webview.apk
+ff6340d Follow Android 5.0+ system app library style #2
+988152f Use p7zip to rebuild webview.apk
+
+   * hardware/qcom/audio-caf/msm8994/
+9505827 hal: Cleanup msm8992 build flags
+
+   * packages/apps/AudioFX/
+672d5a7 Automatic translation import
+
+   * packages/apps/Bluetooth/
+fa5eb1a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+d56399b Automatic translation import
+
+   * packages/apps/BluetoothExt/
+aac31fd Automatic translation import
+
+   * packages/apps/Browser/
+eaa0ab0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
+6d90275 Automatic translation import
+
+   * packages/apps/CMBugReport/
+95e313e Automatic translation import
+
+   * packages/apps/CMFileManager/
+3a81139 Automatic translation import
+2ed65f0 Fix back arrow discoloration in action bar
+
+   * packages/apps/CMWallpapers/
+993ba51 Automatic translation import
+
+   * packages/apps/Calculator/
+e84f50a Automatic translation import
+
+   * packages/apps/Calendar/
+b25c6c5 Fix for days that are expected to be 3chars end up being longer.
+5b8aac9 Automatic translation import
+
+   * packages/apps/Camera2/
+b13ecf2 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+03b30b5 Automatic translation import
+
+   * packages/apps/Contacts/
+f475354 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+4c91781 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+3285787 Automatic translation import
+
+   * packages/apps/DeskClock/
+5e50aef Automatic translation import
+
+   * packages/apps/Dialer/
+5218475 Automatic translation import
+
+   * packages/apps/Eleven/
+d2fa91a Automatic translation import
+
+   * packages/apps/Email/
+5779a29 Automatic translation import
+
+   * packages/apps/Exchange/
+b3f3790 Automatic translation import
+
+   * packages/apps/Gallery2/
+9231926 Automatic translation import
+
+   * packages/apps/InCallUI/
+cb3d848 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+64bc81c Automatic translation import
+
+   * packages/apps/LockClock/
+ecfe031 Automatic translation import
+
+   * packages/apps/Mms/
+0abf046 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+f6b0db8 Automatic translation import
+c25966c Mms: fix recipients getting lost when toggling "Mobile numbers only"
+
+   * packages/apps/Nfc/
+4a87963 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Nfc into cm-12.1
+9739a31 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+b9c601b Automatic translation import
+
+   * packages/apps/Settings/
+4d3061b Do not allow privacy guard for core system apps.
+d0c8f92 Automatic translation import
+a578279 Settings: setup Default Profile after OOBE has run
+7b57416 Fix mobile network switch for CDMA phones
+
+   * packages/apps/SoundRecorder/
+4981681 Automatic translation import
+
+   * packages/apps/Stk/
+3d46a7f Automatic translation import
+
+   * packages/apps/Terminal/
+15983c8 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+3988a79 [2/2] Use files instead of blobs
+ff1bab8 [3/3] Improve PreviewsColumns Implementation
+d1d2a8e Automatic translation import
+
+   * packages/apps/Trebuchet/
+274e546 Automatic translation import
+
+   * packages/apps/TvSettings/
+107e728 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+917885f Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+ca5b4a9 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+f317890 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+ea11e80 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+8fd765a [1/2] Use files instead of blobs
+c169904 [2/3] Improve PreviewsColumns Implementation
+3b2e3e3 Automatic translation import
+
+   * packages/services/Mms/
+56d3c6a Automatic translation import
+
+   * packages/services/Telecomm/
+2442fea Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+3319fcd Automatic translation import
+
+   * packages/services/Telephony/
+fe7fd29 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+2b48acf Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+ddd1171 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+2629b96 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+058947f Automatic translation import
 
    * system/core/
-1b7fa35 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-5cccf81 fastboot: Add MMX fastboot USB ID
+a3ceca4 init: force SELinux to be permissive on all builds
+
+   * vendor/cm/
+8acc4ea Revert "vendor/omni: Add chromium_prebuilt.sh"
+8590082 Revert "vendor/omni: Fix-ups for prebuilt Chromium"
+84b9b4b Revert "Prebuilt chromium: update script for lollipop"
+e06647f Revert "chromium_prebuilt for 64bit"
+1c7def8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+374ca9d init: set ro.radio.noril if persist.radio.noril is set
+5cdfc8d Add authentication parameters to MVNO NL APN configuration
+5cfc7b8 Updated Telekom RO APN to reflect their recent name change
+a5c460a Added APN for Costa Rica ICE Kolbi
+71a61f4 Removed obsolete internet APN for Indosat
+
+   * vendor/cmsdk/
+1fa41bb Automatic translation import
+
+   * vendor/samsung/
+725ccad Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
