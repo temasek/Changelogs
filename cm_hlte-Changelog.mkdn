@@ -1,12 +1,86 @@
 ====================
-     05-26-2015
+     05-28-2015
 ====================
 
 
-   * device/samsung/qcom-common/
-5cfd7e7 qcom-common: doze: Add back button to action bar
-caa8818 qcom-common: doze: fix defaults
-7740631 qcom-common: doze: Consolidate doze settings
+   * device/qcom/common/
+dfea86b init: Add persmissions to access res_info node for HDMI timing info
+2a1e25e init: Set permissions for physical address
+b3bbabf init_msm: S3D mode permissions
+e48885f init: Add permissions for CEC nodes
+
+   * external/bluetooth/bluedroid/
+f2ce185 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+
+   * frameworks/base/
+8436546 SystemUI: orientation work cleanup
+291b798 Profiles: re-enable data toggling
+2d2e1df Increase brightness faster if ambient light is brightening quickly.
+e494123 Revert "frameworks: display: Added automatic brightness configs"
+9aa9d3a Allow sending vendor- or device-specific commands to the camera HAL.
+eb8d986 SlimActions: add menu big drawable
+d1888de Revert "Allow no applications in the navring"
+9c5caaa Revert "Make Navring available to devices with no navbar"
+d9bfe7d Make Navring available to devices with no navbar
+fdc916a PackageManagerService: Create means of installing prebundled applications
+752e1e2 [1/2] Themes: Multiwallpaper support
+
+   * frameworks/opt/telephony/
+c8b9d04 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * libcore/
+ae8ea9e Remove forced alignment code.
+
+   * packages/apps/Camera2/
+d4e6548 Introduce a 'device plugin' concept.
+
+   * packages/apps/OTAUpdates/
+f0312ba Merge branch 'master' into aosp
+0f08198 Left debugging on. Oops!
+ecc75ad Merge branch 'master' into aosp
+1f13470 Getting tired of poor Play Store ratings due to user stupidity.
+a58c549 Forgot this version bump
+61471be Should not show this on AOSP ROMs
+cd88517 Merge branch 'master' into aosp
+41de5b4 Version bump and changelog update
+0b3c579 Added first run message to inform on new features
+7aa5aa5 Make Changelogs more object-orientated
+1e923a3 Cleaning up
+43d7bcf Fixed ORS on non-AOSP devices
+
+   * packages/apps/Settings/
+367ea0e Build V12
+1baad0e Settings:Not responding In-app search function
+d17b74a Prevent UI crash when OmniSwitch was uninstalled/frozen
+2245950 DSLV: fix NPE in ActionListViewSettings with mActionConfigs
+53a665f Kill off a few MSIM tab hosts.
+323a8e2 SlimActions: add menu big action
+be6ff64 Revert "Move navring out of navbar"
+5367baf Move navring out of navbar
+d29b2c7 Settings: Add some more entries into 'SMS message limit' menu
+
+   * packages/apps/ThemeChooser/
+3fa7657 Allow changing status/navigation bars when styles selected
+
+   * packages/providers/ThemesProvider/
+b83a558 Check old install state before reapplying icon pack
+
+   * packages/services/Telephony/
+3da2cca Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+ba719a2 msim: Fix up activity for Call settings
+
+   * vendor/samsung/
+49616da Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+2cb7fee Merge pull request #620 from ljzyal/cm-12.1
+e2758bc Add kltechn
+
+====================
+     05-27-2015
+====================
+
+
+   * external/bluetooth/bluedroid/
+0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
 
    * frameworks/base/
 5e6f747 Revert "Show 4G instead of LTE switch [1/2]"
@@ -24,6 +98,9 @@ eb8385a Fix ForceClose due to TaskManger.
 
    * frameworks/native/
 1abc5ae Replace JNI primitive array critical calls with non-critical ones.
+
+   * frameworks/opt/telephony/
+811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
 
    * packages/apps/Bluetooth/
 f1370c8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
@@ -57,6 +134,15 @@ b1bac2d Fix there are no folders in NavigationView Pinned file manager
    * packages/apps/Mms/
 f23682d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
+   * packages/apps/OTAUpdates/
+88e2452 Added Install after ROM functionality for Addons
+5f4e91a Added app changelog to main page
+ff17b1b Addon delete confirmation
+a1aaa5a Fixed addon date parsing
+dbe6ca2 Changed Addon download dir as well
+0a58ad4 Fixed some Italian translations errors
+4d6b7c1 Changed Download Dir
+
    * packages/apps/Settings/
 7c00fc6 Build V11.9
 f0651e7 Revert "Show 4G instead of LTE switch [2/2]"
@@ -69,13 +155,15 @@ c817c9a Show 4G instead of LTE switch [2/2] AICPfy
 
    * packages/apps/ThemeChooser/
 3b49175 Automatic translation import
-689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
 
    * packages/apps/Trebuchet/
 911938a Automatic translation import
 
    * packages/apps/UnifiedEmail/
 1e353df Automatic translation import
+
+   * packages/providers/ThemesProvider/
+bb432a1 [2/2] Themes: Multiwallpaper support
 
    * packages/services/Telecomm/
 39c583d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
@@ -87,12 +175,18 @@ bd73843 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_package
 0b75e32 Improve strings
 
    * vendor/samsung/
+ce29a30 Add kltechn
 502dac4 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
 ====================
-     05-25-2015
+     05-26-2015
 ====================
 
+
+   * device/samsung/qcom-common/
+5cfd7e7 qcom-common: doze: Add back button to action bar
+caa8818 qcom-common: doze: fix defaults
+7740631 qcom-common: doze: Consolidate doze settings
 
    * external/whispersystems/WhisperPush/
 8011005 Automatic translation import
@@ -157,6 +251,9 @@ ea15282 Automatic translation import
    * packages/apps/Terminal/
 15210f0 Automatic translation import
 
+   * packages/apps/ThemeChooser/
+689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
+
    * packages/apps/Trebuchet/
 d15317d Trebuchet : Activate the default homepage selection button on first run
 
@@ -181,40 +278,27 @@ d15317d Trebuchet : Activate the default homepage selection button on first run
    * vendor/cmsdk/
 38afe8d Automatic translation import
 
-   * vendor/samsung/
-7ba650b Merge pull request #618 from ljzyal/cm-12.1
-
 ====================
-     05-24-2015
+     05-25-2015
 ====================
 
 
    * frameworks/base/
 590f61a Status bar expanded header: Custom background color, (1/2)
-eed5af6 Frameworks: SlimPie (1/2)
-808a01e Revert "Base: SlimPie (1/2)"
-7e8518e Revert "Frameworks: SlimPie give user ability to reduce trigger heights if IME keyboard shows (1/2)"
-418d81a Revert "SlimPIE: Configurable sensitivity [1/2]"
-89a58197 Revert "SystemUI: Fix PIE control not sticking on reboot"
 
    * packages/apps/Settings/
 9598522 Add notifications/qs/torch to PIE action selections
 11166ac Build V11.8
 75b8040 Status bar expanded header: Custom background color, (2/2):
-0b3f5b0 Settings: SlimPie (2/2)
-e4d9449 Revert "Settings: SlimPie (2/2)"
-bd4ca78 Revert "Settings: SlimPie give user ability to reduce trigger heights if IME keyboard shows (2/2)"
-62ad53e Revert "SlimPIE: Configurable sensitivity [2/2]"
-2919be9 Revert "Update PIE Control"
 
    * vendor/asus/
 aca0c02 fugu: Make some apk's presigned to match Google blob release
 
    * vendor/samsung/
-173355a kltechnduo: Update RIL to lollipop
+7ba650b Merge pull request #618 from ljzyal/cm-12.1
 
 ====================
-     05-23-2015
+     05-24-2015
 ====================
 
 
@@ -227,6 +311,11 @@ b252e87 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_su
 bc7e82d AP WMM: Fix integer underflow in WMM Action frame parser
 
    * frameworks/base/
+eed5af6 Frameworks: SlimPie (1/2)
+808a01e Revert "Base: SlimPie (1/2)"
+7e8518e Revert "Frameworks: SlimPie give user ability to reduce trigger heights if IME keyboard shows (1/2)"
+418d81a Revert "SlimPIE: Configurable sensitivity [1/2]"
+89a58197 Revert "SystemUI: Fix PIE control not sticking on reboot"
 75be561 SystemServer: Skip TorchService construction if no flash feature detected
 41126fa Add alternate WebView provider package
 76bb59c Revert "framework/base: Make the base framework default to google.android.webview."
@@ -238,62 +327,13 @@ a1105d9 unbreak density scaling
 bacadd7 Merge "Add Landscape support to Eleven" into cm-12.1
 
    * packages/apps/Settings/
+0b3f5b0 Settings: SlimPie (2/2)
+e4d9449 Revert "Settings: SlimPie (2/2)"
+bd4ca78 Revert "Settings: SlimPie give user ability to reduce trigger heights if IME keyboard shows (2/2)"
+62ad53e Revert "SlimPIE: Configurable sensitivity [2/2]"
+2919be9 Revert "Update PIE Control"
 ae7717a Keep the content when change the orientation
 
-====================
-     05-22-2015
-====================
-
-
-   * device/samsung/qcom-common/
-5652358 doze: Set gesture to disabled by default
-
-   * frameworks/base/
-481d4e3 Fix another off-by-one error in computeEllipsis
-a9100f8 frameworks: re-work lastapp icon to a more material version
-d5dbc14 SystemUI: Move custom tile listener service registration to phonestatusbar.
-c61d2a3 VolumePanel: Properly update expanded volume panel sliders
-3de2408 Revert "fix CTS DisplayTest.testGetMetrics()"
-
-   * frameworks/native/
-b939153 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-c5502f1 libgui: bail assertion if sensorservice cannot be found
-
-   * frameworks/opt/telephony/
-a48ab42 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-3f96311 telephony: extend the user notification toggle for restricted mobile access
-
-   * frameworks/webview/
-b2305a0 Update WebView 42.0.2311.138 to 43.0.2357.76
-
-   * packages/apps/CMFileManager/
-9a75e1b [CMFileManager]Fix CMFileManager sometimes crash.
-
-   * packages/apps/Contacts/
-d41560d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/Mms/
-cca9b5b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Settings/
-6786a18 Build V11.7 - Android 5.1.1_r3
-62c3fef CryptKeeper improvements
-085168d Settings: add marquee to Device administrators screen
-817b8f9 CryptKeeper: layout whole screen in bounds
-
-   * packages/services/Telephony/
-664afdd Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-ec8c8a8 Fix CDMA vs. WCDMA typo in cs translations
-d95d5d9 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-be6d6ee Telephony: Further improve network selection
-
-   * vendor/cm/
-cee709c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-e190d66 CM: Update droiddoc template for cmsdk
-54d5498 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
-7790c60 APNs: Add MVNO HoT Austria Internet and MMS APN configuration
-
    * vendor/samsung/
-6db85c2 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-e89b93e Merge pull request #617 from Ziyann/cm-12.1
+173355a kltechnduo: Update RIL to lollipop
 
