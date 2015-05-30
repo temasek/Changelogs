@@ -1,5 +1,206 @@
 ====================
+     05-30-2015
+====================
+
+
+   * frameworks/base/
+f26abf5 Revert "Revert "Allow custom density setting""
+b6581eb Revert "Fix typo in density assignment."
+aef3923 Settings: Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
+46e24e4 SystemUI: prompt for SIM PIN if lockscreen is disabled
+d816f3a Fix typo in density assignment.
+8842478 Revert "Allow custom density setting"
+973af05 Improve Task manager UI
+c429321 Materialize task kill button
+6843c4f Fix logic of icon placements in Statusbar header
+a6c2dc9 Power menu header button improvement
+d484b35 (SQUASH) Power menu button in expanded statusbar
+9899b5b SystemUI: add HeadsUp button in status bar header (1/2)
+3a66c0b Revert "SystemUI: orientation work cleanup"
+
+   * frameworks/opt/telephony/
+592b53a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+18ba6a1 RIL: Fix datacall parcel reading
+
+   * libcore/
+1ee7913 Fix incorrect position calculation in CharsetDecoder.
+f58c15f Don't throw UnsupportedOpEx on multi-char negative/percent symbols.
+f99a3d4 Serialize minusSign/percentSign as strings in DecimalFormatSymbols.
+072d431 Avoid opening jar files from the classpath more than once
+06ab575 Ensure proper integer promotion for bit shifts.
+
+   * packages/apps/AudioFX/
+5029f8f Expose text color and background colors for Theming
+c99dcd8 Expose actionbar background for Theming
+
+   * packages/apps/Eleven/
+1aad7c8 Eleven: Add playlist cover art to search results
+88469b7 Eleven: remove an unnecessary check when playing music to improve perf
+5ffc7db Eleven: Add a play Album option on songs
+995226c Merge "Eleven: Remove inset from top tracks circle" into cm-12.1
+
+   * packages/apps/Mms/
+0e87c89 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+040b4eb Build V12.1
+57c6e9f Missing xml key that caused FC if OmniSwitch not installed
+4252be7 Revert "Revert "[LCD density] be nice and show a dialog for user confirmation""
+ec7e295 Revert "Settings: use WindowManager to set custom DPI"
+ae042d6 Settings: use WindowManager to set custom DPI
+81cc086 Revert "[LCD density] be nice and show a dialog for user confirmation"
+b2db5c7 Profiles: fix SeekBarVolumizer behavior
+bea438f Settings: StatusBar Power Menu button
+2b30514 Settings: add HeadsUp button in status bar header (2/2)
+
+   * packages/apps/Trebuchet/
+20bf4bd Trebuchet: fix excessive drawing with folders
+
+   * vendor/cm/
+7b9f391 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+8f74448 CM: Make sure we're parsing api versions for cmsdk docs.
+
+====================
+     05-29-2015
+====================
+
+
+   * frameworks/base/
+a2203b1 Changes in Heads up qs tile
+3b2fb98 SystemUI: fix adding headsup view after boot
+75731ab Improve HeadsUp [1/2] Rework stock behaviours.
+ae658c6 Fix duplicate removal of same pointer in PathCache.
+6723e14 Pass charset to XmlPullParser.setInput instead of null
+e36c059 Avoid NPE when sendMessage is called after disconnect.
+7909a22 [PDF] fix for crash when PDF printing in Chrome
+154992e Avoid NPE in printspooler when changing language
+fb82dc4 Avoid AsyncTask ThreadPool leak in RecentTaskLoaser
+a4702d8 [ActivityManager] handle dumpHeap() but no free space case.
+fbbe2be Fix NPE causing a hot reboot when pressing power button
+3afe6b0 Fix ListView is not scrolled properly with arrows
+6647944 libaudioeffect_jni GREF leak fix
+c2dbb56 InputWrapper: opt out early if session == null
+8cff59e fw: media: Handle NPE due to threading race
+5c91308 fix NPE in TextUtils
+f8646fb Fixes rapid calls to restartLoader delivering old results
+78ac410 IBinder can be leaked in FingerPrintService
+f932e09 Prevent erroneous calls to OnCheckedChangedListener
+d9c26ae Race condition accessing deleted global ref in JavaDeathRecipient.
+f67eb83 ActivityManager: Listen for controller's death
+7ce673c Avoid unregistering client while stopping LE Scan
+fcb1bf1 [Framework] fix integer overflow while large number of text operator in SpannableStringBuilder
+5ed9c02 fix WRITE_SETTINGS to be "dangerous"
+3ff4874 Fix Photosphere/Camera FCs
+3cfa83d Fix a NPE when putting a null-Bundle in an Intent
+d9727cc Deadlock in PackageInstallerSession
+9d26133 Trace SQLite operations
+06281da core: Update GPS Icons to be more Material
+1183f8d Determine default 12/24 hour time format setting from locale.
+c739db6 Modify GC Delay to include subsequent launches. (fix)
+28808d5 Revert "Better density scaling compatibility"
+daf5819 QS: merge in changes for Sync tile from CM
+
+   * frameworks/webview/
+9fdee72 Update WebView 43.0.2357.76 to 43.0.2357.86
+
+   * packages/apps/Eleven/
+4c9a305 Eleven: Remove inset from top tracks circle
+
+   * packages/apps/Mms/
+d739b0c Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+eee8961 Carrier-specific MMS limits
+
+   * packages/apps/OTAUpdates/
+9fa296c Merge branch 'master' into aosp
+d7b3006 Version bump 2.4.2
+c65cad0 Fix ORS generation failing on the download dir
+02a05a0 Remove add category on AOSP
+
+   * packages/apps/Settings/
+6cba6fb [Settings] Improve HeadsUp [2/2]
+760398b profiles: respect lockscreen policies
+
+   * packages/apps/Trebuchet/
+ac3febf Move tablet preference ahead of the default
+35fbd48 trebuchet: Don't use new hotness on tablets
+f1c2734 trebuchet: Enable the new hotness by default.
+fff40f6 Trebuchet Statistics:  - Add plumbing for sending events.  - Add aggregation service that runs on some interval  - Hook send events into respective UX interactions
+
+   * packages/providers/ThemesProvider/
+93634c9 Delete preview table rows on theme update
+0d4fca3 Handle null parameters when creating query strings
+
+   * vendor/cm/
+345c43b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+9e9fea3 Fix invalid roaming_protocol for telenor.smart APN
+6560891 Drop hipri,supl from Smartfren4G
+
+   * vendor/cmsdk/
+064eda2 Merge "CMSDK: Hide CMContextConstants from docs." into cm-12.1
+
+   * vendor/samsung/
+ea8cd6e Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+9a10be8 Merge pull request #621 from superior-code/cm-12.1
+
+====================
      05-28-2015
+====================
+
+
+   * frameworks/base/
+5ac893a Fix bug regarding the comparator sorts Alarms into increasing time order.
+6e24a67 Better density scaling compatibility
+8436546 SystemUI: orientation work cleanup
+291b798 Profiles: re-enable data toggling
+2d2e1df Increase brightness faster if ambient light is brightening quickly.
+e494123 Revert "frameworks: display: Added automatic brightness configs"
+9aa9d3a Allow sending vendor- or device-specific commands to the camera HAL.
+eb8d986 SlimActions: add menu big drawable
+d1888de Revert "Allow no applications in the navring"
+9c5caaa Revert "Make Navring available to devices with no navbar"
+
+   * libcore/
+ae8ea9e Remove forced alignment code.
+
+   * packages/apps/Camera2/
+d4e6548 Introduce a 'device plugin' concept.
+
+   * packages/apps/Email/
+dd81d6d EmailTests: fix api change
+2c32ba7 email: fix tests
+
+   * packages/apps/Mms/
+567413e Mms : Add users permission to prevent crash
+
+   * packages/apps/PhoneCommon/
+5032ee9 PhoneCommon : Add layouts to support hdpi devices
+
+   * packages/apps/Settings/
+367ea0e Build V12
+1baad0e Settings:Not responding In-app search function
+d17b74a Prevent UI crash when OmniSwitch was uninstalled/frozen
+2245950 DSLV: fix NPE in ActionListViewSettings with mActionConfigs
+53a665f Kill off a few MSIM tab hosts.
+323a8e2 SlimActions: add menu big action
+be6ff64 Revert "Move navring out of navbar"
+
+   * packages/apps/Trebuchet/
+347c6ec Fix the hint text of rename folder can't change with system language
+16416d4 Trebuchet: fix NPE during touch events
+
+   * packages/services/Telephony/
+3da2cca Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+ba719a2 msim: Fix up activity for Call settings
+
+   * vendor/cmsdk/
+e2feecb CMSDK: Hide CMContextConstants from docs.
+
+   * vendor/samsung/
+912da0c klte:update blobs
+49616da Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     05-27-2015
 ====================
 
 
@@ -11,28 +212,45 @@ e48885f init: Add permissions for CEC nodes
 
    * external/bluetooth/bluedroid/
 f2ce185 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
 
    * frameworks/base/
-8436546 SystemUI: orientation work cleanup
-291b798 Profiles: re-enable data toggling
-2d2e1df Increase brightness faster if ambient light is brightening quickly.
-e494123 Revert "frameworks: display: Added automatic brightness configs"
-9aa9d3a Allow sending vendor- or device-specific commands to the camera HAL.
-eb8d986 SlimActions: add menu big drawable
-d1888de Revert "Allow no applications in the navring"
-9c5caaa Revert "Make Navring available to devices with no navbar"
 d9bfe7d Make Navring available to devices with no navbar
 fdc916a PackageManagerService: Create means of installing prebundled applications
 752e1e2 [1/2] Themes: Multiwallpaper support
+5e6f747 Revert "Show 4G instead of LTE switch [1/2]"
+49528fa Replace JNI primitive array critical calls with non-critical ones.
+ab9f76e Add option to set default custom function to button recents (1/2)
+612dc59 Revert to previous battery padding
+9526eb2 systemui: notify everyone that lockscreen is not going to be shown
+
+   * frameworks/native/
+1abc5ae Replace JNI primitive array critical calls with non-critical ones.
 
    * frameworks/opt/telephony/
 c8b9d04 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 
-   * libcore/
-ae8ea9e Remove forced alignment code.
+   * hardware/qcom/display-caf/msm8960/
+6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
+eee4836 libhwcomposer: Enable rotator on resolution change
 
-   * packages/apps/Camera2/
-d4e6548 Introduce a 'device plugin' concept.
+   * packages/apps/Bluetooth/
+f1370c8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Browser/
+f1a9458 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
+
+   * packages/apps/Contacts/
+414d6f1 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/Dialer/
+83daa37 Automatic translation import
+
+   * packages/apps/InCallUI/
+097fa53 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+f23682d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/OTAUpdates/
 f0312ba Merge branch 'master' into aosp
@@ -47,94 +265,6 @@ cd88517 Merge branch 'master' into aosp
 7aa5aa5 Make Changelogs more object-orientated
 1e923a3 Cleaning up
 43d7bcf Fixed ORS on non-AOSP devices
-
-   * packages/apps/Settings/
-367ea0e Build V12
-1baad0e Settings:Not responding In-app search function
-d17b74a Prevent UI crash when OmniSwitch was uninstalled/frozen
-2245950 DSLV: fix NPE in ActionListViewSettings with mActionConfigs
-53a665f Kill off a few MSIM tab hosts.
-323a8e2 SlimActions: add menu big action
-be6ff64 Revert "Move navring out of navbar"
-5367baf Move navring out of navbar
-d29b2c7 Settings: Add some more entries into 'SMS message limit' menu
-
-   * packages/apps/ThemeChooser/
-3fa7657 Allow changing status/navigation bars when styles selected
-
-   * packages/providers/ThemesProvider/
-b83a558 Check old install state before reapplying icon pack
-
-   * packages/services/Telephony/
-3da2cca Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-ba719a2 msim: Fix up activity for Call settings
-
-   * vendor/samsung/
-49616da Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-2cb7fee Merge pull request #620 from ljzyal/cm-12.1
-e2758bc Add kltechn
-
-====================
-     05-27-2015
-====================
-
-
-   * external/bluetooth/bluedroid/
-0842099 Revert "bluedroid: Support dynamic A2DP stream parameters"
-
-   * frameworks/base/
-5e6f747 Revert "Show 4G instead of LTE switch [1/2]"
-49528fa Replace JNI primitive array critical calls with non-critical ones.
-ab9f76e Add option to set default custom function to button recents (1/2)
-612dc59 Revert to previous battery padding
-9526eb2 systemui: notify everyone that lockscreen is not going to be shown
-0a0fe40 Automatic translation import
-13f1516 Expose task manager values for themers
-55faed5 Fixed Task Manager bug described in post below
-c71481a CAF Task Manager switch [1/2]
-eb8385a Fix ForceClose due to TaskManger.
-5040d89 SystemUI: Add task manager
-2ff73de Show 4G instead of LTE switch [1/2]
-
-   * frameworks/native/
-1abc5ae Replace JNI primitive array critical calls with non-critical ones.
-
-   * frameworks/opt/telephony/
-811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
-
-   * packages/apps/Bluetooth/
-f1370c8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
-
-   * packages/apps/BluetoothExt/
-8f9b3cf Automatic translation import
-
-   * packages/apps/Browser/
-f1a9458 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
-
-   * packages/apps/CMFileManager/
-b1bac2d Fix there are no folders in NavigationView Pinned file manager
-4841e94 Automatic translation import
-
-   * packages/apps/Calendar/
-241a809 Calendar: fix recurrence picker switch
-
-   * packages/apps/Contacts/
-414d6f1 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/Dialer/
-83daa37 Automatic translation import
-
-   * packages/apps/Email/
-3a75a69 email: fix Exchange sync frequency account setup
-7074819 Automatic translation import
-
-   * packages/apps/InCallUI/
-097fa53 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Mms/
-f23682d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/OTAUpdates/
 88e2452 Added Install after ROM functionality for Addons
 5f4e91a Added app changelog to main page
 ff17b1b Addon delete confirmation
@@ -144,6 +274,8 @@ dbe6ca2 Changed Addon download dir as well
 4d6b7c1 Changed Download Dir
 
    * packages/apps/Settings/
+5367baf Move navring out of navbar
+d29b2c7 Settings: Add some more entries into 'SMS message limit' menu
 7c00fc6 Build V11.9
 f0651e7 Revert "Show 4G instead of LTE switch [2/2]"
 7a89008 Add option to set default custom function to button recents (2/2)
@@ -151,18 +283,12 @@ aec2ab0 Improve string
 fd89192 Automatic translation import
 3448a83 Settings: update dashboard icons
 62f59f1 CAF Task Manager switch [2/2] AICPfy: PS4: Fix it once and for all PS5: This time for realz
-c817c9a Show 4G instead of LTE switch [2/2] AICPfy
 
    * packages/apps/ThemeChooser/
-3b49175 Automatic translation import
-
-   * packages/apps/Trebuchet/
-911938a Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-1e353df Automatic translation import
+3fa7657 Allow changing status/navigation bars when styles selected
 
    * packages/providers/ThemesProvider/
+b83a558 Check old install state before reapplying icon pack
 bb432a1 [2/2] Themes: Multiwallpaper support
 
    * packages/services/Telecomm/
@@ -171,10 +297,12 @@ bb432a1 [2/2] Themes: Multiwallpaper support
    * packages/services/Telephony/
 bd73843 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 
-   * vendor/cmsdk/
-0b75e32 Improve strings
+   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
 
    * vendor/samsung/
+2cb7fee Merge pull request #620 from ljzyal/cm-12.1
+e2758bc Add kltechn
 ce29a30 Add kltechn
 502dac4 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
@@ -188,152 +316,46 @@ ce29a30 Add kltechn
 caa8818 qcom-common: doze: fix defaults
 7740631 qcom-common: doze: Consolidate doze settings
 
-   * external/whispersystems/WhisperPush/
-8011005 Automatic translation import
+   * frameworks/base/
+0a0fe40 Automatic translation import
+13f1516 Expose task manager values for themers
+55faed5 Fixed Task Manager bug described in post below
+c71481a CAF Task Manager switch [1/2]
+eb8385a Fix ForceClose due to TaskManger.
+5040d89 SystemUI: Add task manager
+2ff73de Show 4G instead of LTE switch [1/2]
 
-   * packages/apps/AudioFX/
-0484975 Automatic translation import
+   * frameworks/opt/telephony/
+811c351 Revert "SMSUsageMonitor: read limit values from Settings.Secure"
 
-   * packages/apps/Bluetooth/
-aa069ea Automatic translation import
+   * packages/apps/BluetoothExt/
+8f9b3cf Automatic translation import
 
-   * packages/apps/Browser/
-43361dc Automatic translation import
-
-   * packages/apps/CMBugReport/
-c41b56b Automatic translation import
-
-   * packages/apps/Calculator/
-1e66bce Automatic translation import
+   * packages/apps/CMFileManager/
+b1bac2d Fix there are no folders in NavigationView Pinned file manager
+4841e94 Automatic translation import
 
    * packages/apps/Calendar/
-65bbc72 Automatic translation import
+241a809 Calendar: fix recurrence picker switch
 
-   * packages/apps/Camera2/
-5eb519b Automatic translation import
+   * packages/apps/Email/
+3a75a69 email: fix Exchange sync frequency account setup
+7074819 Automatic translation import
 
-   * packages/apps/CellBroadcastReceiver/
-975a26c Automatic translation import
-
-   * packages/apps/Contacts/
-f34ba1c Automatic translation import
-
-   * packages/apps/ContactsCommon/
-16790cc Automatic translation import
-
-   * packages/apps/DeskClock/
-697c825 Automatic translation import
-
-   * packages/apps/Eleven/
-4da5f3f Automatic translation import
-
-   * packages/apps/Gallery2/
-7622a90 Automatic translation import
-
-   * packages/apps/InCallUI/
-394a948 Automatic translation import
-
-   * packages/apps/LockClock/
-e56c775 Automatic translation import
-
-   * packages/apps/Mms/
-ce5681f Automatic translation import
-
-   * packages/apps/PhoneCommon/
-a7081fa Automatic translation import
-
-   * packages/apps/SoundRecorder/
-06e1ebe Automatic translation import
-
-   * packages/apps/Stk/
-ea15282 Automatic translation import
-
-   * packages/apps/Terminal/
-15210f0 Automatic translation import
+   * packages/apps/Settings/
+c817c9a Show 4G instead of LTE switch [2/2] AICPfy
 
    * packages/apps/ThemeChooser/
+3b49175 Automatic translation import
 689bdb1 ThemeChooser: add uninstall shortcut to ChooserDetailFragment
 
    * packages/apps/Trebuchet/
-d15317d Trebuchet : Activate the default homepage selection button on first run
+911938a Automatic translation import
 
-   * packages/apps/TvSettings/
-75f1a0c Automatic translation import
-
-   * packages/providers/DownloadProvider/
-149f521 Automatic translation import
-
-   * packages/services/Telecomm/
-3710790 Automatic translation import
-
-   * packages/services/Telephony/
-2ec51a9 Automatic translation import
-
-   * packages/wallpapers/Galaxy4/
-5a37f25 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-77a504a Automatic translation import
+   * packages/apps/UnifiedEmail/
+7707e35 email: linkify phone numbers
+1e353df Automatic translation import
 
    * vendor/cmsdk/
-38afe8d Automatic translation import
-
-====================
-     05-25-2015
-====================
-
-
-   * frameworks/base/
-590f61a Status bar expanded header: Custom background color, (1/2)
-
-   * packages/apps/Settings/
-9598522 Add notifications/qs/torch to PIE action selections
-11166ac Build V11.8
-75b8040 Status bar expanded header: Custom background color, (2/2):
-
-   * vendor/asus/
-aca0c02 fugu: Make some apk's presigned to match Google blob release
-
-   * vendor/samsung/
-7ba650b Merge pull request #618 from ljzyal/cm-12.1
-
-====================
-     05-24-2015
-====================
-
-
-   * external/sqlite/
-d4658fb Upgrade to SQLite 3.8.10.2
-
-   * external/wpa_supplicant_8/
-b252e87 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
-688bbc2 WPS: Fix HTTP chunked transfer encoding parser
-bc7e82d AP WMM: Fix integer underflow in WMM Action frame parser
-
-   * frameworks/base/
-eed5af6 Frameworks: SlimPie (1/2)
-808a01e Revert "Base: SlimPie (1/2)"
-7e8518e Revert "Frameworks: SlimPie give user ability to reduce trigger heights if IME keyboard shows (1/2)"
-418d81a Revert "SlimPIE: Configurable sensitivity [1/2]"
-89a58197 Revert "SystemUI: Fix PIE control not sticking on reboot"
-75be561 SystemServer: Skip TorchService construction if no flash feature detected
-41126fa Add alternate WebView provider package
-76bb59c Revert "framework/base: Make the base framework default to google.android.webview."
-97535ca base: Fix array bounds exception in getSecondaryStorageState
-a1105d9 unbreak density scaling
-64b502d Revert "Revert "fix CTS DisplayTest.testGetMetrics()""
-
-   * packages/apps/Eleven/
-bacadd7 Merge "Add Landscape support to Eleven" into cm-12.1
-
-   * packages/apps/Settings/
-0b3f5b0 Settings: SlimPie (2/2)
-e4d9449 Revert "Settings: SlimPie (2/2)"
-bd4ca78 Revert "Settings: SlimPie give user ability to reduce trigger heights if IME keyboard shows (2/2)"
-62ad53e Revert "SlimPIE: Configurable sensitivity [2/2]"
-2919be9 Revert "Update PIE Control"
-ae7717a Keep the content when change the orientation
-
-   * vendor/samsung/
-173355a kltechnduo: Update RIL to lollipop
+0b75e32 Improve strings
 
