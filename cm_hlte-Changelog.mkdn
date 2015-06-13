@@ -1,20 +1,84 @@
 ====================
-     06-12-2015
+     06-13-2015
 ====================
 
 
+   * android/
+c6a3d5f Revert "Don't track CM Mms"
+8b4a490 Track own ContactsCommon
+87d9056 Don't track CM Mms
+
    * build/
+dfe096f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+ff3412c otasigcheck: Extract the key
 8ceaf2c Use GCC 4.8
 
    * frameworks/av/
 8e36d02 Fix build - Remove unused variable
+
+   * frameworks/base/
+a284600 Fix USB intent warning on deviceAttached()
+fd9c21f ExternalStorageFormatter: pass whether to wipe internal storage
+922808e Added carrier selection to DataUsageTile
+7e1db1c Fix build
+4b9d21c SystemUI: Add missing QS accessibility messages
+
+   * frameworks/opt/telephony/
+20ecc82 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+993931d Telephony: DDS switch oemhook message sent twice
+76bcb1b Fix duplicate events received in DcTracker.
+d41cf16 Check for DDS validity
+7c8b934 Reject network request when DDS is invalid
+b9b9458 Telephony: On demand DDS switch uses preferred sub
+b760973 Ignore DdsRequest for non DDS network factory
+d9097e7 Fix DDS switch issue from GSM to CDMA.
+ba13040 Fix issue that DDS can not get back to primary sub and network mode shows incorrect in settings.
+
+   * hardware/qcom/audio-caf/msm8960/
+2be3615 audio: Convert libaudioamp to audio_amplifier HAL
+
+   * hardware/qcom/audio-caf/msm8974/
+67221b2 hal: Convert libaudioamp to audio_amplifier HAL
+
+   * hardware/qcom/audio-caf/msm8994/
+c1d292b hal: Convert libaudioamp to audio_amplifier HAL
+
+   * kernel/samsung/hlte/
+018c677 Build v1.08 Beta 3 - May not work.....:p
+51f0058 Enable andreno idler
+c9f7c1d adreno_idler: fix-up type definitions
+ef683b1 adreno_idler: remove frequency bump
+df29f65 adreno_idler: switch to count based instead of time based
+abbb2a8 Introduce Adreno idler for devfreq-based Adreno devices
+
+   * libcore/
+bd74ec6 Revert "Remove forced alignment code."
+
+   * packages/apps/Settings/
+fec881f Build V12.8 - Back to Basics Part 3 - Really using GCC 4.8 now
+6d8b76f MasterClear: update UI
+1ffdfc5 Build V12.7 - Back to Basics Part 2 - Use back GCC 4.8
+7b7bf06 Protected Apps: Fix rotate FC
+
+   * packages/apps/Trebuchet/
+80dea15 Trebuchet: Fix bug with removing items from folders
+
+   * vendor/samsung/
+ecdaa95 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+0b568f9 Merge pull request #626 from gekkehenkie11/cm-12.1
+0960a25 Update GPS libs to Lollipop
+
+====================
+     06-12-2015
+====================
+
+
+   * frameworks/av/
 55989ab Revert nuplayer: Don't write data to sink if sink is stopped
 7cd25d6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 37882c1 audiopolicy: Use legacy alsa to guard incall music feature
 
    * frameworks/base/
-7e1db1c Fix build
-4b9d21c SystemUI: Add missing QS accessibility messages
 e57a0ff fix build
 b466720 fix bug about view cache in RemoteViews
 8838f92 [ActivityManager] Fix index OOB when updating visible.
@@ -26,8 +90,8 @@ b466720 fix bug about view cache in RemoteViews
 3986b9a Bluetooth: Adding synchronization to handle multiple threads
 31970f9 Leave home key wake working even if hw keys are disabled
 
-   * libcore/
-bd74ec6 Revert "Remove forced alignment code."
+   * hardware/libhardware/
+55d4e44 audio: Add audio amplifier HAL
 
    * packages/apps/CMFileManager/
 039ec12 onResume: Refresh current view
@@ -39,7 +103,6 @@ c91b03d MediaScanning: Update with calls to Mediascanner
 37e5244 Floating Calculator: Reposition to fit landscape devices
 
    * packages/apps/Settings/
-31b31d3 Build V12.7 - This is a test build for using back GCC 4.8
 7b7bf06 Protected Apps: Fix rotate FC
 
    * packages/apps/Trebuchet/
@@ -99,6 +162,7 @@ c8d6a79 Fix a GL error leak issue
 300a13f SystemUI: Add new dimens values for expanded status bar padding
 bb673d3 Revert "Revert "Boot up optimization for phoneprocess""
 f2c8cd1 Revert "frameworks/base: Make minfree values optimal for 32bit devices"
+e6f6a7d Change wtf errors from ASSERT to ERROR.
 
    * frameworks/opt/cards/
 682fa95 fix card header title vertical centering
@@ -124,6 +188,7 @@ e7c9a85 Simplify logic.
 c9a9148 Fix some typos.
 f901689 Don't solely rely on the presence of RECENT for checking for new mail.
 381a2c2 Don't re-sync when refreshing the IDLE connection.
+6a98534 Fix crash when attempting to view EML files.
 
    * packages/apps/OTAUpdates/
 53deb9d Merge branch 'master' into aosp
@@ -133,6 +198,9 @@ ec53441 Version 2.4.3
 
    * packages/apps/Settings/
 a904551 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+946b1e4 Remove obsolete theme.
 
    * packages/services/Telecomm/
 a362a1a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
@@ -174,7 +242,6 @@ b20b7b9 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art int
 b210b15 Automatic translation import
 
    * frameworks/base/
-e6f6a7d Change wtf errors from ASSERT to ERROR.
 8ea2d6e SystemUI: add RecentsView EventLogs
 9f0dff4 AAPT: STFU-BBQ
 ca1258b ActivityThread, shut the density up!
@@ -201,6 +268,9 @@ efddb3b msim: order getSubInfo list by slot ID
 29048d5 Revert "SubscriptionController: getPhoneId() should never return negative values"
 b7c44b3 MSIM: Change default fallback subId value
 303c9cd Fix ACTION_DEFAULT_SUBSCRIPTION_CHANGED is not sent after power on
+
+   * hardware/qcom/audio-caf/msm8916/
+c727b4f hal: Correctly set backend to best available parameters
 
    * packages/apps/AudioFX/
 abd4582 Automatic translation import
@@ -249,13 +319,13 @@ cb9b6b7 Automatic translation import
 1e6400f Automatic translation import
 
    * packages/apps/Email/
-6a98534 Fix crash when attempting to view EML files.
 9cec127 Reset idling flag when cancelling early due to being cancelled.
 b14e762 Add some debug statements.
 ff4fe40 Assign debug tags to IMAP communication output.
 74e72ce Fix argument order.
 1a52879 Simplify code.
 664eb34 Automatic translation import
+32419c5 email: catch the correct exception while closing the buffers
 
    * packages/apps/Gallery2/
 7674775 Automatic translation import
@@ -299,7 +369,6 @@ d321030 Automatic translation import
 6dfe00f Automatic translation import
 
    * packages/apps/UnifiedEmail/
-946b1e4 Remove obsolete theme.
 787e618 Automatic translation import
 
    * packages/providers/ThemesProvider/
@@ -341,8 +410,11 @@ f58b595 cmsdk: do not crash system if CustomTileListenerService isn't present
 ece21a3 SystemUI: Expose weather text colors
 d322a48 SystemUi: Support expanded styles for custom tiles.
 
-   * hardware/qcom/audio-caf/msm8916/
-c727b4f hal: Correctly set backend to best available parameters
+   * hardware/qcom/audio-caf/msm8960/
+8f8cd4e audio: Make audio device accessible to HAL functions
+
+   * hardware/samsung/
+72edd42 libril: Fix element count
 
    * kernel/samsung/hlte/
 c9c013c Build v1.08 Beta 2
@@ -350,7 +422,6 @@ a466571 android: binder: Change binder mutex to rtmutex.
 6b29c57 Revert "binder: sync with google/android-3.10 (experimental)"
 
    * packages/apps/Email/
-32419c5 email: catch the correct exception while closing the buffers
 681988f Fix ArrayIndexOutOfBoundsException.
 
    * packages/apps/Mms/
@@ -367,40 +438,4 @@ b2bd321 vendor/cm: Create CM_PLATFORM_SDK_VERSION.
 5024f16 CMSDK: Utilize a SparseArray instead of Map, avoid autoboxing.
 757d564 CMSDK: Update for versioning tests.
 e08be73 CMSDK: Create versioning for platform SDK.
-
-====================
-     06-08-2015
-====================
-
-
-   * build/
-1542483 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-
-   * device/samsung/hlte-common/
-885e8b0 hlte-common: merge some permission stuffs with stock Touchwiz
-7beb532 hlte-common:  fix permissions for radio
-
-   * external/bluetooth/bluedroid/
-56f7523 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
-
-   * frameworks/base/
-00ab8c0 Add a method to query the voicemail number.
-63fd681 PowerManagerService: Fix updating of mUserActivitySummary
-72fdd4a Revert "services: button brightness should check proximity"
-c6dfc67 SlimRecent: Set topmost task to ON
-7f01873 SystemUI: Fix missing top task in recent panel.
-b33b534 Disable Slim recents by default (1/2}
-
-   * hardware/broadcom/libbt/
-962fb7b libbt-vendor: add support for samsung bluetooth
-
-   * hardware/samsung/
-72edd42 libril: Fix element count
-
-   * packages/apps/Settings/
-7b7def5 Use framework name and icon for system UID.
-b5b6632 Disable Slim recents by default (2/2)
-
-   * packages/services/Telecomm/
-b37796b Allow system apps to query the voicemail number.
 
