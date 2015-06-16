@@ -1,20 +1,312 @@
 ====================
-     06-13-2015
+     06-16-2015
+====================
+
+
+   * device/qcom/sepolicy/
+5746509 WFD: Revert SELinux changes for wfd running in its own service/domain
+
+   * device/samsung/hlte-common/
+ed00483  hlte : fix e911 issue, match data structure that Samsung message interface want.
+
+   * frameworks/base/
+6c1f6da Fix overflow/underflow problem in comparison
+fcf4ac8 Fix rotation tile icon for actual state
+ded8fcd Explicitly declare which permissions can be granted via signature
+1b55d2e Allow permissions to be granted via whitelisted signatures
+d08b7d0 SystemUI: don't reinflate search view on rotate
+c7dde22 Revert "Fixes large number of thumbnails leads to low memory"
+efb955e Enable ticker when heads up notifications are disabled
+340f783 Revert "Framework: StatusBar Ticker (1/2)"
+
+   * frameworks/opt/telephony/
+ea490ef Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+6060db7 SystemUI can not receive intent
+
+   * hardware/qcom/audio-caf/msm8994/
+31ee81b hal: Clean up compilation warnings
+
+   * kernel/samsung/hlte/
+b074080 Build v1.09
+1f2baa3 Revert "staging: binder: Change binder mutex to rtmutex."
+
+   * packages/apps/Bluetooth/
+6939f1c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Contacts/
+39b9874 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/Eleven/
+dc90042 AudioPreviewActivity: Better external audio previewing
+
+   * packages/apps/InCallUI/
+29dd55c Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+469e886 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+3619f8a Build V12.9
+bab0ba2 Settings: Fix HighTouchSensitivity & TouchscreenHovering
+741e960 Automatic translation import
+85664f3 Revert "Settings: StatusBar Ticker (2/2)"
+
+   * packages/apps/Trebuchet/
+92bffe8 Trebuchet: FloatMath is deprecated in API22
+
+   * packages/inputmethods/LatinIME/
+7e57217 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+
+   * packages/providers/DownloadProvider/
+f326c62 DownloadManager: allow ACCESS_ALL_DOWNLOADS to be granted via whitelist
+
+   * packages/services/Telecomm/
+04097ab Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+bb9e473 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+====================
+     06-15-2015
+====================
+
+
+   * frameworks/base/
+86b2d37 Frameworks: Slim Recents app screen (1/2) - [PS:24 FINAL]
+6ab4556 Automatic translation import
+ed6dbab Revert "Density scaling: return device's default density"
+18d0be5 Fix BatteryBar for msim devices
+c2d9b81 Fix rotation tile icon theming
+
+   * hardware/qcom/display-caf/msm8994/
+81c9dab Revert "hqd: Use MSM_VIDC_TARGET_LIST for Venus color format"
+
+   * kernel/samsung/hlte/
+74c28c7 Build v1.08
+bafe3e2 rtac: Check active asm clients before removing adm device
+4496d3f msm: camera: isp: protect driver from using invalid bufq
+9356bb7 ASoC: Avoid wrong map/unmap of ocmem
+1027d99 spi_qsd: Fix DMA errors
+19c1fe6 spi: spi_qsd: Prevent transfer grouping
+050d429 spi_qsd: Fix bug in multi-xfer bam mode transaction
+27a1eda spi_qsd: Add support for multiple BAM descriptors
+9dd1512 msm: kgsl: check for NULL pointer access
+12de7fd msm: vidc: removed the async v4l2 event for session unsupported
+3c6ab4c msm: vidc: release sync_lock before waiting on command response
+fa45027 msm: vidc: kill unsupported sessions
+c6ef841 msm: vidc: Unlock core lock in error case
+a1e2a1f msm: vidc: Fix session error handling
+1189785 msm: vidc: Clean up properly when instance exits at MSM_VIDC_INIT state
+c4b5293 Build v1.08 Beta 5 (Final Beta)
+b872ed0 adreno_idler: fix typos :)
+d4de16f adreno_idler: fix-up some comments
+318080d msm_adreno_tz: fix-up tz_suspend
+1f22939 msm_adreno_tz: be aware of suspended state
+141d173 powersuspend: add power_suspended boolean for global access
+bdff092 PM / devfreq: Rewrite devfreq_update_status() to fix multiple bugs
+
+   * packages/apps/OTAUpdates/
+e2d3e50 Version 2.4.5
+09753e8 Changelog alteration
+5956e0f Left debugging on by mistake!
+485c493 Added some unnecessary files to gitignore
+d47a1a7 Removed unnecessary files for AOSP building
+7d5221a Merge branch 'master' into aosp
+80272ff About moved to preferences
+592a79b Made Constants easier to read.
+dfbc634 Version bump
+56d7a36 Global varible strings for themes too
+d9b496b Mobile Network detection global variable created
+9d21a66 Cleaned up storage location handling
+6fa08d7 ORS information moved above the settings
+b154d00 Fixed download location from the download manager
+e4d1c62 Utils: Remove unused code
+806caea Added method for determining external path
+873206c ORS Script: Fixed InstallAfterFlash location
+
+   * packages/apps/Settings/
+5fba6c4 Settings: Slim Recents app screen (2/2) - [PS:12 - FINAL]
+809ee24 Update Carrier Label for  Multi Sim
+
+====================
+     06-14-2015
 ====================
 
 
    * android/
 c6a3d5f Revert "Don't track CM Mms"
+
+   * build/
+dfe096f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+
+   * device/samsung/qcom-common/
+fe7ee66 Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+6fdfa64 Automatic translation import
+
+   * frameworks/opt/telephony/
+20ecc82 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * hardware/qcom/audio-caf/msm8974/
+7a4cab3 hal: update input source type during open input stream
+43db9f9 hal: Prevent de-routing in case the usecase doesn't share codec backend
+397bd23 hal: Fix ANR if In-Call recording is started at end of voice call
+813eb28 hal: Update pcm_open flag for VOIP
+6be0bd5 audio: Modified atoi to atoll to convert large Numeric values
+
+   * kernel/samsung/hlte/
+b1a47df Build v1.08 Beta 4
+a26e897 msm: kgsl: Elevate the priority of the thread during adreno start
+f7dbe49 msm: kgsl: Bump the GPU frequency for long blocks of processing
+7521cfc msm: kgsl: set the correct max_state
+c4da2cb PM / devfreq: Check for GPU busy time before sending the sample
+efe7e1a Build v1.08 Beta 3
+d9a33af Enable adreno idler
+c9f7c1d adreno_idler: fix-up type definitions
+ef683b1 adreno_idler: remove frequency bump
+df29f65 adreno_idler: switch to count based instead of time based
+abbb2a8 Introduce Adreno idler for devfreq-based Adreno devices
+
+   * packages/apps/AudioFX/
+a002264 Automatic translation import
+
+   * packages/apps/Bluetooth/
+24d0636 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+7219889 Automatic translation import
+
+   * packages/apps/CMBugReport/
+4cbeab1 Automatic translation import
+
+   * packages/apps/CMFileManager/
+9cd3ae0 Automatic translation import
+215e746 Properly validate fields when resetting password
+
+   * packages/apps/CMWallpapers/
+779d8e3 Automatic translation import
+
+   * packages/apps/Calculator/
+02acaf3 Automatic translation import
+
+   * packages/apps/Calendar/
+3b41700 Automatic translation import
+
+   * packages/apps/Camera2/
+55e7a32 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+e594881 Automatic translation import
+
+   * packages/apps/Contacts/
+bed2845 Automatic translation import
+
+   * packages/apps/DeskClock/
+d3c7e72 Automatic translation import
+
+   * packages/apps/Eleven/
+90f1f8f Automatic translation import
+
+   * packages/apps/Email/
+094f8e3 Automatic translation import
+
+   * packages/apps/Gallery2/
+f82af5f Automatic translation import
+
+   * packages/apps/InCallUI/
+40c053f Automatic translation import
+
+   * packages/apps/LockClock/
+3dc05d2 Automatic translation import
+
+   * packages/apps/Mms/
+4bded0c Automatic translation import
+
+   * packages/apps/OTAUpdates/
+b8c167b Version 2.4.4
+a16fe3c Version bump to 2.4.4
+c6473fe More NPE fixes
+a6e9f67 NPE in AppReceiver
+50b5f8a Fix BitCoin ALWAYS showing for the developer donation options
+
+   * packages/apps/PhoneCommon/
+0076ca8 Automatic translation import
+
+   * packages/apps/Settings/
+fec881f Build V12.8 - Back to Basics Part 3 - Really using GCC 4.8 now
+
+   * packages/apps/SoundRecorder/
+6fc6dc6 Automatic translation import
+
+   * packages/apps/Stk/
+4f4b502 Automatic translation import
+
+   * packages/apps/Terminal/
+a7623a0 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+b21b233 Automatic translation import
+
+   * packages/apps/Trebuchet/
+f418219 Automatic translation import
+
+   * packages/apps/TvSettings/
+64bc3e9 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+435ff6a Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+589267d Add support for Bépo keyboard layout
+
+   * packages/providers/DownloadProvider/
+5f0bb34 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+6edce49 Automatic translation import
+
+   * packages/services/Mms/
+ad83633 Automatic translation import
+
+   * packages/services/Telecomm/
+f747e94 Automatic translation import
+
+   * packages/services/Telephony/
+48ed985 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+3eea2df Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+c5fc571 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+5a93453 Automatic translation import
+
+   * vendor/cmsdk/
+6b9dbb2 Automatic translation import
+
+   * vendor/samsung/
+ecdaa95 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     06-13-2015
+====================
+
+
+   * android/
 8b4a490 Track own ContactsCommon
 87d9056 Don't track CM Mms
 
    * build/
-dfe096f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
 ff3412c otasigcheck: Extract the key
 8ceaf2c Use GCC 4.8
 
    * frameworks/av/
 8e36d02 Fix build - Remove unused variable
+55989ab Revert nuplayer: Don't write data to sink if sink is stopped
+7cd25d6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 
    * frameworks/base/
 a284600 Fix USB intent warning on deviceAttached()
@@ -22,9 +314,18 @@ fd9c21f ExternalStorageFormatter: pass whether to wipe internal storage
 922808e Added carrier selection to DataUsageTile
 7e1db1c Fix build
 4b9d21c SystemUI: Add missing QS accessibility messages
+e57a0ff fix build
+b466720 fix bug about view cache in RemoteViews
+8838f92 [ActivityManager] Fix index OOB when updating visible.
+971e7c0 Kill process asynchronously on updateOomAdjLocked.
+9b8f15e Run BatteryCallback on CpuTracker thread.
+19f0263 PackageManagerService: override native lib root for prebundled packages
+45e32a4 Fix in effectCallback to avoid sending callbacks to dead objects
+466e59b Add hotspot icon to status bar
+3986b9a Bluetooth: Adding synchronization to handle multiple threads
+31970f9 Leave home key wake working even if hw keys are disabled
 
    * frameworks/opt/telephony/
-20ecc82 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 993931d Telephony: DDS switch oemhook message sent twice
 76bcb1b Fix duplicate events received in DcTracker.
 d41cf16 Check for DDS validity
@@ -43,19 +344,7 @@ ba13040 Fix issue that DDS can not get back to primary sub and network mode show
    * hardware/qcom/audio-caf/msm8994/
 c1d292b hal: Convert libaudioamp to audio_amplifier HAL
 
-   * kernel/samsung/hlte/
-018c677 Build v1.08 Beta 3 - May not work.....:p
-51f0058 Enable andreno idler
-c9f7c1d adreno_idler: fix-up type definitions
-ef683b1 adreno_idler: remove frequency bump
-df29f65 adreno_idler: switch to count based instead of time based
-abbb2a8 Introduce Adreno idler for devfreq-based Adreno devices
-
-   * libcore/
-bd74ec6 Revert "Remove forced alignment code."
-
    * packages/apps/Settings/
-fec881f Build V12.8 - Back to Basics Part 3 - Really using GCC 4.8 now
 6d8b76f MasterClear: update UI
 1ffdfc5 Build V12.7 - Back to Basics Part 2 - Use back GCC 4.8
 7b7bf06 Protected Apps: Fix rotate FC
@@ -63,8 +352,10 @@ fec881f Build V12.8 - Back to Basics Part 3 - Really using GCC 4.8 now
    * packages/apps/Trebuchet/
 80dea15 Trebuchet: Fix bug with removing items from folders
 
+   * vendor/cm/
+b15dc91 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
    * vendor/samsung/
-ecdaa95 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 0b568f9 Merge pull request #626 from gekkehenkie11/cm-12.1
 0960a25 Update GPS libs to Lollipop
 
@@ -74,54 +365,7 @@ ecdaa95 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsu
 
 
    * frameworks/av/
-55989ab Revert nuplayer: Don't write data to sink if sink is stopped
-7cd25d6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 37882c1 audiopolicy: Use legacy alsa to guard incall music feature
-
-   * frameworks/base/
-e57a0ff fix build
-b466720 fix bug about view cache in RemoteViews
-8838f92 [ActivityManager] Fix index OOB when updating visible.
-971e7c0 Kill process asynchronously on updateOomAdjLocked.
-9b8f15e Run BatteryCallback on CpuTracker thread.
-19f0263 PackageManagerService: override native lib root for prebundled packages
-45e32a4 Fix in effectCallback to avoid sending callbacks to dead objects
-466e59b Add hotspot icon to status bar
-3986b9a Bluetooth: Adding synchronization to handle multiple threads
-31970f9 Leave home key wake working even if hw keys are disabled
-
-   * hardware/libhardware/
-55d4e44 audio: Add audio amplifier HAL
-
-   * packages/apps/CMFileManager/
-039ec12 onResume: Refresh current view
-912b05e Sizes: Let disk usage show sizes as doubles
-c91b03d MediaScanning: Update with calls to Mediascanner
-5911442 Delete destination file when copy fails
-
-   * packages/apps/Calculator/
-37e5244 Floating Calculator: Reposition to fit landscape devices
-
-   * packages/apps/Settings/
-7b7bf06 Protected Apps: Fix rotate FC
-
-   * packages/apps/Trebuchet/
-2a6fcc0 trebuchet: Externalize backup API key string
-7d00658 Rotation: fix icons disappearing
-
-   * vendor/cm/
-b15dc91 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-71799a1 cm: Add backup API key for Trebuchet
-
-====================
-     06-11-2015
-====================
-
-
-   * build/
-609a4da Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-
-   * frameworks/av/
 a43fc72 audiopolicy: Unbreak incall music
 ab5b940 NuPlayer: Clear stale track packets on seek
 14df986 nuplayer: start or stop audio sink from renderer only
@@ -148,294 +392,35 @@ ba8d3f2 MediaCodec: use non-blocking call to get service
 5e179e6 libstagefright: free mMoovBoxBuffer
 4816034 Don't fail read when "seeking" to current position
 489d096 ESQueue:use 0x000001 instead of 0x00000001 as sync word in H264/MPEG_VIDEO
-c72d981 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-3fd6088 audio: fix incall music ifdefs (3/3)
 
    * frameworks/base/
 a30f975 WindowManager: remove freezing window to fix UI freezing issue
-c8d6a79 Fix a GL error leak issue
-7d18ebb Add File.separator to end of internalPath
-3f4bd03 power: Fix locking for wakeup proximity check
-3d93ea9 Density scaling: return device's default density
-79a3c83 audio: fix incall music ifdefs (2/3)
-5f2a714 SystemUI: always log statusbar state
-300a13f SystemUI: Add new dimens values for expanded status bar padding
-bb673d3 Revert "Revert "Boot up optimization for phoneprocess""
-f2c8cd1 Revert "frameworks/base: Make minfree values optimal for 32bit devices"
-e6f6a7d Change wtf errors from ASSERT to ERROR.
 
-   * frameworks/opt/cards/
-682fa95 fix card header title vertical centering
-69cf3cb revert button animation
-654c575 bump up animation duration for expand button
-c8a1ccc add TransformableDrawableButton stuff from Narfss
-b241cf9 More centering fixes
-23df77b Another expanded icon fix
-123a03b Fix the expand icon and center some things
+   * hardware/libhardware/
+55d4e44 audio: Add audio amplifier HAL
 
-   * packages/apps/Contacts/
-a7699c8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-ff213cd Keep a local instance of mContactData when copying to SIM card.
+   * packages/apps/CMFileManager/
+039ec12 onResume: Refresh current view
+912b05e Sizes: Let disk usage show sizes as doubles
+c91b03d MediaScanning: Update with calls to Mediascanner
+5911442 Delete destination file when copy fails
 
-   * packages/apps/Dialer/
-fe6f088 Fix up call log search UX.
-580ebc8 Improve performance of call log.
-736fc0b Automatic translation import
+   * packages/apps/Calculator/
+37e5244 Floating Calculator: Reposition to fit landscape devices
 
    * packages/apps/Email/
+ebf12f6 Use an inexact timer for the IDLE refresh.
+9a652f8 Don't throw a NPE when operating on a destroyed list.
 c0df55c Fix some more argument order issues.
 e7c9a85 Simplify logic.
 c9a9148 Fix some typos.
 f901689 Don't solely rely on the presence of RECENT for checking for new mail.
 381a2c2 Don't re-sync when refreshing the IDLE connection.
-6a98534 Fix crash when attempting to view EML files.
-
-   * packages/apps/OTAUpdates/
-53deb9d Merge branch 'master' into aosp
-eb99e21 Update changelog
-28403cf Merge branch 'master' into aosp
-ec53441 Version 2.4.3
-
-   * packages/apps/Settings/
-a904551 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-946b1e4 Remove obsolete theme.
-
-   * packages/services/Telecomm/
-a362a1a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-382f5a5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-986ce14 Fix phone not initialized exception
-c299e74 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-
-   * system/core/
-1b234f0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-e3465bf audio: fix incall music ifdefs (1/3)
-
-   * vendor/cm/
-19aa106 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-9567e3e cmsdk: fix customtile listener service registering logic
-
-====================
-     06-10-2015
-====================
-
-
-   * art/
-9207bae ART: force GCC 4.8 for build
-b20b7b9 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art into cm-12.1
-
-   * build/
-35f57e9 build: Add the factorypackage target
-
-   * device/asus/grouper/
-8fd367e Fix USB OTG storage support.
-
-   * device/samsung/qcom-common/
-32b574f Automatic translation import
-
-   * external/whispersystems/WhisperPush/
-b210b15 Automatic translation import
-
-   * frameworks/base/
-8ea2d6e SystemUI: add RecentsView EventLogs
-9f0dff4 AAPT: STFU-BBQ
-ca1258b ActivityThread, shut the density up!
-ce4253e MediaScanner: Detect folders
-b89a00f Fix for empty RSSI triangle after boot
-b725988 SystemUI: add missed statusbar state logging
-88945a6 Revert "SystemUI: Fix no LED indication for missed call when screen off"
-575d250 SystemUI: remove duplicate PhoneStatusBar variables
-d0ccb23 services: button brightness should check proximity
-3acb15d Automatic translation import
-5f28627 Don't set mHomeConsumed to true for KEY_ACTION_SLEEP
-8dc77c4 notification drawer: powermenu updates
-3712c89 Frameworks: Slim recent app screen [PS:19]
-f2bb33b Revert "Frameworks: Slim recent app screen [PS:14]"
-4827f70 frameworks: display: shorten automatic brightness debounce
-
-   * frameworks/native/
-fd05e1f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * frameworks/opt/telephony/
-2b8c8fa Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-2043011 Fix the build
-efddb3b msim: order getSubInfo list by slot ID
-29048d5 Revert "SubscriptionController: getPhoneId() should never return negative values"
-b7c44b3 MSIM: Change default fallback subId value
-303c9cd Fix ACTION_DEFAULT_SUBSCRIPTION_CHANGED is not sent after power on
-
-   * hardware/qcom/audio-caf/msm8916/
-c727b4f hal: Correctly set backend to best available parameters
-
-   * packages/apps/AudioFX/
-abd4582 Automatic translation import
-
-   * packages/apps/Bluetooth/
-045168b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
-46cb1cd Automatic translation import
-
-   * packages/apps/BluetoothExt/
-80f9f31 Automatic translation import
-
-   * packages/apps/CMBugReport/
-d47553f Automatic translation import
-
-   * packages/apps/CMFileManager/
-9a92b04 Automatic translation import
-
-   * packages/apps/CMWallpapers/
-803bbb1 Automatic translation import
-
-   * packages/apps/Calculator/
-5a114d7 Automatic translation import
-
-   * packages/apps/Calendar/
-8d868e0 Calendar: when sharing calendar events use File.createTempFile
-5888bc2 Automatic translation import
-
-   * packages/apps/Camera2/
-09788ec Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-0fe1787 Automatic translation import
-
-   * packages/apps/Contacts/
-ce7478f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-a32d3fb Automatic translation import
-
-   * packages/apps/ContactsCommon/
-8adcbe9 Automatic translation import
-
-   * packages/apps/DeskClock/
-d31b700 DeskClock: Correctly reschedule alarms on system time change
-cb9b6b7 Automatic translation import
-
-   * packages/apps/Eleven/
-1e6400f Automatic translation import
-
-   * packages/apps/Email/
-9cec127 Reset idling flag when cancelling early due to being cancelled.
-b14e762 Add some debug statements.
-ff4fe40 Assign debug tags to IMAP communication output.
-74e72ce Fix argument order.
-1a52879 Simplify code.
-664eb34 Automatic translation import
-32419c5 email: catch the correct exception while closing the buffers
-
-   * packages/apps/Gallery2/
-7674775 Automatic translation import
-
-   * packages/apps/InCallUI/
-eaa81f2 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-8526631 Automatic translation import
-
-   * packages/apps/LockClock/
-6fc33ab Automatic translation import
-
-   * packages/apps/Mms/
-d13d1b5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-dbea1dc Don't filter share intent
-eaf701c Automatic translation import
-
-   * packages/apps/Settings/
-d63dad2 Build V12.6 - Back to basics
-cf147c9 Build V12.5
-fedec58 Remove CM updater and CM stats
-2a339e5 Settings: Slim Recents [PS:9]
-e4f5cf4 Revert "Settings: Slim Recents [PS:6]"
-
-   * packages/apps/SoundRecorder/
-28ed11d Automatic translation import
-
-   * packages/apps/Stk/
-ba6c178 Automatic translation import
-
-   * packages/apps/Terminal/
-e45f639 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-348d827 Automatic translation import
 
    * packages/apps/Trebuchet/
-d321030 Automatic translation import
-12103ba Stop unnecessary exception posting to logcat.
-
-   * packages/apps/TvSettings/
-6dfe00f Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-787e618 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-30f698f Automatic translation import
-
-   * packages/services/Telecomm/
-ad91e86 Merge "Allow system apps to query the voicemail number." into cm-12.1
-442d901 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-353f49f Automatic translation import
-
-   * packages/services/Telephony/
-4993c78 Style non-interactive dialog in the same way as interactive one.
-34777ec Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-216aad0 Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-7852e60 Automatic translation import
-
-   * system/core/
-2c820ad Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+2a6fcc0 trebuchet: Externalize backup API key string
+7d00658 Rotation: fix icons disappearing
 
    * vendor/cm/
-6d603b2 Update Sonera APNs
-
-   * vendor/cmsdk/
-c616c93 Merge "Automatic translation import" into cm-12.1
-f58b595 cmsdk: do not crash system if CustomTileListenerService isn't present
-3f7e428 CMSDK: Update current and system api texts.
-853240e Automatic translation import
-
-====================
-     06-09-2015
-====================
-
-
-   * frameworks/base/
-3df117f Turn off "Mobile data" and "Data roaming" by default.
-7799d60 Don't dismiss notification if expanding status bar from top of heads up
-ece21a3 SystemUI: Expose weather text colors
-d322a48 SystemUi: Support expanded styles for custom tiles.
-
-   * hardware/qcom/audio-caf/msm8960/
-8f8cd4e audio: Make audio device accessible to HAL functions
-
-   * hardware/samsung/
-72edd42 libril: Fix element count
-
-   * kernel/samsung/hlte/
-c9c013c Build v1.08 Beta 2
-a466571 android: binder: Change binder mutex to rtmutex.
-6b29c57 Revert "binder: sync with google/android-3.10 (experimental)"
-
-   * packages/apps/Email/
-681988f Fix ArrayIndexOutOfBoundsException.
-
-   * packages/apps/Mms/
-9c94664 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Trebuchet/
-31d1211 RTL: fix app drawer layout
-
-   * vendor/cm/
-ba119f6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-b2bd321 vendor/cm: Create CM_PLATFORM_SDK_VERSION.
-
-   * vendor/cmsdk/
-5024f16 CMSDK: Utilize a SparseArray instead of Map, avoid autoboxing.
-757d564 CMSDK: Update for versioning tests.
-e08be73 CMSDK: Create versioning for platform SDK.
+71799a1 cm: Add backup API key for Trebuchet
 
