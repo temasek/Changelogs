@@ -1,4 +1,62 @@
 ====================
+     07-04-2015
+====================
+
+
+   * development/
+1296c5a Revert "development: TRDS 5.0 (3/4)"
+
+   * device/qcom/sepolicy/
+238dd07 sepolicy: add permissions to set system property
+
+   * external/libnfc-nci/
+4b08a00 Merge branch 'cm-12.1-nxp' into HEAD
+48ea540 pn547: Don't attempt to downgrade firmware
+
+   * external/stagefright-plugins/
+e9eddbf stagefright-plugins: Disable lowres
+
+   * frameworks/av/
+f71eb53 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+33a8884 libmedia: restrict nuplayer from using track offload
+
+   * frameworks/base/
+1e00eb2 Revert "fb: TRDS 5.0 (1/4)"
+fb07548 Revert "Update trds colors"
+fd982d0 Revert "Add missing/needed lines for TRDS"
+d27d924 Revert "Add back TRDS Tile now 1/2"
+76c61b1 Revert "Dark Material themed Advanced Power Menu"
+e98f9a0 Revert "Updating TRDS Colors to go Dark Material."
+dc3829b Revert "Remove TRDS drawables - not in use for now"
+c81c824 Revert "Partial revert "Dark Material themed Advanced Power Menu""
+a1da5e0 Remove empty padding between signal cluster & battery icon
+5b3a0de SystemUI: DozeService: Prevent NPE
+5eff6bd Revert "Base: revert some custom doze options (1/2)"
+4eeaee4 HeadsUp: only snooze when swiping up
+aa0bf18 Slim recents: Fixup float mode string.
+90343c2 Recents: Launch as Floating app.
+7d2e6f2 Remove: "Recents: Launch as floating app."
+e103905 Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."
+9873233 Store manifest hash code in PackageParser.Package
+
+   * frameworks/native/
+f3a16a6 Revert "native: TRDS 5.0 (2/4)"
+
+   * packages/apps/Mms/
+9a1a134 Revert "MMS: Add support for TRDS,"
+
+   * packages/apps/Settings/
+00bb470 Build V14.5
+08ee4fc Revert "Settings: TRDS 5.0 (4/4)"
+40bdb3e Revert "[Temporary] Update misc icons for TRDS"
+a8e595d Revert "Lets use Dark Material colors"
+aba02a0 Revert "Add back TRDS Tile 2/2"
+167bb04 Settings: auto hide fast scroll bar in manage apps screen
+1c3196a HeadsUp: change timeout and snooze options to SeekBarPreferences
+3e9115b Update SeekBarPreference
+9935e1c Revert "Settings: revert some custom doze options (2/2)"
+
+====================
      07-03-2015
 ====================
 
@@ -30,7 +88,10 @@ aa1d682 Keyguard: Authenticate with fingerprint
 c5b4f3e FWB: Torch to powermenu (1/2)
 4072c41 Screen pinning improvements
 32a0fc1 Revert "Screen pinning improvements"
-54a22a6 Fingerprint: disallow API calls when fingerprint is not available
+
+   * hardware/qcom/keymaster/
+8e39456 keymaster: fix build for msm8994
+f33d1ad keystore: Enable building on msm8992 and msm8994
 
    * hardware/ti/wlan/
 1cdbebc ti: Add interface_mtu request
@@ -82,6 +143,7 @@ d4bae94 Automatic translation import
 9edd25a WhisperPush: add weekly active users metric
 
    * frameworks/base/
+54a22a6 Fingerprint: disallow API calls when fingerprint is not available
 fde2006 Remove memory leak in PersistentDataBlockService jni
 0bad426 Fix AppSideBar FC on Theme Change
 ab554c0 Revert "Density scaling: return device's default density"
@@ -224,7 +286,6 @@ a52854a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
 a0040ca vendorsetup: Handle new jenkins build parameters
 ecaccaf Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 3f7699f Additional European MVNOs
-015d4fd Massive APN Update
 
    * vendor/cmsdk/
 1ba6ee2 Automatic translation import
@@ -238,12 +299,32 @@ cc97903 CMSDK: Make sure to initialize ProfileTriggerHelper.
    * build/
 a4e30ad Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
 
+   * external/libnfc-nci/
+09f86f3 pn547: Force rewrite of config even if we think it's the same
+18862aa libnfc-nci: Add NXP chip type disambiguation
+8e4a826 Rename NXP HAL
+47b6816 Include stl symbols and headers
+9cfc94e Update .conf file
+9ae659e Add Peer-To-Peer priority mechanism
+6de0db5 Adding MiFARE DESFire format support
+6114606 Correct corrupted CC value on MIFARE ULC tag
+5629b15 T1T HR0 and HR1 parameters missing in tag dectection
+fc700c3 Increase maximum AID routing buffer length and entry size.
+a18233a Increase APDU buffer size to support extended APDU
+102fc9b Fix unhandled NCI errors and wrong states
+e8720be Increase HCI EVT buffer size
+4c66914 Fix maximum HCP package size
+fd41b76 Memory leak and NULL pointer check fixes
+c631944 Code inspection fixes
+955c4b1 Changes base on coding conventions rules
+382b6a7 Fix board-specific HAL module naming
+8c3a43e nfc_nci: Allow passing in the HAL suffix as a variable
+
    * external/whispersystems/WhisperPush/
 ba78f1e WhisperPush: service for WPv2 update to interrogate/disable v1
 
    * frameworks/av/
 79fc90a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-5dd0f80 libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage
 
    * frameworks/base/
 470d983 Don't inflate new phone states on callbacks.
@@ -271,6 +352,7 @@ be10663 Profiles: Get Default profile with its UUID instead of name
 769cdc7 Update default workspace configuration.
 
    * vendor/cm/
+015d4fd Massive APN Update
 0645d22 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
 ====================
@@ -284,32 +366,12 @@ be10663 Profiles: Get Default profile with its UUID instead of name
    * device/samsung/msm8974-common/
 5b5c23f msm8974-common: new symlinks
 
-   * frameworks/av/
-143ed19 Revert "libstagefright: free mMoovBoxBuffer"
+   * external/libnfc-nci/
+37d62d7 Merge "Add NFC-DEP routing"
 
-   * kernel/samsung/hlte/
-808d446 Build v1.14
-d7d6bf2 cpufreq: interactive:call __cpufreq_driver_target() for cur frequency
-e938879 msm: cpufreq: Break early if target_freq is current freq
-14eb882 proc: uid_cputime: fix show_uid_stat permission
-ddabb02 net: wireless: bcmdhd: Increase allowed DTIM in power-save mode
-d125872f net: wireless: bcmdhd: Disable mDNS filter by default
-7b7c036 PM: Replace WARN_ON on timeout with one line print
-b3a7577 wakeup: Add last wake up source logging for suspend abort reason.
-2ca3218 cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state
-f9d70d3 PM: wakeup_reasons: fix race condition
-a6f4ece Power: Report total suspend times from boot in suspend_since_boot
-bb0b55e PM: wakeup_reason: correctly deduce wakeup interrupts
-eb05c4f PM: wakeup_reason: add check_wakeup_reason() to verify wakeup source irq
-163d89f power: log the last suspend abort reason.
-d0db9b7 PM / Sleep: Print name of wakeup source that aborts suspend
-f155b34 PM: wakeup_reason: add functionality to log the last suspend-abort reason.
-39eb61e PM: wakeup_reason: add functions to query and clear wakeup reasons
-5748132 irq_flow_handler_t now returns bool
-60e6615 ARM: gic: ignore non-wakeup interrupts when reporting wakeup sources
-6d560dd defconfig: Enable UID_CPUTIME
-59f937e proc: uid: Adds accounting for the cputimes per uid.
-a69deda Power: Report suspend times from last_suspend_time
+   * frameworks/av/
+5dd0f80 libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage
+143ed19 Revert "libstagefright: free mMoovBoxBuffer"
 
    * packages/apps/CMFileManager/
 dad28ad ActionBar TextSelection: Prevent overlay of textfield
@@ -330,62 +392,9 @@ fc3c1c8 Fix for if theme isn't used in the build.prop
 c44881c Version 2.5
 0c0b3c5 Added storage location in preferences
 
-   * packages/apps/Settings/
-cbdecf4 Build V14.2
-
    * packages/apps/Trebuchet/
 31559ae Hide workspace shortcuts during binding when AllApps is shown.
 
    * vendor/cm/
 4c4e428 vendor/cm: overlay start for ProfileService in external framework.
-c08634d temasek backup - add gps.conf (Retain users' own  gps.conf)
-
-====================
-     06-29-2015
-====================
-
-
-   * bionic/
-c4b3941 Revert "Revert "Reenable support for non-PIE executables""
-
-   * build/
-1b5113e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-c1f68ae definitions.mk: look for definitions.mk in device/*/build also
-0194cd6 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-
-   * frameworks/av/
-b384342 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-4c6d30b audiopolicy: Add msm8994
-
-   * frameworks/base/
-bd9975b Fix chrome in floating mode
-18c0b5f Keep app when opening floating window from recents panel
-0811645 Dismiss IME when floating window is dismissed
-45db389 Add on-the-spot user preference dialog
-5f454ef SystemUI: Extend swipe helper (Part1)
-0647f4b Forward Port: Floating Window with Multitasking.
-7a46c44 NavBarTile: fix long click intent with button path
-e842286 Rotation related corrections
-26f3612 Revert "Revert "Display: Initialize mRotation to panel orientation.""
-560fa53 Limit dotProduct value to 1.0f, so acosf would not return NaN.
-1d35334 CaptivePortal: Assert dataUri to prevent possible NPE
-df956f5 QSTileView: fix label recreate order
-b9e82ab SystemUI: be more event driven in keyguard visualizer
-
-   * hardware/qcom/audio-caf/msm8994/
-2eabacc msm8994: Remove bogus metadata
-
-   * packages/apps/OmniSwitch/
-0d410c6 OmniSwitch: pixel pushing and hardening
-
-   * packages/apps/Settings/
-82af086 Fix longpress headsup on statusbar header
-bddca85 Add ButtonSettings to manifest and use it here:
-cfcf3c4 Settings: Make the Wifi regions translatable
-
-   * system/core/
-95e694a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-32209d4 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
