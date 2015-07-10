@@ -1,400 +1,226 @@
 ====================
-     07-04-2015
+     07-10-2015
 ====================
 
 
-   * development/
-1296c5a Revert "development: TRDS 5.0 (3/4)"
-
-   * device/qcom/sepolicy/
-238dd07 sepolicy: add permissions to set system property
-
-   * external/libnfc-nci/
-4b08a00 Merge branch 'cm-12.1-nxp' into HEAD
-48ea540 pn547: Don't attempt to downgrade firmware
-
-   * external/stagefright-plugins/
-e9eddbf stagefright-plugins: Disable lowres
-
-   * frameworks/av/
-f71eb53 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-33a8884 libmedia: restrict nuplayer from using track offload
+   * build/
+9183157 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+e78b239 releasetools: Add support for LZMA in blockimgdiff
 
    * frameworks/base/
-1e00eb2 Revert "fb: TRDS 5.0 (1/4)"
-fb07548 Revert "Update trds colors"
-fd982d0 Revert "Add missing/needed lines for TRDS"
-d27d924 Revert "Add back TRDS Tile now 1/2"
-76c61b1 Revert "Dark Material themed Advanced Power Menu"
-e98f9a0 Revert "Updating TRDS Colors to go Dark Material."
-dc3829b Revert "Remove TRDS drawables - not in use for now"
-c81c824 Revert "Partial revert "Dark Material themed Advanced Power Menu""
-a1da5e0 Remove empty padding between signal cluster & battery icon
-5b3a0de SystemUI: DozeService: Prevent NPE
-5eff6bd Revert "Base: revert some custom doze options (1/2)"
-4eeaee4 HeadsUp: only snooze when swiping up
-aa0bf18 Slim recents: Fixup float mode string.
-90343c2 Recents: Launch as Floating app.
-7d2e6f2 Remove: "Recents: Launch as floating app."
-e103905 Revert "Wait until the Keyguard is drawn to dismiss the boot dialog."
-9873233 Store manifest hash code in PackageParser.Package
+bfeeaf8 App side bar : Fix hardcore switch & System uı FC
+b1a2d58 App Sidebar : Fix NPE - Add missing activity launch icon
+12669a5 Gesture anywhere floating switch 1/2
+4b04fa6 [1/2] Base: option to launch heads up in floating mode.
+952ad3b WallpaperManagerService: use a single file observer
+abea327 base: Fix RESET_BATTERY_STATS permission
+11efc24 base: dock battery
+28e1d23 Fingerprint: Vibrate device.
+9fa1e66 SystemUI: fix keyguard unlock drawable not updating
+3f3e90d Fingerprint: Get current user id via Process.myUserHandle()
+2ed1f63 Custom carrier label: fix usage when option is off (2/2)
 
    * frameworks/native/
-f3a16a6 Revert "native: TRDS 5.0 (2/4)"
+baf7b33 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
 
-   * packages/apps/Mms/
-9a1a134 Revert "MMS: Add support for TRDS,"
+   * kernel/samsung/hlte/
+eabbd313 udp: fix behavior of wrong checksums
+ca02abd lowmemorykiller: use for_each_thread instead of buggy while_each_thread
 
-   * packages/apps/Settings/
-00bb470 Build V14.5
-08ee4fc Revert "Settings: TRDS 5.0 (4/4)"
-40bdb3e Revert "[Temporary] Update misc icons for TRDS"
-a8e595d Revert "Lets use Dark Material colors"
-aba02a0 Revert "Add back TRDS Tile 2/2"
-167bb04 Settings: auto hide fast scroll bar in manage apps screen
-1c3196a HeadsUp: change timeout and snooze options to SeekBarPreferences
-3e9115b Update SeekBarPreference
-9935e1c Revert "Settings: revert some custom doze options (2/2)"
+   * packages/apps/OmniSwitch/
+fc27f91 OmniSwitch: new app icons
 
-====================
-     07-03-2015
-====================
-
-
-   * device/qcom/sepolicy/
-881eea7 sepolicy: add rule to support tcm write on dpmwrapper socket
-42fc5b9 sepolicy: allow dpmd to create self socket and netlink socket.
-af2c6fd sepolicy: allow dpmd to connect to system_server
-6fdf10d sepolicy: Allow iptable rule addition when WQE is enabled
-6599f2c cnd: Allow nims to be removed
-324ba9f Sepolicy: add rule to support ATP feature
-
-   * external/whispersystems/WhisperPush/
-f22222a WhisperPush: accept registration SMS from any number
-
-   * frameworks/av/
-4129dd0 Acodec: Add interlaced video support
-64c8a08 audio: fallback to SW decoder for video clips
-a2ef6b2 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-0c2d0c6 CameraService: Bump up the maximum number of cameras
-
-   * frameworks/base/
-c85e22d Keyguard: fix misaligned ripple for pin-entry backspace button
-a278a28 Keyguard: Show retry text on unidentified fingerprint
-0f539ae SystemUI: fix clock jumping when expanding QS from lockscreen
-7b9b788 Keyguard: Show fallback after 2 failed auth attempts
-aa1d682 Keyguard: Authenticate with fingerprint
-05324a1 Automatic translation import
-c5b4f3e FWB: Torch to powermenu (1/2)
-4072c41 Screen pinning improvements
-32a0fc1 Revert "Screen pinning improvements"
-
-   * hardware/qcom/keymaster/
-8e39456 keymaster: fix build for msm8994
-f33d1ad keystore: Enable building on msm8992 and msm8994
-
-   * hardware/ti/wlan/
-1cdbebc ti: Add interface_mtu request
-
-   * packages/apps/Contacts/
-8758454 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/Dialer/
-839209f Automatic translation import
-
-   * packages/apps/InCallUI/
-addb5ca InCallUI: Unbreak heads-up disabled incoming call.
-a6052a4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Mms/
-9097117 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+   * packages/apps/PackageInstaller/
+d68fe9b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-12.1
+5040ee6 PackageInstaller: add hook to manage packages via PRE_BOOT_COMPLETED event
 
    * packages/apps/Settings/
-08c97c1 Build V14.4
-3a37b3f Fix patch derpage for fingerprint settings
-ef698d0 Automatic translation import
-bec8e7b Settings: use WhisperPush v2 if it is installed in place of v1
-a2fa788 Settings: Torch to powermenu (2/2)
-
-   * packages/inputmethods/LatinIME/
-9821c29 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
-
-   * packages/services/Telecomm/
-5fac57e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-1630eef Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-
-   * vendor/cm/
-7f010fd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-71983e8 Additional APN cleanup and modifications
-c38581c Thou shalt not nano
-
-====================
-     07-02-2015
-====================
-
-
-   * device/samsung/qcom-common/
-77eb079 Automatic translation import
-
-   * external/whispersystems/WhisperPush/
-d4bae94 Automatic translation import
-9edd25a WhisperPush: add weekly active users metric
-
-   * frameworks/base/
-54a22a6 Fingerprint: disallow API calls when fingerprint is not available
-fde2006 Remove memory leak in PersistentDataBlockService jni
-0bad426 Fix AppSideBar FC on Theme Change
-ab554c0 Revert "Density scaling: return device's default density"
-6f37588 Revert "return default density only for primary display"
-96ee053 Revert "density: do not apply to virtual displays"
-f84fb68 Enable mobile data by default
-3d3c65f Screen pinning improvements
-d4bd853 Battery saver enhancements
-4bcef6e Slim action float tile 2/2
-54119ea dynamic tiles: debrand adb icon
-1121cac Revert "Revert "Show carrier label / custom & change color [1/2]""
-c65567d Wait until the Keyguard is drawn to dismiss the boot dialog.
-08a71c4 WhisperPush: allowing whitelisting of needed framework permissions
-6b85f7c Add default for Settings.System.DOUBLE_TAP_SLEEP_GESTURE.
-f73b0f4 SystemUI: recalculate clock position on removing empty shade views
-a115182 Enable fingerprint option in Settings [1/3]
-818f7e0 Fingerprint [1/2]: Numerous Fingerprint Improvements
-990f7a0 density: do not apply to virtual displays
-9bd9c36 return default density only for primary display
-fb4be94 Density scaling: return device's default density
-
-   * frameworks/native/
-966545a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * frameworks/opt/telephony/
-aebde8d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * packages/apps/BluetoothExt/
-9b7bdf8 Automatic translation import
-
-   * packages/apps/CMBugReport/
-165166e Automatic translation import
-
-   * packages/apps/CMFileManager/
-a2f4a60 Automatic translation import
-
-   * packages/apps/Calculator/
-51f90c4 Automatic translation import
-
-   * packages/apps/Calendar/
-25f247c Automatic translation import
-
-   * packages/apps/Camera2/
-3f22bec Automatic translation import
-
-   * packages/apps/Contacts/
-f81964f Automatic translation import
-19fe391 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-b267d4b Contacts: Fixed "%s" appearing in contact options in some languages
-
-   * packages/apps/ContactsCommon/
-68932a5 Automatic translation import
-
-   * packages/apps/DeskClock/
-9c89be4 Automatic translation import
-
-   * packages/apps/Eleven/
-3acc661 Automatic translation import
-
-   * packages/apps/Email/
-aa11058 Automatic translation import
-
-   * packages/apps/Gallery2/
-7a90da1 Automatic translation import
-
-   * packages/apps/InCallUI/
-a27f9ea Automatic translation import
-da93f4d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/LockClock/
-b84dc10 Automatic translation import
-
-   * packages/apps/Mms/
-da1502d Automatic translation import
-
-   * packages/apps/Settings/
-a49aefd Build V14.3
-667b543 Slim action floats tile 1/2
-91bc31f SlimActions: Floating window mode switch (2/2) Change-Id: I15465b33831ef3bb7b6a8f971d6104e0ab276787
-c97cac4 Revert "Revert "Show carrier label / custom & change color [2/2]""
-509bf8e Show dialog if max number of fingerprints has been reached
-f2b5423 Rename/Delete UI in fingerprint list
-3ab4ec0 Enable fingerprint option in Settings [3/3]
-4e9080d Settings: add wifi ap dialog 'show password' default overlay
-9e1161d settings: Fix developer options crash when mBackupManager is null
-
-   * packages/apps/SoundRecorder/
-279e7c3 Automatic translation import
-
-   * packages/apps/Stk/
-2f91312 Automatic translation import
-
-   * packages/apps/Terminal/
-70bf0bf Automatic translation import
-
-   * packages/apps/ThemeChooser/
-20b9f90 Automatic translation import
+c8db749 Build V14.6
+e827a7d fuelgauge: Add back imports required for dock battery
+4eaa07e Gesture anywhere floating switch 2/2
+3283e1e [2/2] Settings: option to launch heads up in floating mode
+0f397d0 settings: dock battery
+34bb5de Fingerprint: Fingerprint enrollment
+5b899f3 Fingerprint: Add summary text to 'manage fingerprints'
+cd8973c Settings: vectorize supersu drawable
+1850a89 Custom carrier label: fix usage when option is off (1/2)
 
    * packages/apps/Trebuchet/
-580f4f4 Automatic translation import
-
-   * packages/apps/TvSettings/
-4574978 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-1bb85d9 Automatic translation import
+1ac777c FocusHelper: handle NPE with when getting workspace child
 
    * packages/inputmethods/LatinIME/
-33da3c2 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-4d94436 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-b016009 Automatic translation import
-
-   * packages/services/Telecomm/
-9cf9699 Automatic translation import
-
-   * packages/services/Telephony/
-07866b3 Automatic translation import
-
-   * packages/wallpapers/Galaxy4/
-5cf246b Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-185c9a3 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-553bd98 Automatic translation import
+dcec6a7 Merge pull request #2 from ZdrowyGosciu/cm-12.1
+2132b34 LatinIME: fix potential NPE
 
    * system/core/
-c7c049a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-e05665a Add Wileyfox VID part 2
-429e98c Add Wileyfox VID
+af05640 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+fe93cfb healthd: dock battery
 
    * vendor/cm/
-a52854a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-9dfe560 Vendor: Fix "mts" carrier password
-a0040ca vendorsetup: Handle new jenkins build parameters
-ecaccaf Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-3f7699f Additional European MVNOs
+de70981 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
-   * vendor/cmsdk/
-1ba6ee2 Automatic translation import
-cc97903 CMSDK: Make sure to initialize ProfileTriggerHelper.
+   * vendor/samsung/
+9f01c31 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+3e26f6e Merge pull request #634 from gekkehenkie11/cm-12.1
+33c49df trlte-common: add qualcomm location service and bring makefiles up to date
 
 ====================
-     07-01-2015
+     07-09-2015
 ====================
 
 
-   * build/
-a4e30ad Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+   * android/
+1c9c39b Track own DownloadProvider
 
-   * external/libnfc-nci/
-09f86f3 pn547: Force rewrite of config even if we think it's the same
-18862aa libnfc-nci: Add NXP chip type disambiguation
-8e4a826 Rename NXP HAL
-47b6816 Include stl symbols and headers
-9cfc94e Update .conf file
-9ae659e Add Peer-To-Peer priority mechanism
-6de0db5 Adding MiFARE DESFire format support
-6114606 Correct corrupted CC value on MIFARE ULC tag
-5629b15 T1T HR0 and HR1 parameters missing in tag dectection
-fc700c3 Increase maximum AID routing buffer length and entry size.
-a18233a Increase APDU buffer size to support extended APDU
-102fc9b Fix unhandled NCI errors and wrong states
-e8720be Increase HCI EVT buffer size
-4c66914 Fix maximum HCP package size
-fd41b76 Memory leak and NULL pointer check fixes
-c631944 Code inspection fixes
-955c4b1 Changes base on coding conventions rules
-382b6a7 Fix board-specific HAL module naming
-8c3a43e nfc_nci: Allow passing in the HAL suffix as a variable
+   * device/qcom/sepolicy/
+fa2e85d Seandroid: Add policy for dts configurator and notifier nodes
 
-   * external/whispersystems/WhisperPush/
-ba78f1e WhisperPush: service for WPv2 update to interrogate/disable v1
-
-   * frameworks/av/
-79fc90a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+   * external/stagefright-plugins/
+68d9c45 stagefright-plugins: Remove Vorbis/MP3/H263/H264/HEVC
+ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
 
    * frameworks/base/
-470d983 Don't inflate new phone states on callbacks.
-e3edffb Clear callback handler queue when unregistering a phone state listener.
-386dc7b Stop checking for resources.arsc in shouldCreateIdmap
-dd5fe44 frameworks: Factor out Profiles API to CMSDK
-19ae057 SystemUI: fix recents task view height calculation
-b9f4a0d SystemUI: don't launch visualizer before we are attached
-
-   * frameworks/native/
-916232e Enable fingerprint option in Settings [2/3]
-
-   * frameworks/opt/telephony/
-af066e1 msim: fix parse error when roaming with slot 2 only
+be2553a Add fingerprint to DB before calling clients
+6f3b3d2 [1/2] Camera button support
+233b278 Lets make notifications and buttons square again
+3fba4ef Fix keyguard wallpaper issues
+9500311 Keyguard Fingerprint: Don't cancel if device doesn't have the feature
+239f35b SystemUI: Add uses-permission for fingerprint
+e8fbf78 Fingerprint: Secure the dump
+eb90496 Lets round the corners of Recents windows a bit.
+384cdd2 AndroidManifest: Fix strange issue with @hides.
+f2ffd43 [1/3] Documents: Full providers rework
+5687706 Miss USB device Interface from UsbManager.getDeviceList().
+5e77074 backup: Fix a system server crash
 
    * hardware/qcom/audio-caf/msm8994/
-0fe80ca audio: Extend platform parser to allow device name aliasing
+b5ab239 hal: pass samplerate as is to tiny compress
 
-   * packages/apps/Settings/
-8477019 Settings: Refactor to point at Profiles in CMSDK.
-be10663 Profiles: Get Default profile with its UUID instead of name
-0636e5b Revert "Settings: vectorize dashboard icons"
-
-   * packages/apps/Trebuchet/
-769cdc7 Update default workspace configuration.
-
-   * vendor/cm/
-015d4fd Massive APN Update
-0645d22 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-====================
-     06-30-2015
-====================
-
-
-   * build/
-435b17f Revert "build: use common factory script and input more parameters"
-
-   * device/samsung/msm8974-common/
-5b5c23f msm8974-common: new symlinks
-
-   * external/libnfc-nci/
-37d62d7 Merge "Add NFC-DEP routing"
-
-   * frameworks/av/
-5dd0f80 libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage
-143ed19 Revert "libstagefright: free mMoovBoxBuffer"
-
-   * packages/apps/CMFileManager/
-dad28ad ActionBar TextSelection: Prevent overlay of textfield
-
-   * packages/apps/DeskClock/
-5419fe6 DeskClock: Refactor to point at Profiles in CMSDK.
+   * packages/apps/Gallery2/
+9abe709 Photo Gallery widget: fix NPE in getViewAt
 
    * packages/apps/InCallUI/
-062ec69 Revert "[2/2] InCallUI: let InCallUI handle proximity sensor for incoming calls"
+dd57407 Revert "Disable Touch by Proximity Sensor"
 
-   * packages/apps/OTAUpdates/
-3d1ef0d Merge mistake
-a3e4ed2 Version 2.5.1
-549d7ff Changelog update 20150629
-5a11d92 Version bump to v2.5.1
-fc3c1c8 Fix for if theme isn't used in the build.prop
-5a19f8e Fix for if theme isn't used in the build.prop
-c44881c Version 2.5
-0c0b3c5 Added storage location in preferences
+   * packages/apps/PackageInstaller/
+0f55456 Merge pull request #1 from Pixelase/cm-12.1
+b588364 PackageInstaller: RU translations
+
+   * packages/apps/Settings/
+993abcb [2/2] Camera button support
+c5ab206 Settings: Make themable SuperSU drawable
+94afaf4 Dashboard: Update OTA icon
+0472f6b Add button in "hidden" settings to flip "VoLTE Provisioned" flag
 
    * packages/apps/Trebuchet/
-31559ae Hide workspace shortcuts during binding when AllApps is shown.
+aa2cb4a Trebuchet: display search widget search box if available
+
+   * packages/providers/DownloadProvider/
+89670d4 [3/3] Documents: Full providers rework
+
+   * packages/providers/MediaProvider/
+2bb7929 [2/3] Documents: Full providers rework
 
    * vendor/cm/
-4c4e428 vendor/cm: overlay start for ProfileService in external framework.
+b1f4115 Prevent Maven target from grabbing transitive dependencies
+
+   * vendor/samsung/
+5703e9b Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+33096da Merge pull request #633 from niv71/trltespr
+dd3cc52 Add libalarmservice_jni.so to trltespr-vendor-blobs.mk
+
+====================
+     07-08-2015
+====================
+
+
+   * frameworks/base/
+90dba76 Even more duplicates
+4c67cd0 Remove duplicate variable in Editor
+f473393 Rewrite Keyguard Visualizer
+9cb83c5 Add fingerprint permission [1/2]
+823d603 Add a few more default QS tiles
+0ea845b livedisplay: Fix outdoor mode detection
+246c8f9 SystemUI: dismiss brightness slider on screen off
+ec432a2 Fingerprint: Reset state when client cancels
+9fb2c58 Keyguard: Increase time to show hint texts
+21c2d00 Keyguard: Add fingerprint icon to the bottom view
+6265201 Floating windows: Fix minimize/maximize buttons coloring.
+1da0a3b Floating windows: Fix when we close floating window also remove the task.
+d18cc95 Settings: Sounds/Ringer Icon consistency change
+
+   * packages/apps/Calculator/
+c6121ca Cursor: Keep visible for long numbers
+
+   * packages/apps/Eleven/
+7441c5d Dynamically generate visualizer color
+
+   * packages/apps/OmniSwitch/
+742c59b OmniSwitch: Allow open app as floating window
+
+   * packages/apps/Settings/
+b0ca6f0 Add fingerprint permission [2/2]
+4dfc59c Settings: Add config for not allowing calls/sms being set to > slot 1
+3b32c91 Make preferred install location option configurable.
+
+   * packages/services/Telephony/
+6ec5963 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/samsung/
+7edc219 Merge pull request #631 from niv71/trltespr
+f8fdab4 Update trltespr GPS blobs
+
+====================
+     07-07-2015
+====================
+
+
+   * external/stagefright-plugins/
+a82d5bd stagefright-plugins: Add special handling of DivX files
+529ea8c stagefright-plugins: Improve seeking further
+
+   * frameworks/av/
+b1eecce MediaCodec: Delay flush until EBDs for CSD buffers reached client
+e7d2e2b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+7533421 audio: Reduce logging verbosity
+b2eb385 Acodec: Add interlaced video support
+1a4c727 audio: fallback to SW decoder for video clips
+
+   * frameworks/base/
+e201f30 Notifications: Launch in floating mode button.
+25f4113 Floating windows update: Fixes and Improvements.
+
+   * hardware/qcom/media-caf/msm8916/
+26f4ba7 mm-video-v4l2: Remove useless build warning
+
+   * packages/apps/CMFileManager/
+c6207b6 Android.mk don't build source components in tests/
+
+   * packages/apps/InCallUI/
+2f5bc95 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Settings/
+26649da Dashboard: Update Sounds icon
+1a3fbf8 LockScreen icon corrected to support themes.
+
+   * packages/apps/Trebuchet/
+db86a7f Badge: Check count on bind
+
+   * packages/services/Telephony/
+fe084f7 Telephony : Add support for config_hardcodeDefaultMobileNetworks
+
+   * system/core/
+a213c36 Charger: Add font to show real battery capacity in charger mode.
+
+====================
+     07-06-2015
+====================
+
+
+   * frameworks/av/
+38a308c libmedia: restrict nuplayer from using track offload
+
+   * frameworks/base/
+ebcda6c Add Process IOWAIT info to ANR dump
+b975c61 [ActivityManager] Refactor broadcast and reduce deliver delay.
 
