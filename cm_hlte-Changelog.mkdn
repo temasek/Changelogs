@@ -1,10 +1,52 @@
 ====================
-     07-11-2015
+     07-12-2015
 ====================
 
 
-   * device/samsung/hlte-common/
-9c1c7f3 hlte-common: reduce minimum brightness to darker level
+   * android/
+e2cade8 Track own SetupWizard
+
+   * build/
+d55b498 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
+
+   * external/stagefright-plugins/
+b384c5f stagefright-plugins: Restructure the code
+
+   * frameworks/av/
+e682de6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+ac27b63 stagefright: Move a bunch of FFMPEG stuff out of here
+
+   * frameworks/native/
+971e9c6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * hardware/qcom/audio-caf/msm8994/
+b49aaff Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/audio into cm-12.1
+
+   * hardware/qcom/display-caf/msm8994/
+9b2766a Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
+
+   * hardware/qcom/media-caf/msm8994/
+4e647f5 Merge branch 'LA.BF64.1.2.1_rb2.21' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
+
+   * packages/apps/Settings/
+994ea1d Build V14.8
+e576cf0 Revert "Settings: hide light pulse settings if not available"
+134c754 Add SetupManageFingerprints to setup wizard flow
+
+   * packages/apps/SetupWizard/
+eb8378a Bring SetupWizard to our side! - Remove CyanogenServicePage.java - Remove CM metrics - Change navbar codes to our own and add a logic for HW buttons enabler
+
+   * vendor/cm/
+90273aa Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+7c96869 cm: Update properties and libs for stagefright-plugins
+
+   * vendor/samsung/
+14ce11b Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     07-11-2015
+====================
+
 
    * frameworks/base/
 4bb90f5 SettingsProvider: add overlay for SWAP_VOLUME_KEYS_ON_ROTATION
@@ -24,20 +66,17 @@ ef2f1a0 Keyguard Fingerprint: Lock immediately when fp is used [1/2]
 c83ab0c Improve dock battery strings
 542a638 msim: Fix saving default sim from select SIM dialog (1/2)
 1abb8ee Merge pull request #83 from ZdrowyGosciu/cm-12.1
-84ee375 SystemUI: Pie: Mute drawing time messages
-73b51f7 Android always has <malloc.h>.
-c64fc2c Fix "Bluetooh" logging typo.
+
+   * frameworks/native/
+e9e5b56 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+7c2c333 Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
+909ee77 Tuning compiler thread count for optimal application install times
 
    * hardware/libhardware/
 62520f1 audio: Notify amplifier HAL of device enable/disable
 
    * hardware/qcom/audio-caf/msm8994/
 dabc25c hal: Notify amplifier of device enable/disable
-
-   * kernel/samsung/hlte/
-2f46a14 Build v1.15
-daacaf6 udp: fix behavior of wrong checksums
-be7a0fe lowmemorykiller: use for_each_thread instead of buggy while_each_thread
 
    * packages/apps/CMFileManager/
 8cd911b configurationChanged: Don't handle the orientation change in our main Activity
@@ -49,6 +88,7 @@ f5164b3 Quick Message: Fix dual sim picker
 9fc3f93 Enable heads-up style notifications on Mms app
 
    * packages/apps/Settings/
+ea8197c Cancel error timeout when enrollment finished
 66637fd Build V14.7
 d1e4981 Settings: hide light pulse settings if not available
 5c04014 Settings: Point to classes within cmsdk.
@@ -57,8 +97,9 @@ caf0522 Show error state when fingerprint read times out
 ad929f8 Only show fingerprint for primary user
 bbbd814 Keyguard Fingerprint: Lock immediately when fp is used [2/2]
 b6cd054 Improve dock battery strings
-cd52417 Gesture Anywhere: Update dependencies
-0c6dcec Build V14.6
+
+   * packages/apps/SetupWizard/
+b28f9c0 Enroll fingerprint via SetupWizard [2/2]
 
    * packages/services/Telecomm/
 a2230c8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
@@ -75,7 +116,9 @@ c6d0ab5 Updated APN for Austrian Carrier Yesss.
    * vendor/cmsdk/
 cf0bfd3 CMSDK: Begin documentation and testing for profiles.
 125c899 CMSDK: Utilize CMSDK_PACKAGE_ID.
-6e46829 CMSDK: Introduce factored out resources from framework.
+
+   * vendor/samsung/
+3171214 Merge pull request #635 from ljzyal/cm-12.1
 
 ====================
      07-10-2015
@@ -83,10 +126,17 @@ cf0bfd3 CMSDK: Begin documentation and testing for profiles.
 
 
    * build/
+cd8cb89 build: Fix device detection for a few of the envsetup commands
+c13c1b2 build: Fix image creation for F2FS-only configuration
 9183157 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_build into cm-12.1
-e78b239 releasetools: Add support for LZMA in blockimgdiff
+
+   * device/samsung/hlte-common/
+9c1c7f3 hlte-common: reduce minimum brightness to darker level
 
    * frameworks/base/
+84ee375 SystemUI: Pie: Mute drawing time messages
+73b51f7 Android always has <malloc.h>.
+c64fc2c Fix "Bluetooh" logging typo.
 bfeeaf8 App side bar : Fix hardcore switch & System uı FC
 b1a2d58 App Sidebar : Fix NPE - Add missing activity launch icon
 12669a5 Gesture anywhere floating switch 1/2
@@ -97,10 +147,15 @@ abea327 base: Fix RESET_BATTERY_STATS permission
 28e1d23 Fingerprint: Vibrate device.
 9fa1e66 SystemUI: fix keyguard unlock drawable not updating
 3f3e90d Fingerprint: Get current user id via Process.myUserHandle()
-2ed1f63 Custom carrier label: fix usage when option is off (2/2)
 
    * frameworks/native/
+6246d07 SF: Skip render-to-texture for color transforms
 baf7b33 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * kernel/samsung/hlte/
+2f46a14 Build v1.15
+daacaf6 udp: fix behavior of wrong checksums
+be7a0fe lowmemorykiller: use for_each_thread instead of buggy while_each_thread
 
    * packages/apps/OmniSwitch/
 fc27f91 OmniSwitch: new app icons
@@ -110,6 +165,8 @@ d68fe9b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_
 5040ee6 PackageInstaller: add hook to manage packages via PRE_BOOT_COMPLETED event
 
    * packages/apps/Settings/
+cd52417 Gesture Anywhere: Update dependencies
+0c6dcec Build V14.6
 e827a7d fuelgauge: Add back imports required for dock battery
 4eaa07e Gesture anywhere floating switch 2/2
 3283e1e [2/2] Settings: option to launch heads up in floating mode
@@ -117,7 +174,6 @@ e827a7d fuelgauge: Add back imports required for dock battery
 34bb5de Fingerprint: Fingerprint enrollment
 5b899f3 Fingerprint: Add summary text to 'manage fingerprints'
 cd8973c Settings: vectorize supersu drawable
-1850a89 Custom carrier label: fix usage when option is off (1/2)
 
    * packages/apps/Trebuchet/
 270da93 Transition Effects: stack transition effect
@@ -127,9 +183,6 @@ cd8973c Settings: vectorize supersu drawable
 dcec6a7 Merge pull request #2 from ZdrowyGosciu/cm-12.1
 2132b34 LatinIME: fix potential NPE
 
-   * packages/services/Telecomm/
-d5e706b msim: Fix saving default sim from select SIM dialog (2/2)
-
    * system/core/
 af05640 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 fe93cfb healthd: dock battery
@@ -137,7 +190,11 @@ fe93cfb healthd: dock battery
    * vendor/cm/
 de70981 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
+   * vendor/cmsdk/
+6e46829 CMSDK: Introduce factored out resources from framework.
+
    * vendor/samsung/
+743ee11 kltechnduo:Update blob
 9f01c31 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 3e26f6e Merge pull request #634 from gekkehenkie11/cm-12.1
 33c49df trlte-common: add qualcomm location service and bring makefiles up to date
@@ -150,14 +207,20 @@ de70981 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
    * android/
 1c9c39b Track own DownloadProvider
 
+   * build/
+e78b239 releasetools: Add support for LZMA in blockimgdiff
+
    * device/qcom/sepolicy/
 fa2e85d Seandroid: Add policy for dts configurator and notifier nodes
 
    * external/stagefright-plugins/
 68d9c45 stagefright-plugins: Remove Vorbis/MP3/H263/H264/HEVC
-ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
+
+   * frameworks/av/
+d562715 stagefright: Add support for loading a custom OMXPlugin
 
    * frameworks/base/
+2ed1f63 Custom carrier label: fix usage when option is off (2/2)
 be2553a Add fingerprint to DB before calling clients
 6f3b3d2 [1/2] Camera button support
 233b278 Lets make notifications and buttons square again
@@ -167,15 +230,15 @@ be2553a Add fingerprint to DB before calling clients
 e8fbf78 Fingerprint: Secure the dump
 eb90496 Lets round the corners of Recents windows a bit.
 384cdd2 AndroidManifest: Fix strange issue with @hides.
-f2ffd43 [1/3] Documents: Full providers rework
-5687706 Miss USB device Interface from UsbManager.getDeviceList().
-5e77074 backup: Fix a system server crash
 
    * hardware/libhardware/
 1d03c03 Fingerprint: Add getNumEnrollmentSteps [2/2]
 
    * hardware/qcom/audio-caf/msm8994/
 b5ab239 hal: pass samplerate as is to tiny compress
+
+   * hardware/qcom/display-caf/msm8974/
+8751e83 hwc: Handle DOZE_SUSPEND properly
 
    * packages/apps/CMFileManager/
 b4d6b6e Easy Mode: Fix exit on easy mode screen
@@ -194,6 +257,7 @@ dd57407 Revert "Disable Touch by Proximity Sensor"
 b588364 PackageInstaller: RU translations
 
    * packages/apps/Settings/
+1850a89 Custom carrier label: fix usage when option is off (1/2)
 993abcb [2/2] Camera button support
 c5ab206 Settings: Make themable SuperSU drawable
 94afaf4 Dashboard: Update OTA icon
@@ -202,11 +266,8 @@ c5ab206 Settings: Make themable SuperSU drawable
    * packages/apps/Trebuchet/
 aa2cb4a Trebuchet: display search widget search box if available
 
-   * packages/providers/DownloadProvider/
-89670d4 [3/3] Documents: Full providers rework
-
-   * packages/providers/MediaProvider/
-2bb7929 [2/3] Documents: Full providers rework
+   * packages/services/Telecomm/
+d5e706b msim: Fix saving default sim from select SIM dialog (2/2)
 
    * vendor/cm/
 b1f4115 Prevent Maven target from grabbing transitive dependencies
@@ -214,27 +275,20 @@ b1f4115 Prevent Maven target from grabbing transitive dependencies
    * vendor/samsung/
 5703e9b Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 33096da Merge pull request #633 from niv71/trltespr
-dd3cc52 Add libalarmservice_jni.so to trltespr-vendor-blobs.mk
 
 ====================
      07-08-2015
 ====================
 
 
+   * external/stagefright-plugins/
+ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
+
    * frameworks/base/
+f2ffd43 [1/3] Documents: Full providers rework
+5687706 Miss USB device Interface from UsbManager.getDeviceList().
+5e77074 backup: Fix a system server crash
 90dba76 Even more duplicates
-4c67cd0 Remove duplicate variable in Editor
-f473393 Rewrite Keyguard Visualizer
-9cb83c5 Add fingerprint permission [1/2]
-823d603 Add a few more default QS tiles
-0ea845b livedisplay: Fix outdoor mode detection
-246c8f9 SystemUI: dismiss brightness slider on screen off
-ec432a2 Fingerprint: Reset state when client cancels
-9fb2c58 Keyguard: Increase time to show hint texts
-21c2d00 Keyguard: Add fingerprint icon to the bottom view
-6265201 Floating windows: Fix minimize/maximize buttons coloring.
-1da0a3b Floating windows: Fix when we close floating window also remove the task.
-d18cc95 Settings: Sounds/Ringer Icon consistency change
 
    * hardware/qcom/audio-caf/msm8974/
 f7bddec hal: Notify amplifier of device enable/disable
@@ -242,69 +296,14 @@ f7bddec hal: Notify amplifier of device enable/disable
    * packages/apps/Calculator/
 c6121ca Cursor: Keep visible for long numbers
 
-   * packages/apps/Eleven/
-7441c5d Dynamically generate visualizer color
+   * packages/providers/DownloadProvider/
+89670d4 [3/3] Documents: Full providers rework
 
-   * packages/apps/OmniSwitch/
-742c59b OmniSwitch: Allow open app as floating window
-
-   * packages/apps/Settings/
-b0ca6f0 Add fingerprint permission [2/2]
-4dfc59c Settings: Add config for not allowing calls/sms being set to > slot 1
-3b32c91 Make preferred install location option configurable.
-
-   * packages/services/Telephony/
-6ec5963 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+   * packages/providers/MediaProvider/
+2bb7929 [2/3] Documents: Full providers rework
 
    * vendor/samsung/
+dd3cc52 Add libalarmservice_jni.so to trltespr-vendor-blobs.mk
 7edc219 Merge pull request #631 from niv71/trltespr
 f8fdab4 Update trltespr GPS blobs
-
-====================
-     07-07-2015
-====================
-
-
-   * external/stagefright-plugins/
-a82d5bd stagefright-plugins: Add special handling of DivX files
-529ea8c stagefright-plugins: Improve seeking further
-
-   * frameworks/av/
-b1eecce MediaCodec: Delay flush until EBDs for CSD buffers reached client
-e7d2e2b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-7533421 audio: Reduce logging verbosity
-b2eb385 Acodec: Add interlaced video support
-1a4c727 audio: fallback to SW decoder for video clips
-
-   * frameworks/base/
-e201f30 Notifications: Launch in floating mode button.
-25f4113 Floating windows update: Fixes and Improvements.
-
-   * hardware/qcom/media-caf/msm8916/
-26f4ba7 mm-video-v4l2: Remove useless build warning
-
-   * packages/apps/CMFileManager/
-c6207b6 Android.mk don't build source components in tests/
-
-   * packages/apps/InCallUI/
-2f5bc95 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Mms/
-c67b355 Contact vCard: Dont crash if contact that is sent no longer exits.
-
-   * packages/apps/Settings/
-26649da Dashboard: Update Sounds icon
-1a3fbf8 LockScreen icon corrected to support themes.
-
-   * packages/apps/Trebuchet/
-db86a7f Badge: Check count on bind
-
-   * packages/providers/TelephonyProvider/
-aa98e82 MmsProvider : Add ability to get thread information in search
-
-   * packages/services/Telephony/
-fe084f7 Telephony : Add support for config_hardcodeDefaultMobileNetworks
-
-   * system/core/
-a213c36 Charger: Add font to show real battery capacity in charger mode.
 
