@@ -1,259 +1,326 @@
 ====================
-     07-22-2015
+     07-30-2015
 ====================
 
 
-   * android/
-3b9e2fb Add WallpaperPicker by slimsaber
-
-   * frameworks/av/
-c80f5f7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-fe6ed20 cameraservice: Resolve message vs start/stop preview races
+   * device/samsung/hlte-common/
+d585573 wifi: Enable EAP-SIM
 
    * frameworks/base/
-b43d8c5 CellularTile: Fix secondary button doesn't work and change single click behavior
-75078f8 WifiTile: Fix wifi toggle state in detail view
-444319e Revert "Add option to set default custom function to button recents (1/2)"
-c3111f4 Lights with Screen On [1/2]: Optional allowment of lights
-d37696a Fix StringIndexOutOfBoundsException due to faulty cameras.
-856df64 SlimDim: Use semaphore to cancel ontouch callback
-c01a5e3 SlimDim: don't dim navbar on lockscreen
-792769b CYNGNOS-489: Fingerprint: Fix concurrent mod exception when getting Fingerprint list
-44e89d9 Fix GPS for old GPS HALs
-09756ce SystemUI: fix battery icon jump on qs expand
-605c501 Automatic translation import
+1874dfc Duplicate Alarm: Fermium == Argon
 
-   * hardware/qcom/audio-caf/msm8974/
-aac6549 compress offload: use new sample rate representation.
+   * frameworks/native/
+ad1beeb sf: Restrict GPU tile render feature to MAX_LAYER_COUNT
+d0e957f SF: Enable context priority
 
-   * packages/apps/Dialer/
-31a5dd7 Automatic translation import
+   * frameworks/opt/telephony/
+66cbdcf Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+e257295 telephony: read IMSI from CSIM if available in CDMALTEPhone
 
-   * packages/apps/InCallUI/
-cd263e6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+   * kernel/samsung/hlte/
+54dc6fb Build v1.18
+b6e887a mm: reorder can_do_mlock to fix audit denial
+cd1f73b futex: Remove bogus hrtimer_active() check
+97a685b mm,vmacache: optimize overflow system-wide flushing
+8e21385 mm: per-thread vma caching
+0caefdb8 mm/mmap.c: find_vma(): remove unnecessary if(mm) check
+5ea0a0a block: remove WQ_POWER_EFFICIENT from kblockd
+cf22544 mm: compaction: compact all zones when turning off screen
+3abc1f0 kbuild: do not pass KBUILD_CFLAGS to mkcompile_h
+
+   * packages/apps/Calculator/
+8253dcf Calculator: do not allow multiple decimal points in a number
 
    * packages/apps/Mms/
-f39c344 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+5e62abc Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+96ef304 Drafts: Fix instance where body of the message is lost.
+b2f84fd Delete vcard mms on error
+7ee29ed Add Subject: Fix subject crash
 
    * packages/apps/Settings/
-14621c8 Build V15
-604b39e Check for null activity before calling getSetupBar
-5c5578b Revert "Add option to set default custom function to button recents (2/2)"
-5939d5e SecuritySettings: Lockscreen wallpaper
-3f3aa94 Lights with Screen On [2/2]: Optional allowment of lights
-70ca7bc Revert "Settings : Add contributors word cloud"
-29f9e39 Don't include all resource densities
-8d5c3bb Settings: Hide radio band selection based on config Ticket: RENDANG-355
-076bea8 Automatic translation import
+4597ab3 Build V15.2
+e539026 Settings: make FRP wipe dialog not cancelable
 
-   * packages/inputmethods/LatinIME/
-cc9369d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
-
-   * packages/providers/MediaProvider/
-a6e99a3 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_providers_MediaProvider into cm-12.1
-
-   * packages/providers/ThemesProvider/
-2e004d0 Avoid OOME when generating many wallpaper previews
-
-   * packages/services/Telecomm/
-aeffed2 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-605e15b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-
-   * prebuilts/cmsdk/
-0f1f24a cmsdk: @hide PARCELEABLE_VERSION.
-bb7498f prebuilts/cmsdk: Update api level 1 for hotfix.
-e281aae cmsdk: Update bleeding edge sdk for recent changes.
-a423d83 cmsdk: Update latest api text for recent changes.
-9bf4553 prebuilts/cmsdk: Rewrite current cmsdk version (API level 1) for hotfix.
-
-   * system/vold/
-e8ac892 Change lseek to lseek64
+   * packages/apps/SetupWizard/
+2cd4a92 SetupWizard: add Kiev timezone to match Settings
+40a321f Automatic translation import
 
    * vendor/cm/
-6dd70ee Add WallpaperPicker by slimsaber
-
-   * vendor/cmsdk/
-f68c6c7 cmsdk: Hide PARCELABLE_VERSION constant which varies between releases.
-a276a41 cmsdk: Update api text for recent changes.
-dbed0bf cmsdk: Add tests for StatusBarPanelCustomTile parceling.
-33a24ad cmsdk: Declare a parcelable header.
+bc36db7 Add a bash completion "--force-sync" for repo sync
 
 ====================
-     07-21-2015
+     07-29-2015
 ====================
 
-
-   * hardware/ti/wpan/
-24da462 libbt-vendor-ti: add ssr_cleanup
-
-   * packages/providers/MediaProvider/
-5ad1eeb Screenshots info is not updated when device is plugged in MTP mode
-
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
-c0371ef Update gold to build #2098274.
-
-   * vendor/cmsdk/
-5ff5e10 cmsdk: Make sure we're not including source from internal package.
-
-====================
-     07-20-2015
-====================
-
-
-   * device/samsung/qcom-common/
-0551af8 Automatic translation import
-
-   * frameworks/av/
-e9cafe6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-09031fa Revert "CameraService: Bump up the maximum number of cameras"
 
    * frameworks/base/
-30bdf1a SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]
-f591950 SlimDim: listen for touches in navbar empty areas also
-41daf58 SystemUI: SlimDim [1/2]
+48f787f Remove duplicate alarm
+9717ace CustomQSTile: Check for bad identifier in getTitle()
+afe6319 PackageManager: copy allowViaWhitelist flag for perm trees
+08c4f40 Remove duplicate RU strings
 
-   * packages/apps/CMFileManager/
-ba8d647 Automatic translation import
-
-   * packages/apps/Camera2/
-6e1878e Automatic translation import
-
-   * packages/apps/DeskClock/
-0367965 Automatic translation import
-
-   * packages/apps/Eleven/
-1cd8c8d Automatic translation import
-
-   * packages/apps/Email/
-1e53a30 Automatic translation import
-
-   * packages/apps/Gallery2/
-0930700 Automatic translation import
-
-   * packages/apps/InCallUI/
-391936f Automatic translation import
+   * packages/apps/ContactsCommon/
+91100e8 string validation: check if the string is empty
 
    * packages/apps/Mms/
-837db87 Automatic translation import
+6e08637 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+f844bc6 ComposeMessage: Improve performance with large groups
 
    * packages/apps/Settings/
-049de7d Settings: SlimDim - pref to listen on entire screen for touches [2/2]
-404a3cc Settings: SlimDim [2/2]
-
-   * packages/apps/Stk/
-b9b184f Automatic translation import
-
-   * packages/apps/ThemeChooser/
-7eb9618 Automatic translation import
-
-   * packages/apps/Trebuchet/
-c7b06dd Automatic translation import
-
-   * packages/apps/TvSettings/
-07727f0 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-247e1e6 Automatic translation import
-
-   * packages/apps/WallpaperPicker/
-d1a1316 Add README
-bc041f5 Initial commit
-
-   * packages/inputmethods/LatinIME/
-d887a71 Automatic translation import
-
-   * packages/services/Mms/
-f9c331a Automatic translation import
-
-   * packages/services/Telecomm/
-a3664a5 Automatic translation import
-
-   * packages/services/Telephony/
-49fba8d Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-f65b740 Automatic translation import
+90e1b1f Lockscreen Wallpaper: Fix FC on None security
 
    * vendor/cmsdk/
-f12419a Automatic translation import
+e29548d cmsdk: Update tests for recent builder changes.
+ea3bc16 cmsdk: Make sure we're defauling shouldCollapsePanel to true.
+
+   * vendor/samsung/
+10bc37a Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+e1b9061 i9500: Hex camera ID location
 
 ====================
-     07-19-2015
-====================
-
-
-   * frameworks/base/
-4b7bee8 Revert "StatusBarHeaderView: Misc updates"
-bd6a53d PhoneNumberUtils: Add rewrite rule for CDMA networks in Ukraine
-af77759 SystemUI: update notification clipping when reset
-
-   * vendor/cm/
-0362500 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-4397d1d vendor/cm: Introduce update-cm-prebuilts-latest-public-api.
-5dd3371 vendor/cm: Clean up paths to known files.
-
-====================
-     07-18-2015
+     07-28-2015
 ====================
 
 
    * build/
-b73a3f0 Allow setting the recovery density separately from the aapt config
+27c415b build: Allow packaging of factory image files into target files
+1578eaa misc_info: Add factory script location to misc_info when available
+
+   * device/samsung/qcom-common/
+b978275 Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+efbad8a Automatic translation import
 
    * frameworks/base/
-b086993 DO NOT MERGE Fix JNI global references leak in AudioEffect
-315f7a5 Revert "libaudioeffect_jni GREF leak fix"
-243ad34 docs: Add an explicit dependency on libcore/Docs.mk
-28f6c48 Delete some obsolete test code.
-83ae0cf Fix a bug disappearing installerPackageName info of packages after reboot.
-c8109f6 SettingsProvider: Update action for Profile picker.
-4f29481 Fingerprint: Add break after MSG_REMOVED
-c6e90fa Authenticate When Keyguard Resumes From Camera
+b1d9c3e systemui: Fix various issues with transparent bars
+e9a1baa wm: Underp WindowManager flags
+cbd94ac camera: Unbreak the extended face detection code
+8ae07bd ActivityManagerService: Don't export 'system' process in running app list
+2835645 systemui: move dock battery level views outside systemicons layout
+5529c2e qs: initialize day temperature in livedisplay tile
+00a3b9e SystemUi: Respect shouldCollapsePanel when handling onClick.
+6b96a04 framework: add config_ledCanPulse overlay setting
+3c1e174 Automatic translation import
+bfc440b pm: remove stale permissions
+c4ab66f Fix left weather temp padding
+f46ef3b FWB: statusbar weather font size (1/2)
+034088d FWB: Statusbar weather color (1/2)
+f53754e Update fix for DT2S breakage
+
+   * frameworks/opt/chips/
+ff733f5 Merge "More Chip: use pendingcount instead of counting again" into cm-12.1
 
    * kernel/samsung/hlte/
-75ef490 Build v1.17
-eca26ca consitify do_mount() arguments
-6c47917 do_add_mount()/umount -l races
-7865259 Update defconfig
-98c38fa fs: drop nodiratime
-2a8428c get rid of magic in proc_namespace.c
-d0cfa80 Revert "zen-tune: Implement zen-tune v3 (experimental)"
+67e78d0 msm: vidc: flush work handler before unloading firmware
+
+   * packages/apps/AudioFX/
+56456fe Automatic translation import
+
+   * packages/apps/Bluetooth/
+b836693 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+6ab1804 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+745ee46 Automatic translation import
+
+   * packages/apps/CMBugReport/
+0696d01 Automatic translation import
 
    * packages/apps/CMFileManager/
-a7f33f3 Update launcher iconography.
+85ff3da Secure Move: Check to make sure libtruecrypt correctly errored
+9426b24 Fix Secure SD Card Entry to open folder.
+c310a84 Refactored the ImageLoader a bit, so that it doesn't have trouble loading images.
+118e4b1 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+02551e7 Automatic translation import
+
+   * packages/apps/Calculator/
+1c0fcb2 Automatic translation import
+
+   * packages/apps/Calendar/
+5158d76 Automatic translation import
+
+   * packages/apps/Camera2/
+b25a825 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+3f54d7c Automatic translation import
+
+   * packages/apps/Contacts/
+0f9938f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+d8a731c Automatic translation import
 
    * packages/apps/ContactsCommon/
-49ff098 ContactPhotoManager - Add ability to fetch contact bitmap based on photo id
+9e828a0 EmergencyContacts: Check if quickdial number is an emergency number
+191c15a Automatic translation import
+
+   * packages/apps/DeskClock/
+f68291d Automatic translation import
+
+   * packages/apps/Dialer/
+8e1a114 Automatic translation import
+
+   * packages/apps/Eleven/
+b1bd912 Automatic translation import
+
+   * packages/apps/Email/
+544e7ce Automatic translation import
+
+   * packages/apps/Gallery2/
+254c696 Automatic translation import
+
+   * packages/apps/InCallUI/
+0270eaf Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+f75264d Automatic translation import
+
+   * packages/apps/LockClock/
+5defd30 Automatic translation import
 
    * packages/apps/Mms/
-a1aede4 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+e9e5f29 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+f3c52af Fixed KeyGuard not being disabled on second quickmessage
+95fb3a4 Automatic translation import
+
+   * packages/apps/OmniSwitch/
+0c7ca6e OmniSwitch: pin app enhancements
+
+   * packages/apps/PhoneCommon/
+82b70cd Automatic translation import
 
    * packages/apps/Settings/
-572ecae Settings: add Kiev time zones to picker
-831eb8a Settings: Update profiles settings dashboard icon.
-fa68b98 Settings: Make sure we're getting the instance of ProfileManager.
-a87887c Setup: Call setUseFingerprint() when enrollment finished
-1fc308e Lose some deprecated test annotations.
-a5242ab Remove hardcoded textAppearance for better theme support.
-fa8ac21 Fix config_proximityCheckOnWake setting handling
-e38d97c Merge pull request #325 from apascual89/cm-12.1
+53ffb92 Disable sim toggle switch if preference is disabled
+701be29 Settings: display light pulse dialog settings conditionally
+8d883a7 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+2a7499b Automatic translation import
+
+   * packages/apps/Stk/
+7a6bd77 Automatic translation import
+
+   * packages/apps/Terminal/
+898ddda Automatic translation import
+
+   * packages/apps/ThemeChooser/
+077590e Automatic translation import
+
+   * packages/apps/Trebuchet/
+8da9f10 Update default workspace to reference latest browser.
+86dd55e Automatic translation import
+
+   * packages/apps/TvSettings/
+c4c493e Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+86a1325 Don't assume that a string isn't empty
+24fd565 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+18e9298 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+02c7354 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+4350615 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+5d870ac Automatic translation import
+
+   * packages/providers/ThemesProvider/
+eccabad Automatic translation import
+
+   * packages/services/Mms/
+3e462bf Automatic translation import
 
    * packages/services/Telecomm/
-6ea177e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+0bf5a41 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+b5f26be Automatic translation import
 
-   * prebuilts/cmsdk/
-6ead612 cmsdk: Update for future* cmsdk changes.
+   * packages/services/Telephony/
+26ef3da Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+cd0e4f2 Display the correct strings for network type summary
+be0b0a8 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+47835af Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+935ad53 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+6b88ce2 Automatic translation import
 
    * vendor/cm/
-7135af8 Fix Rogers APN
-bbeb27c APN fine tuning
-87c8573 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-9bf517f Hack in support for the old version of Maven that Ubuntu apparently ships with
+4c11e6c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+8d2b2c7 Update #comment to reflect removal of /data/local/userinit.d/ support
 
    * vendor/cmsdk/
-75cd945 cmsdk: Update intent action extras to match new namespace.
-02e761f cmsdk: Fix javadoc comment for CM_VERSION_CODES.
-ce52da6 cmsdk: Update api files for intent action change.
+d2bc093 cmsdk: Update manual functional tests for shouldCollapsePanel.
+5aa4db2 cmsdk: Add unit tests for shouldCollapsePanel
+3290540 cmsdk: Add method for shouldCollapsePanel.
+ff70beb Automatic translation import
+
+   * vendor/samsung/
+f60b093 i9500: Update proprietary binaries
+
+====================
+     07-27-2015
+====================
+
+
+   * android/
+7bcdb67 Revert "Revert "Merge tag 'android-5.1.1_r8' into cm-12.1""
+
+   * external/bluetooth/bluedroid/
+d733b16 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+
+   * frameworks/base/
+d6851b3 FWB: statusbar weather temperature placement (2/2)
+d965e49 FWB: Headset icon switch (1/2)
+76f8558 SystemUI: Crash fix from bad camera values.
+
+   * packages/apps/Settings/
+9b90ee5 Build V15.1
+c8f405f Settings: statusbar weather font size (2/2)
+874cf8f Disable weather settings if hidden
+332f8dd Settings: Statusbar weather color (2/2)
+88a9506 Settings: statusbar weather temperature placement (1/2)
+5c78ae5 Settings: Headset icon switch (2/2)
+d3ab70e Settings: Long Term Orbits (LTO)
+
+   * vendor/cm/
+627c059 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/samsung/
+ab160a2 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     07-26-2015
+====================
+
+
+   * device/samsung/qcom-common/
+86e9967 SamsungDozeService: Prevent a pm wakeup with a timestamp in the future
+
+   * external/bluetooth/bluedroid/
+414322d Fix compile error in btif_rfcomm due to invalid comparison
+
+   * frameworks/base/
+8870957 Revert "App side bar : Fix hardcore switch & System uı FC"
+d1cb42d Floating windows: Fix statusbar immersive mode for snap points.
+
+   * hardware/qcom/audio-caf/msm8974/
+2db9368 hal: Add support for Samsung dual-SIM implementation
+
+   * hardware/qcom/display-caf/msm8994/
+740d3fa Merge branch 'LA.BF64.1.2.1_rb2.25' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
+
+   * hardware/qcom/media-caf/msm8994/
+f0360d2 Merge branch 'LA.BF64.1.2.1_rb2.25' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
+
+   * vendor/cm/
+bf1bcdb Specify the maven-dependency-plugin version directly so as to force Maven 3.0.5 to use the correct version.
+
+   * vendor/samsung/
+e23e0e9 Merge pull request #640 from gekkehenkie11/cm-12.1
+0eb278e fix flashlight shutdown timeout
 
