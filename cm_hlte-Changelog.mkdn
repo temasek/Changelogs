@@ -1,4 +1,200 @@
 ====================
+     08-06-2015
+====================
+
+
+   * device/samsung/qcom-common/
+be1d5d0 Automatic translation import
+64e6330 SamsungDozeService: properly fix future timestamp error
+
+   * external/whispersystems/WhisperPush/
+c9cbb44 Automatic translation import
+
+   * frameworks/av/
+6d4553e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+ba0017c SampleTable: fix integer overflow checks.
+93d306a MPEG4Extractor: still more NULL dereference fixes
+
+   * frameworks/base/
+08011f8 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+3634c04 Prevent system uid component from running in an app process
+0ba3f37 Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS
+f1e6c12 Fix memory leak in AAPT
+ece1d42 LockPatternUtils: add a static way to retreive pattern from string
+f001ec2 Keyguard: Fix scramblepin logic.
+aecc931 Automatic translation import
+f686ad0 Keyguard: Don't disable visibility when scrambling pin.
+6e533be Recents Clear all Button Custom Colors
+6b31a8c Notifications: Custom colors, (1/2): ("normal", heads up and lock screen notifications)
+2dfda4b Merge pull request #84 from Pixelase/cm-12.1
+32e72a6 Core: Update RU Translations
+0748216 Keyguard: Update RU Translations
+d7dda28 DocumentsUI: RU translations
+ad6a733 SystemUI: Update RU translations
+
+   * frameworks/opt/chips/
+4d8a122 chips: extend phone number regex to recognize russian trunk prefix
+
+   * kernel/samsung/hlte/
+e838fda Build v1.20
+7573b38 cpufreq: interactive:call __cpufreq_driver_target() for cur frequency
+1b85977 msm: cpufreq: Break early if target_freq is current freq
+2f68218 kernel: Replace timeconst.pl with a bc script
+119698e lowmemorykiller: adapt to vmpressure
+60ef61b mm: Add notifier framework for showing memory
+4c7520e mm: vmpressure: allow in-kernel clients to subscribe for events
+ae383db memcg: add memory.pressure_level events
+c400eab Revert "AIO: Don't plug the I/O queue in do_io_submit()"
+
+   * packages/apps/CMBugReport/
+e07ce04 Automatic translation import
+
+   * packages/apps/CMFileManager/
+6f6094d Fixed ANR & Memory Leak Associated with 3GP
+c740f92 Fixed search to actually open the clicked folder
+ddb22bb Fixed ANR associated with SecureStorage
+cb05075 Revert "Made NavigationView reliant on FileObserver to keep up to date."
+6e633d8 Automatic translation import
+
+   * packages/apps/Calendar/
+4d38720 Automatic translation import
+
+   * packages/apps/Contacts/
+1273f6b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+3ad03f4 Automatic translation import
+
+   * packages/apps/DeskClock/
+628f540 Automatic translation import
+
+   * packages/apps/Dialer/
+08c2d66 Automatic translation import
+
+   * packages/apps/Eleven/
+a0c8e3e Automatic translation import
+
+   * packages/apps/Gallery2/
+40424da Automatic translation import
+
+   * packages/apps/InCallUI/
+32f3935 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+c4b11f0 Automatic translation import
+
+   * packages/apps/LockClock/
+4619501 Automatic translation import
+
+   * packages/apps/Mms/
+71ba889 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+7dc6764 Mms : Replace  REQUEST_CODE_PICK with REQUEST_CODE_ADD_RECIPIENTS
+68afa3b Revert "Drafts: Prevent duplicate drafts from being added"
+af6ff10 Revert "Drafts: Fix instance where body of the message is lost."
+9a090ae Automatic translation import
+
+   * packages/apps/Settings/
+53db99d Build V15.4
+b1f8113 Settings: fix potential crash when setting new pattern
+8df750f Automatic translation import
+c54cc72 Recents Clear All Button Custom Colors.
+2bb8606  Notifications: Custom colors, (2/2):
+854fb70 Merge pull request #326 from Pixelase/cm-12.1
+b4f3fc6 Settings: Update RU translations
+
+   * packages/apps/SoundRecorder/
+2099282 SoundRecorder: Mark recorder as processed if we've saved the sample.
+706592f Automatic translation import
+
+   * packages/apps/Stk/
+a07cf1a Automatic translation import
+
+   * packages/apps/ThemeChooser/
+e2b39d3 Automatic translation import
+
+   * packages/apps/Trebuchet/
+70c6eaf Automatic translation import
+
+   * packages/apps/TvSettings/
+b1d65d1 Automatic translation import
+
+   * packages/services/Telephony/
+e67f65a Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+d8d12dd Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+94198fd Automatic translation import
+
+   * vendor/cm/
+68b254e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+74891fa sepolicy: Allow recovery to set system properties
+
+   * vendor/cmsdk/
+5b61a21 Automatic translation import
+
+====================
+     08-05-2015
+====================
+
+
+   * build/
+1a5e9c0 arm: don't unroll-loops
+
+   * device/samsung/qcom-common/
+f410858 libhealthd: fix warning
+
+   * external/android/support-prebuilt/
+a88269c Update support libs to 22.2.1
+
+   * external/sqlite/
+be3c8d1 Upgrade to SQLite 3.8.11.1
+
+   * frameworks/av/
+12aad24 Detect allocation failures and bail gracefully
+751c041 MPEG4Extractor: still more NULL dereference fixes
+c181e38 Fix null-pointer-dereferences accessing the SampleTable
+f8902d7 Fix multiple division-by-zero conditions in MPEG4 parsing
+f859140 Check allocation
+376b814 Use errno correctly.
+3cdaa05 SampleTable: fix integer overflow checks.
+b91ab04 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+17d3d6d MPEG4Extractor: one more null check in MPEG4Source::parseChunk
+3676897 Guard against codecinfo overflow
+
+   * frameworks/base/
+8f9ce6a Idle Job Start During SCREEN_ON or DREAMING_STOPPED
+5c08da3 Fix NPE in JobStore when jobs.xml is empty.
+8feaf90 animateNoDamage failed to remove from current frame list
+9631fa6 Themes: fix power off and reboot dialog
+0755311 Fix NPE with WeatherStatus on KeyguardStatusView
+53dc7f5  Lock screen: Update Handle no weather information available:
+d71834c Lock screen weather: Add options to hide the weather when notifications are visible, (1/2):
+5f459b6 SystemUI: SlimDim performance boost
+
+   * kernel/samsung/hlte/
+c400eab Revert "AIO: Don't plug the I/O queue in do_io_submit()"
+eb6062c android: drivers: workaround debugfs race in binder
+55e98ef Staging: android: binder: Add some tracepoints Add tracepoints: - ioctl entry and exit - Main binder lock: lock, locked and unlock - Command and return buffer opcodes - Transaction: create and receive - Transaction buffer: create and free - Object and file descriptor transfer - binder_update_page_range
+059c362 staging: binder: add vm_fault handler
+
+   * packages/apps/Settings/
+ee6759e Update iconography to VectorDrawable and adjust coloring.
+0918c65 ApnSettings: Exclude MVNO listings that are known not to match
+d48ce1c Include subQuality when returning from EncryptionInterstitial
+68dfa5a Settings: Remove profiles menu settings xml entry.
+6599460 Lock screen weather: Add options to hide the weather when notificatio… …ns are visible, (2/2)
+
+   * packages/providers/ContactsProvider/
+ff05712 ContactsProvider : Retain SIM account during account clean up
+
+   * prebuilts/cmsdk/
+77ddf7b prebuilts/cmsdk: Update api text for ProfileTrigger.
+
+   * vendor/cmsdk/
+d7be1ca cmsdk: Add sample Profiles application.
+8481cec cmsdk: Expose ProfileTrigger constructor for third parties.
+c2d967c cmsdk: Update custom tile sample for shouldCollapsePanel.
+
+   * vendor/samsung/
+8b53a87 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
      08-04-2015
 ====================
 
@@ -10,6 +206,8 @@
 6383bd0 arm64: use GCC 4.9
 
    * frameworks/base/
+d5df1b9 Support package signature faking used by µg GmsCore
+7eb9731 Add icons to battery saver notification (dismiss & turn off)
 53bbef1  TRDS: Fix aapt removing the darktheme resources.
 3ee3c86 Update TRDS Colors:
 080cc05 Revert "Revert "Partial revert "Dark Material themed Advanced Power Menu"""
@@ -25,6 +223,9 @@ b1f7c2c Revert "Revert "Update trds colors""
 
    * frameworks/native/
 2d83c6e Revert "Revert "native: TRDS 5.0 (2/4)""
+
+   * frameworks/opt/chips/
+84f0e0a Fix exception that crashes app when <<>> chip is clicked on issue-id: CYNGNOS-522
 
    * frameworks/opt/telephony/
 c81cbf8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
@@ -49,6 +250,8 @@ d93bce1 Proximity speaker: Fix issue with routing to speaker when connected to b
 1394e73 TRDS: Fix aapt removing the darktheme resources.
 
    * packages/apps/Mms/
+3760739 TRDS: Material Dark theme.
+153204f Revert "MMS: Add support for TRDS,"
 73c0409 MMS: Add support for TRDS, Color from nicholaschum Dark Material
 ae936b6  TRDS: Fix aapt removing the darktheme resources.
 
@@ -57,7 +260,8 @@ ff56235 TRDS: Material dark theme (5/6)
 9bc0c8d TRDS: Fix aapt removing the darktheme resources.
 
    * packages/apps/Settings/
-b284547 Build V15.3
+b7f42b3 Notification drawer icon update + TRDS support
+b533270 Build V15.3
 69ba935 Revert "Don't include all resource densities"
 2a2fefa Update TRDS Colors:
 f52160d Revert "Revert "Add back TRDS Tile 2/2""
@@ -91,14 +295,13 @@ a47b506 TRDS: Material dark theme (6/6)
    * vendor/cmsdk/
 7034da2 cmsdk: Clean up documentation.
 
+   * vendor/samsung/
+67a0395 i9500: Revert RIL library to XXUEMK8
+
 ====================
      08-03-2015
 ====================
 
-
-   * frameworks/webview/
-f09fa8a Update WebView
-64ea34a Fix arm64 and add support for x86
 
 ====================
      08-02-2015
@@ -115,155 +318,7 @@ a8434aa Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_framework
    * frameworks/native/
 e2f6afc Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
 
-   * packages/apps/Settings/
-09632ad Settings: use new LockSettings
-
-====================
-     08-01-2015
-====================
-
-
-   * device/qcom/common/
-b3bcbcc power: More tunings
-
-   * external/bluetooth/bluedroid/
-0a78ba8 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
-
-   * frameworks/av/
-56c7950 nuplayer: Fix incorrect state handling while shutting down a decoder
-70ec5c7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-cde350d SystemUI: update to use new Profiles LockSettings obj
-0750c4f systemui: Support remote expanded style.
-973d8f7 SystemUI: Add support for external bitmap icons.
-9fcb865 CaptivePortal : Ensure uri is not null
-7b81ff8 autobrightness: Fix the brightness dialog is not work when first enable auto-backlight
-3c3e3cb Disable PIN entry after successful quick unlock
-b4f78ff policy: Remove references of Profiles in android.policy.
-f2d1f30 Revert "Revert "CaptivePortal: Remove captive_portal_login intent-filter""
-
-   * kernel/samsung/hlte/
-33aaff3 Build v1.19
-76b78bb cpuidle: Fix finding state with min power_usage
-bbbd264 cpuidle: fix a suspicious RCU usage in menu governor
-b259fb2 cpuidle: Get typical recent sleep interval
-91be3ca cpuidle: Quickly notice prediction failure in general case
-c329af3 cpuidle: Quickly notice prediction failure for repeat mode
-3e9315a PM / Domains: Add preliminary support for cpuidle, v2
-5109721 cpuidle: move field disable from per-driver to per-cpu
-
-   * packages/apps/CMFileManager/
-7b09bb0 Made NavigationView reliant on FileObserver to keep up to date.
-f328e4f [CMFileManager] Fix can't copy after disconnect with pc.
-
-   * packages/apps/Settings/
-08a86d0 Settings: continue factory reset if user leaves activity
-6c126ed Settings: Strip out profiles global actions menu items.
-1f5d1dd Settings: fix a few color picker inconsistentcies
-5146665 Don't allow deleting last remaining fingerprint
-01074ca Settings: don't crash when dismissing FRP
-36f5f38 Revert "Add toggle for captive portal check"
-84e1870 Revert "captive portal: remove extra whitespace"
-
-   * packages/apps/SetupWizard/
-8eb6878 Revert "Revert "WifiSetup: Pass the correct componentName and data for captivePortal""
-
-   * prebuilts/cmsdk/
-7c8cf6f prebuilts/cmsdk: Publish new version of future-release cmsdk.
-
-   * system/core/
-bb2d933 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-f1eec12 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-bec1e57 Clean up MEO/TMN APNs
-f4d2281 Turn art optimization to everything
-16179e6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-8b5c2c0 Remove 'preferred' no-op
-c1f717f Update APN for China Telecom
-
-   * vendor/cmsdk/
-6b7fd5f cmsdk: Update current api text files.
-fa82ebb cmsdk: Support deleteIntent and remove tiles when packages change.
-e84d656 Profiles: add LockModeSettings
-bd5230a cmsdk: Add support for remote views in expanded styles
-25daf55 cmsdk: Add functional manual and unit tests for new setIcon
-d618397 cmsdk: Create new setIcon method for utilizing bitmaps
-e58c96e cmsdk: Make sure we're writing ProfileTrigger values as typed array.
-
-====================
-     07-31-2015
-====================
-
-
-   * device/qcom/sepolicy/
-be230d5 sepolicy: allow mm-pp-daemon to have access to sysfs_graphics
-c34169e sepolicy: allow mm-pp-daemon to use binders in user variant
-b6d89a9 sepolicy: Add SELinux policy rule for pp daemon socket calls
-3555423 sepolicy: Add sepolicy rules for display clients
-116aacb sepolicy: Add context label for '/persist/display/*'
-
-   * external/bluetooth/bluedroid/
-3ccce52 Bluetooth losing HF connection to car-kit after 5 seconds
-
-   * external/icu/
-45257ef icu: add Kiev meta translations
-0a41d95 Revert "icu: add Kiev summer time zone translation"
-
-   * frameworks/av/
-49a2379 libstagefright: Fix crash in convertMetaDataToMessage
-a588850 audiopolicy: Fix for isStateInCall() do not return proper status
-09fade8 httplive: Adjust seek time to last video IDR time
-5bdf394 httplive: Check for NULL playlist in postPrepared
-e914a34 httplive: Check for bandwidth switch only for variant playlists
-086daa6 libstagefright: use SW AAC encoder for HE-AAC format
-aa31cfa libmedia: Enable TrackOffload for more usecases
-e47a66b libmedia: AudioTrack offload only for STREAM_MUSIC
-efbf145 audiopolicy: Make sense of concurrency properties
-
-   * frameworks/base/
-1874dfc Duplicate Alarm: Fermium == Argon
-
-   * frameworks/native/
-ad1beeb sf: Restrict GPU tile render feature to MAX_LAYER_COUNT
-d0e957f SF: Enable context priority
-
-   * frameworks/opt/telephony/
-66cbdcf Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/samsung/hlte/
-54dc6fb Build v1.18
-b6e887a mm: reorder can_do_mlock to fix audit denial
-cd1f73b futex: Remove bogus hrtimer_active() check
-97a685b mm,vmacache: optimize overflow system-wide flushing
-8e21385 mm: per-thread vma caching
-0caefdb8 mm/mmap.c: find_vma(): remove unnecessary if(mm) check
-5ea0a0a block: remove WQ_POWER_EFFICIENT from kblockd
-cf22544 mm: compaction: compact all zones when turning off screen
-3abc1f0 kbuild: do not pass KBUILD_CFLAGS to mkcompile_h
-
-   * packages/apps/Mms/
-5e62abc Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Settings/
-4597ab3 Build V15.2
-e539026 Settings: make FRP wipe dialog not cancelable
-
-   * packages/apps/SetupWizard/
-2cd4a92 SetupWizard: add Kiev timezone to match Settings
-40a321f Automatic translation import
-
-   * packages/apps/Trebuchet/
-7d44677 Do not collapse Settings panel when reseting overview mode
-
-   * system/core/
-d2d26ff healthd: Add secondary backlight path support
-
-   * vendor/cm/
-bc36db7 Add a bash completion "--force-sync" for repo sync
-00eb9ce Add a bash completion "--force-sync" for repo sync
-
-   * vendor/cmsdk/
-b8614dc cmsdk: Fix Profile parceling for custom objects.
+   * frameworks/webview/
+f09fa8a Update WebView
+64ea34a Fix arm64 and add support for x86
 
