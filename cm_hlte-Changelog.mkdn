@@ -1,4 +1,125 @@
 ====================
+     08-11-2015
+====================
+
+
+   * android/
+44024c1 Revert "Update OTAUpdater"
+05b9ba5 Update OTAUpdater
+f51629f Temp stop using cm setupwizard
+
+   * bionic/
+bd8f38b Merge pull request #4 from NoelMacwan/patch-1
+75a8afb cortex-a53: fix build
+
+   * frameworks/base/
+4e84dd6 Fix intent resolution of default preferred apps.
+3e5a71d PhoneWinowManager: resolve home car intent
+393a4f1 Fix issue in PhoneNumberUtils.compareLoosely
+5c04957 Sometimes property service is slow to respond.
+a6414bc Fix the wrong error message reported by SurfaceTexture_releaseTexImage.
+3f317a8 Prevent crash when leaving Dessert case quickly
+b700059 Fix FragmentManager to save state of a Fragment only when needed
+cac24bb Fix excessive jni global reference problem.
+0e496c4 Don't draw vertical scrollbar if it is in hidden state
+c81f8c4 Do not kill attaching process when removing task
+bf5a51e Fix debugging-log documentation errors.
+24695a1 Use big text styled notification
+b05065b Check DISALLOW_INSTALL_APPS and DISALLOW_UNINSTALL_APPS restriction for the calling user instead of target user.
+5c8c361 Do not filterout wifidisplay we are connecting to
+478917f Fix inconsistant display number format issue in Messaging application
+a7562de Check if adapter is valid before updating adapter.
+0da7acd Adding thread safety to disposing DragInputEventReceiver
+007abb4 Correct the first index for drain.
+80b3144 Fix to double deletion of StreamingZipInflater object.
+c4cfbdd Fix problem with BootAnimation exit
+f704fa6 Define priority for callerinfo selection.
+b91bb02 isValidLockdownProfile ignores return value of split in for loop
+82795d2 Fix bug about view cache in RemoteViews
+7550c92 Fix home key behavior for multiple CarHome app
+e63707f Fix filedescriptor leakage in MediaMetadataRetriever
+b4f9385 Fix crash on invitation request from persistent GC
+327ea42 dtmfStreamAlias is fixed in setStreamMute().
+0501965 [ActivityManager] Use the original activity to launch from Recents
+92c94ad overlaytests:  fix testrunner.py md5sum invocation
+e17da03 Revert "SystemUI: more SlimDim performance boosts"
+43b0c1a TRDS Changes, TESTING:
+
+   * hardware/qcom/audio-caf/msm8974/
+de834a9 hal: enable amplifier earlier
+
+   * hardware/qcom/media-caf/msm8916/
+1c2ff4e mm-video: venc: Correct a typo in variable name
+
+   * kernel/samsung/hlte/
+ffee5d0 ipv6: Don't reduce hop limit for an interface
+
+   * packages/apps/OTAUpdates/
+32627d9 Version 2.5.3
+b3d2974 Trim whitespace in the URL, just in case the developers add it in (they shouldn't)
+4bfc096 Fixed the ORS generation for the installafterflash files.
+7ff9d94 Addons error:
+c1f949f Enable debugging without having to use a device that is running a compatible ROM
+28fde21 Verion 2.5.2
+ae4ab0a Download location fix
+
+   * packages/apps/Settings/
+fe5cbc2 Build V15.6
+
+   * system/core/
+0d3fa47 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+
+   * vendor/cm/
+e6b44cd Temp stop building cm setupwizard
+3e05c17 Revert "Turn art optimization to everything"
+
+   * vendor/cmsdk/
+f47e3de Automatic translation import
+
+====================
+     08-10-2015
+====================
+
+
+   * art/
+c52ec78 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art into cm-12.1
+
+   * bionic/
+1ab327d cortex-a7: set proper memcmp.S path
+b2e40c1 Add optimized cortex-a7/cortex-a53 memset/memcpy.
+5e17b09 libm: Fix makefiles
+fc5bb9d Add aarch64 instructions wherever possible
+33d0af9 libm: arm: Add arm specific floor() optimization
+2c69595 Fix our <complex.h> support.
+00a5a57 Get new coshl, sinhl, and tanhl implementations from upstream.
+0d0ec37 Sync libm with upstream.
+
+   * build/
+5382edd Merge pull request #10 from Khaon/patches
+3657f37 Allow -mcpu=cortex-a15 for clang
+9055c8b Don't use -Wl,--fix-cortex-a8 for Cortex A7, A9, A15, Krait or Denver
+a27d33c Move definition of -D__ARM_FEATURE_LPAE=1 cflag to top-level.
+a409576 Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs
+
+   * frameworks/base/
+aa11de4 SystemUI: more SlimDim performance boosts
+fa21dd9 SystemUI: SlimDim performance boost
+567b213 Revert "SystemUI: SlimDim performance boost"
+37b481a Merge pull request #85 from NL-BlackDragon/cm-12.1
+437cd07 TRDS: Set Notifications and QS colors on theme change (1/2)
+
+   * packages/apps/CMFileManager/
+13879c7 Fix don't pop up "Actions" menu when long pressing on a file/folder after open and close "Use swipe gesture".
+
+   * packages/apps/DeskClock/
+3e2b8d2 Improve & fix alarm permission strings
+
+   * packages/apps/Settings/
+38348b7 Merge pull request #327 from NL-BlackDragon/cm-12.1
+af94f18 TRDS: Set Notifications and QS colors on theme change (2/2)
+29f7b49 Revert "Change reset for custom notifications:"
+
+====================
      08-09-2015
 ====================
 
@@ -15,11 +136,17 @@ f1e49e1 Fix legacy notification bg color:
 0e8c0b8 Build v1.21
 7690e49 Revert "Revert "Overclock to 2,8 GHz""
 
+   * packages/apps/Eleven/
+ff5b09d Visualizer tweaks
+
    * packages/apps/Settings/
 3387bbb Build V15.5
 
    * packages/services/Telecomm/
 db75837 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * system/core/
+9008630 init: Add support for gzipped firmware files
 
 ====================
      08-08-2015
@@ -35,10 +162,6 @@ d29426d Track own calculator
    * build/
 10005a2 build: Fix extra userdata generation some more
 74f5144 build: Fix extra userdata generation
-
-   * external/jpeg/
-417f5cb Add neon optimized color conversion.
-65ddd14 Add neon optimized dequantization and inverse DCT.
 
    * frameworks/av/
 f0f3e47 Validation of Number of Channels on WAV files
@@ -63,9 +186,6 @@ d1e0225 Change reset for custom notifications:
 21ba47e Cleanup SoundSettings
 0957c2a Use correct icons for sound settings
 
-   * packages/apps/SetupWizard/
-5818455 Automatic translation import
-
    * packages/services/Telecomm/
 4425352 Merge "Telecomm: Make phone_type switch generic" into cm-12.1
 4c081cb Telecomm: Make phone_type switch generic
@@ -84,7 +204,6 @@ f192636 vendor/cm: Always use gpg sign-and-deploy for deployments.
 f4541cd cmsdk: Update readme for maven central deploy.
 bb1367a cmsdk: Update README
 4c28bc5 cmsdk: Provide quick manual functional telephony api tests.
-7f50335 cmsdk: Dual SIM support on CM SDK
 
 ====================
      08-07-2015
@@ -94,6 +213,9 @@ bb1367a cmsdk: Update README
    * android/
 23deba6 Track own Stk
 0abcda2 Merge tag 'android-5.1.1_r9' into cm-12.1
+
+   * art/
+cab8cec ART: Tuning compiler thread count for application runtime
 
    * build/
 cc767db Merge tag 'android-5.1.1_r9' into cm-12.1
@@ -137,9 +259,6 @@ f686ad0 Keyguard: Don't disable visibility when scrambling pin.
    * kernel/samsung/hlte/
 4026c4b intelli_plug: add perf_boost sysfs entry and clean up permissions
 1f1a074 intelliplug: cumulative update to v3.9
-
-   * packages/apps/CMFileManager/
-6f6094d Fixed ANR & Memory Leak Associated with 3GP
 
    * packages/apps/Contacts/
 1273f6b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
@@ -191,189 +310,11 @@ d0f6b18 cmsdk: Dual SIM support on CM SDK
 0fab3d7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 874defe Add SettingsManagerService from cmsdk as a system service.
 68b254e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-74891fa sepolicy: Allow recovery to set system properties
 
    * vendor/cmsdk/
+7f50335 cmsdk: Dual SIM support on CM SDK
 7820e6d Update APIs for new settings and DeskClock support.
 51c39ba Add API to SettingsManager to set zen mode.
 9e6ec9e Add AlarmClock support for CM DeskClock manipulation.
 0cdb1d5 Add SettingsManager.
-
-====================
-     08-06-2015
-====================
-
-
-   * android/
-7e381b0 Manifest for Android 5.1.1 release 9
-
-   * build/
-1a5e9c0 arm: don't unroll-loops
-
-   * device/samsung/qcom-common/
-be1d5d0 Automatic translation import
-64e6330 SamsungDozeService: properly fix future timestamp error
-
-   * external/sqlite/
-be3c8d1 Upgrade to SQLite 3.8.11.1
-
-   * external/whispersystems/WhisperPush/
-c9cbb44 Automatic translation import
-
-   * frameworks/av/
-ba0017c SampleTable: fix integer overflow checks.
-93d306a MPEG4Extractor: still more NULL dereference fixes
-12aad24 Detect allocation failures and bail gracefully
-751c041 MPEG4Extractor: still more NULL dereference fixes
-c181e38 Fix null-pointer-dereferences accessing the SampleTable
-f8902d7 Fix multiple division-by-zero conditions in MPEG4 parsing
-f859140 Check allocation
-376b814 Use errno correctly.
-3cdaa05 SampleTable: fix integer overflow checks.
-b91ab04 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-17d3d6d MPEG4Extractor: one more null check in MPEG4Source::parseChunk
-
-   * frameworks/base/
-32e72a6 Core: Update RU Translations
-0748216 Keyguard: Update RU Translations
-d7dda28 DocumentsUI: RU translations
-ad6a733 SystemUI: Update RU translations
-8f9ce6a Idle Job Start During SCREEN_ON or DREAMING_STOPPED
-5c08da3 Fix NPE in JobStore when jobs.xml is empty.
-8feaf90 animateNoDamage failed to remove from current frame list
-9631fa6 Themes: fix power off and reboot dialog
-0755311 Fix NPE with WeatherStatus on KeyguardStatusView
-53dc7f5  Lock screen: Update Handle no weather information available:
-d71834c Lock screen weather: Add options to hide the weather when notifications are visible, (1/2):
-5f459b6 SystemUI: SlimDim performance boost
-
-   * frameworks/opt/chips/
-4d8a122 chips: extend phone number regex to recognize russian trunk prefix
-
-   * kernel/samsung/hlte/
-e838fda Build v1.20
-7573b38 cpufreq: interactive:call __cpufreq_driver_target() for cur frequency
-1b85977 msm: cpufreq: Break early if target_freq is current freq
-2f68218 kernel: Replace timeconst.pl with a bc script
-119698e lowmemorykiller: adapt to vmpressure
-60ef61b mm: Add notifier framework for showing memory
-4c7520e mm: vmpressure: allow in-kernel clients to subscribe for events
-ae383db memcg: add memory.pressure_level events
-c400eab Revert "AIO: Don't plug the I/O queue in do_io_submit()"
-eb6062c android: drivers: workaround debugfs race in binder
-55e98ef Staging: android: binder: Add some tracepoints Add tracepoints: - ioctl entry and exit - Main binder lock: lock, locked and unlock - Command and return buffer opcodes - Transaction: create and receive - Transaction buffer: create and free - Object and file descriptor transfer - binder_update_page_range
-059c362 staging: binder: add vm_fault handler
-
-   * packages/apps/CMBugReport/
-e07ce04 Automatic translation import
-
-   * packages/apps/CMFileManager/
-c740f92 Fixed search to actually open the clicked folder
-ddb22bb Fixed ANR associated with SecureStorage
-cb05075 Revert "Made NavigationView reliant on FileObserver to keep up to date."
-6e633d8 Automatic translation import
-
-   * packages/apps/Calendar/
-4d38720 Automatic translation import
-
-   * packages/apps/Contacts/
-3ad03f4 Automatic translation import
-
-   * packages/apps/DeskClock/
-628f540 Automatic translation import
-
-   * packages/apps/Eleven/
-a0c8e3e Automatic translation import
-
-   * packages/apps/Gallery2/
-40424da Automatic translation import
-
-   * packages/apps/InCallUI/
-c4b11f0 Automatic translation import
-
-   * packages/apps/LockClock/
-4619501 Automatic translation import
-
-   * packages/apps/Mms/
-9a090ae Automatic translation import
-
-   * packages/apps/Settings/
-b4f3fc6 Settings: Update RU translations
-ee6759e Update iconography to VectorDrawable and adjust coloring.
-0918c65 ApnSettings: Exclude MVNO listings that are known not to match
-d48ce1c Include subQuality when returning from EncryptionInterstitial
-68dfa5a Settings: Remove profiles menu settings xml entry.
-6599460 Lock screen weather: Add options to hide the weather when notificatio… …ns are visible, (2/2)
-
-   * packages/apps/SoundRecorder/
-2099282 SoundRecorder: Mark recorder as processed if we've saved the sample.
-706592f Automatic translation import
-
-   * packages/apps/Stk/
-a07cf1a Automatic translation import
-
-   * packages/apps/ThemeChooser/
-e2b39d3 Automatic translation import
-
-   * packages/apps/Trebuchet/
-70c6eaf Automatic translation import
-
-   * packages/apps/TvSettings/
-b1d65d1 Automatic translation import
-
-   * packages/providers/ContactsProvider/
-ff05712 ContactsProvider : Retain SIM account during account clean up
-
-   * packages/services/Telephony/
-d8d12dd Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-94198fd Automatic translation import
-
-   * vendor/cmsdk/
-5b61a21 Automatic translation import
-
-   * vendor/samsung/
-8b53a87 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     08-05-2015
-====================
-
-
-   * android/
-3d10a04 manifest: Update to freetype 2.6.0
-
-   * device/samsung/qcom-common/
-f410858 libhealthd: fix warning
-
-   * external/android/support-prebuilt/
-a88269c Update support libs to 22.2.1
-
-   * frameworks/av/
-3676897 Guard against codecinfo overflow
-
-   * frameworks/base/
-d5df1b9 Support package signature faking used by µg GmsCore
-7eb9731 Add icons to battery saver notification (dismiss & turn off)
-
-   * packages/apps/Mms/
-3760739 TRDS: Material Dark theme.
-153204f Revert "MMS: Add support for TRDS,"
-
-   * packages/apps/Settings/
-b7f42b3 Notification drawer icon update + TRDS support
-b533270 Build V15.3
-69ba935 Revert "Don't include all resource densities"
-
-   * prebuilts/cmsdk/
-77ddf7b prebuilts/cmsdk: Update api text for ProfileTrigger.
-
-   * vendor/cmsdk/
-d7be1ca cmsdk: Add sample Profiles application.
-8481cec cmsdk: Expose ProfileTrigger constructor for third parties.
-c2d967c cmsdk: Update custom tile sample for shouldCollapsePanel.
-
-   * vendor/samsung/
-67a0395 i9500: Revert RIL library to XXUEMK8
 
