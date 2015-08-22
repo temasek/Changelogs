@@ -1,7 +1,165 @@
 ====================
+     08-22-2015
+====================
+
+
+   * android/
+09ae764 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+4188ad7 manifest: move mips prebuilts into notdefault
+
+   * bootable/recovery/
+95f9a24 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
+
+   * build/
+869da1e Revert "tools:releasetools:Use timestamp from build.prop while building system.img"
+b797e42 Change the cache partition size check into warnings.
+43bbb1f Revise stash for BBOTAs when needed.
+8d34c10 Free the stash after its use in BBOTA v2.
+4605530 Assert the stash size when generating OTAs.
+f5f710a Check partition hash before resorting to block_image_verify
+7b11592 Calculate max_stashed_blocks correctly for block OTA v3
+9040a94 Restrict the verification in block-based incremental OTAs
+68d3c2e Do not use block_verify on target-files where feature is missing.
+2a86fa6 Fix the error that free_string is not defined.
+036488e Change transfer list format to include block hashes
+bb25318 product: Let a device customize its own locales
+
+   * device/samsung/qcom-common/
+30449b1 Automatic translation import
+
+   * external/wpa_supplicant_8/
+08856d6 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
+
+   * frameworks/av/
+9412c18 Revert "Enable fsanitize unsigned-integer-overflow in omx"
+8e35fd7 Revert "Enable unsigned-integer-overflow"
+de6e2b0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+57d5b6c stagefright: Remove deprecated Exynos platform variant logic
+d121577 OMXCodec: fix potential OOB read in parseHEVCCodecSpecificData
+803d49d Whitelist *ToPlanar from integer sanitization
+217b622 Enable fsanitize unsigned-overflow-detection in id3
+1ce8179 Whitelist updatePCR from fsanitize=integer
+ec8e748 Enable fsanitize unsigned-integer-overflow in MPEG2
+7bb8233 Enable fsanitize unsigned-integer-overflow in omx
+d37f533 Enable unsigned-integer-overflow
+3525fde Fix benign unsigned integer overflow
+77ad932 Fix benign unsigned integer overflows
+79595c0 Fix benign unsigned integer overflow
+692bc39 Fix benign unsigned integer overflows in loop conditions
+577a2d8 don't trigger an integer underflow when decrementing.
+6f316f7 Prevent divide by zero in WAVExtractor
+0807862 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+0670f8e lockscreen: Add option for showing unlock screen directly (1/2)
+9648677 Fix some issues with themes and notif bg color
+5bebe76 Add more icons for task manager switch
+23da983 SystemUI: use new visualizer from Eleven
+8976d7e Automatic translation import
+
+   * frameworks/native/
+f046f99 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * frameworks/opt/net/wifi/
+fb32793 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
+
+   * packages/apps/CMFileManager/
+37e57cf Automatic translation import
+17d800a FileManager: Fix shortcuts
+d5372f9 Fix MediaScan issue w/ Deleting
+
+   * packages/apps/Contacts/
+8ceb87b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+5188cfd Automatic translation import
+
+   * packages/apps/ContactsCommon/
+c9a7e31 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+0cd0bf4 Automatic translation import
+
+   * packages/apps/DeskClock/
+a01047d Expose FAB elevation value for themes.
+58238cf Automatic translation import
+
+   * packages/apps/Dialer/
+c38f303 Automatic translation import
+
+   * packages/apps/Eleven/
+0f7bc21 Automatic translation import
+
+   * packages/apps/Email/
+142a1f8 Automatic translation import
+
+   * packages/apps/Gallery2/
+52a4634 Automatic translation import
+
+   * packages/apps/InCallUI/
+fcfb0c8 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+ba25da7 Automatic translation import
+
+   * packages/apps/LockClock/
+5e1f12d Automatic translation import
+
+   * packages/apps/Mms/
+13b31c6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+cf728d8 Automatic translation import
+7d55bcb Improve QuickMessage string
+a1de05d Mms: Check whether data is enabled on current subscription
+cf56d78 Mms: Use system API for setDataEnabled
+2f46b9f QuickMessage: Make useful on lockscreen
+
+   * packages/apps/Settings/
+ea42eb6 Build V16
+499f2d2 lockscreen: Add option to pass swipe-up-to-unlock (2/2)
+8b6186b settings: Animation scale seekbars
+6cde570 Weather temp string change
+fc1c0c5 Automatic translation import
+
+   * packages/apps/SetupWizard/
+455dc2a Automatic translation import
+
+   * packages/apps/Stk/
+bc07961 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
+eba68dd Automatic translation import
+
+   * packages/apps/Terminal/
+4e4c908 Automatic translation import
+
+   * packages/apps/Trebuchet/
+d732834 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+f110341 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+b6ce267 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+c3469bf Automatic translation import
+
+   * packages/services/Telecomm/
+0e0612f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+54053f3 Automatic translation import
+
+   * packages/services/Telephony/
+06661ec Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+a8c1296 Automatic translation import
+5a7b064 Telephony : Null check cellInfo before calling addAll
+
+   * packages/wallpapers/Galaxy4/
+c80e01d Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+3363962 Automatic translation import
+
+   * vendor/samsung/
+9d3ada5 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+4365729 Revert "i9500: Add memtracker HAL"
+
+====================
      08-21-2015
 ====================
 
+
+   * android/
+b489a39 Track own external/libavc & external/libmpeg2
 
    * external/libavc/
 fe2bfd3 Merge "Decoder: Reduced memory requirements"
@@ -10,22 +168,33 @@ fe2bfd3 Merge "Decoder: Reduced memory requirements"
 1e759c6 Merge "fix CLIP_S16"
 2a48623 Merge "Fixed few stride issues"
 
-   * external/lz4/
-5b4829f Merge pull request #1 from Khaon/cm-12.1
-356c0d9 lz4:replace AOSP convention with cyanogenmod's
-
    * external/wpa_supplicant_8/
+da73fae Merge branch 'LA.BF64.1.2.1' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-12.1
 73a06d3 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
 b5ab0d9 Revert "eap_peer: add more qmi dependencies with qmi proxy"
 
    * frameworks/av/
-404dbb6 SoftAVCDec: Reduced memory requirements
-c78c9a9 h264dec: Use intptr_t when a pointer is treated as an integer
+b9abf6c soundpool: update sample rate when reusing audiotrack
+124daae soundpool: reuse channel for same sample if available
+07b9698 mediaplayerservice: reset mBytesWritten in AudioSink flush and stop
+ae255db Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+3d52d63 SoftAVCDec: Reduced memory requirements
+233746e h264dec: Use intptr_t when a pointer is treated as an integer
+eae6ae1 stagefright: Correct Exynos4 stride alignment
 73d24a0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 555aa15 stagefright: Exynos4 MPEG4 decoder should set native color format.
 210c75a Prevent integer underflows in ID3::Iterator
 
    * frameworks/base/
+5cd6f4b Filter internal account when set device owner
+2cb4b96 Modify SILENT profile to restrict notification sound
+63d7b83 Fix return to task when single task activity is brought to front
+387cc24 Bluetooth: Check for mPanservice before changing tethering state
+ccefec0 Keyguard: Adding null check for dateformat
+36c06d5 Blank area appears between QS and Notification
+d7a6406 Automatic translation import
+d4037e2 Revert "[2/2] base: Add lockscreen rotation as an optional rotation setting"
+918e41f [2/2] base: Add lockscreen rotation as an optional rotation setting
 07d79f7 Automatic translation import
 1fc4b45 Themes: Allow packages to be set as non-themeable
 10c33e5 Fingerprint: Don't start fingerprint auth in constructor
@@ -49,6 +218,8 @@ a1f044a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
 0a9d9fc Automatic translation import
 
    * packages/apps/DeskClock/
+7662235 Automatic translation import
+cc5f632 Automatic translation import
 169fa50 Automatic translation import
 
    * packages/apps/Dialer/
@@ -65,9 +236,14 @@ e9ba607 Automatic translation import
 23c5ef0 Automatic translation import
 
    * packages/apps/LockClock/
+f70169f Automatic translation import
+697c371 Automatic translation import
 b0593c7 Automatic translation import
 
    * packages/apps/Mms/
+de3ac80 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+f4466dc Automatic translation import
+3e5d957 Automatic translation import
 3280b15 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 ebcc561 Automatic translation import
 
@@ -75,6 +251,8 @@ ebcc561 Automatic translation import
 fc903f8 ProfileTrustAgent: remove onStart override
 
    * packages/apps/Settings/
+ad1755c Revert "[1/2] Settings: Add lockscreen rotation as an optional rotation setting"
+8719035 [1/2] Settings: Add lockscreen rotation as an optional rotation setting Taken fom:
 f33f809 Build V15.9
 c0b846f Automatic translation import
 48b726f Settings: add Berlin to time zones list
@@ -106,14 +284,14 @@ cb9261d Automatic translation import
    * packages/wallpapers/PhotoPhase/
 59df4cc Automatic translation import
 
-   * system/core/
-f9c2d58 logd: apply correct std flag
-
    * vendor/cm/
 d876f67 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 cad70ba vendor:cm: contributors: Correct maintainers for HTC One M8 DS
 
    * vendor/cmsdk/
+ba4db5a cmhw: Add makeDefault arg to setDisplayMode
+648c91f Automatic translation import
+b23c181 Automatic translation import
 fd406e9 Automatic translation import
 
    * vendor/samsung/
@@ -129,8 +307,17 @@ ddfc387 i9500: Add missing Mobicore file
    * android/
 0f65794 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 
+   * bootable/recovery/
+6177cf4 Initialize stashbase even stash_max_blocks = 0
+aa2f668 Support resuming block based OTAs
+a91f515 Fix recovery image text rendering.
+
    * device/qcom/sepolicy/
 a56e687 Bluetooth: Update Bluetooth security rules
+
+   * external/lz4/
+5b4829f Merge pull request #1 from Khaon/cm-12.1
+356c0d9 lz4:replace AOSP convention with cyanogenmod's
 
    * external/wpa_supplicant_8/
 2546986 eap_peer: add more qmi dependencies with qmi proxy
@@ -139,6 +326,9 @@ a56e687 Bluetooth: Update Bluetooth security rules
 a2b4c9a livedisplay: Fix boot-time race condition
 7959363 cmhw: Move CMHW out of the framework and into CMSDK
 53c6d45 cmsdk: Start external services at the right time
+
+   * frameworks/opt/net/wifi/
+e66f040 Merge branch 'LA.BF64.1.2.1' of git://codeaurora.org/platform/frameworks/opt/net/wifi into cm-12.1
 
    * hardware/qcom/audio-caf/msm8974/
 ec3df43 hal: Genericize dual-SIM voice_extn implementation
@@ -172,6 +362,9 @@ b20b0cd setupwizard: Move CMHW to CMSDK
 5af0bee Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 1449403 Telephony: Allow com.android.phone to use CMHW
 
+   * system/core/
+f9c2d58 logd: apply correct std flag
+
    * vendor/cm/
 30ed4d1 vendor:cm: contributors: Add maintainers for HTC One M9
 49a380b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
@@ -197,21 +390,9 @@ e18f6d8 cmsdk: Add initial DisplayMode and AutoContrast support to CMHW
    * android/
 6c0557d Fixup Freetype    * & revision
 28611ea Track own external/lz4 (fork from Khaon)
-3260154 Fix last 2 trackings
-a872334 Merge pull request #8 from Khaon/patches-for-avc
-4d059bf Add platform/external/libmpeg2
-280d30a Add platform/external/libavc
-
-   * bootable/recovery/
-9392bf1 Merge pull request #1 from Khaon/patches-for-temasek
-92a8ab7 updater:format with detected filesystem
 
    * build/
 7a26c1d Support custom gerrit servers via HTTP or SSH
-c55e578 build: Enable A53 errata workarounds on targets that need it
-835f2c8 Force bsdiff for recovery_from_boot.p if not using GZIP
-e40feb3 Merge pull request #11 from Khaon/patch-for-avc
-c5e50ef core_base.mk: switch to new H264 and MPEG2 software codecs
 
    * external/icu/
 7897b51 Fix potential overflow issue
@@ -225,28 +406,10 @@ c5e50ef core_base.mk: switch to new H264 and MPEG2 software codecs
 a2a2610 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
 7d45d73 audio effects: fix heap overflow
 05c1863 libstagefright: Add support for NV21 color format
-fded180 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-2808418 Merge pull request #7 from Khaon/patches-for-avc-support
-c8f4606 Merge pull request #6 from Khaon/revert_r13
-6e04a18 SoftMPEG2: start output at first I-frame
-e312a4f SoftAVCEnc: Stop using the u4_strd field in the set dimensions struct
-e5e3126 SoftAVCEnc: Added support for Main Profile encoding.
-d23fc08 SoftAVCEnc: Removed alignment requirement on input width
-3b86de3 stagefright: add SoftAVCEnc using libavc
-914762f SoftAVCDec: fail gracefully in onQueueFilled
-cd562b2 Don't include ithread.h in decoder omx wrappers
-7029ae2 stagefright: add SoftMPEG2 decoder using libmpeg2
-3acb0f0 Clear the executable bit from source files
-fa954d5 SoftAVCDec: Added support for level greater than level at init
-8c54109 stagefright: add SoftAVCDec using libavc
 
    * frameworks/base/
 f3d6a4e Fingerprint: Call SecurityCallback.dismiss when recognized
 c20bec8 Fix wrong Hungarian translation
-1fc2f2f Automatic translation import
-3bba836 Revamp 'Stay awake' choices
-76f2ca1 SignalStrength: Allow for custom signal buckets in LTE
-55bf0ed base: don't refresh visualizer tile once the tile is destroyed
 
    * frameworks/opt/telephony/
 999b36d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
@@ -271,35 +434,16 @@ c20bec8 Fix wrong Hungarian translation
    * packages/apps/CMFileManager/
 2bb6f04 Fix Navigation back from Search
 
-   * packages/apps/Contacts/
-c9d9db7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
    * packages/apps/ContactsCommon/
 b836c45 ContactsCommon: Telephony expects sim_index
-
-   * packages/apps/InCallUI/
-4a24839 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-
-   * packages/apps/Mms/
-4b7f539 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/Settings/
 cc99740 settings: contributors cloud
 e9741cc Settings: update time zone strings on date change
 1001f33 Revert "Revert "Add toggle for captive portal check""
-07aaf2e Automatic translation import
-4135e6e Development: Add choices to 'Stay Awake' preference
-a6e9c1e Settings: add a way to not localize zone selections
 
    * packages/apps/SetupWizard/
 d821651 SetupWizard: Wait for data sim change
-089ec20 Automatic translation import
-351cdc9 Automatic translation import
-f8ebbe0 Automatic translation import
-f5831f4 Automatic translation import
-0f24e4f SetupWizard: remove crash-inducing debug line
-27c8aca SetupWizard: Adjust FRP-enforcing logic
-36ef30b SetupWizard: don't allow skipping FRP
 
    * packages/apps/Stk/
 29f8f2e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
@@ -312,7 +456,6 @@ f684f82 Add URI matcher entry for CONTACTS_GROUP
 11cbfa6 telephony: Don't bypass telephony stack when switching RAT.
 18de7fb Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 2fd5ed7 DO NOT MERGE Change to make STK related intents protected.
-2eccc22 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 
    * system/core/
 12c2cae Revert "fs_mgr: let fsck.f2fs actually attempt a fix"
@@ -327,51 +470,47 @@ f684f82 Add URI matcher entry for CONTACTS_GROUP
 
 
    * android/
-1419584 Revert "Add WallpaperPicker by slimsaber"
+3260154 Fix last 2 trackings
+a872334 Merge pull request #8 from Khaon/patches-for-avc
+4d059bf Add platform/external/libmpeg2
+280d30a Add platform/external/libavc
+
+   * bootable/recovery/
+9392bf1 Merge pull request #1 from Khaon/patches-for-temasek
+92a8ab7 updater:format with detected filesystem
+
+   * build/
+c55e578 build: Enable A53 errata workarounds on targets that need it
+835f2c8 Force bsdiff for recovery_from_boot.p if not using GZIP
+e40feb3 Merge pull request #11 from Khaon/patch-for-avc
+c5e50ef core_base.mk: switch to new H264 and MPEG2 software codecs
 
    * device/samsung/qcom-common/
 eb956b3 Automatic translation import
 
    * frameworks/av/
+fded180 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+2808418 Merge pull request #7 from Khaon/patches-for-avc-support
+c8f4606 Merge pull request #6 from Khaon/revert_r13
+6e04a18 SoftMPEG2: start output at first I-frame
+e312a4f SoftAVCEnc: Stop using the u4_strd field in the set dimensions struct
+e5e3126 SoftAVCEnc: Added support for Main Profile encoding.
+d23fc08 SoftAVCEnc: Removed alignment requirement on input width
+3b86de3 stagefright: add SoftAVCEnc using libavc
+914762f SoftAVCDec: fail gracefully in onQueueFilled
+cd562b2 Don't include ithread.h in decoder omx wrappers
+7029ae2 stagefright: add SoftMPEG2 decoder using libmpeg2
+3acb0f0 Clear the executable bit from source files
+fa954d5 SoftAVCDec: Added support for level greater than level at init
+8c54109 stagefright: add SoftAVCDec using libavc
 34a7cb7 Revert "Merge tag 'android-5.1.1_r13' into HEAD"
 a5bd4cd libmedia: Increase framecount in Track Offload
-b717d7d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-c81c9a8 MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX
 
    * frameworks/base/
-4695405 WallpaperCropper: use same action bar style as Launcher3
-7cfd484 base: add keyguard support in WallpaperCropActivity
-a4dd4bf systemUI: carrier first, weather second
-0bee737 Revert "Barrier only messages shouldn't prevent the idle handlers from running"
-6abfd61 Make the value for shadowRadius less than 1.0 work
-c4672ab Fix mismatched new[]/delete.
-b941452 Themes: don't recreateDefaults on typeface when locale changes
-ceb02f7 Revert "Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS"
-5d747d0 Merge pull request #87 from Khaon/temasek
-99174a9 Merge tag 'android-5.1.1_r13' into HEAD
-d40d8e9 fix three_finger_gesture
-4b5bf13 Add option to disable scrolling cache [1/2]
-f49692a Fix forcing media stream control on tablet
-ce4db2e systemui: Provide empty view for empty lists published in QSTile.
-3900cdc [ActivityManager] Bring up Service if not schedule to restart
-def9fc8 Add three-fingers-swipe to screenshot [1/2]
-9f6f9f0 PBD: Apply the same emmc discard logic as ext4_utils
-144dc0b CelluarTile: Secondary click opens mobile network settings
-2b576d6 SystemUI: fix empty notification space in shade_locked
-12d0da0 Revert "Revert "SystemUI: survive notification update spam'"
-8bb8852 Revert "Revert "Wait until the Keyguard is drawn to dismiss the boot dialog.""
-d3efb1a Automatic translation import
-c1490df Keyguard: Don't show keyguard if CryptKeeper enabled
-dd5740d SystemUI: add missed super window calls
-a8151da Buttons: Allow setting default long-press app switch behavior
-d0433af Merge pull request #86 from NL-BlackDragon/cm-12.1
-2c2607f TRDS: Fix "Set Notifications and QS colors on theme change" on by default.
-32857eb Fix telephony property access for CDMA rewrite rules in PhoneNumberUtils
-123ae19 Automatic translation import
-db610f0 Automatic translation import
-c2efbc2 National roaming info for new Tuenti MNC in Spain
-0c834f8 Fix intent resolution of default preferred apps.
-db98c1f PhoneWinowManager: resolve home car intent
+1fc2f2f Automatic translation import
+3bba836 Revamp 'Stay awake' choices
+76f2ca1 SignalStrength: Allow for custom signal buckets in LTE
+55bf0ed base: don't refresh visualizer tile once the tile is destroyed
 
    * frameworks/opt/hardware/
 0a2704d hardware: Add DisplayModeControl API
@@ -393,6 +532,7 @@ ecc7159 Refresh: stop refreshes in action
 4083b8a Automatic translation import
 
    * packages/apps/Contacts/
+c9d9db7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
 469ec6c Automatic translation import
 
    * packages/apps/DeskClock/
@@ -402,22 +542,31 @@ b5cabc4 Automatic translation import
 41a1587 Automatic translation import
 
    * packages/apps/InCallUI/
+4a24839 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
 d21a74c Automatic translation import
 
    * packages/apps/LockClock/
 118bbb9 Automatic translation import
 
    * packages/apps/Mms/
+4b7f539 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 563c323 Automatic translation import
 
    * packages/apps/Settings/
+07aaf2e Automatic translation import
+4135e6e Development: Add choices to 'Stay Awake' preference
+a6e9c1e Settings: add a way to not localize zone selections
 20729d4 Merge pull request #329 from Pixelase/cm-12.1
 56f7815 Settings: Update RU translations
-484cba5 Build V15.8
-067de13 PGM: Permute simple and long click behaviour
-3942af9 LockscreenWallpaper: Use FB's WallpaperCropper
-938de26 Revert "SecuritySettings: Lockscreen wallpaper"
-6375c81 Revert "Lockscreen Wallpaper: Fix FC on None security"
+
+   * packages/apps/SetupWizard/
+089ec20 Automatic translation import
+351cdc9 Automatic translation import
+f8ebbe0 Automatic translation import
+f5831f4 Automatic translation import
+0f24e4f SetupWizard: remove crash-inducing debug line
+27c8aca SetupWizard: Adjust FRP-enforcing logic
+36ef30b SetupWizard: don't allow skipping FRP
 
    * packages/apps/Terminal/
 5e30f8e Automatic translation import
@@ -434,36 +583,10 @@ a9ded3b Automatic translation import
    * packages/apps/UnifiedEmail/
 bf4cf25 Automatic translation import
 
-   * packages/services/Telecomm/
-6eea5e6 telecom: Move CMHW to CMSDK
-
    * packages/services/Telephony/
+2eccc22 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 d846adf Automatic translation import
-
-   * vendor/cm/
-965d314 Revert "Add WallpaperPicker by slimsaber"
 
    * vendor/cmsdk/
 8b5a4d9 Automatic translation import
-
-   * vendor/samsung/
-db412e4 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     08-17-2015
-====================
-
-
-   * android/
-4edfbd7 Revert "Temp stop using cm setupwizard"
-
-   * hardware/qcom/display-caf/msm8916/
-94e3a0d Merge branch 'LA.BR.1.2.4_rb1.12' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
-
-   * vendor/cm/
-74a9167 Revert "Temp stop building cm setupwizard"
-
-   * vendor/samsung/
-b8beba7 Merge pull request #643 from Ziyann/pullreq
-f988a3b p31xx/p51xx: remove unused blobs, cleanups
 
