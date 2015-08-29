@@ -1,4 +1,115 @@
 ====================
+     08-29-2015
+====================
+
+
+   * build/
+a292c51 Merge pull request #12 from Khaon/fix-mounting-f2fs-system-partition
+1d6a0b2 tools:ota:don't mount system partition with recovery mount options
+
+   * device/qcom/sepolicy/
+188ecce sepolicy: Add thermal and irqbalancer sockets
+
+   * device/samsung/hlte-common/
+581c49d hlte-common: Add f2fs to /system in fstab
+
+   * external/f2fs-tools/
+d8d08bf Merge pull request #1 from Khaon/cm-12.1
+71f0823 dump.f2fs: show i_advise field in inode
+ae2d768 fsck.f2fs: show total sectors consumed by filesystem
+
+   * frameworks/base/
+35dad30 Revert "Merge tag 'android-5.1.1_r13' into HEAD"
+0e1fc17 base: Fix divide by zero when clearing recents
+fd74c61 ResolverActivity: reduce elevation to make it flat
+65bb483 services: option to disable lock screen dpm override (1/2)
+49b76e8 SystemUI: do not load header bar if boot isn't complete
+5416ddc FWB: Toast icon switch (1/2)
+a7ec00d Fingerprint Service: fix potential NPE
+fe0dcb0 Fix home key behavior for multiple CarHome app
+6aaedf2 Revert "PhoneWinowManager: resolve home car intent"
+4c4feca Fix the cell standby mobile radio active issue
+
+   * packages/apps/Mms/
+47dca8d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+9d1fd47 Build V16.2
+7c5eb0f set tapjacking protection for deviceadmin permission dialog
+79c036f settings: option to disable lock screen dpm override (2/2)
+637d440 settings: Display apk path in App info
+33c9073 Settings: Toast icon switch (2/2)
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+a40f896 Add missing libatomic.a from Google
+8f37098 Revert "Add missing libatomic.a from Google"
+a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+a40f896 Add missing libatomic.a from Google
+8f37098 Revert "Add missing libatomic.a from Google"
+a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
+
+   * system/core/
+fda7663 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+9755cd1 VectorImpl.cpp: fix benign multiplication overflow
+
+   * vendor/cm/
+b5e8f37 Rogers LTE apn fix?
+
+====================
+     08-28-2015
+====================
+
+
+   * device/qcom/common/
+4bf3e0b power: Enable 4+0 core config for display off cases
+
+   * device/qcom/sepolicy/
+e821bc8 sepolicy: Add policy for SurfaceFlinger access to rotator device
+bcc374c SEAndroid: Allow SurfaceFlinger to access dynamic_fps node
+
+   * frameworks/base/
+b829b84 Set mProximity to PROXIMITY_UNKNOWN on screen off
+
+   * frameworks/native/
+66916dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+a282ac5 libagl: Fix buffer read overrun in eglCreatePbufferSurface
+
+   * kernel/samsung/hlte/
+0538107 Build v1.25
+2e042c3 seqlock: enhance power efficiency #2
+a55884c Revert "thread_info: enhance power efficiency"
+cdb80b9 Revert "thread_info: Replace usages of test_thread_flag with relaxed version"
+22fa27f Revert "thread_info: Remove usage of relaxed calls in sched header"
+9b820a1 Revert "hrtimer: Replace usages of hrtimer_callback_running with relaxed version"
+4ab5f9f mmc: clk_scaling: add sysfs for avoiding scale down in write
+8befab3 mmc: core: Fix mmc clk scale down during writes.
+01edab8 cfq-iosched: fix the setting of IOPS mode on SSDs
+2be97b7 block: Make CFQ default to IOPS mode on SSDs
+
+   * packages/apps/CMFileManager/
+634a2b8 Fix bookmark string
+
+   * packages/apps/Mms/
+f561931 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+1b80da8 Fix "To" label hide/show when adding/removing subject
+f51cfec MMS: Change subject logic
+
+   * packages/apps/OTAUpdates/
+dda7ceb Avoid NPE
+
+   * packages/apps/Settings/
+51a9ead Fix the improper string and increment database version to kick off a new indexing job.
+
+   * packages/apps/Trebuchet/
+5bae696 Fix wallpaperpreview for default wallpaper
+
+   * system/core/
+71b40a7 Revert "fs_mgr: let fsck.f2fs actually attempt a fix"
+0f1784f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+
+====================
      08-27-2015
 ====================
 
@@ -10,6 +121,9 @@
 45da87c Fix WallpaperCropper crash when setting wallpaper over 8MB
 89a14d6 Themes: Use warning level logging for getBootTheme
 448477d Change default for Override custom colors
+
+   * hardware/qcom/audio-caf/msm8916/
+4d8c8b2 hal: Tell Huawei acdb loader which files to load
 
    * kernel/samsung/hlte/
 5d5dc38 Build v1.24
@@ -33,6 +147,9 @@ d6ad0f1 Global change QS columns values word-->number
    * packages/services/Telephony/
 cc58c22 Network settings: don't send preferred network changes
 f21d071 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * system/core/
+e575b4a libcutils/liblog: Add functions required by Huawei g620_a2 binaries
 
    * vendor/samsung/
 af0931f Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
@@ -70,6 +187,12 @@ d767114 Merge tag 'LA.BF64.1.2.1.c1-02410-8x94.0' into cm-12.1-caf-8994
    * hardware/qcom/media-caf/msm8994/
 d6e1340 Merge tag 'LA.BF64.1.2.1.c1-02410-8x94.0' into cm-12.1-caf-8994
 
+   * hardware/samsung/
+9427510 libsecril-client: Fix SetCallAudioPath for current devices
+
+   * packages/apps/OTAUpdates/
+b84190c Version 2.5.3
+
    * packages/apps/Settings/
 f4f336b Revert "For EAP-SIM and FreeMobile users !"
 
@@ -82,7 +205,6 @@ f4f336b Revert "For EAP-SIM and FreeMobile users !"
    * vendor/samsung/
 c3f4903 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 83a3bbe Merge pull request #649 from solk2/cm-12.1
-3efbbb3 ks01lte: Update blobs.
 
 ====================
      08-25-2015
@@ -92,7 +214,6 @@ c3f4903 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsu
    * android/
 fb2045d Merge pull request #11 from apascual89/patch-1
 91626f7 Update mainatainer device
-5105a1e Update contributor & maintainers namelist
 
    * frameworks/base/
 ae27f10 Keyguard: increase clickable area of pin-entry backspace button
@@ -135,85 +256,9 @@ d562f51 For EAP-SIM and FreeMobile users !
 
    * vendor/cm/
 6629375 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-46b2bdc vendor:cm: Add some more contributors again
 
    * vendor/samsung/
+3efbbb3 ks01lte: Update blobs.
 4222105 Merge pull request #650 from dcd/jf
 5919d79 jf: turnip for what?
-
-====================
-     08-24-2015
-====================
-
-
-   * android/
-8c5f2a9 Update contributor & maintainers namelist
-2b431b9 Merge pull request #10 from Khaon/track-our-f2fs-tools
-
-   * art/
-2b05378 Merge pull request #4 from neobuddy89/cm-12.1
-7127e4d ART: Do not force GCC 4.8 for ARM64
-
-   * frameworks/av/
-0cc3127 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-9f12d31 Revert "stagefright: Remove deprecated Exynos platform variant logic"
-
-   * frameworks/base/
-13f8edb Observers, observers everywhere.. SIMPLIFY
-6afeb78 Simplify getting total memory:
-d1a1cf8 StatusBarHeaderView: Unbreak BG color on stock theme
-
-   * frameworks/native/
-144038f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-e8e1aef Revert "binder: Remove deprecated Exynos platform variant logic"
-
-====================
-     08-23-2015
-====================
-
-
-   * bionic/
-0ca0780 Merge pull request #5 from neobuddy89/cm-12.1
-6d7f66e cortex-a53: Unbreak the build
-
-   * bootable/recovery/
-95f9a24 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
-
-   * build/
-869da1e Revert "tools:releasetools:Use timestamp from build.prop while building system.img"
-b797e42 Change the cache partition size check into warnings.
-43bbb1f Revise stash for BBOTAs when needed.
-8d34c10 Free the stash after its use in BBOTA v2.
-4605530 Assert the stash size when generating OTAs.
-f5f710a Check partition hash before resorting to block_image_verify
-7b11592 Calculate max_stashed_blocks correctly for block OTA v3
-9040a94 Restrict the verification in block-based incremental OTAs
-68d3c2e Do not use block_verify on target-files where feature is missing.
-2a86fa6 Fix the error that free_string is not defined.
-036488e Change transfer list format to include block hashes
-bb25318 product: Let a device customize its own locales
-
-   * frameworks/av/
-9412c18 Revert "Enable fsanitize unsigned-integer-overflow in omx"
-8e35fd7 Revert "Enable unsigned-integer-overflow"
-de6e2b0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-57d5b6c stagefright: Remove deprecated Exynos platform variant logic
-d121577 OMXCodec: fix potential OOB read in parseHEVCCodecSpecificData
-
-   * frameworks/base/
-0670f8e lockscreen: Add option for showing unlock screen directly (1/2)
-9648677 Fix some issues with themes and notif bg color
-5bebe76 Add more icons for task manager switch
-
-   * frameworks/native/
-f046f99 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * packages/apps/Settings/
-4214538 lockscreen: Add option to pass swipe-up-to-unlock (Gesture)
-ea42eb6 Build V16
-499f2d2 lockscreen: Add option to pass swipe-up-to-unlock (2/2)
-8b6186b settings: Animation scale seekbars
-
-   * packages/apps/SetupWizard/
-455dc2a Automatic translation import
 
