@@ -1,4 +1,280 @@
 ====================
+     09-02-2015
+====================
+
+
+   * frameworks/base/
+07e52b2 Notifications: log notifications marked as spam to the event log
+8c2c87c Remove duplicate audio: Tejat is Argon
+2402747 Fingerprint: Allow disabling of vibration
+7ad0a2f SystemUI : Toggle nav item visibility based on IME
+02b7d61 PackageManager: Move fingerprint feature out of android namespace.
+ca47a30 core/SystemUI: Remove zh-rHK CAF translations
+9b4d28c Automatic translation import
+1aa90ac SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
+90c6a70 [1/2] Slim Recent App Sidebar
+
+   * frameworks/native/
+b099f82 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * frameworks/opt/chips/
+afc21fb Merge "Revert "More Chip: use pendingcount instead of counting again"" into cm-12.1
+
+   * packages/apps/Bluetooth/
+07a1f99 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Calendar/
+8c4464d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
+
+   * packages/apps/Contacts/
+f9cb06b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/ContactsCommon/
+7271bfc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+46669c6 Automatic translation import
+2199d64 LookupProvider updates
+
+   * packages/apps/InCallUI/
+8ccbeda Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+9d47003 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+faf775f Build V16.3
+0acaa9d settings: fix fc for system apps with null applicationInfo
+80b86ec Protected apps: fixup rotation states
+4590d97 settings: check bt pan service before use it
+a1ca472 Automatic translation import
+715adf4 [2/2] Slim Recent App Sidebar
+fe89ce9 Lock Icon Torch: Add check for non-flash devices
+
+   * packages/apps/Stk/
+3cb6111 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
+
+   * packages/inputmethods/LatinIME/
+f738222 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+
+   * packages/providers/TelephonyProvider/
+9762ec8 Revert "MmsProvider : Add ability to get thread information in search"
+
+   * packages/services/Telecomm/
+d399ab2 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+bb0a0e3 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+724fb11 Automatic translation import
+
+   * vendor/cm/
+4c52cba Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+1e116da vendor/cm: Start building in CMSettingsProvider.
+
+   * vendor/cmsdk/
+88bc996 cmsdk: Fix toast in CMHardwareTest.
+c0c27a6 cmsdk: Add preliminary hardware manager tests.
+3a502e9 cmsdk: Change parceling for DisplayMode.
+c5fa7bc cmsdk: Fix spelling error in CMSettingsProvider makefile.
+40a46bd BugFix: Fix potential NPEs with getService()
+6850732 Automatic translation import
+
+====================
+     09-01-2015
+====================
+
+
+   * android/
+6e3a8a7 Update contributor & maintainers namelist
+
+   * device/qcom/common/
+9cb2917 Adding init for msm8909
+
+   * device/samsung/qcom-common/
+34d6794 Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+82f94ba Automatic translation import
+
+   * frameworks/base/
+d752e9a NotificationTile: Ring ring my bell
+b18d80e NotificationTile: Fix wrong ringer index after reboot
+2a2f205 Add new change for TRDS switch.
+1051dc1 Revert "SettingsProvider: don't set default value for advanced mode"
+e270d2f base: hide qs tiles with sensitive data
+5f98bf6 SettingsProvider: don't set default value for advanced mode
+b3c10ff SystemUI: reset to QS panel when swiping down
+d86d818 Task Manager: Use one observer for changes, misc cleanup
+11fcc02 Navigationbar: Add just one more button
+7ddb4fc Add support for Samsung extended AGPS
+aac556f Merge pull request #90 from rogersb11/cm-12.1
+727df53 More weather font styles 2/2
+28b98b5 Fix font type not refreshing on placement change
+
+   * frameworks/native/
+e676b55 native: Move fingerprint feature out of android namespace.
+
+   * packages/apps/AudioFX/
+91d6891 Automatic translation import
+
+   * packages/apps/Bluetooth/
+67081fd Automatic translation import
+
+   * packages/apps/BluetoothExt/
+8b093e6 Automatic translation import
+
+   * packages/apps/CMBugReport/
+10269b9 Automatic translation import
+
+   * packages/apps/CMFileManager/
+0f51785 Automatic translation import
+
+   * packages/apps/Calendar/
+dd1dd45 Automatic translation import
+
+   * packages/apps/Camera2/
+597cd76 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+a31f1e2 Automatic translation import
+
+   * packages/apps/Contacts/
+30fd65e Automatic translation import
+
+   * packages/apps/DeskClock/
+6f61453 Automatic translation import
+
+   * packages/apps/Eleven/
+cd2937a Automatic translation import
+
+   * packages/apps/Email/
+a048f26 Automatic translation import
+
+   * packages/apps/Gallery2/
+218cfbb Automatic translation import
+
+   * packages/apps/InCallUI/
+5db0800 Automatic translation import
+
+   * packages/apps/LockClock/
+e379cd2 Automatic translation import
+
+   * packages/apps/Mms/
+a380361 Automatic translation import
+
+   * packages/apps/Settings/
+e98e1f1 settings: hide qs tiles with sensitive data
+4ffa2a8 Revert "Settings: fix up advanced mode logic"
+f09f8a0 Settings: fix up advanced mode logic
+bcb1ab6 Settings: Always enable the per-app pulse light settings
+8d75bed Merge pull request #331 from rogersb11/cm-12.1
+32d15df More weather font styles 1/2
+
+   * packages/apps/SoundRecorder/
+27f88f0 Automatic translation import
+
+   * packages/apps/Stk/
+3ff329e Automatic translation import
+
+   * packages/apps/Terminal/
+48527b3 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+4733494 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e61c189 Automatic translation import
+41106d9 Reset default view camera distance
+
+   * packages/apps/TvSettings/
+68576f9 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+b440e37 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+a1bc171 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+29f1d16 Specify locale when using String.format()
+
+   * packages/services/Mms/
+d55f960 Automatic translation import
+
+   * packages/services/Telecomm/
+c7306c2 Automatic translation import
+
+   * packages/services/Telephony/
+bda139b Network Settings: don't crash on bad lookup
+2f29215 Network Settings: don't crash on bad lookup
+
+   * packages/wallpapers/PhotoPhase/
+a556392 Automatic translation import
+
+   * prebuilts/cmsdk/
+505e076 prebuilts/cmsdk: Update api text for CMSettings
+8fa9722 prebuilts/cmsdk: Update api text for Hardware
+
+   * vendor/cm/
+6731423 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+80145f3 Fix Airtel APN Selection
+78822da Updated APN settings for Latvian operators
+0e3db25 Rogers LTE apn fix?
+f9b05b9 Fix Movistar APNs
+
+   * vendor/cmsdk/
+95dadd8 cmsdk: allow custom tiles to set the new qstile's sensitive data flag
+0eb2999 Add CMSettingsProvider and CMDatabaseHelper
+e949433 cmsdk: Build in the Manifest and R classes for the sdk.
+
+====================
+     08-31-2015
+====================
+
+
+   * frameworks/base/
+ba3fd71 Added show volume panel tile to QS
+6fe58353 LEDs Brightness [2/2]: Lights notifications brightness support
+036c925 VisualizerView: Prevent NPE
+9fb2131 SystemUI: Status bar weather font style (1/2)
+a09411c SystemUI: Change long press lock screen lock icon to TORCH (1/2)
+
+   * packages/apps/Settings/
+5dc3a29 Added show volume to tile chooser
+333ee3a LEDs Brightness [1/2]: Lights notifications brightness support
+ae4aacc Lights with Screen On [2/2]: Optional allowment of lights
+e66b079 Revert "Lights with Screen On [2/2]: Optional allowment of lights"
+b76faf4 Settings: Status bar weather font style (2/2)
+0b0af53 Remove duplicate lockscreen shortcut settings
+4482b56 Settings: Change long press lock screen lock icon to TORCH (2/2)
+
+   * vendor/samsung/
+3df158f Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     08-30-2015
+====================
+
+
+   * frameworks/base/
+db7d983 {1/2} Frameworks: Chamber of Secrets.
+35dad30 Revert "Merge tag 'android-5.1.1_r13' into HEAD"
+0e1fc17 base: Fix divide by zero when clearing recents
+fd74c61 ResolverActivity: reduce elevation to make it flat
+
+   * packages/apps/Mms/
+47dca8d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+6f79bc9 [2/2] Settings: Chamber of Secrets
+0925303 Re-enable torch for Slim Actions for shortcuts
+9d1fd47 Build V16.2
+
+   * system/core/
+fda7663 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+
+   * vendor/samsung/
+3e76889 Merge pull request #648 from andi34/cm-12.1.1
+
+====================
      08-29-2015
 ====================
 
@@ -9,6 +285,8 @@ a292c51 Merge pull request #12 from Khaon/fix-mounting-f2fs-system-partition
 
    * device/qcom/sepolicy/
 188ecce sepolicy: Add thermal and irqbalancer sockets
+e821bc8 sepolicy: Add policy for SurfaceFlinger access to rotator device
+bcc374c SEAndroid: Allow SurfaceFlinger to access dynamic_fps node
 
    * device/samsung/hlte-common/
 581c49d hlte-common: Add f2fs to /system in fstab
@@ -19,9 +297,6 @@ d8d08bf Merge pull request #1 from Khaon/cm-12.1
 ae2d768 fsck.f2fs: show total sectors consumed by filesystem
 
    * frameworks/base/
-35dad30 Revert "Merge tag 'android-5.1.1_r13' into HEAD"
-0e1fc17 base: Fix divide by zero when clearing recents
-fd74c61 ResolverActivity: reduce elevation to make it flat
 65bb483 services: option to disable lock screen dpm override (1/2)
 49b76e8 SystemUI: do not load header bar if boot isn't complete
 5416ddc FWB: Toast icon switch (1/2)
@@ -29,52 +304,10 @@ a7ec00d Fingerprint Service: fix potential NPE
 fe0dcb0 Fix home key behavior for multiple CarHome app
 6aaedf2 Revert "PhoneWinowManager: resolve home car intent"
 4c4feca Fix the cell standby mobile radio active issue
-
-   * packages/apps/Mms/
-47dca8d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Settings/
-9d1fd47 Build V16.2
-7c5eb0f set tapjacking protection for deviceadmin permission dialog
-79c036f settings: option to disable lock screen dpm override (2/2)
-637d440 settings: Display apk path in App info
-33c9073 Settings: Toast icon switch (2/2)
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-a40f896 Add missing libatomic.a from Google
-8f37098 Revert "Add missing libatomic.a from Google"
-a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
-a40f896 Add missing libatomic.a from Google
-8f37098 Revert "Add missing libatomic.a from Google"
-a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
-
-   * system/core/
-fda7663 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-9755cd1 VectorImpl.cpp: fix benign multiplication overflow
-
-   * vendor/cm/
-b5e8f37 Rogers LTE apn fix?
-
-====================
-     08-28-2015
-====================
-
-
-   * device/qcom/common/
-4bf3e0b power: Enable 4+0 core config for display off cases
-
-   * device/qcom/sepolicy/
-e821bc8 sepolicy: Add policy for SurfaceFlinger access to rotator device
-bcc374c SEAndroid: Allow SurfaceFlinger to access dynamic_fps node
-
-   * frameworks/base/
 b829b84 Set mProximity to PROXIMITY_UNKNOWN on screen off
 
    * frameworks/native/
 66916dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-a282ac5 libagl: Fix buffer read overrun in eglCreatePbufferSurface
 
    * kernel/samsung/hlte/
 0538107 Build v1.25
@@ -88,177 +321,37 @@ cdb80b9 Revert "thread_info: Replace usages of test_thread_flag with relaxed ver
 01edab8 cfq-iosched: fix the setting of IOPS mode on SSDs
 2be97b7 block: Make CFQ default to IOPS mode on SSDs
 
-   * packages/apps/CMFileManager/
-634a2b8 Fix bookmark string
-
    * packages/apps/Mms/
 f561931 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-1b80da8 Fix "To" label hide/show when adding/removing subject
-f51cfec MMS: Change subject logic
 
    * packages/apps/OTAUpdates/
 dda7ceb Avoid NPE
 
    * packages/apps/Settings/
+7c5eb0f set tapjacking protection for deviceadmin permission dialog
+79c036f settings: option to disable lock screen dpm override (2/2)
+637d440 settings: Display apk path in App info
+33c9073 Settings: Toast icon switch (2/2)
 51a9ead Fix the improper string and increment database version to kick off a new indexing job.
 
-   * packages/apps/Trebuchet/
-5bae696 Fix wallpaperpreview for default wallpaper
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+a40f896 Add missing libatomic.a from Google
+8f37098 Revert "Add missing libatomic.a from Google"
+a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+a40f896 Add missing libatomic.a from Google
+8f37098 Revert "Add missing libatomic.a from Google"
+a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
 
    * system/core/
+9755cd1 VectorImpl.cpp: fix benign multiplication overflow
 71b40a7 Revert "fs_mgr: let fsck.f2fs actually attempt a fix"
 0f1784f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 
-====================
-     08-27-2015
-====================
-
-
-   * frameworks/base/
-807a4c2 Fix "Select correct 12 or 24 time format" breaking Chrome
-10c63bc Select correct 12 or 24 time format according to Locale
-4a4736e Show icon of package associated with Toast
-45da87c Fix WallpaperCropper crash when setting wallpaper over 8MB
-89a14d6 Themes: Use warning level logging for getBootTheme
-448477d Change default for Override custom colors
-
-   * hardware/qcom/audio-caf/msm8916/
-4d8c8b2 hal: Tell Huawei acdb loader which files to load
-
-   * kernel/samsung/hlte/
-5d5dc38 Build v1.24
-5de92e9 hrtimer: Replace usages of hrtimer_callback_running with relaxed version
-0bebf3c thread_info: Remove usage of relaxed calls in sched header
-11b2a98 thread_info: Replace usages of test_thread_flag with relaxed version
-54821b5 thread_info: enhance power efficiency
-c520038 kernel: add relaxed power savings from NVIDIA (experimental)
-
-   * packages/apps/CMFileManager/
-1ad09f7 Regex metacharacters result in error post search
-1a23b92 Search: Fix race condition with results display
-450f3d5 CMFM: don't apply search filter when search hasn't started
-8895e1c CMFM: fix search mime type filter not applying
-
-   * packages/apps/Settings/
-58eacef Build V16.1
-8f00690 Change default for Override custom colors
-d6ad0f1 Global change QS columns values word-->number
-
-   * packages/services/Telephony/
-cc58c22 Network settings: don't send preferred network changes
-f21d071 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-
-   * system/core/
-e575b4a libcutils/liblog: Add functions required by Huawei g620_a2 binaries
-
-   * vendor/samsung/
-af0931f Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-6092b24 Merge pull request #651 from solk2/cm-12.1
-6c32157 ks01lte: Remove libgps.utils.so as intree one works fine now.
-
-====================
-     08-26-2015
-====================
-
-
-   * android/
-b3a3c78 Revert "Revert "Revert "Merge tag 'android-5.1.1_r13' into cm-12.1"""
-608b7ef Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-ddd855b adding android-support-test for espresso test
-
-   * build/
-655018d Revert "Revert "Revert "Merge tag 'android-5.1.1_r13' into cm-12.1"""
-
-   * frameworks/av/
-8ad9c3f Fix benign unsigned overflow in OggExtractor
-7d30992 libstagefright: Recover when we start to thrash the cache
-664179a libstagefright: Avoid cache thrashing by preserving more cached data
-
-   * frameworks/base/
-19c9f92 NavRing: Update search assistant drawable
-49c09c5 Themes: Compose icons that just have scale defined
-
-   * hardware/qcom/audio-caf/msm8994/
-671437a Merge tag 'LA.BF64.1.2.1.c1-02410-8x94.0' into cm-12.1-caf-8994
-
-   * hardware/qcom/display-caf/msm8994/
-d767114 Merge tag 'LA.BF64.1.2.1.c1-02410-8x94.0' into cm-12.1-caf-8994
-
-   * hardware/qcom/media-caf/msm8994/
-d6e1340 Merge tag 'LA.BF64.1.2.1.c1-02410-8x94.0' into cm-12.1-caf-8994
-
-   * hardware/samsung/
-9427510 libsecril-client: Fix SetCallAudioPath for current devices
-
-   * packages/apps/OTAUpdates/
-b84190c Version 2.5.3
-
-   * packages/apps/Settings/
-f4f336b Revert "For EAP-SIM and FreeMobile users !"
-
-   * packages/services/Telephony/
-05a7496 Network settings: re-enable network preference selection
-
-   * system/vold/
-288d97e cryptfs: Don't assume a device capable of hw crypto has encrypted with it
-
-   * vendor/samsung/
-c3f4903 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-83a3bbe Merge pull request #649 from solk2/cm-12.1
-
-====================
-     08-25-2015
-====================
-
-
-   * android/
-fb2045d Merge pull request #11 from apascual89/patch-1
-91626f7 Update mainatainer device
-
-   * frameworks/base/
-ae27f10 Keyguard: increase clickable area of pin-entry backspace button
-f59001c SystemUI: Fade keyguard visualizer along with other icons
-0576a95 androidfw: fix cmsdk attribute lookup
-d77ba2a Add the user set network mode to the siminfo table
-becf681 add config for proximity check on screen on default value
-eaae40a SystemUI: time-context header fixes
-3f70c6c [1/2] SystemUI: Add time-context headers to the notification header
-a501dfb StatusBarHeaderView - Replace MULTIPLY with SRC_OVER
-
-   * frameworks/native/
-4a91214 libagl: Fix buffer read overrun in eglCreatePbufferSurface
-
-   * frameworks/opt/telephony/
-0e23fa9 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-c5c3fbc Add the user set network mode to the siminfo table
-67c4a99 Change network mode on data sub change
-
-   * frameworks/webview/
-1ba2ebd arm: update to 45.0.2454.48
-
-   * packages/apps/CMFileManager/
-85032a6 Bookmarks: check to see if a bookmark exists before adding it
-
-   * packages/apps/Settings/
-2e72d04 Settings: obey prevent accidental wakeup default
-6482efb settings: LiveDisplay color profiles
-c74fb22 [2/2] Settings: Add time-context headers to the notification header
-d562f51 For EAP-SIM and FreeMobile users !
-23999a5 QS Colors: Remove SWAG reset
-
-   * packages/providers/TelephonyProvider/
-9542f79 Add the user set network mode to the siminfo table
-
-   * packages/services/Telephony/
-8b03051 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-9def8bc For non-data SIMs, only set user configured mode, not preferred mode.
-0d8d3d5 Remove network mode handling for other SIM
-
    * vendor/cm/
-6629375 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+b5e8f37 Rogers LTE apn fix?
 
-   * vendor/samsung/
-3efbbb3 ks01lte: Update blobs.
-4222105 Merge pull request #650 from dcd/jf
-5919d79 jf: turnip for what?
+   * vendor/cmsdk/
+a632fbc cmsdk: Update cm api text files
 
