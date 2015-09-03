@@ -1,9 +1,103 @@
 ====================
+     09-03-2015
+====================
+
+
+   * android/
+6559e2d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+12e54b8 manifest: Remove separate paths for 8610/8226 HALs
+1d6de21 Merge tag 'android-5.1.1_r10' into cm-12.1
+
+   * build/
+0c823b0 repopick: open changes are either NEW or OPEN, not just OPEN
+f12263f Fix custom URL error. Merged from cm_build_config
+f2d177d repopick: handle hardware_ril/ril-caf
+f903bfd repopick: skip abandoned commits
+b308357 Adding msm8909 as a QCOM board platform
+94a39b3 build: kernel: arm64 uses Image.gz as the target
+6c0ae0e Merge pull request #13 from Khaon/for-temasek
+a73a36d "LMY48J"
+
+   * frameworks/av/
+bd354e9 Merge pull request #8 from Khaon/for-temasek
+47aef44 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+
+   * frameworks/base/
+70651cc FWB: Statusbar clock font size (1/2)
+ea581fa SlimShortcuts: Power menu
+8cbaedd SlimShortcuts: Restart SystemUI
+a765605 SlimShortcuts: Volume panel
+2b4d530 Actually show COS in shortcuts and show all other when COS is enabled
+fe7981f Add Screen Sleep shortcut
+10bda20 Fix up chamber and Torch shortcuts
+0e07f0b Fingerprint: don't start auth if not showing
+f04b5c7 Allow default system profile state to be overlayed
+8bf391d Keyguard: Remove bouncer when re-registering status bar
+cc0b640 Show infinity for large notification counts
+0b47be8b Let liblights adjust the brightness of LEDs while previewing it
+dd2ea1e Notifications: Only check for spam if new
+e985c53 Revert "Notifications: log notifications marked as spam to the event log"
+afec9b4 Revert "Navigationbar: Add just one more button"
+bfa789f StatusBarHeaderView: Fix battery icons overlapping issue
+654950a Status bar clock: Add BOLD ITALIC to font style (1/2)
+
+   * packages/apps/Dialer/
+2edbb97 Automatic translation import
+
+   * packages/apps/Eleven/
+441f4da REAL_GET_TASKS > GET_TASKS
+
+   * packages/apps/Mms/
+e48bb19 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+3c75cf9 Mms: show default app icon for unresolved links
+309e658 REAL_GET_TASKS > GET_TASKS
+
+   * packages/apps/Settings/
+a727db7 Build V16.4
+259d51e Settings: Statusbar clock font size (2/2)
+166b2f5 Settings: Fix a crash caused by null pointer
+0606fcb Settings: Utilize cyanogenmod.permission.MODIFY_PROFILES.
+ece1b34 Status bar clock: Add BOLD ITALIC to font style (2/2)
+
+   * packages/apps/Stk/
+01162d0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
+2ddb566 REAL_GET_TASKS > GET_TASKS
+6275b32 Indicate which sub-activity the app name broadcast applies to
+7b924c0 Add intent to send STK app name
+
+   * packages/apps/Trebuchet/
+547e589 Support STK app rename on MSIM
+c1f4123 Trebuchet: STK app rename customization for latam region.
+
+   * packages/providers/TelephonyProvider/
+857572a TelephonyProvider: change default user nw mode to invalid
+
+   * packages/services/Telephony/
+7cc2fa7 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+d529e7a Network Settings: default user mode to preferred mode
+
+   * packages/wallpapers/PhotoPhase/
+54a7044 REAL_GET_TASKS > GET_TASKS
+
+   * vendor/cm/
+42b8d87 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+44752b7 vendor/cm: add curl to build
+
+   * vendor/cmsdk/
+99b8c5d cmsdk: Update documentation for Boysenberry release.
+
+   * vendor/samsung/
+f509757 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+e41e774 Merge pull request #652 from crpalmer/audio-effects
+dd92b23 mondrianwifi: Kang soundfx libs from hlte-common
+
+====================
      09-02-2015
 ====================
 
 
    * frameworks/base/
+ae94dd9 Status bar weather: Add BOLD ITALIC to font style (1/2)
 07e52b2 Notifications: log notifications marked as spam to the event log
 8c2c87c Remove duplicate audio: Tejat is Argon
 2402747 Fingerprint: Allow disabling of vibration
@@ -32,7 +126,10 @@ f9cb06b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
    * packages/apps/ContactsCommon/
 7271bfc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
 46669c6 Automatic translation import
-2199d64 LookupProvider updates
+
+   * packages/apps/DeskClock/
+c1b451b DeskClock: Externalize permissions to CMSDK.
+3fc8d67 DeskClock: Utilize cyanogenmod.permission.MODIFY_PROFILES.
 
    * packages/apps/InCallUI/
 8ccbeda Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
@@ -41,6 +138,7 @@ f9cb06b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
 9d47003 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/Settings/
+e437936 Status bar weather: Add BOLD ITALIC to font style (2/2)
 faf775f Build V16.3
 0acaa9d settings: fix fc for system apps with null applicationInfo
 80b86ec Protected apps: fixup rotation states
@@ -55,9 +153,6 @@ fe89ce9 Lock Icon Torch: Add check for non-flash devices
    * packages/inputmethods/LatinIME/
 f738222 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
 
-   * packages/providers/TelephonyProvider/
-9762ec8 Revert "MmsProvider : Add ability to get thread information in search"
-
    * packages/services/Telecomm/
 d399ab2 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
 
@@ -65,11 +160,19 @@ d399ab2 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_servic
 bb0a0e3 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
 724fb11 Automatic translation import
 
+   * prebuilts/cmsdk/
+09001ca prebuilts/cmsdk: Update latest api text file.
+
    * vendor/cm/
 4c52cba Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 1e116da vendor/cm: Start building in CMSettingsProvider.
 
    * vendor/cmsdk/
+bc2ea6b cmsdk: Update documentation for HAF permission.
+04569c7 cmsdk: Update tests for new ALARM permissions.
+9971604 cmsdk: Update cm-api for hasSensitiveData() and new permissions.
+7f17704 cmsdk: Add permissions for ALARMS.
+0523911 cmsdk: Enforce cyanogenmod.permission.MODIFY_PROFILES for profiles.
 88bc996 cmsdk: Fix toast in CMHardwareTest.
 c0c27a6 cmsdk: Add preliminary hardware manager tests.
 3a502e9 cmsdk: Change parceling for DisplayMode.
@@ -106,8 +209,6 @@ d86d818 Task Manager: Use one observer for changes, misc cleanup
 11fcc02 Navigationbar: Add just one more button
 7ddb4fc Add support for Samsung extended AGPS
 aac556f Merge pull request #90 from rogersb11/cm-12.1
-727df53 More weather font styles 2/2
-28b98b5 Fix font type not refreshing on placement change
 
    * frameworks/native/
 e676b55 native: Move fingerprint feature out of android namespace.
@@ -139,6 +240,9 @@ a31f1e2 Automatic translation import
    * packages/apps/Contacts/
 30fd65e Automatic translation import
 
+   * packages/apps/ContactsCommon/
+2199d64 LookupProvider updates
+
    * packages/apps/DeskClock/
 6f61453 Automatic translation import
 
@@ -166,7 +270,6 @@ e98e1f1 settings: hide qs tiles with sensitive data
 f09f8a0 Settings: fix up advanced mode logic
 bcb1ab6 Settings: Always enable the per-app pulse light settings
 8d75bed Merge pull request #331 from rogersb11/cm-12.1
-32d15df More weather font styles 1/2
 
    * packages/apps/SoundRecorder/
 27f88f0 Automatic translation import
@@ -192,6 +295,9 @@ b440e37 Automatic translation import
 
    * packages/inputmethods/LatinIME/
 a1bc171 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+9762ec8 Revert "MmsProvider : Add ability to get thread information in search"
 
    * packages/providers/ThemesProvider/
 29f1d16 Specify locale when using String.format()
@@ -231,6 +337,8 @@ e949433 cmsdk: Build in the Manifest and R classes for the sdk.
 
 
    * frameworks/base/
+727df53 More weather font styles 2/2
+28b98b5 Fix font type not refreshing on placement change
 ba3fd71 Added show volume panel tile to QS
 6fe58353 LEDs Brightness [2/2]: Lights notifications brightness support
 036c925 VisualizerView: Prevent NPE
@@ -238,6 +346,7 @@ ba3fd71 Added show volume panel tile to QS
 a09411c SystemUI: Change long press lock screen lock icon to TORCH (1/2)
 
    * packages/apps/Settings/
+32d15df More weather font styles 1/2
 5dc3a29 Added show volume to tile chooser
 333ee3a LEDs Brightness [1/2]: Lights notifications brightness support
 ae4aacc Lights with Screen On [2/2]: Optional allowment of lights
@@ -273,85 +382,4 @@ fda7663 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core int
 
    * vendor/samsung/
 3e76889 Merge pull request #648 from andi34/cm-12.1.1
-
-====================
-     08-29-2015
-====================
-
-
-   * build/
-a292c51 Merge pull request #12 from Khaon/fix-mounting-f2fs-system-partition
-1d6a0b2 tools:ota:don't mount system partition with recovery mount options
-
-   * device/qcom/sepolicy/
-188ecce sepolicy: Add thermal and irqbalancer sockets
-e821bc8 sepolicy: Add policy for SurfaceFlinger access to rotator device
-bcc374c SEAndroid: Allow SurfaceFlinger to access dynamic_fps node
-
-   * device/samsung/hlte-common/
-581c49d hlte-common: Add f2fs to /system in fstab
-
-   * external/f2fs-tools/
-d8d08bf Merge pull request #1 from Khaon/cm-12.1
-71f0823 dump.f2fs: show i_advise field in inode
-ae2d768 fsck.f2fs: show total sectors consumed by filesystem
-
-   * frameworks/base/
-65bb483 services: option to disable lock screen dpm override (1/2)
-49b76e8 SystemUI: do not load header bar if boot isn't complete
-5416ddc FWB: Toast icon switch (1/2)
-a7ec00d Fingerprint Service: fix potential NPE
-fe0dcb0 Fix home key behavior for multiple CarHome app
-6aaedf2 Revert "PhoneWinowManager: resolve home car intent"
-4c4feca Fix the cell standby mobile radio active issue
-b829b84 Set mProximity to PROXIMITY_UNKNOWN on screen off
-
-   * frameworks/native/
-66916dd Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * kernel/samsung/hlte/
-0538107 Build v1.25
-2e042c3 seqlock: enhance power efficiency #2
-a55884c Revert "thread_info: enhance power efficiency"
-cdb80b9 Revert "thread_info: Replace usages of test_thread_flag with relaxed version"
-22fa27f Revert "thread_info: Remove usage of relaxed calls in sched header"
-9b820a1 Revert "hrtimer: Replace usages of hrtimer_callback_running with relaxed version"
-4ab5f9f mmc: clk_scaling: add sysfs for avoiding scale down in write
-8befab3 mmc: core: Fix mmc clk scale down during writes.
-01edab8 cfq-iosched: fix the setting of IOPS mode on SSDs
-2be97b7 block: Make CFQ default to IOPS mode on SSDs
-
-   * packages/apps/Mms/
-f561931 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/OTAUpdates/
-dda7ceb Avoid NPE
-
-   * packages/apps/Settings/
-7c5eb0f set tapjacking protection for deviceadmin permission dialog
-79c036f settings: option to disable lock screen dpm override (2/2)
-637d440 settings: Display apk path in App info
-33c9073 Settings: Toast icon switch (2/2)
-51a9ead Fix the improper string and increment database version to kick off a new indexing job.
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-a40f896 Add missing libatomic.a from Google
-8f37098 Revert "Add missing libatomic.a from Google"
-a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
-a40f896 Add missing libatomic.a from Google
-8f37098 Revert "Add missing libatomic.a from Google"
-a86eb5b Merge android-toolchain-eabi-4.9-2015.06-x86.tar #2
-
-   * system/core/
-9755cd1 VectorImpl.cpp: fix benign multiplication overflow
-71b40a7 Revert "fs_mgr: let fsck.f2fs actually attempt a fix"
-0f1784f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-b5e8f37 Rogers LTE apn fix?
-
-   * vendor/cmsdk/
-a632fbc cmsdk: Update cm api text files
 
