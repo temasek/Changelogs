@@ -1,4 +1,120 @@
 ====================
+     09-05-2015
+====================
+
+
+   * build/
+ac856bd build: Allow QC platforms to share/customize HAL variants
+a3532ac Revert "msm8909 uses the same branches as msm8916"
+4c663ad msm8909 uses the same branches as msm8916
+
+   * device/qcom/common/
+fc552c7 power: Boost improvements
+
+   * device/qcom/sepolicy/
+a06d6bb sepolicy: perfd to have access to mediaserver
+
+   * frameworks/av/
+7c6c1f6 Revert "libstagefright: Avoid cache thrashing by preserving more cached data"
+a5c209a Revert "libstagefright: Recover when we start to thrash the cache"
+
+   * frameworks/base/
+7f37ece systemui: left hand navigation ring
+8d8acfd systemui: respect navigation rings configuration
+9b9fd3f Re-do contextual notification header images
+eebae2e Revert "Add new change for TRDS switch."
+65daef4 SystemUI:Fix navbar power button overlapping when ime switcher shown
+4468f7a Import Moto X Ringtones and Notifications
+a6f7f87 Fix Android API exceptions
+15964d4 Revert "Update API"
+68ad38a base: delete obsolete context header images
+dc9c01f Ringtones: Allow excluding from removable storage
+e18566f Allow CAPTURE_AUDIO_HOTWORD to be whitelisted by signature.
+f8fe2b7 Merge pull request #92 from rogersb11/cm-12.1
+7f8ef6b FWB: Make all 14 font variants available to Weather (2/2)
+ea3a51c FWB: Make all 14 font variants available to Statusbar Clock (1/2)
+
+   * frameworks/opt/telephony/
+8f52479 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+9319b2d Telephony: Make sure we're stripping non-digits prior checkDestination.
+60487ea telephony: Fix FrameworksTelephonyTests.
+
+   * hardware/libhardware/
+dedc463 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_hardware_libhardware into cm-12.1
+
+   * packages/apps/Mms/
+0ba5334 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+61c63da Mms: Don't try to send an SMS to a null destination.
+
+   * packages/apps/OmniSwitch/
+5521ce1 OmniSwitch: add menu action
+
+   * packages/apps/Settings/
+75e60ae Build V16.5
+e05c49d Housekeeping: Move HEADS UP to Notifications
+4959cda Settings: System app remover
+e3e9593 Fix exception on Display font settings
+3b631e5 Change refresh icon under Process Stats
+718004e APN: Filter MVNOs by SPN, GID1 and IMSI
+f5ec086 InstalledAppDetails: Don't crash if application info is not available
+0da3320 Housekeeping: Remove tabs in arrays
+dff1174 Merge pull request #335 from rogersb11/cm-12.1
+f671462 Settings: Make all 14 font variants available to Weather (1/2)
+3a39fe0 Settings: Make all 14 font variants available to Statusbar Clock (2/2)
+f2f75a7 Sync default Statusbar clock default settings with fwb
+8dc19c6 Merge pull request #333 from rogersb11/cm-12.1
+b8de451 Add lockscreen rotation as an optional rotation setting (2/2)
+
+   * vendor/samsung/
+0933912 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+ab58243 Merge pull request #653 from andi34/cm-12.1.1
+
+====================
+     09-04-2015
+====================
+
+
+   * device/qcom/common/
+3c85911 power: Update boost parameters
+e9f23d7 power: Updates for msm8916/msm8939
+
+   * frameworks/base/
+3fd27a6 power: Add a new power hint for application launches
+5a11375 [2/2] base: Add lockscreen rotation as an optional rotation setting
+c1ebb42 VolumePanel: Option to show as expanded mode by default (1/2)
+8173e22 Merge pull request #91 from rogersb11/cm-12.1
+27502ca FWB:Status bar carrier label font size 2/2
+0564fb7 systemui: wait for animation end before take a screenshoot
+e9bed35 Spam: Close writable DB after use
+
+   * hardware/libhardware/
+0f42a6c libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL
+
+   * packages/apps/Mms/
+3761f5d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+f5f16e1 Fix mms failures due to invalid mmsc url
+
+   * packages/apps/Settings/
+287d292 VolumePanel: Option to show as expanded mode by default (2/2)
+e13746e Merge pull request #332 from rogersb11/cm-12.1
+4251a3b Settings:Status bar carrier label font size 1/2
+b1e53d1 Get a handle for UserManager at creation
+6bb3b65 Protected apps: fixup rotation states
+24ce604 Revert "Protected apps: fixup rotation states"
+d70baab Settings: Avoid possible NPE if resolve infos return null.
+
+   * vendor/cm/
+b5cea97 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+cefa91c Update Spain APNs
+
+   * vendor/cmsdk/
+a458122 Allow whitelist for MODIFY_NETWORK_SETTINGS permission.
+26272cd Add Hotword audio capture constants.
+
+   * vendor/samsung/
+a3e19e2 p31xx/p51xx: remove proprietary domx/camera blobs
+
+====================
      09-03-2015
 ====================
 
@@ -6,21 +122,6 @@
    * android/
 6559e2d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 12e54b8 manifest: Remove separate paths for 8610/8226 HALs
-1d6de21 Merge tag 'android-5.1.1_r10' into cm-12.1
-
-   * build/
-0c823b0 repopick: open changes are either NEW or OPEN, not just OPEN
-f12263f Fix custom URL error. Merged from cm_build_config
-f2d177d repopick: handle hardware_ril/ril-caf
-f903bfd repopick: skip abandoned commits
-b308357 Adding msm8909 as a QCOM board platform
-94a39b3 build: kernel: arm64 uses Image.gz as the target
-6c0ae0e Merge pull request #13 from Khaon/for-temasek
-a73a36d "LMY48J"
-
-   * frameworks/av/
-bd354e9 Merge pull request #8 from Khaon/for-temasek
-47aef44 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
 
    * frameworks/base/
 70651cc FWB: Statusbar clock font size (1/2)
@@ -37,12 +138,6 @@ cc0b640 Show infinity for large notification counts
 0b47be8b Let liblights adjust the brightness of LEDs while previewing it
 dd2ea1e Notifications: Only check for spam if new
 e985c53 Revert "Notifications: log notifications marked as spam to the event log"
-afec9b4 Revert "Navigationbar: Add just one more button"
-bfa789f StatusBarHeaderView: Fix battery icons overlapping issue
-654950a Status bar clock: Add BOLD ITALIC to font style (1/2)
-
-   * packages/apps/Dialer/
-2edbb97 Automatic translation import
 
    * packages/apps/Eleven/
 441f4da REAL_GET_TASKS > GET_TASKS
@@ -57,7 +152,6 @@ a727db7 Build V16.4
 259d51e Settings: Statusbar clock font size (2/2)
 166b2f5 Settings: Fix a crash caused by null pointer
 0606fcb Settings: Utilize cyanogenmod.permission.MODIFY_PROFILES.
-ece1b34 Status bar clock: Add BOLD ITALIC to font style (2/2)
 
    * packages/apps/Stk/
 01162d0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
@@ -80,6 +174,7 @@ d529e7a Network Settings: default user mode to preferred mode
 54a7044 REAL_GET_TASKS > GET_TASKS
 
    * vendor/cm/
+b31f746 Update India APNs to YU list
 42b8d87 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 44752b7 vendor/cm: add curl to build
 
@@ -96,7 +191,27 @@ dd92b23 mondrianwifi: Kang soundfx libs from hlte-common
 ====================
 
 
+   * android/
+1d6de21 Merge tag 'android-5.1.1_r10' into cm-12.1
+
+   * build/
+0c823b0 repopick: open changes are either NEW or OPEN, not just OPEN
+f12263f Fix custom URL error. Merged from cm_build_config
+f2d177d repopick: handle hardware_ril/ril-caf
+f903bfd repopick: skip abandoned commits
+b308357 Adding msm8909 as a QCOM board platform
+94a39b3 build: kernel: arm64 uses Image.gz as the target
+6c0ae0e Merge pull request #13 from Khaon/for-temasek
+a73a36d "LMY48J"
+
+   * frameworks/av/
+bd354e9 Merge pull request #8 from Khaon/for-temasek
+47aef44 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+
    * frameworks/base/
+afec9b4 Revert "Navigationbar: Add just one more button"
+bfa789f StatusBarHeaderView: Fix battery icons overlapping issue
+654950a Status bar clock: Add BOLD ITALIC to font style (1/2)
 ae94dd9 Status bar weather: Add BOLD ITALIC to font style (1/2)
 07e52b2 Notifications: log notifications marked as spam to the event log
 8c2c87c Remove duplicate audio: Tejat is Argon
@@ -131,6 +246,9 @@ f9cb06b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
 c1b451b DeskClock: Externalize permissions to CMSDK.
 3fc8d67 DeskClock: Utilize cyanogenmod.permission.MODIFY_PROFILES.
 
+   * packages/apps/Dialer/
+2edbb97 Automatic translation import
+
    * packages/apps/InCallUI/
 8ccbeda Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
 
@@ -138,6 +256,7 @@ c1b451b DeskClock: Externalize permissions to CMSDK.
 9d47003 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/Settings/
+ece1b34 Status bar clock: Add BOLD ITALIC to font style (2/2)
 e437936 Status bar weather: Add BOLD ITALIC to font style (2/2)
 faf775f Build V16.3
 0acaa9d settings: fix fc for system apps with null applicationInfo
@@ -194,6 +313,9 @@ c5fa7bc cmsdk: Fix spelling error in CMSettingsProvider makefile.
    * device/samsung/qcom-common/
 34d6794 Automatic translation import
 
+   * external/stagefright-plugins/
+dc2a013 ffmpeg-extractor: Fix deadlock when stopping the reader thread
+
    * external/whispersystems/WhisperPush/
 82f94ba Automatic translation import
 
@@ -208,7 +330,6 @@ b3c10ff SystemUI: reset to QS panel when swiping down
 d86d818 Task Manager: Use one observer for changes, misc cleanup
 11fcc02 Navigationbar: Add just one more button
 7ddb4fc Add support for Samsung extended AGPS
-aac556f Merge pull request #90 from rogersb11/cm-12.1
 
    * frameworks/native/
 e676b55 native: Move fingerprint feature out of android namespace.
@@ -269,7 +390,6 @@ e98e1f1 settings: hide qs tiles with sensitive data
 4ffa2a8 Revert "Settings: fix up advanced mode logic"
 f09f8a0 Settings: fix up advanced mode logic
 bcb1ab6 Settings: Always enable the per-app pulse light settings
-8d75bed Merge pull request #331 from rogersb11/cm-12.1
 
    * packages/apps/SoundRecorder/
 27f88f0 Automatic translation import
@@ -330,56 +450,4 @@ f9b05b9 Fix Movistar APNs
 95dadd8 cmsdk: allow custom tiles to set the new qstile's sensitive data flag
 0eb2999 Add CMSettingsProvider and CMDatabaseHelper
 e949433 cmsdk: Build in the Manifest and R classes for the sdk.
-
-====================
-     08-31-2015
-====================
-
-
-   * frameworks/base/
-727df53 More weather font styles 2/2
-28b98b5 Fix font type not refreshing on placement change
-ba3fd71 Added show volume panel tile to QS
-6fe58353 LEDs Brightness [2/2]: Lights notifications brightness support
-036c925 VisualizerView: Prevent NPE
-9fb2131 SystemUI: Status bar weather font style (1/2)
-a09411c SystemUI: Change long press lock screen lock icon to TORCH (1/2)
-
-   * packages/apps/Settings/
-32d15df More weather font styles 1/2
-5dc3a29 Added show volume to tile chooser
-333ee3a LEDs Brightness [1/2]: Lights notifications brightness support
-ae4aacc Lights with Screen On [2/2]: Optional allowment of lights
-e66b079 Revert "Lights with Screen On [2/2]: Optional allowment of lights"
-b76faf4 Settings: Status bar weather font style (2/2)
-0b0af53 Remove duplicate lockscreen shortcut settings
-4482b56 Settings: Change long press lock screen lock icon to TORCH (2/2)
-
-   * vendor/samsung/
-3df158f Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     08-30-2015
-====================
-
-
-   * frameworks/base/
-db7d983 {1/2} Frameworks: Chamber of Secrets.
-35dad30 Revert "Merge tag 'android-5.1.1_r13' into HEAD"
-0e1fc17 base: Fix divide by zero when clearing recents
-fd74c61 ResolverActivity: reduce elevation to make it flat
-
-   * packages/apps/Mms/
-47dca8d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Settings/
-6f79bc9 [2/2] Settings: Chamber of Secrets
-0925303 Re-enable torch for Slim Actions for shortcuts
-9d1fd47 Build V16.2
-
-   * system/core/
-fda7663 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/samsung/
-3e76889 Merge pull request #648 from andi34/cm-12.1.1
 
