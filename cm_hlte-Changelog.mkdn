@@ -1,4 +1,91 @@
 ====================
+     09-09-2015
+====================
+
+
+   * build/
+46d8565 build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined
+aa1010d build: better zsh dopush support
+3230dde Add darwin support for f2fs host tools
+0bb9a94 releasetools: Fix the bug when deleting files.
+26c898c releasetools: Fix the bug in symlink deletion.
+cdb5606 build: allow using host flex binary
+
+   * external/f2fs-tools/
+f285a49 Fix f2fs_trim_device multiple definitions
+c73198b Add darwin support for building the host tools
+
+   * frameworks/base/
+254333d Add broadcast and query API for AudioSource.HOTWORD.
+41aa5b8 base: report wtf for external cm services
+c718445 SpamFilter : Avoid a requery for each item
+2fdfe2b base: start nfc service prior to systemui
+2495047 SystemUI: unregister visualizer on hide
+0b5daf9 SystemUI: hide visualizer when keyguard is occluded
+
+   * packages/apps/Mms/
+f4d84cb Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+86a2db4 Temp Fix: Localize Smilies in Ukranian
+
+   * packages/apps/Nfc/
+7e35511 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Nfc into cm-12.1
+f5f5eef nfc: create a bootstrap service
+
+   * packages/apps/Settings/
+ea0dca1 Build V16.7
+22800aa Settings : Update filterSpam to new contract
+9f44e33 Change status bar clock font size to use listpreference
+
+   * packages/services/Telephony/
+932938a Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+301cb34 Revert "Network Settings: don't crash on bad lookup"
+
+   * system/core/
+9872087 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+180c1d0 Fix build break for multiple definition
+0e9caa6 Fix build break for multiple definition
+
+   * vendor/cm/
+3d3e1d9 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+26731f5 cm: Set the IO scheduler based on a system property
+
+   * vendor/samsung/
+135ca45 hlte-common: update Adreno drivers from G900TUVU1FOG6
+
+====================
+     09-08-2015
+====================
+
+
+   * frameworks/base/
+bc2a21f StatusBarHeader: update headsup button onclick
+fc7442e services: don't disable led's when user passes through lock screen
+353e328 StatusBarHeader: toggle drawable when switching between qs and task manager
+74a2890 SystemUI: reset to QS panel if task manager was visible last
+fca724a Revert "SystemUI: reset to QS panel when swiping down"
+
+   * hardware/qcom/display-caf/msm8916/
+26056c1 hwc: Reserve pipes for video layers first
+6aa55f2 hwc: Avoid MDP comp for RGB downscaled layer
+59e9973 hwc: Handle multiple YUV layer use case in low end targets
+99271ec hwc: Avoid updating refresh-rate if already done
+a75c025 hwc: Use GPU to compose for smaller updates
+e619991 hwc: Set refresh rate during idlefallback for unhandled cases
+d0707e1 hwc: Donot rely on previous comp type to trigger idlefallback
+8de2868 hwc: Roundoff the input fps to nearest standard fps
+15b0492 hwc: Trigger dynamic refresh-rate change for more usecases
+
+   * packages/apps/Settings/
+8f0e5c3 settings: remove contributors cloud margin/padding
+0fb0804 Settings: Only show multi-sim card configuration for owners
+03c9682 Build V16.6
+3d67359 Revert "APN: Filter MVNOs by SPN, GID1 and IMSI"
+
+   * system/core/
+ef42e3d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+979ef7f init: Fire a trigger when a class is started/stopped
+
+====================
      09-07-2015
 ====================
 
@@ -24,6 +111,11 @@ f31bd18 Revert "Re-do contextual notification header images"
    * frameworks/native/
 86cc1dc Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
 
+   * hardware/qcom/media-caf/msm8916/
+215b75e mm-video: Calculate average fps to update refresh rate
+dd5bb74 mm-video-v4l2: handle flush done as buffer_done and not as cmd_done
+4bc8d24 mm-video-v4l2: vdec: insert timestamps qeued by client in TS queue
+
    * kernel/samsung/hlte/
 50760a0 msm: mdss: send idle_time notification only if positive
 5d43470 Build v1.26
@@ -37,10 +129,11 @@ cb042a5 ARM: 8036/1: Enable IRQs before attempting to read user space in __und_u
 99b3e0e Revert upstream commit 1417a6b8dc4db73055be9a3aa288b050e9dc06ab from G900TUVU1FOG6 merge
 
    * packages/apps/Settings/
-03c9682 Build V16.6
-3d67359 Revert "APN: Filter MVNOs by SPN, GID1 and IMSI"
 a712db0 Notification color inversion: Move to Ambient Displaying Settings
 80d6970 Enable/disable notification color inversion [2/2]
+
+   * packages/apps/Trebuchet/
+f3c0e34 Trebuchet: fix potential NPE when info is null
 
 ====================
      09-06-2015
@@ -181,126 +274,4 @@ b5cea97 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
 
    * vendor/samsung/
 ab58243 Merge pull request #653 from andi34/cm-12.1.1
-
-====================
-     09-04-2015
-====================
-
-
-   * device/qcom/common/
-e9f23d7 power: Updates for msm8916/msm8939
-
-   * frameworks/base/
-70651cc FWB: Statusbar clock font size (1/2)
-ea581fa SlimShortcuts: Power menu
-8cbaedd SlimShortcuts: Restart SystemUI
-
-   * packages/apps/Mms/
-f5f16e1 Fix mms failures due to invalid mmsc url
-
-   * vendor/cm/
-cefa91c Update Spain APNs
-b31f746 Update India APNs to YU list
-
-   * vendor/cmsdk/
-a458122 Allow whitelist for MODIFY_NETWORK_SETTINGS permission.
-26272cd Add Hotword audio capture constants.
-
-   * vendor/samsung/
-a3e19e2 p31xx/p51xx: remove proprietary domx/camera blobs
-
-====================
-     09-03-2015
-====================
-
-
-   * android/
-6559e2d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-12e54b8 manifest: Remove separate paths for 8610/8226 HALs
-1d6de21 Merge tag 'android-5.1.1_r10' into cm-12.1
-
-   * build/
-0c823b0 repopick: open changes are either NEW or OPEN, not just OPEN
-f12263f Fix custom URL error. Merged from cm_build_config
-f2d177d repopick: handle hardware_ril/ril-caf
-f903bfd repopick: skip abandoned commits
-b308357 Adding msm8909 as a QCOM board platform
-94a39b3 build: kernel: arm64 uses Image.gz as the target
-6c0ae0e Merge pull request #13 from Khaon/for-temasek
-a73a36d "LMY48J"
-
-   * external/jemalloc/
-1ccc2de Regenerate files and re-add android changes.
-
-   * frameworks/av/
-bd354e9 Merge pull request #8 from Khaon/for-temasek
-47aef44 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
-
-   * frameworks/base/
-a765605 SlimShortcuts: Volume panel
-2b4d530 Actually show COS in shortcuts and show all other when COS is enabled
-fe7981f Add Screen Sleep shortcut
-10bda20 Fix up chamber and Torch shortcuts
-0e07f0b Fingerprint: don't start auth if not showing
-f04b5c7 Allow default system profile state to be overlayed
-8bf391d Keyguard: Remove bouncer when re-registering status bar
-cc0b640 Show infinity for large notification counts
-0b47be8b Let liblights adjust the brightness of LEDs while previewing it
-dd2ea1e Notifications: Only check for spam if new
-e985c53 Revert "Notifications: log notifications marked as spam to the event log"
-afec9b4 Revert "Navigationbar: Add just one more button"
-bfa789f StatusBarHeaderView: Fix battery icons overlapping issue
-654950a Status bar clock: Add BOLD ITALIC to font style (1/2)
-ae94dd9 Status bar weather: Add BOLD ITALIC to font style (1/2)
-
-   * packages/apps/Dialer/
-2edbb97 Automatic translation import
-
-   * packages/apps/Eleven/
-441f4da REAL_GET_TASKS > GET_TASKS
-
-   * packages/apps/Mms/
-e48bb19 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-3c75cf9 Mms: show default app icon for unresolved links
-309e658 REAL_GET_TASKS > GET_TASKS
-
-   * packages/apps/Settings/
-a727db7 Build V16.4
-259d51e Settings: Statusbar clock font size (2/2)
-166b2f5 Settings: Fix a crash caused by null pointer
-0606fcb Settings: Utilize cyanogenmod.permission.MODIFY_PROFILES.
-ece1b34 Status bar clock: Add BOLD ITALIC to font style (2/2)
-e437936 Status bar weather: Add BOLD ITALIC to font style (2/2)
-
-   * packages/apps/Stk/
-01162d0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
-2ddb566 REAL_GET_TASKS > GET_TASKS
-6275b32 Indicate which sub-activity the app name broadcast applies to
-7b924c0 Add intent to send STK app name
-
-   * packages/apps/Trebuchet/
-547e589 Support STK app rename on MSIM
-c1f4123 Trebuchet: STK app rename customization for latam region.
-
-   * packages/providers/TelephonyProvider/
-857572a TelephonyProvider: change default user nw mode to invalid
-
-   * packages/services/Telephony/
-7cc2fa7 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-d529e7a Network Settings: default user mode to preferred mode
-
-   * packages/wallpapers/PhotoPhase/
-54a7044 REAL_GET_TASKS > GET_TASKS
-
-   * vendor/cm/
-42b8d87 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-44752b7 vendor/cm: add curl to build
-
-   * vendor/cmsdk/
-99b8c5d cmsdk: Update documentation for Boysenberry release.
-
-   * vendor/samsung/
-f509757 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-e41e774 Merge pull request #652 from crpalmer/audio-effects
-dd92b23 mondrianwifi: Kang soundfx libs from hlte-common
 
