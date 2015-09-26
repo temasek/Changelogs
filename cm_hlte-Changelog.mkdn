@@ -1,7 +1,394 @@
 ====================
-     09-23-2015
+     09-26-2015
 ====================
 
+
+   * bionic/
+69b8f22 Speed-up ARM memcmp by leveraging NEON.
+5ca6162 Simplify _ALIGN_TEXT.
+
+   * external/f2fs-tools/
+7a9f820 fsck.f2fs: check sit types for node or data only
+aa1119b man: fix missing description for overprovision ratio
+0f93ae6 mkfs.f2fs: fix wrong ovp space calculation on large section
+
+   * frameworks/base/
+91f2b9c Themes: Don't recreate theme when mTheme is null
+bd65cfb base: fix dialog neutral button
+705677f Fix text color on darktheme
+754135f [1/2] Bring back SmartPullDown to SlimActions.
+1361dd7 Keyguard Fingerprint: Send Unlock Stats
+328f119 StrictMode: Disable all strict mode functions when disable prop is set Strict mode can still be used to produce red border flashes even when the disable property is set, among other things.
+41975fa Add observer for Context header default switch:
+200ef05 Revert "Revert "Themes: Don't use themed fonts for non themable packages""
+e349575 Fix issue where non-themable app still had themed fonts
+eceb3c4 Fingerprint Wakeup: add some error handling; fix race conditions
+e234037 Fingerprint: don't report as active without any fp's
+1464426 Automatic translation import
+867d24d core: Remove duplicate declaration of AppsFailureReceiver.
+
+   * frameworks/opt/telephony/
+7a6121b [TEST] Fix NPE on DcTracker
+
+   * kernel/samsung/hlte/
+609106a Build v1.28
+5fad8ee dm-crypt.c: Fix build
+59332e5 Revert "kernel: add relaxed power savings from NVIDIA (experimental)"
+632b859 adreno_idler: disable by default
+986f995 Revert "seqlock: enhance power efficiency #2"
+5456b07 Linux 3.4.109
+025db5b sched: Queue RT tasks to head when prio drops
+6759964 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+37da59f NET: ROSE: Don't dereference NULL neighbour pointer.
+0ef8b79 block: fix ext_dev_lock lockdep report
+a3611c8 bridge: superfluous skb->nfct check in br_nf_dev_queue_xmit
+c9c2959 net: socket: Fix the wrong returns for recvmsg and sendmsg
+d841cd0 ipmi: fix timeout calculation when bmc is disconnected
+cf8d3c1 x86, kvm: fix kvm's usage of kernel_fpu_begin/end()
+edd70b7 x86, kvm: use kernel_fpu_begin/end() in kvm_load/put_guest_fpu()
+bed8706 md: use kzalloc() when bitmap is disabled
+c8999dc udf: Check length of extended attributes and allocation descriptors
+83e8f7c tracing: Have filter check for balanced ops
+c6dd9de ring-buffer-benchmark: Fix the wrong sched_priority of producer
+f9bec0d bridge: fix multicast router rlist endless loop
+9396af3 bridge: disable softirqs around br_fdb_update to avoid lockup
+4e94acd bridge: use _bh spinlock variant for br_fdb_update to avoid lockup
+8fd2a17 MIPS: Fix enabling of DEBUG_STACKOVERFLOW
+7f9892b USB: cp210x: add ID for HubZ dual ZigBee and Z-Wave dongle
+9caabd9 ALSA: usb-audio: add MAYA44 USB+ mixer control names
+d0b6d44 ALSA: hda/realtek - Add a fixup for another Acer Aspire 9420
+b31f5be Input: elantech - fix detection of touchpads where the revision matches a known rate
+a220e86 vfs: read file_handle only once in handle_to_path
+01daad9 drm/i915: Don't skip request retirement if the active list is empty
+ddc60ee ozwpan: unchecked signed subtraction leads to DoS
+9893192 ozwpan: divide-by-zero leading to panic
+9fe7553 ozwpan: Use proper check to prevent heap overflow
+d578109 USB: serial: ftdi_sio: Add support for a Motion Tracker Development Board
+547fa7b target/pscsi: Don't leak scsi_host if hba is VIRTUAL_HOST
+78fa234 d_walk() might skip too much
+41d0a02 fs, omfs: add NULL terminator in the end up the token list
+3b6ff8a lguest: fix out-by-one error in address checking.
+8c59df0 x86: bpf_jit: fix compilation of large bpf programs
+826cb23 x86/mce: Fix MCE severity messages
+187191f ARM: dts: imx27: only map 4 Kbyte for fec registers
+7708ca9 bridge: fix parsing of MLDv2 reports
+36878a7 crypto: s390/ghash - Fix incorrect ghash icv buffer handling.
+08f836c xen/events: don't bind non-percpu VIRQs with percpu chip
+441ff3a sd: Disable support for 256 byte/sector disks
+fd76bae mmc: atmel-mci: fix bad variable type for clkdiv
+9e5299e ALSA: hda - Add Conexant codecs CX20721, CX20722, CX20723 and CX20724
+09019e9 powerpc: Align TOC to 256 bytes
+7cb3bd3 Input: elantech - fix semi-mt protocol for v3 HW
+d2aa400 ASoC: wm8994: correct BCLK DIV 348 to 384
+457494e ASoC: wm8960: fix "RINPUT3" audio route error
+ef89391 KVM: MMU: fix CR4.SMEP=1, CR0.WP=0 with shadow pages
+f11084e mac80211: move WEP tailroom size check
+af1ac60 ipvs: fix memory leak in ip_vs_ctl.c
+d7a0b37 ext4: check for zero length extent explicitly
+24d0150 drm/radeon: fix VM_CONTEXT*_PAGE_TABLE_END_ADDR handling
+44449af ARM: net: delegate filter to kernel interpreter when imm_offset() return value can't fit into 12bits.
+1b16782 ahci: avoton port-disable reset-quirk
+d85191b ahci: un-staticize ahci_dev_classify
+f3459071 usb-storage: Add NO_WP_DETECT quirk for Lacie 059f:0651 devices
+bef1acd xhci: gracefully handle xhci_irq dead device
+2809429 xhci: Solve full event ring by increasing TRBS_PER_SEGMENT to 256
+e8d2e92 xhci: fix isoc endpoint dequeue from advancing too far on transaction error
+e25f2c6 md/raid5: don't record new size if resize_stripes fails.
+73f1402 nfsd: fix the check for confirmed openowner in nfs4_preprocess_stateid_op
+4b75c89 USB: visor: Match I330 phone more precisely
+dc0d892 USB: pl2303: Remove support for Samsung I330
+afa66fa USB: cp210x: add ID for KCF Technologies PRN device
+ff8b314 rtlwifi: rtl8192cu: Fix kernel deadlock
+c756e24 libata: Ignore spurious PHY event on LPM policy change
+a69a90f libata: Add helper to determine when PHY events should be ignored
+c2938d6 ocfs2: dlm: fix race between purge and get lock resource
+3afdcc7 nilfs2: fix sanity check of btree level in nilfs_btree_root_broken()
+70d8843 mm/memory-failure: call shake_page() when error hits thp tail page
+280c771 xen/events: Set irq_info->evtchn before binding the channel to CPU in __startup_pirq()
+b209234 xen/console: Update console event channel on resume
+133be52 RDMA/CMA: Canonize IPv4 on IPV6 sockets properly
+14f974e mmc: core: add missing pm event in mmc_pm_notify to fix hib restore
+2bff75e ARM: pxa: lubbock: use new pxa_cplds driver
+6505ec8 ARM: pxa: mainstone: use new pxa_cplds driver
+9f5c400 ARM: pxa: pxa_cplds: add lubbock and mainstone IO
+e09925b ext4: move check under lock scope to close a race.
+6464033 powerpc/pseries: Correct cpu affinity for dlpar added cpus
+ff07f10 ALSA: emu10k1: Emu10k2 32 bit DMA mode
+44b5d21 ALSA: emux: Fix mutex deadlock in OSS emulation
+8d826bd serial: of-serial: Remove device_type = "serial" registration
+45b0873 serial: xilinx: Use platform_get_irq to get irq description structure
+1e2508c 3w-9xxx: fix command completion race
+9f740ed 3w-xxxx: fix command completion race
+2af8b23 3w-sas: fix command completion race
+6c9dfc1 SCSI: add 1024 max sectors black list flag
+f834cf6 drm/radeon: Use drm_calloc_ab for CS relocs
+5128390 ALSA: emux: Fix mutex deadlock at unloading
+f48e8b4 ALSA: emu10k1: Fix card shortname string buffer overflow
+31f2934 ALSA: hda - Fix mute-LED fixed mode
+524f1a6 RCU pathwalk breakage when running into a symlink overmounting something
+e9ffe7c nfs: fix high load average due to callback thread sleeping
+b84075b nfs: don't call blocking operations while !TASK_RUNNING
+715b563 nfsd: fix nsfd startup race triggering BUG_ON
+db4c640 memstick: mspro_block: add missing curly braces
+e46c440 ptrace: fix race between ptrace_resume() and wait_task_stopped()
+890d3fe firmware/ihex2fw.c: restore missing default in switch statement
+1a44e72 megaraid_sas: use raw_smp_processor_id()
+519385d IB/mlx4: Fix WQE LSO segment calculation
+f086660 IB/core: disallow registering 0-sized memory region
+d527da5 dm crypt: fix deadlock when async crypto algorithm returns -EBUSY
+e3793b7 fs/binfmt_elf.c: fix bug in loading of PIE binaries
+3d5fe84 ACPICA: Utilities: split IO address types from data type models.
+e331dd1 powerpc/perf: Cap 64bit userspace backtraces to PERF_MAX_STACK_DEPTH
+bc38009 Btrfs: fix inode eviction infinite loop after cloning into it
+909f014 s390/hibernate: fix save and restore of kernel text section
+3e84172 selinux/nlmsg: add XFRM_MSG_MAPPING
+5422076 selinux/nlmsg: add XFRM_MSG_MIGRATE
+1fc17c6 selinux/nlmsg: add XFRM_MSG_REPORT
+7ad8221 powerpc: Fix missing L2 cache size in /sys/devices/system/cpu
+de0b6a0 MIPS: Hibernate: flush TLB entries earlier
+760f39a ALSA: emu10k1: don't deadlock in proc-functions
+b75e413 scsi: storvsc: Fix a bug in copy_from_bounce_buffer()
+84ff035 x86/iommu: Fix header comments regarding standard and _FINISH macros
+101c4f1 selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+5175c7f selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+9b3c2e3 RDS: Documentation: Document AF_RDS, PF_RDS and SOL_RDS correctly.
+d17ba1f Input: elantech - fix absolute mode setting on some ASUS laptops
+48d0b4a jhash: Update jhash_[321]words functions to use correct initval
+49208af ext4: make fsync to sync parent dir in no-journal for real this time
+1cba85f ASoC: cs4271: Increase delay time after reset
+6df1d00 rtlwifi: rtl8192cu: Add new USB ID
+a180257 ARM: 8320/1: fix integer overflow in ELF_ET_DYN_BASE
+24df8cf btrfs: don't accept bare namespace as a valid xattr
+d26eb2f Btrfs: fix log tree corruption when fs mounted with -o discard
+bf6abc4 Drivers: hv: vmbus: Don't wait after requesting offers
+4a55afd C6x: time: Ensure consistency in __init
+d026f6f UBI: fix check for "too many bytes"
+5410259 UBI: initialize LEB number variable
+ecebd00 UBI: fix out of bounds write
+9585d4f staging: panel: fix lcd type
+3b9e792 cdc-wdm: fix endianness bug in debug statements
+4f04bab ASoC: wm8741: Fix rates constraints values
+32aa19e usb: common: otg-fsm: only signal connect after switching to peripheral
+2e43270 drm/radeon: fix doublescan modes (v2)
+3c0d895 pinctrl: fix example .get_group_pins implementation signature
+f859865 pinctrl: remove doc mention of the enable/disable API
+247f39a compal-laptop: Check return value of power_supply_register
+d182715 pinctrl: remove maxpin from documentation
+8790ef5 usb: musb: core: fix TX/RX endpoint order
+7d19de3 KVM: s390: Zero out current VMDB of STSI before including level3 data.
+1e04fe6 e1000: add dummy allocator to fix race condition between mtu change and netpoll
+83e3bb1 Drivers: hv: vmbus: Fix a bug in the error path in vmbus_open()
+957ac32 Bluetooth: ath3k: Add support Atheros AR5B195 combo Mini PCIe card
+f8d3ceb ipv6: add check for blackhole or prohibited entry in rt6_redire
+
+   * packages/apps/Calendar/
+4f99ba7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
+
+   * packages/apps/Contacts/
+7fb4805 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/ContactsCommon/
+4fbeedc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+
+   * packages/apps/Dialer/
+a13d31a Automatic translation import
+
+   * packages/apps/InCallUI/
+205027a Replace last incomingCall phoneId for rejectCallWithMessage().
+29e0ff6 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+750b396 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/PhoneCommon/
+113a0c7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_PhoneCommon into cm-12.1
+
+   * packages/apps/Settings/
+fd9fd4f Build V17.3
+fba9e6c ApnSettings : Ensure default apn dialog isn't shown twice
+1321b65 OnTheGo: Add missing alpha value settings
+e0ae427 Settings: Move custom headers to qs color settings
+a8e36a9 [2/2] Back with SmartPullDown to SlimActions.
+e0fffde Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+96de521 Catch IllegalStateException
+
+   * packages/providers/DownloadProvider/
+02911f6 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+
+   * vendor/cm/
+233db98 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+8a5d3bb Update HK APNs
+6a5fc00 cm: Add defaults for CMSettingsProvider
+
+   * vendor/cmsdk/
+97b467d Remove cm nav bar
+0f3f9ae Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+05d0129 Add way to migrate CM specific settings to CMSettingsProvider
+8fc6aff cmsdk: Add classpathtests.
+3bdc45c Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+c56b48e CmSdk : Update api text for thermal monitor
+b4ef25a CMSdk : Initial thermal state to STATE_UNKNOWN
+ee33a74 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+
+====================
+     09-25-2015
+====================
+
+
+   * android/
+b28e5b8 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+
+   * device/samsung/qcom-common/
+4989b4b Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+6417cb3 Automatic translation import
+
+   * frameworks/av/
+124bcdf libstagefright : fix the bug of wrong value setting for slice-height
+
+   * frameworks/base/
+52db33b Frameworks: Lockscreen blur & see through (1/2)
+e562111 Remove unused variable
+
+   * frameworks/native/
+64901d2 Benign unsigned integer overflow in Parcel
+
+   * frameworks/opt/hardware/
+90d3456 CmHW : Add thermal monitor stub
+
+   * packages/apps/AudioFX/
+741bd48 Automatic translation import
+
+   * packages/apps/Bluetooth/
+1d7c800 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+e8c9fbd Automatic translation import
+
+   * packages/apps/BluetoothExt/
+0c3dd4a Automatic translation import
+
+   * packages/apps/CMBugReport/
+a00f6af Automatic translation import
+
+   * packages/apps/CMFileManager/
+085427a Automatic translation import
+
+   * packages/apps/CMWallpapers/
+40b498e Automatic translation import
+
+   * packages/apps/Calendar/
+9aee465 Automatic translation import
+
+   * packages/apps/Camera2/
+1759210 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+5b05d08 Automatic translation import
+
+   * packages/apps/Contacts/
+9f9f650 Automatic translation import
+f97f4b0 Contacts: Remove contact shortcut for lookup contact
+
+   * packages/apps/ContactsCommon/
+33e768d Automatic translation import
+
+   * packages/apps/DeskClock/
+ccd6fc2 Automatic translation import
+
+   * packages/apps/Eleven/
+ab1f775 Automatic translation import
+
+   * packages/apps/Email/
+eefcd38 Automatic translation import
+
+   * packages/apps/Gallery2/
+ebd8198 Automatic translation import
+
+   * packages/apps/InCallUI/
+f13e91f Automatic translation import
+
+   * packages/apps/LockClock/
+480ce7e Automatic translation import
+
+   * packages/apps/Mms/
+750b396 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+25eea27 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+b97ebfa Automatic translation import
+
+   * packages/apps/Settings/
+d8775b1 Lockscreen see-through & blur (2/2)
+
+   * packages/apps/SoundRecorder/
+2b61591 Automatic translation import
+
+   * packages/apps/Stk/
+29796ce Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
+f27b962 Automatic translation import
+
+   * packages/apps/Terminal/
+d8a5db6 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+56002b5 Automatic translation import
+
+   * packages/apps/Trebuchet/
+0e3858b Automatic translation import
+
+   * packages/apps/TvSettings/
+bb47f53 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+3619120 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+b592762 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+79cb2c5 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+193bc2b Automatic translation import
+
+   * packages/providers/ThemesProvider/
+bfecba0 Automatic translation import
+
+   * packages/services/Telecomm/
+a9160ea Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+23e496a Automatic translation import
+
+   * packages/services/Telephony/
+5c34449 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+81d5332 Automatic translation import
+4dec89c Telephony: Create work around on modem vt change during emergency redial.
+4b8b885 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+5cb3ca5 Network settings: don't send preferred network changes
+
+   * packages/wallpapers/Galaxy4/
+e7e5f96 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+3745404 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+74c35e0 Automatic translation import
+
+   * prebuilts/cmsdk/
+6eee3d3 Prebuilts cmsdk : Update api text for thermal monitor
+
+   * vendor/cmsdk/
+ce92e37 Automatic translation import
+b4f88fa CMSdk : Add thermal monitor service impl
+2acf3ea CMSdk : Add ThermalMonitor
+
+====================
+     09-24-2015
+====================
+
+
+   * android/
+412f659 Add qrd.xml for working with caf    *s
 
    * art/
 0b35efe Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art into cm-12.1
@@ -9,13 +396,14 @@
    * build/
 3b11386 Revert "build: better zsh dopush support"
 
-   * external/bluetooth/bluedroid/
-e0ba0df Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
-
-   * frameworks/av/
-d8e5f5d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
    * frameworks/base/
+c3f689c SystemUI: improve switching users
+c2c0549 SysUI: Fix retrieving of statusbar icon with no theme
+765256d Themes: Call recreateTheme when theme changed
+821bab8 Allow additional permissions to be whitelisted by signature.
+9799f1f Screen Pinning: Show correct string for on screen nav mPolicy.hasNavigationBar() will always return false because a new PhoneWindowManager was created just for this one method but the new PhoneWindowManager instance does not load the the boolean from resources that define whether the device has on screen navigation bar.  This patch removes the unnecessary instance of a WindowManager and simply loads in the boolean when constructed.
+62011b5 Revert "base: hide qs tiles with sensitive data"
+e4c4a48 Revert "Fix the layout of the 5 navrings"
 fe2f5b3 Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg
 b92be67 Move "modern" custom header images to nodpi for ALL densities usage
 80a1e74 Move poly hd custom header images to nodpi for ALL densities usage
@@ -24,22 +412,12 @@ d34669d ResourcesManager: fix lookups with ThemeConfig
 58fe799 Resources: cache themed resources
 5cdac41 On-the-go : Improve quick settings dialog
 9c41337 LS: Add option for showing unlock screen directly (1/2) - PS18 FINAL
-071cda9 SystemUI: Add option for "modern" custom headers (1/2)
-6805adc SystemUI: Add PAC's revamped contextual notification header images
 
    * frameworks/opt/net/wifi/
 0e8f1ea Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
-8e8cc01 Merge "Wifi: add "turn wifi off" action to open network notification" into cm-12.1
 
    * packages/apps/Browser/
 e4a8f74 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
-99dd14b Browser: add DuckDuckGo search engine to ES locale
-
-   * packages/apps/Contacts/
-f1aa759 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/ContactsCommon/
-4860f68 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
 
    * packages/apps/InCallUI/
 3663120 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
@@ -47,9 +425,11 @@ f1aa759 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
 0d28e17 Fix: Have no incomingCall notification.
 
    * packages/apps/Settings/
+acdf5e5 Settings : Save instance state for app group deletes
+5ca6cd9 Settings : Remove duplicate ProtectedApps definition
+c19a152 Settings : Fix blacklist delete number crash
+090c6c2 Revert "settings: hide qs tiles with sensitive data"
 c02142d Build V17.2
-ed1bcc0 Settings: Add option for "modern" custom headers (2/2)
-7a47e0c Settings: Custom header switch On-The-Fly
 
    * packages/apps/SetupWizard/
 fb51449 SetupWizard: Tweak logic for showing/hiding sim missing page
@@ -63,11 +443,55 @@ a4b38aa Fix Thai numeric row button widths
 
    * vendor/cm/
 a963c9a Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+====================
+     09-23-2015
+====================
+
+
+   * external/bluetooth/bluedroid/
+e0ba0df Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+
+   * frameworks/av/
+d8e5f5d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+071cda9 SystemUI: Add option for "modern" custom headers (1/2)
+6805adc SystemUI: Add PAC's revamped contextual notification header images
+f9534f9 Fix the layout of the 5 navrings
+09ad53f SysUI: Clean up objects when recreating statusbar
+c38b48a SystemUI: don't recreate zen controller, handler thread
+39aa8e8 SystemUi: Don't show cellular data tile on secondary users.
+838c38b SystemUI: improve circle battery
+373c22b Revert "SettingsProvider: change default battery style to portrait"
+e2f47ea SystemUI: set fingerprint auth properly after occluded change
+dd79a8a SystemUI: fix crypt keeper race condition
+170856d core: Fix Wi-Fi string
+
+   * frameworks/opt/net/wifi/
+8e8cc01 Merge "Wifi: add "turn wifi off" action to open network notification" into cm-12.1
+
+   * packages/apps/Browser/
+99dd14b Browser: add DuckDuckGo search engine to ES locale
+
+   * packages/apps/Contacts/
+f1aa759 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/ContactsCommon/
+4860f68 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+
+   * packages/apps/Settings/
+ed1bcc0 Settings: Add option for "modern" custom headers (2/2)
+7a47e0c Settings: Custom header switch On-The-Fly
+
+   * vendor/cm/
 5318973 apns: combine internet and mms apns for vzw
 be9a7f9 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+6884792 sepolicy: Allow system app to set boot anim property
 
    * vendor/cmsdk/
 16ee73a Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+e2daff9 CMSettingsProvider: Remove attempts at closing sqlite db
 
 ====================
      09-22-2015
@@ -82,18 +506,15 @@ cd9e008 Bluetooth: Unlock mutex before destroying the BTIF task
 6d3030c JAVA: Update metadata for ID to include 12 digits for possible numbers
 
    * frameworks/base/
-f9534f9 Fix the layout of the 5 navrings
-09ad53f SysUI: Clean up objects when recreating statusbar
-c38b48a SystemUI: don't recreate zen controller, handler thread
-39aa8e8 SystemUi: Don't show cellular data tile on secondary users.
-838c38b SystemUI: improve circle battery
-373c22b Revert "SettingsProvider: change default battery style to portrait"
-e2f47ea SystemUI: set fingerprint auth properly after occluded change
-dd79a8a SystemUI: fix crypt keeper race condition
-170856d core: Fix Wi-Fi string
+f1c61fb SystemUI: Add option for new poly hd custom headers (1/2)
+1d65c50 SystemUI: Add new HD poly effect contextual header images
 
    * frameworks/native/
 562036e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+b5f98d7 Set explicit ioprio where required
+
+   * hardware/qcom/display-caf/msm8960/
+6d8eb85 hwc: Set ioprio for vsync thread
 
    * packages/apps/Contacts/
 4cf2e2c Contacts: Add contact lookup with attribution to quick contacts
@@ -107,202 +528,10 @@ bcc1871 Build V17.1
 
    * system/core/
 2bef741 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+8df64c7 cutils: Remove ioprio magic
 
    * vendor/cm/
-6884792 sepolicy: Allow system app to set boot anim property
 da7d187 APN: add Sprint MVNO Ringplus, Ting update
 05e9e93 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-e2daff9 CMSettingsProvider: Remove attempts at closing sqlite db
-
-====================
-     09-21-2015
-====================
-
-
-   * art/
-624f867 art: Fix whitespace errors added by caf
-
-   * device/qcom/sepolicy/
-0e7a34a Revert "SEPolicy : Added policy for oma drm"
-4cf68fa SEPolicy : Added policy for oma drm
-
-   * frameworks/base/
-f1c61fb SystemUI: Add option for new poly hd custom headers (1/2)
-1d65c50 SystemUI: Add new HD poly effect contextual header images
-da6aa74 DocumentsUI: Move & improve CAF string
-3958d70 Carrier Label: Remove fixed size/color.
-adbd20c rework carrier label 2/2
-c24e692 Revert "Navigationbar: Add just one more button"
-cc82831 Revert "Add missing android:scaleType="centerInside for some buttons in landscape and portrait navbar and avoid big button"
-ec99d36 IMS: revert: ims: More backwards-compatibility stuff
-82d75f3 Add call log types definition for Ims call.
-e592072 Ims: Add support to query Packet Count and Packet Error Count
-bdb4153 Add support for wifi calling settings
-25fcc85 IMS: During CS retry, propagate reason code to UI
-de06c76 IMS: add ImsConfig api to get volte provisioned value.
-416fc4d IMS: change getMasterValue to getProvisionedValue.
-2e35904 IMS: Add interface to query call forward for specific service class.
-efda2e3 Revert "ims: Bring in line with current release"
-9989530 Add missing android:scaleType="centerInside for some buttons in landscape and portrait navbar and avoid big button
-a5eb6ef Navigationbar: Add just one more button
-b64f2b0 NavigationBarView: Update description hiding power button on IME display
-
-   * frameworks/native/
-b5f98d7 Set explicit ioprio where required
-f9ccee0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-f12bd0c input: Adjust priority
-
-   * frameworks/opt/net/ims/
-48a7438 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_ims into cm-12.1
-
-   * frameworks/opt/telephony/
-85c4fa5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-8c34198 IMS: During CS retry, propagate reason code to UI
-e8cceac Revert "IMS phone instantiation: add polling on base phone creation"
-5003df2 IMS: Fix CF icon issue when enable from UI.
-b972ca1 IMS: Fix ConcurrentModification exception during SRVCC.
-305df78 IMS: Propagating MMI error string to UI
-33d4741 Fix the issue that Volte call is not cleaned up properly from telephony framework when call failure is notified through dial command response.
-a579503 IMS: Ims Registration error codes support
-31ac4e2 IMS: add the api to get IMS registration information.
-d2727fc IMS: Add support for sending ADD_PARTICIPANTS response to apps.
-5c51019 Notify ServiceState for IMS registration
-d921af2 IMS: Turn on radio during wifi scenario
-e4e5824 Ims: Enable IMS feature in multi-sim
-c865900 Revert "telephony: Bring IMS in line with current relese"
-
-   * hardware/qcom/display-caf/msm8916/
-7313236 hwc: Set ioprio for vsync thread
-
-   * hardware/qcom/display-caf/msm8960/
-6d8eb85 hwc: Set ioprio for vsync thread
-
-   * hardware/qcom/display-caf/msm8974/
-2ca9c7a hwc: Set ioprio for vsync thread
-
-   * hardware/qcom/display-caf/msm8994/
-0088877 hwc: Set ioprio for vsync thread
-
-   * packages/apps/Gallery2/
-40a304a Move & improve CAF strings
-
-   * packages/apps/Settings/
-553c50a rework carrier label 2/1
-
-   * packages/services/Telecomm/
-5524042 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * packages/services/Telephony/
-44c1c0d Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-b7e3641 Move & improve Wi-Fi call settings strings
-7b191aa Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-ee6225f IMS: Allow dial with empty URI List.
-2c2eb43 IMS: Fix crash during midcall disabled multicall SRVCC.
-62f16af IMS: Allow add participant with normal IMS call.
-8d2d16b IMS: Turn on radio during wifi scenario
-8524741 IMS: Update conferenceHostConnection state for a conference call
-ba90b47 Revert "Ims: Update conferenceHostConnection state for a conference call"
-5468475 MSIM IMS: convert to phone ID based selection.
-14c4ce8 IMS Conference notifyConferenceStarted API
-70144a4 Add support for Wifi calling settings UI
-37f3ebb Ims: UI changes for Packet Count and Packet Error Count
-
-   * system/core/
-8df64c7 cutils: Remove ioprio magic
-8c1146a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-3328ca3 cutils: Clean up ioprio grouping
-2769675 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-a642430 cutils: Fix display ioprio
-
-   * vendor/cm/
 b61b6df cm: Clean up cgroups even more!
-8ecd8e8 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-dcbf2aa cm: Clean up cgroups
-eaf56ac Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-e2f23f0 cm: Fix a few denials
-
-   * vendor/cmsdk/
-337205e Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-806a91e packages: Remove CMResolver
-
-====================
-     09-20-2015
-====================
-
-
-   * device/qcom/sepolicy/
-10ac2c3 seandroid: imscm needs to communicate with apps
-5270bef Sepoilcy : add new file for CSVT specific policies
-1c200f0 Seandroid: Allow dumpsys to work from adb shell
-cd60a25 sepolicy: policy for imscm to app binder call
-
-   * frameworks/base/
-03201bb Revert "Reduce risk of memory corruption due to finalization."
-1de9cd6 SystemUI: screenshot: set a boost hint when taking a screenshot
-97cdb8e SystemUI: statusbar: some smaller cleanups and NPE fixes
-457561d SystemUI: statusbar: cache and reuse power manager
-4482503 prevent unnecessary warning logs caused by View.toString()
-2b6fdef QS: Update visibility of items in Bluetooth/WiFi tiles
-50d854f Themes: Set composed icon scale to 1f default
-
-   * hardware/qcom/display-caf/msm8916/
-c115bfd qdutils: Fix misleading log message
-
-   * packages/apps/InCallUI/
-55eee6f darktheme: Fix text color visibility
-
-   * packages/apps/Settings/
-cbb56a3 Use Theme.SettingsBase for notification log
-
-   * packages/services/Telecomm/
-7f9cf3c Save Ims related call log after call disconnected.
-
-   * system/core/
-eea17c5 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-d666fed cutils: Fix copypasta in ioprio code
-
-   * vendor/cm/
-5d4b3bb Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-100cc8e cm: Remove xattr option from bfqio cgroup
-
-====================
-     09-19-2015
-====================
-
-
-   * frameworks/av/
-0819e22 Fix integer overflow in time conversion
-2cdeeb4 Fix integer overflow in time conversion
-
-   * frameworks/base/
-e794bda Default to Resolver Theme
-81e34d6 Revert "Revert "Fix Custom Resolver Theming""
-3aae6ac SettingsProvider: move Profile picker activity (1/2)
-2b7cd5e SystemUI: add missing super viewgroup method calls
-a19a78b Fix race condition in panel expansion handling.
-5ee289f Revert "Fix Custom Resolver Theming"
-e2db5a9 Revert "SystemUI: Add new HD poly effect contextual header images"
-31d9f28 base: fix window bounds for left hand navigationbar
-a5fca9f framework: add string for wifi subscription change notification
-
-   * frameworks/opt/net/wifi/
-1502fff Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
-
-   * hardware/qcom/display-caf/msm8960/
-d9816c5 display: Set thread priority using cutils
-
-   * packages/apps/Gallery2/
-704bff7 Gallery2 : Delete and Details options are not visible on Camera preview
-ea87a93 Gallery2 : Video share option is not working
-
-   * packages/apps/Profiles/
-aa39fbc Profiles: add profile picker Activity (2/2)
-
-   * vendor/cm/
-4462dfa cm: Update shared init.rc
-d2b085d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-d36909b Removes Empty String For Resolver
-c815f70 cm: Set IOPS mode for CFQ and BFQ automatically
 
