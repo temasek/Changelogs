@@ -1,5 +1,223 @@
 ====================
+     10-03-2015
+====================
+
+
+   * device/samsung/hlte-common/
+5a26a9b hlte-common: Update interactive values
+
+   * device/samsung/qcom-common/
+7522278 Automatic translation import
+
+   * frameworks/base/
+3fbc1e4 SystemUI: remove extra space when brightness slider is disabled
+f6bbaed base: show again qs brightness mode toggle
+d2b0cd4 battery: Add fast charging UI support [3/3]
+aa191a0 2G Network doesn't connects always for some carriers
+a49f0f0 implement noise suppression for phone calls (1/2)
+f927eb5 Automatic translation import
+915c169 pm: Update PackageManagerSettingsTests.
+761f7e0 Check for externally installed apps if sdcard ejected
+2f6a7a6 SystemUI: bail out of recents-to-home animation when losing focus
+b47fd2e bootanim: Display SKU-specific variants if present
+7f2856f SettingsProvider: Load per SKU default theme.
+d7f49e3 pm: Create per-mcc prebundled install filter.
+c97f54c prebundled: Handle prebundled packages per-user.
+
+   * frameworks/native/
+54c16f4 native: Add fast charging UI support [1/3]
+
+   * kernel/samsung/hlte/
+55de6ff mm: vmpressure: account allocstalls only on higher pressures
+5b110bd mm: vmpressure: scale pressure based on reclaim context
+03790cf lowmemorykiller: avoid false adaptive LMK triggers
+52920e4 msm: mdss: Use generic data type for rect.
+
+   * packages/apps/AudioFX/
+b65b58e Automatic translation import
+
+   * packages/apps/CMFileManager/
+c4cb9fb Automatic translation import
+
+   * packages/apps/Calendar/
+2316d01 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
+662aff7 Automatic translation import
+
+   * packages/apps/Contacts/
+10a147c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+a37434b Automatic translation import
+
+   * packages/apps/ContactsCommon/
+97dcb57 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+bd72aa6 Automatic translation import
+
+   * packages/apps/DeskClock/
+517b62d Automatic translation import
+
+   * packages/apps/Dialer/
+e896380 Automatic translation import
+
+   * packages/apps/Eleven/
+38f0dcd Automatic translation import
+
+   * packages/apps/Gallery2/
+51ef6d9 Automatic translation import
+
+   * packages/apps/InCallUI/
+05f3630 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+2b3937d Automatic translation import
+
+   * packages/apps/LockClock/
+cf85872 Automatic translation import
+
+   * packages/apps/Mms/
+526dfed Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+829050c Automatic translation import
+3712de7 Fixed layout issues in Messaging quick reply popup
+
+   * packages/apps/Settings/
+b411cb6 Build V17.5
+721a315 Automatic translation import
+04cc494 Fix AOSP EL battery saver translation
+
+   * packages/apps/ThemeChooser/
+0f28f74 Automatic translation import
+
+   * packages/apps/Trebuchet/
+681ac55 Automatic translation import
+
+   * packages/apps/TvSettings/
+06c7e91 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+a41d75d Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+c0c1f53 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+b60a9b9 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+78ba6e7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+d64cb33 Automatic translation import
+
+   * packages/services/Telephony/
+11a1af5 Telephony: implement noise suppression for phone calls (2/2)
+bf34551 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+716526a Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+c911ca0 Automatic translation import
+
+   * system/core/
+b85267e healthd: Add fast charging UI support [2/3]
+
+   * system/vold/
+f149756 Vold : Send VolumeBadRemoval prior to attempting to unmount asec
+
+   * vendor/cm/
+5a84ee5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+17adbaa vendor: cm: contributors: Add maintainers for Motorola Moto G 4G 2014
+
+   * vendor/cmsdk/
+3863841 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+7f34720 Automatic translation import
+
+====================
+     10-02-2015
+====================
+
+
+   * build/
+cda8cfc build: Fix import build step.
+54ea0ed build: Make sure we're building our secondary resource package as dependency.
+e60e9f5 tools/device: Remove deprecated line gsm.mk no longer exist in vendor/cm
+
+   * device/samsung/hlte-common/
+fa61ab1 hlte-common: use CAF Power HAL instead of CM's
+
+   * frameworks/base/
+60d3694 On The Go: Fix and tint power menu icon
+1b7e9c5 Fix FileManager Interaction
+c4bacca Merge pull request #98 from ZdrowyGosciu/network
+cd6335d services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs
+
+   * packages/apps/CMFileManager/
+0420929 Adding a few MS MimeTypes
+
+   * packages/apps/Contacts/
+3803b89 Contacts: Use common contacts uri extra
+
+   * packages/apps/ContactsCommon/
+8db222e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+079067e ContactsCommon: Move contact uri extra to common location
+
+   * packages/apps/Settings/
+27f0de2 Increase max. fingerprint name length.
+122aeb1 ProfileSettings : Ensure brightness settings only apply on accept
+496fd60 APN: Clean up mvno filtering of apn list
+ed333ab Settings : Filter settings for secondary users
+97ec939 Settings : Don't show ringtone pref for non voice capable devices
+156f718 Settings : Fix profile action offset when changing orientation
+ad0d2ef Fingerprint: Clear error when enrollment finished
+
+   * packages/apps/Trebuchet/
+14a18d5 trebuchet: protect against npe
+9d8ee9e fix NPE when dragging icon to desktop, when QuickSearchBox is missing
+b1f28ea Trebuchet: Use hardware layer for fading app drawer
+
+   * vendor/cm/
+078ccc6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+5d2c998 Add libcore.net.MimeUtils Overrides
+
+   * vendor/cmsdk/
+3bee029 cmsdk: Update README.
+3b54f40 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+
+====================
      10-01-2015
+====================
+
+
+   * kernel/samsung/hlte/
+1f456ed Build v1.29
+
+   * packages/apps/CMFileManager/
+d28d148 Check If System Wants Intent
+
+   * packages/apps/Settings/
+fbe5804 Build V17.4
+be9552e Use Theme.SettingsBase for notification log
+0d4bd0f Revert "Use Theme.SettingsBase for notification log"
+
+   * packages/apps/SoundRecorder/
+9973e42 SoundRecorder: only primary storage volumes are writeable
+
+   * packages/apps/Trebuchet/
+b5f1c45 Trebuchet : Ensure search bar doesn't show in hidden
+1f9ba38 App Drawer: fix insets on paddingTop
+
+   * packages/providers/DownloadProvider/
+bac1c03 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+
+   * packages/providers/ThemesProvider/
+3a599d2 Use correct DialtactsActivity for DialerNext
+
+   * prebuilts/cmsdk/
+090c6d2 cmsdk: Update current for API level 2 release.
+11ccd84 cmsdk: Update api text for api level 2 and permissions for it.
+
+   * vendor/cm/
+0eb5e95 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+9568223 sepolicy: allow vold to trim persist
+
+   * vendor/cmsdk/
+10d2025 cmsdk: Update API text for constants changes.
+
+   * vendor/samsung/
+ef783a1 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     09-30-2015
 ====================
 
 
@@ -16,78 +234,17 @@ abfb0c4 hlte-common: Build ANT+ support
 d140173 hlte-common: Update interactive values
 47459f6 hlte-common: Disable hispeed_freq while screen is off
 
-   * frameworks/av/
-ee98978 Fix benign overflow in AudioTrack
-b178aab Fix benign overflow in ToneGenerator.cpp
-
    * frameworks/base/
-d6d5524 Disable default blending when drawing color rect
 2bf1dd4 SystemUI: fix switching from task manager to detailed view
 43613f6 QS: long press flashlight tile for detail view
 4bf0d31 QS: long press expanded desktop tile for detail view
 9bd9ff3 pm: Fix PackageManagerTests for testGetKeySetByAlias.
 8d40bbb Fixed Possible Resolver Infinite Loop
-
-   * kernel/samsung/hlte/
-1f456ed Build v1.29
-
-   * packages/apps/Dialer/
-354a8c0 Specify different colors for answered incoming call and outgoing call icons.
-
-   * packages/apps/Settings/
-fbe5804 Build V17.4
-be9552e Use Theme.SettingsBase for notification log
-0d4bd0f Revert "Use Theme.SettingsBase for notification log"
-
-   * packages/apps/SoundRecorder/
-9973e42 SoundRecorder: only primary storage volumes are writeable
-
-   * packages/apps/Trebuchet/
-b5f1c45 Trebuchet : Ensure search bar doesn't show in hidden
-1f9ba38 App Drawer: fix insets on paddingTop
-af15b41 Trebuchet : Update grid + cancel drag on searchablesChanged
-
-   * packages/providers/DownloadProvider/
-bac1c03 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
-8f264bb Fixed application/octet-stream to guess mimetype
-
-   * system/core/
-468c35c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-0eb5e95 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-9568223 sepolicy: allow vold to trim persist
-921da77 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-41c9873 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-
-   * vendor/samsung/
-ef783a1 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     09-30-2015
-====================
-
-
-   * bootable/recovery/
-5d5d9dc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
-
-   * external/f2fs-tools/
-d89bc85 mkfs.f2fs: trim using BLKSECDISCARD
-
-   * frameworks/base/
-8d40bbb Fixed Possible Resolver Infinite Loop
 77a592a SystemUI: Hide perf profile tile on devices without perf profiles
 23d02fb PowerManager: change performance profile when disabling battery saver
-c368690 Add System Property for Resolver
 
    * frameworks/opt/telephony/
 bd144f7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/asus/grouper/
-5ea68fb tcp_cubic: do not set epoch_start in the future
-a4c1195 tcp_cubic: better follow cubic curve after idle period
 
    * kernel/samsung/hlte/
 215f307 Revert "mdss: provide "early suspend" support for X governors"
@@ -129,18 +286,20 @@ b3f1e30 cpufreq: interactive: Don't reset sampling down factor at max freq
 6d801bd Reset interactive gov
 43c388c Remove all custom cpu govs
 
+   * packages/apps/Dialer/
+354a8c0 Specify different colors for answered incoming call and outgoing call icons.
+
    * packages/apps/Nfc/
 ccf0b12 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Nfc into cm-12.1
 
-   * packages/apps/Settings/
-be7b5b3 ProfileGroupConfig: Use CMSDK profile manager
-
    * packages/apps/Trebuchet/
+af15b41 Trebuchet : Update grid + cancel drag on searchablesChanged
 81275a6 Trebuchet : Update default workspace for cyngn dialer
 cdc6806 Trebuchet : Fix drawer inset & search visibility
 5c3653f Trebuchet: fix NPE when QuickSearchBox is missing
 
    * packages/providers/DownloadProvider/
+8f264bb Fixed application/octet-stream to guess mimetype
 04870c1 Fixed application/octet-stream to guess mimetype
 
    * packages/services/Telecomm/
@@ -152,13 +311,15 @@ c535eeb Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_package
 0bdd21e Telephony : Allow multiple default dialers
 
    * system/core/
-2750073 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+468c35c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 
    * vendor/cm/
+921da77 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 eb659fe VendorCm : Overlay additional dialers
 6f4802a vendor/cm: Bump API level for cmsdk.
 
    * vendor/cmsdk/
+41c9873 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
 0ba3889 cmdsk: rename thermal constants to reflect actual event semantics
 38e8b11 cmsdk: Create api level 3, cantaloupe.
 
@@ -172,6 +333,7 @@ eb659fe VendorCm : Overlay additional dialers
 
 
    * bootable/recovery/
+5d5d9dc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
 efe0bab Allow f2fs to reserve bytes for footer when formatting
 309bee9 Revert "Allow f2fs to reserve bytes for footer when formatting"
 
@@ -179,7 +341,11 @@ efe0bab Allow f2fs to reserve bytes for footer when formatting
 e78488f hlte-common: update to latest bluetooth firmware
 7fc70a2 hlte-common: add aDSP
 
+   * external/f2fs-tools/
+d89bc85 mkfs.f2fs: trim using BLKSECDISCARD
+
    * frameworks/base/
+c368690 Add System Property for Resolver
 1ee6a25 Shorten first boot time by filtering dexopted apps by LRU.
 97969b0 base: cache power profiles support
 9d68c90 Disable Lockscreen Media Art [1/2]
@@ -192,161 +358,23 @@ a68db3d Eliminate benign overflow condition triggered upon loop termination in I
    * hardware/qcom/audio-caf/msm8994/
 5ab05b6 hal: Use speakerphone mics for wired headphones
 
+   * kernel/asus/grouper/
+5ea68fb tcp_cubic: do not set epoch_start in the future
+a4c1195 tcp_cubic: better follow cubic curve after idle period
+
    * kernel/samsung/hlte/
 076a1d5 tcp_cubic: do not set epoch_start in the future
 
    * packages/apps/Settings/
+be7b5b3 ProfileGroupConfig: Use CMSDK profile manager
 c325565 Disable Lockscreen Media Art [2/2]
 
    * packages/apps/Trebuchet/
 e4a62ee Trebuchet : Fix insets for panels
-76a7d9c Import translations. DO NOT MERGE
-3b6f99d Import translations. DO NOT MERGE
-6f17b35 Fix Android.mk.
-3100d7b Update protobuf library from 2.3 to 2.6.
-357bd88 Move from host-libprotobuf-java-2.3.0-nano to current version
-f77e137 fix build
-a0f1532 Import translations. DO NOT MERGE
-4acad05 Avoid db exception on L and above
-b6564f6 Import translations. DO NOT MERGE
-4aea5e6 Fixing wrong package check when adding shortcuts
-45f5f45 Ensure that FirstFrameAnimatorHelper doesn't set play time when animation is complete
-6238f10 Ignoring specific db exception to workaround Bug. 18554839.
-12170d8 Don't try to create an app state instance during restore.
-b3266e9 Import translations. DO NOT MERGE
-75942b1 Disabling auto addition of managed profile shortcuts
-9638173 Updating default page indicator asset
-918dcfa Fix a couple regressions from resetting AppsCustomizeTabHost
-2fa2db1 Prevent multiple workspace state animators from being started
-28d42e8 Clearing DB before restore starts.
-2bf24b3 Add callback which got missed in refactor
-56f2f81 Import translations. DO NOT MERGE
-76c81b4 Adding a few null checks.   1) During migration, if launcher2 has deleted user data, migration oes not happen   2) If Launcher3 does not has bind widget permission, QSB would be null.
-e05f05d Fixing NullPointer Exception when user is deleted.
-29ad445 Adding shortcuts corresponding to ManagedUsers automatically.
-ad5c6a5 Removing some duplicate methods
-5b54994 Using the default search widget in Launcher3
-4ca61d1 Removing InstallWidgetReceiver related obsolete code.
-a5d798f Updating page indicator assets
-ea0d7a7 Clearing some android list errors/warnings.
-6805e05 Overlay shouldn't show up above Intro screen
-0b5f4e2 Adding a couple memory optimizations to Launcher
-7dfa473 Moving methods which update internal sets on a separate thread
-8c381f0 Failing restore, if we have an item outside screen bounds
-b1c299b Fixing insets of launcher clings
-5b2b779 Make sure DragLayer layout params are of the correct type
-8d43f06 Updating backup restore logic
-78e301e Loading internal default layout if partner layout fails to load
-cd9a2d8 Import translations. DO NOT MERGE
-42bdeee Fix edge case where LauncherOverlay scroll woudln't be reset
-bb2619a Add InsettableFrameLayout layout params to easily ignore insets
-a853e39 Tweaking close AllApps / Widgets on KK and below
-1517149 Was seeing some duplicated icons in the migration flow
-bf18c37 Allow LauncherOverlay to access and manage insets
-e8e3e71 Disabling restore for below L devices
-6cc6efb Some resource fixes for drop target
-e95e818 Removing landscape string overrides
-fba09de Refactoring LauncherBackupHelper.java
-3eb0635 First pass of the Launcher Overlay interface / impl
 
    * system/core/
+2750073 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 3da1a8e fastboot: format f2fs partition instead of just erase
 78041c0 fs_mgr: When formating f2fs volumes, respect the length parameter
 ae52f27 init.rc: drop world writable on cgroups to pass cts
-
-====================
-     09-28-2015
-====================
-
-
-   * android/
-63e3f7e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-d05662a cm: Add repositories for additional Netfilter features
-
-   * device/samsung/qcom-common/
-2ff8617 recovery/root: Add msm8916 postrecoveryboot support
-
-   * frameworks/base/
-c23b69a Revert "Fix issue where non-themable app still had themed fonts"
-7115425 Revert "Revert "Revert "Themes: Don't use themed fonts for non themable packages"""
-eeb4bd2 Tether: add ipa tether stats to the existing design
-4ef8c7b SystemUI: Add missing accessibility message for volume panel QS tile
-f33ec47 [1/2] base: network activity indicators
-
-   * frameworks/opt/telephony/
-57f73f9 DcTracker: Don't crash if its NULL
-
-   * kernel/samsung/hlte/
-d3a57d1 tcp_cubic: better follow cubic curve after idle period
-
-   * packages/apps/Settings/
-29fb594 [2/2] Settings: network activity indicators
-56bafb5 Add options for 60/120 mins screen off timeout
-
-   * packages/apps/Trebuchet/
-e44e715 Import translations. DO NOT MERGE
-fd9e76f Removing AccessibleTabView and some other dead code.
-dae5ef8 Import translations. DO NOT MERGE
-d007514 Refactoring layout parsing code
-da9ade7 Removing all traces of Market button and TabIndicator
-a4a62d4 Adding ability to list folder items in separate file
-869da3e Fixing some IconCache methods not  thread safe
-60d6078 Deleting workspace items from db which have an invalid placement
-dc81d70 Not opening all apps again when AppInfo or Uninstall is selected
-4e4f8a7 Showing widgets in a disabled state, when running in safe mode
-19379be Add more Launcher files to delete on Clear Launcher Data
-3637cce Updating ItemInfo objects in the worker thread
-b5f2e0a Removing some dead code
-bedfa5e Keeping icons in disabled state when SD-card is unmounted
-6d5f975 Revert "Show apps as unavailable when on unmounted storage"
-7d02088 Using DeviceDefault theme for Launcher and WallpaperPicker
-af0d948 Updating the wallpaperpicker thumb selection feedback
-88699b6 Updating icons for sortcuts when the target app updates.
-19b63da Cleaning up icon resizing code
-a8f7b6a Create a central list of files the Launcher writes to the app directory
-0e6e432 Use LauncherCallbacks model instead of method overrides
-8167115 Import translations. DO NOT MERGE
-6cc089e Adding NPE check in InstallShortcutReceiver
-89f3bb8 Moving the focus indicator instantly to the target position, instead of begining the next animation from the middle.
-
-   * system/core/
-2794abf Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/samsung/
-e4894c6 trlte-common: add libmysound.so
-9d716b6 hlte-common: update bluetooth and add aDSP
-
-====================
-     09-27-2015
-====================
-
-
-   * bootable/recovery/
-7273770 minui: support to pan display (FBIOPAN_DISPLAY)
-
-   * frameworks/base/
-b1fcc65 Merge pull request #97 from Pixelase/cm-12.1
-b9e7e50 SysUI: RU translations - some missed strings
-61b7a16 SystemUI: Update RU translations
-8cc5854 Core: Update RU Translations
-
-   * frameworks/opt/telephony/
-cdafcb6 Don't assume all APN changes require cleanup
-
-   * packages/apps/Contacts/
-9f27f42 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/ContactsCommon/
-b78eab9 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-ed6b447 ContactsCommon: Don't pass contact id in ContactBuilder
-
-   * packages/apps/Settings/
-34dad0e Merge pull request #337 from Pixelase/cm-12.1
-ef3c57d Settings: Update RU translations
-
-   * packages/apps/SetupWizard/
-27f0a39 Automatic translation import
-
-   * vendor/cm/
-d2695d5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
