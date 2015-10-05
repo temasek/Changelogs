@@ -1,4 +1,83 @@
 ====================
+     10-05-2015
+====================
+
+
+   * frameworks/base/
+124ff51 Revert "NotificationTile: Ring ring my bell"
+ed4a99b Revert "base: Fix notification sounds for wifi only devices"
+e479bd1 Revert "Revert "SystemUi: Prioritize call notifications which interrupt.""
+6345498 Don't unregister Fonts from renderer at destruction
+51e3a6a Revert "2G Network doesn't connects always for some carriers"
+c86d7e9 Revert "battery: Add fast charging UI support [3/3]"
+
+   * frameworks/native/
+af85271 Revert "native: Add fast charging UI support [1/3]"
+
+   * hardware/qcom/audio-caf/msm8994/
+8660f35 hal: Use front mic when in headphone voice call
+1cad787 Revert "hal: Use speakerphone mics for wired headphones"
+
+   * kernel/samsung/hlte/
+6e4b303 Build v1.30
+25c716b custom cpufreq: Move get_cpu_idle_time() to cpufreq.c
+afc1379 cpufreq: Remove alucard & arteractive cpu gov
+
+   * packages/apps/OTAUpdates/
+a83e6f2 Verion 2.5.2
+04e848e Download location fix
+
+   * packages/apps/Settings/
+a38ce92 Revert "Fix inconsistent battery stats icons"
+dfe6c9e Build V17.6
+6217e3d Fix inconsistent battery stats icons
+de6892f Settings: Fix RuntimeException in InputMethod Settings
+ca8a662 Settings: Fix NPE in PowerMenuActions
+19eb9b5 wifi: Add a filter
+1a91a31 settings: fuelgauge: Always show screen on time
+9296e4a Settings: Remove leftovers & fix build for heads up (2/2)
+
+   * system/core/
+229407e Revert "healthd: Add fast charging UI support [2/3]"
+
+   * vendor/samsung/
+48b2257 hlte-common: latest wifi blobs
+
+====================
+     10-04-2015
+====================
+
+
+   * device/qcom/sepolicy/
+2e72ded sepolicy : Add policy for ipa dev access
+62464d7 sepolicy: Add selinux policy for ipa file read
+98840e7 Sepolicy: allow ipacm to be in net group
+
+   * frameworks/base/
+7177b7e Frameworks: Remove leftovers & fix build for heads up (1/2)
+581e35b Framework: StatusBar Ticker (1/2)
+5996f79 Revert "Framework: StatusBar Ticker (1/2)"
+
+   * kernel/samsung/hlte/
+7176a0c Revert "Remove all custom cpu govs"
+b5653e1 Revert "defconfig: Remove all custom cpu govs"
+
+   * packages/apps/Dialer/
+99fbcf0 [2/2] Telephony: Non-intrusive InCall UI switch Change-Id: I545121334ffb2925a05a8c7685b84bb5df37c205
+
+   * packages/apps/Settings/
+6fce0db HeadsUp: change timeout and snooze options to SeekBarPreferences Change-Id: I51ff5bc7197d0f6f695a7081734c678fbcea58d3
+d618d36 [1/2] SlimHeadsUp: Add a global 3-way switch disabled : will disable all headsup perapp: notifications are shown as headsup per app (current behaviour) forced : will force all notifications to be shown as headsup
+3d14d75 Added SystemUI to notification app list.
+da8ff70 Settings: add headsup manifest permission Change-Id: I26f1a086c73030183488b563a31b60f43e028f69
+68c75aa Settings: Slim heads up customizations for LP (2/2) Basically it follows the same idea like we had on SlimKat....see here SlimRoms/frameworks_base@323ed77
+bb27387 Settings: Update Statusbar ticker
+2c59e21 [SQUASHED] Remove existing HEADS UP
+
+   * packages/apps/SetupWizard/
+cd39c91 Bring up local changes
+
+====================
      10-03-2015
 ====================
 
@@ -10,6 +89,32 @@
 7522278 Automatic translation import
 
    * frameworks/base/
+3ea1f78 Revert "SystemUI: add HeadsUp button in status bar header (1/2)"
+5d65983 Revert "StatusBarHeader: update headsup button onclick"
+8bb5450 Revert "QS: Clean up heads up tile (1/2)"
+05fdf8a Revert "Fix Heads-up tile transparency in off state"
+ea457ba [1/2] Non-intrusive InCall UI switch
+3b9f9fc SystemUI: better choice for heads up snooze icon
+9794a6b [2/2] SlimHeadsUp: Add a global 3-way switch
+b0f8068 SystemUI: fix heads up snooze button
+8327f7e Fixed non-intrusive incoming call.
+b6e7c62 Heads up notifications behavior fix
+ea26030 Frameworks: Be sure heads up view is attached before removing it
+46a3435 Frameworks: Only set package name on user heads ups
+b7e92cc Frameworks: Slim heads up customizations for LP (1/2)
+7ce1272 Frameworks: Actually start to use HEADS_UP_REQUESTED extra
+991cd8c Revert "SystemUi: Prioritize call notifications which interrupt."
+349a296 Revert "Base: HeadsUp options [1/2]"
+5275816 Revert "[Heads up] Add touch outside event"
+7771514 Revert "[Heads up] Touch outside to hide (1/2)"
+aa653b3 Revert "[Heads up] Don't show heads up while IME is showing"
+284ae03 Revert "HeadsUpNotificationView: Remove mExpandHelper"
+8bf3fc1 Revert "Improve HeadsUp [1/2]"
+d20cce0 Revert "Base: HeadsUp snooze function [1/2]"
+aacb535 Revert "[Heads up] get back with expand status bar when we swipe down from top and heads up"
+3f0b944 Revert "Don't dismiss notification if expanding status bar from top of heads up"
+8e7968b Revert "HeadsUp: only snooze when swiping up"
+f69f220 Revert "[1/2] Base: option to launch heads up in floating mode."
 3fbc1e4 SystemUI: remove extra space when brightness slider is disabled
 f6bbaed base: show again qs brightness mode toggle
 d2b0cd4 battery: Add fast charging UI support [3/3]
@@ -215,166 +320,4 @@ bac1c03 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_provid
 
    * vendor/samsung/
 ef783a1 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     09-30-2015
-====================
-
-
-   * art/
-4768c54 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_art into cm-12.1
-
-   * build/
-8076341 repopick: support    *s which get checked out multiple times
-ecddbd0 repopick: Update script with some fixes
-
-   * device/samsung/hlte-common/
-28fd170 hlte-common: add "charging" option
-abfb0c4 hlte-common: Build ANT+ support
-d140173 hlte-common: Update interactive values
-47459f6 hlte-common: Disable hispeed_freq while screen is off
-
-   * frameworks/base/
-2bf1dd4 SystemUI: fix switching from task manager to detailed view
-43613f6 QS: long press flashlight tile for detail view
-4bf0d31 QS: long press expanded desktop tile for detail view
-9bd9ff3 pm: Fix PackageManagerTests for testGetKeySetByAlias.
-8d40bbb Fixed Possible Resolver Infinite Loop
-77a592a SystemUI: Hide perf profile tile on devices without perf profiles
-23d02fb PowerManager: change performance profile when disabling battery saver
-
-   * frameworks/opt/telephony/
-bd144f7 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/samsung/hlte/
-215f307 Revert "mdss: provide "early suspend" support for X governors"
-f334a6f defconfig: Remove alucard & msm hotplug
-9bf4188 Remove custom hotplugs - alucard & msm hotplug
-2d5f73f defconfig: Remove all custom cpu govs
-708d860 cpufreq: interactive: Do not reschedule timer if policy->max changes
-15f1374 cpufreq: interactive:call __cpufreq_driver_target() for cur frequency
-4c892fa cpufreq: interactive: don't skip waking up speedchange_task if target_freq > policy->cur
-0d7c712 cpufreq: interactive: prevents the frequency to directly raise above the hispeed_freq from a lower frequency.
-0f3648e cpufreq: interactive: Replace strict_strtoul with kstrtoul
-1a49823 cpufreq: interactive: Reschedule timer if min_freq is reduced
-a2dbe73 CHROMIUM: cpufreq: interactive: calculate load before freq change
-a37c691 cpufreq: interactive: Rearm governor timer at max freq
-68272ed CHROMIUM: Replace obsolete strict_strtoul calls.
-7f9b721 CHROMIUM: cpufreq: interactive: free above_hispeed_delay on exit
-1fd5280 CHROMIUM: cpufreq: interactive: validate above_hispeed_delay
-0b2c6ad cpufreq: interactive: Honor boosted state in several timer calculations
-70e85c8 cpufreq: interactive: Consider changed min limit a frequency boost
-a633c74 cpufreq: interactive: Honor changed minimum frequency
-6902ddd cpufreq: interactive: Record hispeed_validated_time in timer function
-45ff7f1 cpufreq: interactive: Exercise hispeed settings at a policy level
-8da3042 cpufreq: interactive: Make window alignment optional
-5891e9b cpufreq: interactive: Add max_freq_hysteresis feature
-a10ad5b cpufreq: interactive: Use del_timer/add_timer_on to rearm timers
-0933814 cpufreq: interactive: Round up timer_rate to match jiffy
-ab659ae cpufreq: interactive: Reset last evaluated jiffy in idle callback
-7803eb63 cpufreq: interactive: Align timer windows for all CPUs
-b4ff226 cpufreq: interactive: Squashed cleanup patches
-eb2ee27 soc: qcom: rq_stats: Pass correct cpu id to update_average_load function
-777096b cpufreq: Move get_cpu_idle_time() to cpufreq.c
-cb2f988 Revert "soc: qcom: rq_stats: remove the redundant iowait check"
-81504d5 Revert "msm: rq_stats: Use u64 for variables, arguments and return vals"
-43a457d Revert "soc: qcom: rq_stats: Always show idle time left"
-a9217ea cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards
-49e1238 cpufreq: interactive: Remove unnecessary cpu_online() check
-b3f1e30 cpufreq: interactive: Don't reset sampling down factor at max freq
-50d8ce7 cpufreq: Sync on thread migration optimizations
-6d801bd Reset interactive gov
-43c388c Remove all custom cpu govs
-
-   * packages/apps/Dialer/
-354a8c0 Specify different colors for answered incoming call and outgoing call icons.
-
-   * packages/apps/Nfc/
-ccf0b12 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Nfc into cm-12.1
-
-   * packages/apps/Trebuchet/
-af15b41 Trebuchet : Update grid + cancel drag on searchablesChanged
-81275a6 Trebuchet : Update default workspace for cyngn dialer
-cdc6806 Trebuchet : Fix drawer inset & search visibility
-5c3653f Trebuchet: fix NPE when QuickSearchBox is missing
-
-   * packages/providers/DownloadProvider/
-8f264bb Fixed application/octet-stream to guess mimetype
-04870c1 Fixed application/octet-stream to guess mimetype
-
-   * packages/services/Telecomm/
-b048a1d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-15d94d6 Telecomm : Allow multiple default dialers
-
-   * packages/services/Telephony/
-c535eeb Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-0bdd21e Telephony : Allow multiple default dialers
-
-   * system/core/
-468c35c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-921da77 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-eb659fe VendorCm : Overlay additional dialers
-6f4802a vendor/cm: Bump API level for cmsdk.
-
-   * vendor/cmsdk/
-41c9873 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-0ba3889 cmdsk: rename thermal constants to reflect actual event semantics
-38e8b11 cmsdk: Create api level 3, cantaloupe.
-
-   * vendor/samsung/
-3be3a0d Merge pull request #656 from christer12/cm-12.1
-0a3b3c3 Merge pull request #657 from gekkehenkie11/cm-12.1
-
-====================
-     09-29-2015
-====================
-
-
-   * bootable/recovery/
-5d5d9dc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
-efe0bab Allow f2fs to reserve bytes for footer when formatting
-309bee9 Revert "Allow f2fs to reserve bytes for footer when formatting"
-
-   * device/samsung/hlte-common/
-e78488f hlte-common: update to latest bluetooth firmware
-7fc70a2 hlte-common: add aDSP
-
-   * external/f2fs-tools/
-d89bc85 mkfs.f2fs: trim using BLKSECDISCARD
-
-   * frameworks/base/
-c368690 Add System Property for Resolver
-1ee6a25 Shorten first boot time by filtering dexopted apps by LRU.
-97969b0 base: cache power profiles support
-9d68c90 Disable Lockscreen Media Art [1/2]
-
-   * frameworks/native/
-fef4ab3 Eliminate multiple benign overflow conditions.
-a68db3d Eliminate benign overflow condition triggered upon loop termination in Input.cpp
-642459c Enable multiple benign overflow conditions.
-
-   * hardware/qcom/audio-caf/msm8994/
-5ab05b6 hal: Use speakerphone mics for wired headphones
-
-   * kernel/asus/grouper/
-5ea68fb tcp_cubic: do not set epoch_start in the future
-a4c1195 tcp_cubic: better follow cubic curve after idle period
-
-   * kernel/samsung/hlte/
-076a1d5 tcp_cubic: do not set epoch_start in the future
-
-   * packages/apps/Settings/
-be7b5b3 ProfileGroupConfig: Use CMSDK profile manager
-c325565 Disable Lockscreen Media Art [2/2]
-
-   * packages/apps/Trebuchet/
-e4a62ee Trebuchet : Fix insets for panels
-
-   * system/core/
-2750073 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-3da1a8e fastboot: format f2fs partition instead of just erase
-78041c0 fs_mgr: When formating f2fs volumes, respect the length parameter
-ae52f27 init.rc: drop world writable on cgroups to pass cts
 
