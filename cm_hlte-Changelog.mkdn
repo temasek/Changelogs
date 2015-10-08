@@ -1,7 +1,133 @@
 ====================
-     10-05-2015
+     10-08-2015
 ====================
 
+
+   * device/samsung/hlte-common/
+310360a Use hardware crypto accelerator for ODE
+
+   * frameworks/base/
+55f934c [1/2] Base: option to launch heads up in floating mode.
+64897a2 Revert "Fix text color on darktheme"
+c682991 IndexOutOfBoundsException on addPreference in PreferenceGroup
+6773d0b Reset the setOnKeyListener callback when view is destroyed
+501b84d Text size for empty view shall be styled according to theme
+b45baf2 Remove hard-coded DrawSelectorOnTop on ListFragment's default ListView.
+aee4017 Frameworks/base: Fix AdapterViewAnimator.createOrReuseLayoutParams
+92bfc69 Disable default blending when drawing color rect
+83a727f core: Fix AOSP ES typo
+d23a7ba audio: Add overlay to fix analog docks.
+82a3d89 Add Dock USB Audio Support for Samsung Car / Desk Docks
+8db7d93 AudioService: allow volume control on analog dock
+28f4c88 Live lock screen support [1/2]
+fa22407 Keyguard: Third party keyguard support
+4bad24a Add config to show WiFi/data activity indicators
+
+   * hardware/libhardware/
+8d0ec05 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_hardware_libhardware into cm-12.1
+
+   * packages/apps/Settings/
+e0958ae Build V17.7
+c033527 [2/2] Settings: option to launch heads up in floating mode
+
+   * vendor/cm/
+ab649d4 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+91bf290 Overlay to set up the voicemail number on MEO
+ce7b570 Overlays to set up the voicemail number on O2
+
+====================
+     10-07-2015
+====================
+
+
+   * android/
+3c0999a Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+7c031d6 Update Android tag
+
+   * build/
+06d47f7 Set the Security Patch level with Oct 1 for LP
+6b83436 Fix issie #23116383: Include security patch level in Settings
+9e34615 Merge tag 'android-5.1.1_r24' into cm-12.1
+
+   * external/skia/
+bf3d550 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_skia into cm-12.1
+
+   * frameworks/av/
+21efd7b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+9299d5d Revert "camera: Fix inclusion of CameraParametersExtra.h"
+057f8fb Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+41ddbd5 Fix issue #23116383: Include security patch level in Settings
+ebc738a Merge tag 'android-5.1.1_r23' into cm-12.1
+0920265 Allow debugging only for apps forked from zygote
+df8473d DO NOT MERGE. Truncate and ellipsize app name if too long for dialog.
+533c543 Add back observer
+
+   * frameworks/opt/telephony/
+88ace3c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+770d39c Merge tag 'android-5.1.1_r24' into cm-12.1
+
+   * hardware/libhardware/
+b3e51b1 remote_submix: Fix resampler and channel conversion
+
+   * packages/apps/Bluetooth/
+0ef787a Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Email/
+af25454 email: fix empty body update
+
+   * packages/apps/OTAUpdates/
+fb54401 Catch BadTokenException
+
+   * packages/apps/Settings/
+f0cf1ac Present the security patch date in a human-friendly format
+6403764 Fix issue #23116383: Include security patch level in Settings
+
+   * packages/apps/SetupWizard/
+9e3cf5a Remove use of mCanceled
+
+   * packages/apps/TvSettings/
+60c53ed Add security patch level to about screen
+
+   * system/core/
+9ff36e8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+
+   * system/security/
+1d53757 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_security into cm-12.1
+
+   * vendor/cm/
+489270d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/cmsdk/
+ce2b629 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+
+====================
+     10-06-2015
+====================
+
+
+   * android/
+9918112 android-5.1.1_r18 -> android-5.1.1_r23
+
+   * cts/
+d80b181 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/flac/
+2d7da25 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/libvpx/
+0b30efb Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/skia/
+bb36b5b Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/sonivox/
+14291d9 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * frameworks/av/
+7d2e6be id3: Instead of aborting the parser on a zero-data frame, just skip that frame
+7758e3e Merge tag 'android-5.1.1_r23' into cm-12.1
 
    * frameworks/base/
 124ff51 Revert "NotificationTile: Ring ring my bell"
@@ -18,14 +144,11 @@ af85271 Revert "native: Add fast charging UI support [1/3]"
 8660f35 hal: Use front mic when in headphone voice call
 1cad787 Revert "hal: Use speakerphone mics for wired headphones"
 
-   * kernel/samsung/hlte/
-6e4b303 Build v1.30
-25c716b custom cpufreq: Move get_cpu_idle_time() to cpufreq.c
-afc1379 cpufreq: Remove alucard & arteractive cpu gov
+   * packages/apps/Bluetooth/
+6317083 Merge tag 'android-5.1.1_r23' into cm-12.1
 
-   * packages/apps/OTAUpdates/
-a83e6f2 Verion 2.5.2
-04e848e Download location fix
+   * packages/apps/CMFileManager/
+0e79150 Make MimeTypes Lowercase
 
    * packages/apps/Settings/
 a38ce92 Revert "Fix inconsistent battery stats icons"
@@ -35,30 +158,42 @@ de6892f Settings: Fix RuntimeException in InputMethod Settings
 ca8a662 Settings: Fix NPE in PowerMenuActions
 19eb9b5 wifi: Add a filter
 1a91a31 settings: fuelgauge: Always show screen on time
-9296e4a Settings: Remove leftovers & fix build for heads up (2/2)
+
+   * packages/apps/Trebuchet/
+b69f0ee Update default workspace
+
+   * packages/providers/ThemesProvider/
+6078ce8 Live lock screen support [2/2]
 
    * system/core/
+a406ccd Merge tag 'android-5.1.1_r23' into cm-12.1
 229407e Revert "healthd: Add fast charging UI support [2/3]"
+
+   * system/security/
+ec1e3a9 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * vendor/cm/
+b026605 sepolicy: Underp the context for persistent storage
+6576661 Fix MimeType Case
+
+   * vendor/cmsdk/
+c3cf12b CMSettings: Remove write check in query method and add values for heads up notification
 
    * vendor/samsung/
 48b2257 hlte-common: latest wifi blobs
 
 ====================
-     10-04-2015
+     10-05-2015
 ====================
 
 
-   * device/qcom/sepolicy/
-2e72ded sepolicy : Add policy for ipa dev access
-62464d7 sepolicy: Add selinux policy for ipa file read
-98840e7 Sepolicy: allow ipacm to be in net group
-
    * frameworks/base/
 7177b7e Frameworks: Remove leftovers & fix build for heads up (1/2)
-581e35b Framework: StatusBar Ticker (1/2)
-5996f79 Revert "Framework: StatusBar Ticker (1/2)"
 
    * kernel/samsung/hlte/
+6e4b303 Build v1.30
+25c716b custom cpufreq: Move get_cpu_idle_time() to cpufreq.c
+afc1379 cpufreq: Remove alucard & arteractive cpu gov
 7176a0c Revert "Remove all custom cpu govs"
 b5653e1 Revert "defconfig: Remove all custom cpu govs"
 
@@ -66,6 +201,7 @@ b5653e1 Revert "defconfig: Remove all custom cpu govs"
 99fbcf0 [2/2] Telephony: Non-intrusive InCall UI switch Change-Id: I545121334ffb2925a05a8c7685b84bb5df37c205
 
    * packages/apps/Settings/
+9296e4a Settings: Remove leftovers & fix build for heads up (2/2)
 6fce0db HeadsUp: change timeout and snooze options to SeekBarPreferences Change-Id: I51ff5bc7197d0f6f695a7081734c678fbcea58d3
 d618d36 [1/2] SlimHeadsUp: Add a global 3-way switch disabled : will disable all headsup perapp: notifications are shown as headsup per app (current behaviour) forced : will force all notifications to be shown as headsup
 3d14d75 Added SystemUI to notification app list.
@@ -78,17 +214,18 @@ bb27387 Settings: Update Statusbar ticker
 cd39c91 Bring up local changes
 
 ====================
-     10-03-2015
+     10-04-2015
 ====================
 
 
-   * device/samsung/hlte-common/
-5a26a9b hlte-common: Update interactive values
-
-   * device/samsung/qcom-common/
-7522278 Automatic translation import
+   * device/qcom/sepolicy/
+2e72ded sepolicy : Add policy for ipa dev access
+62464d7 sepolicy: Add selinux policy for ipa file read
+98840e7 Sepolicy: allow ipacm to be in net group
 
    * frameworks/base/
+581e35b Framework: StatusBar Ticker (1/2)
+5996f79 Revert "Framework: StatusBar Ticker (1/2)"
 3ea1f78 Revert "SystemUI: add HeadsUp button in status bar header (1/2)"
 5d65983 Revert "StatusBarHeader: update headsup button onclick"
 8bb5450 Revert "QS: Clean up heads up tile (1/2)"
@@ -115,209 +252,7 @@ aacb535 Revert "[Heads up] get back with expand status bar when we swipe down fr
 3f0b944 Revert "Don't dismiss notification if expanding status bar from top of heads up"
 8e7968b Revert "HeadsUp: only snooze when swiping up"
 f69f220 Revert "[1/2] Base: option to launch heads up in floating mode."
-3fbc1e4 SystemUI: remove extra space when brightness slider is disabled
-f6bbaed base: show again qs brightness mode toggle
-d2b0cd4 battery: Add fast charging UI support [3/3]
-aa191a0 2G Network doesn't connects always for some carriers
-a49f0f0 implement noise suppression for phone calls (1/2)
-f927eb5 Automatic translation import
-915c169 pm: Update PackageManagerSettingsTests.
-761f7e0 Check for externally installed apps if sdcard ejected
-2f6a7a6 SystemUI: bail out of recents-to-home animation when losing focus
-b47fd2e bootanim: Display SKU-specific variants if present
-7f2856f SettingsProvider: Load per SKU default theme.
-d7f49e3 pm: Create per-mcc prebundled install filter.
-c97f54c prebundled: Handle prebundled packages per-user.
-
-   * frameworks/native/
-54c16f4 native: Add fast charging UI support [1/3]
-
-   * kernel/samsung/hlte/
-55de6ff mm: vmpressure: account allocstalls only on higher pressures
-5b110bd mm: vmpressure: scale pressure based on reclaim context
-03790cf lowmemorykiller: avoid false adaptive LMK triggers
-52920e4 msm: mdss: Use generic data type for rect.
-
-   * packages/apps/AudioFX/
-b65b58e Automatic translation import
-
-   * packages/apps/CMFileManager/
-c4cb9fb Automatic translation import
-
-   * packages/apps/Calendar/
-2316d01 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
-662aff7 Automatic translation import
-
-   * packages/apps/Contacts/
-10a147c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-a37434b Automatic translation import
-
-   * packages/apps/ContactsCommon/
-97dcb57 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-bd72aa6 Automatic translation import
-
-   * packages/apps/DeskClock/
-517b62d Automatic translation import
-
-   * packages/apps/Dialer/
-e896380 Automatic translation import
-
-   * packages/apps/Eleven/
-38f0dcd Automatic translation import
-
-   * packages/apps/Gallery2/
-51ef6d9 Automatic translation import
-
-   * packages/apps/InCallUI/
-05f3630 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-2b3937d Automatic translation import
-
-   * packages/apps/LockClock/
-cf85872 Automatic translation import
-
-   * packages/apps/Mms/
-526dfed Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-829050c Automatic translation import
-3712de7 Fixed layout issues in Messaging quick reply popup
 
    * packages/apps/Settings/
 b411cb6 Build V17.5
-721a315 Automatic translation import
-04cc494 Fix AOSP EL battery saver translation
-
-   * packages/apps/ThemeChooser/
-0f28f74 Automatic translation import
-
-   * packages/apps/Trebuchet/
-681ac55 Automatic translation import
-
-   * packages/apps/TvSettings/
-06c7e91 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-a41d75d Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-c0c1f53 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
-b60a9b9 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-78ba6e7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
-d64cb33 Automatic translation import
-
-   * packages/services/Telephony/
-11a1af5 Telephony: implement noise suppression for phone calls (2/2)
-bf34551 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-716526a Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-c911ca0 Automatic translation import
-
-   * system/core/
-b85267e healthd: Add fast charging UI support [2/3]
-
-   * system/vold/
-f149756 Vold : Send VolumeBadRemoval prior to attempting to unmount asec
-
-   * vendor/cm/
-5a84ee5 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-17adbaa vendor: cm: contributors: Add maintainers for Motorola Moto G 4G 2014
-
-   * vendor/cmsdk/
-3863841 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-7f34720 Automatic translation import
-
-====================
-     10-02-2015
-====================
-
-
-   * build/
-cda8cfc build: Fix import build step.
-54ea0ed build: Make sure we're building our secondary resource package as dependency.
-e60e9f5 tools/device: Remove deprecated line gsm.mk no longer exist in vendor/cm
-
-   * device/samsung/hlte-common/
-fa61ab1 hlte-common: use CAF Power HAL instead of CM's
-
-   * frameworks/base/
-60d3694 On The Go: Fix and tint power menu icon
-1b7e9c5 Fix FileManager Interaction
-c4bacca Merge pull request #98 from ZdrowyGosciu/network
-cd6335d services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs
-
-   * packages/apps/CMFileManager/
-0420929 Adding a few MS MimeTypes
-
-   * packages/apps/Contacts/
-3803b89 Contacts: Use common contacts uri extra
-
-   * packages/apps/ContactsCommon/
-8db222e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-079067e ContactsCommon: Move contact uri extra to common location
-
-   * packages/apps/Settings/
-27f0de2 Increase max. fingerprint name length.
-122aeb1 ProfileSettings : Ensure brightness settings only apply on accept
-496fd60 APN: Clean up mvno filtering of apn list
-ed333ab Settings : Filter settings for secondary users
-97ec939 Settings : Don't show ringtone pref for non voice capable devices
-156f718 Settings : Fix profile action offset when changing orientation
-ad0d2ef Fingerprint: Clear error when enrollment finished
-
-   * packages/apps/Trebuchet/
-14a18d5 trebuchet: protect against npe
-9d8ee9e fix NPE when dragging icon to desktop, when QuickSearchBox is missing
-b1f28ea Trebuchet: Use hardware layer for fading app drawer
-
-   * vendor/cm/
-078ccc6 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-5d2c998 Add libcore.net.MimeUtils Overrides
-
-   * vendor/cmsdk/
-3bee029 cmsdk: Update README.
-3b54f40 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-
-====================
-     10-01-2015
-====================
-
-
-   * kernel/samsung/hlte/
-1f456ed Build v1.29
-
-   * packages/apps/CMFileManager/
-d28d148 Check If System Wants Intent
-
-   * packages/apps/Settings/
-fbe5804 Build V17.4
-be9552e Use Theme.SettingsBase for notification log
-0d4bd0f Revert "Use Theme.SettingsBase for notification log"
-
-   * packages/apps/SoundRecorder/
-9973e42 SoundRecorder: only primary storage volumes are writeable
-
-   * packages/apps/Trebuchet/
-b5f1c45 Trebuchet : Ensure search bar doesn't show in hidden
-1f9ba38 App Drawer: fix insets on paddingTop
-
-   * packages/providers/DownloadProvider/
-bac1c03 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
-
-   * packages/providers/ThemesProvider/
-3a599d2 Use correct DialtactsActivity for DialerNext
-
-   * prebuilts/cmsdk/
-090c6d2 cmsdk: Update current for API level 2 release.
-11ccd84 cmsdk: Update api text for api level 2 and permissions for it.
-
-   * vendor/cm/
-0eb5e95 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-9568223 sepolicy: allow vold to trim persist
-
-   * vendor/cmsdk/
-10d2025 cmsdk: Update API text for constants changes.
-
-   * vendor/samsung/
-ef783a1 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
