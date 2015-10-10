@@ -1,4 +1,242 @@
 ====================
+     10-10-2015
+====================
+
+
+   * device/samsung/hlte-common/
+9ec5f44 Sepolicy vendor/cm updates
+d61c7e4 Revert "hlte-common: Unbreak HELL! These moved to vendor/cm"
+a3fa4a1 Latest ueventd with the new kernel
+699a3f7 Revert "hlte-common: merge some permission stuffs with stock Touchwiz"
+
+   * external/libavc/
+e787369 Merge "Return error in SPS/PPS parsing when extra bytes are read from input"
+cceb0ba Merge "Decoder: Once all the MBs in a picture are decoded ignore remaining bytes"
+f377e8c Decoder: Memset 8 extra bytes at the end of internal bitstream buffer
+09c58b2 Merge "Decoder: Fixed an out of bound read in intra pred buffers"
+
+   * frameworks/av/
+d3a85f1 Add include guard into SampleIterator.h
+f954f9d Don't send OnCompletion events when looping
+
+   * frameworks/base/
+c743fba Revert "SystemUI : Navbar ring five targets"
+1eff747 NVIDIA Shield Controller support [2/2]
+d5bd63a FINALLY lockscreen to sleep can be turn offf
+6df6077 Add volume boosted ringtones (2/2)
+46b0e11 Add live lock screen previews [1/2]
+515f935 SettingsProvider : load region-specific settings for mobile data
+e1c9db3 [1/2] core: Add support for fake signatures, enabled by developer setting
+f2d996c Revert "Support package signature faking used by µg GmsCore"
+1cb981b Make accessing mInputMethodTarget thread-safe
+be67891 [1/2] Heads up touch outside behavior
+
+   * frameworks/opt/net/wifi/
+9ec4201 NVIDIA Shield Controller support [1/2]
+
+   * packages/apps/CMWallpapers/
+3e1a80e CMWallpapers : Hide default wallpaper
+
+   * packages/apps/ContactsCommon/
+d60d4aa Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+d940f01 Shim in mark as spam api
+
+   * packages/apps/Eleven/
+50ef967 Merge "Eleven: check app settings when starting service" into cm-12.1
+
+   * packages/apps/Settings/
+e59bee9 Build V17.8
+36a4716 [2/2] Settings: Add support for fake signatures, enabled by developer setting
+e6bc32a [2/2] Heads up touch outside behavior
+571fd54 Heads up options: Move onPreferenceChange outside onCreate method
+b0cf133 Merge pull request #338 from Pixelase/cm-12.1
+
+   * packages/apps/Trebuchet/
+486bcb3 Trebuchet: make workspace layout configurable by prebundled mcc
+
+   * packages/providers/ContactsProvider/
+c2cf89f Add a richer system around preloading contacts
+
+   * vendor/cm/
+7afdbc0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/cmsdk/
+28b978e Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+
+====================
+     10-09-2015
+====================
+
+
+   * android/
+cb555ea Track own Theme Chooser
+
+   * device/qcom/common/
+6479863 dtbtool: Clear misc build warnings
+
+   * external/ffmpeg/
+e25d1db Merge tag 'n2.7.2' into cm-12.1
+f035d76 Changelog update
+ecb45bd imc: use correct position for flcoeffs2 calculation
+6958254 hevc: check slice address length
+59fd4fb snow: remove an obsolete av_assert2
+456db47 webp: fix infinite loop in webp_decode_frame
+b059a7f wavpack: limit extra_bits to 32 and use get_bits_long
+feee4a2 ffmpeg: only count got_output/errors in decode_error_stat
+9727169 ffmpeg: exit_on_error if decoding a packet failed
+327f67e pthread_frame: forward error codes when flushing
+67965fb huffyuvdec: validate image size
+ba494aa wavpack: use get_bits_long to read up to 32 bits
+13a3d95 nutdec: check maxpos in read_sm_data before returning success
+549ea74 s302m: fix arithmetic exception
+0c6563d vc1dec: use get_bits_long and limit the read bits to 32
+2fb1921 mpegaudiodec: copy AVFloatDSPContext from first context to all contexts
+8357878 Update for FFmpeg 2.7.2
+7ccd30c avcodec/vp8: Check buffer size in vp8_decode_frame_header()
+7d176c1 avcodec/vp8: Fix null pointer dereference in ff_vp8_decode_free()
+96463b9 avcodec/diracdec: Check for hpel_base allocation failure
+ed6980b avcodec/rv34: Clear pointers in ff_rv34_decode_init_thread_copy()
+e3ef27b avfilter/af_aresample: Check ff_all_* for allocation failures
+8b2b8ca avcodec/pthread_frame: clear priv_data, avoid stale pointer in error case
+0f1a361 swscale/utils: Clear pix buffers
+1854616 avutil/fifo: Fix the case where func() returns less bytes than requested in av_fifo_generic_write()
+1c2a6a2 ffmpeg: Fix cleanup after failed allocation of output_files
+4a6b99f avformat/mov: Fix deallocation when MOVStreamContext failed to allocate
+d01bae0 ffmpeg: Fix crash with ost->last_frame allocation failure
+5788365 ffmpeg: Fix cleanup with ost = NULL
+3ee2620 avcodec/pthread_frame: check avctx on deallocation
+35f6ada avcodec/sanm: Reset sizes in destroy_buffers()
+7cc130f avcodec/alac: Clear pointers in allocate_buffers()
+aa17fe0 bytestream2: set the reader to the end when reading more than available
+331a865 avcodec/utils: use a minimum 32pixel width in  avcodec_align_dimensions2() for H.264
+49bb285 avcodec/mpegvideo: Clear pointers in ff_mpv_common_init()
+fa9db0e oggparsedirac: check return value of init_get_bits
+6877d4a wmalosslessdec: reset frame->nb_samples on packet loss
+a4d7ab0 wmalosslessdec: avoid reading 0 bits with get_bits
+0d8511b Put a space between string literals and macros.
+ff41c9e avcodec/rawenc: Use ff_alloc_packet() instead of ff_alloc_packet2()
+3e81529 avcodec/aacsbr: Assert that bs_num_env is positive
+e044495 avcodec/aacsbr: check that the element type matches before applying SBR
+ebb8f36 avcodec/h264_slice: Use w/h from the AVFrame instead of mb_w/h
+a4a7559 vp9/update_prob: prevent out of bounds table read
+9a0e44d avfilter/vf_transpose: Fix rounding error
+dc18b1e avcodec/h264_refs: discard mismatching references
+2bd9dc7 avcodec/mjpegdec: Fix small picture upscale
+e140145 avcodec/pngdec: Check values before updating context in decode_fctl_chunk()
+04caa2e avcodec/pngdec: Copy IHDR & plte state from last thread
+a122b8f avcodec/pngdec: Require a IHDR chunk before fctl
+022a5b0 avcodec/pngdec: Only allow one IHDR chunk
+a7825e4 wmavoice: limit wmavoice_decode_packet return value to packet size
+4dd5547 swscale/swscale_unscaled: Fix rounding difference with RGBA output between little and big endian
+1cef783 ffmpeg: Do not use the data/size of a bitstream filter after failure
+465d87d swscale/x86/rgb2rgb_template: fix signedness of v in shuffle_bytes_2103_{mmx,mmxext}
+080f4d3 vda: unlock the pixel buffer base address.
+4196623 swscale/rgb2rgb_template: Fix signedness of v in shuffle_bytes_2103_c()
+48a2b0c swscale/rgb2rgb_template: Implement shuffle_bytes_0321_c and fix shuffle_bytes_2103_c on BE
+1a595af swscale/rgb2rgb_template: Disable shuffle_bytes_2103_c on big endian
+34e0d56 swr: Remember previously set int_sample_format from user
+01af4b9 swresample: soxr implementation for swr_get_out_samples()
+62eae3f avformat/swfdec: Do not error out on pixel format changes
+bd4deee ffmpeg_opt: Fix forcing fourccs
+f315a2b configure: Check for x265_api_get
+c10561d swscale/x86/rgb2rgb_template: don't call emms on sse2/avx functions
+b70ed77 swscale/x86/rgb2rgb_template: add missing xmm clobbers
+6db4e7d library.mak: Workaround SDL redefining main and breaking fate tests on mingw
+754b39e vaapi_h264: fix RefPicList[] field flags.
+4e53a50 doc: avoid incorrect phrase 'allows to'
+7c89eb8 configure: make makeinfo_html check more robust
+353a576 matroskadec: validate audio channels and bitdepth
+b6ae742 matroskadec: check audio sample rate
+a38b2cf Update for 2.7.1
+daffb9f avutil/avstring: Do not print NULL
+f491a58 postproc: fix unaligned access
+d713970 vp9: don't retain NULL as segmentation_map
+0c02a11 avformat: clarify what package needs to be compiled with SSL support
+e227f73 avcodec/libx264: Avoid reconfig on equivalent aspect ratios
+79ad240 avcodec/flacenc: Fix Invalid Rice order
+7bc5d3d tls_gnutls: fix hang on disconnection
+51a2cd5 avcodec/hevc_ps: Only discard overread VPS if a previous is available
+d2705ab ffmpeg: Free last_frame instead of just unref
+966e542 avcodec/ffv1enc: fix bps for >8bit yuv when not explicitly set
+48e5132 avio: fix potential crashes when combining ffio_ensure_seekback + crc
+838ad6c examples/demuxing_decoding: use properties from frame instead of video_dec_ctx
+b939dfb h264: er: Copy from the previous reference only if compatible
+65d66a6 doc: fix spelling errors
+047ef33 configure: only disable VSX for !ppc64el
+b709844 avformat/singlejpeg: fix standalone compilation
+13605a9 ffmpeg_opt: Check for localtime() failure
+
+   * external/libavc/
+3abab0f Return error in SPS/PPS parsing when extra bytes are read from input
+a2b785c Decoder: Once all the MBs in a picture are decoded ignore remaining bytes
+3f4ed79 Decoder: Fixed an out of bound read in intra pred buffers
+3d9f217 Decoder: Exit gracefully in case of allocation failure
+800acb9 Merge "Decoder: Added a check for unsupported resolutions"
+
+   * external/libmpeg2/
+6f1a83d Revert "armv8: Removed redundant NEON element size declarations"
+a84bad8 armv8: Removed redundant NEON element size declarations
+6322be9 Merge "Fixed stack pointer increment in impeg2_idct.s"
+bec7de7 Merge "Added deinterlacer"
+
+   * frameworks/av/
+aa37565 SoftAVCDec: Exit gracefully when memory allocation fails in the decoder
+7fe9c1d libstagefright: remove CHECK from SoftHEVC ctor.
+8925d82 SoftAVCDec: Added a check for unsupported resolutions
+4509c95 SoftMPEG2Dec: Added support for deinterlacer
+
+   * frameworks/base/
+c7f499f Safely handle interrupts during Thread.join()
+8c5e8b7 Retry if interrupted before mMessageThread has joined
+7fa174f PhoneWindowManager: Update navigation bar policy
+06366f9 Revert "[1/2] Base: option to launch heads up in floating mode."
+2a35511 PackageManager : Extend prebundled logic
+c7ff079 RotationPolicy: fix rotation toggle logic
+31262f9 Window rotation: fix up sensor logic
+181819a BatteryService: Prevent UUC scenarios at 0%
+
+   * kernel/samsung/hlte/
+5022891 Build v1.31
+81438a0 mm: process_reclaim: use unbounded cpu workqueue
+202517f mm: process_reclaim: do not iterate over stale task structs
+630a528 mm: process_reclaim: fix reclaim skip on low efficiency
+0b35f7b mm: process reclaim: vmpressure based process reclaim
+a1e0679 mm: Support address range reclaim
+7cf1692 mm: Enhance per process reclaim to consider shared pages
+384ce9c mm: Per process reclaim
+354b947 ion: Update system heap shrinker to use the new count/scan interface
+72999e9 vmscan: per-node deferred work
+487a7dd shrinker: add node awareness
+1876aab mm: new shrinker API
+877a749 fs: rework f2fs
+e684bbb defconfig: Set default IO scheduler to ROW
+16346a6 Revert "defconfig: Change default tcp congestion mode to bic"
+
+   * packages/apps/Mms/
+95d281e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+211ee02 added enabledNotifyWapMMSC flag to mms_config.xml
+6e34e8b added default sms validity period
+
+   * packages/apps/Settings/
+0d214da Settings: Fix RuntimeException in InputMethod Settings
+489ee8b Revert "Settings: Fix RuntimeException in InputMethod Settings"
+fc77872 Revert "[2/2] Settings: option to launch heads up in floating mode"
+a4e50b7 Settings: Update RU translations
+
+   * packages/apps/ThemeChooser/
+91cf567 ThemeChooser: fix IllegalStateException
+
+   * packages/apps/Trebuchet/
+769805b Trebuchet : Ensure workspace icon migration for dialer
+
+   * packages/providers/ThemesProvider/
+1cc81dd Add live lock screen previews [2/2]
+
+   * vendor/cm/
+4a6706b Add volume boosted ringtones (1/2)
+26d9952 Missed Capital Letter
+
+====================
      10-08-2015
 ====================
 
@@ -6,9 +244,11 @@
    * device/samsung/hlte-common/
 310360a Use hardware crypto accelerator for ODE
 
+   * external/stagefright-plugins/
+832d937 ffmpeg: Fix crash when avio_check is called
+
    * frameworks/base/
-55f934c [1/2] Base: option to launch heads up in floating mode.
-64897a2 Revert "Fix text color on darktheme"
+27c1452 [1/2] Base: option to launch heads up in floating mode.
 c682991 IndexOutOfBoundsException on addPreference in PreferenceGroup
 6773d0b Reset the setOnKeyListener callback when view is destroyed
 501b84d Text size for empty view shall be styled according to theme
@@ -35,6 +275,9 @@ ab649d4 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm
 91bf290 Overlay to set up the voicemail number on MEO
 ce7b570 Overlays to set up the voicemail number on O2
 
+   * vendor/cmsdk/
+21c6d08 Remove AOSP settings from CMSettings/CMSettingsProvider
+
 ====================
      10-07-2015
 ====================
@@ -42,7 +285,6 @@ ce7b570 Overlays to set up the voicemail number on O2
 
    * android/
 3c0999a Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-7c031d6 Update Android tag
 
    * build/
 06d47f7 Set the Security Patch level with Oct 1 for LP
@@ -59,14 +301,9 @@ bf3d550 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_skia i
 
    * frameworks/base/
 41ddbd5 Fix issue #23116383: Include security patch level in Settings
-ebc738a Merge tag 'android-5.1.1_r23' into cm-12.1
-0920265 Allow debugging only for apps forked from zygote
-df8473d DO NOT MERGE. Truncate and ellipsize app name if too long for dialog.
-533c543 Add back observer
 
    * frameworks/opt/telephony/
 88ace3c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-770d39c Merge tag 'android-5.1.1_r24' into cm-12.1
 
    * hardware/libhardware/
 b3e51b1 remote_submix: Fix resampler and channel conversion
@@ -108,6 +345,7 @@ ce2b629 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm
 
 
    * android/
+7c031d6 Update Android tag
 9918112 android-5.1.1_r18 -> android-5.1.1_r23
 
    * cts/
@@ -115,6 +353,9 @@ d80b181 Merge tag 'android-5.1.1_r23' into cm-12.1
 
    * external/flac/
 2d7da25 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/libavc/
+76bd1f1 Decoder: Added a check for unsupported resolutions
 
    * external/libvpx/
 0b30efb Merge tag 'android-5.1.1_r23' into cm-12.1
@@ -130,19 +371,14 @@ bb36b5b Merge tag 'android-5.1.1_r23' into cm-12.1
 7758e3e Merge tag 'android-5.1.1_r23' into cm-12.1
 
    * frameworks/base/
+ebc738a Merge tag 'android-5.1.1_r23' into cm-12.1
+0920265 Allow debugging only for apps forked from zygote
+df8473d DO NOT MERGE. Truncate and ellipsize app name if too long for dialog.
+533c543 Add back observer
 124ff51 Revert "NotificationTile: Ring ring my bell"
-ed4a99b Revert "base: Fix notification sounds for wifi only devices"
-e479bd1 Revert "Revert "SystemUi: Prioritize call notifications which interrupt.""
-6345498 Don't unregister Fonts from renderer at destruction
-51e3a6a Revert "2G Network doesn't connects always for some carriers"
-c86d7e9 Revert "battery: Add fast charging UI support [3/3]"
 
-   * frameworks/native/
-af85271 Revert "native: Add fast charging UI support [1/3]"
-
-   * hardware/qcom/audio-caf/msm8994/
-8660f35 hal: Use front mic when in headphone voice call
-1cad787 Revert "hal: Use speakerphone mics for wired headphones"
+   * frameworks/opt/telephony/
+770d39c Merge tag 'android-5.1.1_r24' into cm-12.1
 
    * packages/apps/Bluetooth/
 6317083 Merge tag 'android-5.1.1_r23' into cm-12.1
@@ -152,12 +388,6 @@ af85271 Revert "native: Add fast charging UI support [1/3]"
 
    * packages/apps/Settings/
 a38ce92 Revert "Fix inconsistent battery stats icons"
-dfe6c9e Build V17.6
-6217e3d Fix inconsistent battery stats icons
-de6892f Settings: Fix RuntimeException in InputMethod Settings
-ca8a662 Settings: Fix NPE in PowerMenuActions
-19eb9b5 wifi: Add a filter
-1a91a31 settings: fuelgauge: Always show screen on time
 
    * packages/apps/Trebuchet/
 b69f0ee Update default workspace
@@ -167,7 +397,6 @@ b69f0ee Update default workspace
 
    * system/core/
 a406ccd Merge tag 'android-5.1.1_r23' into cm-12.1
-229407e Revert "healthd: Add fast charging UI support [2/3]"
 
    * system/security/
 ec1e3a9 Merge tag 'android-5.1.1_r23' into cm-12.1
@@ -178,81 +407,4 @@ b026605 sepolicy: Underp the context for persistent storage
 
    * vendor/cmsdk/
 c3cf12b CMSettings: Remove write check in query method and add values for heads up notification
-
-   * vendor/samsung/
-48b2257 hlte-common: latest wifi blobs
-
-====================
-     10-05-2015
-====================
-
-
-   * frameworks/base/
-7177b7e Frameworks: Remove leftovers & fix build for heads up (1/2)
-
-   * kernel/samsung/hlte/
-6e4b303 Build v1.30
-25c716b custom cpufreq: Move get_cpu_idle_time() to cpufreq.c
-afc1379 cpufreq: Remove alucard & arteractive cpu gov
-7176a0c Revert "Remove all custom cpu govs"
-b5653e1 Revert "defconfig: Remove all custom cpu govs"
-
-   * packages/apps/Dialer/
-99fbcf0 [2/2] Telephony: Non-intrusive InCall UI switch Change-Id: I545121334ffb2925a05a8c7685b84bb5df37c205
-
-   * packages/apps/Settings/
-9296e4a Settings: Remove leftovers & fix build for heads up (2/2)
-6fce0db HeadsUp: change timeout and snooze options to SeekBarPreferences Change-Id: I51ff5bc7197d0f6f695a7081734c678fbcea58d3
-d618d36 [1/2] SlimHeadsUp: Add a global 3-way switch disabled : will disable all headsup perapp: notifications are shown as headsup per app (current behaviour) forced : will force all notifications to be shown as headsup
-3d14d75 Added SystemUI to notification app list.
-da8ff70 Settings: add headsup manifest permission Change-Id: I26f1a086c73030183488b563a31b60f43e028f69
-68c75aa Settings: Slim heads up customizations for LP (2/2) Basically it follows the same idea like we had on SlimKat....see here SlimRoms/frameworks_base@323ed77
-bb27387 Settings: Update Statusbar ticker
-2c59e21 [SQUASHED] Remove existing HEADS UP
-
-   * packages/apps/SetupWizard/
-cd39c91 Bring up local changes
-
-====================
-     10-04-2015
-====================
-
-
-   * device/qcom/sepolicy/
-2e72ded sepolicy : Add policy for ipa dev access
-62464d7 sepolicy: Add selinux policy for ipa file read
-98840e7 Sepolicy: allow ipacm to be in net group
-
-   * frameworks/base/
-581e35b Framework: StatusBar Ticker (1/2)
-5996f79 Revert "Framework: StatusBar Ticker (1/2)"
-3ea1f78 Revert "SystemUI: add HeadsUp button in status bar header (1/2)"
-5d65983 Revert "StatusBarHeader: update headsup button onclick"
-8bb5450 Revert "QS: Clean up heads up tile (1/2)"
-05fdf8a Revert "Fix Heads-up tile transparency in off state"
-ea457ba [1/2] Non-intrusive InCall UI switch
-3b9f9fc SystemUI: better choice for heads up snooze icon
-9794a6b [2/2] SlimHeadsUp: Add a global 3-way switch
-b0f8068 SystemUI: fix heads up snooze button
-8327f7e Fixed non-intrusive incoming call.
-b6e7c62 Heads up notifications behavior fix
-ea26030 Frameworks: Be sure heads up view is attached before removing it
-46a3435 Frameworks: Only set package name on user heads ups
-b7e92cc Frameworks: Slim heads up customizations for LP (1/2)
-7ce1272 Frameworks: Actually start to use HEADS_UP_REQUESTED extra
-991cd8c Revert "SystemUi: Prioritize call notifications which interrupt."
-349a296 Revert "Base: HeadsUp options [1/2]"
-5275816 Revert "[Heads up] Add touch outside event"
-7771514 Revert "[Heads up] Touch outside to hide (1/2)"
-aa653b3 Revert "[Heads up] Don't show heads up while IME is showing"
-284ae03 Revert "HeadsUpNotificationView: Remove mExpandHelper"
-8bf3fc1 Revert "Improve HeadsUp [1/2]"
-d20cce0 Revert "Base: HeadsUp snooze function [1/2]"
-aacb535 Revert "[Heads up] get back with expand status bar when we swipe down from top and heads up"
-3f0b944 Revert "Don't dismiss notification if expanding status bar from top of heads up"
-8e7968b Revert "HeadsUp: only snooze when swiping up"
-f69f220 Revert "[1/2] Base: option to launch heads up in floating mode."
-
-   * packages/apps/Settings/
-b411cb6 Build V17.5
 
