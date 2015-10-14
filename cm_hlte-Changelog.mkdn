@@ -1,4 +1,52 @@
 ====================
+     10-14-2015
+====================
+
+
+   * build/
+c79c98f build: Generalize kernel DTB path
+27a8a24 generate_extra_images: Look for 3.10 dtbs
+
+   * device/qcom/common/
+2565d56 msm8994: Set a property to track battery mode
+
+   * device/qcom/sepolicy/
+06765fd DPM : sepolicy: allow netdomain access to cnd and dpmd
+
+   * external/whispersystems/WhisperPush/
+60e90dc Switch WhisperPush to use CMSettings
+
+   * frameworks/base/
+81e39ff Services : Ensure proximity check is taken into consideration
+b829ab3 QSPanel: Update QS brightness slider to use CMSettings
+0af69e8 Switch packages and services in frameworks not on the bootclasspath to use CMSettings
+68ece28 FingerprintService: synchronize access to clients
+4e153be Handle 'root' pseudo-package in the appops command
+424dfc0 Revert "pm: Create per-mcc prebundled install filter."
+98be6e8 Revert "bootanim: Display SKU-specific variants if present"
+b70c95d Revert "pm: Update PackageManagerSettingsTests."
+02141a6 Revert "PackageManager : Extend prebundled logic"
+39ea8dc Fix invisible rotation tile
+
+   * packages/apps/Settings/
+dbc3621 Build V18.0
+83c51f0 Revert "Don't allow deleting last remaining fingerprint"
+ff49a9c Improve fingerprint management activity UX.
+61bf836 Settings: use consistent behavior after forgetting networks
+3a0d98f Revert "Settings: clear dialog states when forgetting network"
+bba1146 Switch to use CMSettings for settings not involved in bootclasspath
+b9884ee Merge pull request #340 from dischinator/cm-12.1
+bc2274f Add more german translations
+c41c323 Merge pull request #1 from temasek/cm-12.1
+dc4ff54 Adding more german translations
+
+   * packages/apps/SetupWizard/
+579ba48 Switch SetupWizard to use CMSettings for settings unrelated to bootclasspath
+
+   * packages/providers/ContactsProvider/
+c23f25b Ensure contact preloading is dependent on regional configuration
+
+====================
      10-13-2015
 ====================
 
@@ -19,22 +67,12 @@
 d60781b Automatic translation import
 
    * frameworks/base/
-39407ce Revert "Fix rotation tile animation"
 e24b249 Automatic translation import
 8cf82c0 Don't accidently clear TRANSPARENT_VERTICAL_NAV
 4d85688 Multiple LEDs [3/3]: Illumination Bars support
 
    * hardware/libhardware/
 3a3bf9c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_hardware_libhardware into cm-12.1
-
-   * kernel/samsung/hlte/
-6912d46 Build v1.32
-f89f5d1 atomic: implement generic atomic_dec_if_positive()
-fea753a mm: enable process reclaim by default
-4cdbf41 mm/process_reclaim: Fix build
-830103d f2fs: use new shrinker API
-61f2c3a defconfig: Update
-91f8147 vmpressure: Use CONFIG_CGROUP_MEM_RES_CTLR instead
 
    * packages/apps/AudioFX/
 bebcbe6 Automatic translation import
@@ -47,6 +85,7 @@ eb9e25d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_B
 d2316e6 Automatic translation import
 
    * packages/apps/CMFileManager/
+b284ba6 Prevent NPE collecting title, which was preventing the print action.  Use Uri for title and timestamp for print title.
 d8e4b49 Automatic translation import
 
    * packages/apps/Camera2/
@@ -148,11 +187,6 @@ cf60dac Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm
 
    * android/
 b12f7b2 Track own external/libhevc
-e79aa52 Restore CMAccount
-
-   * device/samsung/hlte-common/
-d174f6e Revert "hlte-common: use CAF Power HAL instead of CM's"
-8a1f234 Revert "hlte-common: Update interactive values"
 
    * frameworks/av/
 d0ba534 SoftHEVCDec: Reduced memory requirements
@@ -170,36 +204,22 @@ e75e2a3 Multiple LEDs [1/3]: Illumination Bars support
    * packages/apps/Settings/
 0c88a72 Merge pull request #339 from dischinator/cm-12.1
 
-   * packages/apps/SetupWizard/
-491e1a2 Change navigation bar to ours
-1c797b6 Revert "Bring up local changes"
-ebfb191 Bring up local changes
-
 ====================
      10-11-2015
 ====================
 
 
+   * android/
+e79aa52 Restore CMAccount
+
    * device/samsung/hlte-common/
+d174f6e Revert "hlte-common: use CAF Power HAL instead of CM's"
+8a1f234 Revert "hlte-common: Update interactive values"
 c30ab1b hlte-common: Add QuickBoot
 9ec5f44 Sepolicy vendor/cm updates
 d61c7e4 Revert "hlte-common: Unbreak HELL! These moved to vendor/cm"
 a3fa4a1 Latest ueventd with the new kernel
 699a3f7 Revert "hlte-common: merge some permission stuffs with stock Touchwiz"
-
-   * external/efence/
-decf34d efence: Clean up to make it compatible with CM 12.1
-
-   * frameworks/base/
-c743fba Revert "SystemUI : Navbar ring five targets"
-1eff747 NVIDIA Shield Controller support [2/2]
-d5bd63a FINALLY lockscreen to sleep can be turn offf
-6df6077 Add volume boosted ringtones (2/2)
-46b0e11 Add live lock screen previews [1/2]
-515f935 SettingsProvider : load region-specific settings for mobile data
-
-   * frameworks/opt/net/wifi/
-9ec4201 NVIDIA Shield Controller support [1/2]
 
    * packages/apps/ContactsCommon/
 d60d4aa Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
@@ -212,8 +232,10 @@ d60d4aa Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_C
 879d40a Copy default translations to values-de/
 e59bee9 Build V17.8
 
-   * vendor/cm/
-7afdbc0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+   * packages/apps/SetupWizard/
+491e1a2 Change navigation bar to ours
+1c797b6 Revert "Bring up local changes"
+ebfb191 Bring up local changes
 
    * vendor/cmsdk/
 28b978e Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
@@ -226,8 +248,8 @@ e59bee9 Build V17.8
 ====================
 
 
-   * android/
-cb555ea Track own Theme Chooser
+   * external/efence/
+decf34d efence: Clean up to make it compatible with CM 12.1
 
    * external/libavc/
 e787369 Merge "Return error in SPS/PPS parsing when extra bytes are read from input"
@@ -238,24 +260,23 @@ f377e8c Decoder: Memset 8 extra bytes at the end of internal bitstream buffer
    * frameworks/av/
 d3a85f1 Add include guard into SampleIterator.h
 f954f9d Don't send OnCompletion events when looping
-aa37565 SoftAVCDec: Exit gracefully when memory allocation fails in the decoder
-7fe9c1d libstagefright: remove CHECK from SoftHEVC ctor.
-8925d82 SoftAVCDec: Added a check for unsupported resolutions
-4509c95 SoftMPEG2Dec: Added support for deinterlacer
 
    * frameworks/base/
+c743fba Revert "SystemUI : Navbar ring five targets"
+1eff747 NVIDIA Shield Controller support [2/2]
+d5bd63a FINALLY lockscreen to sleep can be turn offf
+6df6077 Add volume boosted ringtones (2/2)
+46b0e11 Add live lock screen previews [1/2]
+515f935 SettingsProvider : load region-specific settings for mobile data
 e1c9db3 [1/2] core: Add support for fake signatures, enabled by developer setting
 f2d996c Revert "Support package signature faking used by µg GmsCore"
 1cb981b Make accessing mInputMethodTarget thread-safe
 be67891 [1/2] Heads up touch outside behavior
 c7f499f Safely handle interrupts during Thread.join()
 8c5e8b7 Retry if interrupted before mMessageThread has joined
-7fa174f PhoneWindowManager: Update navigation bar policy
-06366f9 Revert "[1/2] Base: option to launch heads up in floating mode."
-2a35511 PackageManager : Extend prebundled logic
-c7ff079 RotationPolicy: fix rotation toggle logic
-31262f9 Window rotation: fix up sensor logic
-181819a BatteryService: Prevent UUC scenarios at 0%
+
+   * frameworks/opt/net/wifi/
+9ec4201 NVIDIA Shield Controller support [1/2]
 
    * kernel/samsung/hlte/
 5022891 Build v1.31
@@ -285,19 +306,12 @@ d940f01 Shim in mark as spam api
 
    * packages/apps/Mms/
 a8b6735 Fixed issues with QuickMessagePopup on lock screen
-95d281e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
 
    * packages/apps/Settings/
 36a4716 [2/2] Settings: Add support for fake signatures, enabled by developer setting
 e6bc32a [2/2] Heads up touch outside behavior
 571fd54 Heads up options: Move onPreferenceChange outside onCreate method
 b0cf133 Merge pull request #338 from Pixelase/cm-12.1
-0d214da Settings: Fix RuntimeException in InputMethod Settings
-489ee8b Revert "Settings: Fix RuntimeException in InputMethod Settings"
-fc77872 Revert "[2/2] Settings: option to launch heads up in floating mode"
-
-   * packages/apps/ThemeChooser/
-91cf567 ThemeChooser: fix IllegalStateException
 
    * packages/apps/Trebuchet/
 486bcb3 Trebuchet: make workspace layout configurable by prebundled mcc
@@ -305,145 +319,6 @@ fc77872 Revert "[2/2] Settings: option to launch heads up in floating mode"
    * packages/providers/ContactsProvider/
 c2cf89f Add a richer system around preloading contacts
 
-====================
-     10-09-2015
-====================
-
-
-   * device/qcom/common/
-6479863 dtbtool: Clear misc build warnings
-
-   * external/ffmpeg/
-e25d1db Merge tag 'n2.7.2' into cm-12.1
-f035d76 Changelog update
-ecb45bd imc: use correct position for flcoeffs2 calculation
-6958254 hevc: check slice address length
-59fd4fb snow: remove an obsolete av_assert2
-456db47 webp: fix infinite loop in webp_decode_frame
-b059a7f wavpack: limit extra_bits to 32 and use get_bits_long
-feee4a2 ffmpeg: only count got_output/errors in decode_error_stat
-9727169 ffmpeg: exit_on_error if decoding a packet failed
-327f67e pthread_frame: forward error codes when flushing
-67965fb huffyuvdec: validate image size
-ba494aa wavpack: use get_bits_long to read up to 32 bits
-13a3d95 nutdec: check maxpos in read_sm_data before returning success
-549ea74 s302m: fix arithmetic exception
-0c6563d vc1dec: use get_bits_long and limit the read bits to 32
-2fb1921 mpegaudiodec: copy AVFloatDSPContext from first context to all contexts
-8357878 Update for FFmpeg 2.7.2
-7ccd30c avcodec/vp8: Check buffer size in vp8_decode_frame_header()
-7d176c1 avcodec/vp8: Fix null pointer dereference in ff_vp8_decode_free()
-96463b9 avcodec/diracdec: Check for hpel_base allocation failure
-ed6980b avcodec/rv34: Clear pointers in ff_rv34_decode_init_thread_copy()
-e3ef27b avfilter/af_aresample: Check ff_all_* for allocation failures
-8b2b8ca avcodec/pthread_frame: clear priv_data, avoid stale pointer in error case
-0f1a361 swscale/utils: Clear pix buffers
-1854616 avutil/fifo: Fix the case where func() returns less bytes than requested in av_fifo_generic_write()
-1c2a6a2 ffmpeg: Fix cleanup after failed allocation of output_files
-4a6b99f avformat/mov: Fix deallocation when MOVStreamContext failed to allocate
-d01bae0 ffmpeg: Fix crash with ost->last_frame allocation failure
-5788365 ffmpeg: Fix cleanup with ost = NULL
-3ee2620 avcodec/pthread_frame: check avctx on deallocation
-35f6ada avcodec/sanm: Reset sizes in destroy_buffers()
-7cc130f avcodec/alac: Clear pointers in allocate_buffers()
-aa17fe0 bytestream2: set the reader to the end when reading more than available
-331a865 avcodec/utils: use a minimum 32pixel width in  avcodec_align_dimensions2() for H.264
-49bb285 avcodec/mpegvideo: Clear pointers in ff_mpv_common_init()
-fa9db0e oggparsedirac: check return value of init_get_bits
-6877d4a wmalosslessdec: reset frame->nb_samples on packet loss
-a4d7ab0 wmalosslessdec: avoid reading 0 bits with get_bits
-0d8511b Put a space between string literals and macros.
-ff41c9e avcodec/rawenc: Use ff_alloc_packet() instead of ff_alloc_packet2()
-3e81529 avcodec/aacsbr: Assert that bs_num_env is positive
-e044495 avcodec/aacsbr: check that the element type matches before applying SBR
-ebb8f36 avcodec/h264_slice: Use w/h from the AVFrame instead of mb_w/h
-a4a7559 vp9/update_prob: prevent out of bounds table read
-9a0e44d avfilter/vf_transpose: Fix rounding error
-dc18b1e avcodec/h264_refs: discard mismatching references
-2bd9dc7 avcodec/mjpegdec: Fix small picture upscale
-e140145 avcodec/pngdec: Check values before updating context in decode_fctl_chunk()
-04caa2e avcodec/pngdec: Copy IHDR & plte state from last thread
-a122b8f avcodec/pngdec: Require a IHDR chunk before fctl
-022a5b0 avcodec/pngdec: Only allow one IHDR chunk
-a7825e4 wmavoice: limit wmavoice_decode_packet return value to packet size
-4dd5547 swscale/swscale_unscaled: Fix rounding difference with RGBA output between little and big endian
-1cef783 ffmpeg: Do not use the data/size of a bitstream filter after failure
-465d87d swscale/x86/rgb2rgb_template: fix signedness of v in shuffle_bytes_2103_{mmx,mmxext}
-080f4d3 vda: unlock the pixel buffer base address.
-4196623 swscale/rgb2rgb_template: Fix signedness of v in shuffle_bytes_2103_c()
-48a2b0c swscale/rgb2rgb_template: Implement shuffle_bytes_0321_c and fix shuffle_bytes_2103_c on BE
-1a595af swscale/rgb2rgb_template: Disable shuffle_bytes_2103_c on big endian
-34e0d56 swr: Remember previously set int_sample_format from user
-01af4b9 swresample: soxr implementation for swr_get_out_samples()
-62eae3f avformat/swfdec: Do not error out on pixel format changes
-bd4deee ffmpeg_opt: Fix forcing fourccs
-f315a2b configure: Check for x265_api_get
-c10561d swscale/x86/rgb2rgb_template: don't call emms on sse2/avx functions
-b70ed77 swscale/x86/rgb2rgb_template: add missing xmm clobbers
-6db4e7d library.mak: Workaround SDL redefining main and breaking fate tests on mingw
-754b39e vaapi_h264: fix RefPicList[] field flags.
-4e53a50 doc: avoid incorrect phrase 'allows to'
-7c89eb8 configure: make makeinfo_html check more robust
-353a576 matroskadec: validate audio channels and bitdepth
-b6ae742 matroskadec: check audio sample rate
-a38b2cf Update for 2.7.1
-daffb9f avutil/avstring: Do not print NULL
-f491a58 postproc: fix unaligned access
-d713970 vp9: don't retain NULL as segmentation_map
-0c02a11 avformat: clarify what package needs to be compiled with SSL support
-e227f73 avcodec/libx264: Avoid reconfig on equivalent aspect ratios
-79ad240 avcodec/flacenc: Fix Invalid Rice order
-7bc5d3d tls_gnutls: fix hang on disconnection
-51a2cd5 avcodec/hevc_ps: Only discard overread VPS if a previous is available
-d2705ab ffmpeg: Free last_frame instead of just unref
-966e542 avcodec/ffv1enc: fix bps for >8bit yuv when not explicitly set
-48e5132 avio: fix potential crashes when combining ffio_ensure_seekback + crc
-838ad6c examples/demuxing_decoding: use properties from frame instead of video_dec_ctx
-b939dfb h264: er: Copy from the previous reference only if compatible
-65d66a6 doc: fix spelling errors
-047ef33 configure: only disable VSX for !ppc64el
-b709844 avformat/singlejpeg: fix standalone compilation
-13605a9 ffmpeg_opt: Check for localtime() failure
-
-   * external/libavc/
-3abab0f Return error in SPS/PPS parsing when extra bytes are read from input
-a2b785c Decoder: Once all the MBs in a picture are decoded ignore remaining bytes
-3f4ed79 Decoder: Fixed an out of bound read in intra pred buffers
-3d9f217 Decoder: Exit gracefully in case of allocation failure
-800acb9 Merge "Decoder: Added a check for unsupported resolutions"
-
-   * external/libhevc/
-4d73ab3 Reduced memory requirements
-bdd7607 Merge "Few intra pred fixes in arm functions"
-fda5faf Memset 8 extra bytes at the end of internal bitstream buffer
-f112291 Merge "Fix in reading short_term_ref_pic_set_idx in slice header"
-a6f2c96 Few intra pred fixes in arm functions
-2786003 Fix in reading short_term_ref_pic_set_idx in slice header
-1b02194 Fixed returning U and V output pointers in shared mode for 420p
-
-   * external/libmpeg2/
-6f1a83d Revert "armv8: Removed redundant NEON element size declarations"
-a84bad8 armv8: Removed redundant NEON element size declarations
-6322be9 Merge "Fixed stack pointer increment in impeg2_idct.s"
-bec7de7 Merge "Added deinterlacer"
-
-   * frameworks/base/
-27c1452 [1/2] Base: option to launch heads up in floating mode.
-
-   * packages/apps/Mms/
-211ee02 added enabledNotifyWapMMSC flag to mms_config.xml
-6e34e8b added default sms validity period
-
-   * packages/apps/Settings/
-a4e50b7 Settings: Update RU translations
-
-   * packages/apps/Trebuchet/
-769805b Trebuchet : Ensure workspace icon migration for dialer
-
-   * packages/providers/ThemesProvider/
-1cc81dd Add live lock screen previews [2/2]
-
    * vendor/cm/
-4a6706b Add volume boosted ringtones (1/2)
-26d9952 Missed Capital Letter
+7afdbc0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
