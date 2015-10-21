@@ -1,324 +1,217 @@
 ====================
-     10-14-2015
+     10-21-2015
 ====================
 
+
+   * bootable/recovery/
+c338061 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
 
    * build/
-c79c98f build: Generalize kernel DTB path
-27a8a24 generate_extra_images: Look for 3.10 dtbs
-
-   * device/qcom/common/
-2565d56 msm8994: Set a property to track battery mode
-
-   * device/qcom/sepolicy/
-06765fd DPM : sepolicy: allow netdomain access to cnd and dpmd
-
-   * external/whispersystems/WhisperPush/
-60e90dc Switch WhisperPush to use CMSettings
-
-   * frameworks/base/
-81e39ff Services : Ensure proximity check is taken into consideration
-b829ab3 QSPanel: Update QS brightness slider to use CMSettings
-0af69e8 Switch packages and services in frameworks not on the bootclasspath to use CMSettings
-68ece28 FingerprintService: synchronize access to clients
-4e153be Handle 'root' pseudo-package in the appops command
-424dfc0 Revert "pm: Create per-mcc prebundled install filter."
-98be6e8 Revert "bootanim: Display SKU-specific variants if present"
-b70c95d Revert "pm: Update PackageManagerSettingsTests."
-02141a6 Revert "PackageManager : Extend prebundled logic"
-39ea8dc Fix invisible rotation tile
-
-   * packages/apps/Settings/
-dbc3621 Build V18.0
-83c51f0 Revert "Don't allow deleting last remaining fingerprint"
-ff49a9c Improve fingerprint management activity UX.
-61bf836 Settings: use consistent behavior after forgetting networks
-3a0d98f Revert "Settings: clear dialog states when forgetting network"
-bba1146 Switch to use CMSettings for settings not involved in bootclasspath
-b9884ee Merge pull request #340 from dischinator/cm-12.1
-bc2274f Add more german translations
-c41c323 Merge pull request #1 from temasek/cm-12.1
-dc4ff54 Adding more german translations
-
-   * packages/apps/SetupWizard/
-579ba48 Switch SetupWizard to use CMSettings for settings unrelated to bootclasspath
-
-   * packages/providers/ContactsProvider/
-c23f25b Ensure contact preloading is dependent on regional configuration
-
-====================
-     10-13-2015
-====================
-
-
-   * android/
-45c58ae efence: Add electric fence to default manifest.
-
-   * bionic/
-1236861 bionic: add electric fence into memory debug list, use code 15.
+a9186aa envsetup: Show error when supplied dir isn't present with mmm
+4a4b5a3 edify: Fix _WordWrap function calls
+9c70def kernel: Don't update defconfig with KERNEL_ADDITIONAL_CONFIG options
+23d255f kernel: use merge-config.sh for integrating KERNEL_ADDITIONAL_CONFIG
+12622cb mka: allow mka to be run from anywhere in the tree
 
    * device/samsung/hlte-common/
-86ca6fc hlte-common: Remove Live Display init.
-
-   * device/samsung/qcom-common/
-3a26861 Automatic translation import
-
-   * external/whispersystems/WhisperPush/
-d60781b Automatic translation import
-
-   * frameworks/base/
-e24b249 Automatic translation import
-8cf82c0 Don't accidently clear TRANSPARENT_VERTICAL_NAV
-4d85688 Multiple LEDs [3/3]: Illumination Bars support
-
-   * hardware/libhardware/
-3a3bf9c Merge branch 'cm-12.1' of github.com:CyanogenMod/android_hardware_libhardware into cm-12.1
-
-   * packages/apps/AudioFX/
-bebcbe6 Automatic translation import
-
-   * packages/apps/Bluetooth/
-eb9e25d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
-20cba87 Automatic translation import
-
-   * packages/apps/CMAccount/
-d2316e6 Automatic translation import
-
-   * packages/apps/CMFileManager/
-b284ba6 Prevent NPE collecting title, which was preventing the print action.  Use Uri for title and timestamp for print title.
-d8e4b49 Automatic translation import
-
-   * packages/apps/Camera2/
-6b17037 Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-af5a060 Automatic translation import
-
-   * packages/apps/Contacts/
-6df04ee Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-4a4f9ad Automatic translation import
-
-   * packages/apps/ContactsCommon/
-07f0d17 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-e056d18 Automatic translation import
-
-   * packages/apps/DeskClock/
-862dad1 Automatic translation import
-
-   * packages/apps/Dialer/
-2013582 Automatic translation import
-
-   * packages/apps/Eleven/
-d5f4407 Automatic translation import
-
-   * packages/apps/Email/
-9d3bfb6 Automatic translation import
-
-   * packages/apps/Gallery2/
-8de5289 Automatic translation import
-
-   * packages/apps/InCallUI/
-15c8a28 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-bf1878e Automatic translation import
-
-   * packages/apps/LockClock/
-76ba8cb Automatic translation import
-
-   * packages/apps/Mms/
-754687c Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-1c1d32e Automatic translation import
-
-   * packages/apps/Settings/
-c54fff7 Build V17.9
-79f9d47 Settings: clear dialog states when forgetting network
-fc89c66 Automatic translation import
-bc1b2f8 Multiple LEDs [2/3]: Illumination Bars support
-
-   * packages/apps/SetupWizard/
-e3ed84e Automatic translation import
-
-   * packages/apps/Stk/
-5e11a9d Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
-ac9810c Automatic translation import
-
-   * packages/apps/Terminal/
-71475d2 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-1c89275 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ThemeChooser into cm-12.1
-acc2ce1 Automatic translation import
-
-   * packages/apps/Trebuchet/
-b1b858f Automatic translation import
-
-   * packages/apps/TvSettings/
-a587946 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-8759969 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-d7348f7 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
-8fa1e0e Automatic translation import
-
-   * packages/providers/ContactsProvider/
-b3bc906 Unbreak build breakage when NO overlay is present
-9d6f99b preloaded_contacts schema moved, to unbreak builds
-
-   * packages/services/Telephony/
-f831ed0 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-7fea959 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-474f79c Automatic translation import
-
-   * vendor/cm/
-9bf02ed Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-151761e contributors: Add Oppo R7 and R7 Plus
-
-   * vendor/cmsdk/
-cf60dac Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-0edb893 Automatic translation import
-
-====================
-     10-12-2015
-====================
-
-
-   * android/
-b12f7b2 Track own external/libhevc
+9233bd4 Update from samsung latest rebased kernel
+dff579d Sepolicy vendor/cm updates
+6bb5f93 Revert "hlte-common: Unbreak HELL! These moved to vendor/cm"
 
    * frameworks/av/
-d0ba534 SoftHEVCDec: Reduced memory requirements
+c3fbffa Fixed comparison so that both operands are treated as 64 bit.
+1d227e3 Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.
+36e7cab ALOGE does not match triggering condition.
 
    * frameworks/base/
-e7c92b1 Revert "RotationPolicy: fix rotation toggle logic"
-76c6dc4 Fix horrible warning on every systemui startup.
-84c31a6 Fix rotation tile animation
-d2867dc Fix huge bounce-back in ListView when double-flinging
+1602fdb base: initialized context ContentResolver reference before use it.
+ac89fbb Lights Modes: Avoid regular values updates
+874c47e Support for faster brightness response to light changes.
 
-   * hardware/libhardware/
-2748948 LEDs Brightness: Add the libhardware comment indications
-e75e2a3 Multiple LEDs [1/3]: Illumination Bars support
-
-   * packages/apps/Settings/
-0c88a72 Merge pull request #339 from dischinator/cm-12.1
-
-====================
-     10-11-2015
-====================
-
-
-   * android/
-e79aa52 Restore CMAccount
-
-   * device/samsung/hlte-common/
-d174f6e Revert "hlte-common: use CAF Power HAL instead of CM's"
-8a1f234 Revert "hlte-common: Update interactive values"
-c30ab1b hlte-common: Add QuickBoot
-9ec5f44 Sepolicy vendor/cm updates
-d61c7e4 Revert "hlte-common: Unbreak HELL! These moved to vendor/cm"
-a3fa4a1 Latest ueventd with the new kernel
-699a3f7 Revert "hlte-common: merge some permission stuffs with stock Touchwiz"
-
-   * packages/apps/ContactsCommon/
-d60d4aa Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-
-   * packages/apps/Settings/
-11e7d7d Update cr_strings.xml
-99b675a Update cr_strings.xml
-6457488 Update translations
-56d4e32 Remove temasek version string from german localisation.
-879d40a Copy default translations to values-de/
-e59bee9 Build V17.8
-
-   * packages/apps/SetupWizard/
-491e1a2 Change navigation bar to ours
-1c797b6 Revert "Bring up local changes"
-ebfb191 Bring up local changes
-
-   * vendor/cmsdk/
-28b978e Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-
-   * vendor/samsung/
-1cc3f3e hlte-common: Add QuickBoot app
-
-====================
-     10-10-2015
-====================
-
-
-   * external/efence/
-decf34d efence: Clean up to make it compatible with CM 12.1
-
-   * external/libavc/
-e787369 Merge "Return error in SPS/PPS parsing when extra bytes are read from input"
-cceb0ba Merge "Decoder: Once all the MBs in a picture are decoded ignore remaining bytes"
-f377e8c Decoder: Memset 8 extra bytes at the end of internal bitstream buffer
-09c58b2 Merge "Decoder: Fixed an out of bound read in intra pred buffers"
-
-   * frameworks/av/
-d3a85f1 Add include guard into SampleIterator.h
-f954f9d Don't send OnCompletion events when looping
-
-   * frameworks/base/
-c743fba Revert "SystemUI : Navbar ring five targets"
-1eff747 NVIDIA Shield Controller support [2/2]
-d5bd63a FINALLY lockscreen to sleep can be turn offf
-6df6077 Add volume boosted ringtones (2/2)
-46b0e11 Add live lock screen previews [1/2]
-515f935 SettingsProvider : load region-specific settings for mobile data
-e1c9db3 [1/2] core: Add support for fake signatures, enabled by developer setting
-f2d996c Revert "Support package signature faking used by µg GmsCore"
-1cb981b Make accessing mInputMethodTarget thread-safe
-be67891 [1/2] Heads up touch outside behavior
-c7f499f Safely handle interrupts during Thread.join()
-8c5e8b7 Retry if interrupted before mMessageThread has joined
-
-   * frameworks/opt/net/wifi/
-9ec4201 NVIDIA Shield Controller support [1/2]
+   * hardware/qcom/audio-caf/msm8916/
+90db087 add line out to device sharing codec backend
+359e995 hal: updates for DEVICE_OUT_LINE
+e845ba1 hal: Add support for AUDIO_DEVICE_OUT_LINE
 
    * kernel/samsung/hlte/
-5022891 Build v1.31
-81438a0 mm: process_reclaim: use unbounded cpu workqueue
-202517f mm: process_reclaim: do not iterate over stale task structs
-630a528 mm: process_reclaim: fix reclaim skip on low efficiency
-0b35f7b mm: process reclaim: vmpressure based process reclaim
-a1e0679 mm: Support address range reclaim
-7cf1692 mm: Enhance per process reclaim to consider shared pages
-384ce9c mm: Per process reclaim
-354b947 ion: Update system heap shrinker to use the new count/scan interface
-72999e9 vmscan: per-node deferred work
-487a7dd shrinker: add node awareness
-1876aab mm: new shrinker API
-877a749 fs: rework f2fs
-e684bbb defconfig: Set default IO scheduler to ROW
-16346a6 Revert "defconfig: Change default tcp congestion mode to bic"
-
-   * packages/apps/CMWallpapers/
-3e1a80e CMWallpapers : Hide default wallpaper
-
-   * packages/apps/ContactsCommon/
-d940f01 Shim in mark as spam api
-
-   * packages/apps/Eleven/
-50ef967 Merge "Eleven: check app settings when starting service" into cm-12.1
-
-   * packages/apps/Mms/
-a8b6735 Fixed issues with QuickMessagePopup on lock screen
+9fd9dd2 Build v1.33
+befe7eb security: Fix build
+41ef0ac uid_cputime: Iterates over all the threads instead of processes.
+6367da9 uid_cputime: fix cputime overflow
+a528aec uid_cputime: Fixes double accounting race condition on task exit.
+b210463 uid_cputime: Extends the cputime functionality to report power per uid
+de421dc proc: uid: Changes the thread notifier to profile event notifier.
+18171fa proc: Allow proc_free_inum to be called from any context
+571dd29 proc: Usable inode numbers for the namespace file descriptors.
+9260c296 proc: Fix the namespace inode permission checks.
+da6966c proc: Generalize proc inode allocation
+4b8fc34 vfs: Allow unprivileged manipulation of the mount namespace.
+850eba7 vfs: Only support slave subtrees across different user namespaces
+aeeb61e vfs: Add a user namespace reference from struct mnt_namespace
+c8a8031 vfs: Add setns support for the mount namespace
+5863d5e fs: introduce inode operation ->update_time
+9e08ec6 VFS: Comment mount following code
+e690b0d VFS: Make clone_mnt()/copy_tree()/collect_mounts() return errors
+299917d get rid of ->mnt_longterm
+8a7c94c vfs: umount_tree() might be called on subtree that had never made it
+684dda5 brlocks/lglocks: API cleanups
+5bc67e6 brlocks/lglocks: turn into functions
+987485b lglock: remove online variants of lock
+5c12cd7 Revert "vfs: umount_tree() might be called on subtree that had never made it"
+398c617 security: lsm_audit: add ioctl specific auditing
+774e61e pstore: selinux: add security in-core xattr support for pstore and debugfs
+18dd7fd Enable setting security contexts on rootfs inodes.
+8ef0872 SELinux: ss: Fix policy write for ioctl operations
+e6ac2be SELinux: use deletion-safe iterator to free list
+71560fe SELinux: per-command whitelisting of ioctls
+5deecce SELinux: Update policy version to support constraints info
+4f41416 SELinux: add default_type statements
+c755611 SELinux: allow default source/target selectors for user/role/range
+0007b26 msm: vidc: add driver support to enable operating rate
+fd5efa1 msm: vidc: Enable session priority support.
 
    * packages/apps/Settings/
-36a4716 [2/2] Settings: Add support for fake signatures, enabled by developer setting
-e6bc32a [2/2] Heads up touch outside behavior
-571fd54 Heads up options: Move onPreferenceChange outside onCreate method
-b0cf133 Merge pull request #338 from Pixelase/cm-12.1
+8e2c682 Build V18.1
 
-   * packages/apps/Trebuchet/
-486bcb3 Trebuchet: make workspace layout configurable by prebundled mcc
-
-   * packages/providers/ContactsProvider/
-c2cf89f Add a richer system around preloading contacts
+   * packages/services/Telecomm/
+bb90063 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
 
    * vendor/cm/
-7afdbc0 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+a99f259 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+   * vendor/samsung/
+518c110 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+8e06366 Merge pull request #662 from nardholio/cm-12.1
+e66cfa1 d2-common: Use bcm4334 firmware from kltemini
+
+====================
+     10-20-2015
+====================
+
+
+   * bootable/recovery/
+840c175 update-binary: support reboot_now on older recoveries
+
+   * packages/apps/Settings/
+8253511 Merge pull request #342 from dischinator/cm-12.1
+
+   * vendor/asus/
+ab4a23e Merge pull request #70 from semdoc/cm12.1
+
+   * vendor/cm/
+900d6cc Updated CHANGELOG and (c) date
+
+====================
+     10-19-2015
+====================
+
+
+   * external/koush/ion/
+3e1cfb0 Ion: Support exif rotation when using deepzoom
+
+   * packages/apps/Settings/
+1c6cc58 Merge pull request #341 from Trafalgar-Square/patch-1
+3775558 Merge branch 'Trafalgar-Square-patch-1' into cm-12.1
+04eb7bf Merge branch 'patch-1' of https://github.com/Trafalgar-Square/android_packages_apps_Settings into Trafalgar-Square-patch-1
+08000c4 Update German Transalations
+
+====================
+     10-18-2015
+====================
+
+
+   * android/
+f7da083 Revert "Track own external/libhevc"
+69d9c46 Revert "efence: Add electric fence to default manifest."
+
+   * device/samsung/hlte-common/
+f11cd84 hlte-common: Remove Live Display init.
+c85a0e6 Revert "hlte-common: use CAF Power HAL instead of CM's"
+54743ee Revert "hlte-common: Update interactive values"
+a27f6c8 hlte-common: Add QuickBoot
+
+   * frameworks/av/
+2c26847 Revert "SoftHEVCDec: Reduced memory requirements"
+
+   * frameworks/base/
+e35ed3f ZenMode : Remove config_setZenModeWhenSilentModeOn
+c03c767 Revert "Modify SILENT profile to restrict notification sound"
+
+   * packages/apps/ContactsCommon/
+32cf60b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
+
+   * packages/apps/Mms/
+c8b1a8b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/inputmethods/LatinIME/
+b004f9a inputmethod: latin: DictionaryPackInstallBroadcastReceiver: Fix Authority NPE
+
+   * system/core/
+ecc9998 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+
+   * vendor/cm/
+fb97f7c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+
+====================
+     10-17-2015
+====================
+
+
+   * frameworks/base/
+3309d2d Fix network stats logspam.
+dd258f2 Revert "services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs"
+1509d70 SystemUI: attach a queue to media player notifications
+
+   * frameworks/opt/telephony/
+6b85c0b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * kernel/samsung/hlte/
+b44ce0f cpufreq / stats: Get rid of CPUFREQ_STATDEVICE_ATTR
+340eadb95 cpufreq / stats: fix race between stats allocation and first usage
+3933871 cpu_power: Avoids race condition when the task exits.
+3ceec15 sched: cpufreq: Adds a field cpu_power in the task_struct
+fe54ad0 cpufreq_stats: Adds the fucntionality to load current values for each frequency for all the cores.
+35a9613 cpufreq: Avoid using global variable total_cpus
+68eb0e3 cpufreq: prevents NULL pointer reference while all_time_in_state stats is collected.
+3ed971f cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state
+3d3f016 cpufreq: Persist cpufreq time in state data across hotplug
+77ee2da Revert "cpufreq: Persist cpufreq time in state data across hotplug"
+7b419c7 Revert "cpufreq: Avoid using global variable total_cpus"
+17f80bd Revert "cpufreq / stats: fix race between stats allocation and first usage"
+cfdc6ca Revert "cpufreq / stats: Get rid of CPUFREQ_STATDEVICE_ATTR"
+eddc70c Revert "cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state"
+306d3a5 Revert "fs: rework f2fs"
+3bbc617 Revert "mm: new shrinker API"
+7bb9fb4 Revert "shrinker: add node awareness"
+82c88dd Revert "vmscan: per-node deferred work"
+2b506de Revert "ion: Update system heap shrinker to use the new count/scan interface"
+9cf5d1e Revert "mm: Per process reclaim"
+b26a42e Revert "mm: Enhance per process reclaim to consider shared pages"
+984bfdc Revert "mm: Support address range reclaim"
+c9f2748 Revert "mm: process reclaim: vmpressure based process reclaim"
+9d00643 Revert "mm: process_reclaim: fix reclaim skip on low efficiency"
+69c1cfe Revert "mm: process_reclaim: do not iterate over stale task structs"
+a43a18d Revert "mm: process_reclaim: use unbounded cpu workqueue"
+
+   * packages/apps/CMFileManager/
+3a4d70f Use System Resolver
+
+   * packages/apps/Email/
+7aa1f50 email: Add an ActionBar to the mail app's PreferenceActivity
+
+   * packages/apps/Mms/
+ca2b9bc Fix NPE causing crash when copying message with no body.
+
+   * packages/apps/UnifiedEmail/
+671d932 Add an ActionBar to the mail app's PreferenceActivity.
+
+   * system/core/
+441cdba bootchart: call 'bootchart_init' after remount_all is done
+
+   * vendor/cm/
+6b4620f sepolicy: qcom: Remove duplicate entry
+
+   * vendor/cmsdk/
+3c4ff75 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+e649146 CMSettings: add notification play queue setting
 
