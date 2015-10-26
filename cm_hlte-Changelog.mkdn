@@ -1,217 +1,255 @@
 ====================
-     10-21-2015
-====================
-
-
-   * bootable/recovery/
-c338061 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
-
-   * build/
-a9186aa envsetup: Show error when supplied dir isn't present with mmm
-4a4b5a3 edify: Fix _WordWrap function calls
-9c70def kernel: Don't update defconfig with KERNEL_ADDITIONAL_CONFIG options
-23d255f kernel: use merge-config.sh for integrating KERNEL_ADDITIONAL_CONFIG
-12622cb mka: allow mka to be run from anywhere in the tree
-
-   * device/samsung/hlte-common/
-9233bd4 Update from samsung latest rebased kernel
-dff579d Sepolicy vendor/cm updates
-6bb5f93 Revert "hlte-common: Unbreak HELL! These moved to vendor/cm"
-
-   * frameworks/av/
-c3fbffa Fixed comparison so that both operands are treated as 64 bit.
-1d227e3 Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.
-36e7cab ALOGE does not match triggering condition.
-
-   * frameworks/base/
-1602fdb base: initialized context ContentResolver reference before use it.
-ac89fbb Lights Modes: Avoid regular values updates
-874c47e Support for faster brightness response to light changes.
-
-   * hardware/qcom/audio-caf/msm8916/
-90db087 add line out to device sharing codec backend
-359e995 hal: updates for DEVICE_OUT_LINE
-e845ba1 hal: Add support for AUDIO_DEVICE_OUT_LINE
-
-   * kernel/samsung/hlte/
-9fd9dd2 Build v1.33
-befe7eb security: Fix build
-41ef0ac uid_cputime: Iterates over all the threads instead of processes.
-6367da9 uid_cputime: fix cputime overflow
-a528aec uid_cputime: Fixes double accounting race condition on task exit.
-b210463 uid_cputime: Extends the cputime functionality to report power per uid
-de421dc proc: uid: Changes the thread notifier to profile event notifier.
-18171fa proc: Allow proc_free_inum to be called from any context
-571dd29 proc: Usable inode numbers for the namespace file descriptors.
-9260c296 proc: Fix the namespace inode permission checks.
-da6966c proc: Generalize proc inode allocation
-4b8fc34 vfs: Allow unprivileged manipulation of the mount namespace.
-850eba7 vfs: Only support slave subtrees across different user namespaces
-aeeb61e vfs: Add a user namespace reference from struct mnt_namespace
-c8a8031 vfs: Add setns support for the mount namespace
-5863d5e fs: introduce inode operation ->update_time
-9e08ec6 VFS: Comment mount following code
-e690b0d VFS: Make clone_mnt()/copy_tree()/collect_mounts() return errors
-299917d get rid of ->mnt_longterm
-8a7c94c vfs: umount_tree() might be called on subtree that had never made it
-684dda5 brlocks/lglocks: API cleanups
-5bc67e6 brlocks/lglocks: turn into functions
-987485b lglock: remove online variants of lock
-5c12cd7 Revert "vfs: umount_tree() might be called on subtree that had never made it"
-398c617 security: lsm_audit: add ioctl specific auditing
-774e61e pstore: selinux: add security in-core xattr support for pstore and debugfs
-18dd7fd Enable setting security contexts on rootfs inodes.
-8ef0872 SELinux: ss: Fix policy write for ioctl operations
-e6ac2be SELinux: use deletion-safe iterator to free list
-71560fe SELinux: per-command whitelisting of ioctls
-5deecce SELinux: Update policy version to support constraints info
-4f41416 SELinux: add default_type statements
-c755611 SELinux: allow default source/target selectors for user/role/range
-0007b26 msm: vidc: add driver support to enable operating rate
-fd5efa1 msm: vidc: Enable session priority support.
-
-   * packages/apps/Settings/
-8e2c682 Build V18.1
-
-   * packages/services/Telecomm/
-bb90063 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
-
-   * vendor/cm/
-a99f259 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/samsung/
-518c110 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-8e06366 Merge pull request #662 from nardholio/cm-12.1
-e66cfa1 d2-common: Use bcm4334 firmware from kltemini
-
-====================
-     10-20-2015
-====================
-
-
-   * bootable/recovery/
-840c175 update-binary: support reboot_now on older recoveries
-
-   * packages/apps/Settings/
-8253511 Merge pull request #342 from dischinator/cm-12.1
-
-   * vendor/asus/
-ab4a23e Merge pull request #70 from semdoc/cm12.1
-
-   * vendor/cm/
-900d6cc Updated CHANGELOG and (c) date
-
-====================
-     10-19-2015
-====================
-
-
-   * external/koush/ion/
-3e1cfb0 Ion: Support exif rotation when using deepzoom
-
-   * packages/apps/Settings/
-1c6cc58 Merge pull request #341 from Trafalgar-Square/patch-1
-3775558 Merge branch 'Trafalgar-Square-patch-1' into cm-12.1
-04eb7bf Merge branch 'patch-1' of https://github.com/Trafalgar-Square/android_packages_apps_Settings into Trafalgar-Square-patch-1
-08000c4 Update German Transalations
-
-====================
-     10-18-2015
+     10-26-2015
 ====================
 
 
    * android/
-f7da083 Revert "Track own external/libhevc"
-69d9c46 Revert "efence: Add electric fence to default manifest."
+409ab52 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 
-   * device/samsung/hlte-common/
-f11cd84 hlte-common: Remove Live Display init.
-c85a0e6 Revert "hlte-common: use CAF Power HAL instead of CM's"
-54743ee Revert "hlte-common: Update interactive values"
-a27f6c8 hlte-common: Add QuickBoot
+   * bootable/recovery/
+b959c54 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
 
-   * frameworks/av/
-2c26847 Revert "SoftHEVCDec: Reduced memory requirements"
+   * external/sepolicy/
+343847b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_sepolicy into cm-12.1
 
    * frameworks/base/
-e35ed3f ZenMode : Remove config_setZenModeWhenSilentModeOn
-c03c767 Revert "Modify SILENT profile to restrict notification sound"
-
-   * packages/apps/ContactsCommon/
-32cf60b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-
-   * packages/apps/Mms/
-c8b1a8b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/inputmethods/LatinIME/
-b004f9a inputmethod: latin: DictionaryPackInstallBroadcastReceiver: Fix Authority NPE
-
-   * system/core/
-ecc9998 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-fb97f7c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-====================
-     10-17-2015
-====================
-
-
-   * frameworks/base/
-3309d2d Fix network stats logspam.
-dd258f2 Revert "services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs"
-1509d70 SystemUI: attach a queue to media player notifications
-
-   * frameworks/opt/telephony/
-6b85c0b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/samsung/hlte/
-b44ce0f cpufreq / stats: Get rid of CPUFREQ_STATDEVICE_ATTR
-340eadb95 cpufreq / stats: fix race between stats allocation and first usage
-3933871 cpu_power: Avoids race condition when the task exits.
-3ceec15 sched: cpufreq: Adds a field cpu_power in the task_struct
-fe54ad0 cpufreq_stats: Adds the fucntionality to load current values for each frequency for all the cores.
-35a9613 cpufreq: Avoid using global variable total_cpus
-68eb0e3 cpufreq: prevents NULL pointer reference while all_time_in_state stats is collected.
-3ed971f cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state
-3d3f016 cpufreq: Persist cpufreq time in state data across hotplug
-77ee2da Revert "cpufreq: Persist cpufreq time in state data across hotplug"
-7b419c7 Revert "cpufreq: Avoid using global variable total_cpus"
-17f80bd Revert "cpufreq / stats: fix race between stats allocation and first usage"
-cfdc6ca Revert "cpufreq / stats: Get rid of CPUFREQ_STATDEVICE_ATTR"
-eddc70c Revert "cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state"
-306d3a5 Revert "fs: rework f2fs"
-3bbc617 Revert "mm: new shrinker API"
-7bb9fb4 Revert "shrinker: add node awareness"
-82c88dd Revert "vmscan: per-node deferred work"
-2b506de Revert "ion: Update system heap shrinker to use the new count/scan interface"
-9cf5d1e Revert "mm: Per process reclaim"
-b26a42e Revert "mm: Enhance per process reclaim to consider shared pages"
-984bfdc Revert "mm: Support address range reclaim"
-c9f2748 Revert "mm: process reclaim: vmpressure based process reclaim"
-9d00643 Revert "mm: process_reclaim: fix reclaim skip on low efficiency"
-69c1cfe Revert "mm: process_reclaim: do not iterate over stale task structs"
-a43a18d Revert "mm: process_reclaim: use unbounded cpu workqueue"
-
-   * packages/apps/CMFileManager/
-3a4d70f Use System Resolver
+e9ee5fd [Base] Back with Heads up configurable swipe behavior
+f782bf8 Fix system ui NPE on landscape theme change
+fc6f87f Fix crash if Exif-Tag buffer-length and component-count are both 0
 
    * packages/apps/Email/
-7aa1f50 email: Add an ActionBar to the mail app's PreferenceActivity
+db1ca54 email: return default folder name for subfolders
 
    * packages/apps/Mms/
-ca2b9bc Fix NPE causing crash when copying message with no body.
+85f84c5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+14d576d Build V18.2
+fee60b0 Add a preference category for non heads up features
+2eb6f26 [Settings] Back with Heads up configurable swipe behavior
+50c237e HighTouchSensitivity [2/2]: Add Settings preference
 
    * packages/apps/UnifiedEmail/
-671d932 Add an ActionBar to the mail app's PreferenceActivity.
+8ef4be4 unifiedemail: junk icon
+95cc3e9 email: allow move/copy operations to more system folders
 
-   * system/core/
-441cdba bootchart: call 'bootchart_init' after remount_all is done
+   * packages/wallpapers/Basic/
+a62a6f5 PolarClock: Don't draw on invisible surfaces
 
    * vendor/cm/
-6b4620f sepolicy: qcom: Remove duplicate entry
+f817312 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
    * vendor/cmsdk/
-3c4ff75 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-e649146 CMSettings: add notification play queue setting
+4439715 HighTouchSensitivity [1/2]: Add Settings preference
+
+====================
+     10-25-2015
+====================
+
+
+   * frameworks/base/
+756e1bd Wifi tile: don't set items visible from non-ui thread
+c33e81e AssetAtlasService: fix a potential race condition
+6a335a4 SystemUI: Improve play queue string
+
+   * kernel/samsung/hlte/
+3d1e090 Build v1.35
+688e157 Linux 3.4.110
+060978a Failing to send a CLOSE if file is opened WRONLY and server reboots on a 4.x mount
+2854e12 vfs: Test for and handle paths that are unreachable from their mnt_root
+4b4acec dcache: Handle escaped paths in prepend_path
+7279c82 IB/qib: Change lkey table allocation to support more MRs
+7a4a546 jbd2: avoid infinite loop when destroying aborted journal
+d5e8009 usb: dwc3: Reset the transfer resource index on SET_INTERFACE
+e564281 ARM: Fix incorrect backport of 0b59d8806a31
+6e2cb8e crypto: s390/ghash: Fix incorrect backport of a1cae34e23b1
+ca61a56 drm/radeon: partially revert "fix VM_CONTEXT*_PAGE_TABLE_END_ADDR handling"
+4864a5a Revert "drm/radeon: Use drm_calloc_ab for CS relocs"
+64faac4 Revert "drm/i915: Don't skip request retirement if the active list is empty"
+b4189ee 9p: forgetting to cancel request on interrupted zero-copy RPC
+b5f69c7 KVM: x86: properly restore LVT0
+327d6d7 KVM: x86: make vapics_in_nmi_mode atomic
+48d4d0a ACPICA: Tables: Fix an issue that FACS initialization is performed twice
+de2b89f fuse: initialize fc->release before calling it
+de76e7b crush: fix a bug in tree bucket decode
+c9ec158 agp/intel: Fix typo in needs_ilk_vtd_wa()
+7a54c64 __bitmap_parselist: fix bug in empty string handling
+a5e52cc tracing/filter: Do not allow infix to exceed end of string
+8c65213 tracing/filter: Do not WARN on operand count going below zero
+e152e43 dell-laptop: Fix allocating & freeing SMI buffer page
+f138668 mm: kmemleak: allow safe memory scanning during kmemleak disabling
+d3c0bcc stmmac: troubleshoot unexpected bits in des0 & des1
+0fb6471 bridge: multicast: restore router configuration on port link down/up
+ff9f6d5 watchdog: omap: assert the counter being stopped before reprogramming
+4f51f3e ext4: don't retry file block mapping on bigalloc fs with non-extent file
+ef3c04a packet: avoid out of bounds read in round robin fanout
+449ead9 packet: read num_members once in packet_rcv_fanout()
+868cc4e ext4: call sync_blockdev() before invalidate_bdev() in put_super()
+b9253d2 bridge: fix br_stp_set_bridge_priority race conditions
+46f6c54 nfs: increase size of EXCHANGE_ID name string buffer
+9a42032 ideapad: fix software rfkill setting
+907d4a9 jbd2: fix ocfs2 corrupt when updating journal superblock fails
+6923cc5 regmap: Fix regmap_bulk_read in BE mode
+5291bae jbd2: use GFP_NOFS in jbd2_cleanup_journal_tail()
+6d33fba sctp: fix ASCONF list handling
+302c745 Disable write buffering on Toshiba ToPIC95
+dda24d8 ext4: fix race between truncate and __ext4_journalled_writepage()
+d06ac28 ASoC: wm8960: the enum of "DAC Polarity" should be wm8960_enum[1]
+9120d7a dmaengine: mv_xor: bug fix for racing condition in descriptors cleanup
+644b986 x86/PCI: Use host bridge _CRS info on Foxconn K8M890-8237A
+5c0f574 regulator: core: fix constraints output buffer
+17f68ac ath9k: fix DMA stop sequence for AR9003+
+e5ccdc3 ath3k: add support of 13d3:3474 AR3012 device
+9d4f717 ipr: Increase default adapter init stage change timeout
+3b1bd3b SUNRPC: Fix a memory leak in the backchannel code
+8f5fbcc NFS: Fix size of NFSACL SETACL operations
+b558f4a fixing infinite OPEN loop in 4.0 stateid recovery
+ef1c525 usb: core: Fix USB 3.0 devices lost in NOTATTACHED state after a hub port reset
+35ef948 staging: rtl8712: prevent buffer overrun in recvbuf2recvframe
+1681e23 mtd: dc21285: use raw spinlock functions for nw_gpio_lock
+30cafda rcu: Correctly handle non-empty Tiny RCU callback list with none ready
+388b277 usb: dwc3: gadget: return error if command sent to DEPCMD register fails
+d413364 drm/radeon: take the mode_config mutex when dealing with hpds (v2)
+8916a75 rndis_wlan: harmless issue calling set_bit()
+1e652d1 tty/serial: at91: RS485 mode: 0 is valid for delay_rts_after_send
+1733d27 pktgen: document ability to add same device to several threads
+3c7a145 pktgen: adjust spacing in proc file interface output
+4d9343e ASoC: wm8955: Fix setting wrong register for WM8955_K_8_0_MASK bits
+45d9f39 ASoC: wm8903: Fix define for WM8903_VMID_RES_250K
+3b3cd67 ASoC: wm8737: Fixup setting VMID Impedance control register
+eb7b129 crypto: talitos - avoid memleak in talitos_alg_alloc()
+b378d6a mtd: fix: avoid race condition when accessing mtd->usecount
+6eb67b9 hrtimer: Allow concurrent hrtimer_start() for self restarting timers
+
+   * packages/apps/Mms/
+2db7fb3 Fix formatting
+
+   * packages/apps/Settings/
+5d2747d settings: update contributors stats
+76a8fac settings: update control ring stream string
+cdbc04a protected-apps: don't show a progress dialog for short operations
+ee21b75 Settings: update layouts
+
+====================
+     10-24-2015
+====================
+
+
+   * packages/apps/DeskClock/
+3cc92a9 Proguard causing RuntimeException
+df1817d Null-check in case an AlarmInstance's Alarm no longer exists.
+
+====================
+     10-23-2015
+====================
+
+
+   * android/
+7043987 Revert "efence: Add electric fence to default manifest."
+17c2c4b Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+
+   * bootable/recovery/
+4224760 Blank screen during shutdown and reboot
+
+   * frameworks/base/
+cca03a0 Ensure state transition of paused activity.
+8b6a300 Automatic translation import
+
+   * frameworks/native/
+6e71fed Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * frameworks/opt/telephony/
+7657963 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+
+   * kernel/samsung/hlte/
+15a6304 Build v1.34
+6162351 msm: mdss: Do not wait for vsync while resume
+a3d67f6 msm: mdss: Correctly calculate DSI clocks if fbc is enabled
+60a8829 msm: mdss: Fix Iommu page fault for splash logo enabled feature
+e272078 msm: mdss: decouple clk ctrl and bw ctrl
+ab96cf1 msm: mdss: Wait for vsync before iommu attach during cont splash
+bdbf97e msm: mdss: Dynamic FPS using VFP
+c15e3b3 msm: mdss: Issue ctl sw reset when underrun happens
+b826af6 neigh: Better handling of transition to NUD_PROBE state
+59afe9c bif: qpnp-bsi: request BSI interrupts with level high triggering
+aacbf68 wakeup_reason: use vsnprintf instead of snprintf for vargs.
+848c126 venus_hfi.c: update flush workqueue
+271ebab msm: vidc: Error handling when core is in bad state
+9316cb2 msm: vidc: replace resurrect_fw with unload_fw
+7f11de8 msm: vidc: Add support to read venus version through debugfs
+28d1383 msm: vidc: Update the clock state variable before unprepare clocks
+6822685 Revert "msm: vidc: Don't free OCMEM when there is an open video instance"
+38cf6bc msm: vidc: Cancel pending power collapse works in core_release
+
+   * packages/apps/Calendar/
+34293bd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
+
+   * packages/apps/Contacts/
+c5be797 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/Mms/
+4598153 Correct AOSP DE translation error
+
+   * packages/apps/Settings/
+a38fe78 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+eaea013 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+
+   * packages/services/Telephony/
+1daf680 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * vendor/cm/
+6807df0 sepolicy: allow various process access /data/bootchart folder
+
+   * vendor/cmsdk/
+fff0a05 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+
+   * vendor/samsung/
+e9cca42 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
+
+====================
+     10-22-2015
+====================
+
+
+   * frameworks/native/
+e4759c3 sensorservice: customize sensor fusion mag filter via prop
+
+   * packages/apps/CMFileManager/
+b2e715e Automatic translation import
+06b63a7 Thumbnail update on copy and overwrite issue of pictures
+
+   * packages/apps/Calendar/
+de4e6ca Automatic translation import
+
+   * packages/apps/Contacts/
+ab1e2ac Automatic translation import
+
+   * packages/apps/DeskClock/
+5b4d6c3 Automatic translation import
+
+   * packages/apps/Gallery2/
+9a39c44 Automatic translation import
+
+   * packages/apps/TvSettings/
+6bbba7d Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+322e058 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+305b050 Automatic translation import
+
+   * packages/services/Mms/
+537889f Automatic translation import
+
+   * packages/services/Telephony/
+0c2f1f4 Automatic translation import
+
+   * vendor/cmsdk/
+8c87673 Automatic translation import
+
+   * vendor/samsung/
+2f501be klte-common: Add radish binary
 
