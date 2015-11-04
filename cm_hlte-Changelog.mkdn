@@ -1,188 +1,170 @@
 ====================
-     10-29-2015
-====================
-
-
-   * frameworks/base/
-852b920 Automatic translation import
-f1bb23f SystemUI: update keyguard state when profiles disable keyguard
-9cfd103 perf: Add support for additional power profiles
-
-   * frameworks/opt/telephony/
-56ad95b Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * kernel/samsung/hlte/
-399c84c Build v1.36
-a5e4a34 Mass revert v1.34 mdss commits
-
-   * packages/apps/BluetoothExt/
-ef81181 Automatic translation import
-
-   * packages/apps/CMFileManager/
-ab89abc Automatic translation import
-
-   * packages/apps/Contacts/
-9f05eaa Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-dcfa888 Automatic translation import
-e232aa0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
-
-   * packages/apps/Eleven/
-c544b6a Automatic translation import
-
-   * packages/apps/Gallery2/
-7127cd4 Automatic translation import
-
-   * packages/apps/InCallUI/
-0ac2a35 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
-85ab64d Automatic translation import
-
-   * packages/apps/Mms/
-d855d49 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-8297e7b Fix subject limit checking.
-
-   * packages/apps/Settings/
-26a95a2 Build V18.3
-be3228e Automatic translation import
-7ace1c8 Settings : Update performance tile drawable reference
-8695118 settings: ensure we don't call isProtectedApp with an invalid reference
-95fe2df WirelessSettings: Remove NFC category if there's no NFC adapter
-
-   * packages/apps/ThemeChooser/
-61e59f3 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ThemeChooser into cm-12.1
-7d117f9 Automatic translation import
-
-   * packages/apps/TvSettings/
-19d218c Automatic translation import
-
-   * packages/services/Telephony/
-7bd0bf7 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
-70674fd Automatic translation import
-
-   * vendor/cmsdk/
-7796fd8 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-694c14c Automatic translation import
-ef45247 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-
-====================
-     10-28-2015
+     11-04-2015
 ====================
 
 
    * android/
-f09dc61 Switch GCC 5.1 to GCC 5.2
-
-   * build/
-93e84b1 Enforce GCC 4.x language standard
-2eb43cd Allow setting C-exclusive target global flags
-
-   * frameworks/opt/telephony/
-f1cd40b Add getPreferredApn() in buildWaitingApns()
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.2/
-7fa9655 Add missing libatomic.a from search directory
-df11acd Use bfd linker for arm-eabi
-be19924 Import android-toolchain-armv7-5.2-2015.10-x86.tar #2
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2/
-7fa9655 Add missing libatomic.a from search directory
-df11acd Use bfd linker for arm-eabi
-be19924 Import android-toolchain-armv7-5.2-2015.10-x86.tar #2
-
-   * prebuilts/ndk/
-f4ba32c Add symlink for GCC 5.2
-
-   * vendor/cmsdk/
-826c1aa HighTouchSensitivity [1/2]: Add Settings preference
-
-====================
-     10-27-2015
-====================
-
-
-   * device/qcom/common/
-6948d77 power: add support for bias modes on 8994
-
-   * device/samsung/hlte/
-d659560 hlte: add props for SM-N900S/K
-
-   * frameworks/av/
-47a6492 Play timed text even after 35.79 minutes
-
-   * frameworks/base/
-17f3a43 Revert "autobrightness: Fix the brightness dialog is not work when first enable auto-backlight"
-06d6034 base: Locked apps to exclude from dismiss all
-3da73dd Revert "Screen pinning improvements"
-e488b54 Revert "Turn off screen pinning off by default in recents"
-
-   * hardware/qcom/display-caf/msm8974/
-d4c3461 hwc: reset overlay and writeback in unblank if writeback is active
-
-   * packages/apps/Contacts/
-6b4976d Fix empty field creation for data kinds without type.
-
-   * packages/apps/Email/
-b9984de email: junk icon
-
-   * packages/apps/Settings/
-8ad0cf4 wifi: Add a filter
-ac3773c Revert "wifi: Add a filter"
-
-   * packages/providers/ThemesProvider/
-2fdddef Fix live lock screen previews not showing up
-
-   * vendor/cmsdk/
-4ea0837 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-20cecb7 CMSettingsProvider: Add ability to read region locked themes
-
-====================
-     10-26-2015
-====================
-
-
-   * android/
-409ab52 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+c4747d5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
+f4b3d08 intel: Use our own intel hw    *s for libdrm, hwc, & libmix
+a1a71ff android-5.1.1_r24 -> android-5.1.1_r26
 
    * bootable/recovery/
-b959c54 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
+2c0c0a6 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
+29e9b2f Merge tag 'android-5.1.1_r26' into cm-12.1
 
-   * external/sepolicy/
-343847b Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_sepolicy into cm-12.1
+   * build/
+5d34b88 ota_from_target_files: Don't validate data signatures with data wipe
+6f77070 Merge tag 'android-5.1.1_r26' into HEAD
+
+   * frameworks/av/
+5f94381 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+ee4b4d3 stagefright: MPEG4Extractor: allow 'hdlr' box before first track
+8295e4e DO NOT MERGE: Protect data source access with mutex during disconnect
+5d567cc Merge tag 'android-5.1.1_r26' into cm-12.1
 
    * frameworks/base/
-e9ee5fd [Base] Back with Heads up configurable swipe behavior
-f782bf8 Fix system ui NPE on landscape theme change
-fc6f87f Fix crash if Exif-Tag buffer-length and component-count are both 0
+4758b89 Fix mis-merge in r26 sources (Remove duplicates)
+22407bf Update boosted audio files 1/2
+f429a42 Merge tag 'android-5.1.1_r26' into cm-12.1
 
-   * packages/apps/Email/
-db1ca54 email: return default folder name for subfolders
+   * frameworks/native/
+e69a933 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+1cba324 Merge tag 'android-5.1.1_r26' into cm-12.1
 
-   * packages/apps/Mms/
-85f84c5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+   * frameworks/opt/telephony/
+275e03d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
+c1b6b90 Fix NOT_RESTRICTED network capability and enforce it.
+35fc15d Merge tag 'android-5.1.1_r26' into cm-12.1
+
+   * hardware/qcom/media-caf/msm8916/
+bb144e5 Build mm-video-v4l2 on msm8909's
+
+   * packages/apps/LockClock/
+d2d601f LockClock : Add api key for open weather
 
    * packages/apps/Settings/
-14d576d Build V18.2
-fee60b0 Add a preference category for non heads up features
-2eb6f26 [Settings] Back with Heads up configurable swipe behavior
-50c237e HighTouchSensitivity [2/2]: Add Settings preference
+c08bac0 Build V18.4 - Android 5.1.1_r26
+9cc0ac7 Add translations for Security Patch Level.
+81ef4b4 Settings: update contributors cloud
+e972f2e Merge tag 'android-5.1.1_r26' into cm-12.1
+41571f0 Merge pull request #346 from dischinator/patch-artus70
+bc464cc Merge remote-tracking branch 'temasek/cm-12.1' into patch-artus70
 
-   * packages/apps/UnifiedEmail/
-8ef4be4 unifiedemail: junk icon
-95cc3e9 email: allow move/copy operations to more system folders
+   * system/core/
+767eddd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+323bb81 Merge tag 'android-5.1.1_r26' into cm-12.1
 
-   * packages/wallpapers/Basic/
-a62a6f5 PolarClock: Don't draw on invisible surfaces
+   * vendor/asus/
+507bac3 Merge pull request #75 from jrior001/cm-12.1
+0758c11 Merge remote-tracking branch 'zen/cm-12.1' into cm-12.1
 
    * vendor/cm/
-f817312 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-4439715 HighTouchSensitivity [1/2]: Add Settings preference
+ae2da10 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+902c2cc Update boosted audio files 2/2
 
 ====================
-     10-25-2015
+     11-03-2015
 ====================
 
+
+   * cts/
+04eebc6 rename android_security_cts_AudioflingerBinderTest.cpp to android_security_cts_AudioFlingerBinderTest.cpp
+9446958 Manually fix build errors from an MNC cherry-pick.
+a49f503 add more binder tests for AudioFlinger and AudioPolicyService.
+4783561 CTS: verify ConnectivityManager.requestNetwork throws for restricted networks
+74d90b3 Test if libstagefright dies in onInputBufferFilled on currupted file
+59cddac Add 5-second timeout to testFlacHeapOverflow
+f0ec278 DO NOT MERGE - Add security test for IEffect binder command
+a41f1b6 DO NOT MERGE: Test whether mediaserver leaks info across invalid binder calls
+b0e6092 DO NOT MERGE - Add CTS tests for IAudioflinger binder checks.
+
+   * frameworks/av/
+3a6718d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * packages/apps/Camera2/
+44d2333 Fix crash if Exif-Tag buffer-length and component-count are both 0
+
+   * packages/apps/Gallery2/
+77db8c7 Fix crash if Exif-Tag buffer-length and component-count are both 0
 
    * packages/apps/Mms/
-2db7fb3 Fix formatting
+e838a65 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+7965b67 Fix crash if Exif-Tag buffer-length and component-count are both 0
+
+   * packages/apps/Settings/
+62f9666 Merge pull request #344 from dischinator/translations-de
+73b2a95 Some further string translations
+
+   * packages/apps/Trebuchet/
+2d723e2 GMS 3.0 : Update optional apps and folders
+8361472 Update default workspace to GMS 3.0 req
+
+   * system/core/
+dbc40b4 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+4743d5c healthd: Turn screen off before rebooting
+
+   * vendor/cm/
+4a3c4a1 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+7a218f8 Ventelo is now Phonero
+
+====================
+     11-02-2015
+====================
+
+
+   * kernel/samsung/hlte/
+f42f7c5 Build v1.37
+d2a929f Mass revert msm/vidc v1.34 commits
+
+   * packages/apps/Trebuchet/
+f6a8d4f Fix crash if Exif-Tag buffer-length and component-count are both 0
+
+   * vendor/cm/
+48a042e contributors: add LG G4, remove cody from some devices
+
+====================
+     11-01-2015
+====================
+
+
+   * build/
+5c0184b Fix compilation errors with -fno-rtti    *s
+4170dbd generate_extra_images: Allow supplying arguments to dtbtool
+e58a7a0 build: Adjust for device-specific HAL paths
+
+   * frameworks/av/
+f59d11a MatroskaExtractor: don't use new buffer unless necessary
+
+   * frameworks/base/
+61b97ae [ActivityManager] Fix IndexOutOfBoundsException
+
+   * packages/apps/Contacts/
+413e0e1 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+
+   * packages/apps/Mms/
+0cf4c52 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+
+   * packages/apps/Settings/
+efc3cb9 Adding more translations
+8076486 Merge pull request #343 from artus70/patch-1
+
+   * packages/apps/Trebuchet/
+88dc0de Trebuchet: Enable HW Layers in app drawer
+
+====================
+     10-31-2015
+====================
+
+
+   * external/libavc/
+94bf490 Remove __DATE__/__TIME__ from Android builds am: f197ccb756
+
+   * external/libmpeg2/
+e43b011 Remove __DATE__/__TIME__ from Android builds am: 89fff63d42
+
+   * packages/apps/Contacts/
+4abb2f0 Contacts : Add ability to customize Contact Editor Views
+
+   * packages/apps/Settings/
+ae6c46c Update cr_strings.xml
 
