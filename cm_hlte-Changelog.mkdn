@@ -1,227 +1,115 @@
 ====================
-     11-08-2015
+     11-19-2015
 ====================
 
+
+   * bootable/recovery/
+bc6ccea Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
 
    * build/
-045550c build: Don't load dt.img task if custom mkbootimg is used
-ec4a356 build: create dt.img task
+fe380f1 gdbclient: fix build output directory path
+
+   * external/jemalloc/
+b10e601 Regenerate headers
+247fd0f Merge tag '4.0.4' into android-6.0
+
+   * external/wpa_supplicant_8/
+e6b4728 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
 
    * frameworks/av/
-bb086a4 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+c509da6 Handle malformed audio packets received during RTSP stream switching
+4626cff Fix overflow check so it doesn't reject legitimate files
 
    * frameworks/base/
-da5651d base: get rid of android time class
-0abacfd Revert "Services : Ensure proximity check is taken into consideration"
-6dc6ec1 Automatic translation import
-df1623f Revert "Only accept user rotations when in USER_ROTATION_FREE mode"
+7c1baec Shell: Declare cyanogenmod WRITE for system and secure settings.
+bb65b62 base: strictmode fixes
+32b4849 base: prevent StrictMode to crash system because an overflow
+90c6d40 Listen phone state change
 
-   * frameworks/opt/net/wifi/
-8e9789e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
+   * frameworks/opt/telephony/
+9a84721 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 
-   * packages/apps/Contacts/
-98d58dc Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
+   * packages/apps/ContactsCommon/
+17cb788 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
 
-   * packages/apps/Mms/
-9fa0411 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+   * packages/apps/Dialer/
+db4c8fc dialer: fix fc on secundary users
 
    * packages/apps/Settings/
-9bef22e Build V18.5
-79df51f Remove CM translations of security_patch
-ef5a203 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-e9225f5 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ThemeChooser into cm-12.1
-
-   * packages/services/Telephony/
-e3f6c67 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+44d1358 Build V18.6
+43e759b Settings: regulatory: Wrap the layout in a ScrollView
 
    * vendor/cm/
-44c10c1 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+a3ccf8f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
    * vendor/cmsdk/
-0df1e2e Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
+82d5b73 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
 
    * vendor/samsung/
-754b27d Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-c264b6b d2: update blob list
+ed16275 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
 ====================
-     11-07-2015
+     11-18-2015
 ====================
 
 
-   * device/samsung/qcom-common/
-b7c7336 Automatic translation import
+   * kernel/samsung/hlte/
+efe6a23 Build v1.41
+ee80534 msm: mdss: add init and deinit calls to notify update ioctl
+ca6660e android: binder: Don't use sched_preempt_enable_no_resched.
+225e242 android: binder: Disable preemption while freeing kernel memory.
+41865e6 android: binder: Use wake up hint for synchronous transactions.
+768801e android: binder: Add helper function to avoid resched during priority changes.
 
-   * frameworks/av/
-861b59e audiopolicy: Fix A family a2dp mismerge
+   * vendor/samsung/
+ec87add Merge pull request #672 from andi34/cm-12.1
+e87edd0 Merge pull request #674 from raymanfx/cm-12.1
 
-   * packages/apps/AudioFX/
-4a77508 Automatic translation import
+====================
+     11-17-2015
+====================
 
-   * packages/apps/CMFileManager/
-8c39954 Automatic translation import
 
-   * packages/apps/Camera2/
-e6b9797 Automatic translation import
+   * device/samsung/hlte-common/
+335ca43 hlte-common: Stop QMI log spam
 
-   * packages/apps/Contacts/
-aa29642 Automatic translation import
+   * kernel/samsung/hlte/
+9c2b2f9 Build v1.40
+036387a selinux: Android kernel compatibility with M userspace
+96ce03f selinux: extended permissions for ioctls
+f3d7768 security: add ioctl specific auditing to lsm_audit
+a005c16 selinux: remove unnecessary pointer reassignment
+da1cb39 Revert "security: lsm_audit: add ioctl specific auditing"
+fbe9673 Revert "SELinux: per-command whitelisting of ioctls"
+e318a07 Revert "SELinux: use deletion-safe iterator to free list"
+7f59016 Revert "SELinux: ss: Fix policy write for ioctl operations"
 
-   * packages/apps/Eleven/
-9d2f804 Automatic translation import
-
-   * packages/apps/Gallery2/
-6912a34 Automatic translation import
-
-   * packages/apps/LockClock/
-8751c90 Automatic translation import
-
-   * packages/apps/Mms/
-fee5d24 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-cb8b79c Automatic translation import
+   * packages/apps/ContactsCommon/
+8ace389 Fix contact JSON record parsing.
 
    * packages/apps/Trebuchet/
-692799c Automatic translation import
-
-   * packages/apps/TvSettings/
-11ffa66 Automatic translation import
-
-   * packages/services/Telephony/
-c10cca6 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-7ee94ae Automatic translation import
-
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
-4b05a5a Revert "Update prebuilt gold for --pic-veneer option."
-3d2f537 Update prebuilt gold for --pic-veneer option.
-
-   * vendor/cmsdk/
-a6d50e0 Automatic translation import
-
-   * vendor/nvidia/
-44c5023 Add roth, shield_common. Update shieldtablet
-
-   * vendor/samsung/
-99dca63 Add lt03wifi
-
-====================
-     11-06-2015
-====================
-
-
-   * frameworks/opt/net/wifi/
-af2b866 wifi: don't disable AP on sub change if it's the same sub
-
-   * vendor/cm/
-d9d3201 Remove instance of server=""
-
-   * vendor/samsung/
-c9bd058 Merge pull request #667 from Lysergic-Acid/cm-12.1
-8283d46 galaxys2-common: use L3 widevine libs from oppo/msm8974-common
-
-====================
-     11-05-2015
-====================
-
-
-   * android/
-c4747d5 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
-
-   * bootable/recovery/
-2c0c0a6 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
-
-   * build/
-5d34b88 ota_from_target_files: Don't validate data signatures with data wipe
-6f77070 Merge tag 'android-5.1.1_r26' into HEAD
-
-   * frameworks/av/
-5f94381 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/base/
-4758b89 Fix mis-merge in r26 sources (Remove duplicates)
-22407bf Update boosted audio files 1/2
-f429a42 Merge tag 'android-5.1.1_r26' into cm-12.1
-
-   * frameworks/native/
-e69a933 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
-
-   * frameworks/opt/telephony/
-275e03d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * packages/apps/Settings/
-c08bac0 Build V18.4 - Android 5.1.1_r26
-9cc0ac7 Add translations for Security Patch Level.
-81ef4b4 Settings: update contributors cloud
-e972f2e Merge tag 'android-5.1.1_r26' into cm-12.1
-41571f0 Merge pull request #346 from dischinator/patch-artus70
-
-   * packages/apps/ThemeChooser/
-e6c8aec themechooser: listen for previews
-
-   * packages/services/Telephony/
-1acdc19 TeleService: Ensure the right phone object is used for MSIM
-
-   * system/core/
-767eddd Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
+1c46bab Live Settings: always rebuild DynamicGrid
 
    * vendor/asus/
-507bac3 Merge pull request #75 from jrior001/cm-12.1
-0758c11 Merge remote-tracking branch 'zen/cm-12.1' into cm-12.1
+7cf89c0 Merge pull request #80 from jrior001/cm-12.1
 
    * vendor/cm/
-ae2da10 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+e5b8b5a cm: make cgroups files read-only for all users
+
+   * vendor/samsung/
+a2d1f8c omap4: gralloc: Recognize GRALLOC_USAGE_CURSOR as a valid usage flag.
+0248453 Initial import of treltexx (Galaxy Note 4 Exynos) blobs
 
 ====================
-     11-04-2015
+     11-16-2015
 ====================
 
 
-   * android/
-f4b3d08 intel: Use our own intel hw    *s for libdrm, hwc, & libmix
-a1a71ff android-5.1.1_r24 -> android-5.1.1_r26
+   * vendor/asus/
+a0582d7 zenfone2: blob update 2.20.40.130/139
 
-   * bootable/recovery/
-29e9b2f Merge tag 'android-5.1.1_r26' into cm-12.1
+====================
+     11-15-2015
+====================
 
-   * frameworks/av/
-ee4b4d3 stagefright: MPEG4Extractor: allow 'hdlr' box before first track
-8295e4e DO NOT MERGE: Protect data source access with mutex during disconnect
-5d567cc Merge tag 'android-5.1.1_r26' into cm-12.1
-3a6718d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
-
-   * frameworks/native/
-1cba324 Merge tag 'android-5.1.1_r26' into cm-12.1
-
-   * frameworks/opt/telephony/
-c1b6b90 Fix NOT_RESTRICTED network capability and enforce it.
-35fc15d Merge tag 'android-5.1.1_r26' into cm-12.1
-
-   * hardware/qcom/media-caf/msm8916/
-bb144e5 Build mm-video-v4l2 on msm8909's
-
-   * packages/apps/DeskClock/
-60d907d deskclock: support ogg music files
-
-   * packages/apps/LockClock/
-d2d601f LockClock : Add api key for open weather
-
-   * packages/apps/Mms/
-e838a65 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
-
-   * packages/apps/Settings/
-bc464cc Merge remote-tracking branch 'temasek/cm-12.1' into patch-artus70
-62f9666 Merge pull request #344 from dischinator/translations-de
-
-   * system/core/
-323bb81 Merge tag 'android-5.1.1_r26' into cm-12.1
-dbc40b4 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
-
-   * vendor/cm/
-902c2cc Update boosted audio files 2/2
-4a3c4a1 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
 
