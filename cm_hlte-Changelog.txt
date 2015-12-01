@@ -1,0 +1,513 @@
+====================
+     12-01-2015
+====================
+
+
+   * android/
+d84d49b Update README.mkdn
+
+   * bionic/
+b6ee5d4 kernel-header : add alarm type and clock type for power off alarm
+fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
+
+   * device/qcom/sepolicy/
+bc61f9b sepolicy: Label boot/recovery/cache partitions
+
+   * device/samsung/hlte-common/
+26eefc2 Merge pull request #10 from Joshndroid/cm-13.0
+447d225 Add conditioner flag for full screen boot to allow ratio seperation
+f69ddad Merge pull request #4 from temasek/cm-13.0
+fd7c4d1 ril: Update namePresentation for LP blobs
+7bf7a41 Revert "ril: Set mqanelements = 5"
+
+   * device/samsung/hltespr/
+9e69568 hltespr: Enable CDMA option
+
+   * frameworks/av/
+aeda337 Fix for getPosition after seek
+8a55244 Correct the time returned by AudioPlayer::getMediaTime
+118bc1d The progress bar of next song is not properly started in offload use case
+ee0fd2d audio: reset vorbis EOS status after a flush
+bbb702d GenericSource: acquire lock only for assigning dataSource.
+e4b4124 GenericSource: Hold an additional reference to dataSource.
+3745361 GenericSource: Synchronize access to dataSource
+c263222 stagefright: omx: delay observer death handling
+d15a8bd Audio Effects are not processing first buffer
+6cdcb6a Workaround for busy wait bug
+742132a MediaCodec: reset size to zero for EOS.
+43e8dfa stagefright: Fix tags in mpeg4 not parsed correctly.
+d69ffb9 libstagefright: Handle MPEG4 DP playback
+
+   * frameworks/base/
+4ca07f2 alarmmanager: Reduce calls to elapsedRealtime()
+af7319d Bluetooth: Fix for CTS failure
+6415ae4 Alarm: add support for power off alarm
+e141958 Update A2DP device connection state properly.
+5906c95 Revert "Change the routing path of bluetooth headset connections."
+a3dc4ed video: Add QHD & 2K profile for recorder
+8589e6a frameworks/base: Add checks for 4KUHD and VGA timelapse
+ffef6e5 Udpate instrumentation code
+a6b6701 MediaHTTPConnection: support Cookie update
+ce027bb Fix build & remove duplicates
+9364c06 Fix the cell standby mobile radio active issue
+22d50e5 Fix build with gcc 5.1
+a2ee608 SystemUI: fix QS quick pull down
+3c2ccf9 Themes: Allow SystemUI Tuner Icon to be Tinted
+1ef5a8d Themes: Allow Permission Icons to be fully themed
+1145f91 QuickSettings: Add long click support for all tiles
+cd7da77 QuickSettings: Improve draggable tiles management
+59857c4 NavBar: Fix little BackLand drawable
+34b64c6 Revert "SystemUI: change back button to hide ime buttom with rotate animation."
+b0ffac6 Change SQL to improve performance.
+5cfc7ca BatteryBar [1/2]
+48a497f Vectorify system bar drawables
+4c6f9fa Fix to avoid UI freeze issue
+12f0ade NullPointerException in UsbStorageActivity
+b069948 SystemUI needs the SET_WALLPAPER permission
+4f5890d Update cached buffers in async mode
+b86e68b Fix no LED indication for missed call when screen off
+66e9c65 Remove unnecessary sleep in ActivityThread
+a4977bf Fix an apk icon animation corruption issue
+f15a9ef Fix race condition
+139845a Reduce sscanf times for optimization
+0c91c6b Fix NPE in JobServiceContext when closing job
+0ee614a Fixes rapid calls to restartLoader delivering old results
+037a050 Fix NPE in TextUtils
+51c06d6 Handle IllegalStateException from Surface.lockCanvas
+69af54a Handle NPE due to threading race
+30857cd Fix ListView is not scrolled properly with arrows
+57e98d0 Fragment animations are not being saved across configuration changes
+1ba676f Fix to avoid crash when the tab is not set from app
+cefd069 Make implementation of isEmpty consistent with implementation of getCount in HeaderListViewAdapter
+df4edfb Fix array exception in createAutoBrightnessSpline
+4ff8afd Fix NPE in updateEmptyShadeView() upon screen rotation
+bd80292 Fix to show inifinite resolveractivity
+d926f7d [PDF] fix for crash when PDF printing in Chrome
+f453366 Measure absolute value of pointer motion distance
+50da947 MTU should be 1358 as per 3GPP standards
+ad14966 Correct range checking for location strings during conversion
+c89d744 Prevent erroneous calls to OnCheckedChangedListener
+c21f153 Deadlock in PackageInstallerSession
+17481d1 Remove duplicate assignment statement
+154ff66 SystemUI: Reload the EndNowButton label
+dc7d25c Fix lseek argument order.
+07a338c Retry if interrupted before mMessageThread has joined
+51ca94a [RenderScript] pass correct length of ains to BLAS functions
+688086b Don't break error string (easier grepping)
+a91a07d frameworks/base: delete TinyHashMap
+d72f4f2 Reduce the amount of allocations on Paint_Delegate
+1ad0102 Support databinding in listitem layouts.
+fddb908 Remove use of '_' variable name
+f6e6d54 Fix bug number for linker related workarounds
+40231f8 Add ThermalObserver system service to capture thermal state uevents.
+57de5e8 Add exported include dir for libandroid_runtime
+0a24060 Add support for --user to "pm path" for work profile use
+ed9ca8a docs: fix a wrong link
+4c9f55e Fix TypedArray.getTextArray()
+d5eaf76 Dismiss color fade when it is no longer used.
+957d5df Avoid calling scrollBy(0,0) on render
+8cb9463 WrapperInit: remove dead execStandalone method
+e9cdcce Update recents FAB button dimens
+7b62d64 Fix build with RECENTS_SHOW_SEARCH_BAR
+602d4d7 Improve Recents-View
+ef45a78 SystemUI: fix recents task view height calculation Initialize search bar height early enough for layouts to catch it and not cause jumpiness in certain situations. For instance on a device with a soft navigation bar, hitting recents from any application, right after the animation would finish, it would relize its layout was incorrect and relayout the thumbnails causing a jump.
+3cefb24 SystemUI: allow recent tasks to draw behind the status bar This also makes tasks draw behind the search bar if enabled
+92bbdd3 Framework: Add Fade in and Fade out effect to Recents FAB
+6a304cc SystemUI: option to ignore the last app when clearing recents (1/2)
+755e6b6 SystemUI: replace recents clear all button with a fab button * this allows us to have it any corner * added top center and bottom right/left/center options
+aabe942 [Base]: recents panel clear all button tweaks - Show or hide recents button - Place the button in top right or left
+4ef5017 Add clear all recents action to recents panel (Squashed)
+
+   * hardware/samsung/
+e48f786 libgralloc: Fix refresh rate calculation
+
+   * packages/apps/Settings/
+09eb10c Build V1
+fe2ac37 Settings: Network traffic indicator [SQUASHED]
+24f5d56 [SQUASHED]: recents panel clear all button tweaks
+bcadf00 Add fastscroll to the Manage applications screen so you don't need to scroll so much if you have alot of apps and want to go to the bottom of the list.
+
+   * system/core/
+52746ee healthd: Actually use correct common backlight function
+78c2848 healthd: Call common backlight function
+1705d1c Revert "healthd: charger: Add backlight control in charging animation"
+7cad6ee healthd: charger: Add backlight control in charging animation
+ae15b25 healthd: Turn screen off before rebooting
+
+   * vendor/cm/
+3adbf36 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+70bac0f Merge pull request #23 from Joshndroid/boot
+3fc62dd Fix full screen boot for multiple aspect ratios
+411a2e6 Add 4by3 aspect ratio
+c2145ec Add 5by3 aspect ratio
+fa30716 Correct Tele2 Sweden APNs and remove Comviq Sweden.
+
+====================
+     11-30-2015
+====================
+
+
+   * bionic/
+ad21814 linker: Reset the active shim libs each time we do a dlopen
+
+   * external/wpa_supplicant_8/
+213afc9 Fix dependencies
+
+   * frameworks/av/
+46c4173 NuPlayerRenderer: always display the first video frame without delay.
+efc362f Fix overflow check so it doesn't reject legitimate files
+c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
+
+   * frameworks/base/
+889ec3d Revert "GAPPS: Add Google Play Services, Google App and Account Manager permissions"
+1421a45 Revert "PermissionGrant: Introduce Support for flashing Gapps"
+b24ef33 Add color to network traffic arrows
+33b0c5b Make 'Restrict Background Data' notification swipeable
+6430e11 FWB: Network Traffic [1/2]
+415a1c1 Fix api
+271a023 Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg
+b193941 Move "modern" custom header images to nodpi for ALL densities usage
+e7deafb Move poly hd custom header images to nodpi for ALL densities usage
+1daa9df SystemUI: Add option for "modern" custom headers (1/2)
+e87f558 SystemUI: Add option for new poly hd custom headers (1/2)
+6603c3b SystemUI: Add PAC's revamped contextual notification header images
+8a67ec5 SystemUI: Add new HD poly effect contextual header images
+33bce31 base: delete obsolete context header images
+a852e33 SystemUI: time-context header fixes
+679a88f [1/2] SystemUI: Add time-context headers to the notification header
+c0a8258 slimseekbarpreference: set monitorbox text as string
+1cc5753 SlimSeekBarPreference: clean up a wee bit
+b74cb0a Frameworks: port SlimSeekBarPreference to temasek
+1d6644b Update fix for DT2S breakage
+70595a0 Fix DT2S on navbar after SlimDim
+8e5e431 SlimDim: Use semaphore to cancel ontouch callback
+a6d618a SlimDim: don't dim navbar on lockscreen
+3f1e514 SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]
+ee83628 SlimDim: listen for touches in navbar empty areas also
+b268361 SystemUI: SlimDim [1/2]
+5270195 Double tap to sleep on navigation bar [1/2]
+53a5530 libhwui: make surface buffer allocation asynchronous
+05c564b libhwui: make setSurface asynchronous
+0c8c7fc core: Don't enable qualcomm location overlay by default
+dd24518 Navigation bar button color (1/2)
+
+   * frameworks/opt/net/wifi/
+214bf2c wifi: Fix for re-association failure (auto join)
+100946b wifi: Handle the NULL check for the STATUS command
+
+   * packages/apps/PackageInstaller/
+45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
+
+   * packages/apps/Settings/
+8413fc5 Partial Revert "add Voice Wakeup switch"
+d1bb496 Settings: Add option for "modern" custom headers (2/2)
+05168a4 Settings: Add option for new poly hd custom headers (2/2)
+47a40fd [2/2] Settings: Add time-context headers to the notification header
+aacca8d Settings: SlimDim - pref to listen on entire screen for touches [2/2]
+3f3fd59 Settings: SlimDim [2/2]
+ecb0dfe Double tap to sleep on navigation bar [2/2]
+993425d settings: Remove direct usage of CMHardware
+21ebd50 Settings: Allow launching display rotation settings externally
+a6da8af Use SystemSettingSwitchPreference.
+59b67b0 Navigation bar button color (2/2)
+
+   * vendor/cm/
+acd166b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+e016467 sepolicy: Allow adb pull of executables without root
+
+   * vendor/cmsdk/
+a3baf9c migration: Clean up abstractions.
+4ae9604 cmsdk: Reimplement helper methods for secondary telephony service.
+c221959 cmsdk: Re-enable multiple profiles functions.
+
+====================
+     11-29-2015
+====================
+
+
+   * android/
+7b5646c Track own external/libpng
+4f782d4 Fix ratio typo
+4e49b79 Info: Temasek Bootanimation
+
+   * device/samsung/hlte-common/
+69689ff Merge pull request #3 from temasek/cm-13.0
+7b08a45 Restore "Enable hardware keys enable/disable through overlay"
+
+   * external/libpng/
+ce327e5 Kill more spam
+b5b2c23 Remove the most annoying error ever
+
+   * external/tinyalsa/
+d762c50 tinyalsa: Add a board config to drop silence_size for blob compat.
+
+   * frameworks/base/
+937ef98 SystemUI: Fix status bar clock color disappearing
+cfa346c Frameworks: apple can do...we can do as well
+c80087a systemui: Kill logspam
+d1515fa aapt: introduce SHOW_EXTENDED_WARNINGS
+1c5dd8e aapt: we dont care about uncommented public symbols
+0ce04a0 aapt: i hate if (true) statements
+4f94963 aapt: silence these warnings
+45f5d11 Fix clock seconds display with am/pm Instead of just adding seconds to the resulting timestamp, replace within the dateformat itself the minutes together with the seconds.
+d77bf84 Frameworks/base: Second Clock (1/2)
+1ee70a4 SystemUI: Remove mclockview
+ed57425 FWB: Statusbar clock font size (1/2)
+a07765c FWB: Make all 14 font variants available to Statusbar Clock (1/2)
+75e440a Status bar clock: Add BOLD ITALIC to font style (1/2)
+1ab1064 Statusbar clock font style (1/2) PS1: Initial PS2: Int settings
+
+   * kernel/samsung/hlte/
+068c29c Build v1.42
+bd157e6 Failed to load kernel modules
+60d2b13 ipv6: clean up anycast when an interface is destroyed
+b5d40e7 ipv4, fib: pass LOOPBACK_IFINDEX instead of 0 to flowi4_iif
+43e908e net: ipv6: Add sysctl entry to disable MTU updates from RA
+296ea88 um: siginfo cleanup
+a3c4ba9 net: ping: Return EAFNOSUPPORT when appropriate.
+025b5ff wakeup: Add the guard condition for len in pm_get_active_wakeup_sources
+8ef1c62 defconfig: Disable CONFIG_DEVMEM and CONFIG_DEVKMEM
+
+   * packages/apps/Bluetooth/
+cc25472 Bluetooth: Disable clang
+
+   * packages/apps/Contacts/
+853b759 Expose the contact list text colors.
+
+   * packages/apps/Settings/
+61434fc Add settings reset icons
+d056ff8 Status bar clock font size: Don't use same key as display font size
+564b747 Change status bar clock font size to use listpreference
+9bd841a Settings: Statusbar clock font size (2/2)
+fe4a887 Settings: Make all 14 font variants available to Statusbar Clock (2/2)
+d316885 Status bar tidy up!
+f456b5d Settings: Second Clock (2/2)
+1207192 Add European-style date formats
+569c2f1 Settings: enable reset option to status bar clock color
+b10e3b6 Statusbar clock font style (2/2)
+e2df310 PREVIEW 3
+e96ebd4 Add temasek to proguard
+851c24c Settings: add back status bar color option (2/2)
+445e253 Settings: make unaccounted and over-counted battery usage configurable
+1907627 [Settings] Nav bar tweaks + HW keys tweaks - Toggle on/off (CyanogenMod alredy did but only for hw keys devices). crDroid allow all devices to do that for those using PIE apps. - Nav bar dimensions (height and width)
+256e5c5 Add marginov color picker
+ec962e7 Settings: add back status bar date & style options (2/2)
+
+   * packages/services/Telephony/
+c2ba6de Telephony: reload CarrierConfig based on changes to build display version
+
+   * system/core/
+34dd214 init: Allow targets to ignore the ro.revision property
+
+====================
+     11-28-2015
+====================
+
+
+   * android/
+e3ae896 Track own external/sepolicy
+f3fced9 Use our own intel hardware psb_video and libwsbm
+
+   * build/
+d32d636 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+ba2f193 Add suffix .so to use directly libart.so
+
+   * device/qcom/sepolicy/
+c088c03 sepolicy: add missing fdAlbum type_transition
+
+   * device/samsung/hlte-common/
+100d819 ril: remove setting mQANElements
+a90c8bf Merge pull request #2 from temasek/cm-13.0
+4faf036 msm8974: Kill mm-parser
+
+   * device/samsung/hltespr/
+589383a hltespr: set radio access family
+
+   * external/ffmpeg/
+5d36776 swscale: Disable NEW_FILTER on Android, for now.
+
+   * external/sepolicy/
+f59da75 Add policy to SELinux to allow ViPER4Android in enforcing mode
+d83c68f Patch to allow SuperSU to run in SELinux enforcing a special thanks to @Chainfire for pointing me to the right places and @imoseyon for helping with the selinux rules
+
+   * external/stagefright-plugins/
+fe777d6 ffmpeg: video: Check if the codec is still open before flushing
+
+   * external/toybox/
+0466dbc mount: Fix read-only partitions remount
+
+   * external/wpa_supplicant_8/
+02c2c68 Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/av/
+3f54b2b audioflinger: Adjust throttle interval when effects in use
+5183735 Revert "adjust audio timestamp to account for AudioRecord latency"
+d51e9d6 libstagefright: Added mime-types for enca/encv atoms
+
+   * frameworks/base/
+a4e4fde Shorten first boot time by filtering dexopted apps by LRU.
+2e7007d [Base] HW keys tweaks
+c7b42f7 Removal of cm nav bar
+78524fb Base: Navigation bar options (1/2) -Toggle on/off -Height and width
+712c9fa SystemUI: Add back status bar clock color option (1/2)
+6cbe8cf Add back slim date customizations
+809a9ed Toast icon switch [1/2]
+b725cde PermissionGrant: Introduce Support for flashing Gapps
+68e5752 GAPPS: Add Google Play Services, Google App and Account Manager permissions
+4001f5f Fix mounting of non-FAT formatted SD cards (1/2)
+ca8909a services: devicepolicy: Restore backup service as system
+6c789cb Themes: Allow Immersive cling colors to be fully themed
+f28ebdd MountService: Prevent NPE with DropBoxManager
+dee6484 Shell: Clean duplicated INSTALL_GRANT_RUNTIME_PERMISSIONS permission
+bab3776 SystemUI: Clean duplicated CONFIGURE_WIFI_DISPLAY permission
+
+   * hardware/qcom/wlan-caf/
+f133a4d Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
+
+   * kernel/samsung/hlte/
+8a4bca7 msm: vidc: disable CPU L2 cache PC during video sessions
+51293de net: add length argument to skb_copy_and_csum_datagram_iovec
+
+   * packages/apps/Settings/
+dfc7369 Settings: Toast icon switch (2/2)
+50ee6ea Settings: fix profile triggers not showing up for RTL languages
+798b498 Settings: Change 'Model Number' to 'Model Name'
+e435f0f wifi: forward port avoid poor connection setting
+fcbfaac Settings: Clean duplicated permissions
+99b4138 Revert "update the permissions for the AccountManagerService"
+346a7a5 wifi: Allow configuration of country code for wifi (3/3)
+58087fc PREVIEW 2
+
+   * packages/services/Telephony/
+300bb31 Use libphonenumber instead of libphonenumbergoogle
+
+   * vendor/cm/
+a0093b3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3463bd0 init: Remove world-writable permissions in BFQ hierarchy
+140305d sepolicy: qcom: Allow reading PSU sysfs by system_server
+
+   * vendor/cmsdk/
+efb5274 Fix compile error in test cases from 3ddf435fb4085f07d47d67b21a6168c17d1f8aa1
+
+   * vendor/samsung/
+72c4089 hltespr: update blobs from L OH1
+b45db88 hlte-common: kill parser
+3d2ffbd Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+
+====================
+     11-27-2015
+====================
+
+
+   * android/
+d9587b8 Track own external/toybox (temp)
+
+   * bootable/recovery/
+8e8aebd sr: Set context for minivold
+175cc9e sr: Fix build when oemlock plugin is enabled
+
+   * build/
+31cf146 build: End this nightmare.
+
+   * device/samsung/hlte-common/
+7121c80 Merge pull request #1 from temasek/cm-13.0
+de2eada Merge pull request #9 from Joshndroid/cm-13.0
+
+   * external/busybox/
+3f42617 busybox: Disable build with Clang for static executable
+
+   * external/ffmpeg/
+0ec330c Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+6b91701 avcodec/h264_slice: Limit max_contexts when slice_context_count is initialized
+1290c85 rtmpcrypt: Do the xtea decryption in little endian mode
+b70f7d2 avformat/matroskadec: Check subtitle stream before dereferencing
+71a3113 avcodec/pngdec: Replace assert by request for sample for unsupported TRNS cases
+859a6ed avformat/utils: Do not init parser if probing is unfinished
+2dc1f3a avcodec/jpeg2000dec: Fix potential integer overflow with tile dimensions
+9a9dda6 avcodec/jpeg2000: Use av_image_check_size() in ff_jpeg2000_init_component()
+b3bc052 avcodec/wmaprodec: Check for overread in decode_packet()
+093e582 avcodec/smacker: Check that the data size is a multiple of a sample vector
+948d93d avcodec/takdec: Skip last p2 sample (which is unused)
+824e72d avcodec/dxtory: Fix input size check in dxtory_decode_v1_410()
+c7a970a avcodec/dxtory: Fix input size check in dxtory_decode_v1_420()
+6af38b2 avcodec/error_resilience: avoid accessing previous or next frames tables beyond height
+0ce7baa avcodec/dpx: Move need_align to act per line
+7f0b589 avcodec/flashsv: Check size before updating it
+f64ffbb avcodec/ivi: Check image dimensions
+c0748b9 avcodec/utils: Better check for channels in av_get_audio_frame_duration()
+dbfec68 avcodec/jpeg2000dec: Check for duplicate SIZ marker
+
+   * frameworks/base/
+50a7126 Correct RAM Bar text color and also made it themeable
+f64174d Adjustments in RAM Bar
+9efbc19 Fix recents button force close after RAM bar commit
+6255977 RAM bar: fix position without search bar in portrait and fix wrong bottom position in landscape with serch bar on. Also centralize text
+bb48795 Add membar to recents options [1/2]
+e624b0f Frameworks: add ability to disable bar color in battery saver mode (1/2)
+c035104 Sounds: remove duplicated vega notif
+e2374de Move KILL_APP_LONGPRESS_TIMEOUT to Settings.Secure
+11e7c83 Materialize Tab Selected to Fix Power Menu Theming
+00f12fb Update Alarm Files from N5 Factory Image
+41a45e3 Update Effects from N5 Nexus Image
+1f15ca6 Update Dock/Undock Sounds from M Factory Image
+3592a1f Update Notification Sounds from N5 Factory Image
+dd65b07 Update Material Ringtones to M from N5 Factory Image
+706c7ef Update VideoRecord & Wireless Charging Sounds to M
+2d9c5a4 Use M Sound for LowBattery
+d264262 Ensure M Camera Sounds
+4155b14 Change dividers from Holo Blue to Material Teal
+8aed4c0 Update frameworks-res.apk icon to a more appropriate icon
+a86071a [Base] long press back to kill configurable timeout
+2a0a12e Add the ability to hide superuser status bar icon [1/2]
+
+   * hardware/qcom/display-caf/msm8916/
+fe70e38 Revert "hwc: Add secure display attribute"
+
+   * packages/apps/Settings/
+45a91fe Add membar to recents options [2/2]
+c8b2cd8 Settings: add ability to disable bar color in battery saver mode (2/2)
+dd302fe [Settings] long press back to kill configurable timeout
+b90b87d Settings: Wi-Fi WPS Materialized icon
+51d35b6 DeviceInfo: correctly grab the processor info from /proc/cpuinfo
+7e2e5b2 DeviceInfo: remove unused variable in getMemInfo()
+55698de Add the ability to hide superuser status bar icon [2/2] - Add a simple option to hide the su icon placed in status bar when a session is active
+1af327c Revert "Settings: Anonymous Statistics (CMStats)"
+40c7b07 Revert "Settings: Update Anonymous Stats Implementation."
+ab9ecfa Revert "ReportingService: Fix service startup"
+768f06a Revert "Use SSL for submitting stats"
+da599fc Revert "Settings: Migrate stats opt out to global settings."
+80c63ac Revert "Settings: Map to new Secure Setting for Stats Collection."
+fa88607 Revert "Settings: Rebase against GoogleAnalyticsV3."
+82b7360 Revert "Settings: Move CMStats under Privacy settings."
+69da270 Revert "Settings: update community metrics"
+31c30df Revert "Settings: improved stats upload logic"
+2e9b6fa Revert "Settings: fix reversed name/id fields in metrics"
+85b3bac Revert "Settings: report stats upload immediately"
+bae3c1d Revert "Settings: add opt out stats event"
+dba5f05 Revert "Settings: add fallback strings to device versioning for metrics"
+433d5ab Revert "Settings: utilize STATS_COLLECTION from CMSettings."
+37bfe87 Revert "Settings: implement metrics logging interface from aosp."
+6dd6ed1 Revert "Settings: Add FOTA updater"
+53e1f52 Revert "Settings: Add CM Updater"
+70e2685 Settings: Remove screen rotation from accessibility
+c988de0 Development Settings: fix advanced reboot state on resume
+
+   * packages/providers/MediaProvider/
+bef7d6d Fix mounting of non-FAT formatted SD cards (2/2)
+
+   * system/core/
+5029693 mkbootimg: Add --second_offset to usage display
+
+   * vendor/cm/
+38f590c Merge pull request #22 from neobuddy89/cm-13.0
+8a3c0f7 bootanimation: Fix error when TARGET_SCREEN_ASPECT_RATIO is disabled
+ef53ae9 Merge pull request #20 from neobuddy89/cm-13.0
+f316ab4 bootanimation: Fix build for 720
+7c49345 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3b0b6c9 Merge pull request #19 from Joshndroid/bootanimation
+aeec0ac sepolicy: Allow recovery to create links in the rootfs
+
+   * vendor/samsung/
+302d200 jf: remove mm-parser
+821f671 msm8960: remove mm-parser
+
