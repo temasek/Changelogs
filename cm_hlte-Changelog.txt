@@ -1,4 +1,113 @@
 ====================
+     12-04-2015
+====================
+
+
+   * android/
+f173528 Track own OmniSwitch
+98a74c5 Track own mediaprovider
+
+   * bootable/recovery/
+219230e recovery: Fix size of text array
+
+   * device/qcom/sepolicy/
+8e2a7a4 msm8974: Fix mm-qcamerad denial
+
+   * frameworks/base/
+f85b3d1 Frameworks: icon materialization
+7eb581b Add OmniSwitch as option for default recents [1/2]
+e89791c Implement App circle sidebar [1/2]
+b22424e frameworks/base: Fix ContentService JNI leaks
+0088db0 App sidebar: Fix Left/Right position.
+b0115dd App sidebar: notify if app is not installed
+82fab9b Fix force close for App Sidebar.
+17d5931 App sidebar (1/2)
+806a24b Marshmallow logo instead of 'No recent apps'
+28b0521 statusbar weather: fix temp style after refresh
+d93121a frameworks: vectorize slim shortcut action icons
+fadfb62 Frameworks: rest of shortcut icons by Sven R.
+54882eb Frameworks: moar shortcut icons by Sven R.
+4f7aca9 Base : Add more lockscreen shortcut custom icons Part2
+3e1c00b Base:Add new 73 hd lockscreen shortcus icons
+17d3dc8 SystemUI: vector support for action icons
+40644c2 squash Frameworks: Keyguard - Add user configurable shortcuts
+832e6ed Add several Slim helper classes and constants back
+e5c75e9 Frameworks: inital bringup of slim actions and helper classes
+54dcfae Add several Slim helper classes and constants back
+7e36443 Enable SystemUI Tuner By Default
+401c877 Fix NPE with WeatherStatus on KeyguardStatusView
+73b6d1b Ls weather: options to hide the weather when notifications are visible (1/2)
+57e6abb MediaScanner behavior on boot (1/3)
+3846bec Fix theme issue with reboot dialog
+089f10e telephony: Update MAXIMUM_VALID_VALUE for disconnect codes
+2e4e0bd SystemUI: Apply tint on battery level text
+
+   * frameworks/native/
+53602ff libbinder: allow devices to disable ashmem size tracking
+
+   * frameworks/opt/telephony/
+bd9dfb7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+ab4f64e Telephony: Apply SPN override for cdma SIM (RUIM)
+a8f7501 Telephony: Identify NetworkRequests by phone
+
+   * hardware/qcom/audio-caf/msm8994/
+7e59397 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+
+   * hardware/qcom/display-caf/msm8994/
+df5855f Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+
+   * hardware/qcom/media-caf/msm8994/
+e9b2c98 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+
+   * packages/apps/OmniSwitch/
+3a20132 Fix build for cm-13.0
+0af12a7 OmniSwitch: feeling green?
+deaf638 OmniSwitch: fix FC on context menu if intent cant be resolved
+753bbc2 OmniSwitch: fix enabled check
+db2631b OmniSwitch: welcome to android 6.0
+33d72fe OmniSwitch: add menu action
+
+   * packages/apps/Settings/
+13beab1 Lockscreen shortcuts: Fix incorrect cm lockscreen shortcuts intent
+30b0eec Build V1.3
+02b462c Settings: materialize grabber icon
+a8c94ff Settings: Add OmniSwitch & move all to common house
+2e3e240 App Circle Sidebar: Support for Configurable Trigger Region[2/2]
+29babb7 [2/2] Settings: Implement App circle sidebar
+93b5635 Enable Developer options by default
+b2eba2f Color picker enable alpha slider as default
+0b5d13f Settings :Add new lockscreen shortcus icons
+543911a Add option to Restart SystemUI to DevSettings
+b73e850 App sidebar (2/2)
+2433359 Settings: Move all lockscreen shortcuts to one common house
+2f33399 suquash Settings: add user configurable lockscreen shortcuts (2/2)
+5fe63bd add dslv controller
+456cced Settings: add central slim ActionListViewSettings class back...
+7a70907 Settings: Add CM's shortcut picker
+6325542 Lock screen weather: Add options to hide the weather when notificatio… …ns are visible, (2/2)
+cdf1ef1 Settings: MediaScanner behavior on boot (3/3)
+338c22f Settings: unlink volumes enhancements
+eeabc5c Settings: use CMHW serial number
+8e46cae Themes: Expose color for external settings icons
+06d6fbc Add toggle for heads up notifications
+42a1e86 Correct development shortcut summary
+8208d92 Correct double tap to sleep summary
+
+   * packages/providers/MediaProvider/
+4c5d976 MediaProvider: MediaScanner behavior on boot (2/3)
+
+   * packages/services/Telephony/
+9bb27a7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+4930204 Move list_networks_key to separate widget
+0a6b57d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * vendor/cm/
+7ad6f13 Add OmniSwitch
+
+   * vendor/cmsdk/
+144146e CMSettingsProvider: Only enable component if already disabled.
+
+====================
      12-03-2015
 ====================
 
@@ -11,7 +120,6 @@ a8c9ccb Track arter97's jemalloc
 e90a168 Track our own Bluetooth
 f652c4f Track our own wpa_supplicant_8
 feac2ca Track our own art
-5135aed Track own frameworks/services/Telephony
 
    * art/
 72cdd24 art: force optimizing compiler and optimize everything
@@ -42,9 +150,16 @@ cc05c7e Add -Os
 40b5cb7 stagefright: Fix build breaks
 53f3009 stagefright: More HW codec support w/ FFMPEGExtractor
 b7da869 Add -Os
-36dc844 Forward Port: Add Camera sound toggle [3/3]
 
    * frameworks/base/
+14a3c16 [1/2] Base: Hide power menu on secure lockscreen
+4ccc3b3 Disable PIN entry after successful quick unlock
+9b4ce89 Enforce weaker grant if app is default handler for miltiple action
+029c267 Allow unlinking ringer with notification volume [1/2]
+3e384b9 Keyguard: Forward port lockscreen quick unlock (1/2)
+55e1066 FWB: Headset icon switch (1/2)
+a7cb682 base: display headset when plug
+3114ddc telephony: Make the disconnect cause distinguishable
 8e3750b Revert "Revert "Fix the cell standby mobile radio active issue""
 0331902 SystemUI: various qs tile detail improvements
 c0dfea8 SystemUI: add circle page indicator for qs tiles
@@ -57,6 +172,106 @@ bdad8f0 Gesture Anywhere [1/2]
 5671b6f Core: Allow Build.DISPLAY or Build.FINGERPRINT to deterimine mIsUpgrade
 601cb00 PhoneWindowManager: Powered by arter97 optimizations :D:D:D
 492a17e aapt: default to 0 compression
+
+   * frameworks/opt/telephony/
+655df63 National Data Roaming [1/3]
+0dfacd1 Skip unknown tags instead of aborting when parsing UICC TLV data
+a12b2d8 Implement UICC TLV Data decoding.
+b447d3a UiccController: use registerForAvailable only for persist.radio.apm_sim_not_pwdn
+
+   * hardware/qcom/fm/
+ecf9478 libfm_jni: Use correct QCOM HW flag
+4a211ef libfm_jni: Do not come here unless QCOM_HARDWARE is in use
+
+   * packages/apps/Bluetooth/
+0fbe027 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+e6ac88d Add -Os
+
+   * packages/apps/Contacts/
+1a447e7 Contacts: Use common contacts uri extra
+3728745 Contacts: Save contact image from lookup
+a8a8ddd Contacts: Remove contact shortcut for lookup contact
+8e0f895 Contacts: Add contact lookup with attribution to quick contacts
+b163f4a Contacts : Ensure query excludes LOCAL_CONTACTS
+182560e Fix local account name display for groups.
+2b8d200 Remove arbitrary set visibility call
+d2c1b46 Keep a local instance of mContactData when copying to SIM card.
+7fceb32 Contacts:remove memory status from overflow in search mode
+72dd839 fix crash in QuickContact on sending contact via sms
+0929c89 Summarize local phone storage in MemoryStatusActivity.
+086231d QuickContacts: Fix null pointer exception when clicking a contact
+
+   * packages/apps/ContactsCommon/
+ca42a57 Populate group title.
+
+   * packages/apps/LockClock/
+1b8e427 manifest: Enable LockClock preferences to show in LeanBack Settings row
+
+   * packages/apps/Settings/
+26ed7b7 [2/2] Settings: Hide power menu on lockscreen
+4de9bb6 Allow unlinking ringer with notification volume [2/2]
+0429a5e Keyguard: Forward port lockscreen quick unlock (2/2)
+4afa8ac System animation fixes
+13e6e0f Settings: Headset icon switch (2/2)
+5400b8b Build V1.2
+9d5f1ce Allow disabling of FC dialogs [2/2]
+bcb3590 Increase gesture anywhere width to 40px [2/2]
+fcbcfc0 Settings: Gesture Anywhere - bring it back [2/2]
+79afa98 Launch LockClock from settings
+bf8f877 Initial bring up of Temasek Spare Parts
+8f10d16 Battery Bar: Though shall use switch NOT check
+
+   * system/bt/
+9abb4e8 Add -Os
+
+   * system/core/
+cd756aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+f3cdf56 Revert "healthd: Support QC2.0 type charger"
+f772eda Allow SELinux to be disabled, set it to permissive by default
+
+   * system/vold/
+56f5c11 minivold: Build as static library for linkage into recovery
+
+   * vendor/cm/
+b72366c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+e8c957c vendor/cm: Update Japanese APNs
+
+====================
+     12-02-2015
+====================
+
+
+   * android/
+5135aed Track own frameworks/services/Telephony
+
+   * bionic/
+91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
+8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
+
+   * bootable/recovery/
+0e70a87 fstools: Invite sfdisk to the party
+e023d79 recovery: Fix mounting f2fs partitions
+
+   * device/samsung/qcom-common/
+87655f8 doze: use ScreenType util from cmsdk
+
+   * external/gptfdisk/
+1c3ad1d gptfdisk: Switch to static lib for including in fstools
+
+   * external/toybox/
+47d005d toybox: mount: Support multiple fs-types/mountpoint
+
+   * frameworks/av/
+36dc844 Forward Port: Add Camera sound toggle [3/3]
+f474d17 Handle error result from DrmManagerClient correctly
+bc585fb Handle malformed audio packets received during RTSP stream switching
+e19236d Tuning the number of packets for one read in StreamingSource
+b6cc3eb stagefright: Fix fallback mechanism to SW decoder
+1de1d15 stagefright: handleSetSurface: Don't dereference null graphic buffers
+fb3719c stagefright: Fix cts testGetMaxSupportedInstances
+9ea60c7 ffmpeg: flac: Assume 16 bits per sample if not set
+
+   * frameworks/base/
 d0f8e58 SystemUI: Move onchange for status bar weather
 e507c2f Forward Port: Add Camera sound toggle [1/3]
 3f0225e National Data Roaming [3/3]
@@ -86,54 +301,38 @@ b1a787b add Settings.System boolean helper methods
 9afdd65 SystemUI: Status bar weather font style (1/2)
 ba208da FWB: statusbar weather font size (1/2)
 128ce02 FWB: Statusbar weather color (1/2)
+4dcb0bb FWB: statusbar weather temperature placement (2/2)
+22b100e Weather Temprature Status Bar Icon 1/2
+b92eac1 Full screen recents [1/2]
+c05f9b9 Revert "utils: Introduce ScreenType class"
+4b83990 gesture: fix possible race during initialization
 
    * frameworks/opt/telephony/
-4bbb425 National Data Roaming [1/3]
-92c3592 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+0cfdefd Telephony: Allow more RIL methods to be overridden
+b72ea20 Set default subscriptions when single SIM is available
+
+   * hardware/broadcom/libbt/
+97df6c9 libbt-vendor: add support for Samsung semco
 
    * hardware/qcom/audio-caf/msm8996/
 ab6ba9c Merge commit '8f769c5' into cm-13.0-caf-8996
 
-   * hardware/qcom/fm/
-ecf9478 libfm_jni: Use correct QCOM HW flag
-4a211ef libfm_jni: Do not come here unless QCOM_HARDWARE is in use
-
    * hardware/qcom/media-caf/msm8996/
 fb94441 Merge commit '67d010d' into cm-13.0-caf-8996
 
-   * packages/apps/Bluetooth/
-0fbe027 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-e6ac88d Add -Os
-
    * packages/apps/Contacts/
-1a447e7 Contacts: Use common contacts uri extra
-3728745 Contacts: Save contact image from lookup
-a8a8ddd Contacts: Remove contact shortcut for lookup contact
-8e0f895 Contacts: Add contact lookup with attribution to quick contacts
-b163f4a Contacts : Ensure query excludes LOCAL_CONTACTS
-182560e Fix local account name display for groups.
-2b8d200 Remove arbitrary set visibility call
-d2c1b46 Keep a local instance of mContactData when copying to SIM card.
-7fceb32 Contacts:remove memory status from overflow in search mode
-72dd839 fix crash in QuickContact on sending contact via sms
-0929c89 Summarize local phone storage in MemoryStatusActivity.
-086231d QuickContacts: Fix null pointer exception when clicking a contact
-
-   * packages/apps/ContactsCommon/
-ca42a57 Populate group title.
+fad2dab Contacts: Update dialog with the correct selected count
+a6a9548 Contacts: Impove CAF strings
+ffd11b5 Contacts: move CAF strings to cm_strings
+c61ce77 contacts: Add support for import contacts to local phone storage
+5b45a0b Fix group detail activity action bar theme.
+c17b4a3 Fix up group fragment padding.
 
    * packages/apps/FMRadio/
 709ed35 Disable libfmjni on QC hardware
 219e99a Revert "Disable libfmjni module."
 
    * packages/apps/Settings/
-0be27b3 Build V1.2
-9d5f1ce Allow disabling of FC dialogs [2/2]
-bcb3590 Increase gesture anywhere width to 40px [2/2]
-fcbcfc0 Settings: Gesture Anywhere - bring it back [2/2]
-79afa98 Launch LockClock from settings
-bf8f877 Initial bring up of Temasek Spare Parts
-8f10d16 Battery Bar: Though shall use switch NOT check
 228d884 Build V1.1
 ca9fc63 Forward Port: Add Camera sound toggle [2/3]
 dfb8b1a Disable Lockscreen Media Art [2/2]
@@ -156,111 +355,17 @@ bb940ea Settings: statusbar weather font size (2/2)
 280baee Settings: statusbar weather temperature placement (1/2)
 3ab37e9 Weather Temprature Status Bar Icon 2/2
 b0261ff NavBarDimensions: Change import to reflect cm changes
-
-   * packages/services/Telephony/
-029880e National Data Roaming [2/3]
-
-   * system/bt/
-9abb4e8 Add -Os
-
-   * system/core/
-cd756aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-f3cdf56 Revert "healthd: Support QC2.0 type charger"
-f772eda Allow SELinux to be disabled, set it to permissive by default
-
-   * system/vold/
-56f5c11 minivold: Build as static library for linkage into recovery
-
-   * vendor/cm/
-b72366c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-e8c957c vendor/cm: Update Japanese APNs
-
-====================
-     12-02-2015
-====================
-
-
-   * android/
-9e2a2d2 Update cm13 temasek device maintainers
-a5c6cc5 Track own bionic
-d84d49b Update README.mkdn
-
-   * bionic/
-91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
-8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
-3a2debf kernel-header : add alarm type and clock type for power off alarm
-fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
-
-   * bootable/recovery/
-0e70a87 fstools: Invite sfdisk to the party
-e023d79 recovery: Fix mounting f2fs partitions
-
-   * device/samsung/hlte-common/
-26eefc2 Merge pull request #10 from Joshndroid/cm-13.0
-447d225 Add conditioner flag for full screen boot to allow ratio seperation
-
-   * device/samsung/qcom-common/
-87655f8 doze: use ScreenType util from cmsdk
-
-   * external/gptfdisk/
-1c3ad1d gptfdisk: Switch to static lib for including in fstools
-
-   * external/toybox/
-47d005d toybox: mount: Support multiple fs-types/mountpoint
-
-   * frameworks/av/
-f474d17 Handle error result from DrmManagerClient correctly
-bc585fb Handle malformed audio packets received during RTSP stream switching
-e19236d Tuning the number of packets for one read in StreamingSource
-b6cc3eb stagefright: Fix fallback mechanism to SW decoder
-1de1d15 stagefright: handleSetSurface: Don't dereference null graphic buffers
-fb3719c stagefright: Fix cts testGetMaxSupportedInstances
-9ea60c7 ffmpeg: flac: Assume 16 bits per sample if not set
-aeda337 Fix for getPosition after seek
-8a55244 Correct the time returned by AudioPlayer::getMediaTime
-118bc1d The progress bar of next song is not properly started in offload use case
-
-   * frameworks/base/
-4dcb0bb FWB: statusbar weather temperature placement (2/2)
-22b100e Weather Temprature Status Bar Icon 1/2
-b92eac1 Full screen recents [1/2]
-c05f9b9 Revert "utils: Introduce ScreenType class"
-4b83990 gesture: fix possible race during initialization
-4ca07f2 alarmmanager: Reduce calls to elapsedRealtime()
-af7319d Bluetooth: Fix for CTS failure
-6415ae4 Alarm: add support for power off alarm
-e141958 Update A2DP device connection state properly.
-5906c95 Revert "Change the routing path of bluetooth headset connections."
-a3dc4ed video: Add QHD & 2K profile for recorder
-8589e6a frameworks/base: Add checks for 4KUHD and VGA timelapse
-ffef6e5 Udpate instrumentation code
-a6b6701 MediaHTTPConnection: support Cookie update
-
-   * frameworks/opt/telephony/
-0cfdefd Telephony: Allow more RIL methods to be overridden
-b72ea20 Set default subscriptions when single SIM is available
-
-   * hardware/broadcom/libbt/
-97df6c9 libbt-vendor: add support for Samsung semco
-
-   * packages/apps/Contacts/
-fad2dab Contacts: Update dialog with the correct selected count
-a6a9548 Contacts: Impove CAF strings
-ffd11b5 Contacts: move CAF strings to cm_strings
-c61ce77 contacts: Add support for import contacts to local phone storage
-5b45a0b Fix group detail activity action bar theme.
-c17b4a3 Fix up group fragment padding.
-
-   * packages/apps/Settings/
 cca136f Full screen recents [2/2]
 d836c96 Battery Bar [2/2]
 e62bc84 Settings: update contributors cloud db
 3038b7d settings: contributors cloud
 631788e Use ScreenType util from cmsdk
-09eb10c Build V1
-fe2ac37 Settings: Network traffic indicator [SQUASHED]
-24f5d56 [SQUASHED]: recents panel clear all button tweaks
-bcadf00 Add fastscroll to the Manage applications screen so you don't need to scroll so much if you have alot of apps and want to go to the bottom of the list.
+
+   * packages/services/Telecomm/
+b4f6f73 MSIM: Phone account related changes
+
+   * packages/services/Telephony/
+029880e National Data Roaming [2/3]
 
    * system/core/
 5692966 adb: host: Provide better sideload status
@@ -270,11 +375,6 @@ c96c137 Partially revert "healthd: allow custom charger"
    * vendor/cm/
 f8508a8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 dac3785 cm: Include librsjni explicitly
-3adbf36 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-70bac0f Merge pull request #23 from Joshndroid/boot
-3fc62dd Fix full screen boot for multiple aspect ratios
-411a2e6 Add 4by3 aspect ratio
-c2145ec Add 5by3 aspect ratio
 
    * vendor/cmsdk/
 ad00d5b cmsdk: Add initial cleanspec.
@@ -291,10 +391,21 @@ bcc94d1 utils: Introduce ScreenType class
 ====================
 
 
+   * android/
+9e2a2d2 Update cm13 temasek device maintainers
+a5c6cc5 Track own bionic
+d84d49b Update README.mkdn
+
+   * bionic/
+3a2debf kernel-header : add alarm type and clock type for power off alarm
+fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
+
    * device/qcom/sepolicy/
 bc61f9b sepolicy: Label boot/recovery/cache partitions
 
    * device/samsung/hlte-common/
+26eefc2 Merge pull request #10 from Joshndroid/cm-13.0
+447d225 Add conditioner flag for full screen boot to allow ratio seperation
 f69ddad Merge pull request #4 from temasek/cm-13.0
 fd7c4d1 ril: Update namePresentation for LP blobs
 7bf7a41 Revert "ril: Set mqanelements = 5"
@@ -303,6 +414,9 @@ fd7c4d1 ril: Update namePresentation for LP blobs
 9e69568 hltespr: Enable CDMA option
 
    * frameworks/av/
+aeda337 Fix for getPosition after seek
+8a55244 Correct the time returned by AudioPlayer::getMediaTime
+118bc1d The progress bar of next song is not properly started in offload use case
 ee0fd2d audio: reset vorbis EOS status after a flush
 bbb702d GenericSource: acquire lock only for assigning dataSource.
 e4b4124 GenericSource: Hold an additional reference to dataSource.
@@ -313,11 +427,17 @@ d15a8bd Audio Effects are not processing first buffer
 742132a MediaCodec: reset size to zero for EOS.
 43e8dfa stagefright: Fix tags in mpeg4 not parsed correctly.
 d69ffb9 libstagefright: Handle MPEG4 DP playback
-46c4173 NuPlayerRenderer: always display the first video frame without delay.
-efc362f Fix overflow check so it doesn't reject legitimate files
-c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
 
    * frameworks/base/
+4ca07f2 alarmmanager: Reduce calls to elapsedRealtime()
+af7319d Bluetooth: Fix for CTS failure
+6415ae4 Alarm: add support for power off alarm
+e141958 Update A2DP device connection state properly.
+5906c95 Revert "Change the routing path of bluetooth headset connections."
+a3dc4ed video: Add QHD & 2K profile for recorder
+8589e6a frameworks/base: Add checks for 4KUHD and VGA timelapse
+ffef6e5 Udpate instrumentation code
+a6b6701 MediaHTTPConnection: support Cookie update
 ce027bb Fix build & remove duplicates
 9364c06 Fix the cell standby mobile radio active issue
 22d50e5 Fix build with gcc 5.1
@@ -387,8 +507,6 @@ ef45a78 SystemUI: fix recents task view height calculation Initialize search bar
 755e6b6 SystemUI: replace recents clear all button with a fab button * this allows us to have it any corner * added top center and bottom right/left/center options
 aabe942 [Base]: recents panel clear all button tweaks - Show or hide recents button - Place the button in top right or left
 4ef5017 Add clear all recents action to recents panel (Squashed)
-889ec3d Revert "GAPPS: Add Google Play Services, Google App and Account Manager permissions"
-1421a45 Revert "PermissionGrant: Introduce Support for flashing Gapps"
 
    * frameworks/opt/telephony/
 1477974 CdmaLteServiceStateTracker: allow forcing reading eri from xml
@@ -402,11 +520,11 @@ e48f786 libgralloc: Fix refresh rate calculation
    * packages/apps/BluetoothExt/
 d875afe BluetoothExt: Update icon
 
-   * packages/apps/PackageInstaller/
-45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
-
    * packages/apps/Settings/
-8413fc5 Partial Revert "add Voice Wakeup switch"
+09eb10c Build V1
+fe2ac37 Settings: Network traffic indicator [SQUASHED]
+24f5d56 [SQUASHED]: recents panel clear all button tweaks
+bcadf00 Add fastscroll to the Manage applications screen so you don't need to scroll so much if you have alot of apps and want to go to the bottom of the list.
 
    * system/core/
 52746ee healthd: Actually use correct common backlight function
@@ -416,6 +534,11 @@ d875afe BluetoothExt: Update icon
 ae15b25 healthd: Turn screen off before rebooting
 
    * vendor/cm/
+3adbf36 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+70bac0f Merge pull request #23 from Joshndroid/boot
+3fc62dd Fix full screen boot for multiple aspect ratios
+411a2e6 Add 4by3 aspect ratio
+c2145ec Add 5by3 aspect ratio
 fa30716 Correct Tele2 Sweden APNs and remove Comviq Sweden.
 
    * vendor/cmsdk/
@@ -423,9 +546,6 @@ fa30716 Correct Tele2 Sweden APNs and remove Comviq Sweden.
 
    * vendor/samsung/
 6cde2b8 Merge pull request #676 from RGIB/cm-13.0
-3d10d4b Merge pull request #690 from arco/cm-13.0
-0c3bc36 serrano: Kill mm-parser blobs
-17e9565 serrano: Use rild/libril blobs from I9505
 
 ====================
      11-30-2015
@@ -441,7 +561,14 @@ ad21814 linker: Reset the active shim libs each time we do a dlopen
    * external/wpa_supplicant_8/
 213afc9 Fix dependencies
 
+   * frameworks/av/
+46c4173 NuPlayerRenderer: always display the first video frame without delay.
+efc362f Fix overflow check so it doesn't reject legitimate files
+c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
+
    * frameworks/base/
+889ec3d Revert "GAPPS: Add Google Play Services, Google App and Account Manager permissions"
+1421a45 Revert "PermissionGrant: Introduce Support for flashing Gapps"
 b24ef33 Add color to network traffic arrows
 33b0c5b Make 'Restrict Background Data' notification swipeable
 6430e11 FWB: Network Traffic [1/2]
@@ -471,7 +598,6 @@ b268361 SystemUI: SlimDim [1/2]
 05c564b libhwui: make setSurface asynchronous
 0c8c7fc core: Don't enable qualcomm location overlay by default
 dd24518 Navigation bar button color (1/2)
-937ef98 SystemUI: Fix status bar clock color disappearing
 
    * frameworks/opt/net/wifi/
 214bf2c wifi: Fix for re-association failure (auto join)
@@ -480,7 +606,11 @@ dd24518 Navigation bar button color (1/2)
    * packages/apps/CMUpdater/
 b208d7a Use ScreenType util from cmsdk
 
+   * packages/apps/PackageInstaller/
+45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
+
    * packages/apps/Settings/
+8413fc5 Partial Revert "add Voice Wakeup switch"
 d1bb496 Settings: Add option for "modern" custom headers (2/2)
 05168a4 Settings: Add option for new poly hd custom headers (2/2)
 47a40fd [2/2] Settings: Add time-context headers to the notification header
@@ -496,7 +626,7 @@ a6da8af Use SystemSettingSwitchPreference.
 070fbea Fingerprint: Use AOSP fingerprint setup
 
    * packages/services/Telephony/
-c2ba6de Telephony: reload CarrierConfig based on changes to build display version
+33776ee Telephony: Return the correct res id for text and tone
 
    * vendor/cm/
 acd166b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
@@ -508,106 +638,8 @@ a3baf9c migration: Clean up abstractions.
 c221959 cmsdk: Re-enable multiple profiles functions.
 
    * vendor/samsung/
+3d10d4b Merge pull request #690 from arco/cm-13.0
+0c3bc36 serrano: Kill mm-parser blobs
+17e9565 serrano: Use rild/libril blobs from I9505
 21d3bd0 treltexx: Add missing IR Blaster HAL
-
-====================
-     11-29-2015
-====================
-
-
-   * android/
-7b5646c Track own external/libpng
-4f782d4 Fix ratio typo
-4e49b79 Info: Temasek Bootanimation
-
-   * build/
-d32d636 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * device/samsung/hlte-common/
-69689ff Merge pull request #3 from temasek/cm-13.0
-7b08a45 Restore "Enable hardware keys enable/disable through overlay"
-100d819 ril: remove setting mQANElements
-
-   * device/samsung/hltespr/
-589383a hltespr: set radio access family
-
-   * external/libpng/
-ce327e5 Kill more spam
-b5b2c23 Remove the most annoying error ever
-
-   * external/tinyalsa/
-d762c50 tinyalsa: Add a board config to drop silence_size for blob compat.
-
-   * external/wpa_supplicant_8/
-02c2c68 Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
-
-   * frameworks/base/
-cfa346c Frameworks: apple can do...we can do as well
-c80087a systemui: Kill logspam
-d1515fa aapt: introduce SHOW_EXTENDED_WARNINGS
-1c5dd8e aapt: we dont care about uncommented public symbols
-0ce04a0 aapt: i hate if (true) statements
-4f94963 aapt: silence these warnings
-45f5d11 Fix clock seconds display with am/pm Instead of just adding seconds to the resulting timestamp, replace within the dateformat itself the minutes together with the seconds.
-d77bf84 Frameworks/base: Second Clock (1/2)
-1ee70a4 SystemUI: Remove mclockview
-ed57425 FWB: Statusbar clock font size (1/2)
-a07765c FWB: Make all 14 font variants available to Statusbar Clock (1/2)
-75e440a Status bar clock: Add BOLD ITALIC to font style (1/2)
-1ab1064 Statusbar clock font style (1/2) PS1: Initial PS2: Int settings
-a4e4fde Shorten first boot time by filtering dexopted apps by LRU.
-2e7007d [Base] HW keys tweaks
-c7b42f7 Removal of cm nav bar
-78524fb Base: Navigation bar options (1/2) -Toggle on/off -Height and width
-712c9fa SystemUI: Add back status bar clock color option (1/2)
-
-   * hardware/qcom/wlan-caf/
-f133a4d Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
-
-   * kernel/samsung/hlte/
-068c29c Build v1.42
-bd157e6 Failed to load kernel modules
-60d2b13 ipv6: clean up anycast when an interface is destroyed
-b5d40e7 ipv4, fib: pass LOOPBACK_IFINDEX instead of 0 to flowi4_iif
-43e908e net: ipv6: Add sysctl entry to disable MTU updates from RA
-296ea88 um: siginfo cleanup
-a3c4ba9 net: ping: Return EAFNOSUPPORT when appropriate.
-025b5ff wakeup: Add the guard condition for len in pm_get_active_wakeup_sources
-8ef1c62 defconfig: Disable CONFIG_DEVMEM and CONFIG_DEVKMEM
-8a4bca7 msm: vidc: disable CPU L2 cache PC during video sessions
-51293de net: add length argument to skb_copy_and_csum_datagram_iovec
-
-   * packages/apps/Bluetooth/
-cc25472 Bluetooth: Disable clang
-
-   * packages/apps/Contacts/
-853b759 Expose the contact list text colors.
-
-   * packages/apps/Settings/
-61434fc Add settings reset icons
-d056ff8 Status bar clock font size: Don't use same key as display font size
-564b747 Change status bar clock font size to use listpreference
-9bd841a Settings: Statusbar clock font size (2/2)
-fe4a887 Settings: Make all 14 font variants available to Statusbar Clock (2/2)
-d316885 Status bar tidy up!
-f456b5d Settings: Second Clock (2/2)
-1207192 Add European-style date formats
-569c2f1 Settings: enable reset option to status bar clock color
-b10e3b6 Statusbar clock font style (2/2)
-e2df310 PREVIEW 3
-e96ebd4 Add temasek to proguard
-851c24c Settings: add back status bar color option (2/2)
-445e253 Settings: make unaccounted and over-counted battery usage configurable
-1907627 [Settings] Nav bar tweaks + HW keys tweaks - Toggle on/off (CyanogenMod alredy did but only for hw keys devices). crDroid allow all devices to do that for those using PIE apps. - Nav bar dimensions (height and width)
-256e5c5 Add marginov color picker
-ec962e7 Settings: add back status bar date & style options (2/2)
-dfc7369 Settings: Toast icon switch (2/2)
-
-   * system/core/
-34dd214 init: Allow targets to ignore the ro.revision property
-
-   * vendor/samsung/
-72c4089 hltespr: update blobs from L OH1
-b45db88 hlte-common: kill parser
-3d2ffbd Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
 
