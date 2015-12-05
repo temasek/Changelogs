@@ -1,4 +1,187 @@
 ====================
+     12-05-2015
+====================
+
+
+   * bootable/recovery/
+6289f9a recovery: Remove "Supported API" message
+beca804 recovery: Drop dependency on mkfs.f2fs
+005b3a5 minui: don't drop EV_ABS (touch) events
+
+   * build/
+c5626b4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+2d14f98 img_from_target_files: Imports added to fix the script
+97f7d5a warn and continue if using wrong jdk
+bf2f688 envsetup: make reposync use --force-sync as well
+
+   * device/samsung/hlte-common/
+be7a709 hlte-common: update OTG fstab entry
+
+   * device/samsung/hltespr/
+96741e3 hltespr: update ota for cm-13.0
+2c436b0 hltespr: ro.telephony.get_imsi_from_sim=true
+
+   * external/f2fs-tools/
+1ccb75a f2fs-tools: Update version in Android.mk
+
+   * frameworks/av/
+6d1b3b2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+89fdc5b stagefright: Fix Divx version key
+65890a7 Fixed comparison on 64 bit system
+653ed1a video: Add QHD & 2K profile for recorder
+05e6d72 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+aa88370 InputMethodService: We are using CM's "Volume key cursor control"
+143759c Revert "Themes: Expose "ALL" layouts hard code in frameworks base for themes"
+e679953 fb: add back all keyboard IME features back (1/2)
+568a575 systemui: Unbreak the build
+31a137a SystemUI: unbreak accesibility longpress Overview to unpin
+551154a Allow screen unpinning on devices without navbar
+81b2059 Update ADB status bar icon
+7b4adbf core: Update PREVENT_POWER_KEY permission for M
+643872d WindowManager: Add clearPrivateFlags
+41c7cf2 Themes: Expose "ALL" layouts hard code in frameworks base for themes
+da44f44 SystemUI: Clear out trash
+1acda47 WakeKeys: add missing home button to wake enabled checks in PhoneWindowManager
+2371195 SignalStrength: Allow for custom signal buckets in LTE
+2432ed9 settingslib: Make networkId visible.
+c7d4e4e [1/2] base: unlink notification volume is back
+37359c4 Revert "Allow unlinking ringer with notification volume [1/2]"
+443cd57 SystemUI: screenrecord: make sure to always delete tmp file
+e961142 base: bring back screen record shortcut
+ee30b9c base: screenrecord: forward port from 4.4 Squashed commit of the following:
+b6d8de9 SystemUI: Make sure Tuner doesn't show up in Settings dashboard
+f3666fb Match AOKP changes for system animations
+cdb74d5 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [1/2]
+48ca878 AOKP system animations: remove no app override
+5f970b3 AOKP animations: Add an entry for TRANSIT_TASK_OPEN_BEHIND [1/2]
+73d760b AOKP custom system animations (1/2)
+f161513 Return: Listanimation Views and Interpolator [1/2]
+4eb0063 FW_Base - XuiMod: Toast Animations [1/2]
+fa943ee Add option to disable scrolling cache [1/2]
+f600832 Fix permission for Development shortcut
+54890b3 Revert "(Squashed) revert CM density modifications"
+6d1d875 Revert "(Squashed) lcd density"
+bcc0bd2 StrictMode: fix deserialization of ViolationInfo on large stacks
+cec49c2 Allow customisation of advanced settings in DocumentsUI
+00872a6 Fix race condition when collecting op callback.
+de43f60 Restart persistent process if start timeout.
+071e682 Bind backup transport in later boot phase.
+b8d2644 SystemUI: screenshot: set a boost hint when taking a screenshot
+5ca8ce6 SystemUI: screenshot: remove screenshot notification before taking screenshot
+f808c73 GlobalScreenshot: increase thread priority
+3d8b95b Screenshot: prevent handler leak
+46fc8ee BluetoothAdapter: disable logspew
+26596e7 SystemUI: Keyguard: do not limit double tap to sleep to statusbar
+be53f1f alarms: include Timer.ogg
+5283779 Don't use timestamps with all zero
+15044a6 System crash fixed when turn off MagnificationGesture
+248af05 Avoid configuration of callback being reset after relayout.
+5b7020f (Squashed) lcd density
+f61b94f (Squashed) revert CM density modifications
+587ed29 USB MIDI: Fix race condition that causes intermittent connections.
+
+   * frameworks/native/
+c1c7f6c Revert "(2/3) allow to configure lcd density"
+0837f8f bug#460672 framebuffer surface can't keep triple buffer if define NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+45fd78f (2/3) allow to configure lcd density
+
+   * frameworks/opt/net/wifi/
+3b56a6a wifi: wifi priorities
+4b8bf0f Wifi: add "turn wifi off" action to open network notification
+
+   * frameworks/opt/telephony/
+24ccb6a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+40f6d95 Store correct IMSI when retreived from SIMRecords and use it for RuimRecords
+
+   * hardware/qcom/keymaster/
+5161822 keymaster: add TARGET_PROVIDES_KEYMASTER
+
+   * hardware/qcom/media-caf/msm8994/
+a8e57df Fix duplicated OMX.qcom.audio.decoder.aac entry
+
+   * kernel/samsung/hlte/
+6c544f6 Build v1.43
+5d10093 net: ping: Return EAFNOSUPPORT when appropriate.
+2bb33d1 Revert "android: binder: Use wake up hint for synchronous transactions."
+d98209c Revert "android: binder: Add helper function to avoid resched during priority changes."
+b66d66c Revert "android: binder: Disable preemption while freeing kernel memory."
+e56aa7c Revert "android: binder: Don't use sched_preempt_enable_no_resched."
+
+   * packages/apps/Dialer/
+61f6283 Remove usage legacy HTTP Client
+186fdb7 Add back in-call vibration features (2/2)
+
+   * packages/apps/InCallUI/
+8920d42 Add back in-call vibration features (1/2)
+
+   * packages/apps/OTAUpdates/
+507d3e5 Let it build on M (hopefully)
+
+   * packages/apps/Settings/
+bfcbdb0 Build V1.4
+cd4a170 settings: add back all keyboard IME features back (2/2) this commit adds:
+10dae72 Remove text from actionbar / Use overflow menu
+fe3856b Enable MultiWindow for everyone! :)
+adfaffb add additional battery saver steps
+918b919 Enable wifi tab by default
+81d571e App Notifications: remove peek option when headsup is disabled
+ee507b8 Themes: Expose forced tint on fingerprint enrollment checkmark
+02dd0d2 ContributorCloud: Remove rank from dialog
+b732df2 Protected apps: get protected components settings from secure instead of system
+43bec4b Expose styles in the manifest for themes
+67b1cd9 Remove 'Pulse if battery low' if unsupported
+b1a1f29 BatteryLight: Reset all settings back to default
+807c381 settings: wifi priorities
+56d051f Screen and Animations: Update & clean up
+495e57c Remove duplicate cast PreferenceScreen
+d1718cd Update Unlink notification volume from Omni M source
+1cfcb9d AOKP Animations: Use SlimSeekBarPreference
+a030bca Match AOKP changes for system animations
+c42b7b1 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [2/2]
+e5eaee6 AOKP system animations: remove no app override
+7a65fb2 AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND [2/2]
+71ef330 AOKP custom system animations (2/2)
+7a1c94c Revert "System animation fixes"
+76e79ba Add option to disable scrolling cache [2/2]
+737d35b Return: Listanimation Views and Interpolator [2/2]
+8756ef9 XuiMod: Toast Animations [2/2]
+410ab34 Revert "(Squashed) revert CM lcd settings"
+25fe097 Revert "(3/3) allow to configure lcd density"
+95a319a (3/3) allow to configure lcd density
+32fd851 [DO NOT MERGE] Modify system settings: incorrect UI state
+1262814 do not throw toasts at the user once development preferences are enabled
+b48510a (Squashed) revert CM lcd settings
+
+   * packages/services/Telephony/
+384b88e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+53a8a1a Revert "Add Managed Roaming feature support."
+3890597 Order SIM accounts properly.
+038e1fb Revert "XDivert changes for MSIM"
+1aec598 Revert "TeleService: Add support to show call duration when diconnect"
+246e0ec Revert "TeleService: Add new feature to vibrate when MO call accepted"
+
+   * system/bt/
+ec8789c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+127a524 bta: Fix device discoverability
+
+   * system/core/
+c25ea7a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+32fa1db fs_mgr: Change f2fs path
+
+   * system/vold/
+0ee3129 vold: Native exfat driver support
+6940ce9 f2fs: Fix kMkfsPath to match location of CM binary
+
+   * vendor/cm/
+0dd49f4 Build OTAUpdater
+f8c34e9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+d9b1ef0 Cleanup fs tools
+2b8c347 Rename backup script
+0cd36e6 LCD density backup
+
+====================
      12-04-2015
 ====================
 
@@ -10,8 +193,14 @@ f173528 Track own OmniSwitch
    * bootable/recovery/
 219230e recovery: Fix size of text array
 
+   * development/
+c35fae7 gdbclient: Properly locate outdir on CM
+
    * device/qcom/sepolicy/
 8e2a7a4 msm8974: Fix mm-qcamerad denial
+
+   * frameworks/av/
+3720c6e Volume should take VOLUME_MIN_DB value when audio is muted.
 
    * frameworks/base/
 f85b3d1 Frameworks: icon materialization
@@ -59,6 +248,16 @@ df5855f Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
    * hardware/qcom/media-caf/msm8994/
 e9b2c98 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
 
+   * packages/apps/CMBugReport/
+7f7c14f CMBugReport: fix attachment uploading & add tests
+
+   * packages/apps/Camera2/
+b4cb58f Fix crash if Exif-Tag buffer-length and component-count are both 0
+55f9a6a Camera2: Fix Undo button behaviour
+8b2cd20 Introduce a 'device plugin' concept.
+b25f7ac Camera2: Remove google help preference
+a3f0c03 Camera2: Add option to set max screen brightness
+
    * packages/apps/OmniSwitch/
 3a20132 Fix build for cm-13.0
 0af12a7 OmniSwitch: feeling green?
@@ -92,6 +291,9 @@ eeabc5c Settings: use CMHW serial number
 06d6fbc Add toggle for heads up notifications
 42a1e86 Correct development shortcut summary
 8208d92 Correct double tap to sleep summary
+
+   * packages/apps/TvSettings/
+07b5c81 CM PlatLogo: CyanogenMod version preference
 
    * packages/providers/MediaProvider/
 4c5d976 MediaProvider: MediaScanner behavior on boot (2/3)
@@ -219,7 +421,6 @@ bcb3590 Increase gesture anywhere width to 40px [2/2]
 fcbcfc0 Settings: Gesture Anywhere - bring it back [2/2]
 79afa98 Launch LockClock from settings
 bf8f877 Initial bring up of Temasek Spare Parts
-8f10d16 Battery Bar: Though shall use switch NOT check
 
    * system/bt/
 9abb4e8 Add -Os
@@ -320,6 +521,9 @@ ab6ba9c Merge commit '8f769c5' into cm-13.0-caf-8996
    * hardware/qcom/media-caf/msm8996/
 fb94441 Merge commit '67d010d' into cm-13.0-caf-8996
 
+   * packages/apps/CMBugReport/
+f5ffbc4 marshmallow sends bugreports pre-zipped
+
    * packages/apps/Contacts/
 fad2dab Contacts: Update dialog with the correct selected count
 a6a9548 Contacts: Impove CAF strings
@@ -333,6 +537,7 @@ c17b4a3 Fix up group fragment padding.
 219e99a Revert "Disable libfmjni module."
 
    * packages/apps/Settings/
+8f10d16 Battery Bar: Though shall use switch NOT check
 228d884 Build V1.1
 ca9fc63 Forward Port: Add Camera sound toggle [2/3]
 dfb8b1a Disable Lockscreen Media Art [2/2]
@@ -520,6 +725,13 @@ e48f786 libgralloc: Fix refresh rate calculation
    * packages/apps/BluetoothExt/
 d875afe BluetoothExt: Update icon
 
+   * packages/apps/Camera2/
+5540a7e Camera: Powerkey shutter (2/2)
+b771abb Camera: Disable Camera Launcher when both Front and Back sensors are not detected
+c8ff69a Camera2: Stop using GPS when going to background
+129c9e8 Camera2: Remove settings preferences only once
+7a9d6a6 Camera2: fix video recording for older drivers
+
    * packages/apps/Settings/
 09eb10c Build V1
 fe2ac37 Settings: Network traffic indicator [SQUASHED]
@@ -546,100 +758,4 @@ fa30716 Correct Tele2 Sweden APNs and remove Comviq Sweden.
 
    * vendor/samsung/
 6cde2b8 Merge pull request #676 from RGIB/cm-13.0
-
-====================
-     11-30-2015
-====================
-
-
-   * bionic/
-ad21814 linker: Reset the active shim libs each time we do a dlopen
-
-   * device/samsung/qcom-common/
-13122e5 qcom: cleanup packages
-
-   * external/wpa_supplicant_8/
-213afc9 Fix dependencies
-
-   * frameworks/av/
-46c4173 NuPlayerRenderer: always display the first video frame without delay.
-efc362f Fix overflow check so it doesn't reject legitimate files
-c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
-
-   * frameworks/base/
-889ec3d Revert "GAPPS: Add Google Play Services, Google App and Account Manager permissions"
-1421a45 Revert "PermissionGrant: Introduce Support for flashing Gapps"
-b24ef33 Add color to network traffic arrows
-33b0c5b Make 'Restrict Background Data' notification swipeable
-6430e11 FWB: Network Traffic [1/2]
-415a1c1 Fix api
-271a023 Changed contextual notification panel headers See images - http://i.imgur.com/PupEJ5p.jpg
-b193941 Move "modern" custom header images to nodpi for ALL densities usage
-e7deafb Move poly hd custom header images to nodpi for ALL densities usage
-1daa9df SystemUI: Add option for "modern" custom headers (1/2)
-e87f558 SystemUI: Add option for new poly hd custom headers (1/2)
-6603c3b SystemUI: Add PAC's revamped contextual notification header images
-8a67ec5 SystemUI: Add new HD poly effect contextual header images
-33bce31 base: delete obsolete context header images
-a852e33 SystemUI: time-context header fixes
-679a88f [1/2] SystemUI: Add time-context headers to the notification header
-c0a8258 slimseekbarpreference: set monitorbox text as string
-1cc5753 SlimSeekBarPreference: clean up a wee bit
-b74cb0a Frameworks: port SlimSeekBarPreference to temasek
-1d6644b Update fix for DT2S breakage
-70595a0 Fix DT2S on navbar after SlimDim
-8e5e431 SlimDim: Use semaphore to cancel ontouch callback
-a6d618a SlimDim: don't dim navbar on lockscreen
-3f1e514 SystemUI: SlimDim - pref to listen on entire screen for touches [1/2]
-ee83628 SlimDim: listen for touches in navbar empty areas also
-b268361 SystemUI: SlimDim [1/2]
-5270195 Double tap to sleep on navigation bar [1/2]
-53a5530 libhwui: make surface buffer allocation asynchronous
-05c564b libhwui: make setSurface asynchronous
-0c8c7fc core: Don't enable qualcomm location overlay by default
-dd24518 Navigation bar button color (1/2)
-
-   * frameworks/opt/net/wifi/
-214bf2c wifi: Fix for re-association failure (auto join)
-100946b wifi: Handle the NULL check for the STATUS command
-
-   * packages/apps/CMUpdater/
-b208d7a Use ScreenType util from cmsdk
-
-   * packages/apps/PackageInstaller/
-45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
-
-   * packages/apps/Settings/
-8413fc5 Partial Revert "add Voice Wakeup switch"
-d1bb496 Settings: Add option for "modern" custom headers (2/2)
-05168a4 Settings: Add option for new poly hd custom headers (2/2)
-47a40fd [2/2] Settings: Add time-context headers to the notification header
-aacca8d Settings: SlimDim - pref to listen on entire screen for touches [2/2]
-3f3fd59 Settings: SlimDim [2/2]
-ecb0dfe Double tap to sleep on navigation bar [2/2]
-993425d settings: Remove direct usage of CMHardware
-21ebd50 Settings: Allow launching display rotation settings externally
-a6da8af Use SystemSettingSwitchPreference.
-59b67b0 Navigation bar button color (2/2)
-
-   * packages/apps/SetupWizard/
-070fbea Fingerprint: Use AOSP fingerprint setup
-
-   * packages/services/Telephony/
-33776ee Telephony: Return the correct res id for text and tone
-
-   * vendor/cm/
-acd166b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-e016467 sepolicy: Allow adb pull of executables without root
-
-   * vendor/cmsdk/
-a3baf9c migration: Clean up abstractions.
-4ae9604 cmsdk: Reimplement helper methods for secondary telephony service.
-c221959 cmsdk: Re-enable multiple profiles functions.
-
-   * vendor/samsung/
-3d10d4b Merge pull request #690 from arco/cm-13.0
-0c3bc36 serrano: Kill mm-parser blobs
-17e9565 serrano: Use rild/libril blobs from I9505
-21d3bd0 treltexx: Add missing IR Blaster HAL
 
