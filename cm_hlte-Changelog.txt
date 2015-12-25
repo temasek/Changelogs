@@ -1,4 +1,194 @@
 ====================
+     12-25-2015
+====================
+
+
+   * device/samsung/hlte-common/
+7e3b8c8 hlte-common: fix crash in offmode charger
+d9f2711 hlte-common: update sepolicy
+ac236e4 ril: Remove all sms related codes
+0cb9008 ril: Support CDMA
+
+   * device/samsung/msm8974-common/
+7cd209b update some audio properties
+
+   * external/exfat/
+9d909ba Merge tag 'v1.2.3' into HEAD
+
+   * frameworks/av/
+1bd0af5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+79c58af Access mView in the thread which created the ViewRootImpl
+27bf64a prevent unnecessary warning logs caused by View.toString()
+20869c5 Remove infinity invalidation when both scrollbars are shown
+f67e749 Don't draw vertical scrollbar if it is in hidden state
+5e64aa4 Reduce synchronized region when checking idle states.
+57e594f handle timeout of requestNetwork
+f4f4107 Skip duplicated appop checking of ContentProvider.
+
+   * packages/apps/Settings/
+08c9f32 Build V2.0
+
+   * vendor/samsung/
+7965e4b Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+
+====================
+     12-24-2015
+====================
+
+
+   * device/samsung/hlte-common/
+017696a hlte-common: Move IR HAL to device repos
+6e0da0f hlte-common: Move /dev permissions to ueventd.qcom
+9554195 hlte-common: Update sensors permissions
+74c3532 hlte-common: force dex2oat not to use swap file
+
+   * device/samsung/msm8974-common/
+659a941 Revert "config: add mobile/wifi tcp buffer values"
+5192751 Enable property for deep buffer
+914a687 Reduce fast track multiplier
+9dbe71d msm8974-common: Move IR HAL to device repos
+a4138ed msm8974-common: Drop all the janky proprietary stuff we don't even use
+d0785c6 msm8974-common: Remove duplicate usb accessory package
+c4218e7 msm8974: Kill mm-parser
+
+   * external/ffmpeg/
+c09118c Add MODULE_LICENSE and NOTICE files
+
+   * external/koush/ion/
+f53f2d5 Ion: Add .flv file type
+
+   * frameworks/av/
+54cdb1f libmedia: Preserve futex return status in client obtainBuffer
+5a1e278 NuPlayer: Avoid one more assertion
+0c04699 AudioTrack: Set DIRECT track flag for direct pcm output
+de3b1c0 audiopolicy: Handle startOutput on output command thread
+
+   * frameworks/base/
+c0d1df4 expanded desktop: set navbar to opaque when vertical
+8540a47 Navbar: fix navbar transitions which was causing bizarre statusbar bleed
+
+   * kernel/samsung/hlte/
+b6ec7d1 Build v1.48
+ed07f6e defconfig: Use legacy Sensorhub drivers by default
+5ca6f67 Add kconfig option to use legacy Sensorhub drivers
+f74de90 Use absolute data instead of relative in proximity sensor
+4a9571f sensorhub: sync with GOI4
+ec3379d net/wireless: Sync with GOI4 & clean up unused files
+720c79d diag: Cleanup client information on deinit Ioctl
+4e63baf diag: sync with caf
+f6429f3 uid_cputime.c: sync with caf
+4f8d3d0 include: rmnet_data: Define the MAPv4 data format
+d641b38 net: rmnet_data: Add header files for rmnet_data
+00ec082 cpufreq: Correct the data reported in all_time_in_state
+4a7224e bif: qpnp-bsi: request BSI interrupts with level high triggering
+34384c4 nl80211: Fix backport of struct wiphy_vendor_command
+
+   * packages/apps/Settings/
+77091bb Development Settings: fix setting reset on disable
+f7071fe settings: Fix NPE in sounds settings for wifi only devices
+59c0c65 Settings: Fix some settings
+eb87a58 Settings: Fix NFC Tap & pay removal
+
+   * prebuilts/cmsdk/
+0b8ef91 prebuilts/cmsdk: Finalized api level 3.
+
+   * system/bt/
+885ac86 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+bc32aeb bt: Kill some logspam
+
+   * vendor/cm/
+35c6e6b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+39ba595 cm: Publish system api as part of publish process.
+
+   * vendor/cmsdk/
+c972c0e Add resources for WiFi customization
+9f62d8a CM-SDK: add PREDISMISSED_STATE constant required by CM13 DeskClock
+57dc3b3 CMSDK: add duration for priority/quiet mode Add setZenModeWithDuration API call with long durationMills Use NotificationManager.setZenMode with Condition URI specifying end time. Update settings/CMPartnerInterfaceTest TODO: unit test to be added in: tests/src/org/cyanogenmod/tests/settings/unit.
+4497e24 cmsdk: Add finalized docs for cantaloupe.
+d29499d cmsdk: update api for level 3
+
+   * vendor/samsung/
+1bb69bf klte-common: use proprietary IR blaster HAL
+
+====================
+     12-23-2015
+====================
+
+
+   * device/generic/goldfish/
+2083610 goldfish: Add gateway using 'ip route'
+
+   * external/stagefright-plugins/
+6c89800 stagefright-plugins: remove global dictionaries
+
+   * frameworks/base/
+77f065c Keyguard: Implement KeyguardExternalViewCallbacks
+46e0005 Keyguard: Pass keyguard events to KeyguardExternalView
+544308d Add config_autoBrightnessAmbientLightHorizon overlay
+f44bfd5 hwui: Allow devices to opt-out of asynchronouse setSurface initialization
+6673322 Revert "Revert "libhwui: make setSurface asynchronous""
+527e878 NavigationBar : Switch to display orientation from config orientation
+213220e PowerManagerService: Log when proximity blocks wake
+d51d58a Add custom camera shutter
+cb5aeb5 Set carrier label on keyguard to empty string if isWifiOnly device
+
+   * frameworks/opt/net/wifi/
+e9b2faf Regional: Customize wifi hotspot and wifi name
+
+   * frameworks/opt/telephony/
+30e12c9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/display-caf/msm8996/
+420cc3a msm8996: remove unused qcom features
+
+   * hardware/ril/
+a9c266d reference-ril: Return success for RIL_REQUEST_ALLOW_DATA
+
+   * kernel/samsung/hlte/
+7b2bbca net: wireless: bcmdhd: Increase allowed DTIM in power-save mode
+a6369da net: wireless: bcmdhd: Reduce scan dwell time to reduce power
+
+   * packages/apps/DeskClock/
+1cf3c56 Make new menu entry to link to cLock widget settings.
+
+   * packages/apps/Settings/
+ef9963a Revert "Settings: Show Baseband version on MSIM devices"
+f90ce83 Introduce SystemSettingsCheckBoxPreference
+7fbb3c6 bluetooth: Show a refresh icon on the select devices screen
+2431f4c Light settings: reduce tone if preview image color is very light
+8fea0f2 Settings: Show Baseband version on MSIM devices
+838152b Always show band 0 (Automatic)
+6d5ccbe Add missing blacklist xxhdpi drawables.
+736f8dc Build V1.9
+255338f Fix lockscreen shortcuts
+
+   * packages/apps/Trebuchet/
+336600c Trebuchet: Don't resize BubbleTextView based on all apps pref
+c30f77d Trebuchet: Adjust device profiles and add one for bacon
+cc3bc30 Trebuchet: Add migration for new messaging app
+
+   * packages/providers/ThemesProvider/
+8f6d976 Use CmLockPatternUtils instead of LockPatternUtils
+59167a4 Re-apply live lock screen on update
+
+   * packages/services/Telephony/
+44e694d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * vendor/cm/
+3b9d989 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+afa4fef ExtView: Add samples for using KeyguardExternalViews
+8cc5a55 ExtViews: Add callbacks for ExtView->Host communication
+f2741cb ExtView: Add keyguard specific interface for KeyguardExternalView
+d1f0a6e CMSettings: fixup ENABLE_PEOPLE_LOOKUP res
+6ff47d4 CMSettings : Add default overlay for people lookup
+7bdcaa5 cmsdk: Fixup stub generation.
+2ba238b ProfileManagerService: fix broadcasting crash
+
+====================
      12-22-2015
 ====================
 
@@ -9,6 +199,9 @@
 
    * device/samsung/hlte-common/
 0c38a57 hlte-common: Kill parser
+
+   * external/bash/
+52936c4 bash: prefer toybox's ls
 
    * external/ffmpeg/
 bc1e061 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
@@ -21,6 +214,8 @@ c34df96 stagefright-plugins: Fix AAC profile selection
 f228c28 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 8a0d505 Fix: "NuPlayerDecoder: add synchronous call pause() to ensure decoder will not request or send out data."
 29c3ef4 stagefright: Fix audio profile retrieved
+c68bccc stagefright: Correctly reassemble HVCC data
+ab35ee6 stagefright: Deal with output format of other AAC decoders
 
    * frameworks/base/
 f48d992 Revert "libhwui: make setSurface asynchronous"
@@ -55,8 +250,6 @@ d5003bd __ptrace_may_access() should not deny sub-threads
 4a43966 Revert "ARM: smp: Remove last remnants of idle task"
 
    * packages/apps/Settings/
-736f8dc Build V1.9
-255338f Fix lockscreen shortcuts
 62ae39a Settings: respect telephony config for profiles override
 0b0f9dc Settings: display light pulse dialog settings conditionally
 4c3bc23 Merge pull request #366 from beroid/cm-13.0
@@ -64,6 +257,12 @@ d5003bd __ptrace_may_access() should not deny sub-threads
 
    * packages/apps/SetupWizard/
 7ab7f3c SetupWizard: Conditionally run account setup
+
+   * packages/apps/Trebuchet/
+0cabbc2 Trebuchet: Auto collapse settings panel
+
+   * packages/services/Telephony/
+4ee48b4 TelephonyService: Use user preferred nw for selections.
 
    * system/bt/
 ef55778 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
@@ -107,8 +306,6 @@ ac9d2b2 enable doze powersaving mode
 6d7b4db on2avc: limit number of bits to 30 in get_egolomb
 
    * frameworks/av/
-c68bccc stagefright: Correctly reassemble HVCC data
-ab35ee6 stagefright: Deal with output format of other AAC decoders
 a3cd774 libmedia: Preserve futex return status in client obtainBuffer
 17b5dc1 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 d3c005d stagefright: Fix AAC profile selection
@@ -158,283 +355,10 @@ eda0662 Revert "Adding german cm_strings.xml based on cm-12.1 translations"
 3e0b2ba Merge pull request #365 from XDANoob/patch-1
 cddb3bf Merge pull request #364 from dischinator/patch-de
 
+   * vendor/cm/
+33cff38 cm: add Screencast by default
+
    * vendor/samsung/
 16cdc1b Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
 9a2daad jf: update broadcom firmware from OJ2
-
-====================
-     12-20-2015
-====================
-
-
-   * build/
-f0b8bff repopick: Allow commits to be excluded from a topic importation
-
-   * external/ffmpeg/
-644179e Update Changelog
-9be3441 rawdec: only exempt BIT0 with need_copy from buffer sanity check
-63ecbb8 mlvdec: check that index_entries exist
-bdc6ba4 avcodec/mpeg4videodec: also for empty partitioned slices
-3a3be02 avcodec/h264_refs: Fix long_idx check
-
-   * hardware/intel/common/libmix/
-0c6abb4 intel: videoencoder: Add support for LP blobs
-05ece44 intel: videodecoder: Allow INTEL_VIDEO_XPROC_SHARING to be defined
-
-   * hardware/qcom/display-caf/msm8994/
-7a75b3e gralloc: add cflag to use nv21 format for camera preview
-
-   * packages/apps/Gallery2/
-65196ed Revert "Gallery2: Properly declare the own permissions"
-
-   * packages/apps/Settings/
-97d08ea Update cr_strings.xml
-efc371c Adding german cm_strings.xml based on cm-12.1 translations
-bd6d8d4 Adding more german translations
-3916627 Merge pull request #363 from dischinator/patch-de
-ce9e3f1 Merge pull request #362 from Mai19930513/cm-13.0
-
-====================
-     12-19-2015
-====================
-
-
-   * device/samsung/hlte-common/
-911c434 Revert "msm8974: Kill mm-parser"
-
-   * external/toybox/
-0e32430 toybox: Symlink 'ls' to xbin
-
-   * frameworks/av/
-e9990d5 libmedia: correct latency computing of AudioRecord
-53c13f5 audioflinger: update multiplier logic to calculate frameCount
-a58a479 NuPlayerDecoder: add synchronous call pause() to ensure decoder will not request or send out data.
-5ce76a8 Revert "NuPlayer: Teardown sequence for pcm offload"
-ce4e903 Revert "nuplayer: Perform proper shutdown sequence for offload teardown"
-05f67ff libaudioflinger: avoid s/w effect processing in case of Direct PCM
-d5dee70 frameworks/av: fix channelmask and source format for pcm files
-e93c7cc nuplayer: Do not drop corrupt EOS frame
-f9ce11c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-b82353b Move overflow checks into SkipCutBuffer
-f363219 Fix potential double close in IMediaMetadataRetriever::setDataSource
-ab9b1e9 nuplayer: Fix priority inversion
-cc8fa7c Fix overflows in amrwbenc
-ab79046 Validation of Number of Channels on WAV files.
-
-   * frameworks/base/
-3404bb7 Port over linked volumes from 12.1
-c7a4a2e Revert "[1/2] base: unlink notification volume is back"
-a9512c7 Bluetooth: Change disconnected icon to be 40% transparent
-a0cc3fb Trace SQLite operations
-9fd5593 Remove framework from LOCAL_JAVA_LIBRARIES
-b17e5c1 Follow-up to Switch to the latest version of Caliper
-425d03a Add ICU4J APIs for Android
-aa5ac17 Switch to the latest version of Caliper
-cd9817e Rethrow remote's ServiceSpecificException
-977194f Stop using 512 bit RSA keys in keyset unit tests.
-36bdd85 Fix special handling of a fake language code "tl".
-c4b1d32 Don't hardcode expected path to mainDexClasses
-a7d6fef Add support for reading and writing double array values
-1aa2829 Lockscreen: Introduce window type TYPE_KEYGUARD_PANEL
-6a97f72 base: Complete sms prompt interfaces.
-398cc32 SystemUI : Add DemoModeActivity hook for settings
-3ee57d5 Option to use volume keys to control media volume anytime (2/2)
-d252b02 Bind backup transport in later boot phase.
-a39b4eb ConcurrentModificationException in SyncManager
-104ac5c StrictMode: fix deserialization of ViolationInfo on large stacks
-fde758d Restart persistent process if start timeout.
-68577ad Lockscreen shortcuts improvements 2/2
-
-   * frameworks/native/
-430386a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-8befd14 sensor: Allow devices to skip the permission request
-
-   * frameworks/opt/telephony/
-2b81c63 RIL: Allow returning static radio capabilitiy from getRadioCapability
-2334824 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-e041ee0 telephony: Complete interfaces for sms prompt.
-
-   * hardware/intel/img/hwcomposer/
-2855d50 hwc: merrifield_plus: Add legacy LP blob support
-662d8be hwc: Use the proper define for the primary display
-9303837 hwc: Enabling ION
-a8d4a6a Update HWC interface
-
-   * packages/apps/Contacts/
-07db402 Contacts: More strings cleanup
-9984447 Revert "Support adding contacts to blacklist and whitelist"
-
-   * packages/apps/DeskClock/
-fe85450 DeskClock: add switch to profile feature from Lollipop
-
-   * packages/apps/Dialer/
-7a55259 Dialer: Update a string from cm-12.1
-
-   * packages/apps/InCallUI/
-b96ed6e InCallUI: Update a string from cm-12.1
-
-   * packages/apps/Settings/
-8d69bfa update zh-rCN translation
-0858353 Updating strings from master and adding partially translations.
-1043eeb settings: LiveDisplay color profiles
-50c5595 Settings : Add volume link notification
-0bfd8cd Revert "Allow unlinking ringer with notification volume [2/2]"
-d0c8fb2 Revert "Settings: unlink volumes enhancements"
-b4f946b Revert "Update Unlink notification volume from Omni M source"
-89e0b79 Settings: Utilize frameworks sms prompt interfaces as fallback.
-c0aefa8 Settings : Launch demo mode on triple tap of build date
-ac47f3e Settings : Cleanup control media volume toggle
-1456f78 Settings : Add warning for lcd density
-85ebb21 Lockscreen shortcuts improvements 1/2
-6804555 Change expanded desktop options based on our navbar switch implementation
-
-   * packages/apps/Trebuchet/
-788d8e8 Trebuchet: Fix some icon size and flush cache issues
-4ee7080 Trebuchet: Fix hidden folder list text color
-8be2145 Trebuchet: Ignore mnc/mcc config changes
-0db76b8 Trebuchet: Exclude from recents
-
-   * packages/apps/TvSettings/
-6050e36 TvSettings: Improve strings
-
-   * packages/services/Telecomm/
-438af33 Telecom: fix test compilation
-
-   * system/core/
-6df9424 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-
-   * system/vold/
-b0693d7 Also change emulated device id separator from comma to underscore
-
-   * vendor/cmsdk/
-9a83dc6 cm: Improve permission strings
-582ba4c ExtView: Allow window type and flags to be overridden
-637e40f Introduce KeyguardExternalView
-b9d7733 External views for cm13
-9691d42 Keyguard: Introduce 3rd party keyguard perms and utils
-22ec538 CMSDK : Remove VOLUME_LINK_NOTIFICATION
-
-   * vendor/samsung/
-8502aeb Revert "hlte-common: kill parser"
-
-====================
-     12-18-2015
-====================
-
-
-   * device/samsung/hltespr/
-df508a2 hltespr: clean up init
-
-   * external/ffmpeg/
-cabd9ae avcodec/h264_mc_template: prefetch list1 only if it is used in the MB
-cfbf608 avcodec/h264_slice: Simplify ref2frm indexing
-1dddd53 Revert "avcodec/aarch64/neon.S: Update neon.s for transpose_4x4H"
-e4a6a85 avfilter/vf_mpdecimate: Add missing emms_c()
-748d5fa sonic: make sure num_taps * channels is not larger than frame_size
-796f1a2 opus_silk: fix typo causing overflow in silk_stabilize_lsf
-0b24a0e ffm: reject invalid codec_id and codec_type
-a79a5c3 golomb: always check for invalid UE golomb codes in get_ue_golomb
-b9087aa sbr_qmf_analysis: sanitize input for 32-bit imdct
-7e94ea3 sbrdsp_fixed: assert that input values are in the valid range
-cb44683 aacsbr: ensure strictly monotone time borders
-dcd837e aacenc: update max_sfb when num_swb changes
-507e031 aaccoder: prevent crash of anmr coder
-76af12f ffmdec: reject zero-sized chunks
-
-   * external/mksh/
-d9b3f0d mksh: Alias ls to /system/xbin/ls
-
-   * external/stagefright-plugins/
-566f1cb stagefright-plugins: Return supported profiles for MPEG4
-
-   * external/wpa_supplicant_8/
-87ba7ea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
-
-   * frameworks/av/
-ed8be1e media: Disable extra debug
-7b3a9da nuplayer: Error checks for PCM format extensions
-2d11aa4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-eb80838 Add double tap option to lockscreen shortcuts
-e8ac9b1 Revert "Add "android.permission.READ_PHONE_STATE" to manifest"
-5bb2a58 base: header image tweaks
-aa98f5c Revert "base: Add permissions to Browser package"
-2963e9e Add emergency calls only string
-74b5979 Update task manager icon
-c8c65f2 Improve expanded header icon padding
-a98eff9 Fix Task manager icon layout and get rid of QS emergency calls only text
-a70301c SystemUI:Add Missing Parts for CAF Task Manager
-5bb6997 Materialize task kill button
-cfa4900 Reset to QS panel if task manager was visible last
-6d13abb Task Manager: Use one observer for changes, misc cleanup
-28fbf7b Add more icons for task manager switch
-f14e9ad Task manager : Remove empty notification after switch on/off logic
-d925f50 Task Manager : On switch recreate statusbar to fix task view
-121c56f Update some Task Manager functions
-80f7d09 SystemUI : Fix Task Manager strings
-4e20cbf Task manager improvements
-f6b1c82 Improve Task manager UI improved task and button view removed task manager text and layout Screenshot- https://drive.google.com/file/d/0B-nhdyBCbCSxbEdUUFZMU0p0Qnc/view?usp=sharing
-825d7b1 Expose task manager values for themers
-ca21f28 Fixed Task Manager bug described in post below
-73a1e48 CAF Task Manager switch [1/2]
-348a13b SystemUI: Add task manager
-a913179 Revert "Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP""
-28da76c Revert "Revert "Add 3Minit battery mod""
-953f274 Services: Only broadcast state change if keyguard service != null
-3ac0831 Revert "Services: DO NOT send Broadcast On boot"
-7a50ddb Merge pull request #100 from Temasek-Dark/doze
-
-   * hardware/libhardware/
-18396d4 libhardware: Only support tertiary display in QTI_BSP is defined
-
-   * hardware/qcom/audio-caf/msm8974/
-d9ff371 hal: Actually make low-latency capture optional
-
-   * hardware/qcom/audio-caf/msm8994/
-eec6acf audio: Fix flac offload not working
-
-   * hardware/qcom/display-caf/msm8960/
-d616fad hwc: add support for opaque surface layer.
-
-   * hardware/qcom/media-caf/msm8996/
-d84d430 media: Avoid collision with FFMPEG plugin
-
-   * kernel/samsung/hlte/
-44bfec2 Build v1.45
-4dc3f56 net: add validation for the socket syscall protocol argument
-81ff73b ipv6: addrconf: validate new MTU before applying it
-d420d0d net: fix iterating over hashtable in tcp_nuke_addr()
-
-   * packages/apps/BluetoothExt/
-5b2f3d7 BluetoothExt: Remove unused strings
-
-   * packages/apps/CMFileManager/
-56d1485 cmfm: this is TOYBOX
-a8625e0 Fix filemanager not launch
-85732e2 CMFileManager: remove org.apache.http import
-
-   * packages/apps/Settings/
-9b14b29 Merge pull request #361 from beroid/cm-13.0
-e77f96b Settings: Update RU translations
-dd19f5f Add double tap option to lockscreen shortcuts Change-Id: I640a8724e41b5549c0b949b2e94b54a0c5834e4b
-dc86a0b Build V1.7
-0c35024 setings: Fix livedisplay settings
-32a9334 Settings: adapt lock screen visualizer toggle
-68c126d CAF Task Manager switch [2/2]
-fdc6034 Settings: Fix the SoundSettings activity and intents
-0719246 Merge pull request #360 from Temasek-Dark/doze
-
-   * packages/apps/Trebuchet/
-dca57f3 Trebuchet: Add ability to disable the scroller completely
-
-   * system/core/
-f517c97 Revert "Lose ls to toybox."
-
-   * system/vold/
-5fc50f6 vold: dont't use commas in device names
-
-   * vendor/cm/
-4ddf752 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-076a1ea sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec
 
