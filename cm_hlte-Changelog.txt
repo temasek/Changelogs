@@ -1,4 +1,218 @@
 ====================
+     01-03-2016
+====================
+
+
+   * device/samsung/hlte/
+3279951 hlte: update system.prop
+
+   * device/samsung/hlte-common/
+c1364c8 hlte-common: Set dalvik filter to speed
+
+   * device/samsung/hltespr/
+43383d9 hltespr: update system.prop
+
+   * external/stagefright-plugins/
+4924fcb stagefright-plugins: Protect against crash
+
+   * frameworks/av/
+fdee8d3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+f2e48f9 FWB: Max Lockscreen Notification count [1/2]
+3bc54c7 Revert "Ls weather: options to hide the weather when notifications are visible (1/2)"
+c4422f2 Revert "Fix NPE with WeatherStatus on KeyguardStatusView"
+a42aa37 SystemUI: Use material delete icon
+3d67564 SystemUI: bail out of recents-to-home animation when losing focus
+1a360ad systemui: fix glitches with recents view and search widget
+189ae3f SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
+e056c4d SystemUI: Fix NPE
+bd88d3f SystemUI: recents panel clear all button - sync with settings
+1773608 Fix leftAffordanceView visibility bug
+5614858 DndTile: Always open the detailed view
+d44e9e7 Settings: Don't attempt to forward writes from System -> Global.
+1fe96bd Add entry to copy VideoStop.ogg file to system image
+5935038 statusbar: fix overlapping backgrounds when expanded
+
+   * frameworks/opt/telephony/
+a0003f5 Revert "telephony: Respect user nw mode, handle DSDS non-multi-rat."
+
+   * packages/apps/Settings/
+3b2f8ba Build V2.2
+f0d9e0e Settings: Max Lockscreen Notification count [2/2]
+fb5abb7 Revert "Lock screen weather: Add options to hide the weather when notificatio…"
+1c45e39 Settings: Respect legacy quick pulldown row.
+c3d4a4e settings: adds OVERRIDE_WIFI_CONFIG permission
+
+   * packages/services/Telephony/
+f604865 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+e2b6916 Revert "TelephonyService: Use user preferred nw for selections."
+71af7ad CDMA: Unknown is displayed for incoming call
+
+   * system/core/
+b22b1f3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+
+   * vendor/cm/
+d6f52e1 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+696ba17 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+d1129cc cmsdk: Also hide internal package from docs.
+9734639 cmsdk: Fix quick pulldown settings, and unhide numerous system settings.
+2d4d514 cmsdk: Update current api text.
+
+   * vendor/samsung/
+3ebb3e3 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+
+====================
+     01-02-2016
+====================
+
+
+   * development/
+5225472 gdbclient: fix adb output test
+
+   * device/samsung/hlte/
+55b9a11 ril: restore it was before in hlte-common
+
+   * device/samsung/hlte-common/
+5a62367 Remove persist.data.qmi.adb_logmask
+4358096 Add back persist.radio.mode_pref_nv10=1 to system.prop
+2f4d647 sepolicy: move external storage policies to vendor/cm
+
+   * device/samsung/hltespr/
+6226f0e ril: add missing import
+92c0adc hltespr: Enable "telephony.sms.pseudo_multipart" to fix multipart SMS support
+
+   * external/lz4/
+7cb39f5 lz4: Enable building with Android
+a30ee1b Revert "lz4: Add Android.mk file to build as a host static library"
+
+   * external/stagefright-plugins/
+f7c42ea stagefright-plugins: Increase max video buffer size + count
+
+   * frameworks/av/
+e5f39f7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+38f51de BatteryNotifier: Add missing log LOG_TAG
+
+   * frameworks/base/
+d36f119 Turn advanced devices and file sizes on by default
+e1501e6 dynamic tiles: debrand adb icon
+242499c [SQUASH]Base: NavBar: add power button [1/2]
+389ed99 Themes: Expose hard code for themes in SystemUI
+e5da8cd Themes: Expose "Set Wallpaper" text color in wallpaper picker
+99bce93 Revert "WallpaperCropper: use same action bar style as Launcher3"
+6aee6f3 Themes: Expose hard code for themes
+
+   * hardware/intel/img/hwcomposer/
+767cc4e Revert "Hwcomposer Moorefield: Return DummyDevice for TERTIARY display"
+
+   * packages/apps/CMFileManager/
+358590d Change ts file extension mime type
+
+   * packages/apps/ContactsCommon/
+d3de2eb Themes: Define back arrow tint color for themes
+
+   * packages/apps/DeskClock/
+91ac9cb DeskClock: Add back flip and shake actions
+
+   * packages/apps/OmniSwitch/
+ec8b399 OmnSwitch: fix disappearing memory display
+d9053c8 OmniSwitch: fix favorite button in vertical
+
+   * packages/apps/Settings/
+eae96c3 Merge pull request #375 from trujulu/patch-1
+7f350d8 Add Spanish cr_strings.xml
+dc2e2c1 Updated German translation
+3255db8 Merge pull request #371 from beroid/cm-13.0
+5dc2220 Settings: Update RU translations
+
+   * system/core/
+57f1deb Add vendor hook to handle_control_message
+
+   * vendor/cm/
+511152c sepolicy: Allow minivold execute_no_trans
+b6243ac Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+14e765c cm: sepolicy: fix denials for external storage
+
+   * vendor/cmsdk/
+75fbe52 Sdk: NavBar: add power button [2/2]
+
+   * vendor/samsung/
+a5dea1d Merge pull request #706 from andi34/cm-13.0
+958dd34 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+
+====================
+     01-01-2016
+====================
+
+
+   * android/
+fbadfd1 Point manifest at official CTS release branch
+
+   * device/samsung/hltespr/
+6c1cf62 ril: Add sendSMS
+8c23655 ril: remove remains of kk ril codes
+bf0fb36 ril: fix it!
+
+   * frameworks/base/
+b926926 Revert "SystemUI: SlimDim performance boost"
+033eb2f Revert "SystemUI: more SlimDim performance boosts"
+1da4d07 Revert "Fix the cell standby mobile radio active issue"
+d40709e Update default public notification view on notification update.
+
+   * packages/apps/Camera2/
+553ccb7 Fix writing to external storage.
+16635f1 Add Storage preference (1/2)
+
+   * vendor/samsung/
+3ec3102 espresso-common: add libstlport
+11da5ed espresso-common: hex edit gpsd
+4f25887 p31xx/p51xx: merge same blobs into espresso-common
+dac05cd Merge pull request #709 from sbrissen/cm-13.0
+7490bac t0lte: use D2's ks and rename for use with wrapper
+
+====================
+     12-31-2015
+====================
+
+
+   * android/
+fb0ae0b Merge pull request #12 from trujulu/patch-2
+e838d26 Fix spaces to match with another titles
+
+   * device/samsung/hlte/
+a717158 hlte: Use own ril (hlteRIL)
+
+   * device/samsung/hlte-common/
+894f050 hlte-common: Move ril to device tree & update radio props
+
+   * device/samsung/hltespr/
+b49d4b8 hltespr: Use own ril (hltesprRIL)
+402c690 hltespr: update overlays
+7f19f88 hltespr: update init
+
+   * external/stagefright-plugins/
+e13ea55 stagefright-plugins: Refactor packet queue locking
+
+   * frameworks/av/
+c39941d libmedia: correct latency computing for TRANSFER_SYNC
+
+   * frameworks/base/
+b9d476f Revert "Add Battery Saver QS Tile"
+e5f24ba Revert "QS: Fix battery saver tile"
+f8848b6 QS: Fix battery saver tile
+61eae29 SystemUI: more SlimDim performance boosts
+82e7d7d SystemUI: SlimDim performance boost
+
+   * packages/apps/Settings/
+0085d5c Merge pull request #368 from Mai19930513/cm-13.0
+91533d1 update zh-rCN translation
+
+   * vendor/cmsdk/
+02c1fe9 Remove QS Battery Saver Tile for now
+
+====================
      12-30-2015
 ====================
 
@@ -12,13 +226,17 @@
    * device/samsung/msm8974-common/
 54cb745 Enable 16-bit / 24-bit PCM offload
 
+   * external/stagefright-plugins/
+30ab9dc stagefright-plugins: Fix shutdown deadlock
+644d57a stagefright-plugins: Fix crash during testDecodeWithEOSOnLastBuffer
+61710f5 stagefright-plugins: Wait for reader shutdown on EOS
+
    * frameworks/av/
 8b8dab7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 8ca3dfd nuplayer: Enable PCM offload for any source
-fd6521f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 
    * frameworks/base/
-d5a0e78 Add Battery Saver QS Tile
+679e18e Add Battery Saver QS Tile
 b2fed74 Reboot/Recovery QS Tile
 0f1b891 Add Music QS Tile
 0eb9a12 Themes: Expose hard code color for divider sim pin
@@ -44,8 +262,6 @@ b683b75 profile: Fix CPU hotplug callback registration
 60e277a perf, cpu hotplug: Use cached value of smp_processor_id()
 8661a4f perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
 d661183 Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
-ac04b6e UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
-24dc46e UPSTREAM: proc: make proc_fd_permission() thread-friendly
 
    * packages/apps/CellBroadcastReceiver/
 dd6bee9 Themes: Expose hardcoded styles and colors for themes
@@ -68,382 +284,4 @@ a877929 Add QS Tiles
 db11d58 Merge pull request #707 from scoty755/cm-13.0
 4cdd814 Merge pull request #708 from ljzyal/cm-13.0
 c89cb1e klteduos: Update proprietary libraries
-0ba77ec kltekdi: Update proprietary libraries
-
-====================
-     12-29-2015
-====================
-
-
-   * android/
-f17b5fa Track own InCallUI
-
-   * device/samsung/hlte-common/
-2e95441 ril: Fix invalid number error
-1661ab0 sepolicy: treat exfat as sdcard_external
-a60f261 Revert "hlte-common: enable doze power saving mode"
-
-   * device/samsung/hltespr/
-d761355 hltespr: update fingerprint
-3362a04 hltespr: update system.prop
-4dba4a4 hltespr: update overlays
-
-   * external/stagefright-plugins/
-09f677f stagefright-plugins: Only do as much sniffing as necessary
-e7ea399 stagefright-plugins: Increase confidence on HEVC mp2p files
-c0742cd stagefright-plugins: Fix audio trimmed when reaching eos
-28d6141 stagefright-plugins: Fix crash
-
-   * external/toybox/
-0f882f6 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
-
-   * frameworks/av/
-b19f360 stagefright: Those who cannot remember history are doomed to repeat it
-000b84a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-020adf2 nuplayer: Pass along the sniffed metadata from GenericSource
-4adc183 stagefright: Remove special handling of FFMPEG extractor
-1bb6c3e stagefright: Add more hardware codec support for our extractor
-
-   * frameworks/base/
-d495b87 Base: Add a controller for in-call proximity sensor (1/3)
-aa77122 Profiles: option to disable lock screen device policy override (1/2)
-33f68ca QS: use CM's profiles vector from settings
-c61ace6 SystemUI: Update WiFi indicator drawable sizes
-85b6f76 QS: add Expanded desktop tile
-d9ed5cb Quick Settings: add some more tiles
-5d61e20 SystemUI: dont roll but add :)
-862a38a fb: less notifications sound (1/2)
-f202b73 Disable Immersive Messages [1/2]
-d804ba3 Force Expanded Notifications [1/2]
-a1a54d9 FWB: Battery saver and low battery notification toggles [1/2]
-fd0e32a Remove demo mode, is useless.......
-b25d3a4 Fix Activity.onConfigurationChanged may not be called.
-0ed3f3f Make sure NaturalSurfaceLayout is consistent with SurfaceControl
-
-   * hardware/qcom/display-caf/msm8994/
-a0dd49b gralloc: cflag to use nv21 format for camera write
-
-   * packages/apps/InCallUI/
-dd24730 InCallUI: Add a controller for in-call proximity sensor (2/3)
-4d4badb InCallUI: Add a controller for proximity sensor
-
-   * packages/apps/Settings/
-e0d3336 Profiles: option to disable lock screen device policy override (2/2)
-90620e4 Settings: less notifications sound (2/2)
-b31bafa settings: Animation scale seekbars
-e48375e Profiles: Cleanup the code
-0f9735b Settings: improve empty Profile trigger icons
-c4dab08 Settings: make empty profile views fit on hdpi
-7d47412 Improve profile setting layouts.
-fc56e44 profiles: Make the actions wizard buttons show up
-726a0d1 Profiles: remove unused code
-0f4cb58 Settings: always allow profile app groups to be linked/unlinked
-b0fb944 Settings : Save instance state for app group deletes
-9a2cff2 Settings: fix empty Wifi triggers screen
-c8e03a3 Settings: make empty profile trigger screens more useful
-93fca76 Settings: merge ProfilesList into ProfilesSettings
-fb48a7b Profiles: Fix override item summary not displaying none
-6b6b648 Disable Immersive Messages [2/2]
-f6b6ad5 Force Expanded Notifications (2/2)
-3298ef2 Add statusbar notification category in Statusbar settings
-b53565b Add QS category inside Statusbar settings
-d5a2ed6 Settings: Battery saver & low battery notification toggles [2/2]
-
-   * packages/services/Telephony/
-d37c982 TeleService: Add a controller for in-call proximity sensor (3/3)
-
-====================
-     12-28-2015
-====================
-
-
-   * build/
-87ffe94 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * device/samsung/hlte-common/
-46b8589 Revert "hlte-common: Add QuickBoot"
-9b55072 hlte-common: Add QuickBoot
-
-   * external/stagefright-plugins/
-8caee14 stagefright-plugins: Fix thumbnail issues
-cea1cb3 stagefright-plugins: Pass the container format in the metadata
-
-   * frameworks/av/
-f7ad9b0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-1b5f480 stagefright: Remove special case for FLAC offload
-5712d5c stagefright: Copy the thumbnail time
-
-   * frameworks/base/
-405be77 Revert "Skip duplicated appop checking of ContentProvider."
-9087fdd Revert "handle timeout of requestNetwork"
-7b131a2 Revert "Reduce synchronized region when checking idle states."
-0e301a5 Revert "Don't draw vertical scrollbar if it is in hidden state"
-4304e07 Revert "Remove infinity invalidation when both scrollbars are shown"
-7a49f38 Revert "prevent unnecessary warning logs caused by View.toString()"
-f8e36a1 Revert "Access mView in the thread which created the ViewRootImpl"
-
-   * packages/apps/Settings/
-3ed3683 Hide usb mode chooser dialog after disconnected
-17c28d4 apn: Update the add actionbar icon
-
-   * vendor/samsung/
-2beda45 Revert "hlte-common: Add QuickBoot app"
-
-====================
-     12-27-2015
-====================
-
-
-   * device/samsung/hlte/
-ae210e1 Revert "hlte: update gps blobs"
-071911f hlte: update supported fingerprints
-b17b94b hlte: update gps blobs
-
-   * device/samsung/hlte-common/
-7e2f11f Revert "hlte-common: Use proprietary GPS"
-ef0e59c hlte-common: Use proprietary GPS
-999452a ril: add override to ResponseCallList
-32ea665 hlte-common: address healthd denial
-a3ff654 hlte-common: update sepolicy
-
-   * device/samsung/msm8974-common/
-a3b029f Revert "enable doze powersaving mode"
-
-   * external/stagefright-plugins/
-94932fa stagefright-plugins: Remove voodoo from sniff logic
-f9e21d7 stagefright-plugins: Add special case for DivX containers
-5e9d63d stagefright-plugins: Fix HEVC extradata handling
-8107a7f stagefright-plugins: Always use FFMPEG for FLAC audio
-4ecbcbb stagefright-plugins: Correctly check if audio codec is open
-
-   * frameworks/av/
-d2c00b4 Validation of Number of Channels on WAV files.
-efa19ab Fix overflows in amrwbenc
-
-   * frameworks/base/
-f198552 Reduce the delay during headset removal
-e086374 Automatic translation import
-d826f06 core: Remove CAF Chinese translations
-
-   * frameworks/opt/telephony/
-02cb1cc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/qcom/audio-caf/msm8916/
-a065400 hal: Allow building hardware audio encoders
-
-   * hardware/qcom/audio-caf/msm8996/
-a495e40 hal: Allow building hardware audio encoders
-
-   * packages/apps/AudioFX/
-7944518 AudioFX: platform sign
-
-   * packages/apps/Bluetooth/
-634ffe1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-
-   * packages/apps/Settings/
-4f48359 Automatic translation import
-3b089ba Settings: Fix the failing strings
-
-   * packages/providers/MediaProvider/
-89942d7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
-
-   * packages/services/Telephony/
-2d067da Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * vendor/cm/
-5e37d43 sepolicy: Allow vold to attempt to mount ntfs and exfat
-
-   * vendor/samsung/
-167401a Revert "hlte: Update GPS blobs"
-5c3f107 hlte: Update GPS blobs
-359439e Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-
-====================
-     12-26-2015
-====================
-
-
-   * device/samsung/hlte-common/
-0cb9008 ril: Support CDMA
-
-   * device/samsung/msm8974-common/
-7cd209b update some audio properties
-
-   * device/samsung/qcom-common/
-c771ff2 Automatic translation import
-
-   * frameworks/av/
-1bd0af5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-79c58af Access mView in the thread which created the ViewRootImpl
-27bf64a prevent unnecessary warning logs caused by View.toString()
-20869c5 Remove infinity invalidation when both scrollbars are shown
-f67e749 Don't draw vertical scrollbar if it is in hidden state
-5e64aa4 Reduce synchronized region when checking idle states.
-57e594f handle timeout of requestNetwork
-f4f4107 Skip duplicated appop checking of ContentProvider.
-
-   * hardware/cyanogen/
-e1c6405 cmhw: Add color enhancement impl for LiveDisplay driver
-
-   * packages/apps/AudioFX/
-2eefaf2 Automatic translation import
-
-   * packages/apps/BasicSmsReceiver/
-961eed1 Automatic translation import
-
-   * packages/apps/Bluetooth/
-63088a9 Automatic translation import
-
-   * packages/apps/BluetoothExt/
-6162335 Automatic translation import
-
-   * packages/apps/Browser/
-ad614da Automatic translation import
-
-   * packages/apps/CMBugReport/
-4313513 Automatic translation import
-
-   * packages/apps/CMFileManager/
-9eb5798 Automatic translation import
-
-   * packages/apps/CMWallpapers/
-61bb875 Automatic translation import
-
-   * packages/apps/Calendar/
-ecf9b82 Automatic translation import
-
-   * packages/apps/Camera2/
-960b850 Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-0dadb76 Automatic translation import
-
-   * packages/apps/CertInstaller/
-95ca4c7 Automatic translation import
-
-   * packages/apps/Contacts/
-bcef0c9 Automatic translation import
-
-   * packages/apps/ContactsCommon/
-dc60d46 Automatic translation import
-
-   * packages/apps/DeskClock/
-811f843 Automatic translation import
-
-   * packages/apps/Dialer/
-3edb649 Automatic translation import
-
-   * packages/apps/Eleven/
-281ddcb Automatic translation import
-
-   * packages/apps/Email/
-325beae Automatic translation import
-
-   * packages/apps/FMRadio/
-6d4803d Automatic translation import
-
-   * packages/apps/Gallery2/
-5952713 Automatic translation import
-
-   * packages/apps/InCallUI/
-6f89959 Automatic translation import
-
-   * packages/apps/KeyChain/
-27ecfb5 Automatic translation import
-
-   * packages/apps/LockClock/
-864c4e9 Automatic translation import
-
-   * packages/apps/PackageInstaller/
-536afdd Automatic translation import
-
-   * packages/apps/PhoneCommon/
-8e3b23f Automatic translation import
-
-   * packages/apps/Profiles/
-cb125ca Automatic translation import
-
-   * packages/apps/Screencast/
-088677a Automatic translation import
-
-   * packages/apps/Settings/
-08c9f32 Build V2.0
-
-   * packages/apps/SetupWizard/
-8c472fc Automatic translation import
-
-   * packages/apps/SoundRecorder/
-b6618ae Automatic translation import
-
-   * packages/apps/Stk/
-d1ffe2a Automatic translation import
-
-   * packages/apps/Tag/
-8c18297 Automatic translation import
-
-   * packages/apps/Terminal/
-dff584e Automatic translation import
-
-   * packages/apps/ThemeChooser/
-10be771 Automatic translation import
-
-   * packages/apps/Trebuchet/
-6be1ecf Automatic translation import
-
-   * packages/apps/TvSettings/
-345fd98 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-ffe71d9 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-4c26e4e Automatic translation import
-
-   * packages/providers/CalendarProvider/
-7e9ce94 Automatic translation import
-
-   * packages/providers/ContactsProvider/
-8707141 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-f1d2361 Automatic translation import
-
-   * packages/providers/MediaProvider/
-61eb49b Automatic translation import
-
-   * packages/providers/TelephonyProvider/
-c793071 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-5470255 Automatic translation import
-
-   * packages/providers/UserDictionaryProvider/
-084102c Automatic translation import
-
-   * packages/services/Mms/
-105dcb1 Automatic translation import
-
-   * packages/services/Telecomm/
-8562735 Automatic translation import
-
-   * packages/services/Telephony/
-e850772 Automatic translation import
-
-   * packages/wallpapers/Galaxy4/
-8266065 Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-53dfc85 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-ba62eca Automatic translation import
-
-   * vendor/cmsdk/
-9f9759a Automatic translation import
-
-   * vendor/samsung/
-d108e07 Merge pull request #705 from Team-Hydra/klte-update
-7965e4b Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
 
