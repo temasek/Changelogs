@@ -1,115 +1,428 @@
 ====================
-     11-19-2015
+     01-14-2016
 ====================
 
 
-   * bootable/recovery/
-bc6ccea Merge branch 'cm-12.1' of github.com:CyanogenMod/android_bootable_recovery into cm-12.1
+   * android/
+5612698 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android into cm-12.1
 
    * build/
-fe380f1 gdbclient: fix build output directory path
+e91d48d Merge tag 'android-5.1.1_r33' into HEAD
+7e6f4a0 "LMY49F"
+8a3cee2 "LMB78"
+87dffac merge in lmp-mr1-release history after reset to lmp-mr1-dev
+91ae6a5 "LMY49E"
+1b522c1 "LMY49D"
+0c424f8 DO NOT MERGE - Update security string to 2016-02-01
+ddcdefb Update security string to 2015-12-01 - DO NOT MERGE
+7f3bdf1 Enable El Capitan hosts for build
+2ede696 "LMY49C"
+7614708 Update Security String to 2016-01-01 - DO NOT MERGE
+838dba1 Revert "Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs"
+520abaf kernel: add `make kernelxconfig' target
 
-   * external/jemalloc/
-b10e601 Regenerate headers
-247fd0f Merge tag '4.0.4' into android-6.0
-
-   * external/wpa_supplicant_8/
-e6b4728 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
-
-   * frameworks/av/
-c509da6 Handle malformed audio packets received during RTSP stream switching
-4626cff Fix overflow check so it doesn't reject legitimate files
-
-   * frameworks/base/
-7c1baec Shell: Declare cyanogenmod WRITE for system and secure settings.
-bb65b62 base: strictmode fixes
-32b4849 base: prevent StrictMode to crash system because an overflow
-90c6d40 Listen phone state change
-
-   * frameworks/opt/telephony/
-9a84721 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
-
-   * packages/apps/ContactsCommon/
-17cb788 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
-
-   * packages/apps/Dialer/
-db4c8fc dialer: fix fc on secundary users
-
-   * packages/apps/Settings/
-44d1358 Build V18.6
-43e759b Settings: regulatory: Wrap the layout in a ScrollView
-
-   * vendor/cm/
-a3ccf8f Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
-
-   * vendor/cmsdk/
-82d5b73 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
-
-   * vendor/samsung/
-ed16275 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
-
-====================
-     11-18-2015
-====================
-
-
-   * kernel/samsung/hlte/
-efe6a23 Build v1.41
-ee80534 msm: mdss: add init and deinit calls to notify update ioctl
-ca6660e android: binder: Don't use sched_preempt_enable_no_resched.
-225e242 android: binder: Disable preemption while freeing kernel memory.
-41865e6 android: binder: Use wake up hint for synchronous transactions.
-768801e android: binder: Add helper function to avoid resched during priority changes.
-
-   * vendor/samsung/
-ec87add Merge pull request #672 from andi34/cm-12.1
-e87edd0 Merge pull request #674 from raymanfx/cm-12.1
-
-====================
-     11-17-2015
-====================
-
+   * development/
+0a3e502 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_development into cm-12.1
 
    * device/samsung/hlte-common/
-335ca43 hlte-common: Stop QMI log spam
+fd5d78b hlte-common: enable doze
+
+   * external/bluetooth/bluedroid/
+3d94279 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_bluetooth_bluedroid into cm-12.1
+
+   * external/skia/
+0d7406e Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_skia into cm-12.1
+
+   * external/wpa_supplicant_8/
+927e940 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-12.1
+
+   * frameworks/av/
+804a60d Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_av into cm-12.1
+
+   * frameworks/base/
+de36e03 Navigationbar: Add just one more button
+a40d98e FWB: Make all 18 font variants available to Statusbar weather temp (1/2)
+195f67c FWB: Make all 18 font variants available to Statusbar Clock (1/2)
+15ba6e0 New contextual header images
+3950060 Automatic translation import
+e853a15 fingerprint improvements
+72bb7ae ThemeService: ManagedProvisioning is a setup package too.
+4ff4517 Make WIFI_IDLE_MS default into an overlay
+738a3ac SettingsProvider: Load notification led customization defaults
+7ca2567 Fingerprint: handle canclled error code
+8adb3a1 Automatic translation import
+96abbae Merge tag 'android-5.1.1_r33' into HEAD
+c92af3f ThemeEngine : Use manifest.mf for hash calculation
+e732553 NavigationBar : Switch to display orientation from config orientation
+ecd9163 Add custom camera shutter
+314561b PowerManagerService: Log when proximity blocks wake
+082ce55 Automatic translation import
+1f78154 SystemUI: fix "directly show bouncer" conflicting with smart unlock
+464db66 merge in lmp-mr1-release history after reset to lmp-mr1-dev
+f2159ec Fix lockscreen disabling for MSIM.
+b213622 DO NOT MERGE. Prevent recents from coming up when in SUW
+4daf4f6 DO NOT MERGE Ensure that the device is provisioned before showing Recents.
+afa9645 Toast: Fix toast layout for RTL
+f670a1c [PATCH 2/2] Delay hiding the cast icon for 3 seconds. DO NOT MERGE
+ab10a3c [PATCH 1/2] DO NOT MERGE Send next alarm's show intent via  PendingIntent
+cd1e592 Themes: Don't uninstall theme when processing an overlay fails
+c359545 Sync extras bundle comparison can throw NPE
+a28d32f Reset uninstalled apps for lockscreen shortcuts (1/2)
+381075b Automatic translation import
+2f1a52d ZenMode : Update defaults for CTSVerifier
+42db616 SysUI: Fix navbar theme changing with status bar
+
+   * frameworks/native/
+e0df208 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_native into cm-12.1
+
+   * frameworks/opt/net/wifi/
+27e041f Merge branch 'cm-12.1' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-12.1
+
+   * frameworks/opt/telephony/
+1515055 Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-12.1
 
    * kernel/samsung/hlte/
-9c2b2f9 Build v1.40
-036387a selinux: Android kernel compatibility with M userspace
-96ce03f selinux: extended permissions for ioctls
-f3d7768 security: add ioctl specific auditing to lsm_audit
-a005c16 selinux: remove unnecessary pointer reassignment
-da1cb39 Revert "security: lsm_audit: add ioctl specific auditing"
-fbe9673 Revert "SELinux: per-command whitelisting of ioctls"
-e318a07 Revert "SELinux: use deletion-safe iterator to free list"
-7f59016 Revert "SELinux: ss: Fix policy write for ioctl operations"
+17afc47 Merge branch 'm' of github.com:temasek/android_kernel_samsung_hlte into staging-v2
+
+   * packages/apps/Bluetooth/
+ad8fd62 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-12.1
+
+   * packages/apps/Browser/
+7985c6e Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_packages_apps_Browser into cm-12.1
+
+   * packages/apps/Calendar/
+60085b8 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Calendar into cm-12.1
+
+   * packages/apps/Contacts/
+cf7c914 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Contacts into cm-12.1
 
    * packages/apps/ContactsCommon/
-8ace389 Fix contact JSON record parsing.
+88a7c87 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ContactsCommon into cm-12.1
 
-   * packages/apps/Trebuchet/
-1c46bab Live Settings: always rebuild DynamicGrid
+   * packages/apps/Dialer/
+7ca587e Merge pull request #9 from HealthyHoney/temasek-cm-12.1
 
-   * vendor/asus/
-7cf89c0 Merge pull request #80 from jrior001/cm-12.1
+   * packages/apps/InCallUI/
+b5fdbec Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-12.1
+
+   * packages/apps/Mms/
+66fc644 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Mms-caf into cm-12.1
+73fc8d8 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+88e6462 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_PhoneCommon into cm-12.1
+
+   * packages/apps/Settings/
+40e5faf Build V18.7
+61561c9 Add android release info into device info
+393f364 Settings: Make all 18 font variants available to Statusbar weather temp (2/2)
+aa57d52 Settings: Make all 18 font variants available to Statusbar Clock (2/2)
+fd58f32 Automatic translation import
+40ae336 Automatic translation import
+0fa9dbd Merge tag 'android-5.1.1_r33' into HEAD
+da7d264 Automatic translation import
+5676157 APN Settings: on MVNOs, filter unmatching MMS APNs
+2d682b7 Settings : Add Russian translation for basic live display
+839f8d0 Settings : Ensure translation for live display entries
+b6b02be Automatic translation import
+8d87a88 Settings: respect telephony config for profiles override
+abbebdc Block developer settings during SUW
+7f3c814 Revert lockscreen shortcuts if app uninstalled (2/2)
+2d5964d Automatic translation import
+579c0f0 Settings: Listen to preferapn changes via observer.
+
+   * packages/apps/SetupWizard/
+db6644a Automatic translation import
+e8e1223 SetupWizard: Don't disable packages on main thread
+a5f4655 Automatic translation import
+3ac693b Automatic translation import
+1400dce Automatic translation import
+2822686 Automatic translation import
+8b7e0f7 Automatic translation import
+
+   * packages/apps/Stk/
+fea6e26 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_Stk into cm-12.1
+
+   * packages/apps/ThemeChooser/
+be0e1d0 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_apps_ThemeChooser into cm-12.1
+
+   * packages/inputmethods/LatinIME/
+7ba3415 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-12.1
+
+   * packages/providers/DownloadProvider/
+e9e8146 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_providers_DownloadProvider into cm-12.1
+
+   * packages/services/Telecomm/
+e466686 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-12.1
+
+   * packages/services/Telephony/
+b8f9c74 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-12.1
+
+   * system/core/
+5292105 Merge branch 'cm-12.1' of github.com:CyanogenMod/android_system_core into cm-12.1
 
    * vendor/cm/
-e5b8b5a cm: make cgroups files read-only for all users
+c8a9c3c Merge branch 'cm-12.1' of git://github.com/CyanogenMod/android_vendor_cm into cm-12.1
+4209285 fix cricket APN
+
+   * vendor/cmsdk/
+b2c4b98 Merge branch 'cm-12.1' of github.com:CyanogenMod/cm_platform_sdk into cm-12.1
 
    * vendor/samsung/
-a2d1f8c omap4: gralloc: Recognize GRALLOC_USAGE_CURSOR as a valid usage flag.
-0248453 Initial import of treltexx (Galaxy Note 4 Exynos) blobs
+244cea1 Merge branch 'cm-12.1' of github.com:TheMuppets/proprietary_vendor_samsung into cm-12.1
 
 ====================
-     11-16-2015
+     01-13-2016
 ====================
 
 
-   * vendor/asus/
-a0582d7 zenfone2: blob update 2.20.40.130/139
+   * kernel/samsung/hlte/
+5e92651 Build v1.53
+0855cf5 trace: Allow idle-safe tracepoints to be called from irq
+92278d9 trace: Don't declare trace_*_rcuidle functions in modules
+d11e195 tracepoint: Use static_key_false(), since static_branch() is deprecated
+4de8ad5 f2fs: add support for LOOKUP_CASE_INSENSITIVE
+1d12746 f2fs: AIO optimization compatibility fix-ups
+3414b15 f2fs: catch up to v4.4-rc1
+8a81209 timer: Implement TIMER_IRQSAFE
+47dc5ad msm_rmnet_bam: Do not grab non-RMNET BAM channels
+12f7518 msm_bam_rmnet: Use Probe Method for Enumerating BAM
+c465266 net: rmnet_data: new structure for rmnet ioctls
+34ab0de msm_bam_rmnet: Implement extended IOCTL's
+2ec6d88 defconfig update
+6a1ca8e Revert "kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)"
+7204b6f Revert "powersuspend: new PM kernel driver for Android w/o early_suspend v1.7"
+
+   * packages/apps/Mms/
+11c7822 Fixed processing of clicking on phone # to send_sms
 
 ====================
-     11-15-2015
+     01-12-2016
 ====================
 
+
+   * device/samsung/qcom-common/
+8fddc7e Automatic translation import
+
+   * external/whispersystems/WhisperPush/
+453e55f Automatic translation import
+
+   * frameworks/opt/net/wifi/
+1e35a44 Use def_wifi_idle_ms to fetch WIFI_IDLE_MS defaults
+
+   * kernel/samsung/hlte/
+ab31434 pm: suspend: read suspend time from timekeeping
+921b56d Revert "defconfig: Disable CONFIG_SUSPEND_TIME"
+58d8a27 Build v1.52
+1c370b9 FROMLIST: ARM: dma-mapping: Optimize allocation
+b228ba2 UPSTREAM: ARM: 8337/1: mm: Do not invoke OOM for higher order IOMMU DMA allocations
+9900e93 ARM: 8429/1: disable GCC SRA optimization
+dbe8823 Revert "drivers: mmc: disable CRC"
+5548c6d mm/slub.c: fix page->_count corruption (again)
+5f56aaa Build v1.51
+4ae03d1 ARM: spinlock: use inner-shareable dsb variant prior to sev instruction
+5c58fbf vmscan: fix increasing nr_isolated incurred by putback unevictable pages
+5b5e829 sysrq: Emergency Remount R/O in reverse order
+58849e9 mmc: core: Silence log spam
+fe11d72 arm: irq: Tone down kernel logging
+8070faa defconfig: enable driver for ASIX AX88179 based USB ethernet adapters
+74c747c drivers: net: usb: add support for ASIX AX88179 based USB ethernet adapters
+cc2e544 msm: vidc: Handle max clients error from video hardware
+2fe7632 writeback: Do not sort b_io list only because of block device inode
+8496bbe fs: fuse: lock the new non-CMA page before replace_page_cache_page()
+2a13a29 defconfig update
+560c9a3 nohz: Reduce overhead under high-freq idling patterns
+d7edb5b USB: android: Fix memory leak in mass_storage_function_init()
+61d3191 PM: Enable asynchronous noirq resume threads to save the resuming time
+9d88f4ad smd_pkt: Add sanity check to avoid unregistering the driver twice
+bd5ce0d cpuidle: remove cpuidle_unregister_governor()
+a8a6d5f cpuidle: Make it clear that governors cannot be modules
+a4cb66e new helper: single_open_size()
+3b84ad0 sched: Remove one division operation in find_busiest_queue()
+0604b4b sched: Update cpu load after task_tick
+b68c64c defconfig: Disable CONFIG_SUSPEND_TIME
+0592527 irq / PM: Fix IRQF_NO_SUSPEND problem with shared interrupts
+a97a138 PM / sleep: unregister wakeup source when disabling device wakeup
+279a4a2 msm: bam: Use memset_io instead of memset
+693fc8d sched: Fix race in idle_balance()
+5b44c17 vm_is_stack: use for_each_thread() rather then buggy while_each_thread()
+05d939a Input: fix defuzzing logic
+3927589 soc: qcom: smd: Fix SMD packet sync loss issue
+06af139 msm: bam_dmux: convert panic to a log message
+9a9d2be tick: don't update idle time if cpu offline
+1d81a2a ARM: topology: Add efficiency coefficient for Krait
+63aff3b arm: use -mtune=cortex-a15 for Krait targets
+4b8ae57 sched/__wake_up_sync_key(): Fix nr_exclusive tasks which lead to WF_SYNC clearing
+1b02f71 sched, smp: Correctly deal with nested sleeps
+9da7814 sched: Add sysinterface for GENTLE_FAIR_SLEEPERS
+8bccd10 sched: cpu_power: enable ARCH_POWER
+4c6d9f1 cpufreq: Return directly in __cpufreq_get if policy is NULL
+66b2cf1 ASoC: msm: Fix qcom aac enc - allow alloc of less buffers
+34ffb71 timekeeping: iopoll: fix timeout calculations into ktime_get routine
+7141f8a Update min clock & remove cpufreq limite (for now)
+c4080c2 msm: hotplug: Do not skip the platform init for boot core
+35b9605 ksm: check and skip page, if it is already scanned
+0c78f85 kernel/smp.c: use '|=' for csd_lock
+e1fa5aa kernel: cgroup: protect cgroup linked lists
+42525a2 tcp: md5: remove unneeded check in tcp_v4_parse_md5_keys
+1222118 binfmt_elf.c: use get_random_int() to fix entropy depleting
+1ea1f22 tmpfs: fix mempolicy object leaks
+ce32f8f timer: optimize apply_slack()
+88eb047 time: RCU permitted to stop idle entry via softirq
+1665ed9 mm: vmscan: when kswapd is awoken due to reclaim by a running task
+795d7cc writeback: remove nr_pages_dirtied arg from balance_dirty_pages_ratelimited_nr()
+39b3159 writeback: Don't call writeback_set_ratelimit() too often during hotplug
+d37b0ae writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.
+db58fe4 AIO: Don't plug the I/O queue in do_io_submit()
+1b63201 jbd2: optimize jbd2_journal_force_commit
+8f82b61 block/partitions: optimize memory allocation in check_partition()
+fb42057 block: Disable IO Stats
+1942daa powersuspend: new PM kernel driver for Android w/o early_suspend v1.7
+90d1415 kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)
+76bf031 msm: lpm-levels: add suspend_again handler
+5cb1e82 power: catch wake-up requests in suspend_again
+6b3acf6 power: quickwakeup: initial driver
+8690961 PM: Introduce suspend state PM_SUSPEND_FREEZE
+a4d8e87 PM / cpuidle: System resume hang fix with cpuidle
+9c0c830 ACPI idle, CPU hotplug: Fix NULL pointer dereference during hotplug
+b587238 cpuidle: move field disable from per-driver to per-cpu
+b3f8745 cpuidle: add checks to avoid NULL pointer dereference
+6e47f5e cpuidle: Fix finding state with min power_usage
+f3cfe18 Revert "sched/cpuidle: reduce IPI store. Backport upstream 3.16 scheduler updates"
+9011ac9 cpuidle: Add need_resched() check
+a986cf6 cpuidle: remove unused hrtimer_peek_ahead_timers() call
+1519e1c kthread: implement probe_kthread_data()
+12a7b39 cpufreq: Use signed type for 'ret' variable, to store negative error values
+f6f5a91 msm: vidc: Initialize kernel space stack variables
+b897a4e msm: mdss: please be quiet
+f3746f1 mm/huge_memory: use new hashtable implementation
+0cc7482 drivers: cpufreq: add upstream changes
+9e246ef Build v1.50
+98cbee0 defconfig update
+4bbe255 cpufreq: cpu-boost: Return early if no input boost duration is set
+abde440 UPSTREAM: include/linux/poison.h: fix LIST_POISON{1,2} offset
+9b35270 cpufreq: cpu-boost: Use one work to remove input boost for all CPUs
+64611aa cpufreq: cpu-boost: Support separate input_boost_freq for different CPUs
+adc20b9 net: msm_rmnet.h: Fix data type of flow_id in QoS header
+
+   * packages/apps/AudioFX/
+4c0b0e8 Automatic translation import
+
+   * packages/apps/Bluetooth/
+c20fdee Automatic translation import
+
+   * packages/apps/BluetoothExt/
+6b31a79 Automatic translation import
+
+   * packages/apps/Browser/
+84477d8 Automatic translation import
+
+   * packages/apps/CMAccount/
+b5d1748 Automatic translation import
+
+   * packages/apps/CMBugReport/
+d020e5d Automatic translation import
+
+   * packages/apps/CMFileManager/
+c23f255 Automatic translation import
+
+   * packages/apps/Calendar/
+bbe0b1a Automatic translation import
+
+   * packages/apps/Camera2/
+fa49bdc Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+9a76d7d Automatic translation import
+
+   * packages/apps/Contacts/
+2fefb4c Automatic translation import
+
+   * packages/apps/ContactsCommon/
+50966eb Automatic translation import
+
+   * packages/apps/DeskClock/
+af8f902 Automatic translation import
+
+   * packages/apps/Eleven/
+b90b45b Automatic translation import
+
+   * packages/apps/Email/
+f4877af Automatic translation import
+
+   * packages/apps/Gallery2/
+ccaa5e8 Automatic translation import
+
+   * packages/apps/InCallUI/
+af9c930 Automatic translation import
+
+   * packages/apps/LockClock/
+ddacdc6 Automatic translation import
+
+   * packages/apps/Profiles/
+d759276 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+b13fc0e Automatic translation import
+
+   * packages/apps/Stk/
+245521b Automatic translation import
+
+   * packages/apps/Terminal/
+87e5b68 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+86660fb Automatic translation import
+
+   * packages/apps/Trebuchet/
+892fafe Automatic translation import
+
+   * packages/apps/TvSettings/
+d06a10c Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+152658c Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+b3b751d Automatic translation import
+
+   * packages/services/Mms/
+2bb23d1 Automatic translation import
+
+   * packages/services/Telecomm/
+d7395d6 Automatic translation import
+
+   * packages/services/Telephony/
+04e266f Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+bb92647 Automatic translation import
+
+   * vendor/cmsdk/
+64e7fe4 Automatic translation import
+
+====================
+     01-11-2016
+====================
+
+
+   * kernel/samsung/hlte/
+32062c9 kernel: Add support for gcc 6
+e56c008 net: bcmdhd: reduce wlan_rx wakelock period
+
+====================
+     01-10-2016
+====================
+
+
+   * hardware/qcom/audio-caf/msm8974/
+506b1e1 hal: APQ8084 uses AUDIO_PARAMETER_KEY_BT_SCO_WB for bluetooth wideband
+
+   * kernel/samsung/hlte/
+8db533a mm/slub: don't wait for high-order page allocation
+4f7f264 msm_bam_rmnet: Disable too much logspam
+
+   * vendor/samsung/
+016cf02 Merge pull request #711 from andi34/cm-12.1
+d8bdacd espresso-common: set country code to ALL in nvram_net.txt to avoid wifi issues
 
