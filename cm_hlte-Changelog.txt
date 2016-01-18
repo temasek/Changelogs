@@ -1,40 +1,374 @@
 ====================
-     01-13-2016
+     01-18-2016
 ====================
 
 
-   * bionic/
-0da3f68 Fix <sys/sysmacros.h>.
-
-   * build/
-696f837 Remove -Wa,noexecstack from unsupported arm clang flags
-20a5359 Remove libsqlite_jni from all product configs.
-
-   * device/samsung/hlte-common/
-7e7c352 ril: Revamp ril for M
-c7a660d hlte-common: Fix dataservices derp in cm.dependencies
-
-   * frameworks/av/
-e0cd5c5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-8ad6568 av: Add support for loading audio_effects_vendor.conf
+   * device/samsung/hltespr/
+c41b60b hltespr: Set CDMA subscription to NV
 
    * frameworks/base/
+8f2df3d FWB: QS shade transparency (1/2)
+bb64dd5 Revert "Notifications: Custom colors, (1/2):"
+c8a3eca base: correctly save app notification config
+2426237 SystemUI: Add battery saver tile (1/2)
+15b0ebf SystemUI: Add heads up tile (1/2)
+e767bd0 Themes: Call recreateTheme when theme changed
+8aa54e4 SysUI: Fix keyguard wallpaper not updating
+02fd8b0 SysUI: Pass themed resources on to NavBarEditor
+3a77bd4 Themes: Fix applying theme for notifications
+
+   * kernel/samsung/hlte/
+9c2b357 Build v1.58
+e985098 qcom: rpm-smd: Remove rpm workqueue initialization
+ad95af3 rpm-smd: Optimize smd data read
+21e75f7 BACKPORT: arm: don't open-code ptrace_report_syscall() (part deux)
+e699027 UPSTREAM: arm: don't open-code ptrace_report_syscall()
+a5d85d4 msm_rmnet_bam: Remove watchdog_timeo
+4a2eac0 msm_rmnet_bam: Add support for IOCTL RMNET_IOCTL_DEREGISTER_DEV
+1d88d20 msm_rmnet_bam: Use the correct netif_rx api
+ed250cd xt_qtaguid: fix a race condition in if_tag_stat_update
+a2faaee nf: xt_qtaguid: fix handling for cases where tunnels are used.
+a375208 Revert "tick-sched: recalculate sleep length each time it is requested"
+99bc30b sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire.
+7e618c3 jiffies conversions: Use compile time constants when possible
+ed678a0 futex: Fix argument handling in futex_lock_pi() calls
+d8cdb11 futex: Ensure get_futex_key_refs() always implies a barrier
+a697a7f mm/ksm.c: use new hashtable implementation
+dca9b57 block,elevator: use new hashtable implementation
+6afbc60 cgroup: use new hashtable implementation
+6976757 futexes: Increase hash table size for better performance
+5dea217 ARM: enable neon-vfpv4 support
+56cc3db ARM: vfp: hardfloat
+4319f4e ARM: make kernel oops easier to read
+84285e2 lib/int_sqrt.c: optimize square root algorithm
+f5d21dc Remove '+' symbol from kernel version string
+24e959b crypto: arm/aes update NEON AES module to latest OpenSSL version
+
+   * packages/apps/Settings/
+ac16dc2 Build V3.0
+d9ba16e Settings: QS shade transparency (2/2)
+cf8ade6 Notification drawer: Custom clear all icon color, (2/2):
+5f5f02e Revert "Notifications: Custom colors, (2/2):"
+e87ab5b Allow launching notification manager settings externally
+
+   * packages/providers/ThemesProvider/
+5756a99 Fix blank WiFi and signal icon previews
+
+   * vendor/cmsdk/
+0295218 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+5400b2f cmsdk: Add battery saver tile (2/2)
+55cb123 cmsdk: Add heads up tile (2/2)
+
+====================
+     01-17-2016
+====================
+
+
+   * kernel/samsung/hlte/
+033090f smpboot: Add missing get_online_cpus() in smpboot_register_percpu_thread()
+7af454c Build v1.57
+b5b3164 ARM: dma-mapping: Always pass proper prot flags to iommu_map()
+4b2e804 ARM: dma-mapping: convert DMA direction into IOMMU protection attributes
+a02f474 dma-mapping: Add dma_remap functions
+a19b222 arch: mm: do not invoke OOM killer on kernel fault OOM
+345aaf8 ARM: cleanup gate_vma initialization
+
+====================
+     01-16-2016
+====================
+
+
+   * android/
+05f0253 Use 3 more of our own intel repos (psb_headers, omx-components, libva)
+058c124 manifest: move mips prebuilts into notdefault
+14d8028 Add QC dataservices by default
+
+   * frameworks/base/
+1bb785d Keyguard: Clarify error message on bad input length.
+630eb4b SystemUI: Update recents memorybar on recents clear all
+f7495c4 Include color picker, (1/2)
+786f738 SysUI: Clean up objects when recreating statusbar
+2fe4549 SettingsProvider: Force aosp upgrade path from 12.1.
+e793581 SysUI: Use Objects.equals() for comparing components
+dc975fe SysUI: Fix notification panel alignment after theme change
+bc7da55 policy: disable EdgeGestureService
+a4c194e allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
+
+   * frameworks/opt/telephony/
+38772dc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+6d6213a telephony: Fix persistence of automatic network selection
+
+   * hardware/qcom/media-caf/msm8994/
+79e831d Fix flooding of message in calcLumaAlign
+
+   * kernel/samsung/hlte/
+d85e43f rbtree: Backport from 3.10
+69cba1a cpumask: implement cpumask_parse()
+7316cb8 driver/base: implement subsys_virtual_register()
+59a5a40 mm: vmscan: fix inappropriate zone congestion clearing
+200e1a7 fuse: Add support for shortcircuited read/write for files
+44fdaca mm: vmscan: fix the page state calculation in too_many_isolated
+ed8db10 clk: qcom: Use rt mutexes for the rpm and voter clock locks
+fc18faa sched: Add a check for cpu unbound deferrable timers
+d24f3d8 sched/fair: Fix tg_set_cfs_bandwidth() deadlock on rq->lock
+f3b6317 sched: Avoid throttle_cfs_rq() racing with period_timer stopping
+f19044b sched: fix the theoretical signal_wake_up() vs schedule() race
+4aad75c mm: vmscan: lock page on swap error in pageout
+99d246a Build v1.56
+9b588de timer: reduce cache bouncing of deferral timer wheel
+9196f81 timer: make deferrable cpu unbound timers really not bound to a cpu
+03ada37 timer: Clean up timer initializers
+ef7a885 fs/buffer.c: increase the buffer-head per-CPU LRU size
+bbf75c4 rcu: Direct algorithmic SRCU implementation
+5179a63 ARM: 7676/1: fix a wrong value returned from CALLER_ADDRn
+9dce71e ALSA: compress: Add ioctl declaration for gapless
+e65d8a4 ASoC: msm: qdsp6v2: Handles additional flac metadata
+cc189f5 genirq: Add IRQS_PENDING for nested and simple irq
+890b415 genirq: Provide means to retrigger parent
+ac7d572 genirq: Allow check_wakeup_irqs to notice level-triggered interrupts
+8ee769f ASoC: msm: qdsp6v2: Handle additional codec specific metadata
+b5db346 ALSA: compress: add num_sample_rates in snd_codec_desc
+06a5560 ALSA: compress: update struct snd_codec_desc for sample rate
+9abbde7 ALSA: compress: update comment for sample rate in snd_codec
+504fc6b ASoC: msm: qdsp6v2: Fix bit alignment in snd_codec params
+9b642a3 ALSA: compress: change the way sample rates are sent to kernel
+3a00883 SoC: msm: qdsp6v2: Enable gapless for pcm offload
+8793840 ASoC: msm: qdsp6v2: fix incomplete playback issue for non-gapless formats
+fba4e6a ASoC: msm: qdsp6v2: add error handling on write done during partial drain
+1aba968 ASoC: pcm: If pmdown_time is zero then shut down DAPM immediately
+cd13b7d ASoC: Prevent pop_wait overwrite
+9da2387 ASoC: pcm: update the start-up sequence for playback
+dfffe9a ASoC: dpcm: Allow FE to be opened without valid BE routes.
+c6c5061 ASoC: pcm: Add support for fixup callback
+6dcbf17 ASoC: msm: qdsp6v2: return 0 when wait_for_timeout succeed
+6ece2d7 ASoC: msm: qdsp6v2: make frame info to static array
+164cee9 ASoC: msm: qdsp6v2: move frame info to be per session based
+35a73dd ASoC: msm: qdsp6v2: Restrict capture path to LL mode
+b0cdc96 ASoC: msm: q6dspv2: add pause/resume support for audio record
+0c7fabe ASoC: qdsp6v2: update perf mode flag for LL capture cases
+eefd23e ASoC: wcd9320: Optimize delay after micbias enable
+fc51ae7 ASoC: msm: qdsp6v2: enlarge PCM platform driver capture period size
+46d9e69 asoc: msm: Clean up async ops
+8dfd901 asoc: msm: Clean up async ops
+21f6441 mmc: sdhci: fix lockdep error in tuning routine
+ae8bbb6 ksoftirqd: Enable IRQs and call cond_resched() before poking RCU
+2b8e611 netfilter: idletimer: Fix trivial lockdep warning
+35579ad netfilter: xt_HARDIDLETIMER: Fix use after free condition
+00fd7ae nf: IDLETIMER: Fix possible use before initialization in idletimer_resume
+57f5f48 net: ipc_router: Fix socket reference in IPC Router
+7538932 net: ping: Return EAFNOSUPPORT when appropriate.
+4d8d845 merge_config.sh: Avoid creating unnessary source softlinks
+d1f33cd merge_config.sh: Add option to specify output dir
+aeb66f7 sched: do not use cpu_to_node() to find an offlined cpu's node.
+c66c599 sched: Remove __ARCH_WANT_INTERRUPTS_ON_CTXSW
+92ff9c2 Build v1.55
+80063fe USB: ci13xxx_udc:  Add support for UI interrupts counting
+d7c7f7b msm: perf: set filter bits for cycle counter on krait
+cb5c94c Perf: Reset pmu after hotplug
+4d9435b msm: perf: tracectr: Initialize cnts after hotplug
+21695d1 msm: perf: clean up duplicate constraint events
+ed722cc perf: stop deadlock when cpu_up fails
+2b2c4c5 misc: Fix various issues with upstream merge
+2cfdfa8 perf: Fix more fallout from "perf: Fix race in removing an event"
+c5272a7 perf: fix mismerge
+33c1a20 hrtimer: Prevent stale expiry time in hrtimer_interrupt()
+ff687bf Revert "tick: Cleanup NOHZ per cpu data on cpu down"
+8801e5d rq_stats: Fix usage of cpufreq APIs
+96f8d2c soc: qcom: rq_stats: Always show idle time left
+30f4cb5 ARM: 7877/1: use built-in byte swap function
+3d4f59b ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()
+657341a net: udp: Adjust UDP socket state for encapsulation sockets
+57ef8fe net: msm_rmnet: Add an IOCTL definition to deregister a net device
+04695a9 arm: smp: Update the topology masks before calling CPU_STARTING notifiers
+15c4c52 BACKPORT: mm: /proc/pid/smaps:: show proportional swap share of the mapping
+bfbaf0c serial: tty: msm_hs_uart: Fix the compat table
+7def5b8 Build v1.54
+334f2a3 arm: arch_timer: add isbs to register accessors
+f9c4eec msm: memutils: 8084: memcpy, memmove optimization
+4cfba72 qcom: msm: event-timer: Add eventimer migration framework
+8258ab1 drivers: lpm-levels: Provide API to set wake up time from suspend
+a89f4a9 qcom: rpm-smd: Use arch_init and implement deferred probe mechanism
+281c321 Revert "msm: Fix high load average from uninterruptible waits"
+7438ae7 msm: rpm-smd: Increase the max outstanding sleep set messages to 24
+2a488f3 qcom: rpm-smd: Force smd channel update in interrupt lock context
+eed023d msm: rpm-smd: Read RPM acks before entering system sleep
+
+   * packages/apps/ContactsCommon/
+b88149f Add required permission to read vcf from gmail
+
+   * packages/apps/LockClock/
+ff1cf25 LockClock : Update to v23 + runtime permissions
+
+   * packages/apps/OmniSwitch/
+bb1d62c Merge pull request #6 from Mai19930513/cm-13.0
+14997d4 add zh-rCN translation
+
+   * packages/apps/Settings/
+79097e0 Merge pull request #387 from beroid/cm-13.0
+996bdf1 Settings: Update RU translations
+2303408 Merge pull request #386 from Mai19930513/cm-13.0
+c0beb7b update zh-rCN translation
+39deb82 Color picker: Enable alpha slider as default
+9344a34 Include color picker, (2/2):
+c4291fa Revert "Add marginov color picker"
+4f8f5c4 Revert "Settings: show warning in lock screen settings when disabled by qs"
+bc60346 Support multiple SAR values, separate args list with ','
+faa6be8 Notifications: Custom colors, (2/2):
+
+   * packages/apps/Snap/
+a676e15 Revert "Camera: Propagate power mode selection from UI to lower layers."
+44cfc31 Don't needlessly make menu button larger than the other toggle buttons.
+3b96d32 Snap: Set some qcom features as untranslatable
+d8420e3 Drop new focus indicator into Camera2.
+db27186 Snap: Actually select the highest quality video by default
+2233950 CameraActivity: Don't hide navigation bar
+
+   * packages/apps/Trebuchet/
+ab66f21 Trebuchet: Fix NPE when app search controller is off
+
+   * system/vold/
+6cfcaf9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+78f24b1 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
+dddf1aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+
+   * vendor/cm/
+a2b164d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+04864b1 Fixed Maven Artifactory to work with jack
+
+   * vendor/cmsdk/
+9f1bfdb Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+cf3f38c cmsdk: Add CYANOGENMOD_VERSION constant.
+969cda0 cmsdk/tests: Temp hack to fix `mka` builds.
+
+====================
+     01-15-2016
+====================
+
+
+   * external/libpng/
+7ca7cb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_libpng into cm-13.0
+
+   * frameworks/base/
+49a8305 Notification drawer: Custom clear all icon color, (1/2):
+cacc418 Notifications: Custom colors, (1/2):
+2764704 Make G notification font colors more compatible with dark and light themes
+e7bc5dc AdbOverNetworkTile: only de/reregister the observer when setListening changes whether we should be listening
+e40ada2 SysUI: Reuse controllers and managers
+e4de9a9 Disable Quick Settings on secure lockscreen (1/2)
+ffb4904 Merge pull request #103 from Mai19930513/cm-13.0
+2e5a8c9 add zh-rCN translation
+6f821a4 Have Battery bar controller obey Hide value
+3cb2e99 Fix WallpaperCropper crash when setting wallpaper over 8MB
+a52eea2 Update Lockscreen clock font option [1/2]
+1a32fd9 SystemUI: write keyguard enabled setting to CMSettings
+4368542 SystemUI: Make lockscreen visualizer battery friendly
+72e300b SysUI: Re-add status icons in recreateStatusBar()
+
+   * hardware/qcom/audio-caf/msm8916/
+1c5250f audio HAL: fix thread starvation
+793548e audiopolicy: use deep buffer output by default for music streams
+
+   * packages/apps/CarrierConfig/
+7b25cb4 Set voicemail's notification persistent for O2 UK
+
+   * packages/apps/ContactsCommon/
+f1501f5 Ensure non-null encoded uri before attempting to parse
+
+   * packages/apps/Settings/
+8c2598c Disable Quick Settings on secure lockscreen (2/2)
+663eb41 Merge pull request #385 from Mai19930513/cm-13.0
+a301ebe update zh-rCN translation
+03ad24b Update Lockscreen clock font option [2/2]
+19b4d14 Settings: show warning in lock screen settings when disabled by qs
+
+   * packages/apps/Snap/
+607a2f0 SnapdragonCamera: limit video file size on SD card
+f0e709d SnapdragonCamera: Hide all camera setting when countdown timer starts
+24081ba SnapdragonCamera: Set color effect as none when turn HDR on
+645970f SnapdragonCamera: Fixing NullPointerException in onCreate of VideoModule
+8a0414d SnapdragonCamera: fix thumbnail display
+ff10b54 SnapdragonCamera: fix crash taking Macro+ from MMS
+8eeafc1 SnapdragonCamera: fix NumberFormatException when input value invalide
+cd14209 Snap: Remove touch AF/AEC option
+4b6ac95 Snap: Support 1:1 aspect ratio
+
+   * packages/providers/ThemesProvider/
+59bff5c No default lock wallpaper and live lock screen for system theme
+
+   * packages/wallpapers/PhotoPhase/
+6a4f804 PhotoPhase: ask for runtime permissions
+
+   * system/vold/
+6ab045a vold: hw_fde: Fix merge damage
+a9746cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+
+   * vendor/cm/
+6b6b6f8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+cda6566 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     01-14-2016
+====================
+
+
+   * device/samsung/hlte/
+24fc0c5 hlte: update system.prop
+
+   * device/samsung/hlte-common/
+60fa21e ril: Revamp ril for M
+
+   * external/libpng/
+75a4e74 libpng: fix hang during read when inflate fails
+
+   * frameworks/base/
+39317a3 base: fix num cpu check for CPU overlay
 86ec0dc Revert "Core: Fix setupwizard FC"
 0e14362 FWB: Make all 18 font variants available to Statusbar weather temp (1/2)
 0c7d06e FWB: Make all 18 font variants available to Statusbar Clock (1/2)
-76ae24e Animate backlight quickly when display state request to change or power mode changed
-5ec067b SystemUI: Fix CallbackHandler and NetworkControllerBase tests.
-8273fcb SysUI: Disable window animation when using KeyguardExternalView
-b5a9a03 SysUI: Handle KgdExtView callbacks on UI thread
-47fb8ac SystemUI: Removing padding on mobile signal group.
-875d72c Ringtone: Add support for selection of phone ringtone for SIM-2.
-f701681 SettingsProvider: Disable data roaming by default
-27d8637 SystemUi: Reintroduce always_show_roaming config.
-9ef11fa ThemeService: ManagedProvisioning is a setup package too.
-0d4b521 MetricsConstants: Restore DONT_TRACK label for custom tiles
 
-   * hardware/qcom/display-caf/msm8974/
-8c9082a gralloc: allow forcing old pixel alignment
+   * frameworks/support/
+6f0a2cb Make sure that AppBarLayout is laid out correctly
+2ae0ed1 AppBarLayout layout/measure fixes
+
+   * hardware/intel/common/libmix/
+347c889 intel: videoencoder: Kill logspam when casting a screen
+fea1c72 intel: videodecoder: Remove attrib_ptr for zenfone2 blobs
+eaa09ab intel: videodecoder: mpeg4: Remove got_vol/got_vop for zenfone2
+543245f intel: videodecoder: AVC: Remove "constraint_set5_flag" for zenfone2
+e01cfdd intel: libmix: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/common/libva/
+92286f2 intel: av: Remove attrib_ptr for zenfone2 blobs
+02ad2b8 intel: av: Update slice header group def to support zenfone2 blobs
+
+   * hardware/intel/common/libwsbm/
+b2fc92b intel: libwsbm: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/common/omx-components/
+43ccd58 intel: omx: Unbreak SetConfigVideoBitrate
+1338ce0 intel: omx: Zenfone2 blobs cannot handle metadata mode
+eef0672 intel: omx: LP blob compatibility
+
+   * hardware/intel/img/hwcomposer/
+a1ae079 Merge "HWC: adapt VirtualDevice for old blob compliance" into cm-13.0
+fed56bf Merge "Hwcomposer: Enable VirtualDisplay feature" into cm-13.0
+8b7b71a intel: hwcomposer: csc mode is only supported on newer blobs
+a2bc976 intel: hwcomposer: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/img/psb_headers/
+21817aa intel: mixvbp: LP blob compatibility
+
+   * hardware/intel/img/psb_video/
+a1c9ae0 intel: psb_video: LP blob compatibility
+28f732b intel: psb_video: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/qcom/audio-caf/msm8916/
+86d47ef hal: Support the msm8939-florida-snd-card.
+
+   * hardware/ti/omap4/
+9ce3921 add CMHW for ColorCalibration/LiveDisplay
 
    * kernel/samsung/hlte/
 5e92651 Build v1.53
@@ -49,9 +383,9 @@ d11e195 tracepoint: Use static_key_false(), since static_branch() is deprecated
 12f7518 msm_bam_rmnet: Use Probe Method for Enumerating BAM
 c465266 net: rmnet_data: new structure for rmnet ioctls
 34ab0de msm_bam_rmnet: Implement extended IOCTL's
-2ec6d88 defconfig update
-6a1ca8e Revert "kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)"
-7204b6f Revert "powersuspend: new PM kernel driver for Android w/o early_suspend v1.7"
+
+   * packages/apps/CMFileManager/
+26fd0d7 Bump target SDK version to 23
 
    * packages/apps/Contacts/
 a08be42 Add contact blocking and unblocking
@@ -60,691 +394,43 @@ a08be42 Add contact blocking and unblocking
 cf86693 Add block contact dialog and supporting helper classes
 bbf7e82 Refactor contact info lookup
 
+   * packages/apps/Email/
+34fb128 email: junk icon
+c929853 email: return default folder name for subfolders
+
    * packages/apps/Messaging/
 7fc9cfe Adhere to the revised lookup provider api
 
    * packages/apps/Settings/
+729af14 Merge pull request #383 from beroid/cm-13.0
+989f186 Settings: Update RU translations
 62fd47d Build V2.9
 79ef915 Settings: Make all 18 font variants available to Statusbar weather temp (2/2)
 9ca093e Settings: Make all 18 font variants available to Statusbar Clock (2/2)
-8712d29 Settings: Set regulatory information dialog to non-translatable.
-a41fef2 Settings: Show ringtone per sim for multi sim device
-745d897 Squash commit of SAR and IC Code.
-
-   * packages/apps/SetupWizard/
-f5ec6ac SetupWizard: Upgrade sdk to 23
-1141611 SetupWizard: Don't disable packages on main thread
 
    * packages/apps/Snap/
-8461f25 Snap: remove captureUI pngdrawables
+0ad4095 Snap: Support for HTC's HDR mode
 
    * packages/apps/Trebuchet/
-4eaa0a5 Trebuchet: Fix resource not found exception when picking a wallpaper
-
-   * packages/providers/ThemesProvider/
-3b82b9c Queries live lock screen preview path
-
-   * system/core/
-c27f2e3 libnetutils: Check socket() return value
-
-   * system/media/
-c969dad effects: Add AUDIO_EFFECT_VENDOR_CONFIG_FILE2
-
-   * vendor/cm/
-6e0c3e5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-e8df21c sepolicy: Add perfprofd with set_prop macro
-
-   * vendor/samsung/
-56162d9 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-c86d290 Merge pull request #714 from solk2/cm-13.0
-974c01d ks01lte: Update blobs for M
-
-====================
-     01-12-2016
-====================
-
-
-   * build/
-4abdd4a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * device/qcom/common/
-542ac97 power: Add support for 8952
-
-   * device/samsung/hlte-common/
-d51ba32 rootdir: Restore sensor permission
-a539498 ril: Set a condition to RIL_UNSOL_RIL_CONNECTED
-f6d1c7e hlte-common: Add ueventd rule for cpufreq sysfs
-5d8aefb hlte-common: Snap: Restart preview onPictureTaken
-fa35e65 hlte-common: Change heapminfree
-7329da1 hlte-common: build dataservices
-bd1a483 ril: Fix data after reboot
-db6ad0b hlte-common: build ebtables and ethertypes
-bc44500 hlte-common: add radish
-e096aad rootdir: clean up
-027a437 sepolicy: clean up
-64d65e4 hlte-common: Force building of busybox on user build
-bd186ec hlte-common: Add busybox to cm.dependencies
-180e35e hlte-common: No need to shim storage
-8a71763 hlte-common: Use SnapDragon camera
-9071e0d hlte-common: enable doze power saving mode
-0d249b7 hlte-common: enable doze
-fdae0da Revert "hlte-common: Add support for locking the screen when the lid is closed"
-1fa29e0 sepolicy: move external storage policies to vendor/cm
-
-   * device/samsung/hltespr/
-3698e36 hltespr: enable "Sprint MWI Quirk"
-32601ca hltespr: update system.prop
-
-   * device/samsung/qcom-common/
-82da0a1 Automatic translation import
-
-   * frameworks/av/
-ba051fe Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-ddf0593 libstagefright: Support YVU420SemiPlanar camera format
-
-   * frameworks/base/
-bfb77b6 SystemUi: Nuke DONT_TRACK label, and introduce CMMetricsLogger constants.
-6316150 Make WIFI_IDLE_MS default into an overlay
-f526792 Automatic translation import
-095fad9 Fix drawing of VectorDrawables that are rotated by 90 or 270 degrees.
-2d330be Increase brightness faster if ambient light is brightening quickly.
-cb216d5 Optimize GPS property reloading.
-51982c5 Align checkbox and description in permission confirmation dialog
-f3194f2 Revert "telephony: Hack GSM and LTE signal strength"
-
-   * frameworks/opt/net/wifi/
-53cbe97 Use def_wifi_idle_ms to fetch WIFI_IDLE_MS defaults
-
-   * hardware/qcom/audio-caf/msm8994/
-998901b Merge tag 'LA.BF64.1.2.2-02240-8x94.0' into cm-13.0-caf-8994
-
-   * hardware/qcom/display-caf/apq8084/
-fc41c61 hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/display-caf/msm8994/
-1dbc343 Merge tag 'LA.BF64.1.2.2-02240-8x94.0' into cm-13.0-caf-8994
-
-   * kernel/samsung/hlte/
-ab31434 pm: suspend: read suspend time from timekeeping
-921b56d Revert "defconfig: Disable CONFIG_SUSPEND_TIME"
-58d8a27 Build v1.52
-1c370b9 FROMLIST: ARM: dma-mapping: Optimize allocation
-b228ba2 UPSTREAM: ARM: 8337/1: mm: Do not invoke OOM for higher order IOMMU DMA allocations
-9900e93 ARM: 8429/1: disable GCC SRA optimization
-dbe8823 Revert "drivers: mmc: disable CRC"
-5548c6d mm/slub.c: fix page->_count corruption (again)
-5f56aaa Build v1.51
-4ae03d1 ARM: spinlock: use inner-shareable dsb variant prior to sev instruction
-5c58fbf vmscan: fix increasing nr_isolated incurred by putback unevictable pages
-5b5e829 sysrq: Emergency Remount R/O in reverse order
-58849e9 mmc: core: Silence log spam
-fe11d72 arm: irq: Tone down kernel logging
-8070faa defconfig: enable driver for ASIX AX88179 based USB ethernet adapters
-74c747c drivers: net: usb: add support for ASIX AX88179 based USB ethernet adapters
-cc2e544 msm: vidc: Handle max clients error from video hardware
-2fe7632 writeback: Do not sort b_io list only because of block device inode
-8496bbe fs: fuse: lock the new non-CMA page before replace_page_cache_page()
-2a13a29 defconfig update
-560c9a3 nohz: Reduce overhead under high-freq idling patterns
-d7edb5b USB: android: Fix memory leak in mass_storage_function_init()
-61d3191 PM: Enable asynchronous noirq resume threads to save the resuming time
-9d88f4ad smd_pkt: Add sanity check to avoid unregistering the driver twice
-bd5ce0d cpuidle: remove cpuidle_unregister_governor()
-a8a6d5f cpuidle: Make it clear that governors cannot be modules
-a4cb66e new helper: single_open_size()
-3b84ad0 sched: Remove one division operation in find_busiest_queue()
-0604b4b sched: Update cpu load after task_tick
-b68c64c defconfig: Disable CONFIG_SUSPEND_TIME
-0592527 irq / PM: Fix IRQF_NO_SUSPEND problem with shared interrupts
-a97a138 PM / sleep: unregister wakeup source when disabling device wakeup
-279a4a2 msm: bam: Use memset_io instead of memset
-693fc8d sched: Fix race in idle_balance()
-5b44c17 vm_is_stack: use for_each_thread() rather then buggy while_each_thread()
-05d939a Input: fix defuzzing logic
-3927589 soc: qcom: smd: Fix SMD packet sync loss issue
-06af139 msm: bam_dmux: convert panic to a log message
-9a9d2be tick: don't update idle time if cpu offline
-1d81a2a ARM: topology: Add efficiency coefficient for Krait
-63aff3b arm: use -mtune=cortex-a15 for Krait targets
-4b8ae57 sched/__wake_up_sync_key(): Fix nr_exclusive tasks which lead to WF_SYNC clearing
-1b02f71 sched, smp: Correctly deal with nested sleeps
-9da7814 sched: Add sysinterface for GENTLE_FAIR_SLEEPERS
-8bccd10 sched: cpu_power: enable ARCH_POWER
-4c6d9f1 cpufreq: Return directly in __cpufreq_get if policy is NULL
-66b2cf1 ASoC: msm: Fix qcom aac enc - allow alloc of less buffers
-34ffb71 timekeeping: iopoll: fix timeout calculations into ktime_get routine
-7141f8a Update min clock & remove cpufreq limite (for now)
-c4080c2 msm: hotplug: Do not skip the platform init for boot core
-35b9605 ksm: check and skip page, if it is already scanned
-0c78f85 kernel/smp.c: use '|=' for csd_lock
-e1fa5aa kernel: cgroup: protect cgroup linked lists
-42525a2 tcp: md5: remove unneeded check in tcp_v4_parse_md5_keys
-1222118 binfmt_elf.c: use get_random_int() to fix entropy depleting
-1ea1f22 tmpfs: fix mempolicy object leaks
-ce32f8f timer: optimize apply_slack()
-88eb047 time: RCU permitted to stop idle entry via softirq
-1665ed9 mm: vmscan: when kswapd is awoken due to reclaim by a running task
-795d7cc writeback: remove nr_pages_dirtied arg from balance_dirty_pages_ratelimited_nr()
-39b3159 writeback: Don't call writeback_set_ratelimit() too often during hotplug
-d37b0ae writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.
-db58fe4 AIO: Don't plug the I/O queue in do_io_submit()
-1b63201 jbd2: optimize jbd2_journal_force_commit
-8f82b61 block/partitions: optimize memory allocation in check_partition()
-fb42057 block: Disable IO Stats
-1942daa powersuspend: new PM kernel driver for Android w/o early_suspend v1.7
-90d1415 kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)
-76bf031 msm: lpm-levels: add suspend_again handler
-5cb1e82 power: catch wake-up requests in suspend_again
-6b3acf6 power: quickwakeup: initial driver
-8690961 PM: Introduce suspend state PM_SUSPEND_FREEZE
-a4d8e87 PM / cpuidle: System resume hang fix with cpuidle
-9c0c830 ACPI idle, CPU hotplug: Fix NULL pointer dereference during hotplug
-b587238 cpuidle: move field disable from per-driver to per-cpu
-b3f8745 cpuidle: add checks to avoid NULL pointer dereference
-6e47f5e cpuidle: Fix finding state with min power_usage
-f3cfe18 Revert "sched/cpuidle: reduce IPI store. Backport upstream 3.16 scheduler updates"
-9011ac9 cpuidle: Add need_resched() check
-a986cf6 cpuidle: remove unused hrtimer_peek_ahead_timers() call
-1519e1c kthread: implement probe_kthread_data()
-12a7b39 cpufreq: Use signed type for 'ret' variable, to store negative error values
-f6f5a91 msm: vidc: Initialize kernel space stack variables
-b897a4e msm: mdss: please be quiet
-f3746f1 mm/huge_memory: use new hashtable implementation
-0cc7482 drivers: cpufreq: add upstream changes
-9e246ef Build v1.50
-98cbee0 defconfig update
-4bbe255 cpufreq: cpu-boost: Return early if no input boost duration is set
-abde440 UPSTREAM: include/linux/poison.h: fix LIST_POISON{1,2} offset
-9b35270 cpufreq: cpu-boost: Use one work to remove input boost for all CPUs
-64611aa cpufreq: cpu-boost: Support separate input_boost_freq for different CPUs
-adc20b9 net: msm_rmnet.h: Fix data type of flow_id in QoS header
-
-   * packages/apps/AudioFX/
-49c1954 Automatic translation import
-
-   * packages/apps/Bluetooth/
-57128ef Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-4885bdd Automatic translation import
-
-   * packages/apps/BluetoothExt/
-9061adc Automatic translation import
-
-   * packages/apps/Browser/
-f99d466 Automatic translation import
-
-   * packages/apps/CMBugReport/
-5a019fc Automatic translation import
-
-   * packages/apps/CMFileManager/
-9efd883 Automatic translation import
-
-   * packages/apps/CMWallpapers/
-d7e4964 Automatic translation import
-
-   * packages/apps/Calendar/
-2c28b43 Automatic translation import
-
-   * packages/apps/Camera2/
-ebd0718 Automatic translation import
-
-   * packages/apps/Contacts/
-019f467 Automatic translation import
-64a9c32 Fix "Copy to .. " overflow menu item title
-
-   * packages/apps/ContactsCommon/
-b5b16f7 Automatic translation import
-
-   * packages/apps/DeskClock/
-e6065f8 Automatic translation import
-
-   * packages/apps/Dialer/
-5a46f31 Automatic translation import
-
-   * packages/apps/Eleven/
-329816e Automatic translation import
-
-   * packages/apps/Email/
-fab6ba7 Automatic translation import
-
-   * packages/apps/Gallery2/
-29e8669 Automatic translation import
-
-   * packages/apps/InCallUI/
-87fbbc9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-7107206 Automatic translation import
-
-   * packages/apps/LockClock/
-a461a5c Automatic translation import
-
-   * packages/apps/PhoneCommon/
-47f9c4b Automatic translation import
-
-   * packages/apps/Profiles/
-a53da5a Automatic translation import
-
-   * packages/apps/Screencast/
-eaf1ce6 Automatic translation import
-
-   * packages/apps/Settings/
-9295957 Settings: Add CMMetricsLogger constants to proper pages.
-8ebb23f Automatic translation import
-c42796f Build V2.8
-341fbfc Lower minimum vertical range for data usage.
-fc404ba Update vertical axis bounds when resetting network policy.
-e1a01ca Revert "Hide usage graph on app usage details pages."
-a121f7a Settings: Set default value for 'Volume keys control ringer stream'
-5e3e3dd Settings: increase default regulatory info drawable dimensions
-14c1430 Settings: EL AOSP translation fixes
-25a4e52 Add android release info into device info
-52d9759 Merge pull request #382 from XDANoob/patch-4
-2e1e332 Updated German translation
-
-   * packages/apps/SetupWizard/
-3e68503 Automatic translation import
-
-   * packages/apps/Snap/
-358ebe9 Snap: Add more resolutions
-66b3a0c Snap: More strings cleanup
-f6a57b1 Snap: special handling of hdr-mode parameter for lge devices
-2d5e458 Fix mismerge of "SnapdragonCamera: fix screen flash on resuming"
-8f10ee0 Don't do touch-to-focus for touches outside of the preview.
-6f16347 SnapdragonCamera: Hide camera controllers when review captured image
-a1b0f7a Move mApplicationContext to init()
-
-   * packages/apps/SoundRecorder/
-40977bf Automatic translation import
-
-   * packages/apps/Stk/
-1f10bf6 Automatic translation import
-
-   * packages/apps/Terminal/
-ff50b7d Automatic translation import
-
-   * packages/apps/ThemeChooser/
-19981c2 Automatic translation import
-
-   * packages/apps/Trebuchet/
-b0c1a0d Automatic translation import
-ef97694 Prevent possible NPE during monkey test
-
-   * packages/apps/TvSettings/
-b9f2f01 Automatic translation import
+fb312de Trebuchet: Remove app search controller if turned off
+5b04456 Trebuchet: Fix some monkey test race condition bugs
 
    * packages/apps/UnifiedEmail/
-a5cb4a5 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-7593ae3 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-da87869 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-c9796fc Automatic translation import
-
-   * packages/services/Mms/
-0b83525 Automatic translation import
-
-   * packages/services/Telecomm/
-2ae2624 Automatic translation import
-
-   * packages/services/Telephony/
-2026b14 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-044982b Automatic translation import
-5d81144 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * packages/wallpapers/Galaxy4/
-699976c Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-6fe94fd Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-1304d69 Automatic translation import
-
-   * vendor/cm/
-85747ba Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-c139b92 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-c7e69de cmsdk: Introduce internal MetricsLogger class.
-9c13073 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-cc517bf Automatic translation import
-
-====================
-     01-11-2016
-====================
-
-
-   * external/f2fs-tools/
-3e88e81 mkfs.f2fs: Disable clang
-
-   * frameworks/base/
-a562006 FWB: Add Option For Persistent Icon For Edit Tiles [1/2]
-631ebb3 Status bar header long click actions
-b51d5d3 Fix WFD source incoming persistent connection when device is P2P client
-82a7375 Update PackageInstaller install handing
-2b054ce Increase brightness faster if ambient light is brightening quickly.
-3b7339e fwb: SystemUI: Fix missing navbar icons
-646f426 Update notifications icon
-776848c WiredAccessoryManager: remove warning about Samsung dock support
-4324201 Add Motorola EMU audio dock jack sensing support
-1519e70 QS: Fix derp in SystemUI restart tile
-b1fdb2b Add Restart SystemUI to reboot menu
-
-   * hardware/qcom/display-caf/msm8994/
-1f09140 Default flexible YUV format to NV21
-8b353b3 Revert "Change the IMPLEMENTATION_DEFINED preview buffers format".
-2e8b4c1 Revert "Default flexible YUV format to NV21_ZSL".
-17ad546 Revert "gralloc: add cflag to use nv21 format for camera preview"
-866c928 Revert "gralloc: cflag to use nv21 format for camera write"
-
-   * kernel/samsung/hlte/
-32062c9 kernel: Add support for gcc 6
-e56c008 net: bcmdhd: reduce wlan_rx wakelock period
-
-   * packages/apps/Bluetooth/
-0d949eb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-b90faf3 Improve AVRCP metadata string
-
-   * packages/apps/InCallUI/
-0d257ab Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-9579c96 InCallUI: Use framework yes/no strings
-
-   * packages/apps/Settings/
-4f64b4b Settings: Apps started on boot shortcut in memory settings
-7ba20df Improve DPI warning string
-a5a61d8 Settings: Add Option For Persistent Icon For Edit Tiles [2/2]
-235182f Revert "Settings : Launch demo mode on triple tap of build date"
-
-   * packages/apps/Snap/
-42a806a Snap: support setting default preview resolution via overlay
-f4f5854 Snap: Fix NPE when parameters.getSupportedVideoSizes() is null
-3615cea Snap: Fall back to default quality instead of 352x288
-bc69af7 Snap: Fix NPE if mCameraDevice == null
-4902670 Snap: Fix aapt warnings
-63a9bb1 Snap: Set untranslatables
-15c6280 Snap: support usage of preview size 2560x1440 via system prop
-
-   * vendor/samsung/
-3729456 hlte-common: Add radish binary
-ac7bc25 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-
-====================
-     01-10-2016
-====================
-
-
-   * android/
-cf87df7 cm: Remove qcom/opensource/display-frameworks
-c59f761 Track own PackageInstaller
-
-   * build/
-420da62 qcom: Add dataservices to    * pathmap
-d55bce5 qcom: Fix non-QC target pathmappings
-
-   * frameworks/av/
-c4ae2a4 Fix WaveGenerator memory leak
-
-   * frameworks/base/
-d726b80 Merge pull request #102 from beroid/cm-13.0
-46df7da SystemUI: Update RU translations
-13ab3df QS: Add App SideBar Tile [1/2]
-23ef429 SystemUI: Possibly Fix IndexOutofBoundException On adding More than 4 QsPages
-d5fd88a FWB: Restart SystemUI tile (1/2)
-4cd5232 New drawables for play and reboot tiles
-22c5d34 Fixed calendar fields comparison
-a8a5162 Revert "Navbar: fix navbar transitions which was causing bizarre statusbar bleed"
-16a842c Merge pull request #101 from beroid/cm-13.0
-c93abf2 SystemUI: Update RU translations
-edb87f4 SystemUI: Add Three New Tiles[1/2]
-e80b625 QS : Fix add tile visibilty if brightness slider disabled
-
-   * frameworks/native/
-d0e0fd7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-8af4e66 Revert "Revert "gui: only support tertiary display if QTI_BSP is defined""
-
-   * frameworks/opt/telephony/
-a101542 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-54f645f telephony: Override nw mode on creation and when trying to calculate nw type.
-
-   * hardware/libhardware/
-a9d5943 Revert "Revert "libhardware: Only support tertiary display in QTI_BSP is defined""
-
-   * hardware/qcom/display-caf/msm8916/
-563759a hwc: Fix compile errors after display-frameworks removal
-a13ca36 hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/display-caf/msm8952/
-a74edfb hwc: Remove references to display-frameworks
-8be9896 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.8' into cm-13.0-caf-8952
-c7cce05 hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/display-caf/msm8960/
-f1b49f2 hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/display-caf/msm8974/
-3b3f95d hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/display-caf/msm8994/
-2b1bb1e hwc: Fix compile errors after display-frameworks removal
-4e68b37 hwc: Fix compile errors after display-frameworks removal
-
-   * hardware/qcom/gps/
-1b6461e gps: Use    * pathmap to determine build eligibility
-
-   * kernel/samsung/hlte/
-8db533a mm/slub: don't wait for high-order page allocation
-4f7f264 msm_bam_rmnet: Disable too much logspam
-
-   * packages/apps/Contacts/
-2bb707d Don't show default and favorites groups in group overview.
-1ec8222 Display group memberships in a meaningful way.
-
-   * packages/apps/ContactsCommon/
-533a7db Propagate group default and favorites state into GroupMembershipDataItem.
-
-   * packages/apps/PackageInstaller/
-95f8958 PackageInstaller: Show current & new version
-
-   * packages/apps/Settings/
-49d8817 Build V2.7
-
-   * packages/apps/Snap/
-ef01678 Snap: Set parameters before starting preview
-3cda1fd Snap: Remove CAF Chinese translations
-98dfd0d Snap: Fix jni compiler warnings
-6bfdb1b Snap: Remove dead code
-b0d6486 Revert "Snapdragon: Add icons for Snapdragon beautification feature"
-d9be7be Snap: FilmStripView must exist before loading photo/video modules
-532497b CameraActivity: Handle NPE when film strip view is null
-a4a443b Snap: initial materialization
-
-   * vendor/cm/
-bd3d22e init: Create directories needed by sshd
-
-   * vendor/cmsdk/
-2432a02 cmsdk: Add App SideBar Tile [2/2]
-e30de56 cmsdk: Restart SystemUI tile (2/2)
-2340ed7 cmsdk: Add Three New Tiles [2/2] Signed-off-by: Varun <date.varun123@gmail.com>
-
-   * vendor/samsung/
-de462e6 Merge pull request #712 from andi34/cm-13.0
-879a0e8 espresso-common: set country code to ALL in nvram_net.txt to avoid wifi issues
-
-====================
-     01-09-2016
-====================
-
-
-   * android/
-68387d5 Move Snap camera to main cm manifest
-
-   * art/
-5eeadbf Revert "Art: disable host clang by default"
-
-   * external/toybox/
-cb52bce Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
-c1c226e Merge "Revert "Don't add a symlink for killall --- it's broken.""
-
-   * external/wpa_supplicant_8/
-dc58066 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
-d8d67d1 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
-
-   * frameworks/av/
-ee7236e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-c2a6c58 Use standard arm assembly syntax.
-fcd3c6e Fix overflow in amrwbenc
-60fc867 codecs: update for check ifeq ($(TARGET_ARCH),arm)
-6877308 Use unified syntax to compile with both llvm and gas.
-94f3841 Disable integer sanitization for amrwbenc
-3fec0e5 cameraservice: Change the error mapping for ERROR_CAMERA_DEVICE.
-f8eea5d drm : Give permission to access drm service api from Oma Drm engine
-6981543 Clean up time zone handling in MtpUtils::parseDateTime.
-8c4d014 Fix more potential (benign) AMRWB overflows
-a6e3ed3 Fix more amrwbenc overflows
-4f4723a Tabs -> spaces
-8bdd095 ACodec: Fix error handling in OutputPortSettingsChangedState
-
-   * frameworks/base/
-2c112ff [WindowManagerService] fix starting window issue
-20062952 Update private copy of Palette
-3315fca Navigationbar: Add just one more button
-0c80914 fw: Remove duplicated locales.
-8732b75 SystemUI: fix navbar drawing issues in landscape
-ad9e309 Revert "QSpanel: few new vector drawables"
-28c68c3 FWB: Add notification toggle button to navbar (1/2)
-539e42b QSpanel: few new vector drawables
-7918b88 SysUI: Use mContext to get colors
-18a2a1b SystemUI: Add missing close parenthesis
-aeefd41 SystemUI: Expose Add Tiles DetailedView Title and Icon Color
-124b53c fix setting new encryption password
-b88c7bd Base:Add Option to Disable Brightness Icon In Brightness Slider [1/2]
-6c297a6 SystemUI:Add LTE Tile
-
-   * frameworks/native/
-e5bc473 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-c86c815 SurfaceFlinger: Move Extended SF classes to same repository
-cda438d sf: Change log message in layer query method from ALOGE to ALOGW
-
-   * frameworks/opt/telephony/
-a8a628f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-fd6eb59 DcTracker: Fix CDMA NV mode data connection
-8b74377 DCTracker: HACK Fix eHRPD/LTE data connection.
-a8c5801 Add dummy SUB record in CDMA NV mode
-c5f1a18 Revert "telephony: Also override nw mode on creation of phone objects."
-
-   * hardware/libhardware/
-598fdcc hardware/libhw: Add display_defs.h to declare custom enums/flags
-
-   * hardware/qcom/audio-caf/msm8916/
-afc9cb7 Check if hardware_info has been updated or not.
-
-   * hardware/qcom/bt-caf/
-1aafa73 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/bt into cm-13.0
-
-   * hardware/qcom/display/
-05673d3 Revert "overlay: add tertiary display definition in overlay"
-
-   * hardware/qcom/media-caf/msm8974/
-455f3d0 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
-
-   * hardware/qcom/wlan-caf/
-f5a068e Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
-
-   * hardware/ti/omap4/
-ed9b5b7 gralloc: disable GRALLOC_USAGE_CURSOR
-
-   * kernel/samsung/hlte/
-5bc6f9c Build v1.49
-3e6c5b5 power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full
-00fc8a8 ASoC: msm: Interrupt events in compress free
-d4f7159 ASoC: msm: qdsp6v2: Copy multiple frames per msm-pcm-q6 copy
-6b8bc57 ASoC: msm: qdsp6v2: Prevent ASM callback when client freed
-5fdb87c ASoC: msm: qdsp6v2: Initialize ASM no wait spinlock
-e3146da ASoC: msm: qdsp6v2: Track no wait commands
-0a9a0f0 ASoC: msm: qdsp6v2: reduce debug logs
-db29ac1 ASoC: msm: qdsp6v2: update int to size_t
-53c31f9 cpuidle: Wakeup only cpus for which qos has changed.
-1a2f685 qos: Pass the list of cpus with affected qos to notifer
-91073a3 msm: kgsl: Vote for new IRQ specific QoS request
-ebaa98e mmc: sdhci: Vote for new IRQ specific QoS request
-2ac619f msm: lpm-levels: Apply QoS requests only to relevant cpus.
-74c0357 QoS: Enhance framework to support cpu/irq specific QoS requests
-e9d4a39 PM / QoS: Fix workqueue deadlock when using pm_qos_update_request_timeout()
-4cbdae5 PM: don't use [delayed_]work_pending()
-a1269d7 PM / sysfs: replace strict_str* with kstrto*
-8016c9c PM / QoS: Introduce request and constraint data types for PM QoS flags
-bb7e90a PM / QoS: Add return code to pm_qos_get_value function.
-
-   * packages/apps/Bluetooth/
-eaaf85f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-b9398e5 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
-
-   * packages/apps/Contacts/
-c90fc75 Remove unused strings
-209b45a Clean up multi picker activity.
-
-   * packages/apps/ContactsCommon/
-3ff9ac0 Revert "Move info_lookup's LookupHandlerThread into src/"
-72fb9f8 Revert "Refactor contact info lookup"
-6ecfe52 Move info_lookup's LookupHandlerThread into src/
-d262583 Add additional SIM constants
-51aabe6 Refactor contact info lookup
-
-   * packages/apps/Settings/
-6f4c293 BlacklistSettings : Ensure contact picker mirrors edit state
-ae987ae Settings : Disable editing existing entries for blacklist
-8ffeee4 Merge pull request #381 from beroid/cm-13.0
-dff8884 Merge pull request #380 from Mai19930513/cm-13.0
-de8f044 Settings: Update RU translations
-eb1591f update zh-rCN translation
-
-   * packages/apps/SetupWizard/
-f4f43c6 Revert "SetupWizard: declare setupwizard category in manifest"
-
-   * packages/apps/Snap/
-88daff8 SnapdragonCamera: Add missing permissions
-4d7ad55 SnapdragonCamera: Preventing duplicated call of setEnable
-a675b2c SnapdragonCamera: Restart preview in a corner case
-4877242 SnapdragonCamera: Fix rtl photo menu touch issue
-72b58b9 Read camera state from HAL instead of local state variable.
-8ceb088 Update camera state immediately after start preview.
-090c538 Consider fractional value in zoom circle calculation.
-621b628 Enable extended face detection feature.
-84ca00c SnapdragonCamera: notify focus manager about surface change
-7d12db6 SnapdragonCamera: fix screen flash on resuming
-b0fa408 SnapdragonCamera: fix screen flash on resuming
-c134c1e SnapdragonCamera: Hide the preview cover when preview has started
-ba56fa8 PhotoUI: Calling layoutPreview on holdersize become valid
-04f6b22 SnapdragonCamera: Improvement in open camera latency
-9f076a3 SnapdragonCamera: Make camcorder switcher icon invisible.
-b21af4d SnapdragonCamera: Fix the icons disappeared when start recording failed
-ee44a03 Snap: fix typo in PhotoModule
-ad9651e Snap: 100 chars!
-331d17d Snap: restart preview when shutter-speed gets disabled
-34522c4 tests: fix class name
-fc08f9e SnapdragonCamera: Fix incorrect viewfinder ratio for 13.1MP shots
-
-   * packages/apps/Trebuchet/
-7eb7512 Trebuchet: Don't crash on widget clicks
-ba04b03 Trebuchet: Add Snap to hotseat
-
-   * packages/providers/ThemesProvider/
-cd48300 Guard to prevent inserting a record twice when a new theme is installed
-
-   * packages/services/Telephony/
-7b7c715 Fix Lte Tile
-
-   * system/bt/
-bc40d5a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-80a7a7d Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/system/bt into cm-13.0
+032f3a2 Remove mail signatures from notification text.
+7a5f09b unifiedemail: junk icon
+b50cac5 email: allow move/copy operations to more system folders
+
+   * packages/providers/TelephonyProvider/
+37604de TelephonyProvider: Handle database migration from cm-11.0.
 
    * system/vold/
-adb9de0 Merge branch 'cm-13.0' of github.com:temasek/android_system_vold into cm-13.0
-178993d Do not abort on setexeccon failure
+ba3b7bd cryptfs: Set HW FDE flags when building libvold
 
    * vendor/cm/
-992f57f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-74d7c57 Update IMS APN based on Smartfren Device Technical document-v1 2
+356bb56 APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs
+6f6e11f fix cricket APN
+
+   * vendor/cmsdk/
+b9f80b6 cmsdk: Load notification led customization defaults
+bf9cc6d cmsdk: add lockscreen internal enabled setting
 
