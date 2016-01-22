@@ -1,22 +1,126 @@
 ====================
-     01-20-2016
+     01-22-2016
+====================
+
+
+   * android/
+7a71864 Track own Telecomm
+
+   * device/samsung/hlte-common/
+a0b3a4c hlte-common: update Adreno library listing
+a323947 audio: enable deep buffer
+
+   * frameworks/av/
+269e32b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+c2cd9a8 SysUI: Check that backgrounds are RippleDrawables
+a7aaa04 SysUI: Guard against NPE in SignalClusterView
+91e17a5 [1/4] Breathing missedcall/voicemail
+461a834 FWB: QS header transparency (1/2)
+c49854d libhwui: fix texture memory leak
+bb2d499 fix race condition between HWUI cache and renderThread
+646b03d SystemUI: handle when brightness slider is hidden
+
+   * frameworks/opt/telephony/
+aff81a7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/samsung/
+de5e3c6 Initial unified Samsung power HAL
+
+   * packages/apps/Dialer/
+a1739cf Add back call stats feature.
+
+   * packages/apps/Email/
+a29e6b2 Improve notification coalescence algorithm.
+
+   * packages/apps/Settings/
+40b7681 Build V3.2
+275b208 Settings: Breathing missedcall/voicemail
+4a093be Settings: QS header transparency (2/2)
+8350fec Break out status bar icon from extdesk icon.
+ecd12dd Settings Hooks launch wrong activity
+b595a4c Fix QS shade transparancy
+3b75a6f Notification color: add missing string
+b9a80ce Merge pull request #393 from Mai19930513/cm-13.0
+f61f80e update zh-rCN translations
+
+   * packages/apps/Snap/
+bb800ac Fix up layout of auto HDR notice and histogram view.
+42f6d5c Remove unused menu indicators code.
+4faa77d Avoid static member variable.
+96b38fd Improve CameraControls layout code.
+e1abba9 Fix transparent background color.
+788ae64 SnapdragonCamera: Fix UI alignment glitches when nav-bar is enabled
+
+   * packages/apps/Trebuchet/
+f15a377 fix CTS failure on Trebuchet - manually picked from a269d518db02c8383e3621dff9d6054e3e9e48d6
+
+   * packages/services/Telecomm/
+e1bf470 [3/4] Breathing missedcall/voicemail
+
+   * packages/services/Telephony/
+02390d3 [2/4] Breathing missedcall/voicemail
+8142130 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/bt/
+8205b33 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+
+   * system/core/
+856e979 logging: avoid unnecessary printfs
+
+   * system/vold/
+88f786f cryptfs: Skip to encrtypt unused blocks into a block group which uninitialize block bitmap .
+2491de9 Handle non-format partition in Vold
+bbc396b vold: fix 64 bit ioctl error
+bcf1026 Make sure path is not NULL to avoid fatal exception.
+3a78f96 Use volume label for mount path, if available.
+3f82486 Make public volumes publicly writable based on WRITE_EXTERNAL_STORAGE
+
+   * vendor/cm/
+c17228f Merge pull request #25 from StarkDroid/cm-13.0
+a1605a1 fix derp
+90144e9 Add Viper4Android
+
+   * vendor/samsung/
+1872958 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+cd35e9a klte-common: Remove deprecated HEVC proprietary file
+58c6780 klte-common: Regenerate makefile
+
+====================
+     01-21-2016
 ====================
 
 
    * android/
 8696859 Update maintainers list
 
-   * device/qcom/sepolicy/
-017145b sepolicy: fix mm-qcamerad permission for persist.camera* properties
-
    * device/samsung/hlte-common/
+9ff907b Revert "hlte-common: use synchronous setsurface"
 0a109a8 hlte-common: snap: enable lge hdr mode
-6c24922 hlte-common: use synchronous setsurface
 
-   * external/stagefright-plugins/
-24988a8 stagefright-plugins: Update pixfmt
+   * device/samsung/msm8974-common/
+86aa6ca msm8974: clean up deprecated packages and flags
+32ad622 Partially revert "msm8974-common: update media codecs for M"
+
+   * external/mksh/
+db58d5b add ll and la aliases to shell
+
+   * frameworks/av/
+7c1e4d7 av: "ACodec: update native window crop rectangle" depends on QCOM
 
    * frameworks/base/
+bc0a272 Paella: Enable Spanish single shift table
+1102643 SystemUI: fix tiles per page when changing top tile type
+7d92b7e SystemUI: fix disappearing tiles
+9a6786c SystemUI: fix viewpager page recycling
+6591824 SystemUI: fix qs tile page regressions
+717023a Themes: Expose volume slider and thumb colors and make them work with custom images.
+45a8dc8 SystemUI: add some tile removal hints
+097e4b6 SystemUI: fix lock screen tile state refresh
+f572a30 SystemUI: handle custom tile long press PendingIntents
+f2f2e6f SystemUI: improve qs tile layout mechanism
+794b9dd SystemUI: add a disabled state for Quick Tiles
 26c8d67 Refactor power menu on lockscreen (1/2)
 ca58ead pm: Add persist property to enable lazy dexopt
 09f1c66 SystemUI: Screenshot rotation
@@ -26,7 +130,87 @@ df3b3a3 Add left QS quick pulldown (1/3)
 bf22092 Keyguard: set separator for multi-sim CarrierText
 
    * frameworks/opt/telephony/
+8942ed5 Do not disable permanently enabled carrier apps
+5a1d942 Fix wrong args when calls OperatorInfo
 d793c69 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/keymaster/
+68fe4a7 Disable ION_HEAP_MASK_COMPATIBILITY_WA on Sony 3.10 Kernel
+
+   * kernel/samsung/hlte/
+905fd02 Revert "ARM: vfp: hardfloat"
+19b5161 Revert "ARM: enable neon-vfpv4 support"
+e977259 Use bfd linker for arm-eabi
+
+   * packages/apps/Bluetooth/
+2449ee9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/Contacts/
+5595731 Move to new BlockContactHelper.BlockOperation
+
+   * packages/apps/ContactsCommon/
+60502a8 Refactor BlockContactHelper
+
+   * packages/apps/Settings/
+a71df28 Merge pull request #392 from beroid/cm-13.0
+5a01a43 Build V3.1
+d0abd7d Refactor power menu on lockscreen (2/2)
+a81e964 Fix up increasing ring tone volume preview behaviour.
+118f1d5 Settings: Update RU translations
+a9f1e6c Add left QS quick pulldown (2/3)
+325bbad Longpress power lockscreen torch [2/2]
+
+   * packages/apps/Snap/
+5d94a49 Snap: Don't enable ZSL when disabling HDR
+
+   * system/bt/
+b2f946e btm: Fix compile with BLE disabled (again)
+6f8c80c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+
+   * system/core/
+1b9107f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+
+   * system/vold/
+d16d80f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+
+   * vendor/cmsdk/
+948f216 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+04679a0 Add left QS quick pulldown (3/3)
+
+   * vendor/samsung/
+c7b4d01 hlte-common: Update Adreno libraries
+
+====================
+     01-20-2016
+====================
+
+
+   * device/qcom/sepolicy/
+017145b sepolicy: fix mm-qcamerad permission for persist.camera* properties
+fcabab0 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/device/qcom/sepolicy into cm-13.0
+
+   * device/samsung/hlte-common/
+6c24922 hlte-common: use synchronous setsurface
+a3d395f hlte-common: Remove no sensors permission requirement
+ca31e22 hlte-common: Remove qcom power hal.
+
+   * external/stagefright-plugins/
+24988a8 stagefright-plugins: Update pixfmt
+
+   * frameworks/av/
+abdff0c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+e80385c audio: Update anchor time for offload playback post resume
+4486f97 nuplayer: looping playback only if it was running
+9dae27c ACodec: update native window crop rectangle
+617daaf StagefrightMetadataRetriever: correct the status flag
+f6e8c70 AudioMixer: delete reformatBuffer provider in proper order
+427887b libstagefright:Fix random memcmp crash while accessing output format.
+
+   * frameworks/base/
+ae2bdcd Add enabled pre-installed carrier apps
+530f73d SystemUI: Fix copy-pasta of battery saver tile
+
+   * frameworks/opt/telephony/
 07591f8 telephony: Make sure to check whether application info is null.
 62bcb10 telephony: update tests for disableCarrierAppsUntilPrivileged API change
 
@@ -34,9 +218,6 @@ d793c69 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_framework
 f4051ae hwc: Reset ROI and avoid dirtyRect for video case
 
    * kernel/samsung/hlte/
-905fd02 Revert "ARM: vfp: hardfloat"
-19b5161 Revert "ARM: enable neon-vfpv4 support"
-e977259 Use bfd linker for arm-eabi
 e8fb6d4 Build v1.60
 804e2dd Revert "sensorhub: merge G900TUVU1FOG6 Android 5.1.1"
 57f7d80 Build v1.59
@@ -188,14 +369,18 @@ ac38b9b nf: IDLETIMER: Fix possible use before initialization in idletimer_resum
 be5e06a net: ping: Return EAFNOSUPPORT when appropriate.
 
    * packages/apps/Bluetooth/
-2449ee9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+b9f0d69 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
+
+   * packages/apps/Contacts/
+2089467 Contacts : remove unused CONTACT_URI_EXTRA
+201c1ff Contacts : enable cleartext traffic
+
+   * packages/apps/ContactsCommon/
+d6302ae Add lookupkey for Contact in ContactBuilder
 
    * packages/apps/Settings/
-5a01a43 Build V3.1
-d0abd7d Refactor power menu on lockscreen (2/2)
-a81e964 Fix up increasing ring tone volume preview behaviour.
-a9f1e6c Add left QS quick pulldown (2/3)
-325bbad Longpress power lockscreen torch [2/2]
+31dad1c Merge pull request #1 from Pixelase/cm-13.0
+653a845 Settings: safe headset volume option (2 of 2)
 
    * packages/apps/Snap/
 4a42fc4 Snap: Add missing ISO350 to ISO arrays
@@ -212,25 +397,29 @@ b5de271 SnapdragonCamera: Add option to control antibanding in camcorder
 3961290 Themes: Expose hard coded colors from layouts
 
    * system/bt/
-6f8c80c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+d4cd181 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/system/bt into cm-13.0
 
    * system/core/
-1b9107f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
 0907595 Revert "charger_mode: Set font as 'log'"
 e406b65 charger_mode: Set font as 'log'
 
    * system/vold/
-d16d80f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+fb73051 Fix mounting ext4 adopted storage
+
+   * vendor/cm/
+9d7b46d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
-948f216 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-04679a0 Add left QS quick pulldown (3/3)
 80001bf cmsdk: Fix BuildTests. Bump parcelable version.
+9202e0d Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
 ====================
      01-19-2016
 ====================
 
+
+   * android/
+bc9d0c5 Add UICommon
 
    * cts/
 3189f36 merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
@@ -240,12 +429,8 @@ c717d7e DO NOT MEGE ANYWHERE: BUMP CTS 5.1 to R5
 f3db83f Merge "DO NOT MERGE: BUMP CTS 6.0 to R3" into marshmallow-cts-dev
 989dcfb DO NOT MERGE: BUMP CTS 6.0 to R3
 
-   * device/qcom/sepolicy/
-fcabab0 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/device/qcom/sepolicy into cm-13.0
-
-   * device/samsung/hlte-common/
-a3d395f hlte-common: Remove no sensors permission requirement
-ca31e22 hlte-common: Remove qcom power hal.
+   * external/ffmpeg/
+a86ba66 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
 
    * external/stagefright-plugins/
 6de1c90 stagefright-plugins: Skip stream with jpeg tag
@@ -253,18 +438,9 @@ ca31e22 hlte-common: Remove qcom power hal.
    * external/uicommon/
 7d9ebd3 Fix merge derp
 
-   * frameworks/av/
-abdff0c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-e80385c audio: Update anchor time for offload playback post resume
-4486f97 nuplayer: looping playback only if it was running
-9dae27c ACodec: update native window crop rectangle
-617daaf StagefrightMetadataRetriever: correct the status flag
-f6e8c70 AudioMixer: delete reformatBuffer provider in proper order
-427887b libstagefright:Fix random memcmp crash while accessing output format.
-
    * frameworks/base/
-ae2bdcd Add enabled pre-installed carrier apps
-530f73d SystemUI: Fix copy-pasta of battery saver tile
+1d07f46 Disable some debugging
+5a3c5f4 Framework: safe headset volume option (1 of 2)
 
    * frameworks/opt/telephony/
 8f0481c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
@@ -275,20 +451,25 @@ e098f64 SubscriptionController: Default to DDS flexmap triggering
    * hardware/qcom/gps/
 0e7c6a8 gps: Simplify guard makefile
 
-   * packages/apps/Bluetooth/
-b9f0d69 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
-
    * packages/apps/Browser/
 250ebb8 Themes: Expose hard coded colors and styles from layouts
 
    * packages/apps/DeskClock/
 9d09dad Allow theming numpad
 
+   * packages/apps/Dialer/
+bd62aa8 Lookup: make people lookups work without location
+
    * packages/apps/Messaging/
 2b515af Messaging: Implement option for swipe to delete.
 
    * packages/apps/Settings/
-653a845 Settings: safe headset volume option (2 of 2)
+aaf3d92 Settings: Update RU translations
+6629bd7 Merge pull request #388 from beroid/cm-13.0
+94fa642 Settings: Update RU translations
+
+   * packages/apps/Snap/
+860c1f5 Snap: Enlarge the saving queue size to 60M
 
    * packages/apps/Trebuchet/
 4ff9b7d Trebuchet: Don't animate open folder if already open
@@ -297,21 +478,15 @@ b9f0d69 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/packag
    * prebuilts/cmsdk/
 7aa9190 prebuilts/cmsdk: Update future-release maven artifact.
 
-   * system/bt/
-d4cd181 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/system/bt into cm-13.0
-
    * system/vold/
-fb73051 Fix mounting ext4 adopted storage
 30c6a38 Fix mounting ext4 adopted storage
 
    * vendor/cm/
-9d7b46d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 67f9e7a vendor/cm: Bump cmsdk platform version.
 f0a6f1e Fixed mmm For Maven APK
 fc52e70 cm: Update maintainers
 
    * vendor/cmsdk/
-9202e0d Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 735333c cmsdk: Add new version code to the sdkmap.
 24f2bb4 cmsdk: Introduce Elderberry, api level 5.
 ebf0f55 cmsdk: Finalize DragonFruit (api level 4).
@@ -322,18 +497,13 @@ ebf0f55 cmsdk: Finalize DragonFruit (api level 4).
 ====================
 
 
-   * android/
-bc9d0c5 Add UICommon
-
    * device/samsung/hltespr/
 c41b60b hltespr: Set CDMA subscription to NV
 
-   * external/ffmpeg/
-a86ba66 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+   * external/uicommon/
+3e92fbe Don't intercept onTap event
 
    * frameworks/base/
-1d07f46 Disable some debugging
-5a3c5f4 Framework: safe headset volume option (1 of 2)
 8f2df3d FWB: QS shade transparency (1/2)
 bb64dd5 Revert "Notifications: Custom colors, (1/2):"
 c8a3eca base: correctly save app notification config
@@ -344,20 +514,12 @@ e767bd0 Themes: Call recreateTheme when theme changed
 02fd8b0 SysUI: Pass themed resources on to NavBarEditor
 3a77bd4 Themes: Fix applying theme for notifications
 
-   * packages/apps/Dialer/
-bd62aa8 Lookup: make people lookups work without location
-
    * packages/apps/Settings/
-6629bd7 Merge pull request #388 from beroid/cm-13.0
-94fa642 Settings: Update RU translations
 ac16dc2 Build V3.0
 d9ba16e Settings: QS shade transparency (2/2)
 cf8ade6 Notification drawer: Custom clear all icon color, (2/2):
 5f5f02e Revert "Notifications: Custom colors, (2/2):"
 e87ab5b Allow launching notification manager settings externally
-
-   * packages/apps/Snap/
-860c1f5 Snap: Enlarge the saving queue size to 60M
 
    * packages/providers/ThemesProvider/
 5756a99 Fix blank WiFi and signal icon previews
@@ -366,155 +528,4 @@ e87ab5b Allow launching notification manager settings externally
 0295218 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 5400b2f cmsdk: Add battery saver tile (2/2)
 55cb123 cmsdk: Add heads up tile (2/2)
-
-====================
-     01-17-2016
-====================
-
-
-   * external/exfat/
-8f3956f Handle 64-bit offsets correctly on Android
-
-   * external/uicommon/
-3e92fbe Don't intercept onTap event
-5ca66e4 Add a simple SnackBar that doesn't rely on AppCompat
-
-====================
-     01-16-2016
-====================
-
-
-   * cts/
-0eb85f7 Merge "DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel" into kitkat-cts-dev am: 159f5ac229  -s ours am: 416dacbe88  -s ours am: 4af0fa2391  -s ours
-ea8a022 Merge "MediaMetadataRetrieverTest: remove unused import to fix compile error." into kitkat-cts-dev am: 2afd52cfae am: e749459d32 am: 6247829995
-1e1c6eb Merge "MediaMetadataRetrieverTest: add new test to handle overflowed padding." into kitkat-cts-dev am: 57d2004ef5 am: 3586f34329 am: 4dd10cc6f8
-bb7d503 Merge "Increase delta tolerance in TypefaceTest#testInvalidCmapFont" into lollipop-cts-dev am: 1700d1a47a am: f2c64ccec6
-002b86b Merge "CTS test for robust handling of invalid cmap" into lollipop-cts-dev am: d8748ad6d4 am: 37ec97501c
-4af0fa2 Merge "DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel" into kitkat-cts-dev am: 159f5ac229  -s ours am: 416dacbe88  -s ours
-6247829 Merge "MediaMetadataRetrieverTest: remove unused import to fix compile error." into kitkat-cts-dev am: 2afd52cfae am: e749459d32
-4dd10cc Merge "MediaMetadataRetrieverTest: add new test to handle overflowed padding." into kitkat-cts-dev am: 57d2004ef5 am: 3586f34329
-f2c64cc Merge "Increase delta tolerance in TypefaceTest#testInvalidCmapFont" into lollipop-cts-dev am: 1700d1a47a
-37ec975 Merge "CTS test for robust handling of invalid cmap" into lollipop-cts-dev am: d8748ad6d4
-416dacb Merge "DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel" into kitkat-cts-dev am: 159f5ac229  -s ours
-e749459 Merge "MediaMetadataRetrieverTest: remove unused import to fix compile error." into kitkat-cts-dev am: 2afd52cfae
-3586f34 Merge "MediaMetadataRetrieverTest: add new test to handle overflowed padding." into kitkat-cts-dev am: 57d2004ef5
-159f5ac Merge "DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel" into kitkat-cts-dev
-3889e25 DO NOT MERGE security: Test OOB arbitrary write at AMessage::FromParcel
-a2f75ef Merge "DO NOT MERGE - Add security test for IEffect binder command" into lollipop-mr1-cts-dev am: 9ec9ffc78a  -s ours
-7b7ccd5 Merge "DO NOT MERGE: rename android_security_cts_AudioflingerBinderTest.cpp to android_security_cts_AudioFlingerBinderTest.cpp" into lollipop-mr1-cts-dev am: 4ccc58b503  -s ours
-c79f685 Merge "DO NOT MERGE ANYWHERE: Test whether mediaserver leaks info across invalid binder calls" into lollipop-mr1-cts-dev am: 8e42b0e63c  -s ours
-9ec9ffc Merge "DO NOT MERGE - Add security test for IEffect binder command" into lollipop-mr1-cts-dev
-4ccc58b Merge "DO NOT MERGE: rename android_security_cts_AudioflingerBinderTest.cpp to android_security_cts_AudioFlingerBinderTest.cpp" into lollipop-mr1-cts-dev
-8e42b0e Merge "DO NOT MERGE ANYWHERE: Test whether mediaserver leaks info across invalid binder calls" into lollipop-mr1-cts-dev
-ebd79b4 DO NOT MERGE - Add security test for IEffect binder command
-f4c1ac4 DO NOT MERGE: rename android_security_cts_AudioflingerBinderTest.cpp to android_security_cts_AudioFlingerBinderTest.cpp
-99b34ec DO NOT MERGE ANYWHERE: Test whether mediaserver leaks info across invalid binder calls
-1700d1a Merge "Increase delta tolerance in TypefaceTest#testInvalidCmapFont" into lollipop-cts-dev
-d8748ad Merge "CTS test for robust handling of invalid cmap" into lollipop-cts-dev
-2afd52c Merge "MediaMetadataRetrieverTest: remove unused import to fix compile error." into kitkat-cts-dev
-57d2004 Merge "MediaMetadataRetrieverTest: add new test to handle overflowed padding." into kitkat-cts-dev
-
-   * external/ffmpeg/
-b8fa3ff avcodec/wavpackenc: print channel count in av_log call
-0639289 configure: bump copyright year to 2016
-e303ca3 Update for 2.8.5
-28f89bc avformat/hls: Even stricter URL checks
-23b903a avformat/hls: More strict url checks
-
-   * external/uicommon/
-b0a0872 Revert "Add a simple SnackBar that doesn't rely on AppCompat"
-
-   * frameworks/base/
-1bb785d Keyguard: Clarify error message on bad input length.
-630eb4b SystemUI: Update recents memorybar on recents clear all
-f7495c4 Include color picker, (1/2)
-786f738 SysUI: Clean up objects when recreating statusbar
-2fe4549 SettingsProvider: Force aosp upgrade path from 12.1.
-e793581 SysUI: Use Objects.equals() for comparing components
-dc975fe SysUI: Fix notification panel alignment after theme change
-bc7da55 policy: disable EdgeGestureService
-a4c194e allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
-
-   * frameworks/opt/telephony/
-38772dc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/libhardware/
-dcc6b5f amplifier: Fix compilation warning
-
-   * hardware/qcom/media-caf/msm8994/
-79e831d Fix flooding of message in calcLumaAlign
-
-   * kernel/samsung/hlte/
-92ff9c2 Build v1.55
-80063fe USB: ci13xxx_udc:  Add support for UI interrupts counting
-d7c7f7b msm: perf: set filter bits for cycle counter on krait
-cb5c94c Perf: Reset pmu after hotplug
-4d9435b msm: perf: tracectr: Initialize cnts after hotplug
-21695d1 msm: perf: clean up duplicate constraint events
-ed722cc perf: stop deadlock when cpu_up fails
-2b2c4c5 misc: Fix various issues with upstream merge
-2cfdfa8 perf: Fix more fallout from "perf: Fix race in removing an event"
-c5272a7 perf: fix mismerge
-33c1a20 hrtimer: Prevent stale expiry time in hrtimer_interrupt()
-ff687bf Revert "tick: Cleanup NOHZ per cpu data on cpu down"
-8801e5d rq_stats: Fix usage of cpufreq APIs
-96f8d2c soc: qcom: rq_stats: Always show idle time left
-30f4cb5 ARM: 7877/1: use built-in byte swap function
-3d4f59b ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()
-657341a net: udp: Adjust UDP socket state for encapsulation sockets
-57ef8fe net: msm_rmnet: Add an IOCTL definition to deregister a net device
-04695a9 arm: smp: Update the topology masks before calling CPU_STARTING notifiers
-15c4c52 BACKPORT: mm: /proc/pid/smaps:: show proportional swap share of the mapping
-bfbaf0c serial: tty: msm_hs_uart: Fix the compat table
-
-   * packages/apps/ContactsCommon/
-b88149f Add required permission to read vcf from gmail
-
-   * packages/apps/LockClock/
-ff1cf25 LockClock : Update to v23 + runtime permissions
-
-   * packages/apps/OmniSwitch/
-bb1d62c Merge pull request #6 from Mai19930513/cm-13.0
-14997d4 add zh-rCN translation
-
-   * packages/apps/Settings/
-79097e0 Merge pull request #387 from beroid/cm-13.0
-996bdf1 Settings: Update RU translations
-2303408 Merge pull request #386 from Mai19930513/cm-13.0
-c0beb7b update zh-rCN translation
-39deb82 Color picker: Enable alpha slider as default
-9344a34 Include color picker, (2/2):
-c4291fa Revert "Add marginov color picker"
-4f8f5c4 Revert "Settings: show warning in lock screen settings when disabled by qs"
-bc60346 Support multiple SAR values, separate args list with ','
-faa6be8 Notifications: Custom colors, (2/2):
-
-   * packages/apps/SetupWizard/
-f8e4ab6 SetupWizard : Set min date to Jan 1, 2016 GMT
-
-   * packages/apps/Snap/
-a676e15 Revert "Camera: Propagate power mode selection from UI to lower layers."
-44cfc31 Don't needlessly make menu button larger than the other toggle buttons.
-3b96d32 Snap: Set some qcom features as untranslatable
-d8420e3 Drop new focus indicator into Camera2.
-db27186 Snap: Actually select the highest quality video by default
-
-   * packages/apps/Trebuchet/
-ab66f21 Trebuchet: Fix NPE when app search controller is off
-
-   * packages/screensavers/PhotoTable/
-271651a Bump SDK version to 23 Implement runtime permissions for storage group
-
-   * system/vold/
-6cfcaf9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-78f24b1 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
-
-   * vendor/cm/
-a2b164d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-04864b1 Fixed Maven Artifactory to work with jack
-
-   * vendor/cmsdk/
-9f1bfdb Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-cf3f38c cmsdk: Add CYANOGENMOD_VERSION constant.
-969cda0 cmsdk/tests: Temp hack to fix `mka` builds.
 
