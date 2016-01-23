@@ -1,4 +1,78 @@
 ====================
+     01-23-2016
+====================
+
+
+   * cts/
+c29efcd Merge "Fix monkey package test" into marshmallow-cts-release
+9c9a98a Fix monkey package test
+
+   * device/samsung/hlte-common/
+48fa313 Revert "ril: Revamp ril for M"
+a7da4d0 hlte-common: update Adreno library listing
+
+   * device/samsung/msm8974-common/
+831834e msm8974: Remove HEVC codec
+38d3fe0 msm8974-common: Move low_latency permission up to devices
+cfd88dc Revert "Partially revert "msm8974-common: update media codecs for M""
+
+   * frameworks/av/
+c67d2e4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+dfcb220 AVUtils: hevc: Return 0 when codec data is malformed
+df1c503 Revert "Stagefright: Allow setting high-framerates in CameraSource"
+
+   * frameworks/base/
+eed91d9 Configurable dashboard columns [2/2]
+58a8ea4 Dashboard tileview double lines toggle [2/2]
+27fdad6 Revert "Add 3Minit battery mod"
+f889be7 Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP"
+735ee22 fw: Fix protected apps implementation.
+fcf3aca Support alert type profile default:Vibrator & Ringtone for settings.
+41c52a7 SysUI: Recreate volume dialog on theme change
+a8edacc Themes: Reference app resource when compiling theme [2/2]
+
+   * frameworks/native/
+154f9b8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8960/
+cb0a9ef alsa_sound: Fix handling of zero size write request
+
+   * hardware/qcom/fm/
+6e7eaa7 libfm_jni: Improve and fix FM jni logs
+
+   * packages/apps/Settings/
+983e48d Build V3.3
+6bbe70b Dashboard tileview double lines toggle [1/2]
+41100e3 Configurable dashboard columns [1/2]
+c07c278 Settings : Improve usage stats screen
+98afb29 Settings: Add fingerprint authentication for protected apps.
+da61737 Settings: Actually expose protected apps settings.
+c319845 Merge pull request #395 from Mai19930513/cm-13.0
+5d0889e update zh-rCN translations
+ac3e322 Merge pull request #394 from beroid/cm-13.0
+34a16f1 Settings: Update RU translations
+
+   * prebuilts/cmsdk/
+a538920 prebuilts/cmsdk: Update for API 4 maven central release.
+
+   * vendor/cm/
+b4a44da Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+9d3ac68 Viper4Android: Don't use it on 64 bit devices
+
+   * vendor/cmsdk/
+c718689 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+588c05a cmsdk: Update for new ll interfaces.
+e73b2b2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+7ee149d cmsdk: Fix hardware service interfaces.
+62579b1 cmsdk: add invalid input checking for persistent storage APIs
+fc50f7c ExtViews: Add action and meta-data
+d994fe1 LiveLockScreen: Add setting for enabled/disabled
+0d9d1ab CMSettings: Introduce concept of protected apps managers.
+31962b2 cmsdk/tests: Fix zenmode tests.
+7fb0a06 cmsdk: change persistent storage test cases to void return type
+20d9638 Add overlay for SWAP_VOLUME_KEYS_ON_ROTATION
+
+====================
      01-22-2016
 ====================
 
@@ -6,9 +80,11 @@
    * android/
 7a71864 Track own Telecomm
 
-   * device/samsung/hlte-common/
-a0b3a4c hlte-common: update Adreno library listing
-a323947 audio: enable deep buffer
+   * external/exfat/
+4a8592e exfat-fuse: Don't export UTF conversion functions
+
+   * external/f2fs-tools/
+c876665 f2fs-utils: Fix Android host utils
 
    * frameworks/av/
 269e32b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
@@ -69,6 +145,9 @@ e1bf470 [3/4] Breathing missedcall/voicemail
    * system/core/
 856e979 logging: avoid unnecessary printfs
 
+   * system/extras/
+c671736 fix bug in mkf2fs tool calculation of f2fs filesystem length
+
    * system/vold/
 88f786f cryptfs: Skip to encrtypt unused blocks into a block group which uninitialize block bitmap .
 2491de9 Handle non-format partition in Vold
@@ -81,6 +160,9 @@ bcf1026 Make sure path is not NULL to avoid fatal exception.
 c17228f Merge pull request #25 from StarkDroid/cm-13.0
 a1605a1 fix derp
 90144e9 Add Viper4Android
+
+   * vendor/cmsdk/
+f499009 Change THIRD_PARTY_KEYGUARD permission to normal
 
    * vendor/samsung/
 1872958 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
@@ -129,6 +211,9 @@ df3b3a3 Add left QS quick pulldown (1/3)
 33b9f0b pm: Add persist property to enable lazy dexopt
 bf22092 Keyguard: set separator for multi-sim CarrierText
 
+   * frameworks/native/
+7c2be69 Themes: Reference app resource when compiling theme [1/2]
+
    * frameworks/opt/telephony/
 8942ed5 Do not disable permanently enabled carrier apps
 5a1d942 Fix wrong args when calls OperatorInfo
@@ -159,6 +244,9 @@ a81e964 Fix up increasing ring tone volume preview behaviour.
 118f1d5 Settings: Update RU translations
 a9f1e6c Add left QS quick pulldown (2/3)
 325bbad Longpress power lockscreen torch [2/2]
+
+   * packages/apps/SetupWizard/
+d59304c SetupWizard : Switch to mcc/mnc locale
 
    * packages/apps/Snap/
 5d94a49 Snap: Don't enable ZSL when disabling HDR
@@ -193,6 +281,53 @@ fcabab0 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/device/qcom/sep
 6c24922 hlte-common: use synchronous setsurface
 a3d395f hlte-common: Remove no sensors permission requirement
 ca31e22 hlte-common: Remove qcom power hal.
+
+   * external/f2fs-tools/
+8b00f01 Slight ifndef change
+35570b5 Fix readonly for android
+ad0f267 fsck.f2fs: return 0 for no error was reported
+bf2ada1 fsck.f2fs: assign checkpoint pointer correctly
+964adc0 fsck.f2fs: swap checkpoint crc to CPU endian
+bf12354 f2fs-tools: avoid failure and warnings for android build
+54dabbe mkfs.f2fs: introduce zone align for main area
+b5476e1 fsck.f2fs: fix double free invalid checkpoint
+75ecd2f man: modify mkfs.f2fs man page
+a896342 man: add missing man pages
+611f285 Update android version
+a901a43 f2fs-tools: release 1.6.0
+9a521a8 mkfs.f2fs: fix check error when calloc sum_compact failure
+32dd5f4 fsck.f2fs: fix losing journal entries
+0516d2b defrag.f2fs: fix missing SSA updates
+f00f43e defrag.f2fs: enhance allocation speed
+030ee52 libf2fs: fix incorrect type define of declaration
+09dfa9f defrag.f2fs: return error if there is no space
+8c04142 defrag.f2fs: eliminate unexpected journal entries
+9b8535c defrag.f2fs: fix not to allocate current segment
+837208e lib: use u8/u32/u64 for bit operations
+b54e4b5 lib: fix test_bit_le functions
+7d95d38 mkfs.f2fs: remove extent_cache entry for parent directory
+cd610cd mkfs.f2fs: fix storing volume label correctly in utf16
+d174269 fsck.f2fs: deal with realloc size and realloc failure
+a144fc1 Revert "fsck.f2fs: deal with realloc failure"
+729ecdf mkfs.f2fs: fix to calculate left space of checkpoint page correctly
+fd4f8d3 Android add f2fs defrag
+c18df71 defrag.f2fs: introduce defragmentation tool
+d19dbfc fsck.f2fs: LFS alloc_type must have free segment after blkoff
+4358121 f2fs-tools: export print_raw_sb_info
+2267b80 mkfs.f2fs: export get_best_overprovision
+17e0cb6 fsck.f2fs: sanity_check for extent_cache entry
+3de0318 libf2fs: enhance the bit operations
+4cf9c57 f2fs-tools: add library version info
+7e76ee5 mkfs/Makefile.am: add a section to build libf2fs_fmt
+8c1bb17 mkfs.f2fs: show correct partition size
+f78e245 fsck.f2fs: use get_{sb|cp} and set_{sb|cp} macros
+ea1e148 mkfs.f2fs: export get_{sb|cp} and set_{sb|cp}
+3b01e52 mkfs.f2fs: discard obsolete blocks to avoid roll-forward recovery
+ee06528 mkfs.f2fs: skip extension name that is too long
+5da4595 mkfs.f2fs: avoid dumplicate extensions
+e89637e fsck.f2fs: deal with realloc failure
+04d6106 fsck.f2fs: support a readonly filesystem
+f9c29e7 fsck.f2fs: declare static function
 
    * external/stagefright-plugins/
 24988a8 stagefright-plugins: Update pixfmt
@@ -371,6 +506,9 @@ be5e06a net: ping: Return EAFNOSUPPORT when appropriate.
    * packages/apps/Bluetooth/
 b9f0d69 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
 
+   * packages/apps/CMWallpapers/
+61c87c8 Fresh wallpapers for CM13
+
    * packages/apps/Contacts/
 2089467 Contacts : remove unused CONTACT_URI_EXTRA
 201c1ff Contacts : enable cleartext traffic
@@ -407,6 +545,7 @@ e406b65 charger_mode: Set font as 'log'
 fb73051 Fix mounting ext4 adopted storage
 
    * vendor/cm/
+580bc0a Add new default wallpaper for CM13
 9d7b46d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
@@ -475,9 +614,6 @@ aaf3d92 Settings: Update RU translations
 4ff9b7d Trebuchet: Don't animate open folder if already open
 6732817 Trebuchet: Fix landscape spacing issue
 
-   * prebuilts/cmsdk/
-7aa9190 prebuilts/cmsdk: Update future-release maven artifact.
-
    * system/vold/
 30c6a38 Fix mounting ext4 adopted storage
 
@@ -491,41 +627,4 @@ fc52e70 cm: Update maintainers
 24f2bb4 cmsdk: Introduce Elderberry, api level 5.
 ebf0f55 cmsdk: Finalize DragonFruit (api level 4).
 8d49200 CustomTiles: add a custom long press PendingIntent
-
-====================
-     01-18-2016
-====================
-
-
-   * device/samsung/hltespr/
-c41b60b hltespr: Set CDMA subscription to NV
-
-   * external/uicommon/
-3e92fbe Don't intercept onTap event
-
-   * frameworks/base/
-8f2df3d FWB: QS shade transparency (1/2)
-bb64dd5 Revert "Notifications: Custom colors, (1/2):"
-c8a3eca base: correctly save app notification config
-2426237 SystemUI: Add battery saver tile (1/2)
-15b0ebf SystemUI: Add heads up tile (1/2)
-e767bd0 Themes: Call recreateTheme when theme changed
-8aa54e4 SysUI: Fix keyguard wallpaper not updating
-02fd8b0 SysUI: Pass themed resources on to NavBarEditor
-3a77bd4 Themes: Fix applying theme for notifications
-
-   * packages/apps/Settings/
-ac16dc2 Build V3.0
-d9ba16e Settings: QS shade transparency (2/2)
-cf8ade6 Notification drawer: Custom clear all icon color, (2/2):
-5f5f02e Revert "Notifications: Custom colors, (2/2):"
-e87ab5b Allow launching notification manager settings externally
-
-   * packages/providers/ThemesProvider/
-5756a99 Fix blank WiFi and signal icon previews
-
-   * vendor/cmsdk/
-0295218 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-5400b2f cmsdk: Add battery saver tile (2/2)
-55cb123 cmsdk: Add heads up tile (2/2)
 
