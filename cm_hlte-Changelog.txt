@@ -1,4 +1,111 @@
 ====================
+     01-29-2016
+====================
+
+
+   * android/
+5904bb6 Track own Screencast
+
+   * bootable/recovery/
+c7610f2 recovery: Fix recursive rm wipe of data
+
+   * build/
+89d514a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+a321927 releasetools: Store and use the dt image file through target files
+
+   * cts/
+d4c97ef Merge "Revert "Cts test fix for shortcode 48000" BUG: 26714654" into marshmallow-cts-release
+1247bca Revert "Cts test fix for shortcode 48000" BUG: 26714654
+
+   * device/samsung/hlte-common/
+4305b7f audio: remove deep buffer
+
+   * external/sepolicy/
+b27c839 Allow sdcardd tmpfs read access.
+009bead vold: allow execute cp and rm
+e0f5754 Settings: Add option to disable logging
+d5ab779 Add permissions back to app / shell domains
+f3a3aa1 adbd: allow "adb pull /sdcard/"
+
+   * frameworks/base/
+1f32069 Intent: Fix a NPE on readFromParcel
+1e1a426 SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission
+47a31bf SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
+a7d3897 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
+cebe1a1 ZenMode : Update defaults for CTSVerifier
+9ec5178 Tethering: Fix number of device connected
+57da980 am: Don't take down activity process if target intent component is null.
+c5afa7f SystemUI: Don't update if HeadsUp is disabled
+b99b2e4 Themes: Fix CMSetupWizard package name in ThemeService
+9b8a571 Themes: def theme package is defined in CMSettings
+0437294 SystemUI: make online cpu color green for cpu overlay
+cfda6f0 Don't reuse weather controller before it's changed
+
+   * hardware/samsung/
+79a9b15 Initial unified Samsung lights HAL
+
+   * kernel/samsung/hlte/
+d1f2511 staging: Remove the Android alarm-dev driver
+64ef3cd Build v1.63
+a7129e6 defconfig update
+150a1b4 net: diag: support v4mapped sockets in inet_diag_find_one_icsk()
+adb28da net: tcp: deal with listen sockets properly in tcp_abort.
+0801b1a net: diag: Support destroying TCP sockets.
+76d7c1a net: diag: Support SOCK_DESTROY for inet sockets.
+3e8311c net: diag: Add the ability to destroy a socket.
+95ae2f7 net: diag: split inet_diag_dump_one_icsk into two
+9c08e20 soc: qcom: rq_stats: remove the redundant iowait check
+
+   * packages/apps/Messaging/
+8668700 Framework to Local Blacklist Synchronization Fix
+
+   * packages/apps/Screencast/
+41f68b7 Screencast: Reduce bitrate
+1a481f5 Screencast: Allow recording internal audio
+
+   * packages/apps/Settings/
+fb2dbba Build V3.7
+6611b13 Fingerprint: do not error out when stopping to listen
+77cd68e ProtectedApps: add up navigation and fix action bar icons
+3dc7787 Revert "ProtectedApps: add up navigation and fix action bar icons"
+106e53e Settings : Finish SimPreferenceDialog on dismiss
+aa3f4fa Settings : Fix linked volume crash + inconsistent state
+46ece19 Settings : Improve app info screen
+6a60c25 [2/2] Settings: blacklist: update iconography
+b14763e Settings: hide light pulse settings if not available
+94d17b4 Settings: fix a few color picker inconsistentcies
+9e0c5d0 Selinux Switch: Show toast only for permissive on boot
+0230e44 Selinux Switch
+56f8d27 Merge pull request #399 from beroid/cm-13.0
+7054f1d Settings: Update RU translations
+9d99b63 ProtectedApps: add up navigation and fix action bar icons
+
+   * packages/apps/SetupWizard/
+95246f2 SetupWizard : Use MccTable for mcc -> locale lookup
+06aa3eb Themes: Re-enable applying theme in OOBE
+
+   * packages/apps/Trebuchet/
+84dfd2a Revert "fix CTS failure on Trebuchet - manually picked from a269d518db02c8383e3621dff9d6054e3e9e48d6"
+
+   * packages/services/Telecomm/
+c20ee5f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+dd975c4 Remove useless drawables
+
+   * system/core/
+89196c5 healthd: BatteryPropertiesRegistrar binder service ref count fixup
+e1a050f Revert "Allow SELinux to be disabled, set it to permissive by default"
+
+   * vendor/cm/
+4f5508e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+db4fb0e recovery: Add new rules for recursive wipe
+
+   * vendor/samsung/
+b53f86f Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+3432fe2 Merge pull request #718 from Team-Hydra/flp
+
+====================
      01-28-2016
 ====================
 
@@ -8,6 +115,7 @@
 
    * build/
 21b8268 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+1b6aaec build: force .config update if additional kernel config changes
 
    * device/samsung/hlte/
 d714ef1 hlte: set device serial number via vendor init
@@ -54,8 +162,10 @@ bdd37ec Parcel: file descriptor leak
 dd4ec25 Parcel: include Android coding standard
 0b9d525 Parcel: LOG_TAG cleanup
 
+   * packages/apps/CMBugReport/
+6430f1e Update CMBugReport to have separate urls for uploads
+
    * packages/apps/Settings/
-ed224b8 ProtectedApps: add up navigation and fix action bar icons
 5b722f9 Build V3.6
 d98c21f MasterClear: update UI
 18dff98 Hide arrows in network traffic indicators [2/2]
@@ -68,6 +178,12 @@ a41e40a Fix alignment on dashboard.
 
    * vendor/cmsdk/
 41b5928 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+ad6f85c CMSettingsProvider: Don't trample default values on migrate.
+
+   * vendor/samsung/
+be02a65 kltespr: move flp.conf to common device tree
+2e61d08 kltedv: move flp.conf to common device tree
+5bd3a75 klte: move flp.conf to common device tree
 
 ====================
      01-27-2016
@@ -75,7 +191,6 @@ a41e40a Fix alignment on dashboard.
 
 
    * build/
-1b6aaec build: force .config update if additional kernel config changes
 30ca83f If a console doesn't exist, read password from stdin.
 bef5252 binary: Don't run protobuf header relocations if origin/target are the same
 ebe27bb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
@@ -96,9 +211,6 @@ f35314a hlte-common: reduce recents lag
    * packages/apps/Bluetooth/
 904250c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
 
-   * packages/apps/CMBugReport/
-6430f1e Update CMBugReport to have separate urls for uploads
-
    * packages/apps/CMFileManager/
 d6ce089 Refine CMFM permissions.
 
@@ -118,6 +230,7 @@ ae44c06 Regulatory text color: make this readable
 59f0f0b Snap: support resolutions used by Moto X Play
 
    * packages/services/Telecomm/
+4f7086f [1/2] Telecomm: blacklist: update iconography
 cfac1fa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
 
    * packages/services/Telephony/
@@ -127,7 +240,6 @@ cfac1fa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 0e0ab77 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
-ad6f85c CMSettingsProvider: Don't trample default values on migrate.
 3629a57 cmsdk: remove visualizer from default qs tile list
 a3c05bf Revert "cmsdk: Add example service test."
 25a7147 Revert "cmsdk/tests: Temp hack to fix `mka` builds."
@@ -290,6 +402,15 @@ c1c9af0 Automatic translation import
    * packages/wallpapers/PhotoPhase/
 9bd5d3d Automatic translation import
 
+   * system/vold/
+4d0d034 cryptfs: Skip to encrtypt unused blocks into a block group which uninitialize block bitmap .
+dd54828 Handle non-format partition in Vold
+978b36e vold: fix 64 bit ioctl error
+de4360a Make sure path is not NULL to avoid fatal exception.
+49ca99d Use volume label for mount path, if available.
+5c47cbc Make public volumes publicly writable based on WRITE_EXTERNAL_STORAGE
+ce942a4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+
    * vendor/cm/
 86020c9 Add Zenfone 2 maintainers, update a few others
 0921d1f vendor: cm: Update maintainers.
@@ -321,6 +442,9 @@ ffe9892 hlte-common: update audio
 554bc67 Revert "Audio Effects are not processing first buffer"
 214a194 libmedia: Add support for LHR tones
 
+   * frameworks/base/
+951ee5a Revert "fw: Fix protected apps implementation."
+
    * hardware/ti/omap4/
 17b1830 sgxfreq: set correct frequency limit on omap4460/4470
 
@@ -344,6 +468,12 @@ a0b5899 Snap: update shutter button style
 
    * packages/providers/DownloadProvider/
 4110d83 Open images with content://media/ instead of content://downloads/ URI.
+e9a479c DownloadProvider: Create and implement DialogDismissListener.
+7c62314 DownloadProvider: Still display as downloading after download failed
+ecd609e DownloadProvider: add to support pause/resume download by manual
+b37c8b7 DownloadProvider: fix the crash when rotate screen.
+aeda32a Clear notifications for Deleted items from Download list
+6b95a91 Remove download notification after preview
 
    * packages/screensavers/PhotoTable/
 ce7a816 PhotoTable: Move & improve CM string
@@ -362,102 +492,11 @@ f17c0f7 bluetooth: Check legacy location for NV file
    * system/core/
 55faf4f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
 
-   * system/vold/
-4d0d034 cryptfs: Skip to encrtypt unused blocks into a block group which uninitialize block bitmap .
-dd54828 Handle non-format partition in Vold
-978b36e vold: fix 64 bit ioctl error
-de4360a Make sure path is not NULL to avoid fatal exception.
-49ca99d Use volume label for mount path, if available.
-5c47cbc Make public volumes publicly writable based on WRITE_EXTERNAL_STORAGE
-ce942a4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-
    * vendor/cm/
 bc4f674 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 8c78075 Grant platform apps access to /mnt/media_rw with sdcard_posix label
 
    * vendor/cmsdk/
 bd7fded Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     01-24-2016
-====================
-
-
-   * android/
-32b1f3a bit the bucket
-
-   * frameworks/base/
-951ee5a Revert "fw: Fix protected apps implementation."
-8addc3c DisplayMetrics: set noncompat DPI as well
-2676192 Add getPackageCandidateVolumesForceable() method
-7c0ecb0 batteryservice: Avoid exception if device doesn't support HVDCP
-d1453da Fingerprints: allow devices to restrict 3rd party access
-eed91d9 Configurable dashboard columns [2/2]
-58a8ea4 Dashboard tileview double lines toggle [2/2]
-
-   * kernel/samsung/hlte/
-a475313 Build v1.62
-4c5d083 Revert "asoc: msm: Clean up async ops"
-4ba904d Revert "asoc: msm: Clean up async ops"
-841b0b0 Revert "ASoC: msm: qdsp6v2: enlarge PCM platform driver capture period size"
-370697e Revert "ASoC: wcd9320: Optimize delay after micbias enable"
-45bfe8e Revert "ASoC: qdsp6v2: update perf mode flag for LL capture cases"
-1ebc930 Revert "ASoC: msm: q6dspv2: add pause/resume support for audio record"
-c7dcbdb Revert "ASoC: msm: qdsp6v2: Restrict capture path to LL mode"
-b1244df Revert "ASoC: msm: qdsp6v2: move frame info to be per session based"
-78040dd Revert "ASoC: msm: qdsp6v2: make frame info to static array"
-3193816 Revert "ASoC: msm: qdsp6v2: return 0 when wait_for_timeout succeed"
-1eb3010 Revert "ASoC: pcm: Add support for fixup callback"
-5b5c1e0 Revert "ASoC: dpcm: Allow FE to be opened without valid BE routes."
-3a97090 Revert "ASoC: pcm: update the start-up sequence for playback"
-412d793 Revert "ASoC: Prevent pop_wait overwrite"
-51d3ad8 Revert "ASoC: pcm: If pmdown_time is zero then shut down DAPM immediately"
-267a0b8 Revert "ASoC: msm: qdsp6v2: add error handling on write done during partial drain"
-578d718 Revert "ASoC: msm: qdsp6v2: fix incomplete playback issue for non-gapless formats"
-2968c22 Revert "SoC: msm: qdsp6v2: Enable gapless for pcm offload"
-832418f Revert "ALSA: compress: change the way sample rates are sent to kernel"
-86a21d9 Revert "ASoC: msm: qdsp6v2: Fix bit alignment in snd_codec params"
-d340e2d Revert "ALSA: compress: update comment for sample rate in snd_codec"
-440f9ff Revert "ALSA: compress: update struct snd_codec_desc for sample rate"
-eb55985 Revert "ALSA: compress: add num_sample_rates in snd_codec_desc"
-f5e362a Revert "ASoC: msm: qdsp6v2: Handle additional codec specific metadata"
-e82b9d9 Revert "ASoC: msm: qdsp6v2: Handles additional flac metadata"
-9f763b3 Revert "ALSA: compress: Add ioctl declaration for gapless"
-38f33b7 Build v1.61
-4fb5eab defconfig update
-1557fc5 Revert "staging: android: lowmemorykiller: implement task's adj rbtree"
-7595774 Revert "staging: android: lmk: check free memory when tasks switch to background"
-a2f9814 Revert "staging:android:lmk: read rb tree root with spinlock"
-a7fa3bd Revert "drivers:lmk: Fix double delete issue"
-5285f6f Revert "drivers:lmk: Fix null pointer issue"
-fbb9bb1 Revert "lmk: wrap the lmk code with config"
-
-   * packages/apps/Bluetooth/
-9089f16 Bluetooth: Do not send Pairing cancel intent during ACL disconnection
-
-   * packages/apps/Settings/
-f9fadf2 ScreenAndAnimations: refactor
-6fd3563 Add force move app storage option.
-983e48d Build V3.3
-6bbe70b Dashboard tileview double lines toggle [1/2]
-41100e3 Configurable dashboard columns [1/2]
-
-   * packages/providers/DownloadProvider/
-e9a479c DownloadProvider: Create and implement DialogDismissListener.
-7c62314 DownloadProvider: Still display as downloading after download failed
-ecd609e DownloadProvider: add to support pause/resume download by manual
-b37c8b7 DownloadProvider: fix the crash when rotate screen.
-aeda32a Clear notifications for Deleted items from Download list
-6b95a91 Remove download notification after preview
-
-   * prebuilts/cmsdk/
-a538920 prebuilts/cmsdk: Update for API 4 maven central release.
-
-   * system/vold/
-0135067 vold: Mount ext4/f2fs portable storage with sdcard_posix context
-06ed7f9 vold: Honor mount options for f2fs partitions
-
-   * vendor/cmsdk/
 559636d Add left QS quick pulldown (3/3)
-c718689 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
