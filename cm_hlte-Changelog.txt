@@ -1,4 +1,185 @@
 ====================
+     02-05-2016
+====================
+
+
+   * bootable/recovery/
+cea50b7 recovery: Fix dependencies
+864493c recovery: Offer to format if data wipe fails
+da584a2 recovery: Menu rewrites and cleanups
+
+   * build/
+1b5d474 Revert "build: Always run checkapi when building system image"
+c6d5d2c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+d063c0f releasetools: Replace key values in permission files during re-signing
+7ebcb42 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+470b95c build: Always run checkapi when building system image
+
+   * device/samsung/hlte-common/
+bb091a7 hlte-common: Enable hardware HEVC (x265) decoder
+
+   * frameworks/av/
+ee8acb7 MPEG4Extractor: cast media time to int64_t in order to avoid check on unsigned integer overflow.
+1ccc3f1 Overflow fixes for amrwbenc
+12cdac7 libcameraservice: Allow media server to disconnect camera even unlocked
+
+   * frameworks/base/
+b6ddd5c Remove stray dog
+c601e51 FWB: Carrier label location (1/2)
+7ddc6d2 Update navbar's recent clear icon with vector
+25234cc Transit to correct state after alarm is fired
+407d803 Bluetooth: Restrict gain for Absolute volume case
+7a090a2 SystemUI: visually disable EditTile in lock screen
+3d252db add missing @hide
+a0151d8 [SQUASHED]NavBar: Add Some More Buttons[1/2]
+eb88d8f SystemUI: Move "Show 4G" settings to Statusbar Settings (1/2)
+
+   * frameworks/opt/net/wifi/
+44d4c3b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8996/
+d6128f9 hal: notify amplifier of parameter changes
+7ca6cb9 hal: only open the amplifier once
+566dbbd hal: enable amplifier earlier
+be921a6 hal: Notify amplifier of device enable/disable
+28c1931 hal: Convert libaudioamp to audio_amplifier HAL
+d5a65d9 audio: add amplifier stream start/standby operations
+23d551f hal: Support the audio amplifier hook
+
+   * hardware/qcom/display/
+159c98d msm8226: fix typo from "hwc: Validate display ID in hwc interfaces"
+
+   * hardware/qcom/media-caf/msm8916/
+f611a4e mm-video-v4l2: Check for correct error code
+
+   * hardware/qcom/media-caf/msm8974/
+200d6b0 mm-video-v4l2: Check for correct error code
+
+   * kernel/samsung/hlte/
+9b665ce freezer: add wait_io_event_freezable{,_timeout} macros
+d5a8a4a qseecom: use wait_io_event_freezable() when waiting for TZ activity
+5e3fa51 UPSTREAM: selinux: fix bug in conditional rules handling
+
+   * packages/apps/CMFileManager/
+aa06d7e fm: Don't crash on rotations when asking for permissions
+
+   * packages/apps/Settings/
+3e65b06 Build V4.0
+46ee898 Settings: Carrier label location (2/2)
+d0c31af Settings : Add radio button / selection states for default SIMs
+82ecd29 Settings: Move "Show 4G" settings to Statusbar Settings (2/2)
+
+   * packages/apps/Trebuchet/
+4467b51 Hide remote apps completely if user has certain restrictions
+f4c5fae Refactor fastscroll to disable zoom cleanly
+af31774 Trebuchet: Don't zoom icons on fast scroll
+
+   * packages/services/Telecomm/
+aa5e601 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+e71e08d Telecomm: update tests with IConnectionService API change
+
+   * packages/services/Telephony/
+5663d6d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+fbfb65e Call preferences: Echo cancellation toggle
+
+   * vendor/cm/
+2596b66 Show 4G instead of LTE switch (vendor_cm part)
+
+   * vendor/cmsdk/
+89ac32e cmsdk: [SQUASHED]NavBar: Add Some More Buttons[2/2]
+
+====================
+     02-04-2016
+====================
+
+
+   * android/
+1bb2ff2 Track own external/javasqlite
+7156d40 Track own external/webp
+0272466 Track own frameworks/opt/net/wifi
+
+   * build/
+1fa3d27 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+63eabff envsetup: dopush: fix error when device is not connected
+
+   * external/toybox/
+b90823e Don't exit with failure code when cp ownership preservation fails
+
+   * frameworks/base/
+837bf21 add routing for explicit call transfer
+b9e85bc Battery: Show battery fully charged notification
+b254d29 Fix pattern visibility settings (1/2)
+5d2100c String update, change wording from "Mobile" to "Cellular"
+4f233fe Default time format is hard coded to 24
+897303a Show 4G instead of LTE switch (FWB part)
+90c38d2 SystemUI: HeadsUp whitelists (2/3)
+ac479ce SystemUI: HeadsUp blacklists (2/3)
+c1256a7 Frameworks: Restart last task if last task is dead
+ece65f1 SystemUI: Allow clearing recents tasks within recents button
+cbb52e1 Frameworks: Lockscreen blur fix & tweak
+196537e PermissionGrant: Introduce Support for flashing Gapps
+
+   * frameworks/opt/net/wifi/
+2d664bb Merge "Kill wpa_supplicant before load driver" into cm-13.0
+88d6a64 Kill wpa_supplicant before load driver
+4630b19 Fix invalid offset error
+
+   * kernel/samsung/hlte/
+a91b213 Build v1.65
+0a93737 mmc: Fix merge error
+e4d7afb kernel: Restrict permissions of /proc/iomem.
+103b701 msm: vidc: Add support to read venus version through debugfs
+3aede2f cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+a356f49 qcedev: msm: Remove gating of zero length packets for authentication
+44a3b6c qseecom: avoid buffer over-write when copying app_name
+d96b731 qseecom: Save appname in qseecom when loading app by kernel client
+2a7b596 qseecom:  Add checks for send_cmd inputs
+f0ebab6 qseecom: Add boundary checks for offset within message.
+160a5e8 qseecom: Free ion memory even if keymaster app is not unloaded
+8ccbfcc qseecom: Just check current bus scaling mode in qseecom_suspend
+8a01003 fuse: break infinite loop in fuse_fill_write_pages()
+ac24f86 Revert "soc: qcom: rq_stats: remove the redundant iowait check"
+
+   * packages/apps/Settings/
+a24fb69 Forward port pattern visibility settings (2/2)
+6e8ae9e String update, change wording from "Mobile" to "Cellular"
+3c52bb1 Bluetooth: Underp "Accept all files" setting
+169ef74 Settings: HeadsUp whitelists (3/3)
+9a9d96c Settings: HeadsUp blacklists (3/3)
+
+   * packages/apps/SetupWizard/
+d6b937a SetupWizard : Don't update locale if sim locked
+
+   * packages/apps/Trebuchet/
+5f34528 Trebuchet: Don't animate folder closed when pressing menu key
+15d3632 Trebuchet: Fix background flicker when opening all apps
+de0af4b Trebuchet: Fix adapter derp on grid size item
+2d9c49d Trebuchet: Use DisplayMetrics density for scale factor
+
+   * packages/services/Telecomm/
+3ecc34c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+0e98a58 Telecom: add transfer call interface
+
+   * packages/services/Telephony/
+cdab421 Telephony: hook up call transfer
+2ebfb97 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+5a11264 Telephony: only add vmail sim slot indicator with multi sim
+a4e0e84 String update, change wording from "Mobile" to "Cellular"
+75585c0 Show 4G instead of LTE switch (Telephony part)
+
+   * prebuilts/cmsdk/
+4634337 prebuilts/cmsdk: Update for latest minor stable release.
+
+   * vendor/cm/
+460fcdc Add "APP REMOVAL" Script - Remove SetupWizard.apk
+
+   * vendor/cmsdk/
+94c3f2d Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+a6ce9b8 cmsdk: Annotate a few zenmode tests as flaky.
+9c35cdb CMSettings: HeadsUp whitelists (1/3)
+9e43b25 CMSettings: HeadsUp blacklists (1/3)
+
+====================
      02-03-2016
 ====================
 
@@ -22,9 +203,6 @@ a435137 hlte: remove OTA (This is temasek personal build, no need OTA)
 
    * frameworks/av/
 e0e9b8d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-fda1413 Revert "AudioMixer: delete reformatBuffer provider in proper order"
-da6f52d AudioMixer: Clear bufferProviders in correct order
-0276a2f audioflinger: Enable TEE_SINK compilation
 
    * frameworks/base/
 887c984 fw: Make sure to get the actual ringtone uri per subId.
@@ -51,6 +229,12 @@ b722db3 SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED
    * frameworks/native/
 c62c0f3 Binder: Add log output in IPCThreadState::self()
 
+   * frameworks/opt/hardware/
+bb99ef5 hardware: Add UniqueDeviceId support
+
+   * frameworks/opt/net/wifi/
+1fbe947 Kill wpa_supplicant before load driver
+
    * frameworks/opt/telephony/
 580ed32 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 cb7c1f5 telephony: Set multi-rat default to true.
@@ -58,8 +242,14 @@ a966679 SIMRecords: Treat empty SPN fields as null and proceed with the fallback
 6119c4c SIMRecords: If there's no EF_SPN record, fallback to EF_PNN
 3169f38 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 
+   * hardware/cyanogen/
+3083116 cmhw: Add UniqueDeviceId implementation
+
    * hardware/libhardware_legacy/
 17d8e9f wifi: Ensure supplicant stopped in wifi_stop_supplicant
+
+   * hardware/qcom/display-caf/msm8974/
+b8c0285 Merge branch 'LA.BF.1.1.3_rb1.9' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
 
    * packages/apps/AudioFX/
 6b34e3d Automatic translation import
@@ -106,6 +296,9 @@ ef961d6 Automatic translation import
    * packages/apps/Eleven/
 9afedcf Automatic translation import
 
+   * packages/apps/Email/
+08bde27 Automatic translation import
+
    * packages/apps/Gallery2/
 7b8f013 Automatic translation import
 
@@ -148,6 +341,7 @@ f8d2302 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_S
 8a292f1 SimSettings: Disable entry for missing sim
 
    * packages/apps/SetupWizard/
+228ffe7 String update, change wording from "Mobile" to "Cellular"
 a11d936 Automatic translation import
 1353951 SetupWizard: Remove useless WhisperPushUtils
 
@@ -171,6 +365,9 @@ ffc1e79 Automatic translation import
 
    * packages/apps/TvSettings/
 81c4312 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+f688a0e Automatic translation import
 
    * packages/inputmethods/LatinIME/
 5f629e9 Automatic translation import
@@ -224,6 +421,8 @@ ae362e6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core int
 f45bb5c Update pre-built V4A to 2.4.0.1
 
    * vendor/cmsdk/
+a889561 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+eb82dbf cmsdk: cmhw: Add UniqueDeviceId support
 2b3ad74 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 5d3443f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 ee703e7 Automatic translation import
@@ -262,6 +461,9 @@ bdf294d Revert "hlte-common: update Adreno library listing"
 3ed1c40 Revert "Revert "Partially revert "msm8974-common: update media codecs for M"""
 
    * frameworks/av/
+fda1413 Revert "AudioMixer: delete reformatBuffer provider in proper order"
+da6f52d AudioMixer: Clear bufferProviders in correct order
+0276a2f audioflinger: Enable TEE_SINK compilation
 77062b4 Merge tag 'android-6.0.1_r13' into HEAD
 96985ed Combine 'DTS Sound (TruMedia) Postpro support in frameworks/av for Android 6.0' as a single patch.
 
@@ -347,135 +549,4 @@ a7227b8 Revert "hlte-common: Update Adreno libraries"
 
    * packages/apps/OmniSwitch/
 7e03acc Fix build
-
-====================
-     01-31-2016
-====================
-
-
-   * art/
-bc0133b Fix compile error
-bfc2818 ART: remove fallthrough
-1aa0c17 ART: Fix bug in DeadPhiHandling
-252fd6b ART: Make dex2oat timing a bit more granular
-fc772e8 ART: Fix destruction order in Runtime.
-6b48d9e ART: Include zero-padding in String::SizeOf().
-93a4386 ART: Abort if malloc() fails in SwapAllocator::allocate().
-a7a69aa ART: (Partially) fix lock aliasing
-c1fdbd0 Remove unused WorkStealing thread pool
-f109405 Clean up some includes
-5a6f46c Fix oatdump after ArtMethod change.
-6440921 Added next condition check to branch instruction
-0194e2d Make oatdump work with .art files and code generated by Optimizing.
-9354cbb Disable sanitization of dex2oat on device.
-3889512 ART: Simplify (Not)Equal bool vs. int to true/false
-a7e645a ART: Compiler generated GC map should take care of temp registers.
-ee66fd7 Use GetOffsetDuringLinking instead of GetOffset.
-bb1ae68 base: Fix an infinite loop in HashSet::Insert
-e851e3b ART: Fix potential integer overflow in JNI.
-73d3d0d Remove unnecessary std::move from test_dex_file_builder
-83642ed Move dmtracedump from dalvik to art.
-fc2a7a1 Fix hash set memory leaks
-a72a9ff Fix C++14 bitrot.
-a37e8a4 Delegate long-to-float type conversions to the runtime on ARM.
-8edfda0 Fix race condition for method root marking in VisitNativeRoots
-6b2beb0 ART: Improve Indenter performance.
-00e81f2 Make sure debug flags mirror non-debug flags
-5596671 art: Disable Some Debugging
-575e325 Disable Clang
-
-   * bionic/
-192d16c Disable Clang
-11b37bf Remove gnu99
-
-   * device/samsung/hlte-common/
-465df33 audio: remove some system.prop items
-
-   * external/libpng/
-e24118c More spam
-
-   * frameworks/base/
-386cc71 Fix a bug checking cid before install external storage package
-3619610 Lockscreen fonts: set correct default value [1/2]
-36b3fc4 FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (1/2)
-c78f825 FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (1/2)
-
-   * packages/apps/OmniSwitch/
-442ad10 OmniSwitch: bugfix update 01/2016
-c58284f OmniSwitch: add translations by @shevT and @fast0n
-
-   * packages/apps/Settings/
-b4be240 Lockscreen fonts: set correct default value [2/2]
-cdca7d0 Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (2/2)
-7dad842 Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (2/2)
-
-   * system/core/
-b93a058 Change Permissions to CPUs/Governors
-
-   * vendor/cm/
-92a49a9 apns: T-Mobile 310260: Compatibility update
-
-   * vendor/cmsdk/
-c17ac38 CMSettingsProvider: Update app icon
-
-====================
-     01-30-2016
-====================
-
-
-   * build/
-e129b5e releasetools: add compatibility for full ota functions with incrementals
-1a1555c releasetools: Use the first entry of a mount point when reading fstab
-
-   * frameworks/base/
-b305a28 Taskmanager: Reduce Logging
-c4a6398 SystemUI: add better hints when trying to delete edit tile
-
-   * frameworks/opt/net/wifi/
-bb978df Tethering: Turn off Wi-Fi Hotspot after inactivity (2/3)
-
-   * hardware/qcom/audio-caf/msm8916/
-617b218 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
-
-   * hardware/qcom/audio-caf/msm8952/
-7123d2b Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.9' into cm-13.0-caf-8952
-
-   * hardware/qcom/display-caf/msm8916/
-d95fa42 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
-845cb50 gralloc: allow forcing old pixel alignment
-696adeb gralloc: fall back to old pixel alignment on old blobs
-
-   * hardware/qcom/media-caf/msm8916/
-19a2e7f Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
-
-   * packages/apps/CMFileManager/
-e0318a5 Cleanup permission strings again
-
-   * packages/apps/Messaging/
-005a261 Messaging: Port of quick message from MMS
-7f5fbb7 Messaging: Fix for UnicodeStripping for multi-character replacement
-
-   * packages/apps/PhoneCommon/
-a809cc0 Add last call fail cause 26 string.
-
-   * packages/apps/Settings/
-21b1632 Merge pull request #400 from Mai19930513/cm-13.0
-a2ffa78 update zh-rCN translations
-
-   * packages/apps/Snap/
-7c3f01e Improve maps app string
-
-   * packages/apps/Stk/
-f61ae60 Launcher: Present STK app name if possible
-e2d12df Update layout to Material
-
-   * packages/apps/Trebuchet/
-b68836f Add additional setting to launcher options for remote apps in drawer.
-
-   * packages/providers/ThemesProvider/
-767ac8c Prevents extra thumbnails in Lockscreen component
-
-   * system/core/
-e705009 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-0d7baec fastboot: add Zuk to the list of known vendors
 
