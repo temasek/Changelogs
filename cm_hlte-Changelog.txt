@@ -1,4 +1,174 @@
 ====================
+     02-18-2016
+====================
+
+
+   * android/
+97d095d Update maintainer list
+
+   * build/
+f078dbc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+e2b09b2 ota_from_target_files: Don't validate data signatures with data wipe
+
+   * external/libtar/
+9d133fd libtar: Store gzFile in a global to avoid non-portable casting
+
+   * external/webp/
+b3027d7 Merge "webp: build with -O2"
+
+   * frameworks/base/
+c675bc4 Set number of tile columns [1/2]
+b170ca0 Option to show four tiles per row
+
+   * hardware/qcom/audio-caf/msm8994/
+24c39c0 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
+
+   * hardware/qcom/display-caf/msm8994/
+9fa4c99 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
+
+   * hardware/qcom/media-caf/msm8994/
+8346ecd Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
+
+   * hardware/qcom/media-caf/msm8996/
+6316605 vidc: Fix makefiles
+
+   * hardware/qcom/wlan-caf/
+4963923 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
+
+   * hardware/ril-caf/
+01c8bfb Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
+
+   * hardware/samsung/
+1f58eca ril: fix $(filter ...) derp
+
+   * packages/apps/Bluetooth/
+326c8cd HFP: Do not return NULL when the HDP interface is unavailable
+ed23593 Fix NPE crash while removeBatch
+a9f3971 Fix race condition when doing GATT discovery
+af44ef6 Null terminate MAP instance information
+
+   * packages/apps/Settings/
+bc2ff16 Build V4.4
+d1bd0bb Settings: regulatory: Wrap the layout in a ScrollView
+46104bd RegulatoryDialog : Use String.split to avoid crash on empty args
+0c69285 Settings: Add CM-specific settings
+1703359 Set number of tile columns [2/2]
+1e921b3 Return: Smart Pulldown [2/2]
+436d569 SIM: Only trigger sub updates if the lifecycle isn't ending
+c47717f Settings: Only show multi-sim card configuration for owners
+b0156b8 Settings: fix 'CyanogenMod legal' link
+
+   * packages/apps/Snap/
+28c3ed1 Snap: Fix filtering of unsupported HFR/HSR modes
+83b1417 SnapdragonCamera: Fix HSR recording
+5d2bcdb SnapdragonCamera: Remove bitrate and framerate scaling for HFR
+2ecc5b9 SnapdragonCamera: Fix timelapse recording
+063146d SnapdragonCamera: Enable audio recording for HSR videos
+bc112a1 SnapdragonCamera: Scale up bitrate for HSR recordings
+e7098d8 Snap: Don't crash if user saved preference is not valid
+2fbbd8c Snap: Cleanup flash icons
+4671961 SnapdragonCamera: Implementing SelfieFlash feature
+
+   * packages/apps/SoundRecorder/
+ebf0748 SoundRecorder: sign with platform key
+
+   * packages/apps/Trebuchet/
+9be4dbb Trebuchet: Don't do reveal animation from apps/widgets to overview
+
+   * packages/services/Telecomm/
+6830fc9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+22c32ad telecomm: Support DSDA without LCH
+
+   * system/core/
+13457fd Don't go busy loop when waiting child process.
+b05feab fs_mgr: BLKGETSIZE causes memory corruption
+
+   * system/vold/
+4e72456 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+73ed08e Fix ioctl parameter
+
+   * vendor/cmsdk/
+ebc621e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+c8e4f00 CMSettingsProvider: Define battery style default.
+182b972 cmsdk: Set explicity dependency for res package files.
+
+====================
+     02-17-2016
+====================
+
+
+   * android/
+240a0d3 Track own Dialer
+
+   * build/
+7847927 releasetools: Store the proper base64 release key in the target files
+54ddee6 Merge pull request #21 from katinatez/cm-13.0
+ad4568f releasetools: Add support for LZMA in blockimgdiff
+
+   * external/libtar/
+e18b457 libtar: Cleanup, secure, and extend numeric fields
+
+   * frameworks/base/
+e152731 framework: Log applied theme when apps crash
+5621540 Screen Pinning: Show correct text for on screen nav.
+946fe7a SysUI: Wait for keyguard gone before starting activity
+aa4cc4d SysUI: Call dismiss() in executeAfterKeyguardGoneAction
+0189d79 SysUI: Don't blur when showing a Live lock screen
+156620b DocumentsUI: use proper provider client for cut
+b00bbf9 SystemUI: fix quick settings on secure lockscreen feature again
+1199a28 Return: Smart Pulldown [1/2][Squashed]
+4f0650e Fix systemUI restart command
+
+   * frameworks/native/
+8924b63 Replace AppOpsManager locking with std::lock_guard
+
+   * packages/apps/Dialer/
+08ca0e3 unleash the beast
+
+   * packages/apps/FMRadio/
+c4799b4 FMRadio : Bump targetSdk to 23
+
+   * packages/apps/Messaging/
+00577e6 Fix crash in Blacklist sync task
+599098c Fix partial draws of images received from a Lookup Provider
+
+   * packages/apps/Settings/
+cb74832 Fix systemUI restart command
+5ec5eba Merge pull request #410 from Trafalgar-Square/patch-1
+80eaeb5 Translate a few more strings
+eb7261f Translate to German
+8f574de Merge pull request #409 from beroid/cm-13.0
+183e1bd Settings: Update RU translations
+
+   * packages/apps/SetupWizard/
+56bf436 SetupWizard: Request READ_PRIVILEGED_PHONE_STATE perm for sim change events
+
+   * packages/apps/Snap/
+22c9b14 SnapdragonCamera: Calculate in top bottom margin for the preview
+7c89a6d SnapdragonCamera: Fix highlight after rotating device
+e5d8090 SnapdragonCamera: fix the incorrect aspect ratio calculation
+a05f9ce SnapdragonCamera: Adjust margin on PhotoUI
+808bc73 SnapdragonCamera: Updating preview size again
+45f5ede SnapdragonCamera: Fix to make camera display normally
+e2f694e Revert "Snap: Support 1:1 aspect ratio"
+7e1aa4a Add 11.9MP 16:9 and 8.9MP picture resolutions
+
+   * packages/apps/SoundRecorder/
+e1eb52c SoundRecorder: Change the method of get SD card path.
+
+   * packages/apps/Trebuchet/
+58f05fa Trebuchet: always set initial wallpaper offsets
+
+   * system/vold/
+2e01025 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+894bd92 cryptfs: Fix returning to default password
+
+   * vendor/cm/
+f6fec18 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+2b4ec05 Revert "recovery: default recovery updating to false"
+3f4d843 Cleanup APN list for Norway
+
+====================
      02-16-2016
 ====================
 
@@ -6,10 +176,14 @@
    * bionic/
 7f677e7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
 
+   * bootable/recovery/
+4987934 recovery: Remove empty header line
+
    * device/samsung/hlte-common/
 5d7f319 rootdir: tweak interactive values
 
    * frameworks/base/
+e75af2f SystemUI: disable QS tile Edit mode on screen off
 55678bb Revert "QS: Add App SideBar Tile [1/2]"
 0e98827 Revert "App sidebar (1/2)"
 014fa24 Revert "Fix force close for App Sidebar."
@@ -61,6 +235,7 @@ c584b55 De-uglify menu.
 40bcbea Snap: add resolutions used on Nexus 6P
 
    * packages/apps/Trebuchet/
+01b60e8 Add remote folder hook for view setup.
 60bb0d6 Trebuchet: Don't animate folder if locked state changed
 577d342 Trebuchet: Fix measuring error when reloading app drawer
 
@@ -87,9 +262,6 @@ c324079 Single digit MMI codes invalid.
 
    * device/samsung/qcom-common/
 e8fc583 Automatic translation import
-
-   * external/webp/
-249b6fd webp: build with -O2
 
    * frameworks/av/
 85ecfc5 Fix warning: list conflicting ids (not cameraId)
@@ -276,112 +448,4 @@ b4bf195 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm
 
    * vendor/cmsdk/
 4cdfdc5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     02-13-2016
-====================
-
-
-   * bootable/recovery/
-d8501d9 recovery: don't override selinux for cache partition
-72319de recovery: User recovery shouldn't allow mounting system
-
-   * device/samsung/hlte-common/
-29bcb60 Revert "ril: Set a condition to RIL_UNSOL_RIL_CONNECTED"
-
-   * external/wpa_supplicant_8/
-62effdb Merge branch 'LA.BF.1.1.3_rb1.9' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
-
-   * frameworks/opt/net/wifi/
-dff4b4f wifi: Fix for re-association failure (auto join)
-39766e6 wifi: Handle the NULL check for the STATUS command
-
-   * packages/apps/DeskClock/
-b3e564a DeskClock: fix crash during POWER_OFF_ALARM start up
-
-   * packages/apps/Settings/
-c0e63db Merge pull request #408 from beroid/cm-13.0
-af1adc1 Settings: Update RU translations
-
-   * packages/apps/Trebuchet/
-cbbbdc6 Trebuchet: Handle the NPE when user has no Google Apps installed
-
-   * packages/services/Telephony/
-fd6b1e3 PhoneToggler: persist nw mode change
-
-   * vendor/cm/
-137ba2e Contributors: Add mt2 dolts
-3f9f7a6 contributors: add LG V10
-
-   * vendor/cmsdk/
-fcadbf5 cmsdk: launch default music player on headset connect [3/3]
-50cf885 cmsdk: Deprecate POWER_NOTIFICATIONS_ENABLED setting
-
-====================
-     02-12-2016
-====================
-
-
-   * build/
-77d44af Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-b77db58 Implement 'mmap' command
-620c1e5 repopick: Don't crash if change not found
-18d91d3 Remove check on api
-2c82bb8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-521a73b build: Enforce checkapi-cm on system image gen.
-
-   * device/samsung/hlte-common/
-f756daf Revert "ril: Fix data after reboot"
-
-   * external/libtar/
-e628c20 libtar: Make file sizes 64-bit clean
-
-   * frameworks/base/
-dc6829b SystemUI: add caffeine qs tile (1/2)
-a11e93d Revert "DndTile: Always open the detailed view"
-1a8e0b2 SystemUI: add volume tones back
-faf0c90 framework: move device key handler logic, fix gesture camera launch
-
-   * frameworks/native/
-d31cbe7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-ff33923 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * frameworks/opt/telephony/
-98fab2c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-78d1894 For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT.
-aa5e09d DcSwitchStateMachine: support RILs not implementing REQUEST_ALLOW_DATA
-
-   * hardware/samsung/
-8c701ad cmhw: add SunlightEnhancement/MDNIE Outdoor mode support
-
-   * packages/apps/CMFileManager/
-6ede9db Wrap NPE
-
-   * packages/apps/Screencast/
-1b623da Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Screencast into cm-13.0
-82f991c Fix up audio recording
-
-   * packages/apps/Settings/
-1e40ce7 Build V4.2
-9f9d8f0 Merge pull request #407 from Mai19930513/cm-13.0
-fd9bbfd update zh-rCN translation
-
-   * packages/apps/Snap/
-c74d3ee SnapdragonCamera: Fix NULL pointer exception
-
-   * packages/apps/Trebuchet/
-299718f Trebuchet: Lock orientation while in grid size fragment
-aa3fa6f Refactor Launcher settings.
-6a173a6 Trebuchet: Open settings panel when clicking settings
-
-   * system/core/
-9dc1e50 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-
-   * vendor/cmsdk/
-457e38b Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-5c7be89 CMSDK : Add caffeine tile (2/2)
-06965d4 cmsdk: adjust default tile order
-e67ae8f CMSettings: Enforce correct permission for writing settings
-decc131 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-cdf4d0d cmsdk: Update api for new notification lights profiles options.
 
