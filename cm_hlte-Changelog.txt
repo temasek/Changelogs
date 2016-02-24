@@ -1,4 +1,249 @@
 ====================
+     02-24-2016
+====================
+
+
+   * frameworks/base/
+42c8331 SharedStorageAgent: fix off by 1
+1c56a81 Make accessing mWaitingForDrawn thread-safe
+426ebda Fix NPE in BaseStatusbar in onListenerConnected
+0cb4ef4 Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM
+bd25f24 Revert "Alarm: Don't use invalid timerfd alarm types"
+7980f2a ActivityManager : Remove POWER_OFF_ALARM_MODE HOME_KEY button override
+8c6b785 SystemUI: Listen for phone state change
+0eaf215 Inflate custom notifications with the app's theme.
+
+   * hardware/qcom/keymaster/
+0919e4a keymaster: add msm8909 into support list
+
+   * hardware/qcom/media-caf/msm8916/
+f0608db Build mm-video-v4l2 on msm8909's
+
+   * packages/apps/DeskClock/
+a1de334 DeskClock : Don't set POWER_OFF_ALARM_MODE unecessarily
+
+   * packages/apps/Messaging/
+5d32a6e Fix image and text binding issues in People & Options screen
+cdee383 Fix image re-binding issues for contacts obtained via a LookupProvider
+299e655 MessageQueue: Process pending messages per subscription
+
+   * packages/apps/Settings/
+a220140 Build V4.6
+23df934 PowerUsage : Don't update if profile didn't change
+68d10e7 Revert "Customize regulatory info."
+a6b79fd Automatic translation import
+e0e5bd2 SimStatus: Don't crash because of missing resource.
+dbb9c9d Settings: Lockscreen Colors [2/2]
+
+   * packages/services/Telephony/
+94d45a9 Make voicemail notifications dismissable on all carriers
+
+   * system/bt/
+6876859 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+
+   * system/core/
+3cf2120 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+f81fd9a healthd: use timerfd if dev alarm not exist
+
+   * vendor/cm/
+a51c0a2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+36cb29d recovery: Add new rule for sys.usb.ffs.ready
+
+   * vendor/cmsdk/
+d4ef68f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+61afdc1 PerformanceManager : Ensure we clear calling identity
+
+====================
+     02-23-2016
+====================
+
+
+   * android/
+15c3f54 Track own jemalloc
+a204c3d Revert "Un-track jemalloc"
+7446186 Un-track jemalloc
+d11a789 Track own sqlite
+
+   * device/samsung/qcom-common/
+5ef0d41 Automatic translation import
+
+   * external/jemalloc/
+8d1d234 Merge remote-tracking branch 'google/master' into android-6.0
+
+   * external/sqlite/
+811e38e Update DL link in version file
+8468602 Reduce sync safety levels from 3 to 1
+4894fa7 sqlite: upgrade to SQLite 3.11.0
+46e856f sqlite: upgrade to SQLite 3.10.2
+d1956cc Reduce sync safety levels from 3 to 1
+
+   * frameworks/base/
+c6457c7 Fix the NullPointerException
+06ccf92 WifiTracker : Don't queue up duplicate messages for updating access points
+98e2262 NetworkPolicyManager: Null check list of packages belonging to UID
+ff5e0e5 SystemUI: Show lockscreen wallpaper if no album art is available
+67e9649 QS: Show # of clients connected to hotspot
+0a63d0b Automatic translation import
+6bb513a FWB: Lockscreen Colors [1/2]
+
+   * packages/apps/AudioFX/
+b3278c1 Automatic translation import
+
+   * packages/apps/Bluetooth/
+9750747 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+4146cd3 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+e8973e4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
+78b36b1 Automatic translation import
+
+   * packages/apps/Browser/
+4266993 Automatic translation import
+
+   * packages/apps/CMBugReport/
+706c0f8 Automatic translation import
+
+   * packages/apps/CMFileManager/
+f7631d5 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+c41b295 Automatic translation import
+
+   * packages/apps/Calendar/
+8e72284 Automatic translation import
+
+   * packages/apps/Camera2/
+c64d7cb Automatic translation import
+
+   * packages/apps/Contacts/
+1b8519a Automatic translation import
+
+   * packages/apps/ContactsCommon/
+b35ec75 Automatic translation import
+
+   * packages/apps/DeskClock/
+aa1c1fd Automatic translation import
+
+   * packages/apps/Dialer/
+77a7245 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+b2381ef Automatic translation import
+
+   * packages/apps/Eleven/
+640067b Automatic translation import
+
+   * packages/apps/Email/
+7ffe95d Automatic translation import
+
+   * packages/apps/Gallery2/
+0e30c3a Automatic translation import
+
+   * packages/apps/InCallUI/
+b0103fd Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+d560be6 Automatic translation import
+
+   * packages/apps/LockClock/
+30b30e6 Automatic translation import
+
+   * packages/apps/Messaging/
+b606545 Add new colors and icon.
+3919901 Automatic translation import
+
+   * packages/apps/Profiles/
+9d7bfc3 Automatic translation import
+
+   * packages/apps/Screencast/
+ba5604a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Screencast into cm-13.0
+2fc265b Automatic translation import
+
+   * packages/apps/SetupWizard/
+01e57cd Automatic translation import
+
+   * packages/apps/Snap/
+1d95734 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+ae80482 Automatic translation import
+
+   * packages/apps/Terminal/
+d029cb4 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+6a06140 Automatic translation import
+
+   * packages/apps/Trebuchet/
+3e6ed3e Trebuchet: Featured Apps uses themed composed icons and responds to theme changes
+b4ff2a9 Automatic translation import
+
+   * packages/apps/TvSettings/
+4e2059c Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+94099d2 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+c9f3201 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+a163818 Automatic translation import
+
+   * packages/services/Telecomm/
+0cf4284 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+c35dc89 Automatic translation import
+
+   * packages/services/Telephony/
+9642384 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+0b3b6e9 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+c7c0742 Automatic translation import
+
+   * system/bt/
+5db0f54 l2cap: ifdef checks for BLE_INCLUDED
+
+   * vendor/cmsdk/
+5917208 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+9c902f8 cmsdk: Update binder transaction tests for new interfaces.
+6c1aa2f Automatic translation import
+
+====================
+     02-22-2016
+====================
+
+
+   * device/qcom/common/
+83fd4f1 power-8992: Fix build error and warnings
+
+   * frameworks/base/
+fe90925 Merge pull request #106 from beroid/cm-13.0
+1b1d187 SystemUI: Update RU translations
+bbfce39 Camera: Force HAL1 for predefined package list.
+1abb08f Fix for reboot on connecting to TV through HDMI.
+240b37c BT: Allow user processes to bind to HeadsetService in guest login
+437e575 audio: register for device shutdown notification
+0a12bb5 Pattern: Correct the web URL to remove the starting Chinese
+92a5fda Performance: Postpone service restart during app launch.
+4a34ead bootanimation: Use CLOCK_MONTONIC for pthread
+bd193f6 base: Fix proximity check on power key
+576586f aapt: Hide "No comment for public symbol" warnings
+74233e0 Revert "aapt: we dont care about uncommented public symbols"
+ee8c5a3 Performance Optimization: Align texture dirty rect
+319b5e7 SystemUI: set number of QS rows (1/2)
+2675178 Fix show charging speed on Keyguard
+4c0aa25 Release SQLite page cache as much as it can
+883ba0c Sometimes property service is slow to respond.
+bc3c0e4 Bluetooth: Clear Gatt Services when discovery initiated by stack
+a6e7255 Fix slow wifi connection from QS. Partially revert 0d6a1c445c98f67b4fd314b58d703ec1c28e5658
+2431469 SystemUI: FIX No sim - airplane mode padding
+
+   * packages/apps/Settings/
+f71ec33 Build V4.5.1
+2f96e71 Merge pull request #414 from beroid/cm-13.0
+a4f4cc2 Settings: Update RU translations
+
+   * packages/apps/Snap/
+0b3e472 Snap: fix camera hang on LGE G4 when flash got used
+
+====================
      02-21-2016
 ====================
 
@@ -22,80 +267,6 @@ e6a7906 boringssl: Fix compilation
 32e5c38 stagefright-plugins: enlarge audio/video queue
 
    * frameworks/base/
-ad710a4 Camera: Force HAL1 for predefined package list.
-311878f Fix for reboot on connecting to TV through HDMI.
-482168d BT: Allow user processes to bind to HeadsetService in guest login
-37f0770 audio: register for device shutdown notification
-55e0e5c Pattern: Correct the web URL to remove the starting Chinese
-42cfc12 Performance: Postpone service restart during app launch.
-a698180 bootanimation: Use CLOCK_MONTONIC for pthread
-68045e1 base: Fix proximity check on power key
-c2bbebb aapt: Hide "No comment for public symbol" warnings
-6b19c6a Revert "aapt: we dont care about uncommented public symbols"
-0d8a27a SystemUI: set number of QS rows (1/2)
-b1d96ba Performance Optimization: Align texture dirty rect
-21db32a Fix show charging speed on Keyguard
-fbe3aef Fix NPE by not restore task record correctly.
-f632911 bless python versions newer than 2.6
-2ec0406 ProcessStats: Handle IndexOutOfBoundsException
-f9c6b9a Wrong argument: isValidLockdownProfile
-44fbc4d Widget: Catch null point exception in AbsListViewAutoScroller
-5d0fef4 Fix the wrong error message reported by SurfaceTexture_releaseTexImage.
-c6c8d08 Delete unused testing scripts and WithFramework.
-6bfb7ba Avoid duplicate call to onLoadFinished()
-129e025 Input command can fail (with exceptions) if the touchscreen id is not 0
-ca419dd Possible NPE in ChooseAccountTypeActivity
-4caabb3 Videos: Disable listselector when scroll is enabled
-39ed0ed Prevent breaking of combining characters
-53dde6c Release SQLite page cache as much as it can
-caecb5f Camera2: create new streams if surface size has changed
-9e6d906 Frameworks/base: Fix null-pointer access
-f86b99a Handle ActivityNotFoundException for contacts activity
-51e50ff [ScrollView] Invalid pointerId
-087aca2 [GridView] Fix the issue that setSelectionFromTop() does not work.
-77bebdd ExpandableListView: Fix to nofity group collapse event
-59db787 Frameworks/base: Fix AdapterViewAnimator.createOrReuseLayoutParams
-7f464c2 [AbsListView] Fix IndexOutOfBoundException issue when handling generic motion events.
-9e453a7 Null Check before accessing to avoid exception when view is made null in another thread.
-449a5c5 Add MotionEvent flag indicating that the window is obscured
-02dbb2d Protect check for mReceiverPtr in nativeFinishInputEvent
-4a7c4a7 extend PreferenceActivity for title text on a single pane mode
-bed5906 Avoid scanning unneeded items in Bundle#hasFileDescriptors()
-e2e5d20 AsyncTask: Fix to remove canceled tasks from executor's queue.
-265fb46 IInputMethodWrapper to recycle SomeArgs in all cases.
-3e882d7 Catch corruptexception during Transaction operation
-e01b215 Fixed can not read android:editorExtras resource problem
-fbb6e88f Fixed issue leading to state loss about child fragments
-ef34cdb [DownloadManager] Enqueue download request might fail and cause NullPointerException
-a8525c5 [ActivityManager] handle dumpHeap() but no free space case.
-67fef9f ChooseTypeAndAccountActivity: Fix the NullPointerException
-37f7328 Fix to NullPointerException when activity is relaunched
-1729caf UsbdeviceManager: Avoid sending extra USB_STATE broadcast intent
-ca44ae3 Access mView in the thread which created the ViewRootImpl
-9601341 Don't apply clang flag to gcc builds.
-7dc4d3b Sometimes property service is slow to respond.
-52a39c6 Fix the brightness dialog is not work when first enable auto-backlight
-264bcc3 Use duck typing in X509TrustManagerExtensions
-bedf3b5 Extend the 'qwerty' key layout
-9ea4a33 Deduplicate handlePinMmi() method
-e17ccd1 Fix for inconsistent Show/Hide Internal storage option when EXTRA_SHOW_ADVANCED is set in the Intent to true.
-4fbce98 Nat464Xlat: fix null pointer exception
-3f2c4af Catch Exception from MountService and throw IOException to PMS
-0cc9d82 Don't dispatch ACTION_DRAG_LOCATION to invisible views
-31e8a8e Adding NullPointerException check in DocumentsUI
-957ed78 Bluetooth: Clear Gatt Services when discovery initiated by stack
-be39372 Fix slow wifi connection from QS. Partially revert 0d6a1c445c98f67b4fd314b58d703ec1c28e5658
-ab4fce0 SystemUI: FIX No sim - airplane mode padding
-5c96a7b Increase priority for broadcast intent triggered by HW key
-740960c Fix bugs : when user designate print range, NumberFormatException is occured.
-93adba9 Return only if both playback and capture not present
-fdf98a36 Framework changes for disabling per app metered network usage
-4ee0ebc The value returned by mNotificationList.size() is out of synchronize
-1117252 ImageReader: override the flexible YUV compatible formats
-e3a1fc6 Camera2: Fix getInternalFormatSizes for depth
-d7697f4 When the applicantion is removed, reset network permission of this uid.
-c734040 Avoid unregistering client while stopping LE Scan
-4651c45 Use clang for libhwui
 4f00c29 BatteryStats: fix wrong calculation of battery voltage
 98fb1ed Show SIM card settings in MSIM devices
 9eed750 SystemUI: fix screentimeout tile icon disappearing
@@ -104,7 +275,6 @@ f38af4a runtime: Handle prebundles on BOARD_NEEDS_VENDORIMAGE_SYMLINK.
 
    * frameworks/native/
 cabf31a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-b0cda68 binder: MemoryHeapIon: Fix size_t vs integer formatting mismatch
 
    * kernel/samsung/hlte/
 3ccd2e7 timekeeping: fix 32-bit overflow in get_monotonic_boottime
@@ -189,6 +359,9 @@ fbfd816 SystemUI: handle camera launch gesture from keyhadler
 475e4d7 Sound Tile improvement
 3cc7dbe SystemUI: add Sound tile to QS (1/2)
 a7dd0cf Dashoard tileview dividers toggle [1/2]
+
+   * frameworks/native/
+b0cda68 binder: MemoryHeapIon: Fix size_t vs integer formatting mismatch
 
    * frameworks/opt/telephony/
 231742d Merge pull request #3 from koradiavatsal/cm-13.0
@@ -291,214 +464,4 @@ ac66e05 ThemeChooser: update preview packages names
 ccce292 cmsdk: Add sanity checks in ColorUtils
 c57a2ec Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 5690df5 cmsdk: add Sound tile to QS (2/2)
-
-====================
-     02-19-2016
-====================
-
-
-   * device/qcom/sepolicy/
-4a71601 healthd : allow healthd to read RTC/alarm devices
-
-   * frameworks/base/
-f3fa81b Merge pull request #105 from beroid/cm-13.0
-
-   * frameworks/opt/telephony/
-f986244 Fix the invalid number when the one on the other side hangs up
-
-   * packages/apps/LockClock/
-398ffe0 LockClock: Disable event calendars dialog if no calendars
-c5bb591 LockClock: fix crash in calendar selection
-
-   * packages/apps/Settings/
-9f795f6 Merge pull request #411 from beroid/cm-13.0
-6940d03 Settings: Update RU translations
-e068714 Build V4.4
-1bb2085 Settings: regulatory: Wrap the layout in a ScrollView
-f420d7d RegulatoryDialog : Use String.split to avoid crash on empty args
-0aee2a9 Settings: Add CM-specific settings
-902ca85 Set number of tile columns [2/2]
-
-   * system/core/
-4248ea7 healthd: Reduce permissions needed for alarm tracking
-eaac34d healthd: Reboot to Android when off mode charger timer expires
-4ca66c4 healthd: Separate power off alarm implementation into MSM specific HAL
-
-   * vendor/cmsdk/
-6ad5263 cmsdk: add common action for launching camera from screen gesture
-
-====================
-     02-18-2016
-====================
-
-
-   * android/
-97d095d Update maintainer list
-
-   * build/
-f078dbc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-e2b09b2 ota_from_target_files: Don't validate data signatures with data wipe
-7847927 releasetools: Store the proper base64 release key in the target files
-
-   * external/libtar/
-9d133fd libtar: Store gzFile in a global to avoid non-portable casting
-
-   * external/webp/
-b3027d7 Merge "webp: build with -O2"
-
-   * frameworks/base/
-c675bc4 Set number of tile columns [1/2]
-b170ca0 Option to show four tiles per row
-e152731 framework: Log applied theme when apps crash
-5621540 Screen Pinning: Show correct text for on screen nav.
-946fe7a SysUI: Wait for keyguard gone before starting activity
-aa4cc4d SysUI: Call dismiss() in executeAfterKeyguardGoneAction
-
-   * hardware/qcom/audio-caf/msm8994/
-24c39c0 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
-
-   * hardware/qcom/display-caf/msm8994/
-9fa4c99 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
-
-   * hardware/qcom/media-caf/msm8994/
-8346ecd Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
-
-   * hardware/qcom/media-caf/msm8996/
-6316605 vidc: Fix makefiles
-
-   * hardware/qcom/wlan-caf/
-4963923 Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
-
-   * hardware/ril-caf/
-01c8bfb Merge tag 'LA.BF64.1.2.2-03240-8x94.0' into HEAD
-
-   * hardware/samsung/
-1f58eca ril: fix $(filter ...) derp
-
-   * packages/apps/Bluetooth/
-326c8cd HFP: Do not return NULL when the HDP interface is unavailable
-ed23593 Fix NPE crash while removeBatch
-a9f3971 Fix race condition when doing GATT discovery
-af44ef6 Null terminate MAP instance information
-
-   * packages/apps/CMFileManager/
-a0cd1ee CMFileManager: Don't show access mode pref on unrooted devices
-
-   * packages/apps/Settings/
-1e921b3 Return: Smart Pulldown [2/2]
-436d569 SIM: Only trigger sub updates if the lifecycle isn't ending
-c47717f Settings: Only show multi-sim card configuration for owners
-b0156b8 Settings: fix 'CyanogenMod legal' link
-
-   * packages/apps/Snap/
-28c3ed1 Snap: Fix filtering of unsupported HFR/HSR modes
-83b1417 SnapdragonCamera: Fix HSR recording
-5d2bcdb SnapdragonCamera: Remove bitrate and framerate scaling for HFR
-2ecc5b9 SnapdragonCamera: Fix timelapse recording
-063146d SnapdragonCamera: Enable audio recording for HSR videos
-bc112a1 SnapdragonCamera: Scale up bitrate for HSR recordings
-e7098d8 Snap: Don't crash if user saved preference is not valid
-2fbbd8c Snap: Cleanup flash icons
-4671961 SnapdragonCamera: Implementing SelfieFlash feature
-
-   * packages/apps/SoundRecorder/
-ebf0748 SoundRecorder: sign with platform key
-
-   * packages/apps/Trebuchet/
-9be4dbb Trebuchet: Don't do reveal animation from apps/widgets to overview
-
-   * packages/services/Telecomm/
-6830fc9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-22c32ad telecomm: Support DSDA without LCH
-
-   * system/core/
-d2583c8 healthd: Support alarm in power off charging mode
-13457fd Don't go busy loop when waiting child process.
-b05feab fs_mgr: BLKGETSIZE causes memory corruption
-
-   * system/vold/
-4e72456 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-73ed08e Fix ioctl parameter
-
-   * vendor/cmsdk/
-ebc621e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-c8e4f00 CMSettingsProvider: Define battery style default.
-182b972 cmsdk: Set explicity dependency for res package files.
-
-====================
-     02-17-2016
-====================
-
-
-   * android/
-240a0d3 Track own Dialer
-
-   * build/
-54ddee6 Merge pull request #21 from katinatez/cm-13.0
-ad4568f releasetools: Add support for LZMA in blockimgdiff
-
-   * external/libtar/
-e18b457 libtar: Cleanup, secure, and extend numeric fields
-
-   * external/stagefright-plugins/
-dad687e stagefright-plugins: prevent deadlock
-
-   * frameworks/base/
-0189d79 SysUI: Don't blur when showing a Live lock screen
-156620b DocumentsUI: use proper provider client for cut
-b00bbf9 SystemUI: fix quick settings on secure lockscreen feature again
-1199a28 Return: Smart Pulldown [1/2][Squashed]
-4f0650e Fix systemUI restart command
-70cf8f2 SystemUI: Update RU translations
-e75af2f SystemUI: disable QS tile Edit mode on screen off
-
-   * frameworks/native/
-8924b63 Replace AppOpsManager locking with std::lock_guard
-
-   * packages/apps/Dialer/
-08ca0e3 unleash the beast
-
-   * packages/apps/FMRadio/
-c4799b4 FMRadio : Bump targetSdk to 23
-
-   * packages/apps/Messaging/
-00577e6 Fix crash in Blacklist sync task
-599098c Fix partial draws of images received from a Lookup Provider
-
-   * packages/apps/Settings/
-cb74832 Fix systemUI restart command
-5ec5eba Merge pull request #410 from Trafalgar-Square/patch-1
-80eaeb5 Translate a few more strings
-eb7261f Translate to German
-8f574de Merge pull request #409 from beroid/cm-13.0
-183e1bd Settings: Update RU translations
-
-   * packages/apps/SetupWizard/
-56bf436 SetupWizard: Request READ_PRIVILEGED_PHONE_STATE perm for sim change events
-
-   * packages/apps/Snap/
-22c9b14 SnapdragonCamera: Calculate in top bottom margin for the preview
-7c89a6d SnapdragonCamera: Fix highlight after rotating device
-e5d8090 SnapdragonCamera: fix the incorrect aspect ratio calculation
-a05f9ce SnapdragonCamera: Adjust margin on PhotoUI
-808bc73 SnapdragonCamera: Updating preview size again
-45f5ede SnapdragonCamera: Fix to make camera display normally
-e2f694e Revert "Snap: Support 1:1 aspect ratio"
-7e1aa4a Add 11.9MP 16:9 and 8.9MP picture resolutions
-
-   * packages/apps/SoundRecorder/
-e1eb52c SoundRecorder: Change the method of get SD card path.
-
-   * packages/apps/Trebuchet/
-58f05fa Trebuchet: always set initial wallpaper offsets
-01b60e8 Add remote folder hook for view setup.
-
-   * system/vold/
-2e01025 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-894bd92 cryptfs: Fix returning to default password
-
-   * vendor/cm/
-f6fec18 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-2b4ec05 Revert "recovery: default recovery updating to false"
-3f4d843 Cleanup APN list for Norway
 
