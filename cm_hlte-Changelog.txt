@@ -1,4 +1,148 @@
 ====================
+     03-09-2016
+====================
+
+
+   * android/
+6ed982a android-6.0.1_r13 -> android-6.0.1_r17
+
+   * bootable/recovery/
+1faa075 recovery: bu: Make 64-bit clean
+
+   * build/
+fe28ef5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+ad12b36 Fix a race condition while building the recovery patch
+
+   * frameworks/av/
+e919f1f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+47f8c73 audiopolicy: Defer release of output session effects
+0479d7c audiopolicy: Add notification when default effects are updated
+
+   * frameworks/base/
+e013be2 Revert "Add 3Minit battery mod"
+90b3c90 Revert "Statusbar: Gracefully adapt 3Minit Battery hook for AOSP"
+5bfd4ab Revert "Scroll: modified velocitytracker"
+8c15fc2 Make sure emulated storage index preceed non-emulated ones and succeed primary storage.
+82ff255 audiosystem: Add API for listening to effect session events
+d5f3a67 sensors: Create bool to select what timestamp to use
+da10f34 SysUI: Fix hiding per-app sensitive notifications
+4483e34 SystemUI: Add PERFORMANCE_ACCESS permission.
+03d5c34 base: Fix proximity check on non power key
+c436bc5 Merge tag 'android-6.0.1_r17' into HEAD
+254f11e SystemUI: fix always_show_roaming
+7207548 Revert "SystemUI: Clear map on change"
+
+   * frameworks/native/
+ba910c9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * frameworks/opt/telephony/
+2122d91 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * kernel/samsung/hlte/
+1b5e2bf mm/page_allo.c: restructure free-page stealing code and fix a bug
+c6511f9 KEYS: Fix race between read and revoke
+26a41117 msm: null pointer dereferencing
+eb64a51 net: wireless: bcmdhd: check packet length for event messages
+3bb6d49 net: wireless: bcmdhd: Add checks for stack buffer overflows
+66b8b42 bcmdhd: Add checks for stack buffer overflows
+
+   * packages/apps/Bluetooth/
+7576998 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/DeskClock/
+4623c88 DeskClock: Remove "Week Start" preference
+
+   * packages/apps/InCallUI/
+7443e96 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/Settings/
+7728fda Build V4.8 - Android 6.0.1_r17
+ae6061f Display connect button in the wifi connection menu
+e2a543e Settings: Add PERFORMANCE_ACCESS permission.
+201228c MSIM: Fix erroneous defaults display in slot selection dialog
+1818d96 AppOps: Guard against themes without colorAccent defined
+221c912 Settings: Allow disabling default allcaps state in tabtext.
+
+   * packages/apps/Trebuchet/
+e48ef94 Trebuchet: Guard against NPE while querying for widget updates
+0a244ba Trebuchet: Highlight section being touched even when not scrolling scrubber
+
+   * packages/services/Telecomm/
+98fdd25 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+6382faf Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/bt/
+f011ec1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+
+   * vendor/cm/
+e096d45 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+16c1aa2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+f8d4978 cmsdk: Fix resource name.
+6356c9b cmsdk: Update README for release artifact numerics.
+b4eafda cmsdk: Add PerformanceManager tests, Change target permission.
+7ed4fca cmsdk: Keep generated java classes from aidl interfaces.
+c0bd6d0 cmsdk: Clean up proguard flags.
+
+====================
+     03-08-2016
+====================
+
+
+   * bootable/recovery/
+6c20b00 recovery: Implement sysbar
+
+   * build/
+55d8065 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * external/libavc/
+cccc2b8 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * frameworks/av/
+51aee1e stagefright: Support audio in slow motion
+edd6ca3 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * frameworks/native/
+efd11d3 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * frameworks/opt/telephony/
+b4b65d2 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * packages/apps/Bluetooth/
+14a2811 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * packages/apps/ContactsCommon/
+1196024 Fix resource clean-up in LookupProviderImpl
+4d67195 Update info_lookup to use AmbientSDK directly
+
+   * packages/apps/InCallUI/
+34d0d93 Fix to answer call in DSDS mode.
+dc3aadd Fix to answer call in DSDS mode.
+
+   * packages/apps/ThemeChooser/
+4366f66 ThemeChooser: update icon
+
+   * packages/services/Telecomm/
+81999fd Implement call waiting answer options dialog
+
+   * packages/services/Telephony/
+773cab5 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+   * system/bt/
+775a7ba Merge tag 'android-6.0.1_r17' into HEAD
+
+   * vendor/cm/
+8ab71a0 vendor: Add maintainer for LG G3 (Sprint) (LS990)
+6f978dc Add Z00T maintainers
+fd28e9d Include AmbientSDK artifact
+
+   * vendor/cmsdk/
+3a590c3 Allow to ignore presentation indicator of outgoing calls [1/3]
+
+====================
      03-07-2016
 ====================
 
@@ -34,6 +178,10 @@ ac195a7 NetworkPolicyManager : Process low power mode change on background threa
    * frameworks/opt/telephony/
 d0fd503 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 
+   * hardware/samsung/
+621e63e libril: Make ST-E Thor M7450 and Intel XMM7260 next gen modems as well
+f15d7f4 powerhal: Add set_profile support
+
    * packages/apps/Bluetooth/
 3242283 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
 
@@ -47,6 +195,9 @@ e6c9ff7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_B
 2a5b529 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
 
    * packages/apps/Settings/
+ca6ec9a Merge pull request #425 from beroid/cm-13.0
+57f35f7 Settings: Update RU translations
+d1423c2 Update proper strings to clock color switch
 0b26d88 Build V4.7
 0a83bd2 Settings: Clock Color Switch (2/2)
 56afc94 Automatic translation import
@@ -99,6 +250,9 @@ f657c28 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
 
    * device/samsung/qcom-common/
 7a1234d Automatic translation import
+
+   * frameworks/opt/telephony/
+33a347a Allow to ignore presentation indicator of outgoing calls [2/3]
 
    * hardware/qcom/media-caf/msm8996/
 347b90c libc2dcolorconvert: refer c2d header from display
@@ -297,43 +451,4 @@ f2fd836 Update stubs to include cyanogenmod.themes package
 ba01275 cmsdk: Strip unused cmsdk members for codecoverage.
 b3ea285 Themes: Refactor themes to CMSDK [2/6]
 567b430 cmsdk: Add cyanogenmod.util to stubs and update API
-
-====================
-     03-04-2016
-====================
-
-
-   * hardware/qcom/audio-caf/msm8916/
-5232764 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.10' into cm-13.0-caf-8916
-
-   * packages/apps/Dialer/
-b91511e Add Ukrainian T9 symbol map
-
-   * packages/apps/PhoneCommon/
-5bd46ba Add Ukrainian T9 symbol map
-
-   * packages/apps/Screencast/
-7aff8c2 Screencast: Don't show touches for non-owners
-
-====================
-     03-03-2016
-====================
-
-
-   * cts/
-1e7c9d7 merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
-e17a927 Merge "Camera: remove StaticMetadataCollectionTest" into marshmallow-cts-dev
-541c86b Merge "Disabling tests which depend on a non-NDK shared library." into marshmallow-cts-dev
-1a219ed Disabling tests which depend on a non-NDK shared library.
-1c077ee Merge "Revert "media: skip unsupported test clip in adaptive playback test"" into marshmallow-cts-dev
-7ea817b Revert "media: skip unsupported test clip in adaptive playback test"
-
-   * dalvik/
-4797751 dexdeps: Add option for --include-cm-classes.
-
-   * packages/apps/CMFileManager/
-029bcc5 PickerActivity: Request for permissions
-
-   * packages/apps/DeskClock/
-ae8bcce Alarm: Bind start-of-week to the locale
 
