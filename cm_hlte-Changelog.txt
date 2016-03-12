@@ -1,17 +1,149 @@
 ====================
+     03-12-2016
+====================
+
+
+   * android/
+ceb3b73 Track own TelephonyProvider
+922dc62 Track own PhoneCommon
+fedfd7a Track own Contacts & ContactsCommon
+38de59e android-6.0.1_r22
+
+   * bionic/
+28e76eb Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_bionic into cm-13.0
+
+   * bootable/recovery/
+bc9052a Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/bootable/recovery into cm-13.0
+
+   * build/
+08eec51 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_build into cm-13.0
+771fead Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/build into cm-13.0
+
+   * external/libpng/
+e5a4ab2 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_external_libpng into cm-13.0
+
+   * external/sepolicy/
+a1c77ed Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_external_sepolicy into cm-13.0
+
+   * external/wpa_supplicant_8/
+b00d29d Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
+
+   * frameworks/av/
+fb17f0d Merge branch 'staging/cm-13.0+r22' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+a69b15b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+46da121 nuplayer: Allow devices to force a flush when surface changes
+
+   * frameworks/base/
+af577b8 core: Add strings for hotswap configuration event.
+877c751 Move high touch sensitivity and hovering to InputService
+1b6f678 Move VIBRATOR_INTENSITY to vibrator service
+a4123ec LiveDisplayController : Reload settings for current user
+c5b21fc intel: Pick the best ABI based on number of libs, not just priority
+77ef2da perf: Remove scroll / fling boosting
+f15890f Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/base into cm-13.0
+
+   * frameworks/native/
+4110e21 Merge branch 'staging/cm-13.0+r22' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * frameworks/opt/net/wifi/
+0b6c153 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+
+   * frameworks/opt/telephony/
+ab8b7c8 Merge branch 'staging/cm-13.0+r22' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+56a2a20 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+c31d22d telephony: Notify user for potential reconfiguration.
+
+   * frameworks/opt/timezonepicker/
+ad87839 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_frameworks_opt_timezonepicker into cm-13.0
+
+   * hardware/qcom/fm/
+71997bb fmapp2: String improvements
+
+   * hardware/samsung/
+02302a7 macloader: add n5100 murata wifi address
+
+   * packages/apps/Bluetooth/
+395e631 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+0fe7495 Revert "Bluetooth: Disconnect SCO for In-Band Ringtone."
+c2731fa Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into cm-13.0
+
+   * packages/apps/Dialer/
+b1e121f Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+e8f2d5f Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/Settings/
+b93ef3b Build V5.0 - Android 6.0.1_r22
+4f2fcb8 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Settings into cm-13.0
+
+   * packages/providers/ContactsProvider/
+b3f8007 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+3b52dc7 ContactsProvider : Hard code group resource ids
+
+   * packages/providers/MediaProvider/
+871f7a0 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
+
+   * packages/services/Telecomm/
+81f9c00 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+8c2bde1 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+3efd1d0 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+9960986 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+a3f2b60 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0
+df6ddbe Fix "multi-sim: fallback on active subId on emergency calls"
+
+   * system/bt/
+b136aa8 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_system_bt into cm-13.0
+718ba0b Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/system/bt into cm-13.0
+
+   * system/core/
+6ebbe42 Merge branch 'staging/cm-13.0+r22' of github.com:CyanogenMod/android_system_core into cm-13.0
+81fba04 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/system/core into cm-13.0
+
+   * vendor/cm/
+446766f apns: fix build
+89c0dc8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+bc61d86 apns: Add ATT Nextgenphone
+73acac5 Resolve Orange RO authtype
+15c9ef4 config: Lower the priority of vendor/cm overlays
+
+   * vendor/cmsdk/
+d55eb57 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+5e2d5a6 CMSettings: Add VIBRATOR_INTENSITY setting
+9714d7f CMSettings: Add FEATURE_TOUCH_HOVERING
+9f12465 cmsdk: Minor string improvement
+
+====================
      03-11-2016
 ====================
 
 
+   * art/
+71b0b6e Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/art into cm-13.0
+
    * bionic/
+f6164e6 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/bionic into cm-13.0
 a0ecebf Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
 f6f0445 linker: Allow text-relocs for x86 (only)
 
+   * device/qcom/common/
+0125db4 power: Handle POWER_HINT_INTERACTION
+
    * external/libpng/
+7dae481 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/external/libpng into cm-13.0
 2174077 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_libpng into cm-13.0
 8d5e858 libpng: turn off warnings
 
+   * external/sepolicy/
+014562f Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/external/sepolicy into cm-13.0
+
+   * external/wpa_supplicant_8/
+9e77cf9 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/external/wpa_supplicant_8 into cm-13.0
+
    * frameworks/av/
+bc7ce29 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/av into cm-13.0
 eaafb83 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 ba38778 audiopolicy: squashed support for pre-kitkat audio blobs
 
@@ -29,9 +161,22 @@ b3b51e5 Fix volume expand arrow to be displayed correctly
 6b015bd Merge pull request #108 from neobuddy89/cm-13.0
 6d017ba SystemUI: Add boot completed check to recents
 
+   * frameworks/native/
+a98331d Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/native into cm-13.0
+
+   * frameworks/opt/net/ims/
+328bc61 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/opt/net/ims into cm-13.0
+
+   * frameworks/opt/net/wifi/
+81f882f Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into dr15
+
    * frameworks/opt/telephony/
+d561e8e Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/opt/telephony into cm-13.0
 9b94bdd Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 e8a8a7f telephony: Move COLP definition to android settings.
+
+   * frameworks/opt/timezonepicker/
+5bff676 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/opt/timezonepicker into cm-13.0
 
    * hardware/qcom/audio-caf/msm8974/
 c7baa3b hal: Reduce minimum offload fragment size for PCM offload
@@ -41,12 +186,39 @@ c7baa3b hal: Reduce minimum offload fragment size for PCM offload
 155a798 mm: vmscan: fix the page state calculation in too_many_isolated
 29a9de9 msm: perf: validate input argument of ev_constraints functions
 
+   * libcore/
+7290499 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/libcore into cm-13.0
+
+   * packages/apps/Contacts/
+3c1aaac Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Contacts into cm-13.0
+
+   * packages/apps/ContactsCommon/
+9098f02 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ContactsCommon into cm-13.0
+
+   * packages/apps/Dialer/
+8ce5e82 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+db0bbb8 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/InCallUI into cm-13.0
+
+   * packages/apps/PhoneCommon/
+006da89 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into cm-13.0
+
    * packages/apps/Settings/
-d8e53db Build V4.9
+9d977b9 Build V4.9
 bff17cf settings: dock battery
 0b0213f Settings: Modify RU translation for Ambient display
 2cc4a8b Merge pull request #427 from Mai19930513/cm-13.0
 2ebf667 update zh-rCN translations
+
+   * packages/providers/ContactsProvider/
+d33287d Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/ContactsProvider into cm-13.0
+
+   * packages/providers/MediaProvider/
+637eb43 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/MediaProvider into cm-13.0
+
+   * packages/providers/TelephonyProvider/
+1417446 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into cm-13.0
 
    * packages/services/Telephony/
 3721916 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
@@ -99,12 +271,6 @@ d68bb2e Fix cflags pollution from other    *s
 
    * frameworks/av/
 e919f1f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-2fd815f stagefright: Clear RenderQueue on port settings changed
-c3902bb video: Add metadata support for DataSource
-69714d4 video: Add support to push blank buffers on surface switch
-1aedff9 Nuplayer: Flush the decoder if seamless format change is supported
-97fc248 ACodec: update the right size and crop in smooth streaming case
-41d4ad5 SoftVorbis: memory access check
 
    * frameworks/base/
 e013be2 Revert "Add 3Minit battery mod"
@@ -182,9 +348,14 @@ e096d45 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm
 1faa075 recovery: bu: Make 64-bit clean
 
    * frameworks/av/
+2fd815f stagefright: Clear RenderQueue on port settings changed
+c3902bb video: Add metadata support for DataSource
+69714d4 video: Add support to push blank buffers on surface switch
+1aedff9 Nuplayer: Flush the decoder if seamless format change is supported
+97fc248 ACodec: update the right size and crop in smooth streaming case
+41d4ad5 SoftVorbis: memory access check
 47f8c73 audiopolicy: Defer release of output session effects
 0479d7c audiopolicy: Add notification when default effects are updated
-51aee1e stagefright: Support audio in slow motion
 
    * hardware/samsung/
 57eacca libsecril-client: Use the correct incall audio paths
@@ -222,10 +393,8 @@ cccc2b8 Merge tag 'android-6.0.1_r17' into HEAD
 abf0e28 Merge remote-tracking branch 'toybox/master' into HEAD
 
    * frameworks/av/
+51aee1e stagefright: Support audio in slow motion
 edd6ca3 Merge tag 'android-6.0.1_r17' into HEAD
-
-   * frameworks/base/
-a40014b Fix build after Themes refractor
 
    * frameworks/native/
 efd11d3 Merge tag 'android-6.0.1_r17' into HEAD
@@ -246,8 +415,6 @@ dc3aadd Fix to answer call in DSDS mode.
 
    * packages/apps/Settings/
 ca6ec9a Merge pull request #425 from beroid/cm-13.0
-57f35f7 Settings: Update RU translations
-d1423c2 Update proper strings to clock color switch
 
    * packages/apps/ThemeChooser/
 4366f66 ThemeChooser: update icon
@@ -268,87 +435,4 @@ fd28e9d Include AmbientSDK artifact
 
    * vendor/cmsdk/
 3a590c3 Allow to ignore presentation indicator of outgoing calls [1/3]
-
-====================
-     03-07-2016
-====================
-
-
-   * android/
-21c081b manifest: Fork dalvik to CM.
-8ed5008 Remove    *s that do not have any files and last commit was more than two years old.
-1b6d98d Revert "Track own Screencast"
-
-   * build/
-20dac6f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * frameworks/av/
-9fda298 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-3ba163e SystemUI: Clear map on change
-fe45f86 Frameworks: Fix hw menu key from unlocking on swipe
-c886fcc FWB : Clock Color Switch (1/2)
-2da325c Only window position changed, update window crop.
-7a51b9e Fix layout of alarm info on the expanded status bar for RTL
-0966650 frameworks_base: Intrusive InCall UI switch [1/2]
-2fffe86 Fix GlobalActions sound panel iconography.
-40ed166 Themes: Refactor themes to CMSDK [1/6]
-ac195a7 NetworkPolicyManager : Process low power mode change on background thread
-5386110 SettingsProvider: allow ambient display/doze mode to be overlayed
-0fee327 SystemUI: Fix volume panel inconsistencies
-
-   * frameworks/native/
-8f35dee Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * frameworks/opt/telephony/
-d0fd503 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/samsung/
-621e63e libril: Make ST-E Thor M7450 and Intel XMM7260 next gen modems as well
-f15d7f4 powerhal: Add set_profile support
-
-   * packages/apps/Bluetooth/
-3242283 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-
-   * packages/apps/BluetoothExt/
-e6c9ff7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
-
-   * packages/apps/Dialer/
-29511bc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-2a5b529 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Settings/
-0b26d88 Build V4.7
-0a83bd2 Settings: Clock Color Switch (2/2)
-56afc94 Automatic translation import
-57eef1f Settings: Default edge gesture service to false.
-7ad6d81 Settings: no more holo for navbar editor
-26a22d2 Better expose text color for single button panel button
-6d00b03 Themes: Expose Hard colors for storage settings
-46085b1 Use correct icon for ring volume
-46a6401 Settings: Fix "Fix SecuritySettings filtering" copy pasta
-2e207ef Settings: Fix SecuritySettings filtering.
-0874821 Settings: fix indexing for saved access point settings
-
-   * packages/providers/MediaProvider/
-ab90d41 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
-
-   * packages/services/Telecomm/
-ef81957 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * packages/services/Telephony/
-6729441 Telephony: Intrusive InCall UI switch [2/2]
-0cc3a79 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * system/core/
-434b233 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-
-   * vendor/cm/
-cab5d12 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-f657c28 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
