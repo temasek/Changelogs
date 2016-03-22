@@ -1,4 +1,62 @@
 ====================
+     03-22-2016
+====================
+
+
+   * device/samsung/qcom-common/
+89b32ec doze: Use new mechanism to include tiles into settings dashboard.
+
+   * frameworks/base/
+15135e8 NetworkManagement : Add ability to restrict app data/wifi usage
+9d5c175 SystemUI: improve battery saver tile
+49e75b0 Compile app theme in background
+d777e72 Accept underscore and tilde in web URLs.
+
+   * frameworks/native/
+ede4f7c Release resources when repeating dlopen-dlcose.
+
+   * hardware/samsung/
+cc48856 exynos4: squash opensource libUMP
+9b5063f exynos4: commonize AdvancedDisplay [1/3]
+
+   * packages/apps/Contacts/
+9791b63 Fix NPE in Contact Card
+
+   * packages/apps/Dialer/
+54abd22 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+fae80bf Fix crash in call log.
+
+   * packages/apps/Eleven/
+14ad1d7 Merge "Fix some scaling issues with non-square album art." into cm-13.0
+
+   * packages/apps/Messaging/
+fed2b36 Fix menu item highlight color.
+
+   * packages/apps/Settings/
+d5906e2 Build V5.4
+1c716bd Settings: forward decrypt required on boot flag
+154f1d9 Settings : Fix default privacy guard preference
+f95b4e5 Settings: Respect config_proximityCheckOnWakeEnabledByDefault
+54026e5 Settings : Add per app internet/data control
+aca8f56 Settings: fix BT switch enabling discoverable mode
+c1b2dc8 Move external input tile inclusion to device repo.
+28533dd Settings: Update contributors cloud DB
+6c08d2a Improve protected apps string
+28bf3cb Build V5.3
+a3adf26 Settings: Add config to apply custom shadow on header images
+
+   * packages/apps/SetupWizard/
+0410f84 SetupWizard: Fix regression on GMS account setup skip.
+d114a09 SetupWizard: Conditionally supress d2d on lack of nfc.
+
+   * packages/apps/Trebuchet/
+27f915d Fix metric reporting for remote folder
+
+   * vendor/cmsdk/
+9b6d3dc Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+b05ce12 Themes: Check theme api level in onBootPhase
+
+====================
      03-21-2016
 ====================
 
@@ -27,14 +85,6 @@ fe598c1 Automatic translation import
    * hardware/qcom/fm/
 5bbc6f0 Fix translations breakage
 
-   * libcore/
-b38b896 ThreadPoolExecutor: Relax check on core pool size.
-10136b4 Change ListOfTypes.resolveTypes to use instanceof.
-1d2068c Fix BigDecimal.equals() when scales are the same
-1ecb7b9 Fix MessageDigest.update(ByteBuffer) and .digest(byte[],...).
-57797a0 Implemented ceil and floor in StrictMath
-d54c477 Enum: Fix potential deadlocks caused by BasicLruCache usage.
-
    * packages/apps/Bluetooth/
 42ff2b3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
 
@@ -53,8 +103,6 @@ f35d670 Delete failed CallRecording file
 b0ccd6b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
 
    * packages/apps/Settings/
-04ef35d Build V5.3
-2ac1b57 Settings: Add config to apply custom shadow on header images
 d4ad777 Automatic translation import
 
    * packages/providers/TelephonyProvider/
@@ -85,11 +133,11 @@ f085fa2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
    * frameworks/av/
 8f1b627 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 
+   * frameworks/base/
+ee7d7a5 Revert "Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK"
+
    * hardware/qcom/audio-caf/msm8960/
 ef63860 policy_hal: Always call local implementation of updateCallRouting
-
-   * kernel/samsung/hlte/
-36b368b Revert "arm/dts: Schedule mmcqd on idle CPU"
 
    * packages/apps/CMFileManager/
 b53e1cc Automatic translation import
@@ -129,7 +177,6 @@ ef3e9f9 Automatic translation import
 502b2c9 Automatic translation import
 
    * frameworks/base/
-ee7d7a5 Revert "Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK"
 48fd3a4 SystemUI: attach a queue to media player notifications
 ad6d6f1 Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
 4d32f1a VolumeDialogController : Ignore inactive stream volume updates
@@ -169,20 +216,6 @@ cf1e7ae Automatic translation import
    * hardware/qcom/media-caf/msm8916/
 3fa385a Fix subdirectory inclusion on CM
 1fd88aa libc2dcolorconvert: Allow continued usage of unaligned YCbCr420P format
-
-   * kernel/samsung/hlte/
-5d9d6ea Build v1.68
-b6f484b Revert "cpuidle: Wakeup only cpus for which qos has changed."
-fd7169b Revert "cpuidle: remove unused hrtimer_peek_ahead_timers() call"
-6d70172 Revert "cpuidle: Add need_resched() check"
-4ad2cd6 Revert "Revert "sched/cpuidle: reduce IPI store. Backport upstream 3.16 scheduler updates""
-2d04aab Revert "cpuidle: Fix finding state with min power_usage"
-c3f1764 Revert "cpuidle: add checks to avoid NULL pointer dereference"
-118b2ae Revert "cpuidle: move field disable from per-driver to per-cpu"
-54b320c Revert "ACPI idle, CPU hotplug: Fix NULL pointer dereference during hotplug"
-64afadc Revert "PM / cpuidle: System resume hang fix with cpuidle"
-d454521 Revert "cpuidle: Make it clear that governors cannot be modules"
-2753e49 Revert "cpuidle: remove cpuidle_unregister_governor()"
 
    * packages/apps/AudioFX/
 d67c7f6 Automatic translation import
@@ -314,115 +347,4 @@ d23564c Automatic translation import
 afd29c6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 45f57c5 update api
 99200b9 cmsdk: fix last profile extra constant
-
-====================
-     03-17-2016
-====================
-
-
-   * art/
-2685e74 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_art into cm-13.0
-6817f4b Build dex2oat without asan instrumentation.
-1e30dc0 Remove unnecessary std::move from test_dex_file_builder
-f68e902 Remove unnecessary std::move from variant_map.h
-3c7f695 Reduce sleep duration in SuspendAllDaemonThreads
-bbb6f8e Newer kernels added SEGV_BNDERR.
-
-   * bionic/
-6684e18 forkpty: set the output fd to -1 on the slave side.
-bba516a Don't call clock_getres in sysconf.
-a519dbf Copy the entire zero-separated DNS seach domain string.
-3d89a3c Fix regerror(..., nullptr, 0).
-765383a Unify names for pages allocated for small objects
-b2b1c71 Fix <sys/sysmacros.h>.
-
-   * build/
-078a4dc qcom: Explicitly build the custom audio policy for legacy alsa
-39229b2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * device/samsung/hlte-common/
-9ac7c5c hlte-common: Remove debugfs mounting
-85341b5 hlte-common: add missing thermal blob
-
-   * frameworks/av/
-8c2e9d8 audio: Remove LEGACY_ALSA_AUDIO ifdefs from AudioPolicyManager.cpp
-
-   * frameworks/base/
-d94ea23 Bring scrolling back to a sane level
-937e92e Revert "SystemUI: Allow clearing recents tasks within recents button"
-7805d32 'Do not disturb' add 15 min Steps and up to 14 Hours
-c94d7ff SysUI: Reuse custom controllers and managers
-bfd8cc8 fw: Move externalCMServices declaration to external res package.
-5254187 Prompt permission dialog for status bar weather
-a2f80d7 Move keyDisabled and gamma to service
-bfd84c5 SystemUI: Always unset seperate roaming indicator.
-872c056 Should use scan flag, or it will not scan device.
-42fd23e SystemUI: Change demo mode time of day.
-093abad GlobalActions: Set the initial status of airplane mode toggle
-afc2303 fix metrics density comparisons
-
-   * frameworks/opt/telephony/
-841f11f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-f3bdf18 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/qcom/audio-caf/msm8952/
-d9ae022 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.12' into cm-13.0-caf-8952
-
-   * hardware/qcom/audio-caf/msm8960/
-27b310b alsa_sound: Enable QCOM_PROXY_DEVICE_ENABLED by default
-
-   * hardware/qcom/audio-caf/msm8974/
-8e01786 Revert "Force voice path when recording audio during call"
-
-   * hardware/qcom/display-caf/msm8916/
-50314ad Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.10' into cm-13.0-caf-8916
-
-   * hardware/qcom/display-caf/msm8952/
-1605e82 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.12' into cm-13.0-caf-8952
-
-   * hardware/qcom/media-caf/msm8916/
-d4db655 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.10' into cm-13.0-caf-8916
-
-   * hardware/qcom/media-caf/msm8952/
-254d506 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.12' into cm-13.0-caf-8952
-
-   * libcore/
-65bffff Fix multi-thread problem in BigInteger hashCode method
-
-   * packages/apps/Dialer/
-c58fe14 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-749029a Dialer: Fix build without jack
-
-   * packages/apps/OmniSwitch/
-f31ced2 OmniSwitch: basic multi window support
-c7efbcd Automatic translation import
-
-   * packages/apps/Settings/
-3def86e Themes: Expose Hard coded icon tint in power summary settings
-dead39a DisplayColor: clamp maximum value to 1.0f
-0d3f666 Build V5.1
-f35be9a Settings: ask telephony for network selection
-ef9c835 Settings : Add multiuser support for CMHardware
-
-   * packages/apps/SetupWizard/
-0d83f7c SetupWizard: Fixup backup/restore for Marshmallow.
-
-   * packages/services/Telecomm/
-9328df6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * packages/services/Telephony/
-d224771 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * system/core/
-2275e76 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-9c04912 Merge pull request #4 from neobuddy89/cm-13.0
-b921420 healthd: Define BCL and BMS to avoid logspam
-
-   * vendor/cm/
-d616f78 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-b7c8dec cm: sepolicy: allow platform apps to crop user images
-3080d1e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-55dae47 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
