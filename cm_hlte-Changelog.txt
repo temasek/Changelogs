@@ -1,7 +1,155 @@
 ====================
+     03-25-2016
+====================
+
+
+   * frameworks/av/
+786d9f0 Use uint32_t for NAL offset and size
+
+   * frameworks/base/
+ae2009a SystemUI: Fix missing semi colon.
+
+   * hardware/qcom/media-caf/msm8974/
+1f27f2c Revert "mm-video-v4l2: vidc: venc: Update color conversion decision"
+b2df30f mm-video-v4l2: venc: Accept Venus color format in opaque mode
+d44cb37 mm-video-v4l2: vidc: venc: Update color conversion decision
+b564be7 mm-video-v4l2: vidc: venc: make color conversion independent of filledlen
+838db82 mm-video-vidc: change buffer index logic in EBD
+
+   * packages/apps/DeskClock/
+4b9532d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+
+   * packages/apps/Settings/
+77b89b3 Build V5.5
+
+   * packages/apps/Trebuchet/
+e812052 Trebuchet: Fix NPE while binding unavailable items
+
+   * packages/services/Telecomm/
+9e5825d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+6a56db4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/core/
+2ec8469 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+26bc3e9 sched_policy: split add_tid_to_cgroup
+bc667ac sched_policy: Split cpuset/cgroup init
+599d5b0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+266e3dd libcutils: Add process name to logs
+
+   * vendor/cm/
+1d8421b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+78a12ed cm: Introduce profiles feature xml.
+14768c4 cm: Introduce statusbar feature xml.
+
+   * vendor/cmsdk/
+869cb09 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+21a5674 cmsdk: Mandate profile feature xml's for service implementation.
+cdf85ad cmsdk: Mandate cm sb feature xml's for service implementation.
+1bf0cf2 cmsdk: fix javadoc for performance profiles
+
+====================
+     03-24-2016
+====================
+
+
+   * frameworks/base/
+a23c4f8 JobScheduler: handle connectivity action in bg looper
+5632c98 Correctly init code cache path for RS
+60c4b3a Enable shader cache for applications that shared UID with multiple packages too
+a5893cc Make BluetoothManagerCallback oneway to prevent waiting on response
+3e5c53a SystemUi: Show correct iconography for default left affordance settings.
+49b53a0 camera2 legacy: Allow HDR processing to take a while
+
+   * hardware/qcom/audio-caf/msm8996/
+28d166a audio: Extend platform parser to allow device name aliasing
+
+   * packages/apps/DeskClock/
+b30c145 Revert "Import translations. DO NOT MERGE"
+
+   * packages/services/Telecomm/
+02b1cb2 Telecomm: Don't get default phones outside of phone process.
+
+   * packages/services/Telephony/
+9e61b99 multi-sim: use getFirstPhoneForEmergencyCall()
+
+====================
+     03-23-2016
+====================
+
+
+   * bionic/
+9db15a4 Fix PTHREAD_THREADS_MAX.
+
+   * device/samsung/hlte-common/
+30f3711 hlte-common: rootdir/sepolicy cleanup
+
+   * frameworks/av/
+c5400a2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+27ee071 audioflinger: clear mMixerBuffer if frame is not ready
+536fd16 Avoid parsing CC SEI payload beyond buffer end
+5a4c1f8 CameraService: Fix cameraId type of onDeviceStatusChanged
+c4795f0 MPEG4Extractor: cast media time to int64_t in order to avoid check on unsigned integer overflow.
+4b17bd1 Overflow fixes for amrwbenc
+d7a4d6d libcameraservice: Allow media server to disconnect camera even unlocked
+3df4fac Fix benign integer overflow conditions for VSYNC add and removal.
+37c5d30 Fix harmless unsigned overflow in recoverPTS
+b821ad1 Fix integer overflow in time conversion
+4e35e8f Prevent divide by zero in WAVExtractor
+92742eb OMXCodec: fix potential OOB read in parseHEVCCodecSpecificData
+985e33c Prevent integer underflows in ID3::Iterator
+429372d Stagefright: Remove unused variables and files
+c727e17 h264dec: Use intptr_t when a pointer is treated as an integer
+c27fc35 MPEG4Extractor: still more NULL dereference fixes
+d954486 Use errno correctly.
+f97015a Fix 64-bit comparison
+811391b Revert "Fixed comparison on 64 bit system"
+
+   * frameworks/base/
+d27d894 Themes: Fail theme install if common resources fail
+81f3b7c SystemUI: Hide system/notification when config changes on kg.
+fdd097f [1/4] Pass call extras to addcall
+
+   * hardware/qcom/audio-caf/msm8916/
+df326e3 audio: msm8916: Squashed audio amp commits
+
+   * hardware/qcom/fm/
+b1bfaea Reset FM audio settings on off.
+
+   * hardware/qcom/media-caf/msm8974/
+f542f45 mm-video-vidc: Handle ETB with EOS for NV12 ENCODEABLE format
+
+   * packages/apps/Dialer/
+7253def Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+4271c5b update addCall to account for extra paramter
+
+   * packages/apps/Messaging/
+252ac72 Change lookup request's origin to INCOMING_SMS
+
+   * packages/apps/Settings/
+a8006e2 Improve data usage strings
+
+   * packages/providers/ContactsProvider/
+99d80df Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+e5d4dc7 update addCall to account for extra paramter
+
+   * packages/services/Telecomm/
+19cbb5b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+971508d Telecomm: Verify foreGroundCallId is numeric when looking up id for ringtone.
+934d29b [2/4] Pass call extras to addcall
+
+   * packages/services/Telephony/
+440ba68 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+81b5682 PhoneToggler: fix setting sub for single sim
+
+====================
      03-22-2016
 ====================
 
+
+   * bionic/
+67d8481 Revert "Revert "Reenable support for non-PIE executables""
 
    * device/samsung/qcom-common/
 89b32ec doze: Use new mechanism to include tiles into settings dashboard.
@@ -11,9 +159,31 @@
 9d5c175 SystemUI: improve battery saver tile
 49e75b0 Compile app theme in background
 d777e72 Accept underscore and tilde in web URLs.
+c2a170a Remove duplicate translation strings
 
    * frameworks/native/
 ede4f7c Release resources when repeating dlopen-dlcose.
+
+   * hardware/qcom/fm/
+aae515a Add two new callbacks for FM start/stop.
+7ea733e Restore default wired headset on FM power off
+525a5c6 Update mute API usage to fix pops and consistency
+4df923a Need to update UI in onResume though fmservice not bound
+1fb70c3 Do not disable FM receiver on Music Service commands
+9106d4e Disable/enable radio on factory reset
+ef247c4 Request for audio focus on activity resume
+8f2d9e0 Check for audio focus before enabling audio path
+e48b2e6 Stop recording only if its storage is unmounted
+daaa11b Change value of mSpeakerPhoneOn when BT becomes on or off
+6706ef9 Reset notch filter only if it is set.
+10d0ec6 FM: Fix ANR due to incorrect error handling in stopRecording
+97cca41 FM: stop AudioTrack before switching output device
+d7dd054 Change FM off button to release media and audio resources.
+a8ad0bd fmapp2: de-select A2DP audio route on A2DP disconnection.
+63e7e75 fmapp2: Allow switching between wired and Bluetooth headset
+40a5d4b FM: Regional requirement for FM
+bd28479 Revert "FMRecorder : Save to a private temporary file while recording"
+28adb84 FM: update fm app to use device loopback
 
    * hardware/samsung/
 cc48856 exynos4: squash opensource libUMP
@@ -21,6 +191,11 @@ cc48856 exynos4: squash opensource libUMP
 
    * packages/apps/Contacts/
 9791b63 Fix NPE in Contact Card
+
+   * packages/apps/ContactsCommon/
+765b782 LookupProviderImpl : add synchronization around ProviderInfo
+a8419cc Add RequestOrigin to LookupRequest
+c5ab573 Extend LookupProvider api to add an unique identifer
 
    * packages/apps/Dialer/
 54abd22 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
@@ -75,7 +250,6 @@ c8f3f62 Upgrade to SQLite 3.11.1
 047c3c3 Avoid parsing CC SEI payload beyond buffer end
 
    * frameworks/base/
-c2a170a Remove duplicate translation strings
 671688f [Framework] Add config to apply custom shadow on header images
 fd66d77 LagFix: Don't set any transparency if it's set to default value
 ae6778f Fix task header alignment and color
@@ -116,235 +290,4 @@ f085fa2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 
    * vendor/cmsdk/
 1fc150e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     03-20-2016
-====================
-
-
-====================
-     03-19-2016
-====================
-
-
-   * build/
-5db0c15 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * frameworks/av/
-8f1b627 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-ee7d7a5 Revert "Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK"
-
-   * hardware/qcom/audio-caf/msm8960/
-ef63860 policy_hal: Always call local implementation of updateCallRouting
-
-   * packages/apps/CMFileManager/
-b53e1cc Automatic translation import
-
-   * packages/apps/Contacts/
-a33722b Automatic translation import
-
-   * packages/apps/ContactsCommon/
-ef3e9f9 Automatic translation import
-2e3d2e9 Enable support for groups in External contacts accounts
-
-   * packages/apps/FMRadio/
-96194b6 FMRadio: Fix station switch from list for certain locales
-
-   * packages/apps/InCallUI/
-66e21a2 Automatic translation import
-
-   * packages/apps/SetupWizard/
-7de4615 Automatic translation import
-6baab03 SetupWizard: Handle both restore scenarios.
-
-   * packages/providers/DownloadProvider/
-150e9a2 Automatic translation import
-
-   * packages/services/Telephony/
-48720e7 Automatic translation import
-
-   * vendor/cmsdk/
-948e399 Automatic translation import
-
-====================
-     03-18-2016
-====================
-
-
-   * device/samsung/qcom-common/
-502b2c9 Automatic translation import
-
-   * frameworks/base/
-48fd3a4 SystemUI: attach a queue to media player notifications
-ad6d6f1 Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
-4d32f1a VolumeDialogController : Ignore inactive stream volume updates
-1c5bb9f SystemUI: more consistent visualizer logic
-a32655c SystemUI: fix crypt keeper race condition
-5356d84 Cast Tile: only scan while in detail view
-738215f Keyguard: Don't show keyguard if CryptKeeper enabled
-e5c5ec6 Show icons of only background apps in Toasts
-f6fbf41 Revert "NullPointerException when starting VoiceInteractionManagerService"
-afb76dd Revert "onAccountsUpdated shouldn't be called back after listener unregistered"
-108cf07 Revert "When the device boots up, netd works more than required"
-b83d447 Revert "Fix NPE in BaseStatusbar in onListenerConnected"
-db3c8d1 Revert "Fix layout of alarm info on the expanded status bar for RTL"
-f1713fe Revert "Keyguard: Forward port lockscreen quick unlock (1/2)"
-8b39290 Revert "Disable PIN entry after successful quick unlock"
-5359e71 Revert "MetricsConstants: Restore DONT_TRACK label for custom tiles"
-32497a2 Custom QS: Switch to CMMetricsLogger
-
-   * frameworks/opt/net/wifi/
-d88246f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-8afb31b WifiScanningService: Fix invalid offset error
-
-   * frameworks/support/
-9ac291b v4: Assign mDrawable before calling setBounds
-
-   * hardware/libhardware_legacy/
-1f27ca8 libhardware_legacy: Add MSM specific flags, devices and channels.
-
-   * hardware/qcom/audio-caf/msm8960/
-fb3b822 policy_hal: Add custom audio policy
-c14bc2e alsa_sound: Remove deprecated DEVICE_OUT_FM_TX
-5b64515 alsa_sound: Remove deprecated audio policy sources
-
-   * hardware/qcom/fm/
-cf1e7ae Automatic translation import
-
-   * hardware/qcom/media-caf/msm8916/
-3fa385a Fix subdirectory inclusion on CM
-1fd88aa libc2dcolorconvert: Allow continued usage of unaligned YCbCr420P format
-
-   * packages/apps/AudioFX/
-d67c7f6 Automatic translation import
-
-   * packages/apps/Bluetooth/
-3f68bb7 Automatic translation import
-
-   * packages/apps/BluetoothExt/
-6a14c96 Automatic translation import
-
-   * packages/apps/Browser/
-e113a32 Automatic translation import
-
-   * packages/apps/CMBugReport/
-49c80e7 Automatic translation import
-
-   * packages/apps/CMWallpapers/
-2a97643 Automatic translation import
-
-   * packages/apps/Calendar/
-48b2b67 Automatic translation import
-
-   * packages/apps/Camera2/
-8c21d74 Automatic translation import
-
-   * packages/apps/Contacts/
-054ddd9 QuickContact Expand/Collapse Button removal fixed
-
-   * packages/apps/DeskClock/
-d56a07b Automatic translation import
-
-   * packages/apps/Dialer/
-8347881 Automatic translation import
-
-   * packages/apps/Eleven/
-dd15524 Automatic translation import
-
-   * packages/apps/Email/
-5159955 Automatic translation import
-
-   * packages/apps/Gallery2/
-0aaff57 Automatic translation import
-
-   * packages/apps/LockClock/
-59d2529 Automatic translation import
-
-   * packages/apps/Messaging/
-ad4d0b5 Automatic translation import
-
-   * packages/apps/PackageInstaller/
-470cf41 Automatic translation import
-
-   * packages/apps/PhoneCommon/
-e4eb6ed Automatic translation import
-
-   * packages/apps/Profiles/
-dda77c6 Automatic translation import
-
-   * packages/apps/Screencast/
-d5b1750 Automatic translation import
-
-   * packages/apps/Settings/
-b6b1531 Build V5.2
-28f32d6 Re-expose hardcoded white text colors
-592eace Revert "Keyguard: Forward port lockscreen quick unlock (2/2)"
-
-   * packages/apps/SetupWizard/
-57080c3 SetupWizard: Restore last page on setup wizard death.
-7448279 SetupWizard: Adapt to new GMS tap & go expectations.
-
-   * packages/apps/Snap/
-5dcd941 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-c41ee5c Automatic translation import
-
-   * packages/apps/Stk/
-86ba1a7 Automatic translation import
-62cdb10 Do not display toast if alpha text is null.
-
-   * packages/apps/Terminal/
-938df93 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-945d181 Automatic translation import
-
-   * packages/apps/Trebuchet/
-153b4ce Automatic translation import
-
-   * packages/apps/TvSettings/
-ff5ac73 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-a4c95c3 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-d2e61d4 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-9fa9b69 Automatic translation import
-
-   * packages/screensavers/PhotoTable/
-f2fadbd Automatic translation import
-
-   * packages/services/Mms/
-f26269a Automatic translation import
-
-   * packages/services/Telecomm/
-1db1b22 Automatic translation import
-
-   * packages/services/Telephony/
-9e759e9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-2c065d3 Fix MSIM voicemail notification icons.
-e0159c7 MobileNetworkSettings: Don't crash because of missing resource.
-
-   * packages/wallpapers/Galaxy4/
-91e95eb Automatic translation import
-
-   * packages/wallpapers/PhaseBeam/
-d23564c Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-83742d3 Automatic translation import
-
-   * prebuilts/cmsdk/
-38b2af7 update system api
-
-   * vendor/cmsdk/
-afd29c6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-45f57c5 update api
-99200b9 cmsdk: fix last profile extra constant
 
