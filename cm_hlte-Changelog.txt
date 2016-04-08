@@ -1,4 +1,64 @@
 ====================
+     04-08-2016
+====================
+
+
+   * build/
+7bff3fa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+375268c build: add cmts config to global build
+
+   * frameworks/base/
+f6f711c QS: update AppSidebar Tile to use CM metrics
+69fd3b3 Fix for reboot due to Volume State not updated in callback
+bcd62a4 NotificationPanelView: update onTouchEvent
+8b92d65 Lockscreen target fixes
+7aa1b90 Fix typo in RankingHelper.
+1d95e68 Frameworks_base: add dt2w on doze [2/2]
+809732a Force Heads up in all applications [1/2]
+1e8bb32 Revert "Revert "App sidebar: Fix Left/Right position.""
+cc15496 Revert "Revert "App sidebar: notify if app is not installed""
+0cb3814 Revert "Revert "Fix force close for App Sidebar.""
+b8f8e60 Revert "Revert "App sidebar (1/2)""
+6705db9 Revert "Revert "QS: Add App SideBar Tile [1/2]""
+347f67e Merge pull request #111 from entony80/patch-3
+5cdc53c Merge pull request #112 from ZdrowyGosciu/keyguard-mA
+706e798 SystemUI: Keyguard: Divide mA on plugged USB
+e50c672 Update Italian translation
+
+   * frameworks/opt/telephony/
+28549b9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+082ca0b telephony: Improve compatibility for older DSDS stacks
+
+   * packages/apps/InCallUI/
+435eac4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+d69ce6c Port call transfer feature from DialerNext to AOSP Dialer
+
+   * packages/apps/Settings/
+eb43750 Build V6.2
+dc2b461 Fix NPE when rotating "Saved networks" screen
+dccd2cf Add explanation for customizing apps
+25ecdc7 Settings: use ActivityManager method for requesting bug report
+d71f855 Settings: Disable and hide refresh button on power usage detail.
+df4c4c2 Settings: Use cm build properties correctly.
+a56c6c1 Automatic translation import
+7d2c289 Settings: add dt2w on doze [1/2]
+d6c1204 Force Heads up in all applications [2/2]
+08bb4f0 Revert "Revert "App sidebar (2/2)""
+8e55284 Merge pull request #433 from beroid/cm-13.0
+fec592a Settings: Update RU translations
+
+   * packages/apps/Trebuchet/
+b607527 Trebuchet: add gello to hotseat
+
+   * prebuilts/cmsdk/
+6aececd Update weather api
+
+   * vendor/cmsdk/
+85ffe06 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+7217a53 Revert "Revert "cmsdk: Add App SideBar Tile [2/2]""
+343245f Add API to cancel an active weather request
+
+====================
      04-07-2016
 ====================
 
@@ -19,12 +79,6 @@ b200d92 SystemUI: Fix Statusbar Clock Color not sticking
 4e2a574 Update Italian translation
 2704be8 Fix clock color inverted statusbar mod
 8b70eae Revert "FWB : Clock Color Switch (1/2)"
-
-   * kernel/samsung/hlte/
-483595b Revert "Revert "cpufreq: cpu-boost: Return early if no input boost duration is set""
-11a9090 Revert "Revert "cpufreq: cpu-boost: Use one work to remove input boost for all CPUs""
-e4ee490 Revert "Revert "cpufreq: cpu-boost: Support separate input_boost_freq for different CPUs""
-c7cb106 Revert "Revert "mm/slub: don't wait for high-order page allocation""
 
    * packages/apps/Bluetooth/
 aaa4347 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
@@ -88,9 +142,6 @@ d278355 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 18c6b8e Merge pull request #15 from entony80/patch-1
 e09c9f6 Update Italian translation
 719ab7c Automatic translation import
-
-   * prebuilts/cmsdk/
-18d1a09 prebuilts/cmsdk: Update released api text.
 
    * vendor/cm/
 200bc8e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
@@ -510,38 +561,4 @@ a844273 [2/2] Battery light: 100% charged level
 
    * packages/services/LiveLockScreenService/
 49c2d16 Only observe current user's settings changes
-
-====================
-     04-03-2016
-====================
-
-
-   * android/
-50e21fa Revert "LLS: Add live lock screen service [4/4]"
-
-   * frameworks/av/
-e5c901e audio: use offload standby delay for direct pcm
-af76b10 audio: allow standby for direct track
-
-   * frameworks/base/
-76fd290 Revert "optimize wallpaper load,avoid show black wallpaper."
-
-   * packages/apps/Messaging/
-8831d2c messaging: bring back accent color
-
-   * packages/apps/Settings/
-021498a Fix: don't use runSuCommand when it ain't needed, for selinux changes
-29434dd Avoid running setenforce if it ain't needed
-c74a165 Settings: Fix cannot search paired BT device issue.
-1d859ee Fix ApplicationsState.Session memory leak in settings app
-1c7e51e Build V5.8
-6777c36 Fix IT translations
-3d40f80 Merge pull request #426 from entony80/patch-1
-
-   * packages/apps/Snap/
-222c665 Properly respect navigation bar size when laying out menus.
-ba9f88b snap: rearrange top view icons
-
-   * packages/services/Telephony/
-5aac059 Revert "Phone: Sprint MWI Quirk: Phantom message wait indicator workaround"
 
