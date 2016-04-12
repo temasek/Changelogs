@@ -1,4 +1,93 @@
 ====================
+     04-12-2016
+====================
+
+
+   * build/
+b968302 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+
+   * device/samsung/hlte-common/
+4fa3b40 Revert "power: remove qcom powerhal"
+
+   * external/jemalloc/
+2c18364 Merge branch 'master' of https://android.googlesource.com/platform/external/jemalloc into android-6.0
+
+   * external/sqlite/
+98fc93a Upgrade to SQLite 3.12.1
+
+   * frameworks/av/
+9e472d2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+6635a58 omx: softcodecs: Support HAL_PIXEL_FORMAT_RGBX_8888
+baf93ea CameraClient: MTK Support
+
+   * frameworks/base/
+41992fe SystemUI: fix double tab launching custom lockscreen icon
+f943628 Lockscreen : Fix dead-zone in bottom area
+ee929a2 Incorrect evictor key in TokenCache
+485576f SysUI: reset mCanDismissKeyguard in setBarState
+
+   * packages/apps/AudioFX/
+985c5b0 AudioFX: Fix FC when opening the app
+853e7fb Merge "Rename package back to AudioFX" into cm-13.0
+
+   * packages/apps/ContactsCommon/
+7ff2d1e Add 'ims-common' & 'info_lookup' build dependency
+9590c56 Remove scaling option for the Front drawable in CheckableFlipDrawable
+
+   * packages/apps/Dialer/
+521a0a6 Don't FC on T9 search input selection of default setting.
+
+   * packages/apps/Eleven/
+5b70660 Eleven: Use appropriate String value comparison
+cf215ef Eleven: Remove unnecessary local variables
+
+   * packages/apps/PhoneCommon/
+63c90d0 Only fire visibility change callback if visibility actually changed.
+5c9ce9b Remove unneeded source line
+
+   * packages/apps/Settings/
+21134e9 Build V6.4
+bde97fb Fix the improper string and increment database version to kick off a new indexing job.
+547c088 Settings: fix default sim radio selections
+c733020 Allow adding a shortcut icon for carrier selection
+
+   * packages/apps/Snap/
+a78d012 SnapdragonCamera: Fix crash issue when changing TNR setting
+
+   * packages/providers/MediaProvider/
+3be5df1 Merge pull request #3 from entony80/patch-3
+2c6405c Update italian translation
+fc8f34d Merge pull request #2 from entony80/patch-2
+0d04100 Update italian translation
+
+   * packages/services/Telephony/
+fad523a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+ec9e706 Revert "Revert "Phone: Sprint MWI Quirk: Phantom message wait indicator workaround""
+1272934 Telephony: Fix NPEs
+d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+5515808 Don't impose limitations on network mode selection for non-multi RAT phones.
+
+   * system/core/
+5db81cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+0373c8d Revert "Revert "init: Temporarily increase coldboot timeout to 5s""
+
+   * system/extras/
+0c8a8e1 Revert "f2fs_utils: Update for f2fs-tools 1.6.1"
+
+====================
+     04-11-2016
+====================
+
+
+   * frameworks/base/
+1c21ca7 Merge pull request #114 from Mai19930513/cm-13.0
+8de8f3d update zh-rCN translations
+
+   * packages/apps/Settings/
+373bd9d Merge pull request #437 from entony80/patch-5
+50dc4f3 Update italian translation
+
+====================
      04-10-2016
 ====================
 
@@ -6,18 +95,9 @@
    * frameworks/base/
 c96ff3f Revert "Fix show charging speed on Keyguard"
 527f87f6 Revert "SystemUI: Keyguard: Divide mA on plugged USB"
-5806245 Fix MTP_TYPE_UINT128 data conversion issue
-a631310 add googles updated backup transfer service
-125a036 Revert "backup: backup manager is using the wrong transport"
 
    * packages/apps/Settings/
 eb9abb7 Build V6.3
-
-   * vendor/cm/
-cb622f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-e21c8e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
 ====================
      04-09-2016
@@ -26,11 +106,15 @@ e21c8e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
 
    * build/
 7bff3fa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+e7ac98d build: Add MTK support
 
    * frameworks/av/
 25edcd2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 
    * frameworks/base/
+5806245 Fix MTP_TYPE_UINT128 data conversion issue
+a631310 add googles updated backup transfer service
+125a036 Revert "backup: backup manager is using the wrong transport"
 b0f87b9 media: Add flags, channelMask, and UID to audio session callbacks
 2976236 SysUI: Add event logs for live lock screen interactions
 a8eb613 Merge pull request #113 from beroid/cm-13.0
@@ -61,6 +145,7 @@ e50c672 Update Italian translation
 dec5d09 Merge branch 'LA.BF.1.1.3_rb1.12' of git://codeaurora.org/platform/hardware/qcom/bt into cm-13.0
 
    * packages/apps/AudioFX/
+1589b3f Rename package back to AudioFX
 846d5ed audiofx: Add support for line-out path
 e4e3997 audiofx: Don't link with android-visualizer
 c227786 audiofx-oss: Use new callback API
@@ -305,10 +390,16 @@ b3bdb84 Switch to ambientsdk
 2e08845 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
 881f723 Merge branch 'LA.BF.1.1.3_rb1.12' of git://codeaurora.org/platform/system/bt into cm-13.0
 
+   * system/core/
+48506ab fs_mgr: Add an optional libfs_mgr shared library
+02ee373 liblog: Add xlog symbols on MTK hardware
+
    * vendor/cm/
+cb622f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 5c50f84 Update ambientsdk version 1.5.2
 
    * vendor/cmsdk/
+e21c8e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 34bf486 Fix nomenclature for RequestInfo types [1/2]
 baaf4a1 Refactor WeatherInfo class
 06d5c89 Add state member to WeatherLocation class
@@ -444,343 +535,4 @@ e09c9f6 Update Italian translation
 
    * vendor/cmsdk/
 698a085 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     04-07-2016
-====================
-
-
-   * frameworks/base/
-4e2a574 Update Italian translation
-2704be8 Fix clock color inverted statusbar mod
-8b70eae Revert "FWB : Clock Color Switch (1/2)"
-9593c4e Revert "Frameworks/base: Second Clock (1/2)"
-ddad24e Revert "Fix clock seconds display with am/pm"
-94c630c Heads Up Snooze  2/2
-
-   * packages/apps/CertInstaller/
-46a805c Automatic translation import
-
-   * packages/apps/DeskClock/
-b315295 DeskClock : Move default action for flip and shake to overlay
-
-   * packages/apps/Messaging/
-446181c Automatic translation import
-f06df53 Play an audible notification on receiving a class zero message. Changes ported from http://review.cyanogenmod.org/#/c/125457/
-b46d807 added enabledNotifyWapMMSC flag to mms_config.xml
-56aafc2 Added new feature SMS Validity Period
-
-   * packages/apps/OmniSwitch/
-6a5c438 Update Italian translation
-
-   * packages/apps/Settings/
-30a2b6b Fix italian translation
-1ccec7b Revert "Settings: Clock Color Switch (2/2)"
-e5de9c4 Revert "Settings: Second Clock (2/2)"
-d42fb18 Merge pull request #431 from beroid/cm-13.0
-985f3d1 Settings: Update RU translations
-8e9f0dc Heads Up Snooze 1/2
-746c161 Changelog: prettify Add some color and zest.
-
-   * packages/apps/UnifiedEmail/
-56f6eb2 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-504b247 Automatic translation import
-
-   * packages/services/Telecomm/
-6b09a50 Automatic translation import
-
-   * packages/services/Telephony/
-719ab7c Automatic translation import
-
-   * vendor/cmsdk/
-2eddb5f Reset timer when a new weather service provider is selected
-d8c2556 cmsdk: Actually return the system property in Build.
-
-====================
-     04-06-2016
-====================
-
-
-   * android/
-78c8ad6 default: Moving AOSP revision from r22 to r24
-e503a31 cm: Fork a few    *s to bring in JDK8 fixes
-
-   * bootable/recovery/
-50ff158 recovery: Add wipe system partition option
-d6e1fbb Merge tag 'android-6.0.1_r24' into HEAD
-
-   * build/
-ced7bc5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-f994a23 qcom: Allow usage of default QC HAL paths
-85fe638 Preventing default locale from being overridden because of buildinfo.sh
-0e4ff26 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * device/samsung/qcom-common/
-fc0b187 Automatic translation import
-
-   * external/bouncycastle/
-b757c43 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * external/dhcpcd/
-32d46ba Merge tag 'android-6.0.1_r24' into HEAD
-
-   * external/libavc/
-f8aa842 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * external/skia/
-e57e323 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * external/stagefright-plugins/
-9948eb3 stagefright-plugin: Allow playback video with negative timestamp
-a6cec7d Revert "stagefright-plugins: Fix timestamp calculation"
-
-   * frameworks/av/
-50260e7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-e13b58b audio: Send effect session notifications after startOutput success
-1ea1107 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * frameworks/base/
-2ca3f47 Lockscreen : Fix bottom area visibility
-4298adc Merge tag 'android-6.0.1_r24' into HEAD
-7c102a4 SystemUI: show visualizer in shade-locked view
-ed5c36d Shorten first boot time by filtering dexopted apps by LRU.
-48c057d Revert "SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader"
-adb8f83 Revert "Animate backlight quickly when display state request to change or power mode changed"
-
-   * frameworks/minikin/
-c62368f Merge tag 'android-6.0.1_r24' into HEAD
-
-   * frameworks/native/
-94ce891 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-31d9ccc Merge tag 'android-6.0.1_r24' into HEAD
-
-   * frameworks/opt/net/ims/
-3e691ae Volte: add volte feature system property and api's.
-
-   * frameworks/opt/net/wifi/
-5100d55 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-182efea Merge tag 'android-6.0.1_r24' into HEAD
-b3d44b3 EAP: Make the state-machine MSIM-aware
-
-   * frameworks/opt/telephony/
-5a5c1fa Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-75cc911 Volte: set volte feature enable in ImsManager when Volte service is updated
-bb7de1a telephony: Only set prompt enabled if available subscriptions > 1.
-
-   * hardware/qcom/audio-caf/msm8974/
-624f14f hal: allow compress voip on raw output streams
-eba00b7 hal: APQ8084 uses AUDIO_PARAMETER_KEY_BT_SCO_WB for bluetooth wideband
-
-   * hardware/qcom/audio-caf/msm8996/
-6e235c3 post proc : volume listener : fix effect release crash
-
-   * hardware/qcom/fm/
-2cf28de Automatic translation import
-
-   * hardware/samsung/
-5905f06 Automatic translation import
-
-   * libcore/
-40726fb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_libcore into cm-13.0
-67f458c Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/apps/BasicSmsReceiver/
-5bd4af8 Automatic translation import
-
-   * packages/apps/Bluetooth/
-5958468 Automatic translation import
-
-   * packages/apps/BluetoothExt/
-dd6edd3 Automatic translation import
-
-   * packages/apps/Browser/
-f14d057 Automatic translation import
-
-   * packages/apps/CMBugReport/
-ed70cb8 Automatic translation import
-
-   * packages/apps/CMFileManager/
-7099374 Automatic translation import
-
-   * packages/apps/Calendar/
-c366862 Automatic translation import
-
-   * packages/apps/Camera2/
-cd8e14f Automatic translation import
-
-   * packages/apps/CertInstaller/
-0a00348 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/apps/Contacts/
-1e2ad01 Automatic translation import
-
-   * packages/apps/DeskClock/
-28a89cd Automatic translation import
-
-   * packages/apps/Dialer/
-a245d57 Automatic translation import
-
-   * packages/apps/Eleven/
-33f2164 Automatic translation import
-
-   * packages/apps/Email/
-f1e5876 Automatic translation import
-
-   * packages/apps/ExactCalculator/
-ab32d57 Automatic translation import
-
-   * packages/apps/Exchange/
-0ad3058 Automatic translation import
-
-   * packages/apps/FMRadio/
-010e4d8 Automatic translation import
-cfebddb Fix incomplete app termination
-
-   * packages/apps/Gallery2/
-fbd7d43 Automatic translation import
-
-   * packages/apps/HTMLViewer/
-d57f92b Automatic translation import
-
-   * packages/apps/InCallUI/
-9041333 Automatic translation import
-
-   * packages/apps/KeyChain/
-4cd86c4 Automatic translation import
-
-   * packages/apps/LockClock/
-ff6a3f0 Automatic translation import
-
-   * packages/apps/ManagedProvisioning/
-af97d44 Automatic translation import
-
-   * packages/apps/Nfc/
-307de80 Automatic translation import
-
-   * packages/apps/PackageInstaller/
-b8f97a6 Automatic translation import
-
-   * packages/apps/PhoneCommon/
-bdac5aa Automatic translation import
-
-   * packages/apps/Profiles/
-7f9e053 Automatic translation import
-
-   * packages/apps/Settings/
-328556a Build V6.0 - Android 6.0.1_r24
-a34830e Merge pull request #430 from entony80/patch-2
-326cd9d Update Italian translation
-03e948a Revert "Revert "Max Lockscreen Notification count: Fix incorrect switch :P""
-9d3eaac DevelopmentSettings: Synchronize USB connection data state
-f163eaf Settings: Use correct LOW_POWER_MODE_TRIGGER default
-ad916e1 Settings: fix profiles nw selection with 1 sim in MSIM DUT
-
-   * packages/apps/SetupWizard/
-ac93a67 Automatic translation import
-
-   * packages/apps/Snap/
-b7fd125 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-bd001c3 Automatic translation import
-
-   * packages/apps/Stk/
-d54b751 Automatic translation import
-
-   * packages/apps/Tag/
-803ff4d Automatic translation import
-
-   * packages/apps/Terminal/
-994aade Automatic translation import
-
-   * packages/apps/ThemeChooser/
-90d1914 Automatic translation import
-
-   * packages/apps/Trebuchet/
-9c0781a Automatic translation import
-
-   * packages/apps/TvSettings/
-5224612 Automatic translation import
-
-   * packages/apps/UnifiedEmail/
-15f55c2 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/inputmethods/LatinIME/
-2eb45ea Automatic translation import
-
-   * packages/providers/BookmarkProvider/
-d28f43d Automatic translation import
-
-   * packages/providers/CalendarProvider/
-b582f8f Automatic translation import
-
-   * packages/providers/CallLogProvider/
-06ae943 Automatic translation import
-
-   * packages/providers/ContactsProvider/
-edec4c1 Automatic translation import
-
-   * packages/providers/DownloadProvider/
-4414650 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/providers/MediaProvider/
-8b6ddac Automatic translation import
-
-   * packages/providers/TelephonyProvider/
-a83ba96 Automatic translation import
-
-   * packages/providers/ThemesProvider/
-89e9807 Automatic translation import
-
-   * packages/providers/UserDictionaryProvider/
-59f774b Automatic translation import
-
-   * packages/providers/WeatherProvider/
-64fda03 Automatic translation import
-
-   * packages/screensavers/Basic/
-64dd84e Automatic translation import
-
-   * packages/screensavers/PhotoTable/
-250e7ae Automatic translation import
-
-   * packages/services/LiveLockScreenService/
-cf4bde6 Automatic translation import
-
-   * packages/services/Telecomm/
-f5717a6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-47090c4 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/services/Telephony/
-b8e6dee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-0bc5696 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * packages/wallpapers/Basic/
-eb270e8 Automatic translation import
-
-   * packages/wallpapers/LivePicker/
-83966e6 Automatic translation import
-
-   * packages/wallpapers/MagicSmoke/
-5766087 Automatic translation import
-
-   * packages/wallpapers/PhotoPhase/
-288dfb4 Automatic translation import
-
-   * system/bt/
-a5e3aca Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-c64071a Merge tag 'android-6.0.1_r24' into HEAD
-b029b6e Bluetooth: Allow REMOVE_EAGER_THREADS to be unset
-
-   * system/core/
-058ff69 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-b952b46 Merge tag 'android-6.0.1_r24' into HEAD
-
-   * vendor/cm/
-ef1a479 cm: sepolicy: allow platform apps to execute render scripts
-
-   * vendor/cmsdk/
-f1b172d Automatic translation import
 
