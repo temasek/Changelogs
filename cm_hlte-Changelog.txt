@@ -1,4 +1,104 @@
 ====================
+     04-15-2016
+====================
+
+
+   * device/samsung/qcom-common/
+253bb11 healthd: Rename libhealthd library
+
+   * frameworks/base/
+be6d700 QSTiles: set disconnect callback in bluetooth details list adapter
+2045e74 Revert "Let's not recreate the statusbar for task manager"
+5af093e fb: helper > we now use toybox
+29f9621 Fix: the label "customize" is not updated after changing language
+b6c80be Fix race condition when writing UidState of appops.
+622ab2e systemui: Remove LiveDisplay tile
+1323ffd LockPatternUtils: Use the actual user id to set pattern size
+151af22 LockSettingsStorage: migrate user pattern size to correct userid
+8e3de2e LockSettingsStorage: fallback to cm legacy gesture file
+ab4a515 SettingsProvider: move SYSTEM_PROFILES_ENABLED to CMSettings
+
+   * frameworks/opt/hardware/
+35568c6 cmhw: Move DisplayColorCalibration from hardware/cyanogen to here
+
+   * hardware/cyanogen/
+240b860 cmhw: Remove DisplayColorCalibration from hardware/cyanogen
+
+   * kernel/samsung/hlte/
+3dbd5340 pipe: Fix buffer offset after partially failed read
+
+   * packages/apps/Bluetooth/
+572e8af Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/Contacts/
+affff68 [2/2] Add new method for determining whether to show block option
+dd2acf1 Make Block action contingent on system-wide Blacklist setting
+e4b31b7 Fix camel case
+
+   * packages/apps/ContactsCommon/
+0e6d8d4 [1/2] Add new method for determining whether to show block option
+5fdfde4 Improve strings
+
+   * packages/apps/DeskClock/
+a868c2e Revert "AlarmActivity: Fix NPE temporary by removing animations"
+
+   * packages/apps/Dialer/
+ce1488d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+b025fbb Workaround for AOSP strings missing translations
+
+   * packages/apps/Messaging/
+369448c Improve priority string
+
+   * packages/apps/PhoneCommon/
+a495381 Set untranslatables
+
+   * packages/apps/Settings/
+9bc0d29 Build V6.7
+d8d4e60 Javacrash when long press the SSID of connected AP in WiFi list
+2fc6ffc settings: helper > we now used toybox
+7e43e12 Settings: use the actual user id to set pattern size
+c59da7a Setting: Disable WPS Push Button/Pin Entry when WiFi is disabled
+dc4d090 Build V6.6
+
+   * packages/apps/SetupWizard/
+fe7ac15 SetupWizard: Don't reprompt setup if account already exists.
+
+   * packages/apps/Trebuchet/
+c14b404 Trebuchet: Always cancel any pending dim animations
+95d1934 avoid NPE
+
+   * packages/providers/ThemesProvider/
+9063435 New icon
+b5f8923 Update controls preview to properly render themed assets.
+
+   * prebuilts/cmsdk/
+dd1bd68 prebuilts/cmsdk: Prep for api 5.0 release artifact.
+
+   * system/core/
+dfcd7a1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+05a3648 healthd: Rename default QCOM libhealthd library
+
+   * system/vold/
+70a8f89 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+e6339d3 cryptfs: Fix OTA from cm<=12 for encrypted patterns > 9
+
+   * vendor/cm/
+3fcf652 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+8da5698 Update APN name for Movistar INTERNET
+40ab914 APN: fixup single-digit mnc APNs
+
+   * vendor/cmsdk/
+5430b73 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+842344a livedisplay: Fix endless loop for devices that don't support outdoor mode.
+7cd7f79 livedisplay: Fix bad state after bootup
+0ec60c6 livedisplay: Don't explode if no modes are available
+2540a44 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+712426f livedisplay: Publish our own damn tile!
+763e39a livedisplay: Fix error checks when fetching config
+14190e4 Fix LiveDisplay string
+62604cf cmsdk: Exclude compiled 'cyanogenmod/library' java package.
+
+====================
      04-14-2016
 ====================
 
@@ -47,14 +147,11 @@ d1d0795 Themes: Restore original value if getValue fails
 6f4e0ea Check for deprecated third party keyguard perm
 0a765d3 base: Add support to show GPU Frequency
 
-   * kernel/samsung/hlte/
-baf0cfc pipe: Fix buffer offset after partially failed read
+   * packages/apps/Bluetooth/
+f64343e hdp: do not return a null value when hdp interface unavailable
 
    * packages/apps/CarrierConfig/
 426a0d0 Telefonica MMS Max sending limit files Added
-
-   * packages/apps/DeskClock/
-d6afa24 Revert "AlarmActivity: Fix NPE temporary by removing animations"
 
    * packages/apps/Dialer/
 d4f1598 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
@@ -71,7 +168,6 @@ b63eca0 InCallUI: add LookupProvider and VoLTE to landscape layout
 c8944e2 OmniSwitch: Create a shortcut to exposed toggle activity
 
    * packages/apps/Settings/
-7d399fd Build V6.6
 0978295 SpamList: Set correct color & remove text from notifications menu item
 6aa8c9b Build V6.5
 
@@ -87,9 +183,6 @@ c8c765c Update the theme apply label string
    * packages/providers/ContactsProvider/
 8d13918 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
 a629c55 ContactsProvider: Fix polyphones in Chinese.
-
-   * prebuilts/cmsdk/
-f8f3aaf Remove public default constructor from CMWeatherManager.RequestStatus [2/2]
 
    * system/extras/su/
 d2c8eb2 su: Fix crash due to invalid file descriptor
@@ -282,19 +375,4 @@ fc8f34d Merge pull request #2 from entony80/patch-2
    * packages/services/Telephony/
 d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 5515808 Don't impose limitations on network mode selection for non-multi RAT phones.
-
-====================
-     04-10-2016
-====================
-
-
-   * external/jpeg/
-60a4dc2 porting jpeg_mem_src() from jpeg lib v8c
-
-   * frameworks/base/
-1c21ca7 Merge pull request #114 from Mai19930513/cm-13.0
-8de8f3d update zh-rCN translations
-
-   * packages/apps/Settings/
-eb9abb7 Build V6.3
 
