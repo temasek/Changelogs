@@ -1,12 +1,189 @@
 ====================
-     04-26-2016
+     04-28-2016
 ====================
 
 
+   * android/
+50d9035 Relocate weather provider samples to CMSDK samples folder
+4b7b065 Add OpenWeatherMapProvider
+24f6971 Track own dalvik
+
+   * dalvik/
+c822839 dx: remove javac flags
+60677bb Shush "unused parameter" warnings in hprof-conv.
+ac49bae Consider declared member descriptors as direct ref
+4a0b408 Fix compiler warning on ptr size vs unsigned.
+ac7ab84 Improve dx error handling
+77aa51c Add better error message for unsupported classfile
+771785e Consider direct references in interface methods
+11fe0df Handle ACONST_NULL multidimensional arrays.
+
+   * device/samsung/hlte-common/
+3e08fe8 Revert "Revert "power: remove qcom powerhal""
+
+   * frameworks/base/
+07a8a91 SysUI: Don't call removeAllViews on AdapterView
+
+   * frameworks/native/
+c8e2bd6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+3ce4ffc surfaceflinger: Add support for Exynos BGRA mixer
+
+   * kernel/samsung/hlte/
+ae6e818 Build v1.74
+17afe9b Linux 3.4.112
+367a0e7 x86/iopl/64: Properly context-switch IOPL on Xen PV
+d6704d5 splice: sendfile() at once fails for big files
+00cdaf4 usb: Use the USB_SS_MULT() macro to decode burst multiplier for log message
+99faabe raid1: include bio_end_io_list in nr_queued to prevent freeze_array hang
+ebf700d mvsas: Fix NULL pointer dereference in mvs_slot_task_free
+2d32e2a dm btree: fix leak of bufio-backed block in btree_split_beneath error path
+1b41087 mm: make sendfile(2) killable
+31c8a5f drm/nouveau/gem: return only valid domain when there's only one
+4e747a6 iommu/amd: Don't clear DTE flags when modifying it
+fc323c0 ASoC: wm8904: Correct number of EQ registers
+fe29ff2 crypto: api - Only abort operations on fatal signal
+542fae3 xhci: Add spurious wakeup quirk for LynxPoint-LP controllers
+93cf14f xhci: handle no ping response error properly
+da83f9e iommu/vt-d: fix range computation when making room for large pages
+4c474d1 crypto: ahash - ensure statesize is non-zero
+b20b7e9 xen-blkfront: check for null drvdata in blkback_changed (XenbusStateClosing)
+c67a858 ALSA: synth: Fix conflicting OSS device registration on AWE32
+93ebc9b drivers/tty: require read access for controlling terminal
+274e1b3 tty: fix stall caused by missing memory barrier in drivers/tty/n_tty.c
+aa50a84 usb: Add device quirk for Logitech PTZ cameras
+fe72893 USB: Add reset-resume quirk for two Plantronics usb headphones.
+37bf175 clocksource: Fix abs() usage w/ 64bit values
+da1106e mm: hugetlbfs: skip shared VMAs when unmapping private pages to satisfy a fault
+531a167 genirq: Fix race in register_irq_proc()
+386b1d1 x86/process: Add proper bound checks in 64bit get_wchan()
+cf833dc UBI: return ENOSPC if no enough space available
+19780ba UBI: Validate data_size
+7c22ac7 x86/xen: Do not clip xen_e820_map to xen_e820_map_entries when sanitizing map
+6b568e6 m68k: Define asmlinkage_protect
+6bf1bcb ath9k: declare required extra tx headroom
+d7d7a4c ocfs2/dlm: fix deadlock when dispatch assert master
+5173534 cifs: use server timestamp for ntlmv2 authentication
+62c0b59 xhci: change xhci 1.0 only restrictions to support xhci 1.1
+b4026a1 usb: xhci: Clear XHCI_STATE_DYING on start
+f24b8ce xhci: give command abortion one more chance before killing xhci
+e474194 usb: Use the USB_SS_MULT() macro to get the burst multiplier.
+e34b452 KVM: x86: trap AMD MSRs for the TSeg base and mask
+b2e346e regmap: debugfs: Don't bother actually printing when calculating max length
+030dc60 regmap: debugfs: Ensure we don't underflow when printing access masks
+590b24c btrfs: skip waiting on ordered range for special files
+bce62c7 spi: Fix documentation of spi_alloc_master()
+c846296 spi: spi-pxa2xx: Check status register to determine if SSSR_TINT is disabled
+d3ca896 drm: crtc: integer overflow in drm_property_create_blob()
+87e6113 md/raid1: don't clear bitmap bit when bad-block-list write fails.
+7b6542c md/raid1: ensure device failure recorded before write request returns.
+e2a3f74 md/raid10: don't clear bitmap bit when bad-block-list write fails.
+0627a2b md/raid10: ensure device failure recorded before write request returns.
+187f7b9 powerpc/rtas: Validate rtas.entry before calling enter_rtas()
+6026e3d IB/cm: Fix rb-tree duplicate free and use-after-free
+f45bcdd sched/core: Fix TASK_DEAD race in finish_task_switch()
+865a763 iwlwifi: dvm: fix D3 firmware PN programming
+850a561 md/raid0: apply base queue limits *before* disk_stack_limits
+d161f2f MIPS: dma-default: Fix 32-bit fall back to GFP_DMA
+3801762 ASoC: fix broken pxa SoC support
+474d8cc ipv6: Fix IPsec pre-encap fragmentation check
+1a77c4e module: Fix locking in symbol_put_addr()
+7acec7e x86/platform: Fix Geode LX timekeeping in the generic x86 build
+92dd4d1 ARM: fix Thumb2 signal handling when ARMv6 is enabled
+0870daa perf header: Fixup reading of HEADER_NRCPUS feature
+75a9f38 powerpc/MSI: Fix race condition in tearing down MSI interrupts
+46fa64a ARM: 8429/1: disable GCC SRA optimization
+e632c01 scsi_dh: fix randconfig build error
+5356260 hfs: fix B-tree corruption after insertion at position 0
+85d16bd hfs,hfsplus: cache pages correctly between bnode_create and bnode_free
+d58f427 fs: create and use seq_show_option for escaping
+0ee0151 crypto: ghash-clmulni: specify context size for ghash async algorithm
+c103cee hpfs: update ctime and mtime on directory modification
+8271b5d IB/uverbs: reject invalid or unknown opcodes
+0235975 Add radeon suspend/resume quirk for HP Compaq dc5750.
+d978375 IB/uverbs: Fix race between ib_uverbs_open and remove_one
+b77f753 IB/mlx4: Use correct SL on AH query under RoCE
+9fbd248 SUNRPC: xs_reset_transport must mark the connection as disconnected
+5845c16 drivercore: Fix unregistration path of platform devices
+b0bd32aad of/address: Don't loop forever in of_find_matching_node_by_address().
+d7d885b DRM - radeon: Don't link train DisplayPort on HPD until we get the dpcd
+cc72334 eCryptfs: Invalidate dcache entries when lower i_nlink is zero
+3189974 USB: ftdi_sio: Added custom PID for CustomWare products
+b67088c usb: host: ehci-sys: delete useless bus_to_hcd conversion
+164365c NFSv4: don't set SETATTR for O_RDONLY|O_EXCL
+3ef7005 windfarm: decrement client count when unregistering
+e1364ab devres: fix devres_get()
+8823e0e auxdisplay: ks0108: fix refcount
+c6120b3 md/raid0: update queue parameter in a safer location.
+2319d6f svcrdma: Fix send_reply() scatter/gather set-up
+7454f92 powerpc/rtas: Introduce rtas_get_sensor_fast() for IRQ handlers
+b862eb1 PCI: Add VPD function 0 quirk for Intel Ethernet devices
+fba791c PCI: Add dev_flags bit to access VPD through function 0
+c96a2df mac80211: enable assoc check for mesh interfaces
+758791c PCI: Fix TI816X class code quirk
+74ee18b rc-core: fix remove uevent generation
+96d48ea Build v1.73
+6537efb Revert "defconfig: set CONFIG_HZ to 1000"
+a278095 Revert "defconfig: set CONFIG_HZ to 300"
+37dbd3c Revert "bcmdhd: fix CONFIG_HZ dependency"
+
+   * packages/apps/CarrierConfig/
+cb559ac Add MVNO configs for Lycamobile ES and Truphone ES
+
+   * packages/apps/Contacts/
+a8593b0 [2/4] Update contacts for CallMethodHelper refactor
+
+   * packages/apps/Dialer/
+e9e5e31 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+7efc03f [4/4] Update dialer for CallMethodHelper refactor
+38fec3b Add InCall providers call logs into the statistics pages
+
+   * packages/apps/Eleven/
+2e0534f Improve visualizer color selection.
+
+   * packages/apps/InCallUI/
+307d2f4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+2ba9c5c [3/4] Update incall for callmethodhelper refactor
+
+   * packages/apps/PhoneCommon/
+ecc708d [1/4] Refactor CallMethodHelper
+
+   * packages/apps/Settings/
+3dbc145 Build V7.3
+ba27490 Simplify and improve dream, LLS and weather provider layouts.
+
+   * packages/apps/SetupWizard/
+6355048 SetupWizard: Add Mod disovery language for mod ready devices
+8109277 SetupWizard: Ensure compliance with GMS TOS
+
+   * vendor/cmsdk/
+0c0663d Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+153bd22 livedisplay: Fix another transition issue
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+f471c4c Add uses-feature for play store targeting.
+
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+fab852e WundergroundCM: Fix partlycloudy weather code response.
+e426363 WundergroundCM: Update README.
+6a059b1 Set app name as untranslatable
+
+====================
+     04-27-2016
+====================
+
+
+   * android/
+94a738d trader418 shall conquer the whole hlte family
+
+   * bootable/recovery/
+85c910a Mount pstore filesystem while in recovery
+
    * cts/
-912c63e merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+b359c22 Merge "DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported." into marshmallow-cts-release
+35e0605 DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported.
 
    * frameworks/av/
+3e0dc2c DO NOT MERGE: Camera: override external facing for API1 client
 1c43739 Fix gapless SBR
 
    * frameworks/base/
@@ -15,87 +192,126 @@ a4010d1 bootanimation: Switch to readahead
 
    * frameworks/opt/telephony/
 b772c9c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-4e5d695 Fix bug in CallManager unregisterForPhoneStates()
-
-   * kernel/samsung/hlte/
-4deadf5 Build v1.73
-cd81c68 Revert "mm: slub: default slub_max_order to 0"
-240e59b Makefile: disable -mandroid option
-b526d02 liquorix: Reduce default BLK_MAX_RQ of 128 to 16
-c11b17e liquorix: tune page writeback from zen
-6df179d cfq: ensure IOPS mode
-f7395d1 Revert "mm: vmscan: If kswapd has been running too long, allow it to sleep"
-6984fde Revert "defconfig: set CONFIG_HZ to 1000"
-ed7b5cf Revert "defconfig: set CONFIG_HZ to 300"
-21aadc6 Revert "bcmdhd: fix CONFIG_HZ dependency"
 
    * libcore/
+4c0e217 Fix stream not being closed on all exception paths
+e83e06f Close InputStream in case of Exception
+7aeacc9 Make broken JSONOBject.NULL.equals(null) consistent with Objects.hashCode(null)
 18970e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_libcore into cm-13.0
 
    * packages/apps/Bluetooth/
 9dc0c72 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-2c9c545 Ensure synchronized access of JNI callback object
 
-   * packages/apps/ContactsCommon/
-14ae197 Add new method to LookupHandlerThread for calling new API interfaces
+   * packages/apps/Dialer/
+37e0d68 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+f6713d2 WifiNudge: Use PreciseCallState to only show on outgoing calls
+bf43c1f Hide coachmark if dialpad opens with text pre-filled
+e790722 Fix nudge counts
+
+   * packages/apps/InCallUI/
+935cb84 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
 
    * packages/apps/Messaging/
-4052475 Implement lookup provider for 4x3 and 3x3 widget
-33e9316 Bring back original color
+01868a1 Fixed the cutoff timestamp for MMS deletion by limit.
+
+   * packages/apps/PhoneCommon/
+33beb0a Check if Volte is enabled in ImsManager to determine Volte support
+e8398ca Fix call method spinner text cutoff
 
    * packages/apps/Settings/
+833a89b Setting : Don't show search for activities not within same shared user id
+b81b713 Merge pull request #441 from beroid/cm-13.0
+1fc801b Settings: Update RU translations
 62c0853 Build V7.2
 7069cd9 Dashboard: Remove weather till further notice
 a89a6b5 settings: Remove LiveDisplay preferences if not available
 35c94d5 Settings: fix incorrect default sim/sms/data selection logic
 
    * packages/apps/SetupWizard/
-af82858 SetupWizard: GMS page controls the next step
+941aa1e SetupWizard: Handle register theme change listener crash
+2e75c4e SetupWizard: Fix test app building
+
+   * system/bt/
+90a4f10 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+3a1764b Add Renault MediaNav to HFP 1.7 blacklist
 
    * system/core/
+0e4d889 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+acd1856 fastboot: Add Nextbit's USB vendor id
 10d0216 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+
+   * system/vold/
+587c6da Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+57f9939 vold: Fix cryptfs changepw parsing
+
+   * vendor/cm/
+1c7f0a8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
 954518e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 4595cfd livedisplay: Add some unit tests
 35315d3 cmsdk: Fix crash when getting LiveDisplay config
-c68b38a livedisplay: Connect display modes to CMHW
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+65707bc Initial checking of OpenWeatherMap weather provider service
+
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+f495569 WundergroundCM: Add uses-feature for play store targeting.
 
 ====================
-     04-25-2016
+     04-26-2016
 ====================
 
+
+   * cts/
+912c63e merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
 
    * frameworks/base/
 138a626 Give LockClock the location permission by default * Otherwise, users may not know why weather doesn't work by default with the widget
 1bc3011 Ensure packages on adopted media do not move when updated
 e49033a Add getPackageCandidateVolumesForceable() method
 
+   * frameworks/opt/telephony/
+4e5d695 Fix bug in CallManager unregisterForPhoneStates()
+
+   * packages/apps/Bluetooth/
+2c9c545 Ensure synchronized access of JNI callback object
+
+   * packages/apps/ContactsCommon/
+14ae197 Add new method to LookupHandlerThread for calling new API interfaces
+
    * packages/apps/Eleven/
 ac7e035 Eleven: Cleanup all the whitespace
 
-   * packages/apps/Screencast/
-1b416a4 Screencast: cleanup
+   * packages/apps/Messaging/
+4052475 Implement lookup provider for 4x3 and 3x3 widget
+33e9316 Bring back original color
 
    * packages/apps/Settings/
 a3c84d4 Add force move app storage option.
 1361864 Themes: Add tint mode so custom icons can show in power usage detail
 
-   * packages/apps/SoundRecorder/
-bbd3c55 SoundRecorder: cleanup
+   * packages/apps/SetupWizard/
+af82858 SetupWizard: GMS page controls the next step
+
+   * packages/apps/Snap/
+3790102 Improve RTL layout behaviour.
 
    * packages/apps/ThemeChooser/
 74d7544 ThemeChooser: don't try to set bg color when displaying from font filter
 
    * system/bt/
 42e25bf Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-87c9691 add medianav to unsupported device for hfp 1.7
+
+   * vendor/cm/
+ffd6637 Remove cyngn dialer
 
    * vendor/cmsdk/
+c68b38a livedisplay: Connect display modes to CMHW
 95f05fd Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
 ====================
-     04-24-2016
+     04-25-2016
 ====================
 
 
@@ -106,30 +322,27 @@ b67a252 Merge branch 'master' of https://android.googlesource.com/platform/exter
 f5d711a Fix recents apps passing through the google search bar when visible
 42d183a Improve TM animation & use stock detail background
 3f37b7e [1/2] fwb: Add ability to permanently hide apps from recents
-68bef67 HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
-4fedf3b SystemUI: add HeadsUp snooze disabled state (1/2)
-cec4062 SystemUI: HeadsUp toast message
 
    * frameworks/opt/net/wifi/
 9697fa5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
 
-   * kernel/samsung/hlte/
-b3c7a50 Build v1.72
-45117a1 bcmdhd: fix CONFIG_HZ dependency
-6084f9b defconfig: set CONFIG_HZ to 300
-10b08bd defconfig: set CONFIG_HZ to 1000
+   * packages/apps/Screencast/
+1b416a4 Screencast: cleanup
 
    * packages/apps/Settings/
 6cba5fb [2/2] Settings: Add ability to permanently hide apps from recents
-7c5bcf1 Build V7.1
-dfd913c HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
-66fb23d Settings: add HeadsUp snooze disabled state (2/2)
+
+   * packages/apps/SoundRecorder/
+bbd3c55 SoundRecorder: cleanup
+
+   * system/bt/
+87c9691 add medianav to unsupported device for hfp 1.7
 
    * vendor/cmsdk/
 e41c292 livedisplay: Fix three bugs
 
 ====================
-     04-23-2016
+     04-24-2016
 ====================
 
 
@@ -138,14 +351,13 @@ dcf1af1 Add bullfrog...oops no...bullhead :p
 f281444 Update device maintainers
 6a7bcb4 Track own LockClock
 
-   * external/stagefright-plugins/
-d379af4 stagefright-plugins: Fix port reset problem
-38e74de stagefright-plugins: Fix eos flush problem.
-
    * frameworks/av/
 0a43efc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 
    * frameworks/base/
+68bef67 HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
+4fedf3b SystemUI: add HeadsUp snooze disabled state (1/2)
+cec4062 SystemUI: HeadsUp toast message
 34b2141 frameworks/base: Avoid Long object allocations in Long.valueOf()
 fb0d74f Integer.valueOf() -> Integer.parseInt() to avoid allocation.
 7b09a38 Support for new properties to identify country based ecc #s added by RIL
@@ -154,153 +366,26 @@ fb0d74f Integer.valueOf() -> Integer.parseInt() to avoid allocation.
 060d1d8 libhwui: Remove opaque check for everything
 aae4b6b Keyguard: switch to cm-specific device provisioned flag
 
-   * frameworks/opt/net/wifi/
-eb9c90d Null check before accessing AP objects
-
-   * hardware/ti/omap4/
-c0ab422 camera: fix large tiler memory leakages
-
-   * packages/apps/CMBugReport/
-a101530 CMBugReport: add bypass processing config
-e48c244 CMBugReport: better bug report uploading
+   * kernel/samsung/hlte/
+b3c7a50 Build v1.72
+45117a1 bcmdhd: fix CONFIG_HZ dependency
+6084f9b defconfig: set CONFIG_HZ to 300
+10b08bd defconfig: set CONFIG_HZ to 1000
 
    * packages/apps/Dialer/
 b6f4e12 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-6167f42 NPE: check that cn is null and return
 
-   * packages/apps/Messaging/
-22d92d6 Text/Multimedia message limit feature
-
-   * packages/apps/SetupWizard/
-fccccda SetupWizard: add a CM-specific setup-complete settings key
+   * packages/apps/Settings/
+7c5bcf1 Build V7.1
+dfd913c HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
+66fb23d Settings: add HeadsUp snooze disabled state (2/2)
 
    * packages/services/Telecomm/
 3a56db3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-fb92b65 Telecom: refresh missed call notification on locale change
 
    * vendor/cm/
 ef607fa Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-e3811ea Update Ambient SDK to 1.5.5
-da1a900 sepolicy: Allow recovery to mount on tmpfs
 
    * vendor/cmsdk/
 f62688c Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-bf5261c CMSettings: add CM_SETUP_WIZARD_COMPLETED key
-
-   * vendor/cmsdk/samples/weatherproviderservice/
-6757ab6 WundergroundCM: Update iconography.
-
-====================
-     04-22-2016
-====================
-
-
-   * external/jemalloc/
-b32837f Fix iteration over huge allocations
-
-   * frameworks/av/
-c27a16c audiopolicy: Fix notification not sent for session release
-
-   * frameworks/base/
-35bfec9 SettingsProvider : load region-specific settings
-f1993c4 When the applicantion is removed, reset network permission of this uid.
-7d46a2f Themes: Update icon mapping on boot
-be7d2ce SystemUI: Fix nav bar transparency when enabling software keys
-
-   * hardware/qcom/fm/
-d8a97a8 fmapp2: Allow value for the default fm recording duration to be overlayed.
-
-   * kernel/samsung/hlte/
-96ded81 f2fs: fix build
-0a3ed58 f2fs: fix to avoid deadlock when merging inline data
-ba5d831 f2fs: introduce f2fs_flush_merged_bios for cleanup
-8b0e4de f2fs: introduce f2fs_update_data_blkaddr for cleanup
-1ef0652 f2fs crypto: fix incorrect positioning for GCing encrypted data page
-c3759fd f2fs: fix incorrect upper bound when iterating inode mapping tree
-de280f2 f2fs: avoid hungtask problem caused by losing wake_up
-5bf75bc f2fs: trace old block address for CoWed page
-92bdcb4 f2fs: try to flush inode after merging inline data
-7b3db9f f2fs: show more info about superblock recovery
-f2db606 f2fs: fix the wrong stat count of calling gc
-52e5dd8 f2fs: remain last victim segment number ascending order
-4b5995e f2fs: reuse read_inline_data for f2fs_convert_inline_page
-b8f6f66 f2fs: fix to delete old dirent in converted inline directory in ->rename
-f97e9566 f2fs: detect error of update_dent_inode in ->rename
-732f7763 f2fs: move sanity checking of cp into get_valid_checkpoint
-ba80a1b f2fs: slightly reorganize read_raw_super_block
-2ab27a4 f2fs: reorder nat cache lock in cache_nat_entry
-fcd7f93 f2fs: split journal cache from curseg cache
-9e9b732 f2fs: enhance IO path with block plug
-21c62b4 f2fs: introduce f2fs_journal struct to wrap journal info
-029cd51 f2fs crypto: avoid unneeded memory allocation when {en/de}crypting symlink
-644210a f2fs crypto: handle unexpected lack of encryption keys
-70998e8 f2fs crypto: make sure the encryption info is initialized on opendir(2)
-5a54e48 f2fs: support revoking atomic written pages
-2a91644 f2fs: split drop_inmem_pages from commit_inmem_pages
-172e296 f2fs: avoid garbage lenghs in dentries
-3c39e5f f2fs: use correct errno
-0e9b34a f2fs crypto: add missing locking for keyring_key access
-a1b366c f2fs crypto: check for too-short encrypted file names
-aac62a0 f2fs crypto: f2fs_page_crypto() doesn't need a encryption context
-ee79b36 f2fs crypto: fix spelling typo in comment
-ba144f2 f2fs crypto: replace some BUG_ON()'s with error checks
-895be8c f2fs: increase i_size to avoid missing data
-6a33c1e f2fs: preallocate blocks for buffered aio writes
-fa495d6 f2fs: move dio preallocation into f2fs_file_write_iter
-08f49b1 f2fs: fix missing skip pages info
-c7b702a f2fs: introduce f2fs_submit_merged_bio_cond
-3b678ad f2fs: fix conflict on page->private usage
-0e2c2ec f2fs: flush bios to handle cp_error in put_super
-2c199b5 f2fs: wait on page's writeback in writepages path
-724b7e4 f2fs: fix endianness of on-disk summary_footer
-7aa0048 f2fs: speed up handling holes in fiemap
-0d507cf f2fs: introduce get_next_page_offset to speed up SEEK_DATA
-222c9a5 f2fs: remove unneeded pointer conversion
-09100ec f2fs: simplify __allocate_data_blocks
-e7cb2a5 f2fs: simplify f2fs_map_blocks
-30b6bd2 f2fs: introduce lifetime write IO statistics
-169a251 f2fs: give scheduling point in shrinking path
-e383dfa f2fs: improve shrink performance of extent nodes
-377210d f2fs: don't set cached_en if it will be freed
-9416bed f2fs: move extent_node list operations being coupled with rbtree operation
-5b1555d f2fs: reconstruct the code to free an extent_node
-040ee18 f2fs: use wq_has_sleeper for cp_wait wait_queue
-44b2aee f2fs: avoid unnecessary search while finding victim in gc
-80bd03a f2fs: delete unnecessary wait for page writeback
-e4e98cf f2fs: use wait_for_stable_page to avoid contention
-ceb2c2e f2fs: enhance foreground GC
-0f6f93c f2fs: don't need to call set_page_dirty for io error
-d8a5a65 f2fs: avoid needless sync_inode_page when reading inline_data
-bc143bf f2fs: don't need to sync node page at every time
-750a7b3 f2fs: avoid multiple node page writes due to inline_data
-48f60be f2fs: do f2fs_balance_fs when block is allocated
-3db8a24 f2fs: fix to overcome inline_data floods
-ead4ec7 f2fs: use writepages->lock for WB_SYNC_ALL
-6c06acc f2fs: remove needless condition check
-ba9c86a f2fs: correct search area in get_new_segment
-2411160 f2fs: export dirty_nats_ratio in sysfs
-4584c6b f2fs: flush dirty nat entries when exceeding threshold
-2de5708 f2fs: relocate is_merged_page
-
-   * packages/apps/Dialer/
-9b1d8eb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-416100f Fix crash in Settings when clicking on Phone Number Lookup
-9f9dfa5 Settings: Add back Accessibility
-2366ded Improvements to Nudges
-9e8223e Search: Show FAB in the right place
-fcd9f77 Quick search results: fix to match selected item in spinner
-
-   * packages/apps/InCallUI/
-0c97096 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-b436d85 Revert and modify "Change in InCallAPI handover button UI"
-
-   * packages/providers/WeatherProvider/
-ece43f8 Check for default WeatherInfo values
-
-   * system/core/
-408bb87 fastboot: add ZTE to the list of known vendors
-
-   * vendor/cmsdk/
-7a4fed9 livedisplay: Always check for transition
-5f1dcce Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
