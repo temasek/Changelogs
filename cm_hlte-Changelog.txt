@@ -1,4 +1,110 @@
 ====================
+     04-29-2016
+====================
+
+
+   * frameworks/av/
+705c3bb Fix for tone glitch produced in ToneGenerator
+316eb3d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+71abbc4 Pass real uid to lmkd.
+d3e603a ZipUtils: Fix wrong timestamps when getEntryInfo
+85d8f7f Keyguard: Register for the correct CMSW completed Uri
+6da53d4 Automatic translation import
+840f866 Base: Fix Copy/Paste feature
+990518d Base: Floating Window
+edd8f59 SystemUI: Handle null keys on settings reload.
+6927699 media: Remove effect session callbacks from the framework
+
+   * packages/apps/AudioFX/
+ed3094d Automatic translation import
+
+   * packages/apps/CMBugReport/
+6b230e5 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+086b552 Automatic translation import
+
+   * packages/apps/Contacts/
+b89eaa1 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+510605f Automatic translation import
+
+   * packages/apps/Dialer/
+50cc60f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+9d76b66 Automatic translation import
+
+   * packages/apps/InCallUI/
+f87c917 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+b98970a Automatic translation import
+
+   * packages/apps/Messaging/
+97241df Automatic translation import
+
+   * packages/apps/OmniSwitch/
+79a052e Automatic translation import
+
+   * packages/apps/PhoneCommon/
+0bf5c30 Automatic translation import
+f21fbc1 DataSubscription: Broadcast if we have no plugins
+0c8f3a2 Hide VoLTE label by default to prevent it from showing in emergency dialer
+4798621 [1/2] Contacts : fix InCall plugin related PendingIntent
+dea0bdd MimeTypes: Use the right ones
+2c63819 Fix NPE if getCreditResult is null
+
+   * packages/apps/Screencast/
+c470796 Automatic translation import
+
+   * packages/apps/Settings/
+7f6f530 Build V7.4
+382026e Settings: Floating Window Fragment
+c3d8c92 Automatic translation import
+5f9d951 Settings: restore proper live display color profile
+
+   * packages/apps/SetupWizard/
+f06305a Automatic translation import
+
+   * packages/apps/Snap/
+cd544e6 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+05da035 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+a245d3b Automatic translation import
+
+   * packages/apps/Trebuchet/
+4ed3669 Trebuchet: Don't create shadow on 0 width/height icon
+
+   * packages/providers/WeatherProvider/
+0153b37 Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+9ddcdb4 Automatic translation import
+
+   * packages/services/Telephony/
+dcedddb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+ab2393c Automatic translation import
+
+   * system/bt/
+c890e45 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+0ffc2ce BT-HFP: Add HFP 1.7 features only if supported by peer
+
+   * vendor/cm/
+279fa74 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+49d4f8a APN: update Batelco and Zain APNs for Bahrain
+
+   * vendor/cmsdk/
+3f79d9e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+76ff069 Automatic translation import
+bf3c0cf cmsdk: Add CMAudioManager
+
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+8d55a6f WundergroundCM: fix typo
+
+====================
      04-28-2016
 ====================
 
@@ -6,23 +112,9 @@
    * android/
 50d9035 Relocate weather provider samples to CMSDK samples folder
 4b7b065 Add OpenWeatherMapProvider
-24f6971 Track own dalvik
 
-   * dalvik/
-c822839 dx: remove javac flags
-60677bb Shush "unused parameter" warnings in hprof-conv.
-ac49bae Consider declared member descriptors as direct ref
-4a0b408 Fix compiler warning on ptr size vs unsigned.
-ac7ab84 Improve dx error handling
-77aa51c Add better error message for unsupported classfile
-771785e Consider direct references in interface methods
-11fe0df Handle ACONST_NULL multidimensional arrays.
-
-   * device/samsung/hlte-common/
-3e08fe8 Revert "Revert "power: remove qcom powerhal""
-
-   * frameworks/base/
-07a8a91 SysUI: Don't call removeAllViews on AdapterView
+   * frameworks/av/
+3f9eb32 audiopolicy: Add AudioSessionInfo API
 
    * frameworks/native/
 c8e2bd6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
@@ -126,10 +218,14 @@ c96a2df mac80211: enable assoc check for mesh interfaces
 a278095 Revert "defconfig: set CONFIG_HZ to 300"
 37dbd3c Revert "bcmdhd: fix CONFIG_HZ dependency"
 
+   * packages/apps/AudioFX/
+2e67e76 audiofx: Use CMAudioService for session callbacks
+
    * packages/apps/CarrierConfig/
 cb559ac Add MVNO configs for Lycamobile ES and Truphone ES
 
    * packages/apps/Contacts/
+ff1025e [2/2] Contacts : fixed InCall plugin PendingIntent after refactor
 a8593b0 [2/4] Update contacts for CallMethodHelper refactor
 
    * packages/apps/Dialer/
@@ -138,6 +234,9 @@ e9e5e31 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_D
 38fec3b Add InCall providers call logs into the statistics pages
 
    * packages/apps/Eleven/
+e352d89 Generate all color swatches.
+8ece4c1 Add toString() methods to BitmapWithColors class.
+9e3dd80 Load palette in background.
 2e0534f Improve visualizer color selection.
 
    * packages/apps/InCallUI/
@@ -173,6 +272,7 @@ e426363 WundergroundCM: Update README.
 
 
    * android/
+24f6971 Track own dalvik
 94a738d trader418 shall conquer the whole hlte family
 
    * bootable/recovery/
@@ -182,11 +282,25 @@ e426363 WundergroundCM: Update README.
 b359c22 Merge "DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported." into marshmallow-cts-release
 35e0605 DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported.
 
+   * dalvik/
+c822839 dx: remove javac flags
+60677bb Shush "unused parameter" warnings in hprof-conv.
+ac49bae Consider declared member descriptors as direct ref
+4a0b408 Fix compiler warning on ptr size vs unsigned.
+ac7ab84 Improve dx error handling
+77aa51c Add better error message for unsupported classfile
+771785e Consider direct references in interface methods
+11fe0df Handle ACONST_NULL multidimensional arrays.
+
+   * device/samsung/hlte-common/
+3e08fe8 Revert "Revert "power: remove qcom powerhal""
+
    * frameworks/av/
 3e0dc2c DO NOT MERGE: Camera: override external facing for API1 client
 1c43739 Fix gapless SBR
 
    * frameworks/base/
+07a8a91 SysUI: Don't call removeAllViews on AdapterView
 a4010d1 bootanimation: Switch to readahead
 0360f61 LLS: Update LLS slide offsets when focus changes
 
@@ -246,6 +360,7 @@ acd1856 fastboot: Add Nextbit's USB vendor id
 
    * vendor/cm/
 1c7f0a8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3fe3faa cm: Add CMAudioService the platform
 
    * vendor/cmsdk/
 954518e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
@@ -340,52 +455,4 @@ bbd3c55 SoundRecorder: cleanup
 
    * vendor/cmsdk/
 e41c292 livedisplay: Fix three bugs
-
-====================
-     04-24-2016
-====================
-
-
-   * android/
-dcf1af1 Add bullfrog...oops no...bullhead :p
-f281444 Update device maintainers
-6a7bcb4 Track own LockClock
-
-   * frameworks/av/
-0a43efc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-68bef67 HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
-4fedf3b SystemUI: add HeadsUp snooze disabled state (1/2)
-cec4062 SystemUI: HeadsUp toast message
-34b2141 frameworks/base: Avoid Long object allocations in Long.valueOf()
-fb0d74f Integer.valueOf() -> Integer.parseInt() to avoid allocation.
-7b09a38 Support for new properties to identify country based ecc #s added by RIL
-7039cb8 LLS: Show notification panel if LLS crashes
-9ac4515 LLS: Fix screen off event firing when not interactive
-060d1d8 libhwui: Remove opaque check for everything
-aae4b6b Keyguard: switch to cm-specific device provisioned flag
-
-   * kernel/samsung/hlte/
-b3c7a50 Build v1.72
-45117a1 bcmdhd: fix CONFIG_HZ dependency
-6084f9b defconfig: set CONFIG_HZ to 300
-10b08bd defconfig: set CONFIG_HZ to 1000
-
-   * packages/apps/Dialer/
-b6f4e12 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/Settings/
-7c5bcf1 Build V7.1
-dfd913c HeadsUpTile: Open up Heads Up settings on longrpess (2/2)
-66fb23d Settings: add HeadsUp snooze disabled state (2/2)
-
-   * packages/services/Telecomm/
-3a56db3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * vendor/cm/
-ef607fa Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-f62688c Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
