@@ -1,4 +1,72 @@
 ====================
+     04-30-2016
+====================
+
+
+   * android/
+bddc198 [2/2] Gello ships!
+93ddcae [1/2] Gello ships!
+
+   * device/samsung/hlte-common/
+b78e31b Revert "Revert "power: remove qcom powerhal""
+
+   * external/skia/
+9c5a1d3 skia: Fix QC-PERF for msm8992
+
+   * frameworks/base/
+a3c8470 SysUI: Animate notificaiton panel back into view
+
+   * hardware/qcom/audio-caf/msm8994/
+211004f hal: Fix warnings in audio HAL and policy
+a5ccf06 hal: Add performance lock for playback usecase
+034efca hal: Add support for LINE out device
+
+   * kernel/samsung/hlte/
+f82f839 Build v1.75
+4274e78 pipe: limit the per-user amount of pages allocated in pipes
+281bfc2 sched: Change rq->nr_running to unsigned int
+
+   * packages/apps/ContactsCommon/
+849685b Fix height calculation of ContactListItemView
+
+   * packages/apps/Dialer/
+34b74cc Fix NPE on DeepLink
+bfaad43 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+abec0f3 Dialer DeepLink Integration
+
+   * packages/apps/Gello/
+bdeeedb Automatic translation import
+
+   * packages/apps/InCallUI/
+c34251d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+09e5382 DeepLink Integration in InCallUi
+
+   * packages/apps/LockClock/
+bc233e9 Automatic translation import
+44cb9f5 YahooWeatherProvider: Fix API URL
+
+   * packages/apps/Messaging/
+d845463 Showing Normalized number instead of denormalize number
+
+   * packages/apps/PhoneCommon/
+51aefeb Add DeepLinkAPI to AmbientApiClient
+35f20a7 Correctly mark data broadcast as done.
+
+   * packages/apps/Settings/
+fa25416 Build V7.5
+32c52ae Settings: refresh ui on foce stop/diable
+8653a38 Settings: Ensure user has to wait 30 before retrying pattern
+
+   * packages/apps/Trebuchet/
+d20f779 Revert "Trebuchet: send metrics directly when possible"
+097b950 Trebuchet: send metrics directly when possible
+
+   * vendor/cm/
+9ed1199 Include Gello.
+9189c4e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+03b1834 APN: Fix Saunalahti APN regression introduced by CYNGNOS-436
+
+====================
      04-29-2016
 ====================
 
@@ -16,6 +84,9 @@ d3e603a ZipUtils: Fix wrong timestamps when getEntryInfo
 990518d Base: Floating Window
 edd8f59 SystemUI: Handle null keys on settings reload.
 6927699 media: Remove effect session callbacks from the framework
+
+   * kernel/samsung/hlte/
+599c3ab Update bluetooth drivers
 
    * packages/apps/AudioFX/
 ed3094d Automatic translation import
@@ -58,7 +129,7 @@ dea0bdd MimeTypes: Use the right ones
 c470796 Automatic translation import
 
    * packages/apps/Settings/
-7f6f530 Build V7.4
+bfa32ab Build V7.4
 382026e Settings: Floating Window Fragment
 c3d8c92 Automatic translation import
 5f9d951 Settings: restore proper live display color profile
@@ -101,9 +172,6 @@ c890e45 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into 
 76ff069 Automatic translation import
 bf3c0cf cmsdk: Add CMAudioManager
 
-   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-8d55a6f WundergroundCM: fix typo
-
 ====================
      04-28-2016
 ====================
@@ -119,6 +187,10 @@ bf3c0cf cmsdk: Add CMAudioManager
    * frameworks/native/
 c8e2bd6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
 3ce4ffc surfaceflinger: Add support for Exynos BGRA mixer
+
+   * hardware/qcom/audio-caf/msm8994/
+a88dde5 policy_hal: handle incall sonification without checking output refCount
+d25d853 hal: Validate active input before accessing source
 
    * kernel/samsung/hlte/
 ae6e818 Build v1.74
@@ -262,6 +334,7 @@ ba27490 Simplify and improve dream, LLS and weather provider layouts.
 f471c4c Add uses-feature for play store targeting.
 
    * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+8d55a6f WundergroundCM: fix typo
 fab852e WundergroundCM: Fix partlycloudy weather code response.
 e426363 WundergroundCM: Update README.
 6a059b1 Set app name as untranslatable
@@ -292,9 +365,6 @@ ac7ab84 Improve dx error handling
 771785e Consider direct references in interface methods
 11fe0df Handle ACONST_NULL multidimensional arrays.
 
-   * device/samsung/hlte-common/
-3e08fe8 Revert "Revert "power: remove qcom powerhal""
-
    * frameworks/av/
 3e0dc2c DO NOT MERGE: Camera: override external facing for API1 client
 1c43739 Fix gapless SBR
@@ -321,6 +391,14 @@ e83e06f Close InputStream in case of Exception
 f6713d2 WifiNudge: Use PreciseCallState to only show on outgoing calls
 bf43c1f Hide coachmark if dialpad opens with text pre-filled
 e790722 Fix nudge counts
+
+   * packages/apps/Gello/
+9df91a6 Gello: don't move navigation bar when selecting url text
+608c7a9 Gello: remove holo-like share dialog
+1a8e747 Gello: kang in two methods which changed their location and access
+22398a7 Gello: Share bitmap via stream vs bitmap
+71560d7 Gello: definitive ad block list
+783ce43 Gello: web_refiner: Fix EasyList URLs
 
    * packages/apps/InCallUI/
 935cb84 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
@@ -381,6 +459,9 @@ f495569 WundergroundCM: Add uses-feature for play store targeting.
    * cts/
 912c63e merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
 
+   * external/gello-build/
+0122267 Makefile moved to vendor/cm
+
    * frameworks/base/
 138a626 Give LockClock the location permission by default * Otherwise, users may not know why weather doesn't work by default with the widget
 1bc3011 Ensure packages on adopted media do not move when updated
@@ -424,35 +505,4 @@ ffd6637 Remove cyngn dialer
    * vendor/cmsdk/
 c68b38a livedisplay: Connect display modes to CMHW
 95f05fd Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     04-25-2016
-====================
-
-
-   * external/jemalloc/
-b67a252 Merge branch 'master' of https://android.googlesource.com/platform/external/jemalloc into android-6.0
-
-   * frameworks/base/
-f5d711a Fix recents apps passing through the google search bar when visible
-42d183a Improve TM animation & use stock detail background
-3f37b7e [1/2] fwb: Add ability to permanently hide apps from recents
-
-   * frameworks/opt/net/wifi/
-9697fa5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-
-   * packages/apps/Screencast/
-1b416a4 Screencast: cleanup
-
-   * packages/apps/Settings/
-6cba5fb [2/2] Settings: Add ability to permanently hide apps from recents
-
-   * packages/apps/SoundRecorder/
-bbd3c55 SoundRecorder: cleanup
-
-   * system/bt/
-87c9691 add medianav to unsupported device for hfp 1.7
-
-   * vendor/cmsdk/
-e41c292 livedisplay: Fix three bugs
 
