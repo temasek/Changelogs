@@ -1,5 +1,98 @@
 ====================
-     05-12-2016
+     05-14-2016
+====================
+
+
+   * build/
+28d3ed1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+
+   * device/samsung/hlte-common/
+cbffeb2 hlte-common: update mount options
+
+   * frameworks/av/
+96cd09a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+163c04d Use async thread for performPoll in NetworkStats
+b0a5c44 QS: fix performance profile tile observer
+32022ad SystemUI : Fix multi-user for keyguard
+37d645e SystemUI: Set circle battery path as untranslatable
+0792501 Update volume slider only if ringer mode changed
+6fe0598 Lockscreen : Disable left edge after showing keyguard
+c5b2435 Keyguard: Allow swiping up when trust managed
+7e2633c SpamFilter : Hide option if notification cannot be filtered
+a408065 Revert "FWB: App picker navbar button (1/2)"
+37515cf FWB: App picker navbar button (1/2)
+0d59557 [RenderScript] Interrupt mMessageThread when tearing down context.
+d599bb0 Boolean logic error could result in a NPE
+53496ab Themes: Expose Power Dialogs
+3161dbd Acquire wakelock until dream service acknowledges dream state change
+67d81bb Lockscreen : Only animate targets if launched via swipe
+2a1b7c4 Ensure camera is launched if doing screen off gesture
+9e1ada7 Keyguard : Ensure we expand onIconClicked
+98ed4f3 bootanimation: fix check for system bootanimation
+
+   * frameworks/native/
+c713fbb Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8974/
+da55887 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
+
+   * hardware/qcom/display-caf/msm8974/
+59e66c6 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
+91790fc Revert "gralloc: fall back to old pixel alignment on old blobs"
+c26ee91 Revert "gralloc: allow forcing old pixel alignment"
+
+   * packages/apps/Contacts/
+af31083 Use JobService for periodic InCallMetrics reporting
+f1e17cb Contacts : prompt run time READ_SMS permission for M
+d90403f Contacts InCall metrics test
+
+   * packages/apps/DeskClock/
+7294e6e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+d03b7ff DeskClock: Use accelerometer instead of orientation sensor
+790e76d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+
+   * packages/apps/Dialer/
+dc84686 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+11118df Add additional permissions needed to utilize BlacklistUtils
+d2095b5 [2/2] Credit text and action should be limited to single line
+6eceee2 InCallApi plugin strings not updated on locale change
+79a94cb Metrics fixes and switching to job sched
+c64a3f4 NPE: make sure search fragment is visible
+98e0b00 Fix SuperNotCalledException
+388f636 Fix NPE within CallLogFragment
+7ddb482 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+d310ff2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+3210555 Fixed crash in InCallActivity.
+77f56a5 Best fix for the case where ModButtonPresenter UI wasn't updating properly in onResume cases.
+71aba70 Mod buttons only enabled when incall
+8404300 Don't query incall plugin invite intent until its actually needed
+
+   * packages/apps/PhoneCommon/
+281a48f AmbientDataSubscription: don't post results for unknown plugins
+
+   * packages/apps/Settings/
+2a86ac4 Build V8.3
+5e32db5 Profiles: Disable notification item if ringtone & notification volumes are linked
+b06553d Disable cellular networks settings menu if airplane mode is enabled
+
+   * packages/apps/SetupWizard/
+36f15ef SetupWizard: Alway show google pages if gms present
+
+   * vendor/cm/
+9f50a98 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+8d5d4cd Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+e703060 Revert "CMSDK: App picker navbar button (2/2)"
+6866528 CMSettings : Move force_show_navbar to global
+977549c CMSDK: App picker navbar button (2/2)
+
+====================
+     05-13-2016
 ====================
 
 
@@ -29,14 +122,16 @@ fb547a1 Do not run zipalign when re-signing APKs.
 8b15a28 Make signapk align .so entries to 4096 bytes.
 6c4cd7d Clean up compiler warnings in signapk.
 
+   * external/skia/
+2673286 skia: qc-perf: link against libqc-opt for msm8916
+
    * frameworks/av/
+8436846 Revert "nuplayer: Fix audio EOS notifiy on AudioSink not ready"
 2e12889 codecs: fix AVC decoder resolution change
 47d91ea codecs: fix MPEG2 decoder resolution change
 742f977 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-5c76693 FFMPEGSoftCodec: Initialize the OMX param struct before using it
 
    * frameworks/base/
-39b6f0f Acquire wakelock until dream service acknowledges dream state change
 573c72a Clear more native pointers in finalizers
 b75a60a Revert "LLS: Fix logic in isKeyguardInteractiveAndShowing"
 38020ae pm: Don't throw if invalid package setting or classname.
@@ -48,6 +143,15 @@ c324575 only use proximity checks on wakeup keys
 7975588 SystemUI: fix potential NPE with Queue
 e69c56e am: Don't protect apps that atttempt to grant uri perms.
 
+   * frameworks/native/
+bd41ea3 SurfaceFlinger : Ensure position changes are drawn with correct buffer size
+
+   * hardware/invensense/
+85c5a9a invensense: Use sensor HAL only if device specific HAL is not present
+
+   * hardware/qcom/audio-caf/msm8960/
+fd42377 hal: Clean up from merge
+
    * kernel/samsung/hlte/
 f8c5eae netfilter: x_tables: Fix compilation error
 06e7fc9 netfilter: x_tables: check for size overflow
@@ -56,22 +160,65 @@ b0496a6 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
 79377ea ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
 26ea05d arm: mach-msm: pil-msa: Set the strongly-ordered attribute on DMA allocations
 
+   * packages/apps/DeskClock/
+9ab924f DeskClock: Initialize boolean state with start button visibilty
+
    * packages/apps/Dialer/
+b441ca6 Make sure search fragment is visible and attached
+6251ca1 NPE: Providers might not have a singlecolorbrandicon
+906b8d8 NPE: mBadgeIcon is sometimes null
 ce17526 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/PhoneCommon/
+ff03279 [1/2] Credit text and action should be limited to single line
+
+   * packages/apps/Settings/
+4148d89 Build V8.2
+
+   * packages/apps/Trebuchet/
+921eb83 Check for null provider info when removing widget
+
+   * vendor/cm/
+69d7325 Add overlay for fingerprint help URL
+
+   * vendor/cmsdk/
+6113701 PerformanceManagerService: drop requests if system is not yet ready
+4f21d34 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     05-12-2016
+====================
+
+
+   * build/
+624ba2e repopick: support specifying a range of commits to pick
+
+   * frameworks/av/
+5c76693 FFMPEGSoftCodec: Initialize the OMX param struct before using it
+
+   * packages/apps/CMFileManager/
+d027047 Filter display of non-relevant results in search results
+
+   * packages/apps/Dialer/
+5a701ac [1/2] Roaming Notification: restrict to provider selected values
 fa0036e Move hint text to main search fragment
 7fafe8d Settings: Remove Maxlines for summaries
+8d0da2d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+87fa91e NPE: make sure that the brand icon isnt null
 
    * packages/apps/Messaging/
 0dabdec Save messages to SIM feature
 
+   * packages/apps/PhoneCommon/
+bdd80a2 [2/2] Preferences for provider roaming call counts
+
    * packages/apps/Settings/
-fb90ab5 Build V8.2
+d3bdc5f Add translations for Screen Time-Out
 
    * packages/apps/Trebuchet/
 fe7faac Trebuchet: Make workspace layout configurable by prebundled mcc
 
    * vendor/cmsdk/
-4f21d34 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 256a735 CMSettings: don't trample user metrics setting on upgrade
 8c8601b LLS: Fix NPE when backing service dies
 
@@ -107,6 +254,9 @@ ba3f64d OpenSSLCipher: use 128 bit tags in GCM by default
 4612483 GCM: set default tag size to 12 bytes
 b06fd46 GCM: return the correct AlgorithmParameters
 f6a025f Do not waste entropy when using BoringSSL
+
+   * external/stagefright-plugins/
+20a14f3 stagefright-plugins: Fix crash with invalid FLAC file
 
    * frameworks/av/
 fff93c4 DO NOT MERGE:Camera: fix recording stream update logic
@@ -228,8 +378,6 @@ c0b01a3 Add additional synchronization around caller-info Provider state
 b2d69a0 Automatic translation import
 
    * packages/apps/Dialer/
-8d0da2d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-87fa91e NPE: make sure that the brand icon isnt null
 51e3c81 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
 8c5b299 Automatic translation import
 511af0c Automatic translation import
@@ -270,7 +418,6 @@ e86a40e Make internal variables non-static.
 7e56391 Automatic translation import
 
    * packages/apps/Settings/
-d3bdc5f Add translations for Screen Time-Out
 f3683fd Automatic translation import
 4b451b8 Automatic translation import
 
@@ -342,22 +489,17 @@ e27a3e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
 
    * art/
 14b54d8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_art into cm-13.0
+81dc927 ART: Remove unique-numbered labels from arm64 assembly
 
    * cts/
 50f2ad5 EDI: Check if packageInfo.applicationInfo is null
 2225625 Merge "MediaRecorderTest: fix supported video size logic" into marshmallow-cts-dev
-
-   * external/stagefright-plugins/
-20a14f3 stagefright-plugins: Fix crash with invalid FLAC file
 
    * frameworks/base/
 2dbb582 WindowManagerService : Ensure we update both size/position
 43ab36f RF cutback feature for SAR
 eb6f8ba batteryservice: Use Alpha channel for segmented LED power level
 edd4728 am: Remove extraneous boostage
-
-   * frameworks/native/
-425f70f SurfaceFlinger : Ensure position changes are drawn with correct buffer size
 
    * frameworks/opt/net/wifi/
 81907f5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
@@ -401,6 +543,7 @@ cf179d0 Update BlockContactHelper usage to new spec
 
    * packages/apps/ContactsCommon/
 13c6c99 Update LookupProvider to new CallerInfoAPI spec
+b29eca5 Avoid drawable resources from being scaled.
 
    * packages/apps/Dialer/
 c15c9b7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
@@ -443,6 +586,7 @@ f6f8b3a [2/2] Don't get directory intent on refresh
    * packages/services/Telephony/
 a429600 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 d563d91 Wifi HOTSPOT receiver to handle RF cutback
+28c529d Move new PERSO string to cm_strings
 
    * system/vold/
 628b548 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
@@ -451,54 +595,4 @@ b72e114 vold: Fix tool paths for minivold
    * vendor/cm/
 17eeeb3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 244e2cd Prep for C-Apps support
-
-====================
-     05-09-2016
-====================
-
-
-   * art/
-81dc927 ART: Remove unique-numbered labels from arm64 assembly
-
-   * device/samsung/hlte-common/
-e90a78a hlte-common: update mount options
-
-   * packages/apps/ContactsCommon/
-b29eca5 Avoid drawable resources from being scaled.
-
-   * packages/apps/Dialer/
-a444cdf Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-9b80a50 Modify Settings activity for the revised CallerInfoApi within AmbientSDK
-
-   * packages/services/Telephony/
-28c529d Move new PERSO string to cm_strings
-
-   * prebuilts/cmsdk/
-e029cf3 prebuilts/cmsdk: Update for patch release.
-
-   * vendor/cm/
-1367c2a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-d7cbcb3 Update Ambient SDK to 1.5.8
-
-====================
-     05-08-2016
-====================
-
-
-   * cts/
-d3b47cc MediaRecorderTest: fix supported video size logic
-
-   * device/samsung/hlte-common/
-8e0968c hlte-common: rootdir/sepolicy cleanup
-128d1cd ril: Revamp ril for M
-
-   * hardware/qcom/fm/
-49630ff Convert regional band arrays to string references
-
-   * packages/apps/Settings/
-7388ae8 Build V8.0
-
-   * vendor/cmsdk/
-279457e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-4a0ad7c CMSettings: Fix upgrade from cm-12.1 after weather changes
 
