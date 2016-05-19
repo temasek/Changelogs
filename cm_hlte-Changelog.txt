@@ -1,4 +1,234 @@
 ====================
+     05-19-2016
+====================
+
+
+   * android/
+52a656a Remove SpeechRecorder
+78e1e64 Sort    *s again
+
+   * build/
+1d55d63 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+
+   * external/sqlite/
+eaf089c Upgrade to SQLite 3.13.0
+
+   * external/uicommon/
+d5b6fc5 Add support to Snackbar for WindowInsets
+
+   * external/webp/
+381529d Merge "Revert "Use the NDK cpufeatures directly.""
+cfab283 Revert "Use the NDK cpufeatures directly."
+79788ed Merge "Use the NDK cpufeatures directly."
+8c2ed69 Use the NDK cpufeatures directly.
+
+   * external/wpa_supplicant_8/
+2e59488 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
+f27dfe2 Merge branch 'LA.BF.1.1.3_rb1.13' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/base/
+17d75d8 SysUI: Check swiping progress before collapsing KBA
+ab5f7f0 SystemUI : Fix left swipe when dismissing bouncer
+ec6666c usb: ensure accessory detached sent on re-attach
+6404d20 Fix Quick settings tiles font themes derp
+bd6bf00 SystemUI : Ensure bouncer is not shown for SHADE
+5a7c38d Port "Settings: add a way to not localize zone selections" to cm-13
+46b113b Settings: add Kiev time zones to picker
+5a7b81f Automatic translation import
+bebe79b pm: Avoid installing prebundle to other users that were uninstalled by owner.
+1b0b90e SystemUI : Ensure previous camera preview is removed
+7324613 Revert "Marshmallow logo instead of 'No recent apps'"
+
+   * frameworks/opt/telephony/
+f4967ba Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/wlan-caf/
+122c69d Merge branch 'LA.BF.1.1.3_rb1.13' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
+
+   * packages/apps/Bluetooth/
+b8f310d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/CMFileManager/
+9d2b05e Remove "Properties" from action menu for secure directory
+
+   * packages/apps/Contacts/
+66374db Use the explicit spam flag on Contact for identifying spammy contacts
+
+   * packages/apps/ContactsCommon/
+ee5aafb Extract spam information from encoded lookup-uri
+
+   * packages/apps/DeskClock/
+c250a47 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+
+   * packages/apps/Dialer/
+a07772c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+342125e Add spam information to encoded lookup uri
+0b65194 Revert "Show SIP call method in spinner and force update on resume"
+faec370 Protecting against null locales
+cada26d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+0d20caa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/PackageInstaller/
+e69d4b4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
+
+   * packages/apps/Settings/
+dbfc74f Build V8.5
+a37def1 Revert "wifi: forward port avoid poor connection setting"
+3fad8cc Settings: update time zone strings on date change
+4b541f7 Automatic translation import
+6b67e32 Settings: Ignore process kill receiver events if activity is destroyed.
+
+   * packages/apps/Trebuchet/
+21115ac Trebuchet: Fix possible OOB
+
+   * packages/providers/ContactsProvider/
+f71a320 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+
+   * packages/services/Telephony/
+6fd44d2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/core/
+04c9643 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+aef909c SystemClock: elapsedRealtimeNano() should use clock_gettime() on Linux
+6aa141f init.rc: restart keystore when servicemanager restarts
+04db896 Avoid setting adj to wrong process.
+163d3e0 Fix use of uninitialized memory.
+18ec0f2 (FROM MASTER) init: fix writepid wrong pid written in file(s)
+6318cde Newer kernels added SEGV_BNDERR.
+8321ed5 init.rc: add missing /dev/fd symlink
+c9fd15d init.rc: mix device-specific data into the Linux RNG
+
+   * vendor/cm/
+cc5b425 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+4fb15c9 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     05-18-2016
+====================
+
+
+   * build/
+fbd7c1c ereleasetools: Allow for custom boot image signing tools
+
+   * frameworks/opt/telephony/
+aa6e466 Fix pdn cleanup issue due to apn change
+
+   * packages/apps/AudioFX/
+880b2d3 Automatic translation import
+
+   * packages/apps/Bluetooth/
+4502c24 Automatic translation import
+
+   * packages/apps/Browser/
+5cd29de Automatic translation import
+
+   * packages/apps/Calendar/
+d8157b5 Automatic translation import
+
+   * packages/apps/Camera2/
+a4ad9b4 Automatic translation import
+
+   * packages/apps/Contacts/
+91321bc Automatic translation import
+
+   * packages/apps/ContactsCommon/
+dc2032c Utilize city and country within Lookup Response
+2f01ecf Automatic translation import
+
+   * packages/apps/DeskClock/
+93cad48 Automatic translation import
+
+   * packages/apps/Dialer/
+c9ec0e3 Add location information from contact-info provider
+6a15637 Add additional info from contact-info provider, if any, to Call Details
+6b09908 Show SIP call method in spinner and force update on resume
+907ac58 Allow MANAGE_USERS and INTERACT_ACROSS_USERS permissions
+46795a7 Automatic translation import
+561cc16 Dialer Settings: fix InCall Plugin settings
+fa919fe Fix call log contact info query
+65493f0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/ExactCalculator/
+83dcbdf Automatic translation import
+
+   * packages/apps/FMRadio/
+1b67827 Automatic translation import
+
+   * packages/apps/Gallery2/
+f2d026d Automatic translation import
+
+   * packages/apps/Gello/
+39aba94 Automatic translation import
+
+   * packages/apps/InCallUI/
+64cdcef Minor bug fixes
+c3a5ee4 Ensure the block icon within incoming call notification is themable
+6db091c Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+5a67ade Automatic translation import
+
+   * packages/apps/Messaging/
+e3ad34d Automatic translation import
+
+   * packages/apps/Nfc/
+0db06f2 Automatic translation import
+fba2444 Nfc: Clear transfer manager service on Destroy
+
+   * packages/apps/PackageInstaller/
+9627774 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+5f1bd90 Show SIP call method in spinner and force update on resume
+4e40c7c Automatic translation import
+
+   * packages/apps/Screencast/
+73c3b47 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+abd4df6 Automatic translation import
+
+   * packages/apps/Trebuchet/
+056b556 Automatic translation import
+
+   * packages/apps/TvSettings/
+e5b8e98 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+6c4f7de Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+c12e97d Automatic translation import
+
+   * packages/providers/CalendarProvider/
+1a3cb8a Automatic translation import
+
+   * packages/providers/ContactsProvider/
+23ea70b Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+3b93b6b Automatic translation import
+
+   * packages/providers/DownloadProvider/
+fcbb874 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+5ea8066 Automatic translation import
+
+   * packages/services/Telephony/
+1942996 Automatic translation import
+
+   * vendor/cm/
+a362c65 APN: Add Straight Talk Verizon APN
+
+   * vendor/cmsdk/
+8f50ecd Automatic translation import
+
+====================
      05-17-2016
 ====================
 
@@ -68,6 +298,9 @@ cc1a6ee Remove HAVE_PTHREAD_COND_TIMEDWAIT_RELATIVE test.
 5ba1ebc Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 46a6b73 SubscriptionController: fix subscription updating
 
+   * hardware/ti/wlan/
+e1eedea wl12xx: FW updates from ol_R5.SP8.01 (wl12[78]x-fw-4-[sm]r.bin)
+
    * kernel/samsung/hlte/
 c0e265c ppp: take reference on channels netns
 
@@ -76,6 +309,7 @@ c68948b Contacts : handle InCall plugin refresh on configuration change
 baa3812 Contacts: fixed build break in androidTest
 
    * packages/apps/Dialer/
+eb35027 Clear and restart cache on contact-info provider updates
 4fd32ab Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
 7f62e06 Fix 'Learn More' link within the picker for caller-info provider
 9fb1a7b Constrain logo bounds within the picker for caller-info provider
@@ -95,6 +329,7 @@ e2424d2 Close "Protected apps" activity during power cycle
 
    * system/core/
 e3ac708 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+516d691 init: Allow devices to opt-out of fsck'ing on power off
 8284bce rootdir: Put bootanimation service in system-background group
 
    * vendor/cm/
@@ -207,127 +442,4 @@ e672873 Automatic translation import
 aa2170f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 5cb275d Automatic translation import
 638da93 Automatic translation import
-
-====================
-     05-14-2016
-====================
-
-
-   * device/samsung/hlte-common/
-cbffeb2 hlte-common: update mount options
-
-   * frameworks/opt/telephony/
-7b06433 SubscriptionController: load all subs before setting defaults
-
-   * hardware/qcom/audio-caf/msm8974/
-da55887 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
-
-   * hardware/qcom/display-caf/msm8974/
-59e66c6 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
-91790fc Revert "gralloc: fall back to old pixel alignment on old blobs"
-c26ee91 Revert "gralloc: allow forcing old pixel alignment"
-
-   * packages/apps/Contacts/
-af31083 Use JobService for periodic InCallMetrics reporting
-f1e17cb Contacts : prompt run time READ_SMS permission for M
-d90403f Contacts InCall metrics test
-
-   * packages/apps/DeskClock/
-7294e6e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-d03b7ff DeskClock: Use accelerometer instead of orientation sensor
-790e76d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-
-   * packages/apps/Dialer/
-dc84686 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-11118df Add additional permissions needed to utilize BlacklistUtils
-d2095b5 [2/2] Credit text and action should be limited to single line
-6eceee2 InCallApi plugin strings not updated on locale change
-79a94cb Metrics fixes and switching to job sched
-c64a3f4 NPE: make sure search fragment is visible
-98e0b00 Fix SuperNotCalledException
-388f636 Fix NPE within CallLogFragment
-7ddb482 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-d310ff2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-3210555 Fixed crash in InCallActivity.
-77f56a5 Best fix for the case where ModButtonPresenter UI wasn't updating properly in onResume cases.
-71aba70 Mod buttons only enabled when incall
-8404300 Don't query incall plugin invite intent until its actually needed
-
-   * packages/apps/PhoneCommon/
-281a48f AmbientDataSubscription: don't post results for unknown plugins
-
-   * packages/apps/Settings/
-2a86ac4 Build V8.3
-5e32db5 Profiles: Disable notification item if ringtone & notification volumes are linked
-b06553d Disable cellular networks settings menu if airplane mode is enabled
-
-   * packages/apps/SetupWizard/
-36f15ef SetupWizard: Alway show google pages if gms present
-
-   * vendor/cm/
-9f50a98 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-8d5d4cd Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-e703060 Revert "CMSDK: App picker navbar button (2/2)"
-6866528 CMSettings : Move force_show_navbar to global
-977549c CMSDK: App picker navbar button (2/2)
-
-====================
-     05-13-2016
-====================
-
-
-   * android/
-419c046 Track own external/conscrypt
-
-   * external/skia/
-2673286 skia: qc-perf: link against libqc-opt for msm8916
-
-   * frameworks/av/
-8436846 Revert "nuplayer: Fix audio EOS notifiy on AudioSink not ready"
-
-   * frameworks/native/
-bd41ea3 SurfaceFlinger : Ensure position changes are drawn with correct buffer size
-
-   * hardware/invensense/
-85c5a9a invensense: Use sensor HAL only if device specific HAL is not present
-
-   * hardware/qcom/audio-caf/msm8960/
-fd42377 hal: Clean up from merge
-
-   * kernel/samsung/hlte/
-f8c5eae netfilter: x_tables: Fix compilation error
-06e7fc9 netfilter: x_tables: check for size overflow
-b0496a6 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
-24c7118 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
-79377ea ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
-26ea05d arm: mach-msm: pil-msa: Set the strongly-ordered attribute on DMA allocations
-
-   * packages/apps/DeskClock/
-9ab924f DeskClock: Initialize boolean state with start button visibilty
-
-   * packages/apps/Dialer/
-b441ca6 Make sure search fragment is visible and attached
-6251ca1 NPE: Providers might not have a singlecolorbrandicon
-906b8d8 NPE: mBadgeIcon is sometimes null
-ce17526 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/PhoneCommon/
-ff03279 [1/2] Credit text and action should be limited to single line
-
-   * packages/apps/Settings/
-4148d89 Build V8.2
-
-   * packages/apps/Trebuchet/
-921eb83 Check for null provider info when removing widget
-
-   * vendor/cm/
-69d7325 Add overlay for fingerprint help URL
-
-   * vendor/cmsdk/
-6113701 PerformanceManagerService: drop requests if system is not yet ready
-4f21d34 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
