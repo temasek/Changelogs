@@ -1,16 +1,226 @@
 ====================
-     05-25-2016
+     05-30-2016
 ====================
 
 
    * device/qcom/sepolicy/
-d42ae50 sepolicy: Add hand biometrics manager permission
-314957c sepolicy: Add improveTouch gesture manager permission
+236f12d netmgrd: Allow netmgrd to set xlat property
+8ad941e sepolicy: Add zram, swap disks creation permission
+090aa3b sepolicy: add selinux polices for gamed
+fed995e sepolicy : Add new properties for ubwc support
 
-   * external/koush/ion/
-3bee672 Ion: Ignore get exif rotation exception
+   * device/samsung/hlte-common/
+313f237 hlte-common: Disable LMK debugging
 
    * frameworks/base/
+226fed9 bootanimation: Call eglReleaseThread in threadLoop
+e078e0c Fix bug - words's position is wrong in the RTL
+f44b580 Network permission update for multi-user case.
+e60fb94 Fix unexpected notification after stopForeground(false)
+257395c When Monkey test, ANR in android:ui
+996ba5f When monkey test, the object of mHost throws NullPointerException.
+cbf289c While turning OFF do not honor ON requests.
+c18a4ae Alarm: add missing closedir after opendir when searching for RTC
+44d6f8d Chronometer: Update the value only if displayed on screen
+2d9bb8c Fix system crash caused by invalid array index of LegacyTypeTracker
+c7eaf23 Fix batterySendBroadcast not synchronized issue.
+4b20929 Don't lookup application keyguard notification visibility unnecessarily
+db05552 Frameworks: Add per app controls for LP keyguard notifications (1/2)
+3bb563d Revert "[1/2] base: app notifications hide when locked"
+664b1ac Merge pull request #126 from HealthyMarshmallow/SignatureSpoof
+
+   * libcore/
+c582c9d Drop redundant calculation the result of which is unused.
+
+   * packages/apps/Settings/
+84909ee Build V8.9
+fcfe454 Fix bug - APN protocol shows wrong value in ApnEditor page
+d8904a5 Fix register multiple PhoneStateListeners.
+c170461 Fix end padding of summary text for dialog is too narrow
+626de44 Fix cannot build prefer or restore APN for Secondary SIM/Sub.
+9ec59ef Fix the momery leak in DrawOverlayDetails
+427b197 Settings: Add per app controls for LP keyguard notifications (2/2)
+6055a8b Revert "[2/2] Settings: app notifications hide when locked"
+fdb6aad Merge pull request #451 from HealthyMarshmallow/SignatureSpoof
+
+====================
+     05-29-2016
+====================
+
+
+   * packages/apps/Stk/
+f9aecea Stk: Make the text a little smaller
+053ce97 Stk: Materialize message dialog icon
+65aaf67 Change the theme and the style of the activities
+a1e3c60 Fix tab/space inconsistencies in stk_msg_dialog.xml
+
+   * packages/apps/ThemeChooser/
+cd53946 ThemeChooser: fix on theme installed notification
+
+   * vendor/cm/
+de78046 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+49d8d70 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     05-28-2016
+====================
+
+
+   * frameworks/av/
+520d7b7 Codecs: Fix EOS handling in soft codecs
+
+   * frameworks/base/
+2f547d0 appops: Respect screen interactivity before creating dialogs.
+5aa33c3 appops: Implement concept of delayedcount.
+75297da Automatic translation import
+b9d152e Merge pull request #125 from HealthyMarshmallow/cm-13.0
+1a2c008 PM: Signature spoofing (1/2)
+65c49b2 BatteryService: Fully charged notification toggle (1/2)
+
+   * kernel/samsung/hlte/
+49025dd USB: usbfs: fix potential infoleak in devio
+
+   * packages/apps/Bluetooth/
+e10887a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/CMFileManager/
+1f47310 Fix crash when rotate to landscape without grant permission
+
+   * packages/apps/Messaging/
+4cc542b Automatic translation import
+ddf7c99 [SMS] Replace message content for protocol 0x41-0x47
+
+   * packages/apps/Screencast/
+1ecd521 Automatic translation import
+1ad771f Fix reference to a renamed string
+
+   * packages/apps/Settings/
+363c989 Automatic translation import
+3d3bdc0 Merge pull request #450 from HealthyMarshmallow/cm-13.0
+4dfa50b Developer options: Signature spoofing (2/2)
+1fad655 Notifications: Fully charged notification toggle (2/2)
+
+   * packages/apps/Trebuchet/
+93e949f Wallpaper: Allow multiple partners to be loaded
+
+   * packages/services/Telephony/
+235373a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+1262004 Automatic translation import
+
+   * vendor/cm/
+30e0b17 Don't dex-preopt Gello
+
+====================
+     05-27-2016
+====================
+
+
+   * frameworks/base/
+922e004 Add CM version to dropbox entries
+
+   * frameworks/native/
+e18929f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+ea0ee31 dumpstate: add CM version to output
+
+   * packages/apps/Bluetooth/
+8a156be Automatic translation import
+
+   * packages/apps/CMBugReport/
+9ff9513 Automatic translation import
+
+   * packages/apps/CMFileManager/
+7201e71 Remove set as home menu item for secure storage
+bbf2266 PickerActivity: Grant read url permission
+
+   * packages/apps/Calendar/
+411ad09 Automatic translation import
+
+   * packages/apps/Contacts/
+ffaa045 Automatic translation import
+f05914c Contacts : fix FAB when an InCall plugin tab is in focus
+
+   * packages/apps/ContactsCommon/
+f759863 Automatic translation import
+
+   * packages/apps/Dialer/
+489c364 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+b4316ea Automatic translation import
+03c2c84 Alias Dialer's settings activity for use as caller-info settings
+bafc8fd Fix NPE in caller-info settings migration component
+
+   * packages/apps/Gello/
+f4d3ccf Automatic translation import
+
+   * packages/apps/InCallUI/
+bc759ba Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+241d00a Automatic translation import
+84db99a Fix copy constructor of ContactInfoCache
+
+   * packages/apps/Messaging/
+26db7cf Automatic translation import
+
+   * packages/apps/PhoneCommon/
+2c6c8d3 Automatic translation import
+
+   * packages/apps/Profiles/
+77051de Automatic translation import
+
+   * packages/apps/Screencast/
+e66278d Automatic translation import
+
+   * packages/apps/Settings/
+546d3ac Merge pull request #449 from Mai19930513/cm-13.0
+8d48563 update zh-rCN translations
+
+   * packages/apps/SetupWizard/
+6476f1b Automatic translation import
+
+   * packages/apps/Snap/
+267262e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+b3cfd09 Snap: Update comment to reflect audio focus changes
+2bcea7e SnapdragonCamera: Release audio focus when video recording is done
+ed07584 SnapdragonCamera: request audio focus before starting video recording
+ccd3e81 SnapdragonCamera: Recording screen to be dynamic
+02fa448 SnapdragonCamera: Fix the memory leak on view.
+
+   * packages/apps/SoundRecorder/
+0023df8 Automatic translation import
+
+   * packages/apps/Trebuchet/
+cb3431d Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+c42d795 Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+ba3b4f9 Automatic translation import
+
+   * packages/services/Telephony/
+1554030 Automatic translation import
+9e508a6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+926776b Move IMS strings to proper resource file
+
+   * system/core/
+9b124fc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+
+   * vendor/cmsdk/
+970f0b6 Automatic translation import
+
+====================
+     05-26-2016
+====================
+
+
+   * cts/
+978b415 Merge "DO NOT MERGE ANYWHERE: Update CTS to 6.0R7" into marshmallow-cts-release
+63ce966 DO NOT MERGE ANYWHERE: Update CTS to 6.0R7
+
+   * frameworks/base/
+1d9dc9a SystemUI: fix qs pulldown on certain themes
+4832f77 pm: Use sourcerecord if available for protected app validation.
+ee0e118 SystemUI: improve keyguard with SIM PIN interactions
 d92902b Merge pull request #124 from HealthyMarshmallow/cm-13.0
 df73efe Pie: Disable background in Bare mode
 853d3ce CallInBackground: Do not block HOME
@@ -19,349 +229,44 @@ df73efe Pie: Disable background in Bare mode
 7b1e265 StatusBar: Do not just define vars...
 4c81314 SystemUI: improve layout of qs detail panel
 
-   * frameworks/native/
-12b8180 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-0921754 Add dalvik heap/hwui overrides for xxhdpi phone with 3072MB RAM
-
-   * kernel/samsung/hlte/
-a67461b Build v1.79
-9fda51e cpu: Handle smpboot_unpark_threads() uniformly
-0850ebd cpu: Defer smpboot kthread unparking until CPU known to scheduler
-67b86b5 smpboot: use kmemleak_not_leak for smpboot_thread_data
-d9b337d smpboot: Add missing get_online_cpus() in smpboot_register_percpu_thread()
-16323b6 kthread: Fix the race condition when kthread is parked
-7089c5d smpboot: Remove leftover declaration
-bfcde67 kernel/cpu.c: use idle instead
-3b3e6ff arm: Use generic idle thread allocation
-419b0c8 kernel/cpu.c: update idle_thread_get(cpu)
-a292a74 smp: Add task_struct argument to __cpu_up()
+   * packages/apps/Contacts/
+765f3a0 Contacts: only schedule metrics JobService if Ambient exists
 
    * packages/apps/Dialer/
-8a00c8e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-560f3a8 Crash Fix When DeepLinkEnabled callback returns to a null Context.
+5b9db20 Add migrations for CallerInfo related settings
 
    * packages/apps/LockClock/
 fc984c6 Merge pull request #1 from HealthyMarshmallow/cm-13.0
 3765308 ForecastBuilder: Show only next 5 days in small panel
 
    * packages/apps/Messaging/
-9da3129 Revert "[SMS] Replace message content can't be replaced"
-88b174e [SMS] Replace message content can't be replaced
-54374cf Added support for video and audio mms attachments
+a29d139 Integrate CallerInfo with notifications
+110cdf8 Add handling of MMS Read report.
 
    * packages/apps/Settings/
+bdf808a Merge pull request #448 from beroid/cm-13.0
+1bb3517 Settings: Update RU translations
 ecb6929 Build V8.8
 c2084eb Merge pull request #447 from HealthyMarshmallow/cm-13.0
 29d1778 Wireless: Add toggle for captive portal check
 ad21477 Settings: Allow sorting Applications by size
-19c7299 [1/2] Settings: Add option for position date left-right of clock
-143a20b Settings: Disable cancelable with multi-windows confirm dialog
-2248a76 Settings: Update oem unlocking status with back button
-e15050e Settings: Update oem unlocking status when dismiss
 
-   * packages/providers/ContactsProvider/
-7bbfb62 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
-e78a3c7 Obtain region config from system-property for Contacts pre-loading
+   * packages/providers/TelephonyProvider/
+c183e13 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+
+   * packages/services/Telephony/
+498aaa6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+f228ce1 Switch back to Auto selection if Manual fail's
 
    * system/core/
-0393c1d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+2a02799 debuggerd: add CM version to tombstones
 
    * vendor/cm/
+4b84f2a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+06a012a Revert "Revert "Fix GMS guard""
+bdc5d03 cm: Remove GMS guard
+243d369 cm: Fix the backuptool importation logic
 4269c0f Merge pull request #29 from HealthyMarshmallow/cm-13.0
 e2fc686 common: Correct ro.modversion
 9772286 Revert "Fix GMS guard"
-04df906 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-b9f0c17 Fix GMS guard
-184bb3d Update ambientsdk version 1.5.11
-
-====================
-     05-24-2016
-====================
-
-
-   * android/
-266e97e Track own snap
-cd5c205 qc hals: Add 8937/8953 variants
-
-   * build/
-93a8416 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-96170ad qcom: Support 8937/8953
-
-   * device/samsung/hlte-common/
-2e4fdb1 hlte-common: updates to cpu-boost & its permissions
-f680f9e hlte-common: Remove Live Display init.
-
-   * frameworks/av/
-c5c1c02 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-8f270dc audiopolicy: engineconfigurable: Don't include the example
-af1fa68 stagefright: Correct Exynos4 stride alignment
-
-   * frameworks/base/
-1c45637 Only call uncrypt when we're encrypted
-4f43381 Revert "ShutdownThread: Only call uncrypt when we're encrypted"
-587dac0 SysUI: Use linear interpolator for battery level
-952867a SysUI: Fix coloring of frame and bolt
-1b2e5a7 SysUI: Allow styling of battery text/charge blend mode
-bfd4c62 SystemUI: fix multi touch gestures and extra jank
-48cebe9 SystemUI: Filter out unsupported values off perf profile tile
-f3c8ea4 bootanim: Cleanup
-b1421f5 frameworks/base: Support for third party NFC features
-
-   * frameworks/opt/telephony/
-40954b8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-514c79b Telephony: don't show unsupported transfer on IMS
-
-   * hardware/qcom/audio-caf/msm8937/
-e1b5f35 make: Fixup cross-platform guards
-
-   * hardware/qcom/display-caf/msm8937/
-9f98625 make: Adjust to dynamic paths
-
-   * hardware/qcom/media-caf/msm8937/
-3965563 make: Adjust to dynamic paths
-
-   * packages/apps/Contacts/
-5391aed Request storage permission for gallery access
-91aeaed Contacts : added a flag to track soft vs hard signed out state
-
-   * packages/apps/Dialer/
-5f5b6ad Overflow popup menu may be null when overflow menu button is not null
-9bee3a3 Mark contact info obtained from a lookup provider with remote source-type
-00ddbb6 View Note: removes the ability to make multiple notes for the same call.
-
-   * packages/apps/Gallery2/
-d5e574a Gallery: Try to open existing camera
-
-   * packages/apps/InCallUI/
-88bdccb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-f4a606b View Note: Use the DeepLinkIntegrationManager method for view note
-
-   * packages/apps/Messaging/
-761d4cc Add UI/UX capability to attach a saved video to a MMS message
-
-   * packages/apps/Nfc/
-6e8f825 NFC: Adding new vendor specific interface to NFC Service
-
-   * packages/apps/Settings/
-df9a051 Build V8.7
-814a38e Settings: Remove redundant definition of SoundSettingsActivity.
-
-   * packages/apps/SetupWizard/
-4981bc9 SetupWizard: Ensure language picker is enabled onResume
-
-   * packages/apps/Snap/
-bc22b5c Revert "Snap: Use new window manager flag for prevent system keys."
-94574eb Snap: Use new window manager flag for prevent system keys.
-
-====================
-     05-23-2016
-====================
-
-
-   * device/qcom/sepolicy/
-be150b2 sepolicy: Add support for new mdtpd
-
-   * external/android-clat/
-8ac9b35 clatd: Fix packet corruption seen with GRO packets
-
-   * external/toybox/
-892c602 toybox: Fix netstat crash
-baba9cf Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
-17dcbb7 Revert "toybox: Fix build of static executable"
-71ddd1f Revert "toybox: find: Fix segfault when using -iname/-ipath with -exec"
-
-   * frameworks/base/
-35b75f4 Fix NL translation after r22 revert
-
-   * kernel/samsung/hlte/
-2abf676 Input: aiptek - fix crash on detecting device without endpoints
-
-   * packages/apps/Bluetooth/
-d7d8bc7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-2a24352 Fix NL translation after r22 revert
-
-   * packages/apps/ManagedProvisioning/
-dac21a2 Fix NL translation after r22 revert
-
-====================
-     05-22-2016
-====================
-
-
-   * device/samsung/hlte-common/
-d053efb Disable HW Encryption on ODE
-4e263d8 Revert "hlte-common: Allow device to skip the sensor-permission request"
-
-   * frameworks/base/
-c00c7fd Adjust the CAF task manager layout
-95da230 IMS: Add support of notifyPreciseCallState for multi sim
-3a11305 Handle mnc 00 while retrieving the Resources based on subid
-55f4adf Create emergency account with primary stack phone.
-6b260fd Add P2 option in openLogicalChannel.
-306b95f IMS-VT: Disable multi tasking by default
-80946a2 Add 3 APIs for card application
-ee60c77 server: Whitelist non-INTERNET/non-CELLULAR Network for metering
-f592e4f keyguard: Fix password doesnot sanitize after verification
-dceca15 Revert "SystemUI: recalculate clock position on removing empty shade views"
-
-   * frameworks/opt/telephony/
-64876d2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-13efc53 WEA: Add an field define for cellbroadcasd table
-cc9c7b6 Update Instrumentation code
-6f9f782 Define EF MSPL/MLPL/PRL values and paths
-f2c78b1 telephony: Fix RAT type extra key
-7ba6663 Add iccid support for mvno data
-5222189 Fix useImsForUt check
-
-   * hardware/qcom/audio-caf/msm8994/
-6dafe5c hal: Compilation fixes
-
-   * hardware/qcom/media-caf/msm8937/
-b5a27bf Avoid collision with the ffpmeg plugin
-
-   * packages/apps/InCallUI/
-28da98d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Snap/
-49caa04 Snap: Restore previous default denoise value
-
-   * packages/services/Telecomm/
-7f1b044 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * packages/services/Telephony/
-b617df0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-79b9401 IMS: Fix call forwarding issue in dual sim case
-a4ad53b IMS: Remove the methods with dummy implementation
-ecb6766 PhoneApp Crash: Multiple times due to permission issue
-
-   * vendor/cm/
-5c40912 Revert "Viper : fix up viper removal"
-e4e71a5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-====================
-     05-21-2016
-====================
-
-
-   * build/
-ce439ac Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * frameworks/base/
-6e4dd4f ShutdownThread: Only call uncrypt when we're encrypted
-59fd2b6 SystemUI: update qs tile hint and header view on locale change
-53f3486 Revert "SystemUI: fix clock jumping when expanding QS from lockscreen"
-
-   * frameworks/native/
-5577ce5 surfaceflinger: Read property for GPU compositing
-
-   * frameworks/opt/telephony/
-91b4ae8 Call Forwarding Icon displayed for Deactivated SUB
-d4c0b2e Fix Ims pdn deactivate due to single pdn arbitration
-83b3108 Fix to prevent crash on conference failure.
-bc93aeb Initialize call state phone app starts
-a996d2e Add call reject cause code.
-bd4e168 Reset internet requests when SIM is removed
-c7fa659 Update preferred network type based on active Sub ID
-3db37b5 Fix disabled merge button on conference failure.
-99e4576 IMS-VT: Update videoProvider in main thread
-10b5e03 FDN: Telephony plugin for SIMRecords
-f8a3a6c Make changes to create QtiPhoneProxy class.
-b71bf21 Add pdp data reject with cause code 29 and 33
-af238e5 Add a flag to control SPN display
-ce26ddd Telephony plugin for GsmServiceStateTracker
-8306c37 Exclude the last two bytes for the non-type1 Email file.
-e3b4570 Specify the path when loading from EF_ADN
-c0be62f Phone App crash: process com.android.phone has stopped.
-a16437d Add p2 option in OpenLogicalChannel
-7ad0f8e Define telephony resources as a coreApp
-d483262 Telephony: Pass the subId when set data enabled
-5e3969d IMS-VT: Update video state of the connection first.
-26961a7 Move main thread in IPBIM to other thread to fix deadlock.
-ff4a806 IMS: Call forward options with service class support
-4b927d1 IMS: handle exception for an invalid service class
-8d38569 IMS: During SRVCC, mark dropped incoming call as missed call
-940a7ac Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-15372b2 Add ContentObserver when sms sent limit changed
-
-   * packages/apps/CMFileManager/
-b0829d6 FileManager : Index all storage volumes
-
-   * packages/apps/Camera2/
-96a82ff Camera2: Use new window manager flag for prevent system keys.
-
-   * packages/apps/Contacts/
-b897fa4 Automatic translation import
-
-   * packages/apps/Dialer/
-062c69c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-397e4de Automatic translation import
-ac6a155 Wire up import/export overflow options.
-e41bb9b Refactor CallerInfo strings to simplify translations
-de14363 Add negative option to caller info disable dialog
-746e8d4 Autosize hint text
-
-   * packages/apps/Gello/
-1634fa8 Automatic translation import
-
-   * packages/apps/InCallUI/
-aa7ceb4 Fix issue of held call disappearing during swap operation.
-65c7670 IMS-VT: Animate dialpad on show when InCallActivity re-creates
-2b1737d IMS-VT: Set preview surface only if camera is opened
-d7057ab IMS-VT: Fix camera preview size.
-8d3421d IMS: Remove the methods with dummy implementation
-a85e38b IMS-VT: Donot create new surface when setting surface dimensions
-5ef4641 IMS-VT: Trigger internal onStateChanged notification
-983372e IMS: Unbundle capability constant for add participant from frameworks
-cd99306 IMS-VT: Unbundle capability consts for downgrade to voice from frameworks
-15d366c IMS-VT: Use correct view size when device is rotated.
-8c4ffdc IMS-VT: Move preview video view after photo view in landscape layout
-dd3ad8c IMS-VT: Catch the exception when dismissing the zoom alert dialog
-99532f2 IMS-VT: Update end button position onPreDraw of secondary call info
-0f02198 IMS-VT: Route to speaker if current route is not BT, headset or speaker
-5b32f47 IMS-VT: Optimize handling of orientation mode.
-b0c3f8d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-061a704 Automatic translation import
-
-   * packages/apps/Messaging/
-7a3ca45 Automatic translation import
-
-   * packages/apps/Settings/
-f899ef3 Build V8.6
-27a40dd Automatic translation import
-fe0ff33 Settings : Rebuild app list after reset
-dfc6390 Settings: Wrap invocation on search view.
-
-   * packages/apps/Snap/
-6f0c3b6 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-c5faea1 Automatic translation import
-
-   * packages/apps/Trebuchet/
-336be8b Automatic translation import
-dccaadb Move icons to fit within Dynamic grid upon resize.
-
-   * packages/services/Telephony/
-9827225 telephony: Fix crash when extended telephony isn't available
-049f74c Add last call fail cause string.
-aee85fc Create emergency account with primary stack phone.
-eac1d5b Wrong subid extra name passed to GsmUmtsCallForwardOptions activity
-d07d5b4 Add p2 option in OpenLogicalChannel
-3819282 Fix merge after a conference call goes through SRVCC.
-c2f200c MSIM: Show Enhanced 4G LTE mode option for IMS subscription
-a0a5e96 IMS: Media tag support
-57727bb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-880d5e7 Automatic translation import
-
-   * vendor/cm/
-d349ec6 apns: Fix up AT&T APNs
-17ab362 Merge pull request #28 from Joshndroid/cm-13.0
-1e14d03 Viper : fix up viper removal
-066dca6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-08ac10e Include Gello.
-
-   * vendor/cmsdk/
-c5967c0 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-5e56748 Automatic translation import
-ef4a783 cmsdk: Skip powersave during testing.
 
