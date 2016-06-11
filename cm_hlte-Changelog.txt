@@ -1,4 +1,232 @@
 ====================
+     06-11-2016
+====================
+
+
+   * art/
+c560387 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_art into cm-13.0
+ebb3a5e art: Fix QCPERF workaround for ARM after Clang fixes
+fd80703 Enable clang for ARM builds.
+
+   * device/samsung/hlte-common/
+f559740 hlte-common: restore interactive values. last commit too laggy.
+
+   * frameworks/av/
+96b711a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+b4480fb Revert "base: start nfc service prior to systemui"
+27b436a SystemUI: fix NFC tile sometimes hiding
+7cc1ad1 UsbDeviceManager: Remove charging from persisted function composition
+
+   * packages/apps/Bluetooth/
+9a5be1e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+acfd7c3 Bluetooth-OPP: Check URI of sending files before entry cleanup
+cf5fdf7 Set sJniAdapterServiceObj to NULL after deleting it
+02d9c10 Bluetooth: Using the eventHandler to start listener
+5080b9b Bluetooth OPP: Fix mismerge
+072643f Bluetooth: fix opp NPE
+
+   * packages/apps/Dialer/
+c56c579 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+5287347 Increment nudge only after shown intent returns
+
+   * packages/apps/InCallUI/
+2ccd424 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/Messaging/
+c042a5e Fixed storage permission issue for attachments Moved some audio library tab related string to cm_strings.xml
+
+   * packages/apps/Nfc/
+01ba29d Revert "Nfc: Clear transfer manager service on Destroy"
+606f7ef Revert "nfc: create a bootstrap service"
+
+   * packages/apps/Settings/
+176f0a3 Build V9.2
+bba2cca String improvements
+
+   * vendor/cm/
+d523a49 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+dd3a17f config: Make product size available for use by    * mkfiles
+1b4eeb3 cm: Give BootReceiver permissions to read fsck log
+
+====================
+     06-10-2016
+====================
+
+
+   * android/
+15b78c3 android: add ahbottomnavigation library
+861bda4 default.xml: Move external/libpng to android-6.0.1_r43
+
+   * art/
+9805570 art: Re-enable host clang
+
+   * device/qcom/common/
+97aa119 power-8992: Remove extraneous boosting
+
+   * device/samsung/hlte-common/
+de5b43f hlte-common: update rootdir
+
+   * external/ahbottomnavigation/
+db5dd34 Updated Readme & changelog
+27658ee Updated versions
+5c90357 Updated Demo
+27ca79e Added constructor Added annotations for parameters
+3fa8147 Improved callback to update or not the UI when a tab is selected
+f1a367d Added elevation for bottom navigation layouts
+d25c076 Increased gradle version
+a492a57 Added notification elevation
+ba96907 Notification animates margin top in order to stick to the tab icon
+2745251 Added setSelected() for item icon
+98bac94 Improved Demo    * (added animations)
+
+   * external/skia/
+b632abe skia: qc-perf: link against libqc-opt for msm8937/17/53
+
+   * frameworks/av/
+fbef511 OMXCodec: Remove kClientNeedsFrameBuffer for S3D
+
+   * frameworks/base/
+a00c9d4 Framework: allow ResolverActivity to be specialized from other package
+ff040be Revert "keyguard: SIM Display Name is now a config"
+8b42af4 keyguard: SIM Display Name is now a config
+
+   * hardware/qcom/media-caf/msm8937/
+07f11ee make: Fix up platform inclusion
+
+   * kernel/samsung/hlte/
+d461330 msm: camera: ispif: Validate VFE num input during reset
+6758287 msm-camera: Reset ISPIF h/w
+65ed170 msm: camera: Make ISP and camera kernel not interruptible
+7c14a62 Revert "msm: camera: Fix crash in ispif release"
+
+   * packages/apps/Bluetooth/
+9792f96 Revert "Ensure synchronized access of JNI callback object"
+
+   * packages/apps/CMFileManager/
+bb9e0c5 Invalidate preferences headers when resuming
+
+   * packages/apps/Contacts/
+5307288 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+939ed41 Add valid number checks for block menu item
+
+   * packages/apps/Dialer/
+1db73a8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+49ee037 Automatic translation import
+209c67b Performance tweaks for DeepLinkCache and icon retrieval.
+
+   * packages/apps/Gello/
+e6b6219 Automatic translation import
+
+   * packages/apps/InCallUI/
+2c9893f Automatic translation import
+
+   * packages/apps/Messaging/
+5203455 Automatic translation import
+
+   * packages/apps/Screencast/
+3de1b3f Automatic translation import
+
+   * packages/apps/Settings/
+910f596 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+ad02907 Automatic translation import
+
+   * vendor/cmsdk/
+67784b7 Revert "Keyguard: Get your weather on... the lock screen [2/3]"
+82d88e1 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+fda1fc6 cmsdk: Provide coverage for serial number and unique device id.
+b6a21ca Keyguard: Get your weather on... the lock screen [2/3]
+5b66380 CMSettingsProvider: load provisioned flag when creating DB
+
+====================
+     06-09-2016
+====================
+
+
+   * device/qcom/common/
+ad90ded power: Use declared enums where possible
+
+   * frameworks/av/
+39d3ed8 Fix undefined behavior
+
+   * frameworks/opt/telephony/
+bb90cc3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/media-caf/msm8952/
+d81a756 mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
+ddeb931 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
+
+   * hardware/qcom/media-caf/msm8974/
+ca99059 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
+eac7fd0 mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
+
+   * hardware/qcom/media-caf/msm8994/
+3eda402 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
+c08ba8c mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
+
+   * hardware/qcom/media-caf/msm8996/
+d92e6d9 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
+726dddc mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
+
+   * hardware/qcom/media/default/
+487da6e mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
+f0fb3c9 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
+
+   * kernel/samsung/hlte/
+0a34a37 Build v1.80b1
+6ab16c8 soc: qcom: bam_dmux: Add fast-shutdown flag
+541e8f0 Revert "freezer: Do not freeze tasks killed by OOM killer"
+15a2ee71 msm: kgsl: Replace jiffy sampling with usec
+6325e46 msm: kgsl: Remove IRQ on/off sequence from nap state
+cb7aa28 arm: irq: warn only when affinity really breaks
+fa2901d arm: irq: Notify affinity change when migrating IRQs during hotplug
+df97267 Revert "arm: irq: Tone down kernel logging"
+
+   * packages/apps/CMFileManager/
+f86cee7 Check if view is inited when screen rotated
+
+   * packages/apps/Contacts/
+aa24ca6 Contacts : Remove silent option from ringtone
+
+   * packages/apps/Dialer/
+860a9a9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+52cab04 Nudges: Move roaming nudge logic to wifi listener
+6a2124a Initialize ContactsTile loader in SpeedDialFragment onStart
+
+   * packages/apps/Messaging/
+b3585c8 PhoneUtils: Doublecheck that the system default is actually usable
+ca8ed52 Messaging: fix multi participant "always-ask" MSIM flow
+
+   * packages/apps/Settings/
+eea5800 Use child fragment manager for nested dialog fragment
+dd9276d Settings: use subid & imsi for MSIM apn lookups
+a9fbd69 Revert "Fix cannot build prefer or restore APN for Secondary SIM/Sub."
+
+   * packages/apps/Snap/
+b85f900 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+0213471 Snap: Check photo orientation when creating thumbnail
+
+   * packages/providers/TelephonyProvider/
+c3b4d6b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+
+   * packages/services/Telephony/
+7646832 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+e8439a8 Telephony: pass subscriber id to apn settings
+
+   * vendor/cm/
+88a9d74 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+0c86291 Gello: Update to v20 artifact
+
+   * vendor/cmsdk/
+6edcf4c Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+aa1f592 Ensures ProfileTrustAgent properly grants/revokes trust [2/2]
+
+====================
      06-08-2016
 ====================
 
@@ -42,6 +270,9 @@ ff66d59 SystemUI: Add support for persistent usb drive notification.
    * hardware/qcom/audio-caf/msm8952/
 51dff91 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.18' into cm-13.0-caf-8952
 
+   * hardware/qcom/display/
+6b48c2b msm8226: comment out ifeq with missing endif
+
    * hardware/qcom/media-caf/msm8916/
 69616e0 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.14' into cm-13.0-caf-8916
 
@@ -75,6 +306,9 @@ ef133b1 Merge tag 'android-6.0.1_r46' into HEAD
 55d4c1e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
 b277701 Merge tag 'android-6.0.1_r46' into HEAD
 
+   * packages/apps/Profiles/
+ea4e0f4 Ensures ProfileTrustAgent properly grants/revokes trust [1/2]
+
    * packages/apps/Settings/
 2144ff6 Build V9.1 - Android 6.0.1_r46
 b751dac Settings: fix crash when reset App preference
@@ -84,6 +318,9 @@ b89a70b Automatic translation import
    * packages/apps/SoundRecorder/
 700fcdb Stop audio playback/recording in LOSS_TRANSIENT mode
 ee23f8e Set notification to auto clean.
+
+   * packages/providers/TelephonyProvider/
+32c8322 TelephonyProvider: add apn lookup for imsi
 
    * packages/services/Telephony/
 e03b991 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
@@ -137,6 +374,9 @@ b5fcd6b SystemUI : Ensure we unset focus when showKeyguard is called
 ff41546 am: clear state for every protected app invocation.
 357cca9 Core: Fix OOB
 83c190a Revert "Revert "Services: Only broadcast state change if keyguard service != null""
+
+   * frameworks/opt/telephony/
+a94ae66 DcTracker: use IMSI with APN lookup
 
    * packages/apps/BluetoothExt/
 559f783 Automatic translation import
@@ -192,121 +432,4 @@ e0196cc Automatic translation import
    * vendor/cmsdk/
 c45e01b Automatic translation import
 ea7a6fa Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     06-06-2016
-====================
-
-
-   * art/
-6aa5ad4 art: Only force-disable Clang use on ARM32+QCPERF
-1c392f0 ART: set the check_bail_out flag to false by default
-a85d319 setting RLIMIT to INFINITY.
-9179ac8 ART: make ART extension available only in 32bit
-
-   * external/libnetfilter_conntrack/
-4d4cb7f conntrack: Add kernel dependency
-
-   * external/wpa_supplicant_8/
-41d4451 Merge branch 'LA.BF64.1.2.2_rb4.40' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
-
-   * packages/apps/CMFileManager/
-b666626 CMFM: Make sure no NPE happens
-
-   * packages/apps/Gello/
-4297afd Gello: fix tabs padding
-a3d2a77 Gello: increase file char limits up to 48
-d6d2be2 Alter download flow to request permissions before anything else.
-6359b69 Gello: cleanup search engine list
-
-====================
-     06-05-2016
-====================
-
-
-   * build/
-83b523c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * device/qcom/common/
-674fb85 power-8952: Fix array initialization
-
-   * packages/apps/Dialer/
-4ce731c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/Gallery2/
-20be199 Gallery: Make sure no NPE happens
-
-   * packages/apps/InCallUI/
-792a519 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/services/Telecomm/
-a18df5e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * packages/services/Telephony/
-ec3a7cc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * vendor/cm/
-788e8c4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-278fa60 persist.dbg/data for radio to control QC prop's
-7139d22 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-70d3b76 cmsdk: Add binder transaction id tests for api 5 interfaces.
-
-====================
-     06-04-2016
-====================
-
-
-   * build/
-0bf1403 build: add kernel header dependency if module uses kernel headers
-
-   * external/stagefright-plugins/
-9db7a9c stagefright-plugins: flac does not playback
-
-   * packages/apps/Contacts/
-2453818 Automatic translation import
-
-   * packages/apps/Dialer/
-4893c00 Automatic translation import
-18f2cb8 Fix outgoing call vibrate does not work
-6e6c1c7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/Gello/
-e01b231 Automatic translation import
-
-   * packages/apps/InCallUI/
-c6cce58 Automatic translation import
-
-   * packages/apps/Messaging/
-d829188 Automatic translation import
-
-   * packages/apps/Screencast/
-8af2ad3 Automatic translation import
-
-   * packages/apps/Settings/
-ec7b8c3 Lockscreen -> lock screen
-
-   * packages/apps/SoundRecorder/
-368b858 Automatic translation import
-
-   * packages/apps/Trebuchet/
-3b75fff Automatic translation import
-
-   * packages/providers/DataUsageProvider/
-45cab1e Automatic translation import
-
-   * packages/services/Mms/
-c761197 MmsRequest: Reimplement automatic data sub switch
-
-   * packages/services/Telephony/
-af093b1 Automatic translation import
-
-   * vendor/cm/
-b538b7c cm: enable lockscreen rotation option
-
-   * vendor/cmsdk/
-174f042 Automatic translation import
-c4becbb CMSettings: fix lock screen rotation toggle [3/3]
-174af0a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
