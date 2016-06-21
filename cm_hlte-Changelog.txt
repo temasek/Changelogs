@@ -1,162 +1,388 @@
 ====================
-     06-16-2016
-====================
-
-
-   * build/
-9a87b0b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-8019126 Conditionally skip dex-preopting specific prebuilts.
-
-   * device/samsung/hlte-common/
-7922429 hlte-common: disable sync threshold
-
-   * frameworks/base/
-cdaac46 SystemUI : grey out heads-up and floating windows tile when off
-f407b67 SystemUI: fix one more misbehaving shadow
-
-   * hardware/qcom/wlan-caf/
-b1243a0 wcnss_service: Migrate from QMI to QCCI
-
-   * packages/apps/InCallUI/
-24187b9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-7a3316a Explicitly set the visibility of right_icon within call notification
-
-   * packages/apps/Settings/
-01eb6ab Build V9.3
-520c0c0 Settings: display fstype for mounted volumes
-dd4f053 Settings: Dissallow privacy guarding system apps on overlay.
-
-   * packages/services/Telephony/
-b863501 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-0ef4188 Telephony: change input type to phone for my phone no.
-
-   * vendor/cm/
-2284bf3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-9d2f37b Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-c701b8e CMSDK : Add tests for ColorUtils
-60c6053 CMSDK : Fix external view test
-912410f CMSDK : Add LiveLockScreenManager tests
-
-====================
-     06-15-2016
-====================
-
-
-   * frameworks/base/
-524c62a SysUI: Don't let rogue themes ruin notifications
-63a9ab8 Themes: Expose Power Dialogs
-f870dd5 DocumentsUI : Hide advanced menu option when in forced mode
-
-   * hardware/qcom/bt-caf/
-e024328 Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD
-
-   * hardware/qcom/wlan-caf/
-e81bc90 Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
-
-   * packages/apps/Dialer/
-9541d1d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-d7cc36f Makes private the ambient connection check, to stop log spam.
-
-   * packages/apps/InCallUI/
-325e610 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-91468b0 Stops ModButtonPresenter from hitting PackageManager on UI updates.
-
-   * packages/apps/PackageInstaller/
-4ad59fe Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
-c963ecd Themes: Add tint mode so custom icons can show in permissions settings
-
-   * vendor/cmsdk/
-795130f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-b6e71bc External view test
-aa11b33 cmsdk: fixup javadoc in CMHardwareManager
-7fff40e cmsdk: Clean up posted tile in CustomTileListenerService test.
-
-====================
-     06-14-2016
+     06-21-2016
 ====================
 
 
    * android/
-cf46643 default: Add cmsdk-api-coverage tool to manifest.
+57d2bb9 android: Switch to our chromium-webview
 
-   * device/qcom/common/
-96e5ea4 power-8994: Port features from msm8992
+   * bootable/recovery/
+8e507d8 recovery: Initialize menu_show_start_ to avoid crash
+
+   * cts/
+26069ff merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+a286bc9 Merge "DO NOT MERGE: Bump CTS to 6.0R8" into marshmallow-cts-dev
+47de61a DO NOT MERGE: Bump CTS to 6.0R8
+0963264 Merge "Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours" into marshmallow-cts-dev
+88c962c Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours
+bc92701 Merge "Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours" into lollipop-mr1-cts-dev
+5216f5e Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours
+68e2879 Merge "DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8" into lollipop-cts-dev
+2624477 DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8
+e864c88 Merge "DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016" into marshmallow-cts-dev
+c43822b DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016
+9fcf2d1 Merge "CameraIts: Use wait and notify for callback counter" into marshmallow-cts-dev
+a613cc4 Merge "Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf" into marshmallow-cts-dev
+9205f90 Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf
+8f0c2f5 Merge "Revert "Fix for ByodFlowTestActivity"" into lollipop-mr1-cts-dev
+30e4608 Revert "Fix for ByodFlowTestActivity"
+ae4ee1e Merge "Fixing mnc byod build failures." into marshmallow-cts-dev
+d382f3c Fixing mnc byod build failures.
+9502933 Merge "Relax checks in usb accessory test and add logs" into marshmallow-cts-dev
+cc4f1ca Merge "Merge \"Merge \\"Merge \\\"DO NOT MERGE Add CTS for bug-15428797\\\" into kitkat-cts-dev am: 75c6dee114  -s ours\\" into lollipop-cts-dev am: 7342e25b39  -s ours\" into lollipop-mr1-cts-dev am: ef2e6a3698  -s ours" into marshmallow-cts-dev
+900becf Merge \"Merge \\"Merge \\\"DO NOT MERGE Add CTS for bug-15428797\\\" into kitkat-cts-dev am: 75c6dee114  -s ours\\" into lollipop-cts-dev am: 7342e25b39  -s ours\" into lollipop-mr1-cts-dev am: ef2e6a3698  -s ours
+ef2e6a3 Merge "Merge \"Merge \\"DO NOT MERGE Add CTS for bug-15428797\\" into kitkat-cts-dev am: 75c6dee114  -s ours\" into lollipop-cts-dev am: 7342e25b39  -s ours" into lollipop-mr1-cts-dev
+a9809d6 Merge "Merge \"Merge \\"Merge \\\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\\" into kitkat-cts-dev am: e50ec09f51  -s ours\\" into lollipop-cts-dev am: 83b7fd487f  -s ours\" into lollipop-mr1-cts-dev am: da437175f1  -s ours" into marshmallow-cts-dev
+3cb434d Merge \"Merge \\"Merge \\\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\\" into kitkat-cts-dev am: e50ec09f51  -s ours\\" into lollipop-cts-dev am: 83b7fd487f  -s ours\" into lollipop-mr1-cts-dev am: da437175f1  -s ours
+c15d8c7 Merge \"Merge \\"DO NOT MERGE Add CTS for bug-15428797\\" into kitkat-cts-dev am: 75c6dee114  -s ours\" into lollipop-cts-dev am: 7342e25b39  -s ours
+2f2b1f7 Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into lollipop-cts-dev am: 0404910bed  -s ours\" into lollipop-mr1-cts-dev am: 397f066e4a  -s ours" into marshmallow-cts-dev
+1b253de Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for CVE-2015-1532\\" into lollipop-cts-dev am: 15fe61b748  -s ours\" into lollipop-mr1-cts-dev am: 89039c7838  -s ours" into marshmallow-cts-dev
+68a5deb Merge "Merge \"Merge \\"DO NOT MERGE: Revert \\"Verifier: Enable and disable non-market apps\\" [DO NOT MERGE]\\" into lollipop-cts-dev am: c4d4802fc3  -s ours\" into lollipop-mr1-cts-dev am: 629fc1730f  -s ours" into marshmallow-cts-dev
+7342e25 Merge "Merge \"DO NOT MERGE Add CTS for bug-15428797\" into kitkat-cts-dev am: 75c6dee114  -s ours" into lollipop-cts-dev
+da43717 Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into kitkat-cts-dev am: e50ec09f51  -s ours\" into lollipop-cts-dev am: 83b7fd487f  -s ours" into lollipop-mr1-cts-dev
+1b2f238 Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into lollipop-cts-dev am: 0404910bed  -s ours\" into lollipop-mr1-cts-dev am: 397f066e4a  -s ours
+0c601b6 Merge \"Merge \\"DO NOT MERGE: CTS test case for CVE-2015-1532\\" into lollipop-cts-dev am: 15fe61b748  -s ours\" into lollipop-mr1-cts-dev am: 89039c7838  -s ours
+8755754 Merge \"Merge \\"DO NOT MERGE: Revert \\"Verifier: Enable and disable non-market apps\\" [DO NOT MERGE]\\" into lollipop-cts-dev am: c4d4802fc3  -s ours\" into lollipop-mr1-cts-dev am: 629fc1730f  -s ours
+7d67d3f Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into kitkat-cts-dev am: e50ec09f51  -s ours\" into lollipop-cts-dev am: 83b7fd487f  -s ours
+000dee3 Merge \"DO NOT MERGE Add CTS for bug-15428797\" into kitkat-cts-dev am: 75c6dee114  -s ours
+397f066 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-cts-dev am: 0404910bed  -s ours" into lollipop-mr1-cts-dev
+89039c7 Merge "Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-cts-dev am: 15fe61b748  -s ours" into lollipop-mr1-cts-dev
+9a4cb39 Merge "Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-mr1-cts-dev am: 304c6a29cd  -s ours" into marshmallow-cts-dev
+629fc17 Merge "Merge \"DO NOT MERGE: Revert \"Verifier: Enable and disable non-market apps\" [DO NOT MERGE]\" into lollipop-cts-dev am: c4d4802fc3  -s ours" into lollipop-mr1-cts-dev
+83b7fd4 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into kitkat-cts-dev am: e50ec09f51  -s ours" into lollipop-cts-dev
+73711b9 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-mr1-cts-dev am: 7cd0cf6c48  -s ours" into marshmallow-cts-dev
+a7377c5 Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-cts-dev am: 0404910bed  -s ours
+7d2c66a Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-mr1-cts-dev am: 304c6a29cd  -s ours
+07e6f59 Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-cts-dev am: 15fe61b748  -s ours
+c1dc212 Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into kitkat-cts-dev am: e50ec09f51  -s ours
+d1df89d Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-mr1-cts-dev am: 7cd0cf6c48  -s ours
+7a1b703 Merge \"DO NOT MERGE: Revert \"Verifier: Enable and disable non-market apps\" [DO NOT MERGE]\" into lollipop-cts-dev am: c4d4802fc3  -s ours
+75c6dee Merge "DO NOT MERGE Add CTS for bug-15428797" into kitkat-cts-dev
+c96517c DO NOT MERGE Add CTS for bug-15428797
+e50ec09 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into kitkat-cts-dev
+0404910 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into lollipop-cts-dev
+15fe61b Merge "DO NOT MERGE: CTS test case for CVE-2015-1532" into lollipop-cts-dev
+304c6a2 Merge "DO NOT MERGE: CTS test case for CVE-2015-1532" into lollipop-mr1-cts-dev
+7cd0cf6 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into lollipop-mr1-cts-dev
+86afa23 Merge "DO NOT MERGE CTS test case for verifying overflow in libskia JPG processing" into marshmallow-cts-dev
+1e6909c DO NOT MERGE CTS test case for verifying overflow in libskia JPG processing
+1d1d716 Merge "DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860" into marshmallow-cts-dev
+018a164 DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860
+
+   * device/qcom/sepolicy/
+22008e8 msm8937: Fix labeling of the cache and FRP partitions
 
    * device/samsung/hlte-common/
-206bde0 hlte-common: update rootdir
-1c60b3b hlte-common: add offline charging images
+2e80920 hlte-common: Build with Clang
 
-   * external/cmsdk-api-coverage/
-c281622 cmsdk-api-coverage: Actually use the cmsdk-api-coverage jar.
-8ebfd3c cmsdk-api-coverage: initial fork of cts-api-coverage.
+   * device/samsung/qcom-common/
+663c7de Automatic translation import
+
+   * external/chromium-webview/
+37a1655 webview: Update README
+
+   * external/stagefright-plugins/
+4c4ad3f stagefright-plugins: call packet_queue_init earier
+
+   * frameworks/av/
+078f724 Using requested video scaling mode in NuPlayer
+f86d2e3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 
    * frameworks/base/
-3bcaa55 When the device boots up, netd works more than required
-b026896 Fix a glitch causing shadow not to be reset when header disabled
+d83f6ae Automatic translation import
+
+   * frameworks/native/
+52ea7b6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * hardware/broadcom/libbt/
+1415972 libbt-vendor (BRCM): Add ssr_cleanup
 
    * packages/apps/CMFileManager/
-83abccb Filter out vnd.android.cursor mimetype for Picker
+e337edc Fix Rename on VFat
+80077de ListPopupWindow: set height of the list
+2274d21 Search: Hide progress spinner if search fails
 
-   * packages/apps/CarrierConfig/
-1477e70 Resolve NZ roaming entry
+   * packages/apps/Contacts/
+00ae48a Automatic translation import
 
    * packages/apps/Dialer/
-5ce5795 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+ca39eea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+a907708 Automatic translation import
+
+   * packages/apps/Gello/
+9fc0dae Automatic translation import
+
+   * packages/apps/InCallUI/
+c644fc0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+9af9096 Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+be01e94 Automatic translation import
 
    * packages/apps/Messaging/
-358c6ad messaging: Filter out SIP accounts from SelectAccountDialogFragments.
+9986c0d Automatic translation import
+20ee26e String improvements
+
+   * packages/apps/Screencast/
+7bc0763 Automatic translation import
+
+   * packages/apps/Settings/
+75d06f2 Build V9.4
+11d968d Automatic translation import
+98d8e95 Settings : Move trust agent search index to LockscreenSettings
+
+   * packages/apps/SetupWizard/
+ed62894 Revert "SetupWizard: Add Mod disovery language for mod ready devices"
+
+   * packages/apps/TvSettings/
+55e73b5 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+574ec2c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+884ca0d Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+260c7dc Automatic translation import
+
+   * packages/services/Telephony/
+834332e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+c4fd682 Automatic translation import
+
+====================
+     06-20-2016
+====================
+
+
+   * android/
+0df2512 Track own Trebuchet
+
+   * cts/
+c4d4802 Merge "DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]" into lollipop-cts-dev
+451712a DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]
+
+   * device/samsung/hlte-common/
+c9d0b1e ril: clean up
+fb70c66 Revert "rootdir: update for version 2.0 temasek kernel"
+
+   * frameworks/base/
+96fb7d2 Revert "When the device boots up, netd works more than required"
+
+   * hardware/qcom/audio-caf/msm8937/
+a11ff3c ssr: Fix building with OSS materials
+
+   * kernel/samsung/hlte/
+a4c460c defconfig: use lzma compression
+738e592 net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
+78d6cbc mnt: Fail collect_mounts when applied to unmounted mounts
+87a6396 KEYS: potential uninitialized variable
+134f374 gpio_keys: restore back to sane level
+0e7f54a gpio_keys: remove unnecessary include
+
+   * packages/apps/Trebuchet/
+5fa71fb Revert "Bring back the custom wallpaper picker [2/5]"
+113538a Bring back the custom wallpaper picker [2/5]
+
+   * vendor/cm/
+2ad7ddc Revert "Bring back the custom wallpaper picker [5/5]"
+2bdd89e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+====================
+     06-19-2016
+====================
+
+
+   * packages/apps/Bluetooth/
+abfc5d0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/BluetoothExt/
+70d0402 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
+
+   * packages/apps/DeskClock/
+a4d56ea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+
+   * packages/apps/Dialer/
+56a8caa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+1dadeca Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/PackageInstaller/
+22b034a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
+
+   * packages/apps/Snap/
+8c2ff5b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+
+====================
+     06-18-2016
+====================
+
+
+   * frameworks/base/
+d476799 Automatic translation import
+4fdfed4 Fix NPE in DocumentsUI when rotate UI before format as internal
+4439da8 Revert "Only show keyguard panel if on lockscreen + no activity on top"
+
+   * frameworks/native/
+2a2eaab sf: Only apply hwrotation to primary displays
+
+   * hardware/qcom/media-caf/msm8937/
+4b1c56f venc: Disable building vqzip into the encoder for OSS
+
+   * packages/apps/AudioFX/
+c5f90c1 Automatic translation import
+
+   * packages/apps/Bluetooth/
+8fed12d Automatic translation import
+
+   * packages/apps/BluetoothExt/
+cba6d27 Automatic translation import
+
+   * packages/apps/CMFileManager/
+2436b83 Automatic translation import
+5042221 Fix sort mode popup after rotation from portrait to landscape
+
+   * packages/apps/Camera2/
+b380209 Automatic translation import
+
+   * packages/apps/CertInstaller/
+7fa38ad Automatic translation import
+
+   * packages/apps/Contacts/
+dc8edef Automatic translation import
+
+   * packages/apps/ContactsCommon/
+0dba8fb Automatic translation import
+
+   * packages/apps/DeskClock/
+e12b243 Automatic translation import
+
+   * packages/apps/Dialer/
+8ecd4d5 Automatic translation import
+
+   * packages/apps/ExactCalculator/
+1992210 Automatic translation import
+
+   * packages/apps/Gello/
+41418ea Automatic translation import
+
+   * packages/apps/InCallUI/
+c463e99 Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+0ded606 Automatic translation import
+
+   * packages/apps/Messaging/
+315e824 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+97c5c80 Automatic translation import
 
    * packages/apps/PhoneCommon/
-59574f3 AmbientDataSubscription: Allow subscriptions to run different queries
+6115331 Automatic translation import
+
+   * packages/apps/Profiles/
+c49a6d5 Automatic translation import
+
+   * packages/apps/Screencast/
+d297fad Automatic translation import
 
    * packages/apps/Settings/
-44ed263 Fix wrong label for Desktop backup password
-ed01dd6 Show more accurate internal storage capacity
-460b9ad Settings: replace 3 dots with horizontal ellipsis
+01fe7ba8 Automatic translation import
+baa3edf Settings: Apply decor padding in landscape storage wizard
 
-   * system/bt/
-6f1e1dc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+   * packages/apps/SetupWizard/
+b62056b Automatic translation import
+
+   * packages/apps/Snap/
+f6bb5ad Automatic translation import
+
+   * packages/apps/ThemeChooser/
+e7e52f8 Automatic translation import
+
+   * packages/apps/Trebuchet/
+fd3ac2a Automatic translation import
+
+   * packages/apps/TvSettings/
+69224db Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+14bd7d7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+8695e12 Automatic translation import
+
+   * packages/providers/BookmarkProvider/
+b9f8899 Automatic translation import
+
+   * packages/providers/CallLogProvider/
+31525d6 Automatic translation import
+
+   * packages/providers/ContactsProvider/
+d98749e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+0747d2d Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+5178682 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+2382927 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+c8df0f0 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+45460ca Automatic translation import
+
+   * packages/services/Telecomm/
+8a99128 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+2dca359 Automatic translation import
+
+   * packages/services/Telephony/
+06a5871 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
+e978c46 Automatic translation import
 
    * vendor/cm/
-3c96082 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-1117dae cmsdk-api-coverage: Don't prepend ANDROID_BUILD_TOP to file path
-c385e36 cm: Use cmsdk-api-coverage executable for coverage.
+7454cd9 Bring back the custom wallpaper picker [5/5]
 
    * vendor/cmsdk/
-5d14ffe Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-8387d3c cmsdk: Add CustomTileListenerService tests.
-0e0cb73 cmsdk: Provide test coverage to Profile's *Settings classes.
-2add3de cmsdk: Provide tests for Profile.ProfileTrigger interfaces.
+708bb19 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+46bed16 cmsdk: Prevent NPE in CMWeatherManager
+ee2dc2d Automatic translation import
 
 ====================
-     06-13-2016
-====================
-
-
-   * packages/apps/Settings/
-0d1add5 Merge pull request #454 from Mai19930513/cm-13.0
-b339210 update zh-rCN translations
-
-====================
-     06-12-2016
+     06-17-2016
 ====================
 
 
-   * device/qcom/common/
-9e9693e power: msm8952: process_video_encode_hint returns void
+   * cts/
+a7c21fa CameraIts: Use wait and notify for callback counter
+dc1785f Merge "Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0" into marshmallow-cts-dev
+487cf29 Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0
+c3c0224 Merge "Fix for ByodFlowTestActivity" into lollipop-mr1-cts-dev
 
-   * packages/apps/Settings/
-9164276 Merge pull request #453 from beroid/cm-13.0
-8e3b27b Settings: Update RU translations
-b1eea73 Build V9.2
+   * device/samsung/hlte-common/
+b43de0c rootdir: update for version 2.0 temasek kernel
 
-   * system/bt/
-5365992 bt: Use the clock functions from libutils instead of clock_gettime
-c718527 bt: Unify usage of clock_gettime
+   * frameworks/opt/hardware/
+35f6e78 DisplayColorCalibration: Fix logic
+d2e68ea cmhw: Use cmsdk FileUtils
 
-   * vendor/cm/
-9fd4fe3 Merge pull request #30 from tioguda/cm-13.0
-9d733a7 Add bootanimation 540.zip in 16by9
+   * hardware/ti/omap4/
+8d0de83 cmhw: Use cmsdk FileUtils
+
+   * packages/apps/FMRadio/
+4da63b5 FmService: Fix crash when plug-in/out headset
+3f0054b Revert "tracks: Check track states before transitioning states"
+
+   * packages/apps/InCallUI/
+6877820 Fix call dialog not dismiss
+
+   * packages/services/Telecomm/
+9f030e6 Handle IllegalArgumentException while setting default calling sub
+
+   * vendor/cmsdk/
+b25a324 Weather API test: Wait for a bit before Mockito verifies if method was called
+3251a45 cmsdk: Increase flaky test tolerance on zenmode tests.
+9c42d41 ExtViews: Catch SecurityException due to bad interface
+0b76a46 cmsdk: Provide test coverage for remainder PartnerInterface's.
+afa47a7 cmsdk: Provide remainder test coverage for CMStatusbarManager.
+5d5e556 cmsdk: Provide remaining ProfileManager test coverage.
+9b50627 cmsdk: Provide remaining Profile test coverage.
+522b0c3 utils: Introduce FileUtils class
 
