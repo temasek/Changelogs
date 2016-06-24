@@ -1,4 +1,106 @@
 ====================
+     06-24-2016
+====================
+
+
+   * device/samsung/hlte-common/
+7ba7818 hlte-common: more clean up
+
+   * frameworks/base/
+f58a8e8 Update QS panel resources to fix padding issues
+e6ed2ef (1/2) Frameworks: allow to toggle smart cover wake
+5368aef wifi: Enable WiFi IpReachabilityMonitor by default
+
+   * frameworks/opt/net/wifi/
+f1f933b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+88db18e wifi: Bring back mIsWiFiIpReachabilityEnabled check
+6d15b6e hotspot: Add a fallback to model-name for SSID
+
+   * frameworks/opt/telephony/
+3ae4555 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * packages/apps/BluetoothExt/
+8acfb15 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
+
+   * packages/apps/CMFileManager/
+70addac Fix no icon for 3GP files
+faa6c46 Assign application/octet-stream to unknown file extensions
+92ac0ff Remove send/send multiple if intent doesn't resolve to any activity
+
+   * packages/apps/Settings/
+e106ccc Build V9.5
+8d31d6b (2/2) Settings: allow to toggle smart cover wake
+
+   * packages/apps/Snap/
+37a3fee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+
+   * system/bt/
+c8e7c4b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+
+   * vendor/cm/
+2d9a16e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+a8984b3 Add SM-T810 and SM-T815
+
+   * vendor/cmsdk/
+47e7907 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     06-23-2016
+====================
+
+
+   * device/qcom/sepolicy/
+2805e63 file_contexts: Adding context to block devices
+2ada4e4 dpm: Let dpmserviceapp create its subdirs
+
+   * device/samsung/hlte-common/
+e2ae386 hlte-common: add pre-built power hal
+5455490 rootdir: clean up
+
+   * external/chromium-webview/
+3f0ac07 webview: Update to 51.0.2704.106
+
+   * packages/apps/CMFileManager/
+994dd34 Navigate to path when launched from folder shortcut
+
+   * system/bt/
+2e63e65 bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected
+
+====================
+     06-22-2016
+====================
+
+
+   * device/qcom/common/
+e1dbc22 power: msm8952: Fix previous_boost_time getting reset
+
+   * frameworks/opt/telephony/
+b3d9061 Telephony Data: Introduce DataAllowed state
+9354bf6 Fix issue when two MMS requests with same priority on both SUB's
+
+   * hardware/qcom/audio-caf/msm8960/
+36aec39 hal: only open the amplifier once
+2d69794 hal: enable amplifier earlier
+dfe21b6 hal: Notify amplifier of device enable/disable
+1170162 hal: Convert libaudioamp to audio_amplifier HAL
+dbf1e5f hal: Support the audio amplifier hook
+
+   * packages/apps/BluetoothExt/
+a92c7d6 wipower: Only build a4wp if BSP is available
+
+   * packages/apps/SoundRecorder/
+d22f0a1 SoundRecorder: Fix notifcation out of sync when audio focus loss
+
+   * packages/services/Mms/
+56584b7 Revert "MmsRequest: Reimplement automatic data sub switch"
+
+   * system/bt/
+0af4949 bt-vendor: Check for vendor SSR function before attempting to call it
+
+   * vendor/cm/
+2b8c4b2 sepolicy: put bash in shell context
+
+====================
      06-21-2016
 ====================
 
@@ -72,14 +174,8 @@ e50ec09 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG
    * device/qcom/sepolicy/
 22008e8 msm8937: Fix labeling of the cache and FRP partitions
 
-   * device/samsung/hlte-common/
-2e80920 hlte-common: Build with Clang
-
    * device/samsung/qcom-common/
 663c7de Automatic translation import
-
-   * external/chromium-webview/
-37a1655 webview: Update README
 
    * external/stagefright-plugins/
 4c4ad3f stagefright-plugins: call packet_queue_init earier
@@ -93,6 +189,9 @@ d83f6ae Automatic translation import
 
    * frameworks/native/
 52ea7b6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * frameworks/opt/telephony/
+3718ef2 Telephony: handle 3rd party sms apps + 'always ask'
 
    * hardware/broadcom/libbt/
 1415972 libbt-vendor (BRCM): Add ssr_cleanup
@@ -127,7 +226,7 @@ be01e94 Automatic translation import
 7bc0763 Automatic translation import
 
    * packages/apps/Settings/
-75d06f2 Build V9.4
+04c47ac Build V9.4
 11d968d Automatic translation import
 98d8e95 Settings : Move trust agent search index to LockscreenSettings
 
@@ -148,6 +247,10 @@ ed62894 Revert "SetupWizard: Add Mod disovery language for mod ready devices"
 834332e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 c4fd682 Automatic translation import
 
+   * vendor/cmsdk/
+f4dd414 Themes: Fix ThemeManagerTest
+afcfb67 Themes: Fix applying default theme
+
 ====================
      06-20-2016
 ====================
@@ -162,21 +265,12 @@ c4d4802 Merge "DO NOT MERGE: Revert "Verifier: Enable and disable non-market app
 
    * device/samsung/hlte-common/
 c9d0b1e ril: clean up
-fb70c66 Revert "rootdir: update for version 2.0 temasek kernel"
-
-   * frameworks/base/
-96fb7d2 Revert "When the device boots up, netd works more than required"
 
    * hardware/qcom/audio-caf/msm8937/
 a11ff3c ssr: Fix building with OSS materials
 
-   * kernel/samsung/hlte/
-a4c460c defconfig: use lzma compression
-738e592 net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
-78d6cbc mnt: Fail collect_mounts when applied to unmounted mounts
-87a6396 KEYS: potential uninitialized variable
-134f374 gpio_keys: restore back to sane level
-0e7f54a gpio_keys: remove unnecessary include
+   * packages/apps/Snap/
+cd37b99 Snap: Add picture resolutions for OnePlus 3
 
    * packages/apps/Trebuchet/
 5fa71fb Revert "Bring back the custom wallpaper picker [2/5]"
@@ -185,204 +279,4 @@ a4c460c defconfig: use lzma compression
    * vendor/cm/
 2ad7ddc Revert "Bring back the custom wallpaper picker [5/5]"
 2bdd89e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-====================
-     06-19-2016
-====================
-
-
-   * packages/apps/Bluetooth/
-abfc5d0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-
-   * packages/apps/BluetoothExt/
-70d0402 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
-
-   * packages/apps/DeskClock/
-a4d56ea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-
-   * packages/apps/Dialer/
-56a8caa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-1dadeca Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/PackageInstaller/
-22b034a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
-
-   * packages/apps/Snap/
-8c2ff5b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-====================
-     06-18-2016
-====================
-
-
-   * frameworks/base/
-d476799 Automatic translation import
-4fdfed4 Fix NPE in DocumentsUI when rotate UI before format as internal
-4439da8 Revert "Only show keyguard panel if on lockscreen + no activity on top"
-
-   * frameworks/native/
-2a2eaab sf: Only apply hwrotation to primary displays
-
-   * hardware/qcom/media-caf/msm8937/
-4b1c56f venc: Disable building vqzip into the encoder for OSS
-
-   * packages/apps/AudioFX/
-c5f90c1 Automatic translation import
-
-   * packages/apps/Bluetooth/
-8fed12d Automatic translation import
-
-   * packages/apps/BluetoothExt/
-cba6d27 Automatic translation import
-
-   * packages/apps/CMFileManager/
-2436b83 Automatic translation import
-5042221 Fix sort mode popup after rotation from portrait to landscape
-
-   * packages/apps/Camera2/
-b380209 Automatic translation import
-
-   * packages/apps/CertInstaller/
-7fa38ad Automatic translation import
-
-   * packages/apps/Contacts/
-dc8edef Automatic translation import
-
-   * packages/apps/ContactsCommon/
-0dba8fb Automatic translation import
-
-   * packages/apps/DeskClock/
-e12b243 Automatic translation import
-
-   * packages/apps/Dialer/
-8ecd4d5 Automatic translation import
-
-   * packages/apps/ExactCalculator/
-1992210 Automatic translation import
-
-   * packages/apps/Gello/
-41418ea Automatic translation import
-
-   * packages/apps/InCallUI/
-c463e99 Automatic translation import
-
-   * packages/apps/ManagedProvisioning/
-0ded606 Automatic translation import
-
-   * packages/apps/Messaging/
-315e824 Automatic translation import
-
-   * packages/apps/PackageInstaller/
-97c5c80 Automatic translation import
-
-   * packages/apps/PhoneCommon/
-6115331 Automatic translation import
-
-   * packages/apps/Profiles/
-c49a6d5 Automatic translation import
-
-   * packages/apps/Screencast/
-d297fad Automatic translation import
-
-   * packages/apps/Settings/
-01fe7ba8 Automatic translation import
-baa3edf Settings: Apply decor padding in landscape storage wizard
-
-   * packages/apps/SetupWizard/
-b62056b Automatic translation import
-
-   * packages/apps/Snap/
-f6bb5ad Automatic translation import
-
-   * packages/apps/ThemeChooser/
-e7e52f8 Automatic translation import
-
-   * packages/apps/Trebuchet/
-fd3ac2a Automatic translation import
-
-   * packages/apps/TvSettings/
-69224db Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-14bd7d7 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
-8695e12 Automatic translation import
-
-   * packages/providers/BookmarkProvider/
-b9f8899 Automatic translation import
-
-   * packages/providers/CallLogProvider/
-31525d6 Automatic translation import
-
-   * packages/providers/ContactsProvider/
-d98749e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
-0747d2d Automatic translation import
-
-   * packages/providers/DataUsageProvider/
-5178682 Automatic translation import
-
-   * packages/providers/TelephonyProvider/
-2382927 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
-c8df0f0 Automatic translation import
-
-   * packages/providers/WeatherProvider/
-45460ca Automatic translation import
-
-   * packages/services/Telecomm/
-8a99128 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-2dca359 Automatic translation import
-
-   * packages/services/Telephony/
-06a5871 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
-e978c46 Automatic translation import
-
-   * vendor/cm/
-7454cd9 Bring back the custom wallpaper picker [5/5]
-
-   * vendor/cmsdk/
-708bb19 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-46bed16 cmsdk: Prevent NPE in CMWeatherManager
-ee2dc2d Automatic translation import
-
-====================
-     06-17-2016
-====================
-
-
-   * cts/
-a7c21fa CameraIts: Use wait and notify for callback counter
-dc1785f Merge "Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0" into marshmallow-cts-dev
-487cf29 Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0
-c3c0224 Merge "Fix for ByodFlowTestActivity" into lollipop-mr1-cts-dev
-
-   * device/samsung/hlte-common/
-b43de0c rootdir: update for version 2.0 temasek kernel
-
-   * frameworks/opt/hardware/
-35f6e78 DisplayColorCalibration: Fix logic
-d2e68ea cmhw: Use cmsdk FileUtils
-
-   * hardware/ti/omap4/
-8d0de83 cmhw: Use cmsdk FileUtils
-
-   * packages/apps/FMRadio/
-4da63b5 FmService: Fix crash when plug-in/out headset
-3f0054b Revert "tracks: Check track states before transitioning states"
-
-   * packages/apps/InCallUI/
-6877820 Fix call dialog not dismiss
-
-   * packages/services/Telecomm/
-9f030e6 Handle IllegalArgumentException while setting default calling sub
-
-   * vendor/cmsdk/
-b25a324 Weather API test: Wait for a bit before Mockito verifies if method was called
-3251a45 cmsdk: Increase flaky test tolerance on zenmode tests.
-9c42d41 ExtViews: Catch SecurityException due to bad interface
-0b76a46 cmsdk: Provide test coverage for remainder PartnerInterface's.
-afa47a7 cmsdk: Provide remainder test coverage for CMStatusbarManager.
-5d5e556 cmsdk: Provide remaining ProfileManager test coverage.
-9b50627 cmsdk: Provide remaining Profile test coverage.
-522b0c3 utils: Introduce FileUtils class
 
