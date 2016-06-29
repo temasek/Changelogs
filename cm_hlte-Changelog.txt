@@ -1,7 +1,171 @@
 ====================
-     06-24-2016
+     06-29-2016
 ====================
 
+
+   * bionic/
+a25423f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
+
+   * device/qcom/common/
+3d10066 power: add support for PowerHAL in Feero
+
+   * frameworks/av/
+c1396fe Remove throttle logcat for bluetooth
+
+   * frameworks/base/
+32d3232 KeyguardSecurityViewFlipper : Fix sim unlock height overlap
+f43293a Disable proximity check on power key properly
+abc3b1e fw: GlobalActions: Always dismiss any existing dialog
+49cb187 SystemServer: Do not start Atlas Service on lowram devices.
+
+   * frameworks/opt/telephony/
+cdac2f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * kernel/samsung/hlte/
+556e3d7 Build v2.00b5
+8f1b00b liquorix: Reduce default BLK_MAX_RQ of 128 to 16
+4970a45 liquorix: tune page writeback from zen
+6bee5b5 Revert "mm: slub: Default slub_max_order to 0"
+974819e cfq: ensure IOPS mode
+f243043 Build v2.00b4
+116b9ab cpuidle: fix up
+dc430dc interactive: set io_is_busy to 1
+14c1467 interactive: set hispeed_freq to 1190400 when cpu boost is toggled
+
+   * packages/apps/FMRadio/
+480142b Keep main activity when recording is cancelled
+3c0c276 Handle recording without using MediaRecorder
+a7db4dc Fix stuck recording ui when recording is aborted
+
+   * packages/apps/Gello/
+9aaaede Add Encrypted Google search engine
+
+   * packages/apps/Messaging/
+ea62dca Messaging: Use textutils to match against SIP scheme.
+
+   * packages/apps/Settings/
+63afc33 Build V9.6
+c1fb0d6 Settings : Add country code to blacklist entry dialog
+a5ddb32 Make sure LiveDisplay toggle default values are correct.
+
+   * vendor/cm/
+2dbee5e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+78d80d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     06-28-2016
+====================
+
+
+   * bionic/
+2a016b8 cortex-a9: Fix reference to __memcpy_base_aligned.
+
+   * frameworks/opt/telephony/
+9122c16 Ims: remove use of old nonexistant qti constant
+8e0b6ee IMS-VT: Remove unused QTI_IMS_CALL_RAT_EXTRA_KEY extra.
+9e3df8a IMS: Encrypted Calling Extras Key Definition
+079b0b5 IMS: Interface change for VOPS and SSAC
+bee587b IMS: Explicit call transfer feature
+
+   * packages/apps/CMFileManager/
+65db040 FileManager : Update to use toybox ls
+95c92cb Fix crash when long press directory
+
+   * vendor/cm/
+1bc4b31 Remove APN pinternet.interkom.de from MCC 262/MNC 02
+
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+e630607 Don't remove today from the forecast
+
+====================
+     06-27-2016
+====================
+
+
+   * device/qcom/common/
+229eb1a perf: Wrap v3 opcodes with ifdefs
+
+   * device/samsung/hlte-common/
+a2146ca sched: enable notify on migrate for Temasek Kernel V2
+f89be24 cpu-boost: update new values for Temasek Kernel V2
+
+   * vendor/cmsdk/
+e1c502d LLS: Allow default enabled events to be overlaid
+
+====================
+     06-26-2016
+====================
+
+
+   * device/qcom/common/
+8fe35cc power: msm8996: Support boost and perf profile hints
+
+   * device/samsung/hlte-common/
+b5d6d31 cmhw: Use cmsdk FileUtils
+
+   * frameworks/base/
+7d58b6f SystemUI: Add margin in qs_tile_top between instruction text and add button
+
+   * frameworks/opt/net/wifi/
+4f18000 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+
+   * frameworks/opt/telephony/
+4d14d0f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+90501cb Subscription updater: don't turn data off if we've never set a deafult
+
+   * hardware/qcom/wlan-caf/
+0d2f41b Wifi-HAL: Remove CLANG Warnings and errors
+c2297ee Revert "Opt out of clang till issues are fixed"
+4f6277b Wifi-Hal: NAN feature enhancements
+89f9c6d Wifi-HAL: Remove NAN_2.0 references
+
+   * kernel/samsung/hlte/
+cfef70d Build v2.00b3
+52bb6a6 net: wireless: bcmhd: Serialize wl_notify_escan_complete
+0def7cc net: wireless: bcmdhd: Silence some unnessecary noise
+c959435 net: wireless: bcmdhd: fix for watch dog issue in wifi connect test
+97880ef net: wireless: bcmdhd: check privilege on priv cmd
+ec5b021 msm_fb: display: Enable display debugging through mdp debugfs
+caf36c8 msm: display: Validate MDP, MDDI and HDMI debug reg offset
+a477ee0 persistent_ram: check PERSISTENT_RAM_SIG before writing
+9e24dd7 msm_rmnet_bam: Actually disable watchdog for msm_rmnet
+f3fd6b5 net: sch_generic: Allow devices to opt-out net watchdog
+dc3198d msm: sps: Fix register SPS IRQ
+294bed9 defconfig: use lzma compression
+3642887 net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
+fa3d558 mnt: Fail collect_mounts when applied to unmounted mounts
+0f510e1 KEYS: potential uninitialized variable
+812a352 gpio_keys: restore back to sane level
+5854ad4 gpio_keys: remove unnecessary include
+
+   * packages/apps/Bluetooth/
+62d031a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+4924f59 Revert "Revert "Ensure synchronized access of JNI callback object""
+
+   * packages/apps/FMRadio/
+387bb91 Remove false log warnings
+
+   * packages/apps/Settings/
+0ae8b99 UI: Ensure "use for" options displayed when in landscape orientation
+abec2ec Merge pull request #456 from Mai19930513/cm-13.0
+ccb7b0c update zh-rCN translations
+
+   * vendor/cm/
+f180705 T810: Build by T_I, based on T815 build of RaymanFX, added product name
+
+   * vendor/cmsdk/
+c281f72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+====================
+     06-25-2016
+====================
+
+
+   * cts/
+8a3f20b Merge "DO NOT MERGE: disable libskia test." into marshmallow-cts-release
+f9c17e5 DO NOT MERGE: disable libskia test.
 
    * device/samsung/hlte-common/
 7ba7818 hlte-common: more clean up
@@ -12,24 +176,38 @@ e6ed2ef (1/2) Frameworks: allow to toggle smart cover wake
 5368aef wifi: Enable WiFi IpReachabilityMonitor by default
 
    * frameworks/opt/net/wifi/
+a0ac5e1 Reduce the link de-bounce time to 4 from earlier 7 seconds
+012e76c Wifi: Clear scan caches while loading configured networks
+80dfbc2 wifi: Use isGbkString() to check if SSID is GBK encoded
+bb5d2c2 Wifi: Update Frequency before broadcasting intent
+045ddba Wifi: send an explicit ENABLE_NETWORK with "no-connect"
+c17a63e Wifi: Unblacklist the BSSIDs, if driver roams to the same again.
+f995ef7 Wifi : Add null check before accessing ScanDetailCache
+c06efae Wifi: Add NULL check before processing gscan results
+faada83 P2P: p2p flush on a group remove event.
+cbe286e wificonfig: store the scan cache for saved wifi configuration
+e97c943 Don't create ScanDetailCache if entry absent in mScanDetailCaches
+22b3c71 Wifi: Update WifiController state if Wifi turn On fails
+6c7911a Wifi: Clear lastConnectAttemptTimestamp variable on a Wifi turn off
 f1f933b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-88db18e wifi: Bring back mIsWiFiIpReachabilityEnabled check
-6d15b6e hotspot: Add a fallback to model-name for SSID
 
    * frameworks/opt/telephony/
 3ae4555 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 
+   * hardware/ril-caf/
+eb67a6f ril-caf: Fix build when using prebuilt libril
+
    * packages/apps/BluetoothExt/
 8acfb15 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
 
-   * packages/apps/CMFileManager/
-70addac Fix no icon for 3GP files
-faa6c46 Assign application/octet-stream to unknown file extensions
-92ac0ff Remove send/send multiple if intent doesn't resolve to any activity
+   * packages/apps/FMRadio/
+a1649aa Fix exponential content observer registration
 
    * packages/apps/Settings/
-e106ccc Build V9.5
-8d31d6b (2/2) Settings: allow to toggle smart cover wake
+89ec149 Merge pull request #455 from beroid/cm-13.0
+a0d0126 Settings: Update RU translations
+9f35fd2 Build V9.5
+6971af1 (2/2) Settings: allow to toggle smart cover wake
 
    * packages/apps/Snap/
 37a3fee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
@@ -39,244 +217,8 @@ c8e7c4b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into 
 
    * vendor/cm/
 2d9a16e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-a8984b3 Add SM-T810 and SM-T815
 
    * vendor/cmsdk/
+131de78 Themes: Provide 100% test coverage for themes
 47e7907 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     06-23-2016
-====================
-
-
-   * device/qcom/sepolicy/
-2805e63 file_contexts: Adding context to block devices
-2ada4e4 dpm: Let dpmserviceapp create its subdirs
-
-   * device/samsung/hlte-common/
-e2ae386 hlte-common: add pre-built power hal
-5455490 rootdir: clean up
-
-   * external/chromium-webview/
-3f0ac07 webview: Update to 51.0.2704.106
-
-   * packages/apps/CMFileManager/
-994dd34 Navigate to path when launched from folder shortcut
-
-   * system/bt/
-2e63e65 bt: Don't use CLOCK_BOOTTIME where CLOCK_MONOTONIC was expected
-
-====================
-     06-22-2016
-====================
-
-
-   * device/qcom/common/
-e1dbc22 power: msm8952: Fix previous_boost_time getting reset
-
-   * frameworks/opt/telephony/
-b3d9061 Telephony Data: Introduce DataAllowed state
-9354bf6 Fix issue when two MMS requests with same priority on both SUB's
-
-   * hardware/qcom/audio-caf/msm8960/
-36aec39 hal: only open the amplifier once
-2d69794 hal: enable amplifier earlier
-dfe21b6 hal: Notify amplifier of device enable/disable
-1170162 hal: Convert libaudioamp to audio_amplifier HAL
-dbf1e5f hal: Support the audio amplifier hook
-
-   * packages/apps/BluetoothExt/
-a92c7d6 wipower: Only build a4wp if BSP is available
-
-   * packages/apps/SoundRecorder/
-d22f0a1 SoundRecorder: Fix notifcation out of sync when audio focus loss
-
-   * packages/services/Mms/
-56584b7 Revert "MmsRequest: Reimplement automatic data sub switch"
-
-   * system/bt/
-0af4949 bt-vendor: Check for vendor SSR function before attempting to call it
-
-   * vendor/cm/
-2b8c4b2 sepolicy: put bash in shell context
-
-====================
-     06-21-2016
-====================
-
-
-   * android/
-57d2bb9 android: Switch to our chromium-webview
-
-   * bootable/recovery/
-8e507d8 recovery: Initialize menu_show_start_ to avoid crash
-
-   * cts/
-26069ff merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
-a286bc9 Merge "DO NOT MERGE: Bump CTS to 6.0R8" into marshmallow-cts-dev
-47de61a DO NOT MERGE: Bump CTS to 6.0R8
-0963264 Merge "Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours" into marshmallow-cts-dev
-88c962c Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours
-bc92701 Merge "Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours" into lollipop-mr1-cts-dev
-5216f5e Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours
-68e2879 Merge "DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8" into lollipop-cts-dev
-2624477 DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8
-e864c88 Merge "DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016" into marshmallow-cts-dev
-c43822b DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016
-9fcf2d1 Merge "CameraIts: Use wait and notify for callback counter" into marshmallow-cts-dev
-a613cc4 Merge "Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf" into marshmallow-cts-dev
-9205f90 Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf
-8f0c2f5 Merge "Revert "Fix for ByodFlowTestActivity"" into lollipop-mr1-cts-dev
-30e4608 Revert "Fix for ByodFlowTestActivity"
-ae4ee1e Merge "Fixing mnc byod build failures." into marshmallow-cts-dev
-d382f3c Fixing mnc byod build failures.
-9502933 Merge "Relax checks in usb accessory test and add logs" into marshmallow-cts-dev
-cc4f1ca Merge "Merge \"Merge \\"Merge \\\"DO NOT MERGE Add CTS for bug-15428797\\\" into kitkat-cts-dev am: 75c6dee114  -s ours\\" into lollipop-cts-dev am: 7342e25b39  -s ours\" into lollipop-mr1-cts-dev am: ef2e6a3698  -s ours" into marshmallow-cts-dev
-900becf Merge \"Merge \\"Merge \\\"DO NOT MERGE Add CTS for bug-15428797\\\" into kitkat-cts-dev am: 75c6dee114  -s ours\\" into lollipop-cts-dev am: 7342e25b39  -s ours\" into lollipop-mr1-cts-dev am: ef2e6a3698  -s ours
-ef2e6a3 Merge "Merge \"Merge \\"DO NOT MERGE Add CTS for bug-15428797\\" into kitkat-cts-dev am: 75c6dee114  -s ours\" into lollipop-cts-dev am: 7342e25b39  -s ours" into lollipop-mr1-cts-dev
-a9809d6 Merge "Merge \"Merge \\"Merge \\\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\\" into kitkat-cts-dev am: e50ec09f51  -s ours\\" into lollipop-cts-dev am: 83b7fd487f  -s ours\" into lollipop-mr1-cts-dev am: da437175f1  -s ours" into marshmallow-cts-dev
-3cb434d Merge \"Merge \\"Merge \\\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\\" into kitkat-cts-dev am: e50ec09f51  -s ours\\" into lollipop-cts-dev am: 83b7fd487f  -s ours\" into lollipop-mr1-cts-dev am: da437175f1  -s ours
-c15d8c7 Merge \"Merge \\"DO NOT MERGE Add CTS for bug-15428797\\" into kitkat-cts-dev am: 75c6dee114  -s ours\" into lollipop-cts-dev am: 7342e25b39  -s ours
-2f2b1f7 Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into lollipop-cts-dev am: 0404910bed  -s ours\" into lollipop-mr1-cts-dev am: 397f066e4a  -s ours" into marshmallow-cts-dev
-1b253de Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for CVE-2015-1532\\" into lollipop-cts-dev am: 15fe61b748  -s ours\" into lollipop-mr1-cts-dev am: 89039c7838  -s ours" into marshmallow-cts-dev
-68a5deb Merge "Merge \"Merge \\"DO NOT MERGE: Revert \\"Verifier: Enable and disable non-market apps\\" [DO NOT MERGE]\\" into lollipop-cts-dev am: c4d4802fc3  -s ours\" into lollipop-mr1-cts-dev am: 629fc1730f  -s ours" into marshmallow-cts-dev
-7342e25 Merge "Merge \"DO NOT MERGE Add CTS for bug-15428797\" into kitkat-cts-dev am: 75c6dee114  -s ours" into lollipop-cts-dev
-da43717 Merge "Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into kitkat-cts-dev am: e50ec09f51  -s ours\" into lollipop-cts-dev am: 83b7fd487f  -s ours" into lollipop-mr1-cts-dev
-1b2f238 Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into lollipop-cts-dev am: 0404910bed  -s ours\" into lollipop-mr1-cts-dev am: 397f066e4a  -s ours
-0c601b6 Merge \"Merge \\"DO NOT MERGE: CTS test case for CVE-2015-1532\\" into lollipop-cts-dev am: 15fe61b748  -s ours\" into lollipop-mr1-cts-dev am: 89039c7838  -s ours
-8755754 Merge \"Merge \\"DO NOT MERGE: Revert \\"Verifier: Enable and disable non-market apps\\" [DO NOT MERGE]\\" into lollipop-cts-dev am: c4d4802fc3  -s ours\" into lollipop-mr1-cts-dev am: 629fc1730f  -s ours
-7d67d3f Merge \"Merge \\"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\\" into kitkat-cts-dev am: e50ec09f51  -s ours\" into lollipop-cts-dev am: 83b7fd487f  -s ours
-000dee3 Merge \"DO NOT MERGE Add CTS for bug-15428797\" into kitkat-cts-dev am: 75c6dee114  -s ours
-397f066 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-cts-dev am: 0404910bed  -s ours" into lollipop-mr1-cts-dev
-89039c7 Merge "Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-cts-dev am: 15fe61b748  -s ours" into lollipop-mr1-cts-dev
-9a4cb39 Merge "Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-mr1-cts-dev am: 304c6a29cd  -s ours" into marshmallow-cts-dev
-629fc17 Merge "Merge \"DO NOT MERGE: Revert \"Verifier: Enable and disable non-market apps\" [DO NOT MERGE]\" into lollipop-cts-dev am: c4d4802fc3  -s ours" into lollipop-mr1-cts-dev
-83b7fd4 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into kitkat-cts-dev am: e50ec09f51  -s ours" into lollipop-cts-dev
-73711b9 Merge "Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-mr1-cts-dev am: 7cd0cf6c48  -s ours" into marshmallow-cts-dev
-a7377c5 Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-cts-dev am: 0404910bed  -s ours
-7d2c66a Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-mr1-cts-dev am: 304c6a29cd  -s ours
-07e6f59 Merge \"DO NOT MERGE: CTS test case for CVE-2015-1532\" into lollipop-cts-dev am: 15fe61b748  -s ours
-c1dc212 Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into kitkat-cts-dev am: e50ec09f51  -s ours
-d1df89d Merge \"DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing\" into lollipop-mr1-cts-dev am: 7cd0cf6c48  -s ours
-7a1b703 Merge \"DO NOT MERGE: Revert \"Verifier: Enable and disable non-market apps\" [DO NOT MERGE]\" into lollipop-cts-dev am: c4d4802fc3  -s ours
-75c6dee Merge "DO NOT MERGE Add CTS for bug-15428797" into kitkat-cts-dev
-c96517c DO NOT MERGE Add CTS for bug-15428797
-e50ec09 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into kitkat-cts-dev
-0404910 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into lollipop-cts-dev
-15fe61b Merge "DO NOT MERGE: CTS test case for CVE-2015-1532" into lollipop-cts-dev
-304c6a2 Merge "DO NOT MERGE: CTS test case for CVE-2015-1532" into lollipop-mr1-cts-dev
-7cd0cf6 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing" into lollipop-mr1-cts-dev
-86afa23 Merge "DO NOT MERGE CTS test case for verifying overflow in libskia JPG processing" into marshmallow-cts-dev
-1e6909c DO NOT MERGE CTS test case for verifying overflow in libskia JPG processing
-1d1d716 Merge "DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860" into marshmallow-cts-dev
-018a164 DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860
-
-   * device/qcom/sepolicy/
-22008e8 msm8937: Fix labeling of the cache and FRP partitions
-
-   * device/samsung/qcom-common/
-663c7de Automatic translation import
-
-   * external/stagefright-plugins/
-4c4ad3f stagefright-plugins: call packet_queue_init earier
-
-   * frameworks/av/
-078f724 Using requested video scaling mode in NuPlayer
-f86d2e3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-d83f6ae Automatic translation import
-
-   * frameworks/native/
-52ea7b6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * frameworks/opt/telephony/
-3718ef2 Telephony: handle 3rd party sms apps + 'always ask'
-
-   * hardware/broadcom/libbt/
-1415972 libbt-vendor (BRCM): Add ssr_cleanup
-
-   * packages/apps/CMFileManager/
-e337edc Fix Rename on VFat
-80077de ListPopupWindow: set height of the list
-2274d21 Search: Hide progress spinner if search fails
-
-   * packages/apps/Contacts/
-00ae48a Automatic translation import
-
-   * packages/apps/Dialer/
-ca39eea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-a907708 Automatic translation import
-
-   * packages/apps/Gello/
-9fc0dae Automatic translation import
-
-   * packages/apps/InCallUI/
-c644fc0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-9af9096 Automatic translation import
-
-   * packages/apps/ManagedProvisioning/
-be01e94 Automatic translation import
-
-   * packages/apps/Messaging/
-9986c0d Automatic translation import
-20ee26e String improvements
-
-   * packages/apps/Screencast/
-7bc0763 Automatic translation import
-
-   * packages/apps/Settings/
-04c47ac Build V9.4
-11d968d Automatic translation import
-98d8e95 Settings : Move trust agent search index to LockscreenSettings
-
-   * packages/apps/SetupWizard/
-ed62894 Revert "SetupWizard: Add Mod disovery language for mod ready devices"
-
-   * packages/apps/TvSettings/
-55e73b5 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-574ec2c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
-884ca0d Automatic translation import
-
-   * packages/providers/DataUsageProvider/
-260c7dc Automatic translation import
-
-   * packages/services/Telephony/
-834332e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-c4fd682 Automatic translation import
-
-   * vendor/cmsdk/
-f4dd414 Themes: Fix ThemeManagerTest
-afcfb67 Themes: Fix applying default theme
-
-====================
-     06-20-2016
-====================
-
-
-   * android/
-0df2512 Track own Trebuchet
-
-   * cts/
-c4d4802 Merge "DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]" into lollipop-cts-dev
-451712a DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]
-
-   * device/samsung/hlte-common/
-c9d0b1e ril: clean up
-
-   * hardware/qcom/audio-caf/msm8937/
-a11ff3c ssr: Fix building with OSS materials
-
-   * packages/apps/Snap/
-cd37b99 Snap: Add picture resolutions for OnePlus 3
-
-   * packages/apps/Trebuchet/
-5fa71fb Revert "Bring back the custom wallpaper picker [2/5]"
-113538a Bring back the custom wallpaper picker [2/5]
-
-   * vendor/cm/
-2ad7ddc Revert "Bring back the custom wallpaper picker [5/5]"
-2bdd89e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
