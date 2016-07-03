@@ -1,16 +1,332 @@
 ====================
+     07-03-2016
+====================
+
+
+   * bionic/
+3ed6869 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
+
+   * device/samsung/hlte-common/
+343a95c [TEST] interactive: KANG from jf
+
+   * frameworks/base/
+ed327bc BT: Set persiste Bluetooth State during enable timeout case
+ae0c95a Add absent sim info to locked screen text
+c3ae2b1 Encapsulate the unbindService with try catch block
+f38df4f Bluetooth: Access mediaplayerlist in synchronized way
+0d44814 WifiDisplayController: Fix p2p disconnect before rtsp teardown completes
+e0546f7 Wifi: Make maximum selective channel scans and interval configurable
+f85f527 combo bug when location reported by providers do not come with extras
+14533cf Ignore IMS type APN when notify data connection
+e5c2d64 Remove TONE_SUPERVISORY_CH
+eba459b MSIM: Restrict data activity change to listeners with matching subId
+cadcb2f Add config to show HD icon on EVS codec.
+
+   * frameworks/opt/telephony/
+ba0bc5f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+9f4f4be Subscription updater: don't post messages on events in BroadcastReceiver
+3b24907 TelephonyProvider: Add CDMA call forwarding/waiting function
+c49c744 dct: Sync with upstream
+8ea51be MSIM: Send FINISH request on flex map START fail
+3e12eb4 Set additional info for LaunchBrowser error case.
+83ffc48 Telephony: Reduce back to back same APN activation delay.
+4cc7ede Fix emergency ims pdn setup issue
+09ca1bb Fix ims pdn issue on non dds sub on iwlan
+4a6e7c5 Fix to resolve data call issue for sim hot swap case
+a9d7209 Notify disconnect on phone dispose
+e93e6b5 Use EVS codec for HD if carrier supports it.
+a8208a5 Fix Dds switch issue for wifi and IWLAN scenarios
+b6d95be Fix to avoid unnecessary PS attach.
+fea40e5 Fix ims pdn request issue
+cbaa8d3 Parse the record number from byte to int
+ce2ca07 Finer grained character boundaries in computing SMS fragment lengths
+b3571da MSIM: Use SIM specific subId for setMccMnc
+8b477da IMS: Fix phone app crash at setOutgoingCallerIdDisplay().
+0f88ef6 Fix DDS switch issues for CDMA and IWLAN scenarios.
+7e64272 Add the slot id when broadcasting card state to STK app.
+0dbab41 Fix default data reset issue on device powerup
+1e4c0b0 Send shutdown command to modem
+8b4ba43 Telephony: CDMA: allow MT SMS when in ECBM
+eec0d61 IMS: Exit ECBM before dialing a pending non-emergency MO call
+28678cf IMS: Fix null pointer exception for call forwarding
+35b357b Setup data on new APNs only when APN changes
+31cadbe MSIM: Fix ECBM dialog issue in G+C
+fe0a2f2 Do not set "gsm.operator.idpstring" per phoneId
+2a2094e Telephony: Config values for other languages
+200c495 Revert "updateSpnDisplay: When PLMN values are same for before & after SIM loading in."
+9a69cad Check subid when querying network selection
+3139447 FR29338: Read SIM Contacts from EF-ADN if EF-PBR read failed.
+07d7e45 Fix ADN records loading removing EFEXT1 dependency.
+f567219 Add channel 60 Cellboradcast support.
+a80e16f gsmsst: Protect against "null" string literals
+
+   * hardware/qcom/audio-caf/msm8937/
+d0f2009 Merge tag 'LA.UM.5.3.1-01010-89xx.0' into HEAD
+
+   * hardware/qcom/media-caf/msm8937/
+e0a2ec2 Merge tag 'LA.UM.5.3.1-01010-89xx.0' into HEAD
+
+   * packages/apps/Dialer/
+12986ea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/InCallUI/
+1fb54b5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/OmniSwitch/
+d8b0296 Automatic translation import
+
+   * packages/apps/Settings/
+bbbdb70 Build V9.7
+fca925b Telephony(MSIM): Fix ANR on SIM deactivation
+bf2b14e Fix to enable data for non-dds sub.
+2143b91 IMS: Set Wifi calling preference to Wifi preferred by default
+1bf8ef9 Wi-Fi: Do not display the not scanned saved networks forever
+7b834f1 Don't start auto scan if screen recovers from frozen state
+86bca5d Fix mcc-mnc population issue in apn editor
+9f6ca23 Update OperatorInfo in Simstatus settings for correct subid
+74becf0 Revert "Fix register multiple PhoneStateListeners."
+44a7553 Grey out PIN1 enable/disable option when SUB is not ready
+dc89a37 Bluetooth : Handle SQL memory situation during OPP.
+
+   * packages/providers/TelephonyProvider/
+b3c6e1d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+
+   * packages/services/Telecomm/
+efdbb73 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+2539318 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/core/
+5b1bf8e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+
+====================
+     07-02-2016
+====================
+
+
+   * bionic/
+0a143d0 libc: Fix invalid offset warning with Clang
+
+   * frameworks/base/
+46c998d Revert "PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete"
+
+   * frameworks/opt/telephony/
+5caa9c8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+44396d8 Remove identifier that causes warnings under OpenJDK 8 compiler
+
+   * hardware/qcom/audio-caf/msm8996/
+bfad1f3 audio: Fix complilation warnings under Clang
+
+   * kernel/samsung/hlte/
+eefa3ad HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+
+   * packages/apps/Dialer/
+8e281d6 Added permission READ_PRIVILEGED_PHONE_STATE.
+
+   * packages/apps/InCallUI/
+cde32f3 IMS-VT: Fix for auto fullscreen issue during UI rotation.
+5a7ea94 Fix display 'null' for geocoder location
+5227cbd Add rtl support to GlowPadView
+f71be91 Fix to incall screen for incoming call
+
+   * packages/apps/Messaging/
+e063271 Remove identifier that causes warnings under OpenJDK 8 compiler
+
+   * packages/apps/Settings/
+67f8aa0 fingerpint: Allow devices to configure sensor location
+
+   * packages/apps/Stk/
+f983c8e Do not go Fullscreen in StkInputAcvtivity.
+e1ec2cc Fix the notification cancel during SIM refresh.
+dec7400 MSIM: Add MSIM support for language selection event.
+6dd1eb9 Send slotId in message for OP_STOP_TONE
+7757426 Add intent to send STK app name
+
+   * packages/providers/TelephonyProvider/
+057cbb3 TelephonyProvider: Add CDMA call forwarding/waiting function
+615e785 Merge regional apns to telephony db
+2ab318f Fix Mms failures due to wrong numeric
+09632e8 [CellBroadcast Alerts] : Enable CMAS Test alerts
+1752a04 [TelephonyProvider]: Add Channel 60 support
+
+   * packages/screensavers/Basic/
+43c7edb Avoid potential NPE when tearing down LLS
+
+   * packages/services/Telecomm/
+a154eed DO NOT MERGE - Restrict ability to add call based on device provision status
+50c5860 Fix to prevent NPE
+a5ee9a7 Remove TONE_SUPERVISORY_CH
+95a3e66 Fix a bug where conference call does not automatically resume.
+bce16cb Fix disabled merge button on conference failure.
+51fed81 Fix sound output from headset when switching speaker to BT
+
+   * packages/services/Telephony/
+f1826d8 Fix updating FDN using uri without subId issue
+8ff8c84 Mms: Fix SMS is not sent in ECBM unless click send again
+865ab32 Add "FDN service is not available" toast message
+d34b5c3 SEEK: Change security check for getAtrUsingSubId
+9bfe715 IMS-VT: Conf: Propagate call extras to UI.
+95d94df Set APM mode property for RIL to access.
+
+   * system/core/
+dd08664 healthd: Support new PD and USB Type C types
+d68de66 Copy the ETB dumps and maps file to /data/core
+00c551e Don't use global variable in libnetutils.
+
+   * vendor/cmsdk/
+5a78aab Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+d4bc9d3 cmsdk: Update README.
+b62a455 cmsdk: Create brokerablecmsystemservice concept.
+551b377 cmsdk: Factor CMSystemServiceHelper to common.
+
+====================
+     07-01-2016
+====================
+
+
+   * cts/
+f76218b merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+
+   * device/samsung/hlte-common/
+115af0d hlte-common: remove libHevcSwDecoder & qcom omx blobs
+
+   * frameworks/base/
+98d6389 Automatic translation import
+a043e2f Revert "Revert "Only show keyguard panel if on lockscreen + no activity on top""
+9124ef6 PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete
+
+   * packages/apps/Contacts/
+6ecb91a Contacts metrics: corrected parsed timestamp values
+
+   * packages/apps/Dialer/
+a7b0e33 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/Gello/
+2c40f6b Gello: nuke unused/broken localized search engines
+
+   * packages/apps/InCallUI/
+f077feb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/Settings/
+57e6f28 Automatic translation import
+0c2cd4b settings: wifi: Default to numeric keyboard for static IP items
+5f1663c Settings: Set root access options appropriately
+97071a8 Fix untranslatable
+
+   * packages/apps/SetupWizard/
+3f2a08f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
+
+   * packages/apps/Snap/
+ad8544b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+
+   * packages/apps/SoundRecorder/
+c8b4cf4 Add Bluetooth sound recording
+
+   * packages/inputmethods/LatinIME/
+58b2a36 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+
+   * packages/providers/TelephonyProvider/
+0743bb9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+
+   * packages/services/Telephony/
+fe73cc8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * vendor/cmsdk/
+50571ba Apply active profile if user enables system profiles
+a9f9fc2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+   * vendor/samsung/
+c75252b hlte-common: update divx blobs from hammmerhead
+
+====================
+     06-30-2016
+====================
+
+
+   * device/qcom/sepolicy/
+427b02e wcnss: Fix annoying warning when ptt looks for its log dir
+
+   * device/samsung/hlte/
+c521a59 hlte: move flp.default.so to hlte-common
+
+   * device/samsung/hlte-common/
+e36de27 hlte-common: move flp.default.so to device tree
+c169fa2 hlte-common: update missing blob list
+
+   * device/samsung/qcom-common/
+a13222f Automatic translation import
+
+   * hardware/cyanogen/
+ce0c9b1 cmhw: Whitespace cleanup
+
+   * hardware/qcom/wlan-caf/
+b5ecb1d wifi-hal: Only try LOWI once
+
+   * packages/apps/CMFileManager/
+377e629 Automatic translation import
+
+   * packages/apps/CarrierConfig/
+ad2308f feijao: Set voicemail's notification persistent.
+
+   * packages/apps/Contacts/
+04561ba Contacts metrics: flip contacts merge order since they have dependency
+c6eb605 Send count stats with DIRECTORY_SEARCH events
+0ae5fd2 Automatic translation import
+
+   * packages/apps/Dialer/
+bb8a083 Automatic translation import
+
+   * packages/apps/Gello/
+00f154b Automatic translation import
+
+   * packages/apps/InCallUI/
+254289a Automatic translation import
+
+   * packages/apps/Messaging/
+ba969ce Automatic translation import
+
+   * packages/apps/PhoneCommon/
+cbd20e8 Automatic translation import
+
+   * packages/apps/SetupWizard/
+20037b7 Automatic translation import
+
+   * packages/apps/Snap/
+0ef0a63 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+02cf1e2 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+da10ff6 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+02bc367 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+01a0a16 Fix apn restore issue for multi-sim
+
+   * packages/services/Telephony/
+d2f1215 Automatic translation import
+
+   * vendor/cmsdk/
+052af0a Automatic translation import
+
+   * vendor/samsung/
+9461fdc hlte: move flp.default.so to device tree
+27010e1 hlte-common: add missing blob list
+
+====================
      06-29-2016
 ====================
 
 
    * bionic/
-a25423f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
+02972e7 Do not depend on host bits to get the right size to write.
 
    * device/qcom/common/
 3d10066 power: add support for PowerHAL in Feero
-
-   * frameworks/av/
-c1396fe Remove throttle logcat for bluetooth
 
    * frameworks/base/
 32d3232 KeyguardSecurityViewFlipper : Fix sim unlock height overlap
@@ -18,19 +334,8 @@ f43293a Disable proximity check on power key properly
 abc3b1e fw: GlobalActions: Always dismiss any existing dialog
 49cb187 SystemServer: Do not start Atlas Service on lowram devices.
 
-   * frameworks/opt/telephony/
-cdac2f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
    * kernel/samsung/hlte/
-556e3d7 Build v2.00b5
-8f1b00b liquorix: Reduce default BLK_MAX_RQ of 128 to 16
-4970a45 liquorix: tune page writeback from zen
-6bee5b5 Revert "mm: slub: Default slub_max_order to 0"
-974819e cfq: ensure IOPS mode
 f243043 Build v2.00b4
-116b9ab cpuidle: fix up
-dc430dc interactive: set io_is_busy to 1
-14c1467 interactive: set hispeed_freq to 1190400 when cpu boost is toggled
 
    * packages/apps/FMRadio/
 480142b Keep main activity when recording is cancelled
@@ -48,177 +353,6 @@ ea62dca Messaging: Use textutils to match against SIP scheme.
 c1fb0d6 Settings : Add country code to blacklist entry dialog
 a5ddb32 Make sure LiveDisplay toggle default values are correct.
 
-   * vendor/cm/
-2dbee5e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
    * vendor/cmsdk/
 78d80d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     06-28-2016
-====================
-
-
-   * bionic/
-2a016b8 cortex-a9: Fix reference to __memcpy_base_aligned.
-
-   * frameworks/opt/telephony/
-9122c16 Ims: remove use of old nonexistant qti constant
-8e0b6ee IMS-VT: Remove unused QTI_IMS_CALL_RAT_EXTRA_KEY extra.
-9e3df8a IMS: Encrypted Calling Extras Key Definition
-079b0b5 IMS: Interface change for VOPS and SSAC
-bee587b IMS: Explicit call transfer feature
-
-   * packages/apps/CMFileManager/
-65db040 FileManager : Update to use toybox ls
-95c92cb Fix crash when long press directory
-
-   * vendor/cm/
-1bc4b31 Remove APN pinternet.interkom.de from MCC 262/MNC 02
-
-   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-e630607 Don't remove today from the forecast
-
-====================
-     06-27-2016
-====================
-
-
-   * device/qcom/common/
-229eb1a perf: Wrap v3 opcodes with ifdefs
-
-   * device/samsung/hlte-common/
-a2146ca sched: enable notify on migrate for Temasek Kernel V2
-f89be24 cpu-boost: update new values for Temasek Kernel V2
-
-   * vendor/cmsdk/
-e1c502d LLS: Allow default enabled events to be overlaid
-
-====================
-     06-26-2016
-====================
-
-
-   * device/qcom/common/
-8fe35cc power: msm8996: Support boost and perf profile hints
-
-   * device/samsung/hlte-common/
-b5d6d31 cmhw: Use cmsdk FileUtils
-
-   * frameworks/base/
-7d58b6f SystemUI: Add margin in qs_tile_top between instruction text and add button
-
-   * frameworks/opt/net/wifi/
-4f18000 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-
-   * frameworks/opt/telephony/
-4d14d0f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-90501cb Subscription updater: don't turn data off if we've never set a deafult
-
-   * hardware/qcom/wlan-caf/
-0d2f41b Wifi-HAL: Remove CLANG Warnings and errors
-c2297ee Revert "Opt out of clang till issues are fixed"
-4f6277b Wifi-Hal: NAN feature enhancements
-89f9c6d Wifi-HAL: Remove NAN_2.0 references
-
-   * kernel/samsung/hlte/
-cfef70d Build v2.00b3
-52bb6a6 net: wireless: bcmhd: Serialize wl_notify_escan_complete
-0def7cc net: wireless: bcmdhd: Silence some unnessecary noise
-c959435 net: wireless: bcmdhd: fix for watch dog issue in wifi connect test
-97880ef net: wireless: bcmdhd: check privilege on priv cmd
-ec5b021 msm_fb: display: Enable display debugging through mdp debugfs
-caf36c8 msm: display: Validate MDP, MDDI and HDMI debug reg offset
-a477ee0 persistent_ram: check PERSISTENT_RAM_SIG before writing
-9e24dd7 msm_rmnet_bam: Actually disable watchdog for msm_rmnet
-f3fd6b5 net: sch_generic: Allow devices to opt-out net watchdog
-dc3198d msm: sps: Fix register SPS IRQ
-294bed9 defconfig: use lzma compression
-3642887 net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
-fa3d558 mnt: Fail collect_mounts when applied to unmounted mounts
-0f510e1 KEYS: potential uninitialized variable
-812a352 gpio_keys: restore back to sane level
-5854ad4 gpio_keys: remove unnecessary include
-
-   * packages/apps/Bluetooth/
-62d031a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-4924f59 Revert "Revert "Ensure synchronized access of JNI callback object""
-
-   * packages/apps/FMRadio/
-387bb91 Remove false log warnings
-
-   * packages/apps/Settings/
-0ae8b99 UI: Ensure "use for" options displayed when in landscape orientation
-abec2ec Merge pull request #456 from Mai19930513/cm-13.0
-ccb7b0c update zh-rCN translations
-
-   * vendor/cm/
-f180705 T810: Build by T_I, based on T815 build of RaymanFX, added product name
-
-   * vendor/cmsdk/
-c281f72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     06-25-2016
-====================
-
-
-   * cts/
-8a3f20b Merge "DO NOT MERGE: disable libskia test." into marshmallow-cts-release
-f9c17e5 DO NOT MERGE: disable libskia test.
-
-   * device/samsung/hlte-common/
-7ba7818 hlte-common: more clean up
-
-   * frameworks/base/
-f58a8e8 Update QS panel resources to fix padding issues
-e6ed2ef (1/2) Frameworks: allow to toggle smart cover wake
-5368aef wifi: Enable WiFi IpReachabilityMonitor by default
-
-   * frameworks/opt/net/wifi/
-a0ac5e1 Reduce the link de-bounce time to 4 from earlier 7 seconds
-012e76c Wifi: Clear scan caches while loading configured networks
-80dfbc2 wifi: Use isGbkString() to check if SSID is GBK encoded
-bb5d2c2 Wifi: Update Frequency before broadcasting intent
-045ddba Wifi: send an explicit ENABLE_NETWORK with "no-connect"
-c17a63e Wifi: Unblacklist the BSSIDs, if driver roams to the same again.
-f995ef7 Wifi : Add null check before accessing ScanDetailCache
-c06efae Wifi: Add NULL check before processing gscan results
-faada83 P2P: p2p flush on a group remove event.
-cbe286e wificonfig: store the scan cache for saved wifi configuration
-e97c943 Don't create ScanDetailCache if entry absent in mScanDetailCaches
-22b3c71 Wifi: Update WifiController state if Wifi turn On fails
-6c7911a Wifi: Clear lastConnectAttemptTimestamp variable on a Wifi turn off
-f1f933b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-
-   * frameworks/opt/telephony/
-3ae4555 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/ril-caf/
-eb67a6f ril-caf: Fix build when using prebuilt libril
-
-   * packages/apps/BluetoothExt/
-8acfb15 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
-
-   * packages/apps/FMRadio/
-a1649aa Fix exponential content observer registration
-
-   * packages/apps/Settings/
-89ec149 Merge pull request #455 from beroid/cm-13.0
-a0d0126 Settings: Update RU translations
-9f35fd2 Build V9.5
-6971af1 (2/2) Settings: allow to toggle smart cover wake
-
-   * packages/apps/Snap/
-37a3fee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * system/bt/
-c8e7c4b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-
-   * vendor/cm/
-2d9a16e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-131de78 Themes: Provide 100% test coverage for themes
-47e7907 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
