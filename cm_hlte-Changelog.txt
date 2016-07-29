@@ -1,12 +1,166 @@
 ====================
+     07-29-2016
+====================
+
+
+   * cts/
+3eab954 Merge "DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets" into marshmallow-cts-release
+3762c5d DO NOT MERGE, re-apply, Adjust testAppFailAccessPrivateData to fail on non-tagged sockets
+
+   * device/samsung/hlte-common/
+88e73ba hlte-common: enable sdcardfs
+
+   * frameworks/base/
+ed15c9c Automatic translation import
+7d73c17 lights: Make sure the lights are out
+9c87cb4 SysUI: Define config for showing screen on hints
+
+   * hardware/qcom/audio-caf/msm8996/
+abff8fe hal: Haxed header
+
+   * kernel/samsung/hlte/
+409f56d Build v2.04
+20c7987 Revert "kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)"
+4f17ca2 Revert "powersuspend: new PM kernel driver for Android w/o early_suspend v1.7"
+25ab99d Revert "powersuspend: correct #endif condition"
+e0233a3 Revert "f2fs: add support for LOOKUP_CASE_INSENSITIVE"
+2ce259d fuse: Add support for d_canonical_path
+c44503b sdcardfs: override umask on mkdir and create
+9fca2eb vfs: change d_canonical_path to take two paths
+10519e7 sdcardfs: Add support for d_canonicalize
+9ba1ff8 inotify: Fix erroneous update of bit count
+03150ee vfs: add d_canonical_path for stacked filesystem support
+b5ec591 sdcardfs: Remove effectless config option
+4cb711a sdcardfs: Update and Modify Sasmung sdcardfs to 3.2.0
+aac9762 [BACKPORT] fuse: Add support for shortcircuited read/write for files
+
+   * packages/apps/Bluetooth/
+2488c1a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+838da4a Add epub to the list of filetypes to get and send
+
+   * packages/apps/CMBugReport/
+ea9f2f0 Automatic translation import
+
+   * packages/apps/Gello/
+34ad277 Automatic translation import
+
+   * packages/apps/Settings/
+447000b Build V10.3
+a1b3877 Automatic translation import
+a2688fe ZenMode rules: Show days list in the correct order
+2fc43b7 SimSettings: Make provisioning optional even if qti-telephony is present
+
+   * packages/inputmethods/LatinIME/
+fdd0269 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+c150b3a InputMethods: set the default value for preference
+
+   * packages/providers/WeatherProvider/
+d947141 Automatic translation import
+
+   * system/core/
+ba84767 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+4123d86 healthd: Add DASH charger type
+
+   * vendor/cm/
+a44b9b9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+630d7ed cm: sepolicy: Allow system_server dir read access
+114dde3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3b96ba5 cm: extract_utils: Rewrite file existence checks
+b7b7f88 extract_utils: Don't write multilib tags on 32-bit only devices
+a991cf1 extract_utils: Add support for files in rootfs
+441752f sepolicy: Allow media_rw write to fix camcorder denials
+
+   * vendor/cmsdk/
+d0ba845 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+544d324 Automatic translation import
+
+====================
+     07-28-2016
+====================
+
+
+   * device/samsung/hlte-common/
+eb96c4d hlte-common: remove radio props
+138fcb6 hlte-common: fix typo in system prop
+c0dde8f rootdir: clean up init
+
+   * device/samsung/qcom-common/
+da0d9bb Automatic translation import
+
+   * external/sepolicy/
+167c6dc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_sepolicy into cm-13.0
+
+   * frameworks/base/
+f37f0bb mountservice: Shut down volumes before restarting framework
+4ce8261 Automatic translation import
+
+   * kernel/samsung/hlte/
+3c7e1e8 UPSTREAM: netfilter: x_tables: validate e->target_offset early
+58ddcd8 UPSTREAM: ipv6: add complete rcu protection around np->opt
+b5d1052 UPSTREAM: ppp: defer netns reference release for ppp channel
+
+   * packages/apps/Camera2/
+6d11621 Automatic translation import
+
+   * packages/apps/Dialer/
+30d7ef7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+5848ab6 Automatic translation import
+
+   * packages/apps/Eleven/
+a6f204a Merge "Eleven: fix possible NPE" into cm-13.0
+
+   * packages/apps/OmniSwitch/
+d2f97d0 OmniSwitch: disable all ListView and GridView selectors
+a5db0be OmniSwitch: add revert recents
+
+   * packages/apps/Settings/
+809a259 Add SIM status string for localizing voice/data strings
+f960f5b Automatic translation import
+4950140 Settings: Fix possible crash
+a95a580 Settings: Improve vibrator intensity dialog layout
+
+   * packages/apps/SetupWizard/
+52ffd33 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
+aafff03 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+3a37d06 Automatic translation import
+
+   * packages/services/Telephony/
+665ac4f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+c3a8096 NetworkSelection: Cleanup
+ed75876 NetworkSelection: Fix for setting shortcut
+75915ed NetworkSelection: Fix double display of radio technology
+
+   * system/vold/
+f141689 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+89599b6 vold: Allow reset after shutdown
+
+   * vendor/cm/
+6763f15 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+73709d3 Add missing truphone APNs
+
+   * vendor/cmsdk/
+e190158 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+8a3e6d3 Automatic translation import
+
+   * vendor/samsung/
+fdbe97e Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+46d0797 Merge pull request #806 from zwliew/cm-13.0
+57ccbbe Merge pull request #809 from haggertk/cm-13.0
+
+====================
      07-27-2016
 ====================
 
 
    * device/samsung/hlte-common/
-9b23579 rootdir: set min/max freq on early init
+08967cc rootdir: Let the CORES BLOSSOM!
 9a3b336 rootdir: move hardware tunables to early init
 542bd59 hlte-common: update init perimeters
+
+   * external/sepolicy/
+908ba00 sepolicy: Add policy for sdcardfs and configfs
 
    * frameworks/base/
 846c97e bootanimation: Call eglReleaseThread in threadLoop
@@ -16,6 +170,12 @@ d82ed36 Improve the scan process
    * frameworks/native/
 e84eca3 egl: Call loseCurrent after eglReleaseThread
 b337823 egl: Enable EGL_KHR_GL_COLORSPACE
+
+   * hardware/qcom/audio-caf/msm8916/
+2040c84 policy_hal: Fix build with Clang
+
+   * hardware/qcom/audio-caf/msm8960/
+f7451db hal: Add legacy EDID channel retrieval
 
    * kernel/samsung/hlte/
 53ced5f Build v2.03
@@ -37,10 +197,9 @@ b8bd753 Revert "block: Add submit_bio_wait(), remove from md"
 
    * packages/apps/DeskClock/
 f0ab3bc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-f17d6ef Timer: Do not rotate Alert timer
 
    * packages/apps/Settings/
-4fb5dd2 Build V10.2
+a60f9d7 Build V10.2
 d50a0bf Automatic translation import
 258df0a Settings: Always set text value in color temperature
 
@@ -49,9 +208,9 @@ d50a0bf Automatic translation import
 1576854 sdcard: Pass the umask to sdcardfs correctly
 
    * vendor/cm/
+6905134 sepolicy: Revert custom sdcardfs policy in favor of AOSP
 d857db4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 522c421 sepolicy: A few more denials
-4a24ffe sepolicy: More policy for sdcardfs
 
    * vendor/cmsdk/
 92f3f1a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
@@ -76,6 +235,7 @@ f7b9a26 Automatic translation import
 bd19a47 Merge tag 'LA.HB.1.3.2-19600-8x96.0' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
 
    * packages/apps/DeskClock/
+f17d6ef Timer: Do not rotate Alert timer
 9e3567f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
 
    * packages/apps/Dialer/
@@ -107,6 +267,7 @@ b3cbad8 CMAudioService: initial brokered port from cmsdk
 ce2ac52 Automatic translation import
 
    * vendor/cm/
+4a24ffe sepolicy: More policy for sdcardfs
 beae861 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 cdb0ea6 cm: include CMAudioService in builds
 005d47e Movistar [ES] APN updates
@@ -116,6 +277,9 @@ e3992f2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
 f42db22 Automatic translation import
 16f0226 ThemeService:Component id is being changed for multiple entries in mixnmatch.
 705716f cmsdk: Broker out CMAudioService
+
+   * vendor/samsung/
+f90faba klte-common: Add camera module_info.xml files
 
 ====================
      07-25-2016
@@ -168,59 +332,7 @@ ffb7fb4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core int
 3110983 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 d4a0f0a sepolicy: Add rule to allow sdcardfs to read package list
 ba87877 sepolicy: Add sdcardfs support
-6fed2cf sepolicy: Allow batterymanager and batteryproperties services to be found
 
    * vendor/samsung/
 50c6a6f Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-
-====================
-     07-24-2016
-====================
-
-
-   * packages/apps/Gello/
-08562d2 Themes: Expose and separate hard coded colors for themes
-
-   * packages/apps/Settings/
-3c25977 Automatic translation import
-
-   * system/core/
-d63e675 sdcard: Add support for sdcardfs!
-
-   * vendor/cm/
-66b4944 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/samsung/
-cf6d8e0 Merge pull request #808 from arco/cm-13.0
-73d5e13 serrano: Updated gps libs from E370KKTU2BOH2
-
-====================
-     07-23-2016
-====================
-
-
-   * device/qcom/common/
-9e40a0e power: Simplify soc_id checks
-
-   * device/samsung/hlte-common/
-309cb9d gps: for temasek only (Singapore)
-c2e9309 power: clean up qcom powerhal
-
-   * hardware/qcom/audio-caf/msm8996/
-618e5c4 audio: Fix three-way deadlock
-8a6e08d audio: Fix memory leak
-58f49e4 audio: Fix flac offload not working
-
-   * packages/apps/CMBugReport/
-cc8c112 Automatic translation import
-
-   * packages/apps/SetupWizard/
-ad287f7 Automatic translation import
-
-   * packages/apps/ThemeChooser/
-8c2033e Automatic translation import
-
-   * vendor/cm/
-df0ba3a Gello artifact v26
-8b3ccbe sepolicy: Allow batterymanager and batteryproperties services to be found
 
