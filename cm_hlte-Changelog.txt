@@ -1,4 +1,98 @@
 ====================
+     08-04-2016
+====================
+
+
+   * device/samsung/hlte-common/
+e757dc9 hlte-common: Remove device_perms header
+
+   * frameworks/base/
+39fb34a framework: don't allow assist activities while not provisioned
+
+   * frameworks/native/
+b519b68 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+542b068 surfaceflinger: Fix uninitialized variable
+da998f4 surfaceflinger: Unbreak casting and other use cases
+52b8462 surfaceflinger: Add check for number of queued buffers
+
+   * kernel/samsung/hlte/
+0ba3f3f Build v2.06b1
+4f2af79 ASoC: msm: qdsp6v2: Fix offload gapless transition
+38bdd20 cpu: send KOBJ_ONLINE event when enabling cpus
+f3baa2f qseecom: Validate pointer offset in qseecom_send_modfd_cmd
+8d4c7f8 diag: Fix possible underflow/overflow issues
+66aea8d media: Init the reserved fields of struct media_link_desc
+1fc5d44 FROMLIST: security,perf: Allow further restriction of perf_event_open
+8861f8a BACKPORT: perf tools: Document the perf sysctls
+5b50abe fix infoleak in rtnetlink
+b8043a1 msm: kgsl: Defer adding the mem entry to a process
+0e72e6b defconfig: enable SECURITY_PERF_EVENTS_RESTRICT
+
+   * packages/apps/Eleven/
+4961f4e Merge "handle media keys" into cm-13.0
+
+   * packages/apps/Settings/
+373e697 Merge pull request #458 from Trafalgar-Square/patch-1
+7e579a2 German translation
+
+   * packages/apps/Snap/
+d0ed017 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+45769ae snap: Add constrained longshot mode
+81110de snap: Additional fixes for auto-HDR mode
+1ccf372 snap: Fixes for advanced features and scene modes
+d91acef snap: Always turn touch-af-aec on
+8fef7ac snap: Add missing resource
+38a5e13 SnapdragonCamera: Fix the advanced features relative toast issue
+846dc6a SnapdragonCamera: implement optizoom and chromaflash UI
+9a1d5c2 SnapdragonCamera: Fix panorama cancel button location
+ee8c922 SnapdragonCamera: Fix the issue that camera control is removed
+a58a537 SnapdragonCamera: Add manufacture and model info
+2a3c90c SnapdragonCamera: adjust video recording duration margins
+53a2b18 SnapdragonCamera: Fix incorrect focus mode
+72cf374 SnapdragonCamera: resolve touch af issue during countdown
+16ac0c5 SnapdragonCamera: Add support for outputting MPO format files
+e5d300a SnapdragonCamera: Removing unnecessary orientation check
+96c7df0 SnapdragonCamera: Fix viewfinder flashing issue in camcorder mode
+72a66ba SnapdragonCamera: hide the preview surface during suspend
+4180e3b SnapdragonCamera: Resolve camera control overlapping issue
+5bb6fe3 Fix android.process.media got killed when capture
+c58924a SnapdragonCamera: Fix missing icon issue in error condition
+038809e SnapdragonCamera: Reset menu when device is rotated
+b2b382b SnapdragonCamera: fix null pointer exception
+26d9ea2 SnapdragonCamera: Fix menu highlight issue when rotating device
+d1712aa SnapdragonCamera: Adding null exception handler.
+f64b94c SnapdragonCamera: Register media status listener
+f5fb6cf SnapdragonCamera: Removing filmstrip view touch handler
+2609176 SnapdragonCamera: Adding current camera null check
+1f74331 SnapdragonCamera: Adding toast for media recording failure.
+f10d6c1 SnapdragonCamera: Improving Burstmode performance
+69d1c4d SnapdragonCamera: Do not update panorama thumbnail when cancelled
+48feef9 SnapdragonCamera: Fix crash issue with enable FD with TruePortrait
+e99828d VideoModule: Removing tmpPath and use path
+a2794ea SnapdragonCamera: Handle startPreview exception in camera.
+7383a2d SnapdragonCamera: Fix to make back key event work normally
+bc53629 SnapdragonCamera: Reset navigation bar state whenever screen turns on
+e039354 SnapdragonCamera: Always enable FD with TruePortrait on
+48a4d32 SnapdragonCamera: Fix progress indicator overlapped by thumbnail icon
+a93b185 SnapdragonCamera: Fix the preview thumbnail issue
+20a0405 SnapdragonCamera: Fix not able to view other pictures when macro mode
+322b414 SnapdragonCamera: Reduce the latency for panorama preview starting
+e0b7ffe SnapdragonCamera: Limit preview size by capping display dimensions.
+8e75470 SnapdragonCamera: add button border
+1ff17d7 SnapdragonCamera: Fix app freeze when connect to camera failed
+902626f SnapdragonCamera: Use StorageManager for SDCard
+fb876ae SnapdragonCamera: Fix display smaller thumbnail on panorama preview
+
+   * vendor/cm/
+83d933d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+79204e6 version: Set version string to 13.0.1 to reflect security update
+
+   * vendor/samsung/
+0edcf35 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+2e7d953 Merge pull request #810 from raymanfx/cm-13.0
+b486cf9 gts2: Remove noise suppression blobs
+
+====================
      08-03-2016
 ====================
 
@@ -49,9 +143,6 @@ d8208c3 Merge tag 'android-6.0.1_r61' into HEAD
 9a99017 DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
 f0dcb1e DO NOT MERGE Fix wrong nAllocLen
 
-   * hardware/qcom/media-caf/msm8937/
-a7b4886 The libOmxSw encoders require prop headers :(
-
    * hardware/qcom/media-caf/msm8952/
 2182d03 DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
 8db7a42 DO NOT MERGE Fix wrong nAllocLen
@@ -91,10 +182,10 @@ ccde045 Merge tag 'android-6.0.1_r61' into HEAD
 4a978c6 Merge tag 'android-6.0.1_r61' into HEAD
 
    * vendor/cm/
+19b67c6 Tele2 (LT) APN updates
 dbdc18b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 851457a config: Add ThemeManagerService to PRODUCT_PACKAGES
 79eda9e sepolicy: Put theme service in its own context
-8e01ebd [Dirty Hack] Kill persistent gms if gone rogue
 
    * vendor/cmsdk/
 ca6c5ef Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
@@ -113,12 +204,8 @@ b275452 Automatic translation import
 193a8c9 surfaceflinger: Isolate S3D code to msm8996 only
 534f857 surfaceflinger: Cleanups for blur
 
-   * hardware/qcom/display-caf/msm8996/
-b2ef0db Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
-
-   * hardware/qcom/media-caf/msm8996/
-2345dca Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
-5029df7 venc: Fix VQZip issue
+   * hardware/qcom/media-caf/msm8937/
+a7b4886 The libOmxSw encoders require prop headers :(
 
    * packages/apps/DeskClock/
 c158520 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
@@ -136,9 +223,9 @@ d91eb9b Automatic translation import
 256ba47 Initial code checkin
 
    * vendor/cm/
+8e01ebd [Dirty Hack] Kill persistent gms if gone rogue
 1fe46c1 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 7f81f3c cm: Update contributors
-cd726ac sepolicy: More IOP rules
 
    * vendor/cmsdk/
 44cbd4e Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
@@ -159,6 +246,13 @@ ef2b25d Automatic translation import
    * frameworks/native/
 f5486d6 sf: Allow HWC composition of virtual displays for HDMI primary
 537364c SF: Add support to draw S3D framebuffer target
+
+   * hardware/qcom/display-caf/msm8996/
+b2ef0db Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
+
+   * hardware/qcom/media-caf/msm8996/
+2345dca Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
+5029df7 venc: Fix VQZip issue
 
    * kernel/samsung/hlte/
 9519da0 Build v2.05
@@ -189,6 +283,7 @@ e4bb564 Automatic translation import
 3ffc294 Automatic translation import
 
    * vendor/cm/
+cd726ac sepolicy: More IOP rules
 0c2c311 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
@@ -206,88 +301,21 @@ f9e2a71 libril: Remove unused include
 9ddc8d4 msm: kgsl: Keep the GPU from going into a slumber after a touch event
 
    * packages/apps/Snap/
+d3497e2 SnapdragonCamera: Fix FD roll_dir issue
+61c3ce9 SnapdragonCamera: Reduce number of countdown timer option
+848bd70 SnapdragonCamera: limit AF animation FPS
+118b54c SnapdragonCamera: fix crash after photo deletion
+eb60e2e SnapdragonCamera: Fix app crash when taking longshot during countdown
+828954c SnapdragonCamera: Fix app auto close when repeat plug in/out USB cable
+2428156 SnapDragon: Changes to fix popup menu issue in camcorder
+1fddfd0 SnapdragonCamera: fix camera FC when internal storage isn't enough
+0bce7c9 SnapdragonCamera: fix crash with persist.panel.orientation
+f09d9d0 SnapdragonCamera: fix a panorama memory leak
+a704fe9 SnapdragonCamera: Fix face detection UI offset
+5933a0b SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot.
+ebe93e5 SnapdragonCamera: Disable continuous shot when HDR is enabled
+656585d SnapDragan: Changes to enable UI option for ASD mode.
+858413d SnapdragonCamera: Fix the issue that IS is not disabled
+2fc004c SnapdragonCamera: Disable CDS and TNR if SeeMore is enabled
 6d7dfbf Snap: Unbreak auto-HDR
-
-   * vendor/cm/
-5b6ff16 sepolicy: Fix MTP for sdcardfs
-
-====================
-     07-30-2016
-====================
-
-
-   * bionic/
-f28f3db bionic: Sort and cache hosts file data for fast lookup
-
-   * device/samsung/hlte-common/
-5d28016 rootdir: set "Sweet Spot" for load switching
-97f821d Revert "power: clean up qcom powerhal"
-88e73ba hlte-common: enable sdcardfs
-
-   * frameworks/base/
-f648cc1 Slim recent: fix unknown window type error
-c3d0842 mountservice: Don't nuke all volumes when decrypting
-5aefe71 pm: Skip custom resolver use when mOnlyCore
-
-   * frameworks/opt/telephony/
-c93c959 Fix for cellular data not connecting at boot up
-
-   * hardware/qcom/display-caf/msm8916/
-f9b87fe display: Fix warnings on 64-bit clang
-
-   * hardware/qcom/media-caf/msm8916/
-c2008de media: Fix issues when building with Clang
-
-   * kernel/samsung/hlte/
-409f56d Build v2.04
-20c7987 Revert "kernel/power/powersuspend: cumulative update to version 1.6 (faux123/Yank555.lu)"
-4f17ca2 Revert "powersuspend: new PM kernel driver for Android w/o early_suspend v1.7"
-25ab99d Revert "powersuspend: correct #endif condition"
-e0233a3 Revert "f2fs: add support for LOOKUP_CASE_INSENSITIVE"
-2ce259d fuse: Add support for d_canonical_path
-c44503b sdcardfs: override umask on mkdir and create
-9fca2eb vfs: change d_canonical_path to take two paths
-10519e7 sdcardfs: Add support for d_canonicalize
-9ba1ff8 inotify: Fix erroneous update of bit count
-03150ee vfs: add d_canonical_path for stacked filesystem support
-b5ec591 sdcardfs: Remove effectless config option
-4cb711a sdcardfs: Update and Modify Sasmung sdcardfs to 3.2.0
-aac9762 [BACKPORT] fuse: Add support for shortcircuited read/write for files
-
-   * packages/apps/Gello/
-be6327c gello: unbreak the gellin'time
-
-   * packages/apps/Settings/
-74b1339 Automatic translation import
-447000b Build V10.3
-
-   * packages/apps/Snap/
-830cbe7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-75096f2 Fix orientation handling in secure camera.
-
-   * packages/providers/WeatherProvider/
-50d4702 Automatic translation import
-
-   * system/core/
-ba84767 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-
-   * system/netd/
-11825d1 Enforces bandwidth limit on portable access point
-
-   * vendor/cm/
-598333c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-fdd1ffc Gello artifact: v29
-fb00ca6 Add missing OnePlus Two contributors
-833e113 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-fa37074 sepolicy: Let the IO prefetcher look at sdcardfs
-03ce400 Revert "extract_utils: Don't write multilib tags on 32-bit only devices"
-a44b9b9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-630d7ed cm: sepolicy: Allow system_server dir read access
-114dde3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-fc2c758 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-92fdd2b Automatic translation import
-55c755a CMSettings: Add default overlay for forward and reverse lookup
-d0ba845 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
