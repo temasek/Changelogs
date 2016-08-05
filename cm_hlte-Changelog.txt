@@ -1,4 +1,80 @@
 ====================
+     08-05-2016
+====================
+
+
+   * android/
+0e92681 Track own frameworks/opt/hardware
+
+   * bionic/
+5201926 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
+9259508 linker: Avoid logcat spam with some blobs
+545862d bionic: Sort and cache hosts file data for fast lookup
+
+   * build/
+c2a93a3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+7143cae build: Readd msm7x27a to QCOM Targets
+
+   * device/qcom/common/
+b6d2e17 power: Undo video decode hint for ondemand
+6d70cd4 power: Simplify display_hint_sent
+a277d81 dtbtool: use O_TRUNC when writing to output file
+
+   * device/qcom/sepolicy/
+f1e1874 sepolicy: update iop socket path
+
+   * device/samsung/hlte-common/
+6c9770a Fix com.google.android.gms.persistent killing script
+31c9697 rootdir: disable core power savings
+d6b2f74 add com.google.android.gms.persistent killing script
+
+   * frameworks/base/
+32a3f98 bootanimation: add multithreaded decode
+872f59f SystemUI: Display bluetooth battery status when available
+
+   * frameworks/opt/hardware/
+b1db61b Revert "cmhw: Add PictureAdjustment stubs"
+
+   * frameworks/opt/telephony/
+65b0635 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+6162b23 DCT: Tear down MMS+default connections raised by config_enable_mms_with_mobile_data_off
+
+   * packages/apps/Bluetooth/
+3ab1836 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+2132084 bluetooth: Broadcast battery status
+
+   * packages/apps/InCallUI/
+6cb834f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/Settings/
+b71ab07 Build V10.5
+bea7447 Allow restricted users to change status bar settings
+f215c1b Fix externally launching slim fragments
+
+   * packages/apps/Snap/
+3a0bda4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+51be6e8 Revert "SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot."
+
+   * packages/services/Telecomm/
+81a398e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+add7e10 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+d2c1ea5 MobileNetworkSettings: Check CarrierConfig on isWorldMode
+
+   * vendor/cm/
+9590e2f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+a516c2f cm: extract_utils: Add a firmware extraction method
+3a03012 cm: extract_utils: Fixup xml files
+7f9fff2 cm: extract_utils: Implement oat2dex
+463feb6 cm: sepolicy: Fix the vold blkid.tab denial from recovery
+
+   * vendor/cmsdk/
+d270b72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+3e7dac1 cmhw: Add support for display mode remapping
+19345cb livedisplay: Enable by default
+
+====================
      08-04-2016
 ====================
 
@@ -28,12 +104,8 @@ f3baa2f qseecom: Validate pointer offset in qseecom_send_modfd_cmd
 b8043a1 msm: kgsl: Defer adding the mem entry to a process
 0e72e6b defconfig: enable SECURITY_PERF_EVENTS_RESTRICT
 
-   * packages/apps/Eleven/
-4961f4e Merge "handle media keys" into cm-13.0
-
    * packages/apps/Settings/
 373e697 Merge pull request #458 from Trafalgar-Square/patch-1
-7e579a2 German translation
 
    * packages/apps/Snap/
 d0ed017 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
@@ -84,7 +156,8 @@ e0b7ffe SnapdragonCamera: Limit preview size by capping display dimensions.
 fb876ae SnapdragonCamera: Fix display smaller thumbnail on panorama preview
 
    * vendor/cm/
-83d933d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+ce489f1 Add LG msm8226 family maintainers
+fea2dc9 Add Asus Z380KL maintainer
 79204e6 version: Set version string to 13.0.1 to reflect security update
 
    * vendor/samsung/
@@ -129,7 +202,6 @@ e327c96 am: Notify zygote of font change in ActivityManagerService
    * frameworks/native/
 3362d9b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
 2ab013d Merge tag 'android-6.0.1_r61' into HEAD
-b86bb46 sf: Fix compliation for non-8996 platforms
 
    * frameworks/opt/net/wifi/
 f70b279 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
@@ -162,6 +234,9 @@ de2960f DO NOT MERGE Fix wrong nAllocLen
    * hardware/qcom/media/default/
 a1b4b98 Merge tag 'android-6.0.1_r61' into HEAD
 
+   * packages/apps/Eleven/
+4961f4e Merge "handle media keys" into cm-13.0
+
    * packages/apps/Nfc/
 72fb115 Merge tag 'android-6.0.1_r61' into HEAD
 
@@ -170,6 +245,7 @@ acfc4f4 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_
 96f551c Merge tag 'android-6.0.1_r61' into HEAD
 
    * packages/apps/Settings/
+7e579a2 German translation
 ba13880 Build V10.4 - Android 6.0.1_r61
 9218bd6 Update Slim Recent App Sidebar (2/2)
 
@@ -183,7 +259,6 @@ ccde045 Merge tag 'android-6.0.1_r61' into HEAD
 
    * vendor/cm/
 19b67c6 Tele2 (LT) APN updates
-dbdc18b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 851457a config: Add ThemeManagerService to PRODUCT_PACKAGES
 79eda9e sepolicy: Put theme service in its own context
 
@@ -201,6 +276,7 @@ c4ed8c8 Themes: Broker the theme service
 b275452 Automatic translation import
 
    * frameworks/native/
+b86bb46 sf: Fix compliation for non-8996 platforms
 193a8c9 surfaceflinger: Isolate S3D code to msm8996 only
 534f857 surfaceflinger: Cleanups for blur
 
@@ -223,7 +299,6 @@ d91eb9b Automatic translation import
 256ba47 Initial code checkin
 
    * vendor/cm/
-8e01ebd [Dirty Hack] Kill persistent gms if gone rogue
 1fe46c1 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 7f81f3c cm: Update contributors
 
@@ -246,6 +321,9 @@ ef2b25d Automatic translation import
    * frameworks/native/
 f5486d6 sf: Allow HWC composition of virtual displays for HDMI primary
 537364c SF: Add support to draw S3D framebuffer target
+
+   * frameworks/opt/hardware/
+a8ef044 cmhw: Add PictureAdjustment stubs
 
    * hardware/qcom/display-caf/msm8996/
 b2ef0db Merge tag 'LA.HB.1.3.2-20700-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
@@ -288,34 +366,4 @@ cd726ac sepolicy: More IOP rules
 
    * vendor/cmsdk/
 fa227b1 Automatic translation import
-
-====================
-     07-31-2016
-====================
-
-
-   * hardware/samsung/
-f9e2a71 libril: Remove unused include
-
-   * kernel/samsung/hlte/
-9ddc8d4 msm: kgsl: Keep the GPU from going into a slumber after a touch event
-
-   * packages/apps/Snap/
-d3497e2 SnapdragonCamera: Fix FD roll_dir issue
-61c3ce9 SnapdragonCamera: Reduce number of countdown timer option
-848bd70 SnapdragonCamera: limit AF animation FPS
-118b54c SnapdragonCamera: fix crash after photo deletion
-eb60e2e SnapdragonCamera: Fix app crash when taking longshot during countdown
-828954c SnapdragonCamera: Fix app auto close when repeat plug in/out USB cable
-2428156 SnapDragon: Changes to fix popup menu issue in camcorder
-1fddfd0 SnapdragonCamera: fix camera FC when internal storage isn't enough
-0bce7c9 SnapdragonCamera: fix crash with persist.panel.orientation
-f09d9d0 SnapdragonCamera: fix a panorama memory leak
-a704fe9 SnapdragonCamera: Fix face detection UI offset
-5933a0b SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot.
-ebe93e5 SnapdragonCamera: Disable continuous shot when HDR is enabled
-656585d SnapDragan: Changes to enable UI option for ASD mode.
-858413d SnapdragonCamera: Fix the issue that IS is not disabled
-2fc004c SnapdragonCamera: Disable CDS and TNR if SeeMore is enabled
-6d7dfbf Snap: Unbreak auto-HDR
 
