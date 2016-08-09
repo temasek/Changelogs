@@ -1,13 +1,98 @@
 ====================
+     08-09-2016
+====================
+
+
+   * build/
+0845494 build: Source a CM-specific global BoardConfig
+c553bb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+cbecec6 Revert "build: Allow building with Oracle JDK 8"
+a097018 build: Allow building with Oracle JDK 8
+
+   * device/samsung/hlte-common/
+4c2d34a Revert "hlte-common: add offline charging images"
+
+   * external/sqlite/
+c2d73ed Upgrade to SQLite 3.14.0
+
+   * external/wpa_supplicant_8/
+ea984e7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
+a08fd9e wpa_supplicant: Remove unnecessary QMI linkage
+
+   * frameworks/base/
+1094477 Fix native memory leak caused by small HWUI path cache creation
+65711ca Revert "Disable proximity check on power key properly"
+28a73b6 Automatic translation import
+16d2490 framework: extend provision check to SEARCH intents
+765a5df Revert "am: Notify zygote of font change in ActivityManagerService" - Breaks font theme service This reverts commit 282c3a4294508a6cb21aee23779fb4173a4a5308.
+
+   * frameworks/opt/hardware/
+45ef22e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
+
+   * hardware/cyanogen/
+ec15025 cmhw: Add support for picture adjustment via LiveDisplay native API
+
+   * packages/apps/DeskClock/
+f7a078e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+
+   * packages/apps/Dialer/
+6fec3d9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+
+   * packages/apps/Messaging/
+84d9f82 Clear avatar media cache on theme change
+
+   * packages/apps/Settings/
+dc45b0a Build V10.7
+1f7757e Automatic translation import
+1e11566 Revert "Settings: Add screen color settings"
+c7f5418 livedisplay: Add picture adjustment settings
+1a02f63 Build V10.6
+efdcd28 Revert "Fix NPE when rotating "Saved networks" screen"
+0a7f971 Revert "do not include saved network in scan list"
+
+   * packages/apps/SetupWizard/
+ab82e06 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
+
+   * packages/apps/Snap/
+8f68c29 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+
+   * packages/services/Telephony/
+b1c32b8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * vendor/cm/
+3825502 cm: Add custom off-mode charging screen
+695984c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+f8ed92a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+d62a53f Automatic translation import
+87590f0 cmsdk/livedisplay: Add support for picture adjustment
+
+====================
      08-08-2016
 ====================
 
 
-   * frameworks/base/
-765a5df Revert "am: Notify zygote of font change in ActivityManagerService" - Breaks font theme service This reverts commit 282c3a4294508a6cb21aee23779fb4173a4a5308.
-
    * frameworks/native/
 b53ad2b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * packages/apps/CMBugReport/
+94bf2d9 Automatic translation import
+
+   * packages/apps/CMFileManager/
+eef4e32 Automatic translation import
+
+   * packages/apps/Contacts/
+6063f78 Automatic translation import
+
+   * packages/apps/DeskClock/
+0505c81 Automatic translation import
+
+   * packages/apps/Dialer/
+863163b Automatic translation import
+
+   * packages/apps/Gello/
+1772b98 Automatic translation import
 
    * packages/apps/OmniSwitch/
 11cf5b3 OmniSwitch: launcher: no ripple no fun
@@ -15,10 +100,29 @@ b53ad2b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_framework
 1d81e76 OmniSwitch: launcher: change essentials launch intents
 55ff5a3 OmniSwitch: launcher: dont force using a chooser for the set wallpaper intent
 
-   * packages/apps/Settings/
-1a02f63 Build V10.6
-efdcd28 Revert "Fix NPE when rotating "Saved networks" screen"
-0a7f971 Revert "do not include saved network in scan list"
+   * packages/apps/Screencast/
+fff111e Automatic translation import
+
+   * packages/apps/SetupWizard/
+3dce293 Automatic translation import
+
+   * packages/apps/Snap/
+c5ce733 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+946fee3 Automatic translation import
+
+   * packages/services/CMAudioService/
+8ce29f0 Automatic translation import
+
+   * packages/services/Telephony/
+86fd10b Automatic translation import
+
+   * packages/services/ThemeManagerService/
+cdfcad6 Automatic translation import
+
+   * vendor/cm/
+dfcd472 sepolicy: Additional policy for LiveDisplay
 
 ====================
      08-07-2016
@@ -37,6 +141,7 @@ c3613f2 Revert "Adding back pdf_printer_media_sizes for values-zh-rCN to accomod
 
    * frameworks/opt/hardware/
 105fbd1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
+c11abf0 cmhw: Add PictureAdjustment stubs - take deux
 
    * packages/apps/PackageInstaller/
 99bc665 [3/3] PackageInstaller: make overlay permission check configurable
@@ -108,6 +213,9 @@ b1db61b Revert "cmhw: Add PictureAdjustment stubs"
 
    * frameworks/opt/telephony/
 65b0635 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8916/
+087d27d hal: Fix compilation with verbose debugging enabled
 
    * packages/apps/Bluetooth/
 3ab1836 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
@@ -194,76 +302,4 @@ fea2dc9 Add Asus Z380KL maintainer
 
    * vendor/samsung/
 0edcf35 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-
-====================
-     08-04-2016
-====================
-
-
-   * frameworks/native/
-542b068 surfaceflinger: Fix uninitialized variable
-da998f4 surfaceflinger: Unbreak casting and other use cases
-52b8462 surfaceflinger: Add check for number of queued buffers
-
-   * packages/apps/Eleven/
-4961f4e Merge "handle media keys" into cm-13.0
-
-   * packages/apps/Settings/
-373e697 Merge pull request #458 from Trafalgar-Square/patch-1
-7e579a2 German translation
-
-   * packages/apps/Snap/
-45769ae snap: Add constrained longshot mode
-81110de snap: Additional fixes for auto-HDR mode
-1ccf372 snap: Fixes for advanced features and scene modes
-d91acef snap: Always turn touch-af-aec on
-8fef7ac snap: Add missing resource
-38a5e13 SnapdragonCamera: Fix the advanced features relative toast issue
-846dc6a SnapdragonCamera: implement optizoom and chromaflash UI
-9a1d5c2 SnapdragonCamera: Fix panorama cancel button location
-ee8c922 SnapdragonCamera: Fix the issue that camera control is removed
-a58a537 SnapdragonCamera: Add manufacture and model info
-2a3c90c SnapdragonCamera: adjust video recording duration margins
-53a2b18 SnapdragonCamera: Fix incorrect focus mode
-72cf374 SnapdragonCamera: resolve touch af issue during countdown
-16ac0c5 SnapdragonCamera: Add support for outputting MPO format files
-e5d300a SnapdragonCamera: Removing unnecessary orientation check
-96c7df0 SnapdragonCamera: Fix viewfinder flashing issue in camcorder mode
-72a66ba SnapdragonCamera: hide the preview surface during suspend
-4180e3b SnapdragonCamera: Resolve camera control overlapping issue
-5bb6fe3 Fix android.process.media got killed when capture
-c58924a SnapdragonCamera: Fix missing icon issue in error condition
-038809e SnapdragonCamera: Reset menu when device is rotated
-b2b382b SnapdragonCamera: fix null pointer exception
-26d9ea2 SnapdragonCamera: Fix menu highlight issue when rotating device
-d1712aa SnapdragonCamera: Adding null exception handler.
-f64b94c SnapdragonCamera: Register media status listener
-f5fb6cf SnapdragonCamera: Removing filmstrip view touch handler
-2609176 SnapdragonCamera: Adding current camera null check
-1f74331 SnapdragonCamera: Adding toast for media recording failure.
-f10d6c1 SnapdragonCamera: Improving Burstmode performance
-69d1c4d SnapdragonCamera: Do not update panorama thumbnail when cancelled
-48feef9 SnapdragonCamera: Fix crash issue with enable FD with TruePortrait
-e99828d VideoModule: Removing tmpPath and use path
-a2794ea SnapdragonCamera: Handle startPreview exception in camera.
-7383a2d SnapdragonCamera: Fix to make back key event work normally
-bc53629 SnapdragonCamera: Reset navigation bar state whenever screen turns on
-e039354 SnapdragonCamera: Always enable FD with TruePortrait on
-48a4d32 SnapdragonCamera: Fix progress indicator overlapped by thumbnail icon
-a93b185 SnapdragonCamera: Fix the preview thumbnail issue
-20a0405 SnapdragonCamera: Fix not able to view other pictures when macro mode
-322b414 SnapdragonCamera: Reduce the latency for panorama preview starting
-e0b7ffe SnapdragonCamera: Limit preview size by capping display dimensions.
-8e75470 SnapdragonCamera: add button border
-1ff17d7 SnapdragonCamera: Fix app freeze when connect to camera failed
-902626f SnapdragonCamera: Use StorageManager for SDCard
-fb876ae SnapdragonCamera: Fix display smaller thumbnail on panorama preview
-
-   * vendor/cm/
-79204e6 version: Set version string to 13.0.1 to reflect security update
-19b67c6 Tele2 (LT) APN updates
-
-   * vendor/samsung/
-2e7d953 Merge pull request #810 from raymanfx/cm-13.0
-b486cf9 gts2: Remove noise suppression blobs
 
