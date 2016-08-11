@@ -1,16 +1,91 @@
 ====================
+     08-11-2016
+====================
+
+
+   * frameworks/av/
+c5c58d8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+8d41a10 mediascanner: Accept .opus file extension.
+2071f20 stagefright: Remove the HAL3 limitation from the video reference clock selection
+
+   * frameworks/base/
+1c030c7 [2/2] base: cm custom boot dexopt UI
+6c9119b pm: resolver: Don't hold the lock when calling into the resolver
+16379ac Revert "BootMessage: Show each app name being optimized during boot"
+007add8 Revert "Bootmsg: The app name is now displayed in bold text."
+a51d511 Revert "PhoneWindowManager: Powered by arter97 optimizations :D:D:D"
+
+   * packages/apps/Settings/
+6e574dc Build V10.8
+
+   * packages/apps/Snap/
+2a2d7ee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+2b5331e Snap: Remove storage menu if no external storage available
+
+   * vendor/cm/
+e8c5e15 charger: use cm custom off-mode charging unconditionally
+09030b5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+0e9838e contributors: update Galaxy Nexus maintainers
+8e9bf1c cm: Update Xperia Blue contributor
+
+   * vendor/cmsdk/
+5785491 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+6e5ab27 [1/2] cmsdk: cm custom boot dexopt UI
+
+====================
+     08-10-2016
+====================
+
+
+   * build/
+732e784 build: Source a CM-specific global BoardConfig
+
+   * device/samsung/qcom-common/
+3c4c940 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_samsung_qcom-common into cm-13.0
+
+   * frameworks/av/
+a0049fc Fix google-explict-constructor warnings in radio.
+
+   * frameworks/base/
+ee6c13a IconPackHelper:Use un-tinted iconback when no defaultSwatchcolor is specified
+
+   * kernel/samsung/hlte/
+4c843a9 net: ipc_router: Bind only a client port as control port
+
+   * packages/apps/Settings/
+d550e54 Settings: Animate pin/pattern fragment only if available
+
+   * vendor/cm/
+c412b84 cm: Add custom off-mode charging screen
+ce0a83a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+
+   * vendor/cmsdk/
+db640a9 livedisplay: Float-to-string conversions considered harmful
+80903f6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+c0dd46d Introduce a hysteresis for outdoor condition determination.
+
+   * vendor/samsung/
+ea788f5 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+3d95756 Merge pull request #813 from Rashed97/cm-13.0
+eca8da1 lt03lte: Add libuiblur
+1ce14c3 jf: add libuiblur
+9ca36d4 msm8960: add libuiblur
+
+====================
      08-09-2016
 ====================
 
 
    * build/
-0845494 build: Source a CM-specific global BoardConfig
 c553bb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
 cbecec6 Revert "build: Allow building with Oracle JDK 8"
-a097018 build: Allow building with Oracle JDK 8
 
    * device/samsung/hlte-common/
 4c2d34a Revert "hlte-common: add offline charging images"
+
+   * device/samsung/qcom-common/
+045b6c9 qcom: Remove obsolete USE_OPENGL_RENDERER
+cf48a25 qcom: Stop building generic charger images
 
    * external/sqlite/
 c2d73ed Upgrade to SQLite 3.14.0
@@ -24,13 +99,15 @@ a08fd9e wpa_supplicant: Remove unnecessary QMI linkage
 65711ca Revert "Disable proximity check on power key properly"
 28a73b6 Automatic translation import
 16d2490 framework: extend provision check to SEARCH intents
-765a5df Revert "am: Notify zygote of font change in ActivityManagerService" - Breaks font theme service This reverts commit 282c3a4294508a6cb21aee23779fb4173a4a5308.
 
    * frameworks/opt/hardware/
 45ef22e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
 
    * hardware/cyanogen/
 ec15025 cmhw: Add support for picture adjustment via LiveDisplay native API
+
+   * kernel/samsung/hlte/
+0b6e187 ashmem: Validate ashmem memory with fops pointer
 
    * packages/apps/DeskClock/
 f7a078e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
@@ -42,13 +119,10 @@ f7a078e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_D
 84d9f82 Clear avatar media cache on theme change
 
    * packages/apps/Settings/
-dc45b0a Build V10.7
+537c723 Build V10.7
 1f7757e Automatic translation import
 1e11566 Revert "Settings: Add screen color settings"
 c7f5418 livedisplay: Add picture adjustment settings
-1a02f63 Build V10.6
-efdcd28 Revert "Fix NPE when rotating "Saved networks" screen"
-0a7f971 Revert "do not include saved network in scan list"
 
    * packages/apps/SetupWizard/
 ab82e06 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
@@ -60,7 +134,7 @@ ab82e06 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_S
 b1c32b8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 
    * vendor/cm/
-3825502 cm: Add custom off-mode charging screen
+eac8616 sepolicy: Move new QCOM-specific policy to the right place
 695984c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
@@ -72,6 +146,12 @@ d62a53f Automatic translation import
      08-08-2016
 ====================
 
+
+   * build/
+a097018 build: Allow building with Oracle JDK 8
+
+   * frameworks/base/
+765a5df Revert "am: Notify zygote of font change in ActivityManagerService" - Breaks font theme service This reverts commit 282c3a4294508a6cb21aee23779fb4173a4a5308.
 
    * frameworks/native/
 b53ad2b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
@@ -103,6 +183,11 @@ eef4e32 Automatic translation import
    * packages/apps/Screencast/
 fff111e Automatic translation import
 
+   * packages/apps/Settings/
+1a02f63 Build V10.6
+efdcd28 Revert "Fix NPE when rotating "Saved networks" screen"
+0a7f971 Revert "do not include saved network in scan list"
+
    * packages/apps/SetupWizard/
 3dce293 Automatic translation import
 
@@ -129,9 +214,6 @@ dfcd472 sepolicy: Additional policy for LiveDisplay
 ====================
 
 
-   * device/qcom/sepolicy/
-d805fbc sepolicy: Re-add legacy IOP rules
-
    * device/samsung/hlte-common/
 399f2fc hlte-common: Enable C2D as the default compositor
 
@@ -141,7 +223,6 @@ c3613f2 Revert "Adding back pdf_printer_media_sizes for values-zh-rCN to accomod
 
    * frameworks/opt/hardware/
 105fbd1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
-c11abf0 cmhw: Add PictureAdjustment stubs - take deux
 
    * packages/apps/PackageInstaller/
 99bc665 [3/3] PackageInstaller: make overlay permission check configurable
@@ -154,152 +235,4 @@ c11abf0 cmhw: Add PictureAdjustment stubs - take deux
 
    * vendor/cm/
 5b7c525 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-====================
-     08-06-2016
-====================
-
-
-   * android/
-0e92681 Track own frameworks/opt/hardware
-
-   * bionic/
-5201926 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
-9259508 linker: Avoid logcat spam with some blobs
-
-   * build/
-c2a93a3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-7143cae build: Readd msm7x27a to QCOM Targets
-
-   * device/qcom/common/
-b6d2e17 power: Undo video decode hint for ondemand
-6d70cd4 power: Simplify display_hint_sent
-a277d81 dtbtool: use O_TRUNC when writing to output file
-
-   * device/qcom/sepolicy/
-091da82 Revert "SElinux policy rules addition for early audio feature"
-9d013af sepolicy: Fix garbage in upstream commit
-7e91768 seandroid: allow QFP dameon access to Android services
-6e709b2 sepolicy: Add policy for VR service
-98fa20a sepolicy: remove exec permission for radio
-88707c0 sepolicy: Add permissions for new dsp node
-9400d2f Location: added media server access permission for test app
-40a865c SEPolicy: Update SePolicy for IOP
-43335cd SElinux policy rules addition for early audio feature
-242e02c sepolicy: add permissions for i2c-6 device
-e8b3230 sepolicy : add inital rule to bootanimation.
-2bf358c sepolicy: Add secontexts boot and persist.nativehmi.exit
-dc1abcd sepolicy : Allow bootkpi access to system apps and vold
-3825d73 common: add selinux policy for fastmmi
-53b3086 sepolicy: Policy for SmartcardService
-796761b sepolicy: allow fstman write permissions to wifi directory
-f1e1874 sepolicy: update iop socket path
-
-   * device/samsung/hlte-common/
-0a7705b Fix com.google.android.gms.persistent killing script
-31c9697 rootdir: disable core power savings
-d6b2f74 add com.google.android.gms.persistent killing script
-
-   * frameworks/base/
-32a3f98 bootanimation: add multithreaded decode
-872f59f SystemUI: Display bluetooth battery status when available
-
-   * frameworks/native/
-3b418d6 Fixed stylus eraser being rejected by palm rejection
-
-   * frameworks/opt/hardware/
-91cb338 Revert "cmhw: Add PictureAdjustment stubs"
-b1db61b Revert "cmhw: Add PictureAdjustment stubs"
-
-   * frameworks/opt/telephony/
-65b0635 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/qcom/audio-caf/msm8916/
-087d27d hal: Fix compilation with verbose debugging enabled
-
-   * packages/apps/Bluetooth/
-3ab1836 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-2132084 bluetooth: Broadcast battery status
-
-   * packages/apps/CMFileManager/
-5d690dd Add ape file mimetype
-
-   * packages/apps/InCallUI/
-6cb834f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Messaging/
-3aaac3a Use app settings for conversation settings if no custom set
-
-   * packages/apps/Settings/
-a10db3d Build V10.5
-bea7447 Allow restricted users to change status bar settings
-f215c1b Fix externally launching slim fragments
-
-   * packages/apps/Snap/
-c4762ff snap: fix untraslatables
-3a0bda4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * packages/services/Telecomm/
-81a398e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
-
-   * packages/services/Telephony/
-add7e10 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-d2c1ea5 MobileNetworkSettings: Check CarrierConfig on isWorldMode
-
-   * vendor/cm/
-a995059 Allow maintenance versions to be ignored
-9590e2f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-a516c2f cm: extract_utils: Add a firmware extraction method
-3a03012 cm: extract_utils: Fixup xml files
-7f9fff2 cm: extract_utils: Implement oat2dex
-463feb6 cm: sepolicy: Fix the vold blkid.tab denial from recovery
-
-   * vendor/cmsdk/
-d270b72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-3e7dac1 cmhw: Add support for display mode remapping
-19345cb livedisplay: Enable by default
-
-====================
-     08-05-2016
-====================
-
-
-   * bionic/
-545862d bionic: Sort and cache hosts file data for fast lookup
-
-   * device/samsung/hlte-common/
-e757dc9 hlte-common: Remove device_perms header
-
-   * frameworks/base/
-39fb34a framework: don't allow assist activities while not provisioned
-
-   * frameworks/native/
-b519b68 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * frameworks/opt/telephony/
-6162b23 DCT: Tear down MMS+default connections raised by config_enable_mms_with_mobile_data_off
-
-   * kernel/samsung/hlte/
-0ba3f3f Build v2.06b1
-4f2af79 ASoC: msm: qdsp6v2: Fix offload gapless transition
-38bdd20 cpu: send KOBJ_ONLINE event when enabling cpus
-f3baa2f qseecom: Validate pointer offset in qseecom_send_modfd_cmd
-8d4c7f8 diag: Fix possible underflow/overflow issues
-66aea8d media: Init the reserved fields of struct media_link_desc
-1fc5d44 FROMLIST: security,perf: Allow further restriction of perf_event_open
-8861f8a BACKPORT: perf tools: Document the perf sysctls
-5b50abe fix infoleak in rtnetlink
-b8043a1 msm: kgsl: Defer adding the mem entry to a process
-0e72e6b defconfig: enable SECURITY_PERF_EVENTS_RESTRICT
-
-   * packages/apps/Snap/
-51be6e8 Revert "SnapdragonCamera: Fix AEC lock issue after non-zsl snapshot."
-d0ed017 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * vendor/cm/
-ce489f1 Add LG msm8226 family maintainers
-fea2dc9 Add Asus Z380KL maintainer
-
-   * vendor/samsung/
-0edcf35 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
 
