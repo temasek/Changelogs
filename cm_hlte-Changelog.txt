@@ -1,14 +1,258 @@
 ====================
-     08-11-2016
+     08-16-2016
 ====================
 
 
-   * frameworks/av/
-c5c58d8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-8d41a10 mediascanner: Accept .opus file extension.
-2071f20 stagefright: Remove the HAL3 limitation from the video reference clock selection
+   * build/
+cb17251 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+
+   * external/wpa_supplicant_8/
+066597f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
+dc6ca43 Merge branch 'wlan-service.lnx.1.0-rel.1.0' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
 
    * frameworks/base/
+4a9cd80 am: Account for time changes when showing recent activities
+
+   * frameworks/native/
+5eb8a42 Revert "dalvik: rework 3 and 4-GB dalvik heap configurations"
+1761330 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+94774ac dalvik: rework 3 and 4-GB dalvik heap configurations
+
+   * frameworks/opt/net/wifi/
+02e6aeb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+709a459 Wifi: Do full DHCP if framework roam to a new SSID
+6d461a7 Do not process the results array if no results are received
+37cde44 Reply with a FAILURE if enable network is received for invalid id
+6501ec3 WifiService:Fix profile can't be updated when SIM changed
+4bbf00c Wifi: Issue Disconnect when Ip is changed
+875d895 wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative
+
+   * packages/apps/Messaging/
+6086e51 Unachive conversations from unblocked participants
+
+   * packages/apps/Settings/
+50baacc Build V10.9
+
+   * packages/providers/MediaProvider/
+ac54203 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
+
+   * packages/themes/HexoLibre/
+18ba8af Kover Libre
+
+   * vendor/cm/
+a7fa53a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+387305f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+ec6c945 apns: Fix T-Mobile MK DATA access
+e73b8c1 cm: Allow LiveDisplay to write to display misc dir
+
+   * vendor/cmsdk/
+c00b1d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+2661188 Fix string
+
+====================
+     08-15-2016
+====================
+
+
+   * build/
+f63b642 build: Source a CM-specific global BoardConfig
+
+   * vendor/cm/
+e91605c cm: charger: Export the RTC Clock and Alarm timestamps
+cadd0be cm: charger: Add support for double backlight displays
+d12d40b Revert "config: Add WeatherManagerService to PRODUCT_PACKAGES"
+8d3e2e6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+7595620 cm: Add custom off-mode charging screen
+48f8df8 extract-utils: Add pinning support
+
+   * vendor/cmsdk/
+e1ba940 CMSDK : Fix generateAlertColorFromDrawable for non BitmapDrawable
+
+   * vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+afe47bc Refactor OpenWeatherMap weather provider service
+
+====================
+     08-14-2016
+====================
+
+
+   * device/samsung/hlte-common/
+6d14f80 rootdir: Disable remaining boost sync driver
+
+   * frameworks/base/
+3f6423a Automatic translation import
+4d14c0b Fix slow anim when using a gesture to open status bar pulldown
+674633a Revert "Speed up notification panel pulldown animation when called externally"
+
+   * frameworks/native/
+a5f80a5 surfaceflinger: Access s3d flags only for valid display ID.
+
+   * packages/apps/AudioFX/
+47248a0 Automatic translation import
+
+   * packages/apps/CMBugReport/
+f8fb93b Automatic translation import
+
+   * packages/apps/Camera2/
+e3d02a2 Automatic translation import
+
+   * packages/apps/Contacts/
+09dccf0 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+ec49830 Automatic translation import
+
+   * packages/apps/DeskClock/
+89d25a9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
+2412531 Automatic translation import
+
+   * packages/apps/Exchange/
+4758359 Automatic translation import
+
+   * packages/apps/FMRadio/
+1f5e945 Automatic translation import
+
+   * packages/apps/Gallery2/
+a0ee497 Gallery: Remove more possible NPEs
+
+   * packages/apps/Gello/
+8fb25f4 Automatic translation import
+
+   * packages/apps/Messaging/
+8f1ecd7 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+f3ceccc Automatic translation import
+
+   * packages/apps/Settings/
+9d2fca8 Automatic translation import
+391f652 Settings: move high touch sensitivity setting to Display
+
+   * packages/apps/Snap/
+4b76e83 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+1532d76 Automatic translation import
+2781c8e Snap: String improvements
+
+   * packages/apps/ThemeChooser/
+dd53b04 Automatic translation import
+
+   * packages/apps/TvSettings/
+514c721 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+2b0f539 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+fa3518f Automatic translation import
+
+   * packages/providers/BookmarkProvider/
+be42e53 Automatic translation import
+
+   * packages/providers/CalendarProvider/
+4066adb Automatic translation import
+
+   * packages/providers/CallLogProvider/
+ba2ea00 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+51d9963 Automatic translation import
+
+   * packages/providers/MediaProvider/
+876ce08 MediaProvider: catch data exception to avoid crash
+d38f5fe MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
+daf4128 Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
+97020c4 Music: Fix force closed when plug out the SD card while music is playing.
+7c4bd66 MediaProvider: Fix SQLiteDiskIOException.
+
+   * packages/providers/TelephonyProvider/
+95a055b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
+490a177 Automatic translation import
+
+   * packages/services/CMAudioService/
+4f029e0 Automatic translation import
+
+   * packages/services/Telecomm/
+6321938 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+7ee39a5 Automatic translation import
+
+   * packages/services/Telephony/
+ae130d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+a686e01 Automatic translation import
+
+   * packages/services/ThemeManagerService/
+93d9504 Automatic translation import
+
+   * packages/wallpapers/LivePicker/
+39dc141 Automatic translation import
+
+   * packages/wallpapers/MagicSmoke/
+b204d0b Automatic translation import
+
+   * system/netd/
+a178f13 Listen to xt_quota2 kobject event for quota
+8ff7082 TetherController: fix forwarding request aggregation logic
+
+   * vendor/cm/
+049d4c5 config: Add WeatherManagerService to PRODUCT_PACKAGES
+
+   * vendor/cmsdk/
+c5c621b Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+4ceac56 Automatic translation import
+
+   * vendor/samsung/
+288bece Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+
+====================
+     08-13-2016
+====================
+
+
+   * android/
+a12a9c4 Add HexoLibre to manifest!
+
+   * external/sqlite/
+b4f2808 Upgrade to SQLite 3.14.1
+
+   * kernel/samsung/hlte/
+62b289e staging: android: lowmemorykiller: set TIF_MEMDIE before send kill sig
+
+   * packages/apps/Gello/
+cf74c29 Gello: Make incognito sentence fully translatable
+
+   * packages/apps/Settings/
+32778fc Settings:Fix mImsi null cause ApnSettings crash
+d17c6ee Settings: remove wifi hotspot timeout when hotspot settings are removed
+4ee08d8 Settings: Show only one tab on PrivacyGuard direct access
+923b359 Settings: Root appops access in developer settings
+
+   * packages/themes/HexoLibre/
+e9a9feb Remove custom package signature
+792b24b Remove device specific assignments.
+
+   * vendor/cmsdk/
+c487191 CMSDK: Broker out WeatherManagerService
+396caeb Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+
+   * vendor/samsung/
+07fcc29 Merge pull request #812 from zwliew/cm-13.0
+
+====================
+     08-12-2016
+====================
+
+
+   * build/
+222a1f5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+34dbd81 Revert "warn and continue if using wrong jdk"
+
+   * device/qcom/common/
+1a2515c power-8916: Simplify missed soc_id check in 9e40a0e
+
+   * frameworks/av/
+c5c58d8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+c963424 Revert "Fix native memory leak caused by small HWUI path cache creation"
 1c030c7 [2/2] base: cm custom boot dexopt UI
 6c9119b pm: resolver: Don't hold the lock when calling into the resolver
 16379ac Revert "BootMessage: Show each app name being optimized during boot"
@@ -16,223 +260,41 @@ c5c58d8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_framework
 a51d511 Revert "PhoneWindowManager: Powered by arter97 optimizations :D:D:D"
 
    * packages/apps/Settings/
+7ed948e Merge pull request #459 from Joshndroid/cm-13.0
+cac7796 Dynamically define currently installed vendor.img version *parse the vendor fingerprint for the vendor build id *automatically remove on devices without a vendor image
 6e574dc Build V10.8
 
+   * packages/apps/SetupWizard/
+2c23c45 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
+8331602 If the device has FRP, prompt the user to set up a lockscreen
+
    * packages/apps/Snap/
+e782a3f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
+e095785 Snap: Support 9.6 MP 16:9 picture resolution
 2a2d7ee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-2b5331e Snap: Remove storage menu if no external storage available
 
-   * vendor/cm/
-e8c5e15 charger: use cm custom off-mode charging unconditionally
-09030b5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-0e9838e contributors: update Galaxy Nexus maintainers
-8e9bf1c cm: Update Xperia Blue contributor
-
-   * vendor/cmsdk/
-5785491 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-6e5ab27 [1/2] cmsdk: cm custom boot dexopt UI
-
-====================
-     08-10-2016
-====================
-
-
-   * build/
-732e784 build: Source a CM-specific global BoardConfig
-
-   * device/samsung/qcom-common/
-3c4c940 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_samsung_qcom-common into cm-13.0
-
-   * frameworks/av/
-a0049fc Fix google-explict-constructor warnings in radio.
-
-   * frameworks/base/
-ee6c13a IconPackHelper:Use un-tinted iconback when no defaultSwatchcolor is specified
-
-   * kernel/samsung/hlte/
-4c843a9 net: ipc_router: Bind only a client port as control port
-
-   * packages/apps/Settings/
-d550e54 Settings: Animate pin/pattern fragment only if available
-
-   * vendor/cm/
-c412b84 cm: Add custom off-mode charging screen
-ce0a83a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-db640a9 livedisplay: Float-to-string conversions considered harmful
-80903f6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-c0dd46d Introduce a hysteresis for outdoor condition determination.
-
-   * vendor/samsung/
-ea788f5 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-3d95756 Merge pull request #813 from Rashed97/cm-13.0
-eca8da1 lt03lte: Add libuiblur
-1ce14c3 jf: add libuiblur
-9ca36d4 msm8960: add libuiblur
-
-====================
-     08-09-2016
-====================
-
-
-   * build/
-c553bb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-cbecec6 Revert "build: Allow building with Oracle JDK 8"
-
-   * device/samsung/hlte-common/
-4c2d34a Revert "hlte-common: add offline charging images"
-
-   * device/samsung/qcom-common/
-045b6c9 qcom: Remove obsolete USE_OPENGL_RENDERER
-cf48a25 qcom: Stop building generic charger images
-
-   * external/sqlite/
-c2d73ed Upgrade to SQLite 3.14.0
-
-   * external/wpa_supplicant_8/
-ea984e7 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
-a08fd9e wpa_supplicant: Remove unnecessary QMI linkage
-
-   * frameworks/base/
-1094477 Fix native memory leak caused by small HWUI path cache creation
-65711ca Revert "Disable proximity check on power key properly"
-28a73b6 Automatic translation import
-16d2490 framework: extend provision check to SEARCH intents
-
-   * frameworks/opt/hardware/
-45ef22e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
-
-   * hardware/cyanogen/
-ec15025 cmhw: Add support for picture adjustment via LiveDisplay native API
-
-   * kernel/samsung/hlte/
-0b6e187 ashmem: Validate ashmem memory with fops pointer
-
-   * packages/apps/DeskClock/
-f7a078e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-
-   * packages/apps/Dialer/
-6fec3d9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/Messaging/
-84d9f82 Clear avatar media cache on theme change
-
-   * packages/apps/Settings/
-537c723 Build V10.7
-1f7757e Automatic translation import
-1e11566 Revert "Settings: Add screen color settings"
-c7f5418 livedisplay: Add picture adjustment settings
-
-   * packages/apps/SetupWizard/
-ab82e06 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
-
-   * packages/apps/Snap/
-8f68c29 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * packages/services/Telephony/
-b1c32b8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * vendor/cm/
-eac8616 sepolicy: Move new QCOM-specific policy to the right place
-695984c Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-f8ed92a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-d62a53f Automatic translation import
-87590f0 cmsdk/livedisplay: Add support for picture adjustment
-
-====================
-     08-08-2016
-====================
-
-
-   * build/
-a097018 build: Allow building with Oracle JDK 8
-
-   * frameworks/base/
-765a5df Revert "am: Notify zygote of font change in ActivityManagerService" - Breaks font theme service This reverts commit 282c3a4294508a6cb21aee23779fb4173a4a5308.
-
-   * frameworks/native/
-b53ad2b Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * packages/apps/CMBugReport/
-94bf2d9 Automatic translation import
-
-   * packages/apps/CMFileManager/
-eef4e32 Automatic translation import
-
-   * packages/apps/Contacts/
-6063f78 Automatic translation import
-
-   * packages/apps/DeskClock/
-0505c81 Automatic translation import
-
-   * packages/apps/Dialer/
-863163b Automatic translation import
-
-   * packages/apps/Gello/
-1772b98 Automatic translation import
-
-   * packages/apps/OmniSwitch/
-11cf5b3 OmniSwitch: launcher: no ripple no fun
-6bcddc1 OmniSwitch: revert recent apps should not change order in quick switcher
-1d81e76 OmniSwitch: launcher: change essentials launch intents
-55ff5a3 OmniSwitch: launcher: dont force using a chooser for the set wallpaper intent
-
-   * packages/apps/Screencast/
-fff111e Automatic translation import
-
-   * packages/apps/Settings/
-1a02f63 Build V10.6
-efdcd28 Revert "Fix NPE when rotating "Saved networks" screen"
-0a7f971 Revert "do not include saved network in scan list"
-
-   * packages/apps/SetupWizard/
-3dce293 Automatic translation import
-
-   * packages/apps/Snap/
-c5ce733 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-946fee3 Automatic translation import
+   * packages/providers/TelephonyProvider/
+d79b363 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
 
    * packages/services/CMAudioService/
-8ce29f0 Automatic translation import
+2087f64 CMAudioService: sign with private keys if available
+1127d85 CMAudioService: add icons
 
-   * packages/services/Telephony/
-86fd10b Automatic translation import
+   * packages/services/LiveLockScreenService/
+675cedc LiveLockscreenService: add icons
 
    * packages/services/ThemeManagerService/
-cdfcad6 Automatic translation import
+1e9e7cd ThemeManager: add icon
+
+   * packages/themes/HexoLibre/
+ecccbb5 Remove extra metadata
+1c82089 hexolibre: Fix strings
+f61ab04 VIVA LA HEXOLIBRE!
 
    * vendor/cm/
-dfcd472 sepolicy: Additional policy for LiveDisplay
+31125bc cm: Build HexoLibre as part of common_full
 
-====================
-     08-07-2016
-====================
-
-
-   * device/samsung/hlte-common/
-399f2fc hlte-common: Enable C2D as the default compositor
-
-   * frameworks/base/
-a265fb3 [1/3] base: make overlay permission check configurable
-c3613f2 Revert "Adding back pdf_printer_media_sizes for values-zh-rCN to accomodate mediasize_default"
-
-   * frameworks/opt/hardware/
-105fbd1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_hardware into cm-13.0
-
-   * packages/apps/PackageInstaller/
-99bc665 [3/3] PackageInstaller: make overlay permission check configurable
-
-   * packages/apps/Settings/
-7e1faff [2/3] Settings: make overlay permission check configurable
-
-   * packages/apps/Snap/
-4db2e01 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * vendor/cm/
-5b7c525 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+   * vendor/cmsdk/
+da1776a cmsdk: allow MANAGE_AUDIO_SESSIONS to be whitelisted
+5785491 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
