@@ -1,4 +1,82 @@
 ====================
+     08-18-2016
+====================
+
+
+   * device/samsung/qcom-common/
+adab2ea Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_samsung_qcom-common into cm-13.0
+cb1d664 qcom: Remove healthd extension
+6c5f458 qcom: Stop building generic charger images
+
+   * frameworks/native/
+d3460b1 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+05ed8dc Revert "Revert "dalvik: rework 3 and 4-GB dalvik heap configurations""
+2a2b06d Fix xxxhdpi 3072 heap sizes
+
+   * frameworks/opt/net/wifi/
+3640884 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+19adf48 Fix potential memory leak
+
+   * packages/apps/Settings/
+7bcb597 Build V11
+1c7ecfe Revert "Settings: Show only one tab on PrivacyGuard direct access"
+
+   * packages/inputmethods/LatinIME/
+fa9d176 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+877f8b4 LatinIME: add shortcut functionality
+
+   * prebuilts/cmsdk/
+96707cf prebuilts/cmsdk: Cement api 6 release.
+
+   * vendor/cm/
+1504323 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+a194731 cm: "Released" means current.
+850dd22 charger: Add 640dpi support
+
+   * vendor/cmsdk/
+0fcd690 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+c349280 cmsdk: Finalize api level 6 (Fig).
+
+   * vendor/samsung/
+65792e8 Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
+bbd43a4 Merge pull request #816 from TheMuppers/cm-13.0
+
+====================
+     08-17-2016
+====================
+
+
+   * frameworks/base/
+9de1560 SystemUI: Fix build without jack
+
+   * frameworks/opt/net/wifi/
+6c37208 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+
+   * packages/apps/Contacts/
+a5730ba Contacs: Fix build without jack
+
+   * packages/apps/ContactsCommon/
+60a394e Fix crash when block incoming call without caller ID
+
+   * packages/apps/Dialer/
+77b640d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+7f23b87 Dialer: Fix build without jack
+
+   * packages/providers/ContactsProvider/
+67931bb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+4346f8e ContactsProvider: Fix build without jack
+
+   * packages/services/LiveLockScreenService/
+09b857e LiveLockScreenService: Fix build without jack
+
+   * vendor/cm/
+3493b99 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3e85bf7 version: Keep the maintenance version defined and use it if needed
+
+   * vendor/samsung/
+2b0dc70 klte: Add libuiblur
+
+====================
      08-16-2016
 ====================
 
@@ -8,30 +86,27 @@ cb17251 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-1
 
    * external/wpa_supplicant_8/
 066597f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_wpa_supplicant_8 into cm-13.0
-dc6ca43 Merge branch 'wlan-service.lnx.1.0-rel.1.0' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
 
    * frameworks/base/
 4a9cd80 am: Account for time changes when showing recent activities
 
    * frameworks/native/
-5eb8a42 Revert "dalvik: rework 3 and 4-GB dalvik heap configurations"
+90db4d2 Revert "dalvik: rework 3 and 4-GB dalvik heap configurations"
 1761330 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
 94774ac dalvik: rework 3 and 4-GB dalvik heap configurations
 
    * frameworks/opt/net/wifi/
+cab7889 wifi: Stop spamming logs
 02e6aeb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-709a459 Wifi: Do full DHCP if framework roam to a new SSID
-6d461a7 Do not process the results array if no results are received
-37cde44 Reply with a FAILURE if enable network is received for invalid id
-6501ec3 WifiService:Fix profile can't be updated when SIM changed
-4bbf00c Wifi: Issue Disconnect when Ip is changed
-875d895 wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative
+
+   * packages/apps/Eleven/
+c7f1f86 Convert to new media button receiver logic.
 
    * packages/apps/Messaging/
 6086e51 Unachive conversations from unblocked participants
 
    * packages/apps/Settings/
-50baacc Build V10.9
+af1354d Build V10.9
 
    * packages/providers/MediaProvider/
 ac54203 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
@@ -43,7 +118,6 @@ ac54203 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_provid
 a7fa53a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 387305f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 ec6c945 apns: Fix T-Mobile MK DATA access
-e73b8c1 cm: Allow LiveDisplay to write to display misc dir
 
    * vendor/cmsdk/
 c00b1d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
@@ -59,7 +133,19 @@ c00b1d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
    * build/
 f63b642 build: Source a CM-specific global BoardConfig
 
+   * external/wpa_supplicant_8/
+dc6ca43 Merge branch 'wlan-service.lnx.1.0-rel.1.0' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/opt/net/wifi/
+709a459 Wifi: Do full DHCP if framework roam to a new SSID
+6d461a7 Do not process the results array if no results are received
+37cde44 Reply with a FAILURE if enable network is received for invalid id
+6501ec3 WifiService:Fix profile can't be updated when SIM changed
+4bbf00c Wifi: Issue Disconnect when Ip is changed
+875d895 wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative
+
    * vendor/cm/
+e73b8c1 cm: Allow LiveDisplay to write to display misc dir
 e91605c cm: charger: Export the RTC Clock and Alarm timestamps
 cadd0be cm: charger: Add support for double backlight displays
 d12d40b Revert "config: Add WeatherManagerService to PRODUCT_PACKAGES"
@@ -85,9 +171,6 @@ afe47bc Refactor OpenWeatherMap weather provider service
 3f6423a Automatic translation import
 4d14c0b Fix slow anim when using a gesture to open status bar pulldown
 674633a Revert "Speed up notification panel pulldown animation when called externally"
-
-   * frameworks/native/
-a5f80a5 surfaceflinger: Access s3d flags only for valid display ID.
 
    * packages/apps/AudioFX/
 47248a0 Automatic translation import
@@ -157,13 +240,6 @@ ba2ea00 Automatic translation import
    * packages/providers/DataUsageProvider/
 51d9963 Automatic translation import
 
-   * packages/providers/MediaProvider/
-876ce08 MediaProvider: catch data exception to avoid crash
-d38f5fe MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
-daf4128 Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
-97020c4 Music: Fix force closed when plug out the SD card while music is playing.
-7c4bd66 MediaProvider: Fix SQLiteDiskIOException.
-
    * packages/providers/TelephonyProvider/
 95a055b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
 490a177 Automatic translation import
@@ -188,113 +264,10 @@ a686e01 Automatic translation import
    * packages/wallpapers/MagicSmoke/
 b204d0b Automatic translation import
 
-   * system/netd/
-a178f13 Listen to xt_quota2 kobject event for quota
-8ff7082 TetherController: fix forwarding request aggregation logic
-
-   * vendor/cm/
-049d4c5 config: Add WeatherManagerService to PRODUCT_PACKAGES
-
    * vendor/cmsdk/
 c5c621b Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 4ceac56 Automatic translation import
 
    * vendor/samsung/
 288bece Merge branch 'cm-13.0' of github.com:TheMuppets/proprietary_vendor_samsung into cm-13.0
-
-====================
-     08-13-2016
-====================
-
-
-   * android/
-a12a9c4 Add HexoLibre to manifest!
-
-   * external/sqlite/
-b4f2808 Upgrade to SQLite 3.14.1
-
-   * kernel/samsung/hlte/
-62b289e staging: android: lowmemorykiller: set TIF_MEMDIE before send kill sig
-
-   * packages/apps/Gello/
-cf74c29 Gello: Make incognito sentence fully translatable
-
-   * packages/apps/Settings/
-32778fc Settings:Fix mImsi null cause ApnSettings crash
-d17c6ee Settings: remove wifi hotspot timeout when hotspot settings are removed
-4ee08d8 Settings: Show only one tab on PrivacyGuard direct access
-923b359 Settings: Root appops access in developer settings
-
-   * packages/themes/HexoLibre/
-e9a9feb Remove custom package signature
-792b24b Remove device specific assignments.
-
-   * vendor/cmsdk/
-c487191 CMSDK: Broker out WeatherManagerService
-396caeb Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-   * vendor/samsung/
-07fcc29 Merge pull request #812 from zwliew/cm-13.0
-
-====================
-     08-12-2016
-====================
-
-
-   * build/
-222a1f5 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-34dbd81 Revert "warn and continue if using wrong jdk"
-
-   * device/qcom/common/
-1a2515c power-8916: Simplify missed soc_id check in 9e40a0e
-
-   * frameworks/av/
-c5c58d8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-c963424 Revert "Fix native memory leak caused by small HWUI path cache creation"
-1c030c7 [2/2] base: cm custom boot dexopt UI
-6c9119b pm: resolver: Don't hold the lock when calling into the resolver
-16379ac Revert "BootMessage: Show each app name being optimized during boot"
-007add8 Revert "Bootmsg: The app name is now displayed in bold text."
-a51d511 Revert "PhoneWindowManager: Powered by arter97 optimizations :D:D:D"
-
-   * packages/apps/Settings/
-7ed948e Merge pull request #459 from Joshndroid/cm-13.0
-cac7796 Dynamically define currently installed vendor.img version *parse the vendor fingerprint for the vendor build id *automatically remove on devices without a vendor image
-6e574dc Build V10.8
-
-   * packages/apps/SetupWizard/
-2c23c45 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_SetupWizard into cm-13.0
-8331602 If the device has FRP, prompt the user to set up a lockscreen
-
-   * packages/apps/Snap/
-e782a3f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-e095785 Snap: Support 9.6 MP 16:9 picture resolution
-2a2d7ee Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Snap into cm-13.0
-
-   * packages/providers/TelephonyProvider/
-d79b363 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
-
-   * packages/services/CMAudioService/
-2087f64 CMAudioService: sign with private keys if available
-1127d85 CMAudioService: add icons
-
-   * packages/services/LiveLockScreenService/
-675cedc LiveLockscreenService: add icons
-
-   * packages/services/ThemeManagerService/
-1e9e7cd ThemeManager: add icon
-
-   * packages/themes/HexoLibre/
-ecccbb5 Remove extra metadata
-1c82089 hexolibre: Fix strings
-f61ab04 VIVA LA HEXOLIBRE!
-
-   * vendor/cm/
-31125bc cm: Build HexoLibre as part of common_full
-
-   * vendor/cmsdk/
-da1776a cmsdk: allow MANAGE_AUDIO_SESSIONS to be whitelisted
-5785491 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
